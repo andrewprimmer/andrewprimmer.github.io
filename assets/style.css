@@ -1,0 +1,686 @@
+/* =========================================================================
+   andrewprimmer.com — shared stylesheet
+   ========================================================================= */
+
+:root {
+  --ink:               #1a1a1a;
+  --muted:             #5a5a5a;
+  --rule:              #d4cfc4;
+  --accent:            #7a1f1f;          /* oxblood */
+  --accent-soft:       #9c3434;
+  --paper:             #fbf9f4;          /* warm off-white */
+  --paper-alt:         #f6f2e9;          /* slightly warmer panel */
+  --paper-deep:        #efece3;          /* deeper panel */
+  --card:              #ffffff;
+  --analytical-bg:     #fff8e1;
+  --analytical-border: #b38b00;
+
+  --serif: "EB Garamond", "Adobe Garamond Pro", Garamond, Georgia, "Times New Roman", serif;
+  --sans:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono:  "SF Mono", Menlo, Consolas, monospace;
+}
+
+/* ---- Reset ---------------------------------------------------------- */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--paper);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+a:hover {
+  border-bottom-color: var(--accent);
+}
+
+/* ---- Layout --------------------------------------------------------- */
+
+.site {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.site-narrow {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ---- Header / Navigation -------------------------------------------- */
+
+.site-header {
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper);
+  padding: 1.5rem 0 1.25rem;
+}
+
+.site-header-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-wordmark {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ink);
+  border-bottom: none;
+  letter-spacing: 0.01em;
+}
+
+.site-wordmark:hover { border-bottom: none; color: var(--accent); }
+
+.site-wordmark-sub {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.site-nav a {
+  color: var(--muted);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: var(--ink);
+  border-bottom-color: var(--accent);
+}
+
+@media (max-width: 640px) {
+  .site-header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .site-nav {
+    gap: 1rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* ---- Main & sections ------------------------------------------------ */
+
+main.site-main {
+  padding: 3rem 0 4rem;
+}
+
+.page-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--ink);
+}
+
+.page-eyebrow {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+h1.page-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+p.page-lede {
+  font-size: 1.15rem;
+  color: var(--muted);
+  font-style: italic;
+  margin: 0;
+  max-width: 55ch;
+}
+
+section.page-section {
+  margin: 3rem 0;
+}
+
+h2.section-heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+h3.sub-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-style: italic;
+  margin: 1.75rem 0 0.5rem;
+}
+
+h4.sub-sub-heading {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 1.25rem 0 0.4rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+ul, ol {
+  margin: 0 0 1rem;
+  padding-left: 1.5rem;
+}
+
+li { margin: 0.35rem 0; }
+
+blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 3px solid var(--accent);
+  background: var(--paper-alt);
+  font-style: italic;
+  color: var(--muted);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2.5rem 0;
+}
+
+/* ---- Home: selected-works cards ------------------------------------- */
+
+.selected-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.selected-card {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.selected-card .kicker {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.selected-card h3 {
+  font-size: 1.05rem;
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.selected-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.selected-card .card-meta {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+/* ---- Publications listing ------------------------------------------ */
+
+.pub-group {
+  margin-bottom: 2.5rem;
+}
+
+.pub-entry {
+  margin: 0 0 1.25rem;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--rule);
+  transition: border-color 0.15s ease;
+}
+
+.pub-entry:hover {
+  border-left-color: var(--accent);
+}
+
+.pub-entry .pub-year {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.pub-entry .pub-title {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.pub-entry .pub-venue {
+  font-style: italic;
+  color: var(--muted);
+}
+
+.pub-entry .pub-links {
+  margin-top: 0.4rem;
+  font-size: 0.88rem;
+  font-family: var(--sans);
+}
+
+.pub-entry .pub-links a {
+  margin-right: 1rem;
+}
+
+.status-tag {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.1rem 0.5rem;
+  background: var(--paper-deep);
+  color: var(--muted);
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+
+.status-tag.forthcoming {
+  background: #e8e4d3;
+  color: var(--accent);
+}
+
+.status-tag.rr {
+  background: var(--analytical-bg);
+  color: #7a5a00;
+}
+
+/* ---- CV-specific ---------------------------------------------------- */
+
+.cv-download {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+}
+
+.cv-download:hover {
+  background: var(--ink);
+  color: var(--paper);
+  border-bottom-color: var(--ink);
+}
+
+.cv-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 1.25rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.cv-row:last-child { border-bottom: none; }
+
+.cv-row .cv-date {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+}
+
+.cv-row .cv-body strong { display: block; }
+
+.cv-row .cv-body .cv-institution {
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (max-width: 620px) {
+  .cv-row {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}
+
+/* ---- Contact -------------------------------------------------------- */
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.contact-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--rule);
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.contact-list .contact-label {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+@media (max-width: 520px) {
+  .contact-list li {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+}
+
+/* ---- Sources listing ------------------------------------------------ */
+
+.source-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.source-list li {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.source-list h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+}
+
+.source-list h3 a { color: var(--ink); border-bottom: none; }
+.source-list h3 a:hover { color: var(--accent); }
+
+.source-list .source-meta {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+  margin-bottom: 0.5rem;
+}
+
+.source-list .source-desc {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+/* ---- FolioScribe landing ------------------------------------------- */
+
+.folioscribe-hero {
+  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  padding: 2.5rem 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.folioscribe-hero h1 {
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.folioscribe-hero p {
+  font-style: italic;
+  color: var(--muted);
+  font-size: 1.1rem;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.folioscribe-launch {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.9rem 2rem;
+  background: var(--accent);
+  color: var(--paper);
+  border: none;
+  font-weight: 600;
+}
+
+.folioscribe-launch:hover {
+  background: var(--accent-soft);
+  color: var(--paper);
+  border-bottom-color: transparent;
+}
+
+.folioscribe-status {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 1rem;
+}
+
+/* ---- Footer -------------------------------------------------------- */
+
+.site-footer {
+  border-top: 1px solid var(--rule);
+  padding: 2rem 0;
+  margin-top: 4rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.site-footer-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* ===========================================================================
+   UMHK source page — layout classes for bilingual transcriptions
+   These extend the base styles; they do not override them.
+   =========================================================================== */
+
+.bilingual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid var(--rule);
+  margin: 1rem 0 1.5rem;
+  background: var(--card);
+}
+
+.bilingual > div {
+  padding: 1.25rem 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.bilingual .fr {
+  background: var(--paper-alt);
+  border-right: 1px solid var(--rule);
+}
+
+.bilingual .en {
+  background: var(--card);
+}
+
+.lang-label {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.65rem;
+  font-weight: 600;
+}
+
+.bilingual p { margin: 0 0 0.75rem; }
+.bilingual p:last-child { margin-bottom: 0; }
+
+@media (max-width: 780px) {
+  .bilingual { grid-template-columns: 1fr; }
+  .bilingual .fr { border-right: none; border-bottom: 1px solid var(--rule); }
+}
+
+.analytical-note {
+  background: var(--analytical-bg);
+  border-left: 3px solid var(--analytical-border);
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: #4a3a00;
+}
+
+.analytical-note strong {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  color: var(--analytical-border);
+}
+
+.table-wrap { overflow-x: auto; margin: 1rem 0 1.5rem; }
+
+table.financial {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  background: var(--card);
+  border: 1px solid var(--rule);
+}
+
+table.financial caption {
+  text-align: left;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1rem;
+  padding: 0.25rem 0 0.5rem;
+  color: var(--muted);
+  caption-side: top;
+}
+
+table.financial th {
+  background: var(--paper-deep);
+  text-align: left;
+  padding: 0.55rem 0.75rem;
+  font-weight: 600;
+  border-bottom: 2px solid var(--ink);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+table.financial td {
+  padding: 0.45rem 0.75rem;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+
+table.financial td.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+table.financial tr.subtotal td {
+  font-weight: 600;
+  background: #faf7ee;
+}
+
+table.financial tr.total td {
+  font-weight: 700;
+  background: var(--paper-deep);
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+}
+
+table.financial tr.indent td:first-child { padding-left: 1.75rem; }
+
+table.financial tr.note-row td {
+  font-style: italic;
+  color: var(--muted);
+  font-size: 0.78rem;
+  background: #fcfaf3;
+  padding-left: 1.75rem;
+}
+
+table.production { width: auto; margin: 1rem auto 1.5rem; }
+table.production tr.highlight td { font-weight: 700; background: #fff4d9; }
+
+/* ---- Print --------------------------------------------------------- */
+
+@media print {
+  .site-header, .site-footer { display: none; }
+  body { font-size: 10pt; background: #fff; }
+  .site { max-width: none; padding: 0; }
+  .bilingual { break-inside: avoid; }
+  .bilingual .fr { background: #f5f5f5; }
+}

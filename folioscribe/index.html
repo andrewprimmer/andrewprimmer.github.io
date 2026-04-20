@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FolioScribe &middot; Andrew Primmer</title>
+<meta name="description" content="FolioScribe: AI-assisted handwritten text recognition platform for historians, archivists, and genealogists.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="../index.html" class="site-wordmark">
+      Andrew Primmer
+      <span class="site-wordmark-sub">Accounting Historian</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../index.html">Home</a>
+      <a href="../research.html">Research</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../cv.html">CV</a>
+      <a href="../sources/">Primary Sources</a>
+      <a href="index.html" aria-current="page">FolioScribe</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="site-main">
+  <div class="site-narrow">
+
+    <section class="folioscribe-hero">
+      <div class="page-eyebrow">Digital Humanities Project</div>
+      <h1>FolioScribe</h1>
+      <p>AI-assisted handwritten text recognition for historians, archivists, and genealogists.</p>
+      <a href="https://folioscribe.andrewprimmer.com" class="folioscribe-launch">Launch FolioScribe &rarr;</a>
+      <div class="folioscribe-status">Beta &middot; Self-hosted infrastructure</div>
+    </section>
+
+    <section class="page-section">
+      <h2 class="section-heading">What FolioScribe does</h2>
+      <p>FolioScribe is a web platform for transcribing handwritten archival documents. Upload a photograph or scan of a manuscript&mdash;a ledger page, a letter, a parish register, a company minute book&mdash;and FolioScribe returns a transcription together with confidence markers, uncertainty flags, and a side-by-side view of the original image.</p>
+      <p>The platform is designed around the working patterns of archival researchers: sustained engagement with difficult palaeographic material, iterative correction, and the need to cite original images alongside their transcriptions.</p>
+    </section>
+
+    <section class="page-section">
+      <h2 class="section-heading">Who it is for</h2>
+      <ul>
+        <li><strong>Historians</strong> working on extensive archival corpora who need first-pass transcriptions they can refine.</li>
+        <li><strong>Archivists</strong> seeking to generate searchable finding aids for manuscript collections.</li>
+        <li><strong>Genealogists</strong> tracing family records across parish registers, census returns, and personal correspondence.</li>
+      </ul>
+    </section>
+
+    <section class="page-section">
+      <h2 class="section-heading">Technical notes</h2>
+      <p>FolioScribe runs on a locally hosted vision-language model (Qwen2.5-VL), exposed to the public web through a Cloudflare Tunnel. The self-hosted architecture keeps uploaded documents on infrastructure under my direct control and avoids routing potentially sensitive archival material through third-party commercial services. Transcriptions include confidence flags (<code>[?]</code> for uncertain readings, <code>[illegible]</code> for unrecoverable text) that preserve the epistemic provisionality of palaeographic work.</p>
+    </section>
+
+    <section class="page-section">
+      <h2 class="section-heading">Context</h2>
+      <p>FolioScribe grows out of my own archival practice. Working with British, Belgian, and Portuguese corporate records for the monograph and accounting-history papers routinely produces more handwritten material than any single researcher can transcribe by hand. The platform generalises that working tool for others facing the same problem. It is a methodological contribution to the digital humanities rather than a commercial product.</p>
+      <p>Selected transcriptions produced using FolioScribe are made available under <a href="../sources/">Primary Sources</a>.</p>
+    </section>
+
+    <section class="page-section">
+      <h2 class="section-heading">Citation</h2>
+      <p>If FolioScribe contributes to your research, I would be grateful for acknowledgement. A suggested citation:</p>
+      <blockquote>Primmer, A. <em>FolioScribe: AI-assisted handwritten text recognition</em>. University of Bristol, <span id="current-year">2026</span>. <a href="https://folioscribe.andrewprimmer.com">folioscribe.andrewprimmer.com</a>.</blockquote>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <span>&copy; Andrew Primmer. All rights reserved.</span>
+    <span>University of Bristol &middot; Department of History</span>
+  </div>
+</footer>
+
+</body>
+</html>
