@@ -675,6 +675,100 @@ table.financial tr.note-row td {
 table.production { width: auto; margin: 1rem auto 1.5rem; }
 table.production tr.highlight td { font-weight: 700; background: #fff4d9; }
 
+/* ---- Blog ---------------------------------------------------------- */
+
+.blog-date {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.blog-body { margin-top: 2.5rem; }
+.blog-body p { margin-bottom: 1.25rem; }
+
+.blog-body h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 2.5rem 0 0.75rem;
+  color: var(--accent);
+}
+
+.blog-body h2:first-of-type { margin-top: 2rem; }
+
+.blog-pullquote {
+  margin: 2rem 0;
+  padding: 1.25rem 1.75rem;
+  border-left: 3px solid var(--accent);
+  background: var(--paper-alt);
+  font-style: italic;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.blog-pullquote cite {
+  display: block;
+  font-style: normal;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  margin-top: 0.75rem;
+  color: var(--accent);
+}
+
+.blog-cta {
+  margin: 2.5rem 0 1rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--paper-deep);
+  border: 1px solid var(--rule);
+  font-size: 0.95rem;
+}
+
+.blog-cta a { font-weight: 600; }
+
+.blog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-list li {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.blog-list li:first-child { padding-top: 0; }
+
+.blog-list h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+}
+
+.blog-list h3 a { color: var(--ink); border-bottom: none; }
+.blog-list h3 a:hover { color: var(--accent); }
+
+.blog-list .blog-list-date {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.blog-list .blog-list-desc {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 /* ---- Print --------------------------------------------------------- */
 
 @media print {
