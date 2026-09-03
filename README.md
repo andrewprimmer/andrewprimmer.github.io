@@ -1,6 +1,6 @@
 # andrewprimmer.com
 
-Personal academic website of Dr Andrew Primmer, Research Associate in Accounting History at the University of Bristol.
+Personal academic website of Dr Andrew Primmer, Teaching Fellow in Accounting at Aston Business School, Aston University, and Honorary Research Associate in Accounting History at the University of Bristol.
 
 ## Structure
 
