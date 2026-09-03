@@ -3,174 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Debits and Credits &middot; Andrew Primmer</title>
-<meta name="description" content="An interactive introduction to double-entry bookkeeping, worked through the ledger of a British railway company in Colombia, 1888.">
-<link rel="stylesheet" href="../assets/style.css">
-<style>
-  /* ---- page-local styles for the interactive modules ---- */
-  .lesson{margin:0 0 52px}
-  .lesson-num{
-    font-family:var(--display);font-size:.95rem;color:var(--accent);
-    display:block;margin-bottom:2px;
-  }
-  .callout{
-    border-left:3px solid var(--accent);padding:2px 0 2px 20px;margin:24px 0;
-    font-style:italic;color:var(--soft);
-  }
-  .widget{
-    border:1px solid var(--rule);padding:22px;margin:24px 0;
-    background:rgba(255,255,255,.03);
-  }
-  .widget h3{margin:0 0 4px;font-family:var(--display);font-weight:400;font-size:1.1rem}
-  .widget .instruct{margin:0 0 16px;font-size:.92rem;color:var(--soft);font-style:italic}
-
-  button{font-family:var(--body);font-size:.94rem;cursor:pointer}
-  .btn{
-    background:none;border:1px solid var(--ink);color:var(--ink);
-    padding:7px 15px;font-family:var(--display);
-  }
-  .btn:hover{background:var(--accent);border-color:var(--accent);color:var(--paper)}
-  .btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-  .btn.ghost{border-color:var(--rule);color:var(--soft)}
-  .btn.ghost:hover{border-color:var(--accent);background:none;color:var(--accent)}
-  .btn[disabled]{opacity:.4;cursor:not-allowed}
-  select{
-    font-family:var(--body);font-size:.94rem;background:var(--paper);color:var(--ink);
-    border:1px solid var(--rule);padding:7px 9px;width:100%;
-  }
-  select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-
-  /* --- rules matrix --- */
-  .matrix{width:100%;border-collapse:collapse;font-size:.93rem;margin-top:6px}
-  .matrix th{
-    text-align:left;font-weight:600;font-size:.86rem;color:var(--soft);
-    border-bottom:1px solid var(--ink);padding:0 10px 7px 0;
-  }
-  .matrix td{padding:11px 10px 11px 0;border-bottom:1px solid var(--rule)}
-  .matrix tr{cursor:pointer}
-  .matrix tr:hover td{color:var(--accent)}
-  .matrix tr[aria-selected="true"] td{color:var(--accent)}
-  .dr{color:var(--accent);font-weight:600}
-  .cr{color:var(--ink);font-weight:600}
-  .matrix-note{
-    margin-top:14px;font-size:.92rem;color:var(--soft);min-height:3em;
-    border-top:1px solid var(--rule);padding-top:12px;
-  }
-
-  /* --- T-accounts --- */
-  .t-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:6px}
-  .t-acct{border:1px solid var(--rule);padding:12px 14px 10px}
-  .t-acct h4{
-    margin:0 0 8px;font-size:.92rem;font-weight:600;
-    border-bottom:1px solid var(--ink);padding-bottom:6px;
-  }
-  .t-acct h4 small{display:block;font-weight:300;font-style:italic;color:var(--soft);font-size:.84rem}
-  .t-cols{display:grid;grid-template-columns:1fr 1px 1fr;gap:0;font-size:.85rem}
-  .t-cols .spine{background:var(--rule)}
-  .t-side{padding:0 8px}
-  .t-side:first-child{padding-left:0}
-  .t-side:last-child{padding-right:0;text-align:right}
-  .t-side .hd{color:var(--soft);font-style:italic;font-size:.8rem;margin-bottom:4px}
-  .t-side ul{list-style:none;margin:0;padding:0}
-  .t-side li{padding:1px 0}
-  .t-bal{
-    border-top:1px solid var(--rule);margin-top:8px;padding-top:6px;
-    font-size:.85rem;display:flex;justify-content:space-between;
-  }
-  .t-bal b{font-weight:600}
-
-  /* --- posting workbench --- */
-  .txn{border-top:1px solid var(--ink);padding-top:14px}
-  .txn .date{font-style:italic;color:var(--soft);font-size:.88rem}
-  .txn .narr{margin:4px 0 0;font-size:1.04rem;line-height:1.45}
-  .txn .amt{margin:6px 0 0;color:var(--accent);font-size:.95rem}
-  .picks{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0 0}
-  .pick label{display:block;font-size:.86rem;color:var(--soft);font-style:italic;margin-bottom:5px}
-  .actions{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;align-items:center}
-  .verdict{margin-top:14px;font-size:.94rem;min-height:1.5em}
-  .verdict.ok{color:var(--accent)}
-  .verdict.no{color:#E9A0A0}
-  .verdict .why{display:block;color:var(--soft);margin-top:5px;font-style:italic}
-  .progress{
-    display:flex;gap:4px;margin:0 0 16px;flex-wrap:wrap;
-  }
-  .progress i{
-    display:block;width:22px;height:4px;background:var(--rule);
-  }
-  .progress i.done{background:var(--accent)}
-  .progress i.now{background:var(--ink)}
-
-  /* --- trial balance --- */
-  .tb{width:100%;border-collapse:collapse;font-size:.92rem;margin-top:6px}
-  .tb th{
-    text-align:left;font-weight:600;font-size:.85rem;color:var(--soft);
-    border-bottom:1px solid var(--ink);padding:0 10px 7px 0;
-  }
-  .tb th:not(:first-child),.tb td:not(:first-child){text-align:right;width:110px}
-  .tb td{padding:8px 10px 8px 0;border-bottom:1px solid var(--rule)}
-  .tb tfoot td{
-    border-top:1px solid var(--ink);border-bottom:3px double var(--ink);
-    font-weight:600;padding-top:9px;
-  }
-  .tb-state{margin-top:12px;font-size:.92rem;font-style:italic;color:var(--soft)}
-  .tb-state.ok{color:var(--accent);font-style:normal}
-
-  /* --- error cards --- */
-  .errs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px}
-  .err{
-    border:1px solid var(--rule);padding:14px;text-align:left;
-    background:none;color:var(--ink);font-size:.93rem;line-height:1.5;
-  }
-  .err:hover,.err:focus-visible{border-color:var(--accent)}
-  .err b{display:block;font-family:var(--display);font-weight:400;font-size:1.02rem;margin-bottom:3px}
-  .err span{display:block;color:var(--soft);font-style:italic;font-size:.88rem}
-  .err .rev{display:none;margin-top:9px;color:var(--ink);font-style:normal;font-size:.9rem}
-  .err[aria-expanded="true"] .rev{display:block}
-
-  /* --- quiz --- */
-  .q{border-top:1px solid var(--rule);padding:16px 0}
-  .q:first-of-type{border-top:1px solid var(--ink)}
-  .q p{margin:0 0 10px;font-size:1rem}
-  .q .opts{display:grid;gap:7px}
-  .opt{
-    text-align:left;background:none;border:1px solid var(--rule);color:var(--ink);
-    padding:8px 12px;font-size:.93rem;
-  }
-  .opt:hover:not([disabled]){border-color:var(--accent);color:var(--accent)}
-  .opt.right{border-color:var(--accent);color:var(--accent)}
-  .opt.wrong{border-color:#B96A6A;color:#E9A0A0}
-  .q .expl{margin:10px 0 0;font-size:.9rem;color:var(--soft);font-style:italic;display:none}
-  .q.answered .expl{display:block}
-  .score{
-    margin-top:20px;padding-top:16px;border-top:1px solid var(--ink);
-    font-family:var(--display);font-size:1.15rem;
-  }
-  .score span{color:var(--accent)}
-
-  @media (max-width:640px){
-    .t-grid,.picks,.errs{grid-template-columns:1fr}
-    .widget{padding:16px}
-    .tb th:not(:first-child),.tb td:not(:first-child){width:78px}
-  }
-</style>
+<title>Andrew Primmer &middot; Accounting historian, Aston Business School</title>
+<meta name="description" content="Personal academic website of Dr Andrew Primmer, Teaching Fellow in Accounting at Aston Business School. Research on financial reporting, disclosure, and political risk in British, Belgian, and Portuguese overseas enterprise.">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
 <header class="site-header">
   <div class="site-header-inner">
-    <a href="../index.html" class="site-wordmark">
+    <a href="index.html" class="site-wordmark">
       Andrew Primmer
       <span class="site-wordmark-sub">Accounting Historian</span>
     </a>
     <nav class="site-nav" aria-label="Main">
-      <a href="../index.html">Home</a>
-      <a href="../research.html">Research</a>
-      <a href="../publications.html">Publications</a>
-      <a href="../cv.html">CV</a>
-      <a href="../sources/">Primary Sources</a>
-      <a href="../teaching/" aria-current="page">Teaching</a>
-      <a href="../folioscribe/">FolioScribe</a>
-      <a href="../contact.html">Contact</a>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html">CV</a>
+      <a href="sources/">Primary Sources</a>
+      <a href="teaching/debits-and-credits.html">Teaching</a>
+      <a href="folioscribe/">FolioScribe</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
@@ -179,103 +32,67 @@
   <div class="site-narrow">
 
     <header class="page-header">
-      <div class="page-eyebrow">Teaching</div>
-      <h1 class="page-title">Debits and credits</h1>
-      <p class="page-lede">An interactive introduction to double entry, worked through the ledger of a British railway company operating in Colombia in 1888.</p>
+      <div class="page-eyebrow">Dr Andrew Primmer</div>
+      <h1 class="page-title">Accounting historian</h1>
+      <p class="page-lede">Research on financial reporting, disclosure, and political risk in British, Belgian, and Portuguese overseas enterprise, c. 1890&ndash;1940.</p>
     </header>
 
     <section class="page-section">
-      <p>Most people meet double entry as a rule to be memorised: debits on the left, credits on the right, and some mnemonic to keep the two apart. Learned that way it stays arbitrary, and it stops being useful the moment a transaction looks unfamiliar.</p>
-      <p>It is easier than that. Double entry rests on a single observation, made in Venice and codified by Luca Pacioli in 1494: every transaction changes a business in exactly two ways. If a company buys a locomotive for cash, it has gained a locomotive and lost the cash. Record only one half and the books describe a business that cannot exist.</p>
-      <p>Debit and credit are simply the names of the two columns in which those halves are recorded. They carry no moral weight, and neither means good or bad. Debit is the left column. Credit is the right one. Everything else follows from keeping them equal.</p>
-      <div class="callout">The examples below are drawn from the Barranquilla Railway and Pier Company, a British-registered firm operating on the Colombian Caribbean coast. The figures are illustrative, but the accounts, and the problems they had to solve, are the ones such a company actually faced.</div>
-    </section>
+      <p>I am a Teaching Fellow in Accounting at Aston Business School, Aston University, and an Honorary Research Associate in Accounting History at the University of Bristol. I am also a PhD candidate in Accounting at the University of Portsmouth, where my thesis, <em>Accounting as Imperial Governance: Financial Reporting, Disclosure, and Legitimacy in British, Belgian, and Portuguese Overseas Enterprise, c. 1890&ndash;1940</em>, is due for submission in August 2027.</p>
 
-    <!-- ============================== 1 ============================== -->
-    <section class="page-section lesson">
-      <h2 class="section-heading"><span class="lesson-num">One</span>The accounting equation</h2>
-      <p>Everything a business controls was funded by somebody. Either an outsider lent it, or the owners provided it and left the profits in. That gives the identity on which the whole system rests:</p>
-      <p style="text-align:center;font-family:var(--display);font-size:1.35rem;margin:26px 0">Assets = Liabilities + Equity</p>
-      <p>This is not a rule imposed on the accounts. It is a description of what the accounts are. Because each transaction is recorded twice, once as a debit and once as a credit, the equation cannot fall out of balance unless somebody makes a mistake.</p>
+      <p>My research interrogates how accounting technologies&mdash;reserve structures, narrative disclosure, and financial reporting&mdash;operated as instruments of governance in overseas enterprise. Drawing on archival material from Europe, Latin America, and sub-Saharan Africa, I examine accounting choice under political risk, the construction of legitimacy through disclosure, and the role of accounting in colonial extraction. I hold a PhD from the University of Bristol and was previously a British Academy Postdoctoral Fellow at the University of Reading, where I was mentored by Professor Mark Casson.</p>
 
-      <div class="widget">
-        <h3>Which side does it sit on?</h3>
-        <p class="instruct">Select any account category to see how it behaves.</p>
-        <table class="matrix">
-          <thead><tr><th scope="col">Category</th><th scope="col">Increases</th><th scope="col">Decreases</th><th scope="col">Normal balance</th></tr></thead>
-          <tbody id="matrixBody"></tbody>
-        </table>
-        <p class="matrix-note" id="matrixNote">Assets and expenses increase on the debit side. Liabilities, equity, and income increase on the credit side. Select a row for the reasoning.</p>
-      </div>
-
-      <p>Notice the symmetry. The two categories that increase by debit, assets and expenses, are both uses of resources. The three that increase by credit, liabilities, equity, and income, are all sources of them. Debits record where value went; credits record where it came from.</p>
-    </section>
-
-    <!-- ============================== 2 ============================== -->
-    <section class="page-section lesson">
-      <h2 class="section-heading"><span class="lesson-num">Two</span>Posting the ledger</h2>
-      <p>Below are ten transactions from the company's first period. For each, choose the account to debit and the account to credit. Entries are posted to the ledger as you go, and the trial balance beneath assembles itself from what you have recorded.</p>
-      <p>Work out the two effects before you answer. Ask what the company received, and what it gave up or owes as a result.</p>
-
-      <div class="widget">
-        <h3>Posting workbench</h3>
-        <p class="instruct">Ten transactions. Barranquilla Railway and Pier Company, year ended 31 December 1888.</p>
-        <div class="progress" id="progress" aria-hidden="true"></div>
-        <div id="txnBox" class="txn"></div>
-      </div>
-
-      <div class="widget">
-        <h3>The ledger</h3>
-        <p class="instruct">T-accounts fill as you post. Debits left, credits right.</p>
-        <div class="t-grid" id="tGrid"><p style="color:var(--soft);font-style:italic;grid-column:1/-1;margin:0">No entries posted yet.</p></div>
-      </div>
-
-      <div class="widget">
-        <h3>Trial balance</h3>
-        <p class="instruct">Each account's balance, listed in the column on which it falls.</p>
-        <table class="tb">
-          <thead><tr><th scope="col">Account</th><th scope="col">Debit &pound;</th><th scope="col">Credit &pound;</th></tr></thead>
-          <tbody id="tbBody"></tbody>
-          <tfoot><tr><td>Totals</td><td id="tbDr">&mdash;</td><td id="tbCr">&mdash;</td></tr></tfoot>
-        </table>
-        <p class="tb-state" id="tbState">Nothing posted yet.</p>
-      </div>
-    </section>
-
-    <!-- ============================== 3 ============================== -->
-    <section class="page-section lesson">
-      <h2 class="section-heading"><span class="lesson-num">Three</span>What a balanced trial balance does not prove</h2>
-      <p>A trial balance that agrees tells you the debits equal the credits. It does not tell you the entries were right. Six classes of error leave the totals in perfect agreement, which is why agreement is a weak form of assurance rather than a strong one.</p>
-      <div class="widget">
-        <h3>Errors the trial balance will not catch</h3>
-        <p class="instruct">Select any error to see how it hides.</p>
-        <div class="errs" id="errs"></div>
-      </div>
-      <p>This matters well beyond the classroom. If the arithmetic can agree while the substance is wrong, then the reliability of published accounts depends on judgement, incentive, and audit rather than on the mechanics of the system. Much of what interests me as a historian sits in that gap.</p>
-    </section>
-
-    <!-- ============================== 4 ============================== -->
-    <section class="page-section lesson">
-      <h2 class="section-heading"><span class="lesson-num">Four</span>Where the technique becomes historical</h2>
-      <p>The final transaction above moved &pound;1,500 from retained earnings to a renewals reserve. Mechanically it is trivial: a debit and a credit, both inside equity, leaving total equity unchanged and total assets untouched. Nothing enters or leaves the company.</p>
-      <p>Its consequences were not trivial at all. Profits carried to a named reserve were, in the ordinary course, no longer available for distribution. A board that wished to resist pressure for a larger dividend, or to make the company appear less profitable to a government contemplating a tax or a renegotiated concession, could achieve a great deal through that one entry.</p>
-      <p>For a British firm operating under a foreign jurisdiction, this was a serious instrument. Reserves could be layered so that capital remained portable across a hostile border. Profits could be sheltered from a fiscal authority with a claim on them. The accounts reported, but they also concealed, and the same entry did both jobs at once.</p>
-      <div class="callout">A student who understands why that transfer is only a debit and a credit is already equipped to ask the question that matters: who benefits from the way this has been recorded?</div>
-      <p>That question runs through my research on <a href="../research.html">accounting choice under political risk</a>, and it is the reason double entry is worth learning properly rather than merely passing.</p>
-    </section>
-
-    <!-- ============================== 5 ============================== -->
-    <section class="page-section lesson">
-      <h2 class="section-heading"><span class="lesson-num">Five</span>Check yourself</h2>
-      <p>Eight questions on the material above. Answers and reasoning appear as you go.</p>
-      <div class="widget">
-        <div id="quiz"></div>
-        <p class="score" id="score" hidden></p>
-      </div>
+      <p>My work has appeared in <em>Accounting History</em>, <em>Business History Review</em>, <em>The Economic History Review</em>, <em>Enterprise &amp; Society</em>, <em>Business History</em>, and the <em>Revista de Historia Econ&oacute;mica</em>.</p>
     </section>
 
     <section class="page-section">
-      <p style="color:var(--muted);font-size:.95rem">Built for undergraduate accounting teaching at Aston Business School. Reuse freely with attribution; corrections welcome at <a href="mailto:a.primmer@aston.ac.uk">a.primmer@aston.ac.uk</a>.</p>
+      <h2 class="section-heading">Selected work</h2>
+
+      <div class="selected-grid">
+
+        <article class="selected-card">
+          <span class="kicker">Forthcoming &middot; Accounting History</span>
+          <h3>Profiting from the Wage Gap</h3>
+          <p>Accounting, race, and extraction in the Northern Rhodesian Copperbelt, 1931&ndash;39.</p>
+          <div class="card-meta"><a href="publications.html#copperbelt">Details &rarr;</a></div>
+        </article>
+
+        <article class="selected-card">
+          <span class="kicker">In Review &middot; British Accounting Review</span>
+          <h3>Looking Through the Balance Sheet</h3>
+          <p>Value relevance, dividend restriction, and colonial railway debt, 1905&ndash;1926. With Martin Persson.</p>
+          <div class="card-meta"><a href="publications.html#value-relevance">Details &rarr;</a></div>
+        </article>
+
+        <article class="selected-card">
+          <span class="kicker">Forthcoming &middot; Accounting Historians Journal</span>
+          <h3>Accounting for Political Risk</h3>
+          <p>Reserve structures and capital portability in British railways in Colombia, 1904&ndash;1929.</p>
+          <div class="card-meta"><a href="publications.html#reserves">Details &rarr;</a></div>
+        </article>
+
+        <article class="selected-card">
+          <span class="kicker">Primary Source &middot; Bilingual Transcription</span>
+          <h3>Union Mini&egrave;re du Haut-Katanga, 1933</h3>
+          <p>Full bilingual transcription (French/English) of the 1933 Board of Directors&rsquo; report. Source for the Copperbelt paper.</p>
+          <div class="card-meta"><a href="sources/umhk_1933.html">Read the source &rarr;</a></div>
+        </article>
+
+        <article class="selected-card">
+          <span class="kicker">Digital Humanities</span>
+          <h3>FolioScribe</h3>
+          <p>AI-assisted handwritten text recognition for historians, archivists, and genealogists.</p>
+          <div class="card-meta"><a href="folioscribe/">About the project &rarr;</a></div>
+        </article>
+
+        <article class="selected-card">
+          <span class="kicker">2025 &middot; Business History Review</span>
+          <h3>Finding El Dorado</h3>
+          <p>The rise and fall of the Jenks business group in Colombia, 1899&ndash;1929.</p>
+          <div class="card-meta"><a href="publications.html#el-dorado">Details &rarr;</a></div>
+        </article>
+
+      </div>
     </section>
 
   </div>
@@ -288,6 +105,5 @@
   </div>
 </footer>
 
-<script src="debits-and-credits.js"></script>
 </body>
 </html>
