@@ -12,9 +12,8 @@ Personal academic website of Dr Andrew Primmer, Teaching Fellow in Accounting at
 - `sources/` — Primary source transcriptions
   - `index.html` — Sources landing page
   - `umhk_1933.html` — Union Minière du Haut-Katanga, 1933 bilingual transcription
-- `teaching/` — Interactive teaching resources
-  - `index.html` — Debits and credits: an interactive introduction to double entry
-  - `debits-and-credits.js` — Ledger simulation, trial balance, and quiz logic
+- `debits-and-credits.html` — Interactive teaching resource on double entry
+- `debits-and-credits.js` — Ledger simulation, trial balance, and quiz logic
 - `folioscribe/` — FolioScribe digital humanities project landing page
 - `assets/`
   - `style.css` — Shared site stylesheet
