@@ -3,69 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Debits and Credits &middot; Andrew Primmer</title>
-<meta name="description" content="An interactive introduction to double-entry bookkeeping, worked through the ledger of a British railway company in Colombia, 1888.">
+<title>Accounting from the Archive &middot; Andrew Primmer</title>
+<meta name="description" content="Seven interactive lessons in the foundations of accounting, from the accounting equation and double entry to disclosure and tax, each taught through a company from the history of British enterprise overseas.">
 <link rel="stylesheet" href="../assets/style.css">
+<script>document.documentElement.className += " js";</script>
 <style>
-  /* ---- page-local styles for the interactive modules ---- */
+  /* ---- page-local styles for the interactive course ---- */
+  :root{--bad:#E9A0A0;--bad-line:#B96A6A}
+
+  /* course contents */
+  .lesson-index{list-style:none;margin:22px 0 0;padding:0;border-top:1px solid var(--ink)}
+  .lesson-index li{border-bottom:1px solid var(--rule)}
+  .lesson-index a{
+    display:grid;grid-template-columns:4.2rem 1fr auto;gap:12px;align-items:baseline;
+    padding:14px 0;text-decoration:none;color:var(--ink);
+  }
+  .lesson-index a:hover .li-title,.lesson-index a:focus-visible .li-title{color:var(--accent)}
+  .lesson-index .li-num{font-family:var(--display);color:var(--accent);font-size:.95rem}
+  .lesson-index .li-title{display:block;font-family:var(--display);font-size:1.12rem}
+  .lesson-index .li-case{display:block;font-size:.88rem;color:var(--soft);font-style:italic}
+  .lesson-index .li-done{font-size:.85rem;color:var(--accent);white-space:nowrap}
+  .course-progress{margin-top:14px;font-size:.9rem;color:var(--soft);font-style:italic}
+
+  /* show one lesson at a time when scripting is available */
+  .js .lesson{display:none}
+  .js .lesson.is-open{display:block}
+  .js .is-hidden{display:none}
+
   .lesson{margin:0 0 52px}
-  .lesson-num{
-    font-family:var(--display);font-size:.95rem;color:var(--accent);
-    display:block;margin-bottom:2px;
-  }
-  .callout{
-    border-left:3px solid var(--accent);padding:2px 0 2px 20px;margin:24px 0;
-    font-style:italic;color:var(--soft);
-  }
-  .widget{
-    border:1px solid var(--rule);padding:22px;margin:24px 0;
-    background:rgba(255,255,255,.03);
-  }
+  .lesson-num{font-family:var(--display);font-size:.95rem;color:var(--accent);display:block;margin-bottom:2px}
+  .lesson-case{margin:4px 0 0;font-style:italic;color:var(--soft)}
+  .sub-heading{font-family:var(--display);font-weight:400;font-size:1.25rem;margin:40px 0 8px}
+  .callout{border-left:3px solid var(--accent);padding:2px 0 2px 20px;margin:24px 0;font-style:italic;color:var(--soft)}
+  .archive{border-left:3px solid var(--accent);padding:4px 0 4px 20px;margin:28px 0}
+  .archive h3{font-family:var(--display);font-weight:400;font-size:1.1rem;margin:0 0 6px}
+  .archive .src{font-size:.88rem;color:var(--soft);font-style:italic}
+  .key-idea{border-top:1px solid var(--ink);padding-top:12px;margin:28px 0}
+  .key-idea b{font-family:var(--display);font-weight:400}
+  .equation{text-align:center;font-family:var(--display);font-size:1.35rem;margin:26px 0}
+
+  .widget{border:1px solid var(--rule);padding:22px;margin:24px 0;background:rgba(255,255,255,.03)}
   .widget h3{margin:0 0 4px;font-family:var(--display);font-weight:400;font-size:1.1rem}
   .widget .instruct{margin:0 0 16px;font-size:.92rem;color:var(--soft);font-style:italic}
 
   button{font-family:var(--body);font-size:.94rem;cursor:pointer}
-  .btn{
-    background:none;border:1px solid var(--ink);color:var(--ink);
-    padding:7px 15px;font-family:var(--display);
-  }
+  .btn{background:none;border:1px solid var(--ink);color:var(--ink);padding:7px 15px;font-family:var(--display)}
   .btn:hover{background:var(--accent);border-color:var(--accent);color:var(--paper)}
-  .btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  .btn:focus-visible,.opt:focus-visible,.err:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
   .btn.ghost{border-color:var(--rule);color:var(--soft)}
   .btn.ghost:hover{border-color:var(--accent);background:none;color:var(--accent)}
+  .btn.small{padding:4px 11px;font-size:.88rem}
   .btn[disabled]{opacity:.4;cursor:not-allowed}
-  select{
-    font-family:var(--body);font-size:.94rem;background:var(--paper);color:var(--ink);
+  .seg{display:flex;flex-wrap:wrap;gap:6px}
+  .seg .btn[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+  select,input[type=number]{
+    box-sizing:border-box;font-family:var(--body);font-size:.94rem;background:var(--paper);color:var(--ink);
     border:1px solid var(--rule);padding:7px 9px;width:100%;
   }
-  select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .field label{display:block;font-size:.86rem;color:var(--soft);font-style:italic;margin-bottom:5px}
+  .fields{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 
-  /* --- rules matrix --- */
+  /* rules matrix */
   .matrix{width:100%;border-collapse:collapse;font-size:.93rem;margin-top:6px}
-  .matrix th{
-    text-align:left;font-weight:600;font-size:.86rem;color:var(--soft);
-    border-bottom:1px solid var(--ink);padding:0 10px 7px 0;
-  }
+  .matrix th{text-align:left;font-weight:600;font-size:.86rem;color:var(--soft);border-bottom:1px solid var(--ink);padding:0 10px 7px 0}
   .matrix td{padding:11px 10px 11px 0;border-bottom:1px solid var(--rule)}
   .matrix tr{cursor:pointer}
-  .matrix tr:hover td{color:var(--accent)}
-  .matrix tr[aria-selected="true"] td{color:var(--accent)}
+  .matrix tr:hover td,.matrix tr[aria-selected="true"] td{color:var(--accent)}
   .dr{color:var(--accent);font-weight:600}
   .cr{color:var(--ink);font-weight:600}
-  .matrix-note{
-    margin-top:14px;font-size:.92rem;color:var(--soft);min-height:3em;
-    border-top:1px solid var(--rule);padding-top:12px;
-  }
+  .matrix-note{margin-top:14px;font-size:.92rem;color:var(--soft);min-height:3em;border-top:1px solid var(--rule);padding-top:12px}
 
-  /* --- T-accounts --- */
+  /* T-accounts */
   .t-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:6px}
   .t-acct{border:1px solid var(--rule);padding:12px 14px 10px}
-  .t-acct h4{
-    margin:0 0 8px;font-size:.92rem;font-weight:600;
-    border-bottom:1px solid var(--ink);padding-bottom:6px;
-  }
+  .t-acct h4{margin:0 0 8px;font-size:.92rem;font-weight:600;border-bottom:1px solid var(--ink);padding-bottom:6px}
   .t-acct h4 small{display:block;font-weight:300;font-style:italic;color:var(--soft);font-size:.84rem}
-  .t-cols{display:grid;grid-template-columns:1fr 1px 1fr;gap:0;font-size:.85rem}
+  .t-cols{display:grid;grid-template-columns:1fr 1px 1fr;font-size:.85rem}
   .t-cols .spine{background:var(--rule)}
   .t-side{padding:0 8px}
   .t-side:first-child{padding-left:0}
@@ -73,13 +87,10 @@
   .t-side .hd{color:var(--soft);font-style:italic;font-size:.8rem;margin-bottom:4px}
   .t-side ul{list-style:none;margin:0;padding:0}
   .t-side li{padding:1px 0}
-  .t-bal{
-    border-top:1px solid var(--rule);margin-top:8px;padding-top:6px;
-    font-size:.85rem;display:flex;justify-content:space-between;
-  }
+  .t-bal{border-top:1px solid var(--rule);margin-top:8px;padding-top:6px;font-size:.85rem;display:flex;justify-content:space-between}
   .t-bal b{font-weight:600}
 
-  /* --- posting workbench --- */
+  /* posting workbench */
   .txn{border-top:1px solid var(--ink);padding-top:14px}
   .txn .date{font-style:italic;color:var(--soft);font-size:.88rem}
   .txn .narr{margin:4px 0 0;font-size:1.04rem;line-height:1.45}
@@ -89,69 +100,88 @@
   .actions{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;align-items:center}
   .verdict{margin-top:14px;font-size:.94rem;min-height:1.5em}
   .verdict.ok{color:var(--accent)}
-  .verdict.no{color:#E9A0A0}
+  .verdict.no{color:var(--bad)}
   .verdict .why{display:block;color:var(--soft);margin-top:5px;font-style:italic}
-  .progress{
-    display:flex;gap:4px;margin:0 0 16px;flex-wrap:wrap;
-  }
-  .progress i{
-    display:block;width:22px;height:4px;background:var(--rule);
-  }
+  .progress{display:flex;gap:4px;margin:0 0 16px;flex-wrap:wrap}
+  .progress i{display:block;width:22px;height:4px;background:var(--rule)}
   .progress i.done{background:var(--accent)}
   .progress i.now{background:var(--ink)}
 
-  /* --- trial balance --- */
-  .tb{width:100%;border-collapse:collapse;font-size:.92rem;margin-top:6px}
-  .tb th{
-    text-align:left;font-weight:600;font-size:.85rem;color:var(--soft);
-    border-bottom:1px solid var(--ink);padding:0 10px 7px 0;
-  }
+  /* ledger tables */
+  .tb{width:100%;border-collapse:collapse;font-size:.92rem;margin-top:6px;font-variant-numeric:tabular-nums}
+  .tb th{text-align:left;font-weight:600;font-size:.85rem;color:var(--soft);border-bottom:1px solid var(--ink);padding:0 10px 7px 0}
   .tb th:not(:first-child),.tb td:not(:first-child){text-align:right;width:110px}
   .tb td{padding:8px 10px 8px 0;border-bottom:1px solid var(--rule)}
-  .tb tfoot td{
-    border-top:1px solid var(--ink);border-bottom:3px double var(--ink);
-    font-weight:600;padding-top:9px;
-  }
+  .tb tfoot td,.tb tr.total td{border-top:1px solid var(--ink);border-bottom:3px double var(--ink);font-weight:600;padding-top:9px}
+  .tb tr.sub td{font-style:italic;color:var(--soft)}
+  .tb tr.flash td{color:var(--accent)}
   .tb-state{margin-top:12px;font-size:.92rem;font-style:italic;color:var(--soft)}
   .tb-state.ok{color:var(--accent);font-style:normal}
+  .bs{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .bs h4{margin:0;font-family:var(--display);font-weight:400;font-size:1rem}
+  .eqline{margin:18px 0 0;font-family:var(--display);font-size:1.05rem;text-align:center;font-variant-numeric:tabular-nums}
+  .eqline span{color:var(--accent)}
+  .log{margin-top:14px;font-size:.94rem;min-height:3em;border-top:1px solid var(--rule);padding-top:12px}
+  .log .moves{display:block;color:var(--soft);font-style:italic;font-size:.88rem;margin-top:3px}
 
-  /* --- error cards --- */
+  /* reveal cards: errors and capital/revenue sorter */
   .errs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px}
-  .err{
-    border:1px solid var(--rule);padding:14px;text-align:left;
-    background:none;color:var(--ink);font-size:.93rem;line-height:1.5;
-  }
-  .err:hover,.err:focus-visible{border-color:var(--accent)}
+  .err{border:1px solid var(--rule);padding:14px;text-align:left;background:none;color:var(--ink);font-size:.93rem;line-height:1.5}
+  .err:hover{border-color:var(--accent)}
   .err b{display:block;font-family:var(--display);font-weight:400;font-size:1.02rem;margin-bottom:3px}
   .err span{display:block;color:var(--soft);font-style:italic;font-size:.88rem}
   .err .rev{display:none;margin-top:9px;color:var(--ink);font-style:normal;font-size:.9rem}
   .err[aria-expanded="true"] .rev{display:block}
+  .sort-item{border:1px solid var(--rule);padding:14px;font-size:.93rem}
+  .sort-item p{margin:0 0 10px}
+  .sort-item.right{border-color:var(--accent)}
+  .sort-item.wrong{border-color:var(--bad-line)}
+  .sort-item .why{display:none;margin-top:10px;font-size:.9rem;color:var(--soft);font-style:italic}
+  .sort-item.right .why,.sort-item.wrong .why{display:block}
+  .sort-item .why b{font-style:normal;color:var(--accent)}
+  .sort-item.wrong .why b{color:var(--bad)}
 
-  /* --- quiz --- */
+  /* stats and charts */
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+  .stats.two{grid-template-columns:repeat(2,1fr)}
+  .stat{border-top:1px solid var(--ink);padding-top:8px}
+  .stat b{display:block;font-family:var(--display);font-weight:400;font-size:1.55rem;color:var(--accent);font-variant-numeric:tabular-nums}
+  .stat span{font-size:.86rem;color:var(--soft);font-style:italic}
+  .note{margin-top:16px;font-size:.94rem}
+  .chart{width:100%;height:auto;display:block;margin:16px 0 4px}
+  .alloc-row{display:grid;grid-template-columns:7rem 1fr 6.5rem;gap:12px;align-items:center;margin:10px 0;font-size:.92rem}
+  .alloc-row small{display:block;color:var(--soft);font-style:italic}
+  .alloc-row .track{height:18px;border:1px solid var(--rule)}
+  .alloc-row .fill{height:100%;background:var(--accent);transition:width .45s}
+  .alloc-row .num{text-align:right;font-variant-numeric:tabular-nums}
+
+  /* quiz */
   .q{border-top:1px solid var(--rule);padding:16px 0}
-  .q:first-of-type{border-top:1px solid var(--ink)}
+  .q:first-child{border-top:1px solid var(--ink)}
   .q p{margin:0 0 10px;font-size:1rem}
   .q .opts{display:grid;gap:7px}
-  .opt{
-    text-align:left;background:none;border:1px solid var(--rule);color:var(--ink);
-    padding:8px 12px;font-size:.93rem;
-  }
+  .opt{text-align:left;background:none;border:1px solid var(--rule);color:var(--ink);padding:8px 12px;font-size:.93rem}
   .opt:hover:not([disabled]){border-color:var(--accent);color:var(--accent)}
   .opt.right{border-color:var(--accent);color:var(--accent)}
-  .opt.wrong{border-color:#B96A6A;color:#E9A0A0}
+  .opt.wrong{border-color:var(--bad-line);color:var(--bad)}
   .q .expl{margin:10px 0 0;font-size:.9rem;color:var(--soft);font-style:italic;display:none}
   .q.answered .expl{display:block}
-  .score{
-    margin-top:20px;padding-top:16px;border-top:1px solid var(--ink);
-    font-family:var(--display);font-size:1.15rem;
-  }
+  .score{margin-top:20px;padding-top:16px;border-top:1px solid var(--ink);font-family:var(--display);font-size:1.15rem}
   .score span{color:var(--accent)}
 
+  /* lesson pager */
+  .pager{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:40px;padding-top:16px;border-top:1px solid var(--ink);font-size:.95rem}
+
   @media (max-width:640px){
-    .t-grid,.picks,.errs{grid-template-columns:1fr}
+    .t-grid,.picks,.errs,.bs,.fields{grid-template-columns:1fr}
+    .stats{grid-template-columns:1fr 1fr}
     .widget{padding:16px}
     .tb th:not(:first-child),.tb td:not(:first-child){width:78px}
+    .lesson-index a{grid-template-columns:3.4rem 1fr}
+    .lesson-index .li-done{grid-column:2}
+    .alloc-row{grid-template-columns:5.6rem 1fr 5.6rem}
   }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
 <body>
@@ -178,28 +208,84 @@
 <main class="site-main">
   <div class="site-narrow">
 
-    <header class="page-header">
-      <div class="page-eyebrow">Teaching</div>
-      <h1 class="page-title">Debits and credits</h1>
-      <p class="page-lede">An interactive introduction to double entry, worked through the ledger of a British railway company operating in Colombia in 1888.</p>
-    </header>
+    <!-- ============================ contents ============================ -->
+    <div id="contents">
+      <header class="page-header">
+        <div class="page-eyebrow">Teaching</div>
+        <h1 class="page-title">Accounting from the Archive</h1>
+        <p class="page-lede">Seven interactive lessons in the foundations of accounting, each worked through a company from the history of British enterprise overseas. No prior accounting knowledge is assumed.</p>
+      </header>
 
-    <section class="page-section">
-      <p>Most people meet double entry as a rule to be memorised: debits on the left, credits on the right, and some mnemonic to keep the two apart. Learned that way it stays arbitrary, and it stops being useful the moment a transaction looks unfamiliar.</p>
-      <p>It is easier than that. Double entry rests on a single observation, made in Venice and codified by Luca Pacioli in 1494: every transaction changes a business in exactly two ways. If a company buys a locomotive for cash, it has gained a locomotive and lost the cash. Record only one half and the books describe a business that cannot exist.</p>
-      <p>Debit and credit are simply the names of the two columns in which those halves are recorded. They carry no moral weight, and neither means good or bad. Debit is the left column. Credit is the right one. Everything else follows from keeping them equal.</p>
-      <div class="callout">The examples below are drawn from the Barranquilla Railway and Pier Company, a British-registered firm operating on the Colombian Caribbean coast. The figures are illustrative, but the accounts, and the problems they had to solve, are the ones such a company actually faced.</div>
-    </section>
+      <section class="page-section">
+        <p>Accounting is usually taught as a set of rules. It is easier to understand as a set of answers to practical problems that real businesses faced: how to tell investors in London what was happening to their money in Mozambique or Colombia, how to decide what counted as profit, and how much of that profit a government could tax.</p>
+        <p>Each lesson introduces one idea, shows it at work in a historical company drawn from my research, and then asks you to try it yourself. A short set of questions at the end tells you whether the idea has landed. Your progress is saved in this browser.</p>
+        <div class="callout">Figures in the exercises are illustrative and simplified for teaching. The companies, and the problems their accounts had to solve, are real.</div>
+
+        <h2 class="section-heading">Lessons</h2>
+        <ol class="lesson-index">
+          <li><a href="#equation" data-lesson="equation"><span class="li-num">One</span><span><span class="li-title">The accounting equation</span><span class="li-case">The Beira Railway, Portuguese East Africa</span></span><span class="li-done"></span></a></li>
+          <li><a href="#debits-and-credits" data-lesson="debits-and-credits"><span class="li-num">Two</span><span><span class="li-title">Debits and credits</span><span class="li-case">Barranquilla Railway and Pier Company, 1888</span></span><span class="li-done"></span></a></li>
+          <li><a href="#accruals" data-lesson="accruals"><span class="li-num">Three</span><span><span class="li-title">Profit, accruals and revenue recognition</span><span class="li-case">Then and now: Quindell plc, 2013</span></span><span class="li-done"></span></a></li>
+          <li><a href="#capital-and-revenue" data-lesson="capital-and-revenue"><span class="li-num">Four</span><span><span class="li-title">Capital, revenue and depreciation</span><span class="li-case">Victorian railways and the double-account system</span></span><span class="li-done"></span></a></li>
+          <li><a href="#ratios" data-lesson="ratios"><span class="li-num">Five</span><span><span class="li-title">Reading the accounts: ratios</span><span class="li-case">The operating ratio and railway investors</span></span><span class="li-done"></span></a></li>
+          <li><a href="#disclosure" data-lesson="disclosure"><span class="li-num">Six</span><span><span class="li-title">Disclosure: what the accounts tell, and what they hide</span><span class="li-case">The Royal Mail case, 1931, and Coca-Cola, 1932</span></span><span class="li-done"></span></a></li>
+          <li><a href="#tax" data-lesson="tax"><span class="li-num">Seven</span><span><span class="li-title">Accounting profit, taxable profit and borders</span><span class="li-case">Rhodesia Railways, 1926&ndash;1946</span></span><span class="li-done"></span></a></li>
+        </ol>
+        <p class="course-progress" id="courseProgress"></p>
+      </section>
+    </div>
 
     <!-- ============================== 1 ============================== -->
-    <section class="page-section lesson">
-      <h2 class="section-heading"><span class="lesson-num">One</span>The accounting equation</h2>
-      <p>Everything a business controls was funded by somebody. Either an outsider lent it, or the owners provided it and left the profits in. That gives the identity on which the whole system rests:</p>
-      <p style="text-align:center;font-family:var(--display);font-size:1.35rem;margin:26px 0">Assets = Liabilities + Equity</p>
-      <p>This is not a rule imposed on the accounts. It is a description of what the accounts are. Because each transaction is recorded twice, once as a debit and once as a credit, the equation cannot fall out of balance unless somebody makes a mistake.</p>
+    <section class="page-section lesson" id="equation">
+      <h2 class="section-heading"><span class="lesson-num">Lesson one</span>The accounting equation</h2>
+      <p class="lesson-case">The Beira Railway, Portuguese East Africa</p>
+
+      <p>Every business has <strong>assets</strong>: things it controls that will bring future benefit, such as cash, buildings, locomotives or stocks of coal. Everything a business controls was funded by somebody. Either an outsider lent it, creating <strong>liabilities</strong> owed to lenders and suppliers, or the owners provided it and left the profits in, which is <strong>equity</strong>. That gives the identity on which the whole system rests:</p>
+      <p class="equation">Assets = Liabilities + Equity</p>
+      <p>This is not a rule imposed on the accounts. It is a description of what the accounts are: the same pool of resources described twice, once by what they are and once by who has a claim on them. The <strong>balance sheet</strong>, or in IFRS language the <em>statement of financial position</em>, is this equation written out in detail on a particular date.</p>
+
+      <div class="archive">
+        <h3>From the archive</h3>
+        <p>The Beira Railway was built in the 1890s from the port of Beira, in what is now Mozambique, inland towards Rhodesia. It was financed in London through a mixture of shares and fixed-interest debentures. A railway is an extreme case of a business whose assets are almost all fixed: track, bridges and rolling stock that cannot be sold if traffic disappoints.</p>
+        <p>Once a large slice of the right-hand side of the equation is debt carrying a fixed interest charge, the balance sheet shows a prospective investor how little room is left for shareholders. The balance sheet can itself become a barrier to raising the next round of capital.</p>
+        <p class="src">Related work: &ldquo;Balance Sheet as Barrier&rdquo; (working paper).</p>
+      </div>
 
       <div class="widget">
-        <h3>Which side does it sit on?</h3>
+        <h3>Build the balance sheet</h3>
+        <p class="instruct">Record the railway company's first year one transaction at a time. Watch which two items move, and check that the equation still holds.</p>
+        <div class="bs">
+          <div><h4>Assets</h4><table class="tb" id="bsA"></table></div>
+          <div><h4>Liabilities and equity</h4><table class="tb" id="bsLE"></table></div>
+        </div>
+        <p class="eqline" id="bsEq"></p>
+        <div class="log" id="bsLog" aria-live="polite"></div>
+        <div class="actions">
+          <button type="button" class="btn" id="bsNext">Record next transaction</button>
+          <button type="button" class="btn ghost" id="bsReset">Start again</button>
+        </div>
+        <p class="tb-state" id="bsDone" hidden></p>
+      </div>
+
+      <div class="key-idea"><b>Key idea.</b> Every transaction has at least two effects, and together they keep assets equal to liabilities plus equity. A profit increases equity; a loss reduces it. Lesson two shows how bookkeepers record those two effects.</div>
+
+      <h3 class="sub-heading">Check yourself</h3>
+      <div class="widget"><div id="quiz-equation"></div></div>
+      <nav class="pager" data-for="equation" aria-label="Lesson navigation"></nav>
+    </section>
+
+    <!-- ============================== 2 ============================== -->
+    <section class="page-section lesson" id="debits-and-credits">
+      <h2 class="section-heading"><span class="lesson-num">Lesson two</span>Debits and credits</h2>
+      <p class="lesson-case">The Barranquilla Railway and Pier Company, 1888</p>
+
+      <p>Most people meet double entry as a rule to be memorised: debits on the left, credits on the right, and some mnemonic to keep the two apart. Learned that way it stays arbitrary, and it stops being useful the moment a transaction looks unfamiliar.</p>
+      <p>It is easier than that. Double entry rests on a single observation, made in Venice and codified by Luca Pacioli in 1494: every transaction changes a business in exactly two ways. If a company buys a locomotive for cash, it has gained a locomotive and lost the cash. Record only one half and the books describe a business that cannot exist.</p>
+      <p>Debit and credit are simply the names of the two columns in which those halves are recorded. They carry no moral weight, and neither means good or bad. Debit is the left column. Credit is the right one. Because each transaction is recorded once as a debit and once as a credit, the accounting equation from lesson one cannot fall out of balance unless somebody makes a mistake.</p>
+      <div class="callout">The examples below are drawn from the Barranquilla Railway and Pier Company, a British-registered firm operating on the Colombian Caribbean coast. The figures are illustrative, but the accounts, and the problems they had to solve, are the ones such a company actually faced.</div>
+
+      <h3 class="sub-heading">Which side does it sit on?</h3>
+      <div class="widget">
         <p class="instruct">Select any account category to see how it behaves.</p>
         <table class="matrix">
           <thead><tr><th scope="col">Category</th><th scope="col">Increases</th><th scope="col">Decreases</th><th scope="col">Normal balance</th></tr></thead>
@@ -207,13 +293,9 @@
         </table>
         <p class="matrix-note" id="matrixNote">Assets and expenses increase on the debit side. Liabilities, equity, and income increase on the credit side. Select a row for the reasoning.</p>
       </div>
-
       <p>Notice the symmetry. The two categories that increase by debit, assets and expenses, are both uses of resources. The three that increase by credit, liabilities, equity, and income, are all sources of them. Debits record where value went; credits record where it came from.</p>
-    </section>
 
-    <!-- ============================== 2 ============================== -->
-    <section class="page-section lesson">
-      <h2 class="section-heading"><span class="lesson-num">Two</span>Posting the ledger</h2>
+      <h3 class="sub-heading">Posting the ledger</h3>
       <p>Below are ten transactions from the company's first period. For each, choose the account to debit and the account to credit. Entries are posted to the ledger as you go, and the trial balance beneath assembles itself from what you have recorded.</p>
       <p>Work out the two effects before you answer. Ask what the company received, and what it gave up or owes as a result.</p>
 
@@ -227,7 +309,7 @@
       <div class="widget">
         <h3>The ledger</h3>
         <p class="instruct">T-accounts fill as you post. Debits left, credits right.</p>
-        <div class="t-grid" id="tGrid"><p style="color:var(--soft);font-style:italic;grid-column:1/-1;margin:0">No entries posted yet.</p></div>
+        <div class="t-grid" id="tGrid"></div>
       </div>
 
       <div class="widget">
@@ -240,42 +322,226 @@
         </table>
         <p class="tb-state" id="tbState">Nothing posted yet.</p>
       </div>
-    </section>
 
-    <!-- ============================== 3 ============================== -->
-    <section class="page-section lesson">
-      <h2 class="section-heading"><span class="lesson-num">Three</span>What a balanced trial balance does not prove</h2>
+      <h3 class="sub-heading">What a balanced trial balance does not prove</h3>
       <p>A trial balance that agrees tells you the debits equal the credits. It does not tell you the entries were right. Six classes of error leave the totals in perfect agreement, which is why agreement is a weak form of assurance rather than a strong one.</p>
       <div class="widget">
         <h3>Errors the trial balance will not catch</h3>
         <p class="instruct">Select any error to see how it hides.</p>
         <div class="errs" id="errs"></div>
       </div>
-      <p>This matters well beyond the classroom. If the arithmetic can agree while the substance is wrong, then the reliability of published accounts depends on judgement, incentive, and audit rather than on the mechanics of the system. Much of what interests me as a historian sits in that gap.</p>
-    </section>
+      <p>This matters well beyond the classroom. If the arithmetic can agree while the substance is wrong, then the reliability of published accounts depends on judgement, incentive, and audit rather than on the mechanics of the system. Much of what interests me as a historian sits in that gap, and lessons three to six return to it.</p>
 
-    <!-- ============================== 4 ============================== -->
-    <section class="page-section lesson">
-      <h2 class="section-heading"><span class="lesson-num">Four</span>Where the technique becomes historical</h2>
+      <h3 class="sub-heading">Where the technique becomes historical</h3>
       <p>The final transaction above moved &pound;1,500 from retained earnings to a renewals reserve. Mechanically it is trivial: a debit and a credit, both inside equity, leaving total equity unchanged and total assets untouched. Nothing enters or leaves the company.</p>
       <p>Its consequences were not trivial at all. Profits carried to a named reserve were, in the ordinary course, no longer available for distribution. A board that wished to resist pressure for a larger dividend, or to make the company appear less profitable to a government contemplating a tax or a renegotiated concession, could achieve a great deal through that one entry.</p>
       <p>For a British firm operating under a foreign jurisdiction, this was a serious instrument. Reserves could be layered so that capital remained portable across a hostile border. Profits could be sheltered from a fiscal authority with a claim on them. The accounts reported, but they also concealed, and the same entry did both jobs at once.</p>
       <div class="callout">A student who understands why that transfer is only a debit and a credit is already equipped to ask the question that matters: who benefits from the way this has been recorded?</div>
       <p>That question runs through my research on <a href="../research.html">accounting choice under political risk</a>, and it is the reason double entry is worth learning properly rather than merely passing.</p>
+
+      <div class="key-idea"><b>Key idea.</b> Each transaction is recorded as an equal debit and credit. Assets and expenses increase with debits; liabilities, equity and income increase with credits. A trial balance that agrees is evidence, not proof.</div>
+
+      <h3 class="sub-heading">Check yourself</h3>
+      <p>Eight questions on the material above. Answers and reasoning appear as you go.</p>
+      <div class="widget"><div id="quiz-debits-and-credits"></div></div>
+      <nav class="pager" data-for="debits-and-credits" aria-label="Lesson navigation"></nav>
+    </section>
+
+    <!-- ============================== 3 ============================== -->
+    <section class="page-section lesson" id="accruals">
+      <h2 class="section-heading"><span class="lesson-num">Lesson three</span>Profit, accruals and revenue recognition</h2>
+      <p class="lesson-case">Then and now: Quindell plc, 2013</p>
+
+      <p>The <strong>income statement</strong>, or profit and loss account, reports what a business earned and what it cost to earn it over a period. Revenue minus expenses equals profit.</p>
+      <p>The crucial point is <em>timing</em>. Under the <strong>accruals basis</strong>, revenue is recorded when it is earned and expenses when they are incurred, not when cash changes hands. You met this in lesson two: freight carried on account was recorded as revenue at once, with the debit going to trade receivables rather than cash. A ship that delivers cargo in December has earned its freight in December, even if the customer pays in February. Wages that staff have earned by 31 December are an expense of that year, even if they are paid in January.</p>
+      <p>Modern standards (IFRS 15) say revenue is recognised when the business satisfies its promise to a customer, and only to the extent that it is highly probable the amount will not later have to be reversed. That second test is where judgement, and sometimes trouble, enters.</p>
+
+      <div class="archive">
+        <h3>Then and now</h3>
+        <p>Historical companies wrestled with the same question in simpler form: when exactly has a railway, a mine or a trading house earned its income? The problem has not gone away. Quindell, an AIM-listed insurance services and claims business, grew rapidly by recognising revenue on personal injury claims long before the outcome of those claims was known. When its accounts were reviewed, its 2013 results were restated and the reported profits largely disappeared, and both the company and its auditor became the subject of regulatory investigation.</p>
+        <p>The lesson for a new accountant: the revenue figure is not a fact you read off a bank statement. It is the product of a judgement about when something has really been earned.</p>
+        <p class="src">Related work: a working paper on model-based revenue recognition at Quindell.</p>
+      </div>
+
+      <h3 class="sub-heading">When is it earned?</h3>
+      <p>The financial year ends on 31 December, Year 1. For each situation, decide when the revenue or expense belongs.</p>
+      <div class="widget"><div id="rr"></div></div>
+
+      <div class="key-idea"><b>Key idea.</b> Profit depends on timing. Revenue belongs to the period in which it is earned and expenses to the period in which they are incurred, regardless of when cash moves.</div>
+
+      <h3 class="sub-heading">Check yourself</h3>
+      <div class="widget"><div id="quiz-accruals"></div></div>
+      <nav class="pager" data-for="accruals" aria-label="Lesson navigation"></nav>
+    </section>
+
+    <!-- ============================== 4 ============================== -->
+    <section class="page-section lesson" id="capital-and-revenue">
+      <h2 class="section-heading"><span class="lesson-num">Lesson four</span>Capital, revenue and depreciation</h2>
+      <p class="lesson-case">Victorian railways and the double-account system</p>
+
+      <p>Some spending buys something that will serve the business for many years: a locomotive, a bridge, a new branch line. That is <strong>capital expenditure</strong>, recorded as an asset on the balance sheet. Other spending is used up in the period: wages, coal, routine repairs. That is <strong>revenue expenditure</strong>, charged straight to the income statement as an expense.</p>
+      <p>Getting this split right matters enormously. In lesson two you saw that charging a new locomotive to repairs is an error of principle the trial balance cannot catch. To spread the cost of a long-lived asset over the years that benefit from it, accountants charge <strong>depreciation</strong>: a portion of the asset's cost recognised as an expense each year, credited to accumulated depreciation so that the original cost stays visible.</p>
+
+      <div class="archive">
+        <h3>From the archive</h3>
+        <p>British railways raised more capital than any industry before them, and the boundary between capital and revenue was fought over from the start. In the 1840s George Hudson, the &ldquo;Railway King&rdquo;, was found to have paid dividends partly out of capital rather than profits. The Regulation of Railways Act 1868 later required railway companies to report under the <strong>double-account system</strong>: a capital account showing money raised and how it was spent on the line, kept separate from a revenue account showing each year's receipts and working expenses.</p>
+        <p>Under this system the line itself was typically not depreciated. Instead, the cost of renewing worn track and stock was charged to revenue when the work was done. That made profits lumpy, and it gave directors an incentive to describe renewals as improvements so they could be charged to capital instead.</p>
+        <p class="src">Related work: a dataset and working paper on Victorian railway capital markets.</p>
+      </div>
+
+      <h3 class="sub-heading">Capital or revenue?</h3>
+      <div class="widget">
+        <p class="instruct">Classify each item of railway spending. <span id="sortScore"></span></p>
+        <div class="errs" id="sorter"></div>
+      </div>
+
+      <h3 class="sub-heading">Depreciation calculator</h3>
+      <div class="widget">
+        <p class="instruct">A railway buys a locomotive. Change the inputs and compare the two most common methods.</p>
+        <div class="fields">
+          <div class="field"><label for="dpCost">Cost (&pound;)</label><input type="number" id="dpCost" value="8000" min="0" step="100"></div>
+          <div class="field"><label for="dpRes">Residual value (&pound;)</label><input type="number" id="dpRes" value="800" min="0" step="100"></div>
+          <div class="field"><label for="dpLife">Useful life (years)</label><input type="number" id="dpLife" value="8" min="1" max="30"></div>
+        </div>
+        <div class="actions">
+          <div class="seg" role="group" aria-label="Depreciation method">
+            <button type="button" class="btn ghost small" data-dp="sl" aria-pressed="true">Straight line</button>
+            <button type="button" class="btn ghost small" data-dp="rb" aria-pressed="false">Reducing balance</button>
+          </div>
+        </div>
+        <p class="tb-state" id="dpRate"></p>
+        <svg class="chart" id="dpChart" viewBox="0 0 640 220" role="img" aria-label="Carrying amount of the locomotive at the end of each year"></svg>
+        <table class="tb" id="dpTable"></table>
+      </div>
+
+      <div class="key-idea"><b>Key idea.</b> Capital expenditure creates an asset whose cost is spread over its useful life through depreciation. Revenue expenditure is an expense of the period. Moving costs between the two changes reported profit.</div>
+
+      <h3 class="sub-heading">Check yourself</h3>
+      <div class="widget"><div id="quiz-capital-and-revenue"></div></div>
+      <nav class="pager" data-for="capital-and-revenue" aria-label="Lesson navigation"></nav>
     </section>
 
     <!-- ============================== 5 ============================== -->
-    <section class="page-section lesson">
-      <h2 class="section-heading"><span class="lesson-num">Five</span>Check yourself</h2>
-      <p>Eight questions on the material above. Answers and reasoning appear as you go.</p>
-      <div class="widget">
-        <div id="quiz"></div>
-        <p class="score" id="score" hidden></p>
+    <section class="page-section lesson" id="ratios">
+      <h2 class="section-heading"><span class="lesson-num">Lesson five</span>Reading the accounts: ratios</h2>
+      <p class="lesson-case">The operating ratio and Victorian railway investors</p>
+
+      <p>Financial statements become useful when you compare figures with each other. A <strong>ratio</strong> turns raw numbers of very different sizes into something comparable across companies and years.</p>
+      <p>Railway investors had their own favourite: the <strong>operating ratio</strong>, working expenses as a percentage of gross receipts. A ratio of 55% means 55p of every &pound;1 of traffic receipts was swallowed by running the line, leaving 45p of net receipts to pay lenders and then shareholders. Its modern descendants are the operating margin and the cost-to-income ratio used for banks.</p>
+      <p>A second classic measure is <strong>interest cover</strong>: net receipts divided by interest payable. It tells lenders how many times over the business could meet its interest bill.</p>
+
+      <div class="archive">
+        <h3>From the archive</h3>
+        <p>Victorian investors could choose between hundreds of railway securities. A coal-export line in South Wales such as the Barry Railway handled dense, profitable traffic; a rural line through mid-Wales such as the Cambrian ran long distances through thinly populated country. My current project uses published railway accounts to test how far investors priced these differences, and whether the operating ratio was the figure that mattered most for the interest rate a railway had to pay.</p>
+        <p class="src">Related work: a Victorian railway capital markets project (in progress).</p>
       </div>
+
+      <h3 class="sub-heading">Operating ratio calculator</h3>
+      <div class="widget">
+        <p class="instruct">Illustrative figures for one year. Choose an example line, then change the inputs.</p>
+        <div class="seg" role="group" aria-label="Example line">
+          <button type="button" class="btn ghost small" data-or="coal" aria-pressed="true">Coal-export line</button>
+          <button type="button" class="btn ghost small" data-or="rural" aria-pressed="false">Rural line</button>
+        </div>
+        <div class="fields" style="margin-top:16px">
+          <div class="field"><label for="orG">Gross receipts (&pound;)</label><input type="number" id="orG" step="1000" min="0"></div>
+          <div class="field"><label for="orW">Working expenses (&pound;)</label><input type="number" id="orW" step="1000" min="0"></div>
+          <div class="field"><label for="orI">Debenture interest (&pound;)</label><input type="number" id="orI" step="1000" min="0"></div>
+        </div>
+        <div class="stats">
+          <div class="stat"><b id="orR">&ndash;</b><span>Operating ratio</span></div>
+          <div class="stat"><b id="orN">&ndash;</b><span>Net receipts</span></div>
+          <div class="stat"><b id="orC">&ndash;</b><span>Interest cover</span></div>
+        </div>
+        <p class="note" id="orNote" aria-live="polite"></p>
+      </div>
+
+      <div class="key-idea"><b>Key idea.</b> Ratios relate one figure to another so that businesses of different sizes can be compared. Always ask what each ratio tells a particular user: a lender cares most about cover, a shareholder about what is left after lenders are paid.</div>
+
+      <h3 class="sub-heading">Check yourself</h3>
+      <div class="widget"><div id="quiz-ratios"></div></div>
+      <nav class="pager" data-for="ratios" aria-label="Lesson navigation"></nav>
+    </section>
+
+    <!-- ============================== 6 ============================== -->
+    <section class="page-section lesson" id="disclosure">
+      <h2 class="section-heading"><span class="lesson-num">Lesson six</span>Disclosure: what the accounts tell, and what they hide</h2>
+      <p class="lesson-case">The Royal Mail case, 1931, and Coca-Cola's sales figures, 1932</p>
+
+      <p>The people who own a company rarely run it. Managers know far more than shareholders and lenders, a gap economists call <strong>information asymmetry</strong>. Published financial statements exist to narrow that gap, and <strong>disclosure</strong> rules decide what managers must reveal.</p>
+      <p>Today UK companies must give a <strong>true and fair view</strong>, and standards dictate a great deal of detail. In the early twentieth century the law required far less, and companies chose how much to say. Lesson two's renewals reserve showed how a single entry could shape what readers saw. The choices companies made, and the stories they told in the chairman's speech and the directors' report, are a central theme of my research.</p>
+
+      <div class="archive">
+        <h3>From the archive</h3>
+        <p>The Royal Mail Steam Packet Company was one of Britain's great shipping groups. Through the late 1920s it was trading at a loss, yet it reported profits and paid dividends by quietly drawing on <strong>secret reserves</strong>, amounts set aside in earlier, better years and not shown separately. The accounts were worded so as not to lie outright. In 1931 its chairman, Lord Kylsant, was convicted over a misleading prospectus; the auditor was acquitted. The case shook confidence in British company reporting and fed into the stricter disclosure of the Companies Act 1948.</p>
+        <p>Disclosure could also move in the other direction. In 1932 The Coca-Cola Company stopped publishing its sales figures, a year before the United States passed its Securities Act. Companies weighed what investors wanted against what competitors could learn.</p>
+        <p class="src">Related work: &ldquo;Disclosing Less by Law&rdquo; (on Coca-Cola), and papers on narrative disclosure in British multinationals and the United Fruit Company's 1930 annual report.</p>
+      </div>
+
+      <h3 class="sub-heading">What would the shareholders have seen?</h3>
+      <div class="widget">
+        <p class="instruct">A simplified shipping company's results for one year. Switch between the figure published and what was really happening.</p>
+        <div class="seg" role="group" aria-label="View">
+          <button type="button" class="btn ghost small" data-dv="pub" aria-pressed="true">As published</button>
+          <button type="button" class="btn ghost small" data-dv="real" aria-pressed="false">Full picture</button>
+        </div>
+        <table class="tb" id="dvT" style="margin-top:18px"></table>
+        <p class="note" id="dvNote" aria-live="polite"></p>
+      </div>
+
+      <div class="key-idea"><b>Key idea.</b> Accounts are only as useful as what they disclose. Rules on disclosure, and the principle of a true and fair view, exist because history shows how easily selective reporting can mislead.</div>
+
+      <h3 class="sub-heading">Check yourself</h3>
+      <div class="widget"><div id="quiz-disclosure"></div></div>
+      <nav class="pager" data-for="disclosure" aria-label="Lesson navigation"></nav>
+    </section>
+
+    <!-- ============================== 7 ============================== -->
+    <section class="page-section lesson" id="tax">
+      <h2 class="section-heading"><span class="lesson-num">Lesson seven</span>Accounting profit, taxable profit and borders</h2>
+      <p class="lesson-case">Rhodesia Railways, 1926&ndash;1946</p>
+
+      <p>The profit in the accounts is not automatically the profit that gets taxed. Tax law has its own rules: some expenses are not deductible, and depreciation is usually replaced by the tax system's own <strong>capital allowances</strong>. So accountants reconcile <strong>accounting profit</strong> to <strong>taxable profit</strong> before calculating the tax bill.</p>
+      <p>A harder problem arises when one business operates in several countries. Which country gets to tax which part of the profit? Today multinational groups use transfer pricing and allocation rules agreed through bodies such as the OECD. Before those existed, the question had to be settled by accountants, administrators and courts.</p>
+
+      <div class="archive">
+        <h3>From the archive</h3>
+        <p>Rhodesia Railways ran a single, physically continuous network across several jurisdictions. A train carrying copper from the north to the coast earned one fare, but crossed several territorial borders on the way. There was no statute saying how the profit should be divided, so it had to be constructed through accounting choices and argued over in the courts, with litigation reaching the Privy Council in 1933.</p>
+        <p class="src">Related work: &ldquo;Constructing a Cross-Border Tax Base Without Statutory Allocation Rules: Accounting and Adjudication in Rhodesia Railways, 1926&ndash;1946&rdquo; (under review).</p>
+      </div>
+
+      <h3 class="sub-heading">Divide the profit</h3>
+      <div class="widget">
+        <p class="instruct">A railway earns a net profit of &pound;1,000,000 across three territories, each taxing at a different rate. Choose the basis for dividing the profit. The railway and its profit do not change at all.</p>
+        <div class="seg" role="group" aria-label="Allocation basis">
+          <button type="button" class="btn ghost small" data-al="miles" aria-pressed="true">Route mileage</button>
+          <button type="button" class="btn ghost small" data-al="receipts" aria-pressed="false">Receipts collected</button>
+          <button type="button" class="btn ghost small" data-al="assets" aria-pressed="false">Capital invested</button>
+          <button type="button" class="btn ghost small" data-al="tonmiles" aria-pressed="false">Ton-miles carried</button>
+        </div>
+        <div id="alRows" style="margin-top:16px"></div>
+        <div class="stats two">
+          <div class="stat"><b id="alTax">&ndash;</b><span>Total tax payable</span></div>
+          <div class="stat"><b id="alRate">&ndash;</b><span>Effective rate on the whole railway</span></div>
+        </div>
+        <p class="note" id="alBasis" aria-live="polite"></p>
+      </div>
+
+      <div class="key-idea"><b>Key idea.</b> Taxable profit is calculated under tax rules, not accounting rules. When a business crosses borders, the way profit is allocated between jurisdictions is itself an accounting choice with real consequences.</div>
+
+      <h3 class="sub-heading">Check yourself</h3>
+      <div class="widget"><div id="quiz-tax"></div></div>
+
+      <div class="archive">
+        <h3>Where next</h3>
+        <p>You now have the core vocabulary of financial accounting: the equation, double entry, accruals, capital and revenue, ratios, disclosure and tax. Your modules this year will build each of these into a full set of financial statements. When the rules feel arbitrary, remember that each was written in answer to a problem that a real company once got wrong.</p>
+        <p>To read more of the research behind these cases, see my <a href="../publications.html">publications</a>.</p>
+      </div>
+      <nav class="pager" data-for="tax" aria-label="Lesson navigation"></nav>
     </section>
 
     <section class="page-section">
-      <p style="color:var(--muted);font-size:.95rem">Built for undergraduate accounting teaching at Aston Business School. Reuse freely with attribution; corrections welcome at <a href="mailto:a.primmer@aston.ac.uk">a.primmer@aston.ac.uk</a>.</p>
+      <p style="color:var(--muted);font-size:.95rem">Built for accounting teaching at Aston Business School, including students beginning the MSc in Accounting and Finance with no prior accounting knowledge. Reuse freely with attribution; corrections welcome at <a href="mailto:a.primmer@aston.ac.uk">a.primmer@aston.ac.uk</a>.</p>
     </section>
 
   </div>
@@ -288,6 +554,6 @@
   </div>
 </footer>
 
-<script src="debits-and-credits.js"></script>
+<script src="accounting-from-the-archive.js"></script>
 </body>
 </html>
