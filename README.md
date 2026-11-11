@@ -14,6 +14,10 @@ Personal academic website of Dr Andrew Primmer, Teaching Fellow in Accounting at
   - `umhk_1933.html` — Union Minière du Haut-Katanga, 1933 bilingual transcription
 - `debits-and-credits.html` — Interactive teaching resource on double entry
 - `debits-and-credits.js` — Ledger simulation, trial balance, and quiz logic
+- `teaching/` — Teaching resources
+  - `index.html` — Accounting from the Archive course and teaching index
+  - `revenue-recognition/` — Revenue Recognition in Six Videos
+  - `halden-motors/` — Management Accounting with Claude for Excel: Halden Motors dataset, 16 exercise prompts and worked solutions (`files/`)
 - `folioscribe/` — FolioScribe digital humanities project landing page
 - `assets/`
   - `style.css` — Shared site stylesheet
