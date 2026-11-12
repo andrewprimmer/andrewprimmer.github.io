@@ -36,6 +36,13 @@
   .answer p{margin:.6em 0 0;font-size:.95rem}
   .dl{margin-top:14px}
   .sub-heading{font-family:var(--display);font-weight:400;font-size:1.25rem;margin:32px 0 8px}
+  .shorts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,300px));gap:28px;margin:16px 0 0}
+  .short video{display:block;width:100%;height:auto;aspect-ratio:9/16;background:#0B1A2E;border:1px solid var(--rule)}
+  .short-title{margin:10px 0 0;font-family:var(--display);font-size:1.02rem}
+  .short-title span{display:block;font-family:inherit;font-size:.85rem;color:var(--accent)}
+  .script{margin:10px 0 0;border:1px solid var(--rule);padding:8px 14px}
+  .script summary{cursor:pointer;font-family:var(--display);color:var(--accent);font-size:.95rem}
+  .script p{margin:.6em 0 0;font-size:.92rem}
   .player{margin:16px 0 0}
   .player video{display:block;width:100%;height:auto;background:#0F1B2D;border:1px solid var(--rule)}
   .back{margin-top:6px;font-size:.9rem}
@@ -85,6 +92,7 @@
 
       <h2 class="section-heading">How to work through an exercise</h2>
       <ol>
+        <li>If the technique is new to you, watch the short basics video at the top of the exercise.</li>
         <li>Open the dataset in Excel and start Claude for Excel from the ribbon.</li>
         <li>Copy the exercise prompt below and paste it into Claude.</li>
         <li>Check what Claude builds. Click into its formulas, trace the cell references and test them with a figure you can work out by hand.</li>
@@ -102,6 +110,27 @@
     <section class="page-section micro" id="exercise-1">
       <h2 class="section-heading"><span class="lesson-num">Exercise one</span>Standard costing &amp; variance analysis</h2>
       <p class="lesson-case">Sheets used: Std_Cost_Card, Actual_Costs, Sales_Production</p>
+      <h3 class="sub-heading">The basics in two minutes</h3>
+      <p>Two short videos on the technique, with a simple worked example in each. Watch them before you try the exercise.</p>
+      <div class="shorts">
+        <div class="short">
+          <video controls playsinline preload="none" poster="posters/basics-1a.jpg" width="540" height="960">
+            <source src="videos/basics-1a.mp4" type="video/mp4">
+            Your browser cannot play this video. <a href="videos/basics-1a.mp4">Download it instead</a>.
+          </video>
+          <p class="short-title">Flexing the budget and material variances<span>Part 1 &middot; 1:40 &middot; no sound</span></p>
+          <details class="script"><summary>Read the script</summary><p>Variance analysis, part one. A standard cost is what one unit should cost. A variance is the gap between what it should have cost and what it did cost.</p><p>A workshop makes chairs. The standard for one chair is four kilos of wood at five pounds a kilo, and two hours of labour at twelve pounds an hour.</p><p>The budget was a thousand chairs. The workshop actually made eleven hundred.</p><p>Never compare actual cost with the original budget. Flex it: ask what eleven hundred chairs should have cost.</p><p>For wood: eleven hundred chairs at four kilos is forty-four hundred kilos. At five pounds, that should cost twenty-two thousand.</p><p>It actually used forty-six hundred kilos at five pounds fifty: twenty-five thousand three hundred. That is three thousand three hundred adverse.</p><p>Pause the video. How much of that three thousand three hundred is down to the price paid, and how much to the quantity used?</p><p>Price variance: the difference in price, times the actual quantity. Fifty pence times forty-six hundred kilos is two thousand three hundred adverse.</p><p>Usage variance: the extra quantity, valued at standard price. Two hundred kilos at five pounds is one thousand adverse.</p><p>Check: two thousand three hundred plus one thousand is three thousand three hundred.</p><p>Who owns each one? Price belongs to purchasing: market prices, supplier choice, the quality bought. Usage belongs to production: scrap, machine faults, skill.</p><p>And they interact. Cheap wood can give a favourable price variance and an adverse usage variance. Next: labour and variable overhead.</p></details>
+        </div>
+        <div class="short">
+          <video controls playsinline preload="none" poster="posters/basics-1b.jpg" width="540" height="960">
+            <source src="videos/basics-1b.mp4" type="video/mp4">
+            Your browser cannot play this video. <a href="videos/basics-1b.mp4">Download it instead</a>.
+          </video>
+          <p class="short-title">Labour and variable overhead variances<span>Part 2 &middot; 1:40 &middot; no sound</span></p>
+          <details class="script"><summary>Read the script</summary><p>Variance analysis, part two. Same workshop, same eleven hundred chairs. Now the people and the overheads.</p><p>Labour should take two hours a chair: twenty-two hundred hours at twelve pounds, twenty-six thousand four hundred.</p><p>The workshop paid for twenty-four hundred hours at twelve pounds forty. A hundred and fifty of those hours were idle during a breakdown, so twenty-two fifty were worked. Total: three thousand three hundred and sixty adverse.</p><p>Rate variance: forty pence times the twenty-four hundred hours paid. Nine hundred and sixty adverse.</p><p>Idle time: a hundred and fifty idle hours at the standard rate. Eighteen hundred adverse.</p><p>Efficiency: hours worked against standard hours. Fifty hours at twelve pounds, six hundred adverse.</p><p>Check: nine sixty, plus eighteen hundred, plus six hundred, is three thousand three hundred and sixty.</p><p>Variable overhead follows the hours worked. The standard is three pounds an hour. The actual cost was seven thousand two hundred.</p><p>Spending variance: actual cost, less hours worked at the standard rate. Four hundred and fifty adverse.</p><p>Efficiency variance: the same fifty extra hours, at three pounds. One hundred and fifty adverse.</p><p>Notice the pattern. Every cost variance is one of two shapes. A price type: the difference in rate, times the actual quantity. Or a quantity type: the difference in quantity, times the standard rate.</p><p>Then ask why. A pay award? A breakdown? New staff? The number only starts the conversation.</p></details>
+        </div>
+      </div>
+      <h3 class="sub-heading">The exercise</h3>
       <div class="prompt">
         <div class="prompt-head"><span>Prompt for Claude for Excel</span><button type="button" class="copy" data-target="prompt-1">Copy prompt</button></div>
         <p id="prompt-1">Build a flexed budget for each model and month, then calculate material price &amp; usage, labour rate, idle time &amp; efficiency, and variable overhead spending &amp; efficiency variances. Summarise the five largest variances and their likely causes.</p>
@@ -125,6 +154,19 @@
     <section class="page-section micro" id="exercise-2">
       <h2 class="section-heading"><span class="lesson-num">Exercise two</span>Sales variances</h2>
       <p class="lesson-case">Sheets used: Products, Std_Cost_Card, Sales_Production</p>
+      <h3 class="sub-heading">The basics in two minutes</h3>
+      <p>Why selling more units can still disappoint: price and volume variances, then volume split into mix and quantity. Watch it before you try the exercise.</p>
+      <div class="shorts">
+        <div class="short">
+          <video controls playsinline preload="none" poster="posters/basics-2.jpg" width="540" height="960">
+            <source src="videos/basics-2.mp4" type="video/mp4">
+            Your browser cannot play this video. <a href="videos/basics-2.mp4">Download it instead</a>.
+          </video>
+          <p class="short-title">Sales price, volume, mix and quantity<span>1:39 &middot; no sound</span></p>
+          <details class="script"><summary>Read the script</summary><p>Sales variances. Selling more is not enough. What you sell, and at what price, matters too.</p><p>A bike shop sells two models. The budget is six hundred Standard bikes at a hundred pounds, earning forty pounds contribution each, and four hundred Deluxe at two hundred pounds, earning ninety.</p><p>It actually sold seven hundred and seventy Standard at ninety-five pounds, and three hundred and thirty Deluxe at full price. Eleven hundred bikes in all.</p><p>Price variance: the price difference times the units actually sold. Five pounds off seven hundred and seventy bikes is three thousand eight hundred and fifty adverse.</p><p>Volume variance: the change in units, times standard contribution. A hundred and seventy more Standard is six thousand eight hundred favourable. Seventy fewer Deluxe is six thousand three hundred adverse. Net: five hundred favourable.</p><p>Pause the video. A hundred extra bikes, but only five hundred pounds of extra contribution. Why so little?</p><p>Split it in two. Quantity: the extra units, at the budget average contribution. The budget earns sixty thousand on a thousand bikes, so sixty pounds each. A hundred extra is six thousand favourable.</p><p>Mix: at the budget mix, eleven hundred bikes would be six sixty Standard and four forty Deluxe. The shop sold a hundred and ten more of the low earner and a hundred and ten fewer of the high earner. Five thousand five hundred adverse.</p><p>Check: six thousand favourable, less five thousand five hundred adverse, is five hundred favourable.</p><p>What it tells you. Price is about discounting and competition. Quantity is about market size and share. Mix is about which products customers chose. Each one needs a different conversation.</p></details>
+        </div>
+      </div>
+      <h3 class="sub-heading">The exercise</h3>
       <div class="prompt">
         <div class="prompt-head"><span>Prompt for Claude for Excel</span><button type="button" class="copy" data-target="prompt-2">Copy prompt</button></div>
         <p id="prompt-2">Calculate sales price, sales volume (contribution basis), sales mix and quantity variances by model for FY2025.</p>
@@ -148,6 +190,19 @@
     <section class="page-section micro" id="exercise-3">
       <h2 class="section-heading"><span class="lesson-num">Exercise three</span>Absorption vs marginal costing</h2>
       <p class="lesson-case">Sheets used: Std_Cost_Card, Assumptions, Sales_Production, Fixed_Costs</p>
+      <h3 class="sub-heading">The basics in two minutes</h3>
+      <p>Two ways to treat fixed production overhead, why they give different profits, and how stock explains the gap. Watch it before you try the exercise.</p>
+      <div class="shorts">
+        <div class="short">
+          <video controls playsinline preload="none" poster="posters/basics-3.jpg" width="540" height="960">
+            <source src="videos/basics-3.mp4" type="video/mp4">
+            Your browser cannot play this video. <a href="videos/basics-3.mp4">Download it instead</a>.
+          </video>
+          <p class="short-title">Absorption vs marginal costing<span>1:35 &middot; no sound</span></p>
+          <details class="script"><summary>Read the script</summary><p>Absorption and marginal costing. One factory, two profit figures. The only difference is what happens to fixed production overhead.</p><p>Under marginal costing, stock is valued at variable cost only. Fixed overhead is charged in full to the period.</p><p>Under absorption costing, each unit absorbs a share of fixed overhead, and that share sits in stock until the unit is sold.</p><p>A factory sells one product at fifteen pounds. Variable cost is six pounds. Fixed overhead is forty thousand a month, across ten thousand units: four pounds each.</p><p>This month it made ten thousand and sold eight thousand. Two thousand units go into stock.</p><p>Pause the video and work out the profit under each method.</p><p>Marginal: sales of a hundred and twenty thousand, less variable cost of forty-eight thousand, gives contribution of seventy-two thousand. Take off all forty thousand of fixed overhead. Profit: thirty-two thousand.</p><p>Absorption: the same sales, less eight thousand units at the full cost of ten pounds. Profit: forty thousand.</p><p>The gap is eight thousand. That is two thousand units in stock, each carrying four pounds of fixed overhead into next month.</p><p>The rule. When stock rises, absorption profit is higher. When stock falls, marginal profit is higher. With no change in stock, they agree.</p><p>Why it matters. Under absorption, a manager can lift profit just by producing for stock. Marginal costing suits decisions. Absorption is required for published accounts.</p></details>
+        </div>
+      </div>
+      <h3 class="sub-heading">The exercise</h3>
       <div class="prompt">
         <div class="prompt-head"><span>Prompt for Claude for Excel</span><button type="button" class="copy" data-target="prompt-3">Copy prompt</button></div>
         <p id="prompt-3">Calculate the fixed overhead absorption rate per labour hour, prepare quarterly profit statements under absorption and marginal costing, and reconcile the difference through inventory movements.</p>
@@ -171,6 +226,19 @@
     <section class="page-section micro" id="exercise-4">
       <h2 class="section-heading"><span class="lesson-num">Exercise four</span>Activity-Based Costing</h2>
       <p class="lesson-case">Sheets used: ABC_Cost_Pools, Std_Cost_Card, Products</p>
+      <h3 class="sub-heading">The basics in two minutes</h3>
+      <p>Why a single labour-hour rate misprices products, and how ABC assigns overhead by the activities each product causes. Watch it before you try the exercise.</p>
+      <div class="shorts">
+        <div class="short">
+          <video controls playsinline preload="none" poster="posters/basics-4.jpg" width="540" height="960">
+            <source src="videos/basics-4.mp4" type="video/mp4">
+            Your browser cannot play this video. <a href="videos/basics-4.mp4">Download it instead</a>.
+          </video>
+          <p class="short-title">Activity-based costing<span>1:44 &middot; no sound</span></p>
+          <details class="script"><summary>Read the script</summary><p>Activity-based costing. Who really causes the overhead? ABC shares it out by the activities each product uses, not by labour hours.</p><p>A factory makes two products. Nine thousand Basic and one thousand Custom. Each takes one labour hour. Overhead is two hundred thousand.</p><p>The traditional method divides overhead by labour hours. Twenty pounds on every unit, Basic or Custom.</p><p>But Custom needs far more set-ups and inspections.</p><p>ABC has four steps. Group overhead into activity cost pools. Pick a cost driver for each pool. Divide pool cost by driver volume to get a rate. Then charge each product for the drivers it uses.</p><p>Two pools. Set-ups cost a hundred and twenty thousand, for forty set-ups. Inspection costs eighty thousand, for eight hundred inspections.</p><p>So a set-up costs three thousand pounds, and an inspection costs a hundred.</p><p>Pause the video. Basic uses ten set-ups and two hundred inspections. Custom uses thirty and six hundred. What is the overhead per unit?</p><p>Basic: thirty thousand plus twenty thousand is fifty thousand. Across nine thousand units, five pounds fifty-six each.</p><p>Custom: ninety thousand plus sixty thousand is a hundred and fifty thousand. Across one thousand units, a hundred and fifty pounds each.</p><p>Check: fifty plus a hundred and fifty is the full two hundred thousand.</p><p>Under the traditional rate both carried twenty pounds. Under ABC, Basic carries under six, and Custom carries a hundred and fifty.</p><p>That is cross-subsidy. The high-volume product was paying for the complex one. Total overhead is unchanged. ABC only changes who carries it.</p></details>
+        </div>
+      </div>
+      <h3 class="sub-heading">The exercise</h3>
       <div class="prompt">
         <div class="prompt-head"><span>Prompt for Claude for Excel</span><button type="button" class="copy" data-target="prompt-4">Copy prompt</button></div>
         <p id="prompt-4">Compute cost driver rates and a full ABC cost per vehicle for each model. Compare with the traditional labour-hour absorption cost and comment on Torque GT&#x27;s profitability.</p>
@@ -194,6 +262,19 @@
     <section class="page-section micro" id="exercise-5">
       <h2 class="section-heading"><span class="lesson-num">Exercise five</span>Overhead apportionment</h2>
       <p class="lesson-case">Sheets used: Departments</p>
+      <h3 class="sub-heading">The basics in two minutes</h3>
+      <p>The four steps that take overhead from the invoice to a rate per hour, with a three-department example. Watch it before you try the exercise.</p>
+      <div class="shorts">
+        <div class="short">
+          <video controls playsinline preload="none" poster="posters/basics-5.jpg" width="540" height="960">
+            <source src="videos/basics-5.mp4" type="video/mp4">
+            Your browser cannot play this video. <a href="videos/basics-5.mp4">Download it instead</a>.
+          </video>
+          <p class="short-title">Allocate, apportion, reapportion, absorb<span>1:44 &middot; no sound</span></p>
+          <details class="script"><summary>Read the script</summary><p>Overhead apportionment: getting overhead from the invoice to a rate per hour. Four steps. Allocate, apportion, reapportion, absorb.</p><p>Allocate: a cost that belongs to one department goes straight to it. Apportion: a shared cost is split on a fair basis.</p><p>Rent is split on floor area. The canteen on headcount. Machine insurance on machine value.</p><p>Rent is sixty thousand. Machining has half the floor, so thirty thousand. Assembly eighteen thousand. Maintenance twelve thousand.</p><p>Add the costs already allocated. Machining now holds a hundred thousand, Assembly sixty thousand, and Maintenance forty thousand.</p><p>Step three. Maintenance makes nothing. It is a service department, so its forty thousand moves to the departments it serves.</p><p>Pause the video. Maintenance spends seventy-five percent of its hours in Machining and twenty-five percent in Assembly. What are the new totals?</p><p>Machining takes thirty thousand, making a hundred and thirty. Assembly takes ten thousand, making seventy. The total is still two hundred thousand.</p><p>Step four: absorb. Machining divides by thirteen thousand machine hours: ten pounds an hour. Assembly divides by fourteen thousand labour hours: five pounds an hour.</p><p>Use the hours that drive each department. Machines in Machining, people in Assembly.</p><p>One complication: service departments often serve each other. Step-down clears them one at a time and ignores work flowing back. The reciprocal method recognises both directions, using repeated rounds or equations.</p><p>The answers are usually close. Reciprocal is the more accurate.</p></details>
+        </div>
+      </div>
+      <h3 class="sub-heading">The exercise</h3>
       <div class="prompt">
         <div class="prompt-head"><span>Prompt for Claude for Excel</span><button type="button" class="copy" data-target="prompt-5">Copy prompt</button></div>
         <p id="prompt-5">Apportion shared overheads using the suggested bases, then reapportion service centres using (a) step-down and (b) the reciprocal method. Compute a machine-hour rate for Body Shop and labour-hour rates for Final Assembly.</p>
@@ -209,6 +290,19 @@
     <section class="page-section micro" id="exercise-6">
       <h2 class="section-heading"><span class="lesson-num">Exercise six</span>Aged debtor analysis &amp; credit control</h2>
       <p class="lesson-case">Sheets used: Debtors_Ledger, Customers</p>
+      <h3 class="sub-heading">The basics in two minutes</h3>
+      <p>Ageing bands, debtor days and a bad-debt provision, worked through on a £100,000 sales ledger. Watch it before you try the exercise.</p>
+      <div class="shorts">
+        <div class="short">
+          <video controls playsinline preload="none" poster="posters/basics-6.jpg" width="540" height="960">
+            <source src="videos/basics-6.mp4" type="video/mp4">
+            Your browser cannot play this video. <a href="videos/basics-6.mp4">Download it instead</a>.
+          </video>
+          <p class="short-title">Reading an aged debtor report<span>1:51 &middot; no sound</span></p>
+          <details class="script"><summary>Read the script</summary><p>Aged debtors. Who owes us, and for how long? A sale is not cash until the customer pays. The aged debtor report shows how late they are.</p><p>Every unpaid invoice goes into a band, by the number of days past its due date.</p><p>Here is a ledger of a hundred thousand pounds. Sixty percent is current, not yet due. Twenty percent is up to thirty days late. Ten percent is thirty-one to sixty. Six percent is sixty-one to ninety, and four percent is over ninety days late.</p><p>Age from the due date, not the invoice date. Otherwise every customer on sixty-day terms looks late.</p><p>Debtor days: debtors, divided by credit sales, times three hundred and sixty-five. Pause the video. Debtors are a hundred thousand and credit sales for the year are seven hundred and thirty thousand. How many days does it take to collect?</p><p>A hundred thousand over seven hundred and thirty thousand, times three sixty-five, is fifty days. If terms are thirty days, customers are taking twenty days too long.</p><p>The older the debt, the less likely it is to be paid. So provide a higher percentage on the older bands.</p><p>One percent of current is six hundred. Two percent of the next band is four hundred. Ten percent is a thousand. Twenty-five percent is fifteen hundred. Fifty percent of the oldest is two thousand. Total provision: five thousand five hundred.</p><p>The rates are a judgement. Base them on past collection experience.</p><p>What to look for. Customers over their credit limit. Disputed invoices, which are a query, not a slow payer. Unallocated cash and credit notes not yet matched. And one large old balance hiding in the total.</p><p>Then act. Chase the oldest and largest first, and stop supplying before the loss grows.</p></details>
+        </div>
+      </div>
+      <h3 class="sub-heading">The exercise</h3>
       <div class="prompt">
         <div class="prompt-head"><span>Prompt for Claude for Excel</span><button type="button" class="copy" data-target="prompt-6">Copy prompt</button></div>
         <p id="prompt-6">Using the report date of 31-Dec-2025, calculate the outstanding balance on every open item and age it by days past due into Current, 1–30, 31–60, 61–90 and 90+ days. Build an aged debtor report by customer with totals, % of ledger in each band, and flags for customers over their credit limit. Then calculate debtor days and suggest a bad-debt provision.</p>
