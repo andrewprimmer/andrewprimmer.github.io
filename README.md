@@ -17,7 +17,7 @@ Personal academic website of Dr Andrew Primmer, Teaching Fellow in Accounting at
 - `teaching/` — Teaching resources
   - `index.html` — Accounting from the Archive course and teaching index
   - `revenue-recognition/` — Revenue Recognition in Six Videos
-  - `halden-motors/` — Management Accounting with Claude for Excel: Halden Motors dataset, 16 exercise prompts and worked solutions (`files/`)
+  - `halden-motors/` — Management Accounting with Claude for Excel: Halden Motors dataset, 6 exercise prompts and worked solutions (`files/`)
 - `folioscribe/` — FolioScribe digital humanities project landing page
 - `assets/`
   - `style.css` — Shared site stylesheet
