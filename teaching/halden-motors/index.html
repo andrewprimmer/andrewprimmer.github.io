@@ -30,6 +30,11 @@
   .copy{background:none;border:1px solid var(--rule);color:var(--soft);padding:4px 11px;font-family:var(--display);font-size:.88rem;cursor:pointer}
   .copy:hover{border-color:var(--accent);color:var(--accent)}
   .copy:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  .gemini{margin:12px 0 0;border:1px solid var(--rule);padding:10px 16px}
+  .gemini summary{cursor:pointer;font-family:var(--display);color:var(--accent)}
+  .gemini>p{margin:.6em 0 0;font-size:.95rem}
+  .gemini .prompt{margin-top:12px}
+  .gprompt{margin:8px 0 0;white-space:pre-wrap;overflow-wrap:anywhere;font-family:inherit;font-size:.9rem;line-height:1.5;max-height:24em;overflow:auto}
   .label{font-family:var(--display);font-weight:400;color:var(--accent)}
   .answer{margin:14px 0 0;border:1px solid var(--rule);padding:10px 16px}
   .answer summary{cursor:pointer;font-family:var(--display);color:var(--accent)}
@@ -98,8 +103,17 @@
         <li>Check what Claude builds. Click into its formulas, trace the cell references and test them with a figure you can work out by hand.</li>
         <li>Explain the result in business terms using the discussion point. Only then compare your answer with the worked solution.</li>
       </ol>
+      <h3 class="sub-heading">No Claude for Excel? Use Google Gemini</h3>
+      <p>Every exercise also has a prompt written for the free version of Google Gemini, which runs in a browser, in class or at home. Gemini does not work inside your workbook. You upload the dataset and it sends back a new Excel file. The Gemini prompt is much longer than the Claude one because it names every sheet, column and formula to use.</p>
+      <ol>
+        <li>Go to <a href="https://gemini.google.com">gemini.google.com</a> and sign in with a Google account.</li>
+        <li>Start a new chat and attach the Halden Motors dataset (.xlsx).</li>
+        <li>Open &ldquo;Show the Gemini prompt&rdquo; under the exercise, copy it, paste it into the same message and send.</li>
+        <li>Download the Excel file Gemini makes and open it in Excel.</li>
+        <li>Check it as you would check Claude&rsquo;s work. Read the checks at the bottom of the sheet, trace a formula, and compare the totals with the worked solution. If a check fails, or the file has typed numbers where formulas should be, tell Gemini what is wrong and ask for a corrected file.</li>
+      </ol>
       <p>Each worked solution is a single sheet. It copies the inputs it needs, builds every calculation as a live formula, and opens with the key findings. Blue figures are inputs from the dataset, black are formulas, and yellow cells are assumptions you can change. The key findings are written text and will not update when you change an input.</p>
-      <div class="callout">Claude can make mistakes, as can any spreadsheet. Treat its output the way you would treat a junior colleague's work: check it before you rely on it.</div>
+      <div class="callout">Claude and Gemini can make mistakes, as can any spreadsheet. Treat their output the way you would treat a junior colleague's work: check it before you rely on it.</div>
 
       <h2 class="section-heading">The exercises</h2>
       <ol class="lesson-index">
@@ -135,6 +149,69 @@
         <div class="prompt-head"><span>Prompt for Claude for Excel</span><button type="button" class="copy" data-target="prompt-1">Copy prompt</button></div>
         <p id="prompt-1">Build a flexed budget for each model and month, then calculate material price &amp; usage, labour rate, idle time &amp; efficiency, and variable overhead spending &amp; efficiency variances. Summarise the five largest variances and their likely causes.</p>
       </div>
+      <details class="gemini">
+        <summary>Using Google Gemini instead? Show the Gemini prompt</summary>
+        <p>For the free version of Gemini. Attach the dataset (.xlsx) to your message, paste this prompt and send. Gemini returns a new Excel file to download.</p>
+        <div class="prompt">
+          <div class="prompt-head"><span>Prompt for Google Gemini</span><button type="button" class="copy" data-target="gemini-1">Copy prompt</button></div>
+          <pre class="gprompt" id="gemini-1">I have uploaded the Excel workbook Halden_Motors_Management_Accounting_Dataset.xlsx. It holds the 2025 data of Halden Motors, a fictional UK car maker with four models, coded SPR, RDG, TRQ and HAU. Act as a careful management accountant and build a worked solution to the exercise below.
+
+RULES
+1. Use only figures from the uploaded workbook. Do not invent, estimate or round any input. If you cannot find a sheet or column that I name, stop and tell me which one is missing.
+2. Read the workbook and do every calculation with code, not in your head.
+3. Follow the steps in order and use exactly the formulas I give. Do not swap in a different method.
+4. Do not ask me questions first. Start now.
+
+EXERCISE 1: STANDARD COSTING AND VARIANCE ANALYSIS
+
+WHERE THE DATA IS
+- Sheet "Std_Cost_Card": headings in row 3, one row per model in rows 4 to 7. Use these columns: Model code, Steel (kg), Aluminium (kg), Battery capacity (kWh), Bought-in components kit (£), Assembly hours, Technician hours, Steel £/kg, Aluminium £/kg, Cells £/kWh, Assembly £/hr, Technician £/hr, Var OH £/DLH, Std variable production cost (£). These are the standards per vehicle.
+- Sheet "Actual_Costs": headings in row 4, then 48 rows (12 months x 4 models). Use these columns: Month, Model code, Actual units produced, Steel used (kg), Steel cost (£), Aluminium used (kg), Aluminium cost (£), Battery cells used (kWh), Battery cell cost (£), Bought-in kits cost (£), Assembly hours paid, Assembly hours worked, Assembly labour cost (£), Technician hours paid, Technician hours worked, Technician labour cost (£), Variable overhead incurred (£).
+- Sheet "README", cell C9: the events of 2025. Read it before step 5.
+
+SIGN CONVENTION
+Every variance = standard minus actual. A positive figure is favourable (F). A negative figure is adverse (A). Label every total F or A.
+
+STEPS
+1. Copy the standards for the four models into an Inputs table.
+2. Copy the 48 rows of Actual_Costs into a Workings table. Match each row to its model's standards. "Units" means Actual units produced. Materials are bought just in time, so quantity bought = quantity used.
+3. For each of the 48 rows calculate these 15 variances:
+   - Steel price = Steel used (kg) x standard steel £/kg, minus Steel cost (£)
+   - Steel usage = (Units x standard steel kg, minus Steel used (kg)) x standard steel £/kg
+   - Aluminium price and Aluminium usage: the same two formulas with the aluminium columns
+   - Battery cell price and Battery cell usage: the same two formulas with the kWh columns and Cells £/kWh
+   - Bought-in kits total = Units x standard kit £, minus Bought-in kits cost (£)
+   - Assembly labour rate = Assembly hours paid x standard assembly £/hr, minus Assembly labour cost (£)
+   - Assembly idle time = minus (Assembly hours paid minus Assembly hours worked) x standard assembly £/hr
+   - Assembly efficiency = (Units x standard assembly hours, minus Assembly hours worked) x standard assembly £/hr. Use hours WORKED here, never hours paid.
+   - Technician labour rate, Technician idle time, Technician efficiency: the same three formulas with the technician columns
+   - Variable overhead spending = (Assembly hours worked + Technician hours worked) x standard Var OH £/DLH, minus Variable overhead incurred (£)
+   - Variable overhead efficiency = (Units x (standard assembly hours + standard technician hours), minus (Assembly hours worked + Technician hours worked)) x standard Var OH £/DLH
+   Also calculate for each row:
+   - Flexed budget = Units x Std variable production cost (£)
+   - Actual cost = Steel cost + Aluminium cost + Battery cell cost + Bought-in kits cost + Assembly labour cost + Technician labour cost + Variable overhead incurred
+   - Row check = Flexed budget minus Actual cost minus the sum of the 15 variances. It must be 0.
+4. Build Result 1: the 15 variances as rows, with columns SPR, RDG, TRQ, HAU, Total and F/A, summed over the year. Add rows for Total variance, Flexed budget, Actual cost, and Total variance as a % of flexed budget.
+5. Build Result 2: one row per month (all models added together) with columns Material price, Material usage, Bought-in kits, Labour rate, Idle time, Labour efficiency, Variable overhead spending, Variable overhead efficiency, Total.
+6. Build Result 3: the five largest variances from the Total column of Result 1, ranked by absolute size. For each give the amount, F or A, the month where it was largest, and one sentence on the likely cause. Use only the events in README cell C9 as causes. If none of them fits, write "no event in the data explains this".
+
+CHECKS
+- Total of all 48 row checks = 0.
+- Result 1 total variance = total Flexed budget minus total Actual cost.
+- Result 2 year total = Result 1 total variance.
+
+OUTPUT
+Create one Microsoft Excel (.xlsx) file that I can download, named Halden_Ex1_Variances_Gemini.xlsx. Put everything on one sheet named "Ex1 Variances", in this order from the top:
+- Row 1: the title "Exercise 1: Standard costing variances - Halden Motors FY2025".
+- Key findings: five short bullet points in plain English, each with its figure.
+- Inputs: the figures you copied from the dataset, each labelled with the sheet it came from.
+- Workings and results: the tables described in the steps, in step order.
+- Checks: each check from the steps, with its value.
+Write every calculated cell as a live Excel formula that refers to input cells on this sheet (for example =B12*C12), not as a typed number. If you cannot write formulas into the file, type the values and say so in row 2.
+Format money as £ with no decimals and percentages with one decimal place.
+Then, in the chat, give me the download link, list the checks and say whether each one passed.</pre>
+        </div>
+      </details>
       <p><b class="label">Discuss:</b> Link variances to operational events (cell price spike, pay award, robots, strike).</p>
       <details class="answer">
         <summary>Show the headline answer</summary>
@@ -171,6 +248,69 @@
         <div class="prompt-head"><span>Prompt for Claude for Excel</span><button type="button" class="copy" data-target="prompt-2">Copy prompt</button></div>
         <p id="prompt-2">Calculate sales price, sales volume (contribution basis), sales mix and quantity variances by model for FY2025.</p>
       </div>
+      <details class="gemini">
+        <summary>Using Google Gemini instead? Show the Gemini prompt</summary>
+        <p>For the free version of Gemini. Attach the dataset (.xlsx) to your message, paste this prompt and send. Gemini returns a new Excel file to download.</p>
+        <div class="prompt">
+          <div class="prompt-head"><span>Prompt for Google Gemini</span><button type="button" class="copy" data-target="gemini-2">Copy prompt</button></div>
+          <pre class="gprompt" id="gemini-2">I have uploaded the Excel workbook Halden_Motors_Management_Accounting_Dataset.xlsx. It holds the 2025 data of Halden Motors, a fictional UK car maker with four models, coded SPR, RDG, TRQ and HAU. Act as a careful management accountant and build a worked solution to the exercise below.
+
+RULES
+1. Use only figures from the uploaded workbook. Do not invent, estimate or round any input. If you cannot find a sheet or column that I name, stop and tell me which one is missing.
+2. Read the workbook and do every calculation with code, not in your head.
+3. Follow the steps in order and use exactly the formulas I give. Do not swap in a different method.
+4. Do not ask me questions first. Start now.
+
+EXERCISE 2: SALES VARIANCES (CONTRIBUTION BASIS)
+
+WHERE THE DATA IS
+- Sheet "Sales_Production": headings in row 4, then 48 rows (12 months x 4 models). Use these columns: Model code, Budget units sold, Actual units sold, Actual revenue (£).
+- Sheet "Products": headings in row 3, models in rows 4 to 7. Use the column List price (£, ex VAT). This is the standard selling price.
+- Sheet "Std_Cost_Card": headings in row 3, models in rows 4 to 7. Use the column Std contribution (£/unit).
+
+SIGN CONVENTION
+A positive variance is favourable (F): it raises profit. A negative variance is adverse (A). Label every figure F or A.
+
+STEPS
+1. Build an Inputs table with one row per model and a Total row. Columns:
+   - Budget units = sum of Budget units sold over the 12 months
+   - Actual units = sum of Actual units sold over the 12 months
+   - Actual revenue = sum of Actual revenue (£) over the 12 months
+   - Standard price = List price (£, ex VAT)
+   - Standard contribution per unit = Std contribution (£/unit)
+2. For each model calculate:
+   - Actual average price = Actual revenue / Actual units
+   - Sales price variance = Actual revenue minus (Actual units x Standard price)
+   - Budget mix % = the model's Budget units / total Budget units
+   - Actual units at budget mix = total Actual units (all four models) x Budget mix %
+   - Sales mix variance = (Actual units minus Actual units at budget mix) x Standard contribution per unit
+   - Sales quantity variance = (Actual units at budget mix minus Budget units) x Standard contribution per unit
+   - Sales volume variance = Sales mix variance + Sales quantity variance
+   Add a Total row.
+3. Build a reconciliation:
+   - Budgeted contribution = sum over models of Budget units x Standard contribution per unit
+   - add Sales volume variance (show the mix and quantity parts under it)
+   - add Sales price variance
+   - = Actual contribution at standard cost
+4. In the key findings, say which variances look market-driven and which look management-driven, with one reason each. Read sheet "README", cell C9, for the events of 2025 and use only those.
+
+CHECKS
+- For each model: (Actual units minus Budget units) x Standard contribution per unit, minus Sales volume variance = 0.
+- Total Budget mix % = 100%.
+- Total Actual units at budget mix = total Actual units.
+
+OUTPUT
+Create one Microsoft Excel (.xlsx) file that I can download, named Halden_Ex2_Sales_Variances_Gemini.xlsx. Put everything on one sheet named "Ex2 Sales variances", in this order from the top:
+- Row 1: the title "Exercise 2: Sales variances - Halden Motors FY2025".
+- Key findings: four short bullet points in plain English, each with its figure.
+- Inputs: the figures you copied from the dataset, each labelled with the sheet it came from.
+- Workings and results: the tables described in the steps, in step order.
+- Checks: each check from the steps, with its value.
+Write every calculated cell as a live Excel formula that refers to input cells on this sheet (for example =B12*C12), not as a typed number. If you cannot write formulas into the file, type the values and say so in row 2.
+Format money as £ with no decimals and percentages with one decimal place.
+Then, in the chat, give me the download link, list the checks and say whether each one passed.</pre>
+        </div>
+      </details>
       <p><b class="label">Discuss:</b> Distinguish market-driven vs management-driven variances.</p>
       <details class="answer">
         <summary>Show the headline answer</summary>
@@ -207,6 +347,73 @@
         <div class="prompt-head"><span>Prompt for Claude for Excel</span><button type="button" class="copy" data-target="prompt-3">Copy prompt</button></div>
         <p id="prompt-3">Calculate the fixed overhead absorption rate per labour hour, prepare quarterly profit statements under absorption and marginal costing, and reconcile the difference through inventory movements.</p>
       </div>
+      <details class="gemini">
+        <summary>Using Google Gemini instead? Show the Gemini prompt</summary>
+        <p>For the free version of Gemini. Attach the dataset (.xlsx) to your message, paste this prompt and send. Gemini returns a new Excel file to download.</p>
+        <div class="prompt">
+          <div class="prompt-head"><span>Prompt for Google Gemini</span><button type="button" class="copy" data-target="gemini-3">Copy prompt</button></div>
+          <pre class="gprompt" id="gemini-3">I have uploaded the Excel workbook Halden_Motors_Management_Accounting_Dataset.xlsx. It holds the 2025 data of Halden Motors, a fictional UK car maker with four models, coded SPR, RDG, TRQ and HAU. Act as a careful management accountant and build a worked solution to the exercise below.
+
+RULES
+1. Use only figures from the uploaded workbook. Do not invent, estimate or round any input. If you cannot find a sheet or column that I name, stop and tell me which one is missing.
+2. Read the workbook and do every calculation with code, not in your head.
+3. Follow the steps in order and use exactly the formulas I give. Do not swap in a different method.
+4. Do not ask me questions first. Start now.
+
+EXERCISE 3: ABSORPTION VS MARGINAL COSTING, BY QUARTER
+
+WHERE THE DATA IS
+- Sheet "Assumptions", cell B12: budgeted Fixed production overhead for the year (£).
+- Sheet "Products": headings in row 3, models in rows 4 to 7. Use Model code and Budget units FY25.
+- Sheet "Std_Cost_Card": headings in row 3, models in rows 4 to 7. Use Assembly hours, Technician hours and Std variable production cost (£).
+- Sheet "Sales_Production": headings in row 4, then 48 rows. Use Month, Model code, Opening FG inventory (units), Actual units produced, Actual units sold, Closing FG inventory (units), Actual revenue (£).
+- Sheet "Actual_Costs": headings in row 4, then 48 rows. Use Month, Model code, Actual units produced, Steel cost (£), Aluminium cost (£), Battery cell cost (£), Bought-in kits cost (£), Assembly labour cost (£), Technician labour cost (£), Variable overhead incurred (£), Dealer commission paid (£), Delivery cost (£).
+- Sheet "Fixed_Costs": headings in row 4, then 48 rows (12 months x 4 cost categories). Use Month, Cost category, Actual (£). The four categories are Fixed production overhead, Administration, Selling &amp; marketing (fixed), Research &amp; development.
+
+DEFINITIONS
+Quarters: Q1 = January to March, Q2 = April to June, Q3 = July to September, Q4 = October to December. Show Q1, Q2, Q3, Q4 and FY2025 as columns in every table. Show costs as negative figures.
+
+STEPS
+1. Absorption rate. For each model: Standard labour hours per unit = Assembly hours + Technician hours. Budget labour hours = Budget units FY25 x Standard labour hours per unit. Fixed overhead absorption rate (£ per direct labour hour) = Assumptions B12 / total Budget labour hours of the four models.
+2. Unit costs. For each model: Fixed overhead per unit = Standard labour hours per unit x absorption rate. Standard full production cost per unit = Std variable production cost (£) + Fixed overhead per unit.
+3. Inventory in units, for each model and quarter: Opening = Opening FG inventory (units) of the first month of the quarter. Produced = sum of Actual units produced. Sold = sum of Actual units sold. Closing = Opening + Produced minus Sold. Change = Closing minus Opening.
+4. Variable production cost variance for each quarter = sum over that quarter's Actual_Costs rows of: (Actual units produced x the model's Std variable production cost) minus (Steel cost + Aluminium cost + Battery cell cost + Bought-in kits cost + Assembly labour cost + Technician labour cost + Variable overhead incurred). A negative figure is adverse and reduces profit.
+5. Marginal costing profit statement, one column per quarter:
+   Sales revenue = sum of Actual revenue (£)
+   less Standard variable cost of sales = sum over models of units Sold x Std variable production cost
+   plus Variable production cost variance (step 4)
+   less Dealer commission paid and less Delivery cost (sums from Actual_Costs)
+   = Contribution
+   less the four fixed costs at their Actual (£) amounts from Fixed_Costs, each on its own row
+   = Marginal costing profit
+6. Absorption costing profit statement, one column per quarter:
+   Sales revenue (as above)
+   less Standard full cost of sales = sum over models of units Sold x Standard full production cost per unit
+   plus Variable production cost variance (step 4)
+   plus Over-absorbed or minus under-absorbed fixed overhead = (sum over models of units Produced x Fixed overhead per unit) minus actual Fixed production overhead
+   = Gross profit
+   less Dealer commission paid, Delivery cost, Administration, Selling &amp; marketing (fixed), Research &amp; development
+   = Absorption costing profit
+7. Reconciliation, one column per quarter: Marginal costing profit, plus for each model (Change in inventory units x Fixed overhead per unit), = Absorption costing profit as reconciled. Compare it with step 6.
+8. In the key findings, explain in two sentences why the two profits differ and what that means for a manager who is paid on absorption profit.
+
+CHECKS
+- Closing inventory in step 3 = Closing FG inventory (units) in Sales_Production for the last month of each quarter, for every model.
+- Step 7 reconciled profit minus step 6 profit = 0 in every quarter.
+- FY2025 = Q1 + Q2 + Q3 + Q4 on every flow row.
+
+OUTPUT
+Create one Microsoft Excel (.xlsx) file that I can download, named Halden_Ex3_Absorption_Marginal_Gemini.xlsx. Put everything on one sheet named "Ex3 Absorption v marginal", in this order from the top:
+- Row 1: the title "Exercise 3: Absorption vs marginal costing - Halden Motors FY2025".
+- Key findings: four short bullet points in plain English, each with its figure.
+- Inputs: the figures you copied from the dataset, each labelled with the sheet it came from.
+- Workings and results: the tables described in the steps, in step order.
+- Checks: each check from the steps, with its value.
+Write every calculated cell as a live Excel formula that refers to input cells on this sheet (for example =B12*C12), not as a typed number. If you cannot write formulas into the file, type the values and say so in row 2.
+Format money as £ with no decimals and percentages with one decimal place.
+Then, in the chat, give me the download link, list the checks and say whether each one passed.</pre>
+        </div>
+      </details>
       <p><b class="label">Discuss:</b> Explain why profits differ and the implications for managerial incentives.</p>
       <details class="answer">
         <summary>Show the headline answer</summary>
@@ -243,6 +450,59 @@
         <div class="prompt-head"><span>Prompt for Claude for Excel</span><button type="button" class="copy" data-target="prompt-4">Copy prompt</button></div>
         <p id="prompt-4">Compute cost driver rates and a full ABC cost per vehicle for each model. Compare with the traditional labour-hour absorption cost and comment on Torque GT&#x27;s profitability.</p>
       </div>
+      <details class="gemini">
+        <summary>Using Google Gemini instead? Show the Gemini prompt</summary>
+        <p>For the free version of Gemini. Attach the dataset (.xlsx) to your message, paste this prompt and send. Gemini returns a new Excel file to download.</p>
+        <div class="prompt">
+          <div class="prompt-head"><span>Prompt for Google Gemini</span><button type="button" class="copy" data-target="gemini-4">Copy prompt</button></div>
+          <pre class="gprompt" id="gemini-4">I have uploaded the Excel workbook Halden_Motors_Management_Accounting_Dataset.xlsx. It holds the 2025 data of Halden Motors, a fictional UK car maker with four models, coded SPR, RDG, TRQ and HAU. Act as a careful management accountant and build a worked solution to the exercise below.
+
+RULES
+1. Use only figures from the uploaded workbook. Do not invent, estimate or round any input. If you cannot find a sheet or column that I name, stop and tell me which one is missing.
+2. Read the workbook and do every calculation with code, not in your head.
+3. Follow the steps in order and use exactly the formulas I give. Do not swap in a different method.
+4. Do not ask me questions first. Start now.
+
+EXERCISE 4: ACTIVITY-BASED COSTING
+
+WHERE THE DATA IS
+- Sheet "ABC_Cost_Pools": headings in row 4, six activity cost pools in rows 5 to 10. Use Activity cost pool, Cost driver, Budgeted pool cost (£), Driver volume for SPR, RDG, TRQ and HAU, and Total driver volume.
+- Sheet "Assumptions", cell B12: budgeted Fixed production overhead for the year (£).
+- Sheet "Products": headings in row 3, models in rows 4 to 7. Use Model code, List price (£, ex VAT), Budget units FY25.
+- Sheet "Std_Cost_Card": headings in row 3, models in rows 4 to 7. Use Assembly hours, Technician hours, Std variable production cost (£), Dealer commission (£), Delivery (£).
+
+STEPS
+1. Copy the six cost pools and the product data into Inputs tables.
+2. Cost driver rate for each pool = Budgeted pool cost (£) / Total driver volume.
+3. Overhead assigned to each model for each pool = cost driver rate x that model's driver volume. Show a table of six pools by four models, with totals.
+4. ABC fixed overhead per vehicle = the model's total assigned overhead / Budget units FY25.
+5. Traditional method. Standard labour hours per unit = Assembly hours + Technician hours. Absorption rate = Assumptions B12 / sum over models of (Budget units FY25 x Standard labour hours per unit). Traditional fixed overhead per vehicle = Standard labour hours per unit x absorption rate.
+6. Build a result table with the four models as columns and these rows, for the traditional method and then for ABC:
+   - Fixed overhead per vehicle
+   - Full production cost per vehicle = Std variable production cost (£) + Fixed overhead per vehicle
+   - Profit per vehicle = List price minus (Dealer commission (£) + Delivery (£)) minus Full production cost per vehicle
+   - Margin % = Profit per vehicle / List price
+   - Total budget profit = Profit per vehicle x Budget units FY25
+   Add a row for the difference in overhead per vehicle (ABC minus traditional).
+7. In the key findings, comment on the Torque GT (TRQ): how its overhead and margin change under ABC, which cost drivers cause the change, and whether Halden should reprice it. Then say in one sentence which models were subsidising which.
+
+CHECKS
+- Sum of the six pool costs = Assumptions B12.
+- Total overhead assigned to the four models under ABC = Assumptions B12.
+- Total budget profit of the four models is the same under both methods (difference = 0).
+
+OUTPUT
+Create one Microsoft Excel (.xlsx) file that I can download, named Halden_Ex4_ABC_Gemini.xlsx. Put everything on one sheet named "Ex4 ABC", in this order from the top:
+- Row 1: the title "Exercise 4: Activity-based costing - Halden Motors FY2025".
+- Key findings: four short bullet points in plain English, each with its figure.
+- Inputs: the figures you copied from the dataset, each labelled with the sheet it came from.
+- Workings and results: the tables described in the steps, in step order.
+- Checks: each check from the steps, with its value.
+Write every calculated cell as a live Excel formula that refers to input cells on this sheet (for example =B12*C12), not as a typed number. If you cannot write formulas into the file, type the values and say so in row 2.
+Format money as £ with no decimals and percentages with one decimal place.
+Then, in the chat, give me the download link, list the checks and say whether each one passed.</pre>
+        </div>
+      </details>
       <p><b class="label">Discuss:</b> Cross-subsidisation between high- and low-volume products.</p>
       <details class="answer">
         <summary>Show the headline answer</summary>
@@ -279,6 +539,64 @@
         <div class="prompt-head"><span>Prompt for Claude for Excel</span><button type="button" class="copy" data-target="prompt-5">Copy prompt</button></div>
         <p id="prompt-5">Apportion shared overheads using the suggested bases, then reapportion service centres using (a) step-down and (b) the reciprocal method. Compute a machine-hour rate for Body Shop and labour-hour rates for Final Assembly.</p>
       </div>
+      <details class="gemini">
+        <summary>Using Google Gemini instead? Show the Gemini prompt</summary>
+        <p>For the free version of Gemini. Attach the dataset (.xlsx) to your message, paste this prompt and send. Gemini returns a new Excel file to download.</p>
+        <div class="prompt">
+          <div class="prompt-head"><span>Prompt for Google Gemini</span><button type="button" class="copy" data-target="gemini-5">Copy prompt</button></div>
+          <pre class="gprompt" id="gemini-5">I have uploaded the Excel workbook Halden_Motors_Management_Accounting_Dataset.xlsx. It holds the 2025 data of Halden Motors, a fictional UK car maker with four models, coded SPR, RDG, TRQ and HAU. Act as a careful management accountant and build a worked solution to the exercise below.
+
+RULES
+1. Use only figures from the uploaded workbook. Do not invent, estimate or round any input. If you cannot find a sheet or column that I name, stop and tell me which one is missing.
+2. Read the workbook and do every calculation with code, not in your head.
+3. Follow the steps in order and use exactly the formulas I give. Do not swap in a different method.
+4. Do not ask me questions first. Start now.
+
+EXERCISE 5: OVERHEAD APPORTIONMENT AND REAPPORTIONMENT
+
+WHERE THE DATA IS
+Everything is on sheet "Departments", in three tables:
+- Cost centres: headings in row 3, six centres in rows 4 to 9. Columns: Cost centre, Type, Allocated overhead (£), Floor area (m²), Employees, Machine hours, Equipment NBV (£), Direct labour hours. Body Shop, Paint Shop and Final Assembly are production centres. Maintenance, Quality Assurance and Stores &amp; Logistics are service centres.
+- Shared overheads: headings in row 13, five costs in rows 14 to 18. Columns: Shared cost, Suggested basis, Budget (£).
+- Inter-service usage: headings in row 23, three service centres in rows 24 to 26. Each row shows the share of that service centre's work used by each of the six centres.
+
+STEPS
+1. Copy the three tables into Inputs.
+2. Primary apportionment. For each of the five shared overheads, share it across ALL SIX centres using its Suggested basis: a centre's share = Budget (£) x that centre's basis figure / the total of that basis over the six centres. Floor area uses Floor area (m²), Equipment NBV uses Equipment NBV (£), Employees uses Employees. Add each centre's Allocated overhead (£). Show one row per overhead and a Total after primary apportionment for each centre.
+3. Step-down method, in this order: Maintenance, then Quality Assurance, then Stores &amp; Logistics.
+   - Maintenance: share its whole total across the other five centres using its row of the usage table.
+   - Quality Assurance: take its primary total plus what it received from Maintenance. Ignore its share to Maintenance, which is already closed. Share it across Body Shop, Paint Shop, Final Assembly and Stores &amp; Logistics using its usage percentages divided by (1 minus its percentage to Maintenance).
+   - Stores &amp; Logistics: take its primary total plus what it received from Maintenance and Quality Assurance. Share it across the three production centres only, using its three production percentages divided by their sum.
+   Show the final total for each production centre.
+4. Reciprocal method. Let M, Q and S be the full costs of Maintenance, Quality Assurance and Stores &amp; Logistics after they have charged each other. Using the usage table, solve these three equations together:
+   M = Maintenance primary total + (Quality Assurance % to Maintenance x Q) + (Stores % to Maintenance x S)
+   Q = Quality Assurance primary total + (Maintenance % to Quality Assurance x M) + (Stores % to Quality Assurance x S)
+   S = Stores primary total + (Maintenance % to Stores x M) + (Quality Assurance % to Stores x Q)
+   Show the solved M, Q and S. Then each production centre's total = its primary total + (Maintenance % to it x M) + (Quality Assurance % to it x Q) + (Stores % to it x S).
+5. Absorption rates, under each method:
+   - Body Shop: total overhead / Machine hours = £ per machine hour
+   - Paint Shop: total overhead / Machine hours = £ per machine hour
+   - Final Assembly: total overhead / Direct labour hours = £ per labour hour
+   Show the two methods side by side with the difference.
+6. In the key findings, say how far the two methods differ and why, and name one basis whose choice would change the product costs most.
+
+CHECKS
+- Total after primary apportionment across the six centres = sum of Allocated overhead + sum of the five shared overheads.
+- The three production centre totals add up to that same figure under the step-down method.
+- The three production centre totals add up to that same figure under the reciprocal method.
+
+OUTPUT
+Create one Microsoft Excel (.xlsx) file that I can download, named Halden_Ex5_Overheads_Gemini.xlsx. Put everything on one sheet named "Ex5 Overheads", in this order from the top:
+- Row 1: the title "Exercise 5: Overhead apportionment - Halden Motors FY2025".
+- Key findings: four short bullet points in plain English, each with its figure.
+- Inputs: the figures you copied from the dataset, each labelled with the sheet it came from.
+- Workings and results: the tables described in the steps, in step order.
+- Checks: each check from the steps, with its value.
+Write every calculated cell as a live Excel formula that refers to input cells on this sheet (for example =B12*C12), not as a typed number. If you cannot write formulas into the file, type the values and say so in row 2.
+Format money as £ with no decimals and percentages with one decimal place.
+Then, in the chat, give me the download link, list the checks and say whether each one passed.</pre>
+        </div>
+      </details>
       <p><b class="label">Discuss:</b> Sensitivity of product costs to apportionment method.</p>
       <details class="answer">
         <summary>Show the headline answer</summary>
@@ -308,6 +626,78 @@
         <div class="prompt-head"><span>Prompt for Claude for Excel</span><button type="button" class="copy" data-target="prompt-6">Copy prompt</button></div>
         <p id="prompt-6">Analyse Halden Motors' FY2025 year-end financial statements on the four FS_ sheets against FY2024. Calculate profitability, working capital, liquidity, gearing and cash flow ratios for both years, compare them with the sector benchmarks and bank covenants in FS_Notes, and summarise the five most important changes and their likely causes.</p>
       </div>
+      <details class="gemini">
+        <summary>Using Google Gemini instead? Show the Gemini prompt</summary>
+        <p>For the free version of Gemini. Attach the dataset (.xlsx) to your message, paste this prompt and send. Gemini returns a new Excel file to download.</p>
+        <div class="prompt">
+          <div class="prompt-head"><span>Prompt for Google Gemini</span><button type="button" class="copy" data-target="gemini-6">Copy prompt</button></div>
+          <pre class="gprompt" id="gemini-6">I have uploaded the Excel workbook Halden_Motors_Management_Accounting_Dataset.xlsx. It holds the 2025 data of Halden Motors, a fictional UK car maker with four models, coded SPR, RDG, TRQ and HAU. Act as a careful management accountant and build a worked solution to the exercise below.
+
+RULES
+1. Use only figures from the uploaded workbook. Do not invent, estimate or round any input. If you cannot find a sheet or column that I name, stop and tell me which one is missing.
+2. Read the workbook and do every calculation with code, not in your head.
+3. Follow the steps in order and use exactly the formulas I give. Do not swap in a different method.
+4. Do not ask me questions first. Start now.
+
+EXERCISE 6: FINANCIAL STATEMENT ANALYSIS, FY2025 AGAINST FY2024
+
+WHERE THE DATA IS
+Four sheets, all in £000, with headings in row 4. Column B is FY2025 and column C is FY2024.
+- "FS_Income_Statement": Revenue, Cost of sales, Gross profit, Operating profit, Finance costs, Profit for the year, and the memo line for dividends paid. Costs are shown as negative figures.
+- "FS_Balance_Sheet": Inventories, Trade receivables, Cash and cash equivalents, Total current assets, Total equity, Trade payables, Total current liabilities.
+- "FS_Cash_Flow": Depreciation of property, plant and equipment, Amortisation of development costs, Cash generated from operations, Net cash from operating activities, Net cash used in investing activities.
+- "FS_Notes": Total borrowings, Vehicles sold (units), Ordinary shares in issue (000), the two bank covenants, and the sector benchmarks.
+
+STEPS
+1. Copy every figure listed above for both years into an Inputs table with columns Item, Source sheet, FY2025, FY2024. Use Cost of sales and Finance costs as positive amounts in the ratios.
+2. Build a ratio table with columns Ratio, How it is calculated, FY2025, FY2024, Change, Benchmark or covenant, Comment. Calculate these ratios for both years, using year-end balances:
+   Growth and profitability
+   - Revenue growth = (FY2025 minus FY2024) / FY2024 (FY2025 only)
+   - Operating profit growth, the same way (FY2025 only)
+   - Gross margin = Gross profit / Revenue
+   - Operating margin = Operating profit / Revenue
+   - Return on capital employed = Operating profit / (Total equity + Total borrowings)
+   - Return on equity = Profit for the year / Total equity
+   - Operating profit per vehicle (£) = Operating profit x 1,000 / Vehicles sold
+   Working capital
+   - Inventory days = Inventories / Cost of sales x 365
+   - Receivable days = Trade receivables / Revenue x 365
+   - Payable days = Trade payables / Cost of sales x 365
+   - Cash conversion cycle = Inventory days + Receivable days minus Payable days
+   Liquidity
+   - Current ratio = Total current assets / Total current liabilities
+   - Quick ratio = (Total current assets minus Inventories) / Total current liabilities
+   Gearing and covenants
+   - Gearing = Total borrowings / (Total borrowings + Total equity)
+   - Net debt = Total borrowings minus Cash and cash equivalents
+   - EBITDA = Operating profit + Depreciation + Amortisation
+   - Net debt / EBITDA
+   - Interest cover = Operating profit / Finance costs
+   Cash flow
+   - Cash conversion = Cash generated from operations / Operating profit
+   - Free cash flow = Net cash from operating activities + Net cash used in investing activities (the second figure is negative)
+   - Dividend cover = Profit for the year / Dividends paid
+3. In the Benchmark or covenant column, enter the matching figure from FS_Notes where one exists. In the Comment column write "better than sector", "worse than sector", "covenant met" or "covenant breached".
+4. For interest cover, add one more row: how far operating profit could fall before the covenant is breached = Operating profit minus (minimum interest cover x Finance costs).
+5. In the key findings, give the five most important changes between the two years, each with its figures and one likely cause. For causes, read sheet "README", cell C9, and the Note column (column D) of the four FS_ sheets, and use only what they say.
+
+CHECKS
+- Gross profit / Revenue for FY2025 in your table = Gross profit on FS_Income_Statement / Revenue.
+- Total equity + Total borrowings is the same figure in the ROCE and gearing rows.
+- Cash and cash equivalents on FS_Balance_Sheet = Cash at end of year on FS_Cash_Flow, for both years.
+
+OUTPUT
+Create one Microsoft Excel (.xlsx) file that I can download, named Halden_Ex6_Financial_Statements_Gemini.xlsx. Put everything on one sheet named "Ex6 FS analysis", in this order from the top:
+- Row 1: the title "Exercise 6: Financial statement analysis - Halden Motors FY2025".
+- Key findings: five short bullet points in plain English, each with its figure.
+- Inputs: the figures you copied from the dataset, each labelled with the sheet it came from.
+- Workings and results: the tables described in the steps, in step order.
+- Checks: each check from the steps, with its value.
+Write every calculated cell as a live Excel formula that refers to input cells on this sheet (for example =B12*C12), not as a typed number. If you cannot write formulas into the file, type the values and say so in row 2.
+Format money as £ with no decimals and percentages with one decimal place.
+Then, in the chat, give me the download link, list the checks and say whether each one passed.</pre>
+        </div>
+      </details>
       <p><b class="label">Discuss:</b> Revenue grew but cash fell: reconcile profit to cash. Which findings from the costing and credit control exercises explain the movements? How close is the company to breaching a covenant?</p>
       <details class="answer">
         <summary>Show the headline answer</summary>
@@ -337,6 +727,66 @@
         <div class="prompt-head"><span>Prompt for Claude for Excel</span><button type="button" class="copy" data-target="prompt-7">Copy prompt</button></div>
         <p id="prompt-7">Using the report date of 31-Dec-2025, calculate the outstanding balance on every open item and age it by days past due into Current, 1–30, 31–60, 61–90 and 90+ days. Build an aged debtor report by customer with totals, % of ledger in each band, and flags for customers over their credit limit. Then calculate debtor days and suggest a bad-debt provision.</p>
       </div>
+      <details class="gemini">
+        <summary>Using Google Gemini instead? Show the Gemini prompt</summary>
+        <p>For the free version of Gemini. Attach the dataset (.xlsx) to your message, paste this prompt and send. Gemini returns a new Excel file to download.</p>
+        <div class="prompt">
+          <div class="prompt-head"><span>Prompt for Google Gemini</span><button type="button" class="copy" data-target="gemini-7">Copy prompt</button></div>
+          <pre class="gprompt" id="gemini-7">I have uploaded the Excel workbook Halden_Motors_Management_Accounting_Dataset.xlsx. It holds the 2025 data of Halden Motors, a fictional UK car maker with four models, coded SPR, RDG, TRQ and HAU. Act as a careful management accountant and build a worked solution to the exercise below.
+
+RULES
+1. Use only figures from the uploaded workbook. Do not invent, estimate or round any input. If you cannot find a sheet or column that I name, stop and tell me which one is missing.
+2. Read the workbook and do every calculation with code, not in your head.
+3. Follow the steps in order and use exactly the formulas I give. Do not swap in a different method.
+4. Do not ask me questions first. Start now.
+
+EXERCISE 7: AGED DEBTOR ANALYSIS AND CREDIT CONTROL
+
+WHERE THE DATA IS
+- Sheet "Debtors_Ledger": the report date is in cell B2 (31 December 2025). Headings are in row 5 and the transactions start in row 6. There are about 826 rows: read all of them, to the last row. Use these columns: Transaction ID, Transaction type, Account ID, Customer, Transaction date, Due date, Gross amount (£), Amount paid/allocated (£), Disputed (Y/N). Transaction type is "Invoice", "Credit note" or "Unallocated cash". Credit notes and unallocated cash are negative amounts.
+- Sheet "Customers": headings in row 4, 30 customers from row 5. Use Account ID, Customer, Payment terms (days from invoice), Credit limit (£, gross), Credit controller, Account status.
+
+STEPS
+1. For every transaction: Outstanding = Gross amount (£) minus Amount paid/allocated (£).
+2. Give every transaction one status, testing in this order:
+   - "Settled" if Outstanding is between -0.005 and 0.005. Leave settled items out of everything below.
+   - "Unallocated" if Transaction type is not "Invoice". Do not age these and do not net them against invoices.
+   - Otherwise age the invoice by Days past due = report date minus Due date (use the Due date, not the Transaction date): 0 or less = "Current"; 1 to 30 = "1-30"; 31 to 60 = "31-60"; 61 to 90 = "61-90"; more than 90 = "90+".
+3. Build the aged debtor report: one row for each of the 30 customers, in Account ID order, and a Total row. Columns: Account ID, Customer, Credit controller, Account status, Payment terms, Credit limit, Current, 1-30, 31-60, 61-90, 90+, Unallocated credits, Total balance, % overdue, Credit limit check, Headroom or (excess).
+   - Each band = sum of Outstanding for that customer and that status
+   - Total balance = the five bands + Unallocated credits
+   - % overdue = (1-30 + 31-60 + 61-90 + 90+) / (Current + 1-30 + 31-60 + 61-90 + 90+)
+   - Credit limit check = "OVER LIMIT" if Total balance is more than the Credit limit, otherwise "OK"
+   - Headroom or (excess) = Credit limit minus Total balance
+   Under the Total row add a row showing each band as a % of the total of the five bands.
+4. Debtor days = Total balance / Gross invoiced in July to December 2025 x 184, where Gross invoiced = sum of Gross amount (£) for rows with Transaction type "Invoice" and Transaction date on or after 1 July 2025.
+5. Bad-debt provision. Put these rates in a labelled Assumptions table with yellow fill, and say they are illustrative. For each open invoice (not Settled, not Unallocated) apply the first rule that fits:
+   - customer's Account status is "In administration": provide 100% of Outstanding
+   - Disputed (Y/N) is "Y": provide 50%
+   - otherwise by band: Current 0.5%, 1-30 1%, 31-60 3%, 61-90 10%, 90+ 25%
+   Show a table with rows Specific - administration, Specific - disputed, General and Total, and columns Balance, Provision, Effective rate.
+6. List the customers that are over their credit limit, with the excess, largest first. List any customer whose Account status is "On stop" or "In administration" with its Total balance.
+7. In the key findings, give the ledger total, debtor days, the overdue percentage, the number of customers over limit and the suggested provision, then two credit-control actions.
+8. Under the report, add a Workings table of every transaction that is not Settled, with its Outstanding, Days past due, status and provision.
+
+CHECKS
+- Sum of Outstanding over every transaction in the ledger = Total balance in the report.
+- Sum of the provision over the Workings rows = Total in the provision table.
+- Number of customer rows in the report = 30.
+- Total balance, divided by 1,000, should agree with Gross trade receivables for FY2025 on sheet "FS_Notes" (cell B11). Show both figures.
+
+OUTPUT
+Create one Microsoft Excel (.xlsx) file that I can download, named Halden_Ex7_Aged_Debtors_Gemini.xlsx. Put everything on one sheet named "Ex7 Aged debtors", in this order from the top:
+- Row 1: the title "Exercise 7: Aged debtor analysis - Halden Motors FY2025".
+- Key findings: five short bullet points in plain English, each with its figure.
+- Inputs: the figures you copied from the dataset, each labelled with the sheet it came from.
+- Workings and results: the tables described in the steps, in step order.
+- Checks: each check from the steps, with its value.
+Write every calculated cell as a live Excel formula that refers to input cells on this sheet (for example =B12*C12), not as a typed number. If you cannot write formulas into the file, type the values and say so in row 2.
+Format money as £ with no decimals and percentages with one decimal place.
+Then, in the chat, give me the download link, list the checks and say whether each one passed.</pre>
+        </div>
+      </details>
       <p><b class="label">Discuss:</b> Ageing from invoice date vs due date; treatment of credit notes, disputed items and unallocated cash; customer in administration.</p>
       <details class="answer">
         <summary>Show the headline answer</summary>
