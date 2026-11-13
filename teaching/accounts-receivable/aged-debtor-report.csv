@@ -1,0 +1,12 @@
+Customer,Current,31-60 days,61-90 days,Over 90 days,Total
+"Hansen Family Farms",32000,0,0,0,32000
+"Prairie View Dairy",28000,6000,0,0,34000
+"Olson Turkey Farm",24000,10000,0,0,34000
+"Nordby Sugar Beets",22000,12000,0,0,34000
+"Main Street Landscaping",18000,8000,4000,0,30000
+"Lindqvist Construction",16000,0,10000,0,26000
+"Prairie Wind Bakery",10000,6000,4000,3000,23000
+"Sorensen Hardware",0,8000,4000,2000,14000
+"Dale's Diner",0,0,3000,5000,8000
+"Northern Lights Café",0,0,0,5000,5000
+Total,150000,50000,25000,15000,240000

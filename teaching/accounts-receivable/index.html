@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accounts Receivable: Bad Debts &middot; Andrew Primmer</title>
+<meta name="description" content="The direct write-off method and the allowance method, taught from one aged debtor report: six two-minute videos and twelve year-end journal entries to practise.">
+<link rel="stylesheet" href="../../assets/style.css">
+<style>
+  .lesson-index{list-style:none;margin:22px 0 0;padding:0;border-top:1px solid var(--ink)}
+  .lesson-index li{border-bottom:1px solid var(--rule);margin:0}
+  .lesson-index a{display:grid;grid-template-columns:4.2rem 1fr auto;gap:12px;align-items:baseline;padding:14px 0;text-decoration:none;color:var(--ink)}
+  .lesson-index a:hover .li-title,.lesson-index a:focus-visible .li-title{color:var(--accent)}
+  .lesson-index .li-num{font-family:var(--display);color:var(--accent);font-size:.95rem}
+  .lesson-index .li-title{display:block;font-family:var(--display);font-size:1.12rem}
+  .lesson-index .li-case{display:block;font-size:.88rem;color:var(--soft);font-style:italic}
+  .lesson-index .li-done{font-size:.85rem;color:var(--accent);white-space:nowrap}
+  .lesson-num{font-family:var(--display);font-size:.95rem;color:var(--accent);display:block;margin-bottom:2px}
+  .lesson-case{margin:4px 0 0;font-style:italic;color:var(--soft)}
+  .callout{border-left:3px solid var(--accent);padding:2px 0 2px 20px;margin:24px 0;font-style:italic;color:var(--soft)}
+  .micro{scroll-margin-top:16px;border-top:1px solid var(--rule);padding-top:28px}
+  .player{margin:18px auto 0;max-width:360px}
+  .player video{display:block;width:100%;height:auto;aspect-ratio:9/16;background:#0F1B2D;border:1px solid var(--rule)}
+  .script{margin:18px 0 0;border:1px solid var(--rule);padding:12px 16px}
+  .script summary{cursor:pointer;font-family:var(--display);color:var(--accent)}
+  .script p{margin:.7em 0 0;font-size:.95rem}
+  .back{margin-top:14px;font-size:.9rem}
+  .je{margin-top:18px;border:1px solid var(--rule);padding:18px 20px 20px}
+  .je-nav{display:flex;flex-wrap:wrap;gap:8px}
+  .je-chip{width:2.2rem;height:2.2rem;background:none;border:1px solid var(--rule);color:var(--soft);font-family:var(--display);font-size:.95rem;cursor:pointer}
+  .je-chip[aria-selected="true"]{border-color:var(--ink);color:var(--ink);outline:1px solid var(--ink);outline-offset:2px}
+  .je-chip.done{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+  .je-chip:hover{border-color:var(--accent)}
+  .je-progress{margin:10px 0 0;font-size:.85rem;color:var(--soft);font-style:italic}
+  .je-title{font-family:var(--display);font-weight:400;font-size:1.25rem;margin:18px 0 6px}
+  .je-text{margin:0}
+  .je-ask{margin:10px 0 0;font-family:var(--display);color:var(--accent)}
+  .je-grid{width:100%;border-collapse:collapse;margin-top:14px;font-variant-numeric:tabular-nums}
+  .je-grid th{text-align:left;font-weight:600;font-size:.85rem;color:var(--soft);border-bottom:1px solid var(--ink);padding:0 8px 6px 0}
+  .je-grid th:nth-child(2),.je-grid th:nth-child(3){text-align:right;width:7.5rem}
+  .je-grid td{padding:6px 8px 6px 0;border-bottom:1px solid var(--rule)}
+  .je-grid td:last-child,.je-grid th:last-child{width:2rem;padding-right:0}
+  .je-grid select,.je-grid input{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--rule);color:var(--ink);font:inherit;font-size:.95rem;padding:7px 8px;border-radius:0}
+  .je-grid select option,.je-grid select optgroup{background:var(--paper);color:var(--ink)}
+  .je-grid input{text-align:right}
+  .je-grid select:focus-visible,.je-grid input:focus-visible,.je-chip:focus-visible,.je-btn:focus-visible,.je-rm:focus-visible,.je-link:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .je-rm{background:none;border:0;color:var(--soft);font-size:1.2rem;cursor:pointer;padding:2px 6px}
+  .je-rm:hover{color:var(--accent)}
+  .je-totals td{border-bottom:3px double var(--ink);font-weight:600;text-align:right;color:var(--soft)}
+  .je-totals td:first-child{text-align:left}
+  .je-totals.bal td{color:var(--accent)}
+  .je-actions,.je-foot{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;align-items:center}
+  .je-btn{background:none;border:1px solid var(--ink);color:var(--ink);padding:7px 15px;font-family:var(--display);font-size:.95rem;cursor:pointer}
+  .je-btn:hover{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+  .je-btn.ghost{border-color:var(--rule);color:var(--soft)}
+  .je-btn.ghost:hover{background:none;border-color:var(--accent);color:var(--accent)}
+  .je-btn[disabled]{opacity:.4;cursor:not-allowed}
+  .je-link{background:none;border:0;color:var(--soft);font:inherit;font-size:.85rem;text-decoration:underline;cursor:pointer;margin-left:auto}
+  .je-feedback{margin-top:14px}
+  .je-feedback:empty{display:none}
+  .je-feedback{border-left:3px solid var(--rule);padding:2px 0 2px 16px}
+  .je-feedback.ok{border-left-color:var(--accent)}
+  .je-msg{margin:0;font-family:var(--display)}
+  .je-feedback.ok .je-msg{color:var(--accent)}
+  .je-solution{border-collapse:collapse;margin:12px 0 0;font-size:.95rem;font-variant-numeric:tabular-nums}
+  .je-solution th{text-align:left;font-weight:600;font-size:.82rem;color:var(--soft);padding:0 18px 4px 0}
+  .je-solution td{padding:3px 18px 3px 0}
+  .je-solution th:not(:first-child),.je-solution td:not(:first-child){text-align:right}
+  .je-solution td.cr{padding-left:1.6rem}
+  .je-why{margin:12px 0 0;font-size:.95rem}
+  .je-video{margin:6px 0 0;font-size:.88rem;color:var(--soft)}
+  .je-foot{border-top:1px solid var(--rule);padding-top:14px}
+  @media (max-width:640px){
+    .lesson-index a{grid-template-columns:3.4rem 1fr}
+    .lesson-index .li-done{grid-column:2}
+    .player{max-width:none}
+    .je{padding:14px 12px 16px}
+    .je-grid,.je-grid tbody{display:block}
+    .je-grid tr{display:grid;grid-template-columns:1fr 1fr 2rem;column-gap:8px;border-bottom:1px solid var(--rule);padding:6px 0}
+    .je-grid th,.je-grid td{border:0;padding:3px 0;width:auto !important}
+    .je-grid th:first-child{display:none}
+    .je-grid th{text-align:right}
+    .je-grid td:first-child{grid-column:1/-1}
+    .je-grid tr.je-totals{border-bottom:3px double var(--ink)}
+  }
+
+  .report-wrap{overflow-x:auto;margin:18px 0 0;-webkit-overflow-scrolling:touch}
+  .report{width:100%;min-width:560px;border-collapse:collapse;font-size:.9rem;font-variant-numeric:tabular-nums}
+  .report caption{text-align:left;font-family:var(--display);font-size:1rem;padding-bottom:10px;color:var(--ink)}
+  .report th{text-align:right;font-weight:600;font-size:.8rem;color:var(--soft);border-bottom:1px solid var(--ink);padding:0 0 7px 10px;white-space:nowrap}
+  .report th:first-child,.report td:first-child{text-align:left;padding-left:0}
+  .report td{text-align:right;padding:7px 0 7px 10px;border-bottom:1px solid var(--rule);white-space:nowrap}
+  .report tfoot tr:first-child td{border-top:1px solid var(--ink);border-bottom:3px double var(--ink);font-weight:600}
+  .report tr.sub td{color:var(--soft);font-style:italic;border-bottom:0}
+  .report tr.sub:last-child td{color:var(--accent);font-style:normal}
+  .report-note{font-size:.88rem;color:var(--soft);margin-top:10px}
+</style>
+</head>
+<body id="top">
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="../../index.html" class="site-wordmark">
+      Andrew Primmer
+      <span class="site-wordmark-sub">Accounting Historian</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../../index.html">Home</a>
+      <a href="../../research.html">Research</a>
+      <a href="../../publications.html">Publications</a>
+      <a href="../../cv.html">CV</a>
+      <a href="../../sources/">Primary Sources</a>
+      <a href="../" aria-current="page">Teaching</a>
+      <a href="../../folioscribe/">FolioScribe</a>
+      <a href="../../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="site-main">
+  <div class="site-narrow">
+
+    <header class="page-header">
+      <div class="page-eyebrow"><a href="../">Teaching</a> &middot; Intermediate Accounting</div>
+      <h1 class="page-title">Accounts Receivable: Bad Debts</h1>
+      <p class="page-lede">The direct write-off method and the allowance method compared, all worked from one aged debtor report for a wholesale distributor in Marshall, Minnesota.</p>
+    </header>
+
+    <section class="page-section">
+      <p>Start with the report below. The six two-minute videos walk through what each method does with it, and the <a href="#practice">journal entry practice</a> asks you to make the year-end entries yourself. Watch the videos in order the first time. When a video says <em>pause</em>, stop it and try the question before you see the answer.</p>
+      <h2 class="section-heading">Contents</h2>
+      <ol class="lesson-index">
+        <li><a href="#report"><span class="li-num">Start</span><span><span class="li-title">The aged debtor report</span><span class="li-case">Redwood River Supply, Marshall, Minnesota, December 31, 2026.</span></span><span class="li-done"></span></a></li>
+        <li><a href="#video-1"><span class="li-num">One</span><span><span class="li-title">Reading the aged debtor report</span><span class="li-case">Redwood River Supply&#x27;s receivables at December 31, 2026, what the age bands tell you, and the two methods.</span></span><span class="li-done">1:39</span></a></li><li><a href="#video-2"><span class="li-num">Two</span><span><span class="li-title">The direct write-off method</span><span class="li-case">Ignoring the report at year end, then Dale&#x27;s Diner&#x27;s bankruptcy in 2027, and why waiting gets the timing wrong.</span></span><span class="li-done">1:23</span></a></li><li><a href="#video-3"><span class="li-num">Three</span><span><span class="li-title">Aging the receivables</span><span class="li-case">Applying a loss rate to each age band of the report to find the allowance Redwood River needs.</span></span><span class="li-done">1:26</span></a></li><li><a href="#video-4"><span class="li-num">Four</span><span><span class="li-title">The year-end adjusting entry</span><span class="li-case">From the $13,000 target to the journal entry, the balance sheet, and the percentage-of-sales alternative.</span></span><span class="li-done">1:28</span></a></li><li><a href="#video-5"><span class="li-num">Five</span><span><span class="li-title">Write-offs and recoveries</span><span class="li-case">Writing off Dale&#x27;s Diner against the allowance in 2027, why there is no expense, and a partial recovery.</span></span><span class="li-done">1:21</span></a></li><li><a href="#video-6"><span class="li-num">Six</span><span><span class="li-title">The two methods side by side</span><span class="li-case">Redwood River&#x27;s 2026 numbers under each method, then the full comparison in one table.</span></span><span class="li-done">1:32</span></a></li>
+        <li><a href="#practice"><span class="li-num">Practice</span><span><span class="li-title">Year-end journal entries</span><span class="li-case">Twelve entries from the report, checked as you go.</span></span><span class="li-done"></span></a></li>
+      </ol>
+    </section>
+
+    <section class="page-section micro" id="report">
+      <h2 class="section-heading"><span class="lesson-num">Start here</span>The aged debtor report</h2>
+      <p class="lesson-case">Redwood River Supply, Marshall, Minnesota</p>
+      <p>Redwood River Supply is a wholesale distributor in Marshall, Minnesota, selling on credit to farms, contractors, caf&eacute;s and shops across southwest Minnesota. Customers are due to pay within 30 days. This is its accounts receivable aging, or aged debtor report, at the 2026 year end. Every video and every practice entry on this page comes from it.</p>
+      <div class="report-wrap"><table class="report">
+        <caption>Redwood River Supply &middot; Accounts receivable aging &middot; December 31, 2026 (US$)</caption>
+        <thead><tr><th scope="col">Customer</th><th scope="col">Current</th><th scope="col">31&ndash;60 days</th><th scope="col">61&ndash;90 days</th><th scope="col">Over 90 days</th><th scope="col">Total</th></tr></thead>
+        <tbody><tr><td>Hansen Family Farms</td><td>32,000</td><td>&ndash;</td><td>&ndash;</td><td>&ndash;</td><td>32,000</td></tr><tr><td>Prairie View Dairy</td><td>28,000</td><td>6,000</td><td>&ndash;</td><td>&ndash;</td><td>34,000</td></tr><tr><td>Olson Turkey Farm</td><td>24,000</td><td>10,000</td><td>&ndash;</td><td>&ndash;</td><td>34,000</td></tr><tr><td>Nordby Sugar Beets</td><td>22,000</td><td>12,000</td><td>&ndash;</td><td>&ndash;</td><td>34,000</td></tr><tr><td>Main Street Landscaping</td><td>18,000</td><td>8,000</td><td>4,000</td><td>&ndash;</td><td>30,000</td></tr><tr><td>Lindqvist Construction</td><td>16,000</td><td>&ndash;</td><td>10,000</td><td>&ndash;</td><td>26,000</td></tr><tr><td>Prairie Wind Bakery</td><td>10,000</td><td>6,000</td><td>4,000</td><td>3,000</td><td>23,000</td></tr><tr><td>Sorensen Hardware</td><td>&ndash;</td><td>8,000</td><td>4,000</td><td>2,000</td><td>14,000</td></tr><tr><td>Dale&#x27;s Diner</td><td>&ndash;</td><td>&ndash;</td><td>3,000</td><td>5,000</td><td>8,000</td></tr><tr><td>Northern Lights Café</td><td>&ndash;</td><td>&ndash;</td><td>&ndash;</td><td>5,000</td><td>5,000</td></tr></tbody>
+        <tfoot><tr><td>Total</td><td>150,000</td><td>50,000</td><td>25,000</td><td>15,000</td><td>240,000</td></tr>
+        <tr class="sub"><td>Loss rate</td><td>1%</td><td>5%</td><td>12%</td><td>40%</td><td></td></tr>
+        <tr class="sub"><td>Estimated uncollectible</td><td>1,500</td><td>2,500</td><td>3,000</td><td>6,000</td><td>13,000</td></tr></tfoot>
+      </table></div>
+      <p class="report-note">On a phone, scroll the table sideways. Before the year-end adjustment, the Allowance for Doubtful Accounts has a $2,200 credit balance. Credit sales for 2026 were $1,800,000, and $6,500 of accounts were written off during the year. <a href="aged-debtor-report.csv" download>Download the report (CSV)</a>.</p>
+      <div class="callout">Look along the rows as well as down the columns. Which customers would worry a credit manager?</div>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+
+    <section class="page-section micro" id="video-1">
+      <h2 class="section-heading"><span class="lesson-num">Video one &middot; 1:39</span>Reading the aged debtor report</h2>
+      <p class="lesson-case">Redwood River Supply&#x27;s receivables at December 31, 2026, what the age bands tell you, and the two methods.</p>
+      <div class="player">
+        <video controls playsinline preload="none" poster="posters/ar-1.jpg" width="540" height="960">
+          <source src="videos/ar-1.mp4" type="video/mp4">
+          Your browser cannot play this video. <a href="videos/ar-1.mp4">Download it instead</a>.
+        </video>
+      </div>
+      <details class="script">
+        <summary>Read the script</summary>
+        <p>Every bad debt question starts with one report: the aged debtor report, also called the accounts receivable aging. Let&#x27;s read one.</p><p>Redwood River Supply is a wholesale distributor in Marshall, Minnesota. It sells on credit to farms, contractors, cafés and shops across the region. Customers are meant to pay within thirty days. Mostly, they do.</p><p>The report sorts every customer&#x27;s balance by how long it has been outstanding. Current means it isn&#x27;t yet thirty days old. Then thirty-one to sixty days, sixty-one to ninety, and over ninety days. In total, customers owe two hundred and forty thousand dollars.</p><p>Read it like a credit manager. The older a debt, the less likely it is to be paid. Look at Dale&#x27;s Diner. It owes eight thousand dollars, and none of it is current. Pause. Will Redwood River really collect the full two hundred and forty thousand?</p><p>Almost certainly not. The direct write-off method ignores that warning, and records the expense only when a customer actually fails to pay. The allowance method uses the report to estimate the loss now, at year end. GAAP requires the allowance method unless bad debts are immaterial. The tax return uses direct write-off. Next video: direct write-off.</p>
+      </details>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+    <section class="page-section micro" id="video-2">
+      <h2 class="section-heading"><span class="lesson-num">Video two &middot; 1:23</span>The direct write-off method</h2>
+      <p class="lesson-case">Ignoring the report at year end, then Dale&#x27;s Diner&#x27;s bankruptcy in 2027, and why waiting gets the timing wrong.</p>
+      <div class="player">
+        <video controls playsinline preload="none" poster="posters/ar-2.jpg" width="540" height="960">
+          <source src="videos/ar-2.mp4" type="video/mp4">
+          Your browser cannot play this video. <a href="videos/ar-2.mp4">Download it instead</a>.
+        </video>
+      </div>
+      <details class="script">
+        <summary>Read the script</summary>
+        <p>The direct write-off method. Ignore the warning on the aged debtor report until a customer actually fails to pay.</p><p>During 2026, Redwood River gave up on six and a half thousand dollars of old accounts. Each time, it debited bad debt expense and credited accounts receivable. At year end there&#x27;s no adjusting entry. The aged debtor report is ignored, and receivables are reported at the full two hundred and forty thousand.</p><p>In February 2027, Dale&#x27;s Diner files for bankruptcy, owing eight thousand dollars. Pause and write the entry. Debit bad debt expense eight thousand, credit accounts receivable eight thousand.</p><p>Here&#x27;s the problem. Dale&#x27;s bought on credit in 2026, but the expense lands in 2027. That&#x27;s poor matching. And the 2026 report had already warned us. None of Dale&#x27;s balance was current. So the 2026 balance sheet overstated receivables.</p><p>Under GAAP, direct write-off is allowed only when bad debts are immaterial. It&#x27;s the method most businesses must use on the tax return. Simple, but late. Next: the allowance method.</p>
+      </details>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+    <section class="page-section micro" id="video-3">
+      <h2 class="section-heading"><span class="lesson-num">Video three &middot; 1:26</span>Aging the receivables</h2>
+      <p class="lesson-case">Applying a loss rate to each age band of the report to find the allowance Redwood River needs.</p>
+      <div class="player">
+        <video controls playsinline preload="none" poster="posters/ar-3.jpg" width="540" height="960">
+          <source src="videos/ar-3.mp4" type="video/mp4">
+          Your browser cannot play this video. <a href="videos/ar-3.mp4">Download it instead</a>.
+        </video>
+      </div>
+      <details class="script">
+        <summary>Read the script</summary>
+        <p>The allowance method, step one. We turn the aged debtor report into an estimate of what won&#x27;t be collected.</p><p>From its own history, Redwood River knows roughly what share of each age band is never collected. One percent of current balances. Five percent at thirty-one to sixty days. Twelve percent at sixty-one to ninety. And forty percent of anything over ninety days.</p><p>Now multiply each balance by its rate. Current: a hundred and fifty thousand at one percent is fifteen hundred. Thirty-one to sixty: fifty thousand at five percent is twenty-five hundred. Sixty-one to ninety: twenty-five thousand at twelve percent is three thousand. Over ninety: fifteen thousand at forty percent is six thousand. Pause and add up the four estimates.</p><p>Thirteen thousand dollars. That&#x27;s the balance the allowance for doubtful accounts needs at December thirty-first. Notice that the oldest band is only six percent of the receivables, but almost half of the estimate. Careful: this is the target ending balance. It isn&#x27;t necessarily the expense. Next video: the adjusting entry.</p>
+      </details>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+    <section class="page-section micro" id="video-4">
+      <h2 class="section-heading"><span class="lesson-num">Video four &middot; 1:28</span>The year-end adjusting entry</h2>
+      <p class="lesson-case">From the $13,000 target to the journal entry, the balance sheet, and the percentage-of-sales alternative.</p>
+      <div class="player">
+        <video controls playsinline preload="none" poster="posters/ar-4.jpg" width="540" height="960">
+          <source src="videos/ar-4.mp4" type="video/mp4">
+          Your browser cannot play this video. <a href="videos/ar-4.mp4">Download it instead</a>.
+        </video>
+      </div>
+      <details class="script">
+        <summary>Read the script</summary>
+        <p>The allowance method, step two. The aging says we need an allowance of thirteen thousand dollars. What&#x27;s the entry?</p><p>First, check the ledger. Before adjusting, the allowance already has a twenty-two hundred dollar credit balance, left over after this year&#x27;s write-offs. Pause. What&#x27;s the bad debt expense?</p><p>Thirteen thousand needed, less twenty-two hundred already there: ten thousand eight hundred. Debit bad debt expense ten thousand eight hundred. Credit allowance for doubtful accounts ten thousand eight hundred. Watch out. If the allowance had a thousand dollar debit balance instead, you&#x27;d add it: fourteen thousand.</p><p>On the balance sheet: receivables two hundred and forty thousand, less the allowance of thirteen thousand. Net realizable value: two hundred and twenty-seven thousand. The cash Redwood River really expects to collect. And 2026&#x27;s expense sits in 2026.</p><p>Some companies use percentage of sales instead. Credit sales of one point eight million at half a percent gives nine thousand. That&#x27;s the expense directly, whatever is already in the allowance. Aging gives the balance. Percentage of sales gives the expense. Next: Dale&#x27;s Diner goes bust.</p>
+      </details>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+    <section class="page-section micro" id="video-5">
+      <h2 class="section-heading"><span class="lesson-num">Video five &middot; 1:21</span>Write-offs and recoveries</h2>
+      <p class="lesson-case">Writing off Dale&#x27;s Diner against the allowance in 2027, why there is no expense, and a partial recovery.</p>
+      <div class="player">
+        <video controls playsinline preload="none" poster="posters/ar-5.jpg" width="540" height="960">
+          <source src="videos/ar-5.mp4" type="video/mp4">
+          Your browser cannot play this video. <a href="videos/ar-5.mp4">Download it instead</a>.
+        </video>
+      </div>
+      <details class="script">
+        <summary>Read the script</summary>
+        <p>The allowance method, step three. It&#x27;s 2027, and a customer from the report actually fails to pay.</p><p>February 2027. Dale&#x27;s Diner files for bankruptcy, owing eight thousand dollars. Pause and write the entry. Careful: is there an expense? Debit allowance for doubtful accounts eight thousand. Credit accounts receivable eight thousand. No expense: it was estimated, and expensed, in 2026.</p><p>Before and after. Receivables fall from two hundred and forty thousand to two hundred and thirty-two. The allowance falls from thirteen thousand to five. Net realizable value is two hundred and twenty-seven thousand both times. A write-off changes neither net receivables nor net income.</p><p>September 2027. Dale&#x27;s bankruptcy trustee pays Redwood River fifteen hundred dollars after all. It takes two entries. First, reinstate that part of the receivable. Debit accounts receivable, credit the allowance. Second, record the cash. Debit cash, credit accounts receivable.</p><p>Remember: under the allowance method, the expense comes with the year-end estimate, not with the write-off. Next: both methods side by side.</p>
+      </details>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+    <section class="page-section micro" id="video-6">
+      <h2 class="section-heading"><span class="lesson-num">Video six &middot; 1:32</span>The two methods side by side</h2>
+      <p class="lesson-case">Redwood River&#x27;s 2026 numbers under each method, then the full comparison in one table.</p>
+      <div class="player">
+        <video controls playsinline preload="none" poster="posters/ar-6.jpg" width="540" height="960">
+          <source src="videos/ar-6.mp4" type="video/mp4">
+          Your browser cannot play this video. <a href="videos/ar-6.mp4">Download it instead</a>.
+        </video>
+      </div>
+      <details class="script">
+        <summary>Read the script</summary>
+        <p>Direct write-off and allowance, side by side. Same aged debtor report, same customers, different numbers.</p><p>Recall the facts. Write-offs during 2026: sixty-five hundred. The aging requires an allowance of thirteen thousand, and there was twenty-two hundred in it before adjusting. Pause. What&#x27;s 2026 bad debt expense under each method?</p><p>2026 bad debt expense: sixty-five hundred under direct write-off, ten thousand eight hundred under the allowance method. Receivables on the balance sheet: two hundred and forty thousand, against two hundred and twenty-seven thousand. And when Dale&#x27;s Diner fails in 2027: eight thousand of expense under direct write-off. None under the allowance method.</p><p>The comparison. Direct write-off records the expense when the account goes bad. The allowance method records it in the period of the sale. Does it use the aged debtor report? No, and yes. Matching: poor, against good. Receivables: overstated, against net realizable value. And the rules: direct write-off for the tax return, or when amounts are immaterial. The allowance method for GAAP.</p><p>Direct write-off waits for the facts. The allowance method reads the aged debtor report and estimates in time. Now try the year-end entries yourself.</p>
+      </details>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+
+    <section class="page-section micro" id="practice">
+      <h2 class="section-heading"><span class="lesson-num">Practice</span>Year-end journal entries</h2>
+      <p class="lesson-case">Twelve entries from Redwood River Supply's report, from the 2026 adjustment to year end 2027.</p>
+      <p>Read the situation, choose the accounts and enter the amounts. Use one line for each debit and each credit; the order does not matter. <em>Check entry</em> tells you what to look at again without giving the answer away. Your progress is kept on this device.</p>
+      <div class="je" id="je-practice"><noscript>This exercise needs JavaScript switched on.</noscript></div>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+
+    <section class="page-section">
+      <p style="color:var(--muted);font-size:.95rem">Made for Intermediate Accounting (accounts receivable). Redwood River Supply and its customers are fictional, and the figures are illustrative. Corrections welcome at <a href="mailto:a.primmer@aston.ac.uk">a.primmer@aston.ac.uk</a>.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <span>&copy; Andrew Primmer. All rights reserved.</span>
+    <span>Aston Business School &middot; Aston University</span>
+  </div>
+</footer>
+<script src="journal-entries.js"></script>
+</body>
+</html>
