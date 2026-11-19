@@ -314,7 +314,7 @@ def lecture_page(i):
 """
     for j, m in enumerate(micros, 1):
         out += f'        <li><a href="#video-{n}-{j}"><span class="li-num">{n}.{j}</span><span><span class="li-title">{e(m[0])}</span><span class="li-case">{secline(m)}</span></span><span class="li-done">{mmss(f"{n}.{j}") if has_video(f"{n}.{j}") else "Coming soon"}</span></a></li>\n'
-    out += f'        <li><a href="#practice"><span class="li-num">Practice</span><span><span class="li-title">Lecture {n} exercises</span><span class="li-case">Interactive questions on everything in this lecture.</span></span><span class="li-done">Coming soon</span></a></li>\n      </ol>\n    </section>\n'
+    out += f'        <li><a href="#practice"><span class="li-num">Practice</span><span><span class="li-title">Lecture {n} exercises</span><span class="li-case">Interactive questions on everything in this lecture, checked as you go.</span></span><span class="li-done"></span></a></li>\n      </ol>\n    </section>\n'
     for j, m in enumerate(micros, 1):
         vid = f"{n}.{j}"; slug = f"{n}-{j}"
         if has_video(vid):
@@ -344,7 +344,9 @@ def lecture_page(i):
     out += f"""
     <section class="page-section micro" id="practice">
       <h2 class="section-heading"><span class="lesson-num">Practice</span>Lecture {n} exercises</h2>
-      <p class="placeholder-box">Interactive exercises for this lecture are coming soon. Until then, work the Exercise Set A questions at the end of {ch} of the textbook.</p>
+      <p class="lesson-case">Journal entries, calculations, matching, sorting and multiple-choice questions on this lecture.</p>
+      <p>Answer each question and press <em>Check answer</em>. A wrong answer tells you which video to rewatch, and you can show the answer if you're stuck. Completed exercises turn green. Your progress is kept on this device. For more practice, work Exercise Set A at the end of {ch} of the textbook, and try the <a href="books/">Redwood River Books simulator</a>.</p>
+      <div class="ex" id="acct-ex" data-lecture="{n}"><noscript>These exercises need JavaScript switched on.</noscript></div>
     </section>
 
     <nav class="page-section lecture-nav" aria-label="Lecture navigation">
@@ -352,7 +354,7 @@ def lecture_page(i):
     out += f'      <a href="lecture-{n-1:02d}.html">&larr; Lecture {n-1}</a>\n' if n > 1 else '      <a href="./">&larr; Course home</a>\n'
     out += f'      <a href="lecture-{n+1:02d}.html">Lecture {n+1} &rarr;</a>\n' if n < len(L) else '      <a href="./">Course home &rarr;</a>\n'
     out += "    </nav>\n"
-    return out + FOOT
+    return out + FOOT.replace("</body>", '<script src="exercises.js"></script>\n</body>')
 
 def course_index():
     out = header(2, "ACCT 211 Principles of Accounting I", "A distance-learning course in introductory financial accounting: 14 lectures and 84 two-minute videos, each tied to sections and pages of the free OpenStax textbook.")
@@ -373,7 +375,13 @@ def course_index():
         <li>When a video asks a quick-check question, pause it and answer before the reveal.</li>
         <li>Finish each lecture with its exercise set, then the textbook's Exercise Set A for that chapter.</li>
       </ol>
-      <div class="callout">This course is being built. The readings and all 84 videos are in place; lecture slides and interactive exercises are added lecture by lecture. The videos are narrated with a synthetic voice.</div>
+      <a class="sim-feature" href="books/">
+        <span class="sim-badge">Simulator</span>
+        <span class="sim-title">Redwood River Books</span>
+        <span class="sim-text">Keep the books of Redwood River Supply for its first year. Turn invoices, receipts, bank statements and payroll registers into journal entries, and watch every entry post to the T-accounts, the trial balance and the financial statements. Eight missions follow the course: opening the business, adjusting and closing, merchandising, FIFO, bank reconciliations, bad debts, buying a truck and running payroll.</span>
+        <span class="sim-go">Open the simulator &rarr;</span>
+      </a>
+      <div class="callout">This course is being built. The readings and all 84 videos are in place; every lecture has an interactive exercise set; lecture slides are added lecture by lecture. The videos are narrated with a synthetic voice.</div>
 
       <h2 class="section-heading">Lectures</h2>
 """
@@ -383,7 +391,7 @@ def course_index():
         for lec in L:
             n, short, title, week, ch, chp, part, summary, micros = lec
             if part not in keys: continue
-            out += f'<li><a href="lecture-{n:02d}.html"><span class="li-num">L{n}</span><span><span class="li-title">{e(title[0].upper()+title[1:])}</span><span class="li-case">{e(summary)} <span class="li-read">Read: {ch}, {chp.replace("–","&ndash;")}.</span></span></span><span class="li-done">Week {week}</span></a></li>\n'
+            out += f'<li><a href="lecture-{n:02d}.html" data-acct-lecture="{n}"><span class="li-num">L{n}</span><span><span class="li-title">{e(title[0].upper()+title[1:])}</span><span class="li-case">{e(summary)} <span class="li-read">Read: {ch}, {chp.replace("–","&ndash;")}.</span></span></span><span class="li-done">Week {week}</span></a></li>\n'
         out += "      </ol>\n"
     out += """
       <h2 class="section-heading">Reading list</h2>
@@ -405,7 +413,7 @@ def course_index():
       <p>Each lecture will have a PowerPoint deck with a QR code for every video, worked examples and in-class exercises. Slides are added here as each lecture is finished.</p>
     </section>
 """
-    return out + FOOT
+    return out + FOOT.replace("</body>", '<script src="exercises.js"></script>\n</body>')
 
 os.makedirs(OUT, exist_ok=True)
 open(os.path.join(OUT, "index.html"), "w").write(course_index())
