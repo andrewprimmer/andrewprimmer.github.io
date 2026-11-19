@@ -1,0 +1,80 @@
+/* Page styles for ACCT 360 Accounting Information Systems (distance learning). */
+.lesson-index{list-style:none;margin:22px 0 0;padding:0;border-top:1px solid var(--ink)}
+.lesson-index li{border-bottom:1px solid var(--rule);margin:0}
+.lesson-index a{display:grid;grid-template-columns:4.2rem 1fr auto;gap:12px;align-items:baseline;padding:14px 0;text-decoration:none;color:var(--ink)}
+.lesson-index a:hover .li-title,.lesson-index a:focus-visible .li-title{color:var(--accent)}
+.lesson-index .li-num{font-family:var(--display);color:var(--accent);font-size:.95rem}
+.lesson-index .li-title{display:block;font-family:var(--display);font-size:1.12rem}
+.lesson-index .li-case{display:block;font-size:.88rem;color:var(--soft);font-style:italic}
+.lesson-index .li-done{font-size:.85rem;color:var(--accent);white-space:nowrap}
+.part-heading{font-family:var(--display);font-weight:400;font-size:1rem;color:var(--soft);margin:30px 0 0;letter-spacing:.02em}
+.lesson-num{font-family:var(--display);font-size:.95rem;color:var(--accent);display:block;margin-bottom:2px}
+.lesson-case{margin:4px 0 0;font-style:italic;color:var(--soft)}
+.callout{border-left:3px solid var(--accent);padding:2px 0 2px 20px;margin:24px 0;font-style:italic;color:var(--soft)}
+.micro{scroll-margin-top:16px;border-top:1px solid var(--rule);padding-top:28px}
+.player{margin:18px auto 0;max-width:360px}
+.player video{display:block;width:100%;height:auto;aspect-ratio:9/16;background:#0E1A2C;border:1px solid var(--rule)}
+.script{margin:18px 0 0;border:1px solid var(--rule);padding:12px 16px}
+.script summary{cursor:pointer;font-family:var(--display);color:var(--accent)}
+.script p{margin:.7em 0 0;font-size:.95rem}
+.back{margin-top:14px;font-size:.9rem}
+.lecture-nav{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--ink);padding-top:16px;font-size:.95rem}
+.lecture-nav a{font-family:var(--display)}
+.steps{margin:12px 0 0;padding-left:1.3rem}
+.steps li{margin:.35em 0}
+
+/* exercises */
+.ex{margin-top:18px;border:1px solid var(--rule);padding:18px 20px 20px}
+.ex-nav{display:flex;flex-wrap:wrap;gap:8px}
+.ex-chip{width:2.2rem;height:2.2rem;background:none;border:1px solid var(--rule);color:var(--soft);font-family:var(--display);font-size:.95rem;cursor:pointer}
+.ex-chip[aria-selected="true"]{border-color:var(--ink);color:var(--ink);outline:1px solid var(--ink);outline-offset:2px}
+.ex-chip.done{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+.ex-chip:hover{border-color:var(--accent)}
+.ex-progress{margin:10px 0 0;font-size:.85rem;color:var(--soft);font-style:italic}
+.ex-kind{margin:18px 0 0;font-size:.82rem;color:var(--accent);letter-spacing:.03em;text-transform:uppercase}
+.ex-q{font-family:var(--display);font-size:1.18rem;margin:6px 0 0;line-height:1.4}
+.ex-area{margin-top:14px}
+.ex-options{display:grid;gap:8px}
+.ex-opt{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--rule);padding:10px 12px;cursor:pointer}
+.ex-opt:hover{border-color:var(--accent)}
+.ex-opt input{margin-top:.3em;accent-color:var(--accent)}
+.ex-pairs{display:grid;gap:8px}
+.ex-pair{display:grid;grid-template-columns:1fr minmax(11rem,1fr);gap:12px;align-items:center;border-bottom:1px solid var(--rule);padding:6px 0}
+.ex-pair.wrong .ex-left{color:#E8A27C}
+.ex-pair.wrong select{border-color:#E8A27C}
+.ex-pair select,.ex-num input{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--rule);color:var(--ink);font:inherit;font-size:.95rem;padding:7px 8px;border-radius:0}
+.ex-pair select option{background:var(--paper);color:var(--ink)}
+.ex-order{list-style:decimal;margin:0;padding-left:1.6rem;display:grid;gap:8px}
+.ex-step{border:1px solid var(--rule);padding:8px 10px}
+.ex-step::marker{color:var(--accent);font-family:var(--display)}
+.ex-step{display:list-item}
+.ex-step-text{display:inline}
+.ex-moves{float:right;display:inline-flex;gap:6px;margin-left:10px}
+.ex-move{background:none;border:1px solid var(--rule);color:var(--ink);width:2rem;height:1.8rem;cursor:pointer;font-size:.95rem}
+.ex-move:hover:not([disabled]){border-color:var(--accent);color:var(--accent)}
+.ex-move[disabled]{opacity:.3;cursor:default}
+.ex-tip{font-size:.85rem;color:var(--soft);font-style:italic;margin:10px 0 0}
+.ex-num{display:flex;align-items:center;gap:8px;max-width:16rem}
+.ex-num input{text-align:right;font-variant-numeric:tabular-nums}
+.ex-unit{font-family:var(--display);color:var(--soft)}
+.ex-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;align-items:center}
+.ex-btn{background:none;border:1px solid var(--ink);color:var(--ink);padding:7px 15px;font-family:var(--display);font-size:.95rem;cursor:pointer}
+.ex-btn:hover{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+.ex-btn.ghost{border-color:var(--rule);color:var(--soft)}
+.ex-btn.ghost:hover{background:none;border-color:var(--accent);color:var(--accent)}
+.ex-feedback{margin-top:14px;border-left:3px solid var(--rule);padding:2px 0 2px 16px}
+.ex-feedback:empty{display:none}
+.ex-feedback.ok{border-left-color:var(--accent)}
+.ex-msg{margin:0;font-family:var(--display)}
+.ex-feedback.ok .ex-msg{color:var(--accent)}
+.ex-why{margin:8px 0 0;font-size:.95rem}
+.ex-video{margin:6px 0 0;font-size:.88rem;color:var(--soft)}
+.ex-link{display:block;background:none;border:0;color:var(--soft);font:inherit;font-size:.85rem;text-decoration:underline;cursor:pointer;margin:16px 0 0 auto;padding:0}
+.ex-chip:focus-visible,.ex-btn:focus-visible,.ex-move:focus-visible,.ex-link:focus-visible,.ex-pair select:focus-visible,.ex-num input:focus-visible,.ex-opt input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (max-width:640px){
+  .lesson-index a{grid-template-columns:3.4rem 1fr}
+  .lesson-index .li-done{grid-column:2}
+  .player{max-width:none}
+  .ex{padding:14px 12px 16px}
+  .ex-pair{grid-template-columns:1fr}
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACCT 360 Lecture 3: Data and databases &middot; Andrew Primmer</title>
+<meta name="description" content="ACCT 360 Accounting Information Systems, Lecture 3: Data and databases. Six two-minute videos and an interactive exercise set.">
+<link rel="stylesheet" href="../../../assets/style.css">
+<link rel="stylesheet" href="ais.css">
+</head>
+<body id="top">
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="../../../index.html" class="site-wordmark">
+      Andrew Primmer
+      <span class="site-wordmark-sub">Accounting Historian</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../../../index.html">Home</a>
+      <a href="../../../research.html">Research</a>
+      <a href="../../../publications.html">Publications</a>
+      <a href="../../../cv.html">CV</a>
+      <a href="../../../sources/">Primary Sources</a>
+      <a href="../../../teaching/" aria-current="page">Teaching</a>
+      <a href="../../../folioscribe/">FolioScribe</a>
+      <a href="../../../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="site-main">
+  <div class="site-narrow">
+
+    <header class="page-header">
+      <div class="page-eyebrow"><a href="../">Teaching</a> &middot; <a href="./">ACCT 360 Accounting Information Systems</a> &middot; Lecture 3</div>
+      <h1 class="page-title">Data and databases</h1>
+      <p class="page-lede">Files versus databases, keys and relationships, the REA model, normalization, SQL and data warehouses.</p>
+    </header>
+
+    <section class="page-section">
+      <p>Watch the six microteaches in order, then try the <a href="#practice">exercises</a> at the end. Each video ends with a quick-check question: pause it and answer before the reveal. The script for every video is underneath it.</p>
+      <h2 class="section-heading">Contents</h2>
+      <ol class="lesson-index">
+        <li><a href="#video-3-1"><span class="li-num">3.1</span><span><span class="li-title">Files versus databases</span><span class="li-case">In old file-based systems, each department kept its own files.</span></span><span class="li-done">1:29</span></a></li><li><a href="#video-3-2"><span class="li-num">3.2</span><span><span class="li-title">Tables, keys and relationships</span><span class="li-case">A relational database stores data in two-dimensional tables.</span></span><span class="li-done">1:31</span></a></li><li><a href="#video-3-3"><span class="li-num">3.3</span><span><span class="li-title">The REA model</span><span class="li-case">The REA data model, developed by William McCarthy, designs accounting databases around three things: resources, events and agents.</span></span><span class="li-done">1:29</span></a></li><li><a href="#video-3-4"><span class="li-num">3.4</span><span><span class="li-title">Normalization</span><span class="li-case">Cram everything into one big table and you get three anomalies.</span></span><span class="li-done">1:23</span></a></li><li><a href="#video-3-5"><span class="li-num">3.5</span><span><span class="li-title">SQL for accountants</span><span class="li-case">SQL, or Structured Query Language, is the standard language for querying relational databases.</span></span><span class="li-done">1:22</span></a></li><li><a href="#video-3-6"><span class="li-num">3.6</span><span><span class="li-title">Data warehouses and analytics</span><span class="li-case">There are two kinds of system.</span></span><span class="li-done">1:31</span></a></li>
+        <li><a href="#practice"><span class="li-num">Practice</span><span><span class="li-title">Lecture 3 exercises</span><span class="li-case">Interactive questions on everything in this lecture, checked as you go.</span></span><span class="li-done"></span></a></li>
+      </ol>
+    </section>
+
+    <section class="page-section micro" id="video-3-1">
+      <h2 class="section-heading"><span class="lesson-num">Microteach 3.1 &middot; 1:29</span>Files versus databases</h2>
+      <p class="lesson-case">In old file-based systems, each department kept its own files.</p>
+      <div class="player">
+        <video controls playsinline preload="none" poster="posters/3-1.jpg" width="540" height="960">
+          <source src="videos/3-1.mp4" type="video/mp4">
+          Your browser cannot play this video. <a href="videos/3-1.mp4">Download it instead</a>.
+        </video>
+      </div>
+      <details class="script">
+        <summary>Read the script</summary>
+        <p>Why did companies stop keeping separate files for every department? One word: redundancy.</p><p>In old file-based systems, each department kept its own files. Sales had a customer file. Billing had another. Shipping had a third.</p><p>That caused problems. The same data was stored many times. Copies got out of sync, so a customer&#x27;s address might differ by department. Combining data for a report was hard. And every program depended on its own file format.</p><p>A database solves this by storing data once, in a shared, integrated pool, managed by a database management system, or DBMS.</p><p>The benefits: data is integrated across functions, shared by many users, stored with minimal redundancy, and independent of the programs that use it. That makes cross-functional analysis possible.</p><p>Example. A customer moves. In a database, you update the address once, and sales, billing and shipping all see the new one immediately.</p><p>Store once, use everywhere. That idea is the foundation of every ERP system in this course.</p><p>Quick check. What&#x27;s the main problem with separate department files? Pause and pick.</p><p>Data redundancy: the same data stored many times, which leads to inconsistencies.</p>
+      </details>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+    <section class="page-section micro" id="video-3-2">
+      <h2 class="section-heading"><span class="lesson-num">Microteach 3.2 &middot; 1:31</span>Tables, keys and relationships</h2>
+      <p class="lesson-case">A relational database stores data in two-dimensional tables.</p>
+      <div class="player">
+        <video controls playsinline preload="none" poster="posters/3-2.jpg" width="540" height="960">
+          <source src="videos/3-2.mp4" type="video/mp4">
+          Your browser cannot play this video. <a href="videos/3-2.mp4">Download it instead</a>.
+        </video>
+      </div>
+      <details class="script">
+        <summary>Read the script</summary>
+        <p>Every ERP system is built from tables. Here&#x27;s how they link together.</p><p>A relational database stores data in two-dimensional tables. Each row is one record, like one customer. Each column is an attribute, like the customer&#x27;s name or credit limit.</p><p>Every table needs a primary key: an attribute that uniquely identifies each row. For customers, it&#x27;s a customer number, never a name, because names aren&#x27;t unique.</p><p>A foreign key is an attribute that&#x27;s the primary key of another table. It&#x27;s how tables link.</p><p>Example. The customers table has customer number as its primary key. The sales table has invoice number as its primary key, plus customer number as a foreign key. That foreign key tells you which customer made each sale.</p><p>Two rules keep the data clean. Entity integrity: a primary key can never be blank. Referential integrity: a foreign key must match a real primary key. You can&#x27;t record a sale to a customer who doesn&#x27;t exist.</p><p>So: rows are records, columns are attributes, primary keys identify, and foreign keys link.</p><p>Quick check. Recording a sale to a customer number that doesn&#x27;t exist breaks which rule? Pause and pick.</p><p>Referential integrity. Every foreign key must match an existing record.</p>
+      </details>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+    <section class="page-section micro" id="video-3-3">
+      <h2 class="section-heading"><span class="lesson-num">Microteach 3.3 &middot; 1:29</span>The REA model</h2>
+      <p class="lesson-case">The REA data model, developed by William McCarthy, designs accounting databases around three things: resources, events and agents.</p>
+      <div class="player">
+        <video controls playsinline preload="none" poster="posters/3-3.jpg" width="540" height="960">
+          <source src="videos/3-3.mp4" type="video/mp4">
+          Your browser cannot play this video. <a href="videos/3-3.mp4">Download it instead</a>.
+        </video>
+      </div>
+      <details class="script">
+        <summary>Read the script</summary>
+        <p>Accountants have their own way to design databases. It&#x27;s called REA.</p><p>The REA data model, developed by William McCarthy, designs accounting databases around three things: resources, events and agents.</p><p>Resources are things of economic value, like cash and inventory. Events are business activities management wants to track, like a sale or a payment. Agents are the people and organizations involved: customers, employees and suppliers.</p><p>Take a sale. The sale event decreases inventory, a resource. It involves two agents: the customer and the salesperson. It&#x27;s paired with another event, receiving cash, which increases the cash resource.</p><p>That&#x27;s the give-to-get duality. Every event where you give something up is paired with one where you get something back. Give inventory, get cash.</p><p>REA captures what actually happened economically, not just debits and credits. You can still produce financial statements from it, plus much richer management reports.</p><p>So remember: resources, events, agents, and every give has a get.</p><p>Quick check. In the REA model, is a customer a resource, an event or an agent? Pause and pick.</p><p>An agent: a person or organization involved in an event.</p>
+      </details>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+    <section class="page-section micro" id="video-3-4">
+      <h2 class="section-heading"><span class="lesson-num">Microteach 3.4 &middot; 1:23</span>Normalization</h2>
+      <p class="lesson-case">Cram everything into one big table and you get three anomalies.</p>
+      <div class="player">
+        <video controls playsinline preload="none" poster="posters/3-4.jpg" width="540" height="960">
+          <source src="videos/3-4.mp4" type="video/mp4">
+          Your browser cannot play this video. <a href="videos/3-4.mp4">Download it instead</a>.
+        </video>
+      </div>
+      <details class="script">
+        <summary>Read the script</summary>
+        <p>Badly designed tables cause strange errors. Normalization prevents them.</p><p>Cram everything into one big table and you get three anomalies. Update: change an address and you must change it in many rows. Insert: you can&#x27;t add a new customer until they buy something. Delete: delete their only sale and you lose the customer entirely.</p><p>Normalization fixes this by splitting data into smaller, well-structured tables, each about one thing.</p><p>The first three normal forms matter most. First normal form: no repeating groups in a row. Second: every attribute depends on the whole primary key. Third: attributes depend on nothing but the key.</p><p>A handy way to remember it: every attribute should depend on the key, the whole key, and nothing but the key.</p><p>Example. Instead of one table holding every sale with the customer&#x27;s full address repeated, split it into a customers table and a sales table, linked by customer number. Now the address lives in one place.</p><p>Normalization means one fact, in one place.</p><p>Quick check. You can&#x27;t add a new customer until they make a purchase. Which anomaly is that? Pause and pick.</p><p>An insert anomaly.</p>
+      </details>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+    <section class="page-section micro" id="video-3-5">
+      <h2 class="section-heading"><span class="lesson-num">Microteach 3.5 &middot; 1:22</span>SQL for accountants</h2>
+      <p class="lesson-case">SQL, or Structured Query Language, is the standard language for querying relational databases.</p>
+      <div class="player">
+        <video controls playsinline preload="none" poster="posters/3-5.jpg" width="540" height="960">
+          <source src="videos/3-5.mp4" type="video/mp4">
+          Your browser cannot play this video. <a href="videos/3-5.mp4">Download it instead</a>.
+        </video>
+      </div>
+      <details class="script">
+        <summary>Read the script</summary>
+        <p>You don&#x27;t need to be a programmer to ask a database a question. You need SQL.</p><p>SQL, or Structured Query Language, is the standard language for querying relational databases. Almost every ERP system sits on a SQL database.</p><p>Four clauses cover most of what accountants need. SELECT picks the columns. FROM names the tables. WHERE filters the rows. GROUP BY creates totals by category.</p><p>Here&#x27;s an example. Select each customer and the sum of their sales, from the sales table, where the year is twenty twenty-six, grouped by customer. That&#x27;s a sales by customer report in four lines.</p><p>JOIN combines tables on a shared key, such as linking sales to customers by customer number, so you can report sales by region.</p><p>Auditors love SQL. You can find duplicate invoices, list payments over an approval limit, match employee addresses to vendor addresses, and test the entire population instead of a sample.</p><p>With SQL, you ask the data directly, instead of waiting for someone to build you a report.</p><p>Quick check. Which SQL clause filters the rows you get back? Pause and pick.</p><p>WHERE.</p>
+      </details>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+    <section class="page-section micro" id="video-3-6">
+      <h2 class="section-heading"><span class="lesson-num">Microteach 3.6 &middot; 1:31</span>Data warehouses and analytics</h2>
+      <p class="lesson-case">There are two kinds of system.</p>
+      <div class="player">
+        <video controls playsinline preload="none" poster="posters/3-6.jpg" width="540" height="960">
+          <source src="videos/3-6.mp4" type="video/mp4">
+          Your browser cannot play this video. <a href="videos/3-6.mp4">Download it instead</a>.
+        </video>
+      </div>
+      <details class="script">
+        <summary>Read the script</summary>
+        <p>Your ERP is great at recording today&#x27;s sales. It isn&#x27;t built to analyze ten years of them.</p><p>There are two kinds of system. Online transaction processing, or OLTP, runs the business: fast, small, constant transactions. Online analytical processing, or OLAP, analyzes the business: big queries across lots of history.</p><p>A data warehouse is a separate database holding years of historical data copied from operational systems, organized for analysis, so queries don&#x27;t slow down the ERP.</p><p>Data gets there through ETL: extract it from the ERP and other systems, transform it by cleaning and standardizing it, and load it into the warehouse. Then analysts query it.</p><p>Some related terms. A data mart is a smaller warehouse for one department. A data lake stores raw data in any format, including text and images. And business intelligence tools sit on top, turning data into dashboards.</p><p>Controls still matter. If the ETL process introduces errors, every analysis built on the warehouse is wrong.</p><p>So: record in the ERP, and analyze in the warehouse.</p><p>Quick check. In ETL, what does the T stand for? Pause and pick.</p><p>Transform: cleaning and standardizing data before it&#x27;s loaded.</p>
+      </details>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+
+    <section class="page-section micro" id="practice">
+      <h2 class="section-heading"><span class="lesson-num">Practice</span>Lecture 3 exercises</h2>
+      <p class="lesson-case">Matching, sorting, ordering, calculation and multiple-choice questions on this lecture.</p>
+      <p>Answer each question and press <em>Check answer</em>. A wrong answer tells you which video to rewatch, and you can show the answer if you're stuck. Completed exercises turn green. Your progress is kept on this device.</p>
+      <div class="ex" id="ais-ex" data-lecture="3"><noscript>These exercises need JavaScript switched on.</noscript></div>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+
+    <nav class="page-section lecture-nav" aria-label="Lectures"><a href="lecture-02.html">&larr; Lecture 2</a><a href="./">All lectures</a><a href="lecture-04.html">Lecture 4 &rarr;</a></nav>
+
+    <section class="page-section">
+      <p style="color:var(--muted);font-size:.95rem">ACCT 360 Accounting Information Systems is a mock course, built as a model for distance learning. Companies and figures in the examples are illustrative. The videos are narrated with a synthetic voice. Corrections welcome at <a href="mailto:a.primmer@aston.ac.uk">a.primmer@aston.ac.uk</a>.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <span>&copy; Andrew Primmer. All rights reserved.</span>
+    <span>Aston Business School &middot; Aston University</span>
+  </div>
+</footer>
+<script src="exercises.js"></script>
+</body>
+</html>
