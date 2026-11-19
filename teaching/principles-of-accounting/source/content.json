@@ -1,0 +1,996 @@
+{
+ "1": {
+  "warmup": [
+   "Think of a business you know well. What three numbers would you want to see every month to know whether it's doing well?",
+   "Collect answers on the board: sales, profit, cash, what customers owe, what we owe. Every one comes from accounting. Point out that different people pick different numbers: that's the user question in 1.3."
+  ],
+  "acts": [
+   [
+    "Name one decision Dana Larson will make in Redwood River's first year, and the accounting number she'll need to make it.",
+    "Examples: whether to hire a mechanic (profit, cash), whether to sell on credit (receivables, bad debts), whether to borrow for a truck (cash, liabilities)."
+   ],
+   [
+    "Financial or managerial? (a) A bank asks for last year's statements. (b) Dana wants profit by type of repair. (c) The IRS needs taxable income.",
+    "(a) Financial. (b) Managerial. (c) Tax, which draws on financial records but follows tax rules."
+   ],
+   [
+    "For each user, name the question they ask: a supplier, an employee, the state of Minnesota, a customer buying a warranty.",
+    "Supplier: will I be paid? Employee: can they afford raises, is my job safe? State: is the right sales and income tax paid? Customer: will they be around to honor the warranty?"
+   ],
+   [
+    "A merchant buys cloth on credit. Using Pacioli's idea of two sides, what did he receive and what did he give?",
+    "Received: cloth (an asset). Gave: a promise to pay (a liability). Two sides, equal amounts."
+   ],
+   [
+    "Why would investors struggle if every company chose its own accounting rules? Give one example.",
+    "Statements couldn't be compared: one firm might record revenue when orders are taken, another when cash arrives. GAAP gives one set of rules."
+   ],
+   [
+    "Pick one accounting career path and list one task you'd do in your first year.",
+    "Public: audit fieldwork, testing invoices. Corporate: month-end reconciliations. Government: reviewing tax returns. Nonprofit: grant reporting."
+   ]
+  ],
+  "case": [
+   "Lakeside Coffee Roasters",
+   "Maria runs a coffee roastery in Marshall. She keeps receipts in a shoebox, checks her bank balance on her phone, and has no idea whether her wholesale customers or her café make more money. Her bank wants financial statements before it will lend $40,000 for a new roaster, and a café chain has offered to buy 20% of the business.",
+   [
+    "Who are the users of Maria's accounting information?",
+    "What does each user need to know?",
+    "Which needs financial accounting, and which managerial?",
+    "What should Maria change first?"
+   ],
+   "Users: the bank (repayment), the café chain (value and profit), Maria (which line is profitable), the IRS. Bank and investor need GAAP financial statements; Maria needs managerial reports by product line. First step: a proper system that records every transaction."
+  ],
+  "exam": [
+   [
+    "Distinguish financial accounting from managerial accounting, giving one example of a report from each.",
+    6,
+    "Financial: external users, GAAP, historical, whole company, e.g. annual income statement. Managerial: internal users, no required format, future-oriented, segments, e.g. profit by product line."
+   ],
+   [
+    "Explain the roles of the FASB and the SEC in US financial reporting.",
+    4,
+    "FASB: independent body that writes US GAAP. SEC: government agency with legal authority to require public companies to follow GAAP, and that oversees their filings."
+   ]
+  ],
+  "take": [
+   "Accounting turns transactions into decision-useful information",
+   "Financial serves outsiders; managerial serves insiders",
+   "Different users ask different questions",
+   "Double entry dates to Pacioli in 1494",
+   "FASB writes GAAP; the SEC enforces it",
+   "Many careers, one foundation: the accounting cycle"
+  ],
+  "outcomes": [
+   "Explain what accounting is and why it matters",
+   "Distinguish financial from managerial accounting",
+   "Identify the users of accounting information",
+   "Describe the origins of double entry",
+   "Explain who sets US accounting rules",
+   "Describe careers in accounting"
+  ]
+ },
+ "2": {
+  "warmup": [
+   "If you could see only ONE financial report about a business you were thinking of investing in, which would you choose, and why?",
+   "Most pick profit or cash. Draw out that profit alone can mislead: a profitable business can run out of cash. That's why there are four statements."
+  ],
+  "acts": [
+   [
+    "Match each question to a statement: 'How much does the business owe the bank?' 'Did June make a profit?' 'Why is cash lower than profit?'",
+    "Balance sheet; income statement; statement of cash flows."
+   ],
+   [
+    "Classify for Redwood River: tools, an unpaid supplier bill, Dana's original investment, cash in the bank, a 5-year bank loan.",
+    "Asset (noncurrent); liability (current); equity; asset (current); liability (noncurrent, with next year's principal current)."
+   ],
+   [
+    "Revenue, expense, gain or loss? Delivery fees charged; fuel for the van; old welder sold above book value; tools stolen.",
+    "Revenue; expense; gain; loss."
+   ],
+   [
+    "Net income is $2,500. Dana withdraws $1,000. By how much does equity change, and on which statement do you see it?",
+    "Up $1,500 (plus any new investment), shown on the statement of owner's equity, then carried to the balance sheet."
+   ],
+   [
+    "Dana pays a full year's insurance of $2,400 in June. Under the cash basis and the accrual basis, how much is June's insurance expense?",
+    "Cash basis: $2,400. Accrual basis: $200, one month's share."
+   ],
+   [
+    "Current assets $21,000, current liabilities $14,000. Work out working capital and the current ratio. What do they tell a lender?",
+    "Working capital $7,000; current ratio 1.5. The business has $1.50 of current assets per dollar due within a year."
+   ]
+  ],
+  "case": [
+   "Marshall Mowers",
+   "Marshall Mowers repairs lawn equipment. For March it reports: service revenue $12,000; wages $5,000; rent $1,500; supplies used $800; owner withdrawals $2,000; cash $6,500; accounts receivable $3,000; equipment $15,000; accounts payable $1,200; notes payable (due in 4 years) $8,000. Capital on March 1 was $12,600, and the owner invested nothing new in March.",
+   [
+    "Prepare the income statement.",
+    "Prepare the statement of owner's equity.",
+    "Prepare a classified balance sheet.",
+    "Calculate the current ratio."
+   ],
+   "Net income 12,000 − 7,300 = 4,700. Ending capital 12,600 + 4,700 − 2,000 = 15,300. Current assets 9,500; equipment 15,000; total assets 24,500. Current liabilities 1,200; long-term 8,000; equity 15,300; total 24,500. Current ratio 9,500 ÷ 1,200 = 7.9."
+  ],
+  "exam": [
+   [
+    "Explain how the income statement, statement of owner's equity and balance sheet are linked.",
+    6,
+    "Net income from the income statement goes into the statement of owner's equity; ending capital goes to the equity section of the balance sheet. The balance sheet's cash agrees with the statement of cash flows."
+   ],
+   [
+    "Current assets are $45,000 and current liabilities $30,000. Calculate working capital and the current ratio, and explain what each shows.",
+    4,
+    "Working capital $15,000: the cushion of current assets over short-term debts. Current ratio 1.5: $1.50 of current assets per dollar of current liabilities."
+   ]
+  ],
+  "take": [
+   "Four statements, each answering one question",
+   "Assets = what we own; liabilities = what we owe",
+   "Gains and losses come from side events",
+   "Net income → equity → balance sheet",
+   "GAAP requires the accrual basis",
+   "Working capital and the current ratio test liquidity"
+  ],
+  "outcomes": [
+   "Describe the four financial statements",
+   "Define assets, liabilities and equity",
+   "Distinguish revenues, expenses, gains and losses",
+   "Explain how the statements link",
+   "Compare cash and accrual accounting",
+   "Read a classified balance sheet"
+  ]
+ },
+ "3": {
+  "warmup": [
+   "You lend a friend $50. Write down two things that changed for you, and two that changed for your friend.",
+   "You: cash down, a receivable up. Friend: cash up, a debt up. Every transaction has two sides, which is today's whole lecture."
+  ],
+  "acts": [
+   [
+    "Show the accounting equation after each: (a) Dana invests $20,000. (b) Borrows $5,000. (c) Buys $3,000 of equipment for cash.",
+    "(a) 20,000 = 0 + 20,000. (b) 25,000 = 5,000 + 20,000. (c) Still 25,000 = 5,000 + 20,000: cash down 3,000, equipment up 3,000."
+   ],
+   [
+    "Analyze: Redwood River bills a customer $900 for repairs, to be paid next month. Which accounts, up or down, and is the equation still balanced?",
+    "Accounts receivable up 900 (asset); service revenue up 900 (equity). Both sides up 900."
+   ],
+   [
+    "Debit or credit to increase: Supplies, Unearned revenue, Larson, Withdrawals, Rent expense, Notes payable.",
+    "Debit, credit, debit, debit, credit."
+   ],
+   [
+    "Journalize: Redwood River pays $750 rent for June.",
+    "Dr Rent expense 750; Cr Cash 750."
+   ],
+   [
+    "Post to T-accounts: Cash begins at $4,000. Debits: 1,200. Credits: 750, 900. What's the balance?",
+    "4,000 + 1,200 − 1,650 = 3,550 debit."
+   ],
+   [
+    "Your trial balance balances, but net income looks too high. Name two errors that could cause this without unbalancing it.",
+    "An expense debited to an asset account; revenue recorded twice; an expense entry omitted completely."
+   ]
+  ],
+  "case": [
+   "Redwood River's first week",
+   "Record Redwood River's first week. Jun 1: Dana invests $20,000. Jun 2: buys supplies $600 on account. Jun 3: buys equipment $8,000, paying $3,000 cash and signing a note for $5,000. Jun 5: repairs a tractor for $1,500 on account. Jun 6: pays the supplier for the supplies. Jun 7: Dana withdraws $500.",
+   [
+    "Journalize each transaction.",
+    "Post to T-accounts.",
+    "Prepare a trial balance.",
+    "Check: does the accounting equation balance?"
+   ],
+   "Trial balance: Cash 15,900 Dr (20,000 − 3,000 − 600 − 500); AR 1,500; Supplies 600; Equipment 8,000; Withdrawals 500 Dr. Notes payable 5,000; Capital 20,000; Service revenue 1,500. Totals 26,500 = 26,500."
+  ],
+  "exam": [
+   [
+    "Journalize: (a) the owner invests $15,000; (b) equipment bought for $6,000 on account; (c) services billed $2,200 on account; (d) wages paid $800.",
+    8,
+    "(a) Dr Cash 15,000, Cr Capital 15,000. (b) Dr Equipment 6,000, Cr Accounts payable 6,000. (c) Dr AR 2,200, Cr Service revenue 2,200. (d) Dr Wages expense 800, Cr Cash 800."
+   ],
+   [
+    "Explain why a trial balance that balances may still contain errors. Give two examples.",
+    4,
+    "It only proves total debits equal total credits. Omitted entries, wrong accounts, duplicated entries and equal errors on both sides all leave it in balance."
+   ]
+  ],
+  "take": [
+   "Assets = liabilities + equity, always",
+   "Every transaction changes at least two accounts",
+   "Debit left, credit right; know the normal balances",
+   "The journal records events in date order",
+   "The ledger sorts them by account",
+   "A balanced trial balance isn't proof of accuracy"
+  ],
+  "outcomes": [
+   "Apply the accounting equation",
+   "Analyze transactions",
+   "Use debits and credits correctly",
+   "Journalize transactions",
+   "Post to the ledger and T-accounts",
+   "Prepare and interpret a trial balance"
+  ]
+ },
+ "4": {
+  "warmup": [
+   "You buy a 12-month gym membership for $600 in September. How much of that did you 'use' in September? How much is still 'yours'?",
+   "$50 used, $550 still an asset to you. That's exactly a prepaid expense adjustment."
+  ],
+  "acts": [
+   [
+    "Classify each as a deferral or an accrual: unpaid interest on a loan; a customer's deposit; supplies used; work done but not billed.",
+    "Accrual (expense); deferral (unearned revenue); deferral (prepaid); accrual (revenue)."
+   ],
+   [
+    "Rent of $4,800 for 6 months was paid on April 1. Record the April 30 adjustment.",
+    "Dr Rent expense 800; Cr Prepaid rent 800."
+   ],
+   [
+    "A customer prepaid $1,800 for 3 months of service starting June 1. Record the June 30 adjustment.",
+    "Dr Unearned revenue 600; Cr Service revenue 600."
+   ],
+   [
+    "Wages of $250 a day are paid every Friday. June 30 is a Wednesday. Record the adjustment for Mon–Wed.",
+    "Dr Wages expense 750; Cr Wages payable 750."
+   ],
+   [
+    "A truck cost $30,000, with $6,000 salvage and a 4-year life. Record one month of straight-line depreciation.",
+    "(30,000 − 6,000) ÷ 4 ÷ 12 = 500. Dr Depreciation expense 500; Cr Accumulated depreciation 500."
+   ],
+   [
+    "Before adjustments net income was $5,000. Adjustments: insurance used $200, revenue earned from unearned $500, accrued wages $600. Adjusted net income?",
+    "5,000 − 200 + 500 − 600 = 4,700."
+   ]
+  ],
+  "case": [
+   "Prairie Pet Clinic",
+   "Prairie Pet Clinic's unadjusted trial balance on December 31 shows Prepaid insurance $3,600 (for 12 months from October 1), Supplies $2,000 (a count finds $700), Unearned revenue $1,500 (a $500 wellness plan per month, started December 1), and Equipment $24,000 (5-year life, no salvage, bought January 1). Vets earned $1,200 of wages not yet paid.",
+   [
+    "Identify each adjustment needed.",
+    "Prepare the adjusting entries.",
+    "Show the effect on net income.",
+    "Which balance sheet accounts change?"
+   ],
+   "Insurance 900 (3 months); supplies 1,300; earned revenue 500; depreciation 4,800; wages 1,200. Net income falls by 900 + 1,300 + 4,800 + 1,200 − 500 = 7,700."
+  ],
+  "exam": [
+   [
+    "Explain why adjusting entries are needed, with reference to the revenue and expense recognition principles.",
+    5,
+    "Periodicity splits time into periods; revenue must be recorded when earned and expenses matched to the revenue they help earn, not when cash moves. Adjustments update accounts at period end."
+   ],
+   [
+    "On Nov 1 a company paid $6,000 for 12 months of insurance and received $9,000 for 6 months of service. Prepare the Dec 31 adjusting entries.",
+    6,
+    "Dr Insurance expense 1,000, Cr Prepaid insurance 1,000. Dr Unearned revenue 3,000, Cr Service revenue 3,000."
+   ]
+  ],
+  "take": [
+   "Adjust so revenue and expenses land in the right period",
+   "Prepaid expenses become expenses as used",
+   "Unearned revenue becomes revenue as earned",
+   "Accruals record what's earned or owed but unpaid",
+   "Depreciation spreads cost; accumulated depreciation is a contra asset",
+   "The adjusted trial balance feeds the statements"
+  ],
+  "outcomes": [
+   "Explain why adjustments are needed",
+   "Adjust prepaid expenses",
+   "Adjust unearned revenue",
+   "Record accrued revenues and expenses",
+   "Record depreciation",
+   "Prepare an adjusted trial balance"
+  ]
+ },
+ "5": {
+  "warmup": [
+   "It's January 1. Should the business's 'sales so far this year' start at zero, or carry on from last year? What about its cash?",
+   "Sales restart at zero, cash carries on. That's the difference between temporary and permanent accounts, which closing entries handle."
+  ],
+  "acts": [
+   [
+    "From this adjusted trial balance extract: revenue $8,000; wages $3,000; rent $1,000; withdrawals $1,500; capital (start) $10,000. Find net income and ending capital.",
+    "Net income 4,000; ending capital 10,000 + 4,000 − 1,500 = 12,500."
+   ],
+   [
+    "Write the four closing entries for the figures in the last activity.",
+    "Dr Revenue 8,000, Cr Income summary 8,000. Dr Income summary 4,000, Cr Wages 3,000, Rent 1,000. Dr Income summary 4,000, Cr Capital 4,000. Dr Capital 1,500, Cr Withdrawals 1,500."
+   ],
+   [
+    "Which of these appear on a post-closing trial balance: Prepaid rent, Service revenue, Wages payable, Withdrawals, Accumulated depreciation?",
+    "Prepaid rent, Wages payable, Accumulated depreciation."
+   ],
+   [
+    "Put these in order: post-closing trial balance; adjusting entries; journalize; statements; closing entries; post.",
+    "Journalize, post, adjusting entries, statements, closing entries, post-closing trial balance."
+   ],
+   [
+    "On a worksheet, which columns do these go in: Rent expense, Unearned revenue, Accumulated depreciation, Service revenue?",
+    "Income statement debit; balance sheet credit; balance sheet credit; income statement credit."
+   ],
+   [
+    "A $200 payment to a supplier on account was recorded as Dr Supplies, Cr Cash. Write the correcting entry.",
+    "Dr Accounts payable 200; Cr Supplies 200."
+   ]
+  ],
+  "case": [
+   "Redwood River at June 30",
+   "Use Redwood River's adjusted trial balance: Service revenue $5,100; Wages $1,500; Supplies expense $450; Insurance $200; Depreciation $133; Interest $25; Withdrawals $1,000; Larson, Capital $20,000.",
+   [
+    "Prepare the income statement and statement of owner's equity.",
+    "Record the four closing entries.",
+    "Which accounts appear on the post-closing trial balance?",
+    "Then try mission 2 of Redwood River Books."
+   ],
+   "Net income 2,792; ending capital 21,792. Closing: revenue 5,100 to IS; expenses 2,308 from IS; IS 2,792 to capital; withdrawals 1,000 to capital. Post-closing: assets, liabilities and capital only."
+  ],
+  "exam": [
+   [
+    "Explain the purpose of closing entries and list the four steps.",
+    5,
+    "Reset temporary accounts to zero and move net income and withdrawals into capital. Close revenues to income summary; close expenses to income summary; close income summary to capital; close withdrawals to capital."
+   ],
+   [
+    "Revenue $12,000, expenses $7,500, withdrawals $2,000, beginning capital $18,000. Prepare the closing entries and calculate ending capital.",
+    6,
+    "Dr Revenue 12,000, Cr IS. Dr IS 7,500, Cr expenses. Dr IS 4,500, Cr Capital. Dr Capital 2,000, Cr Withdrawals. Ending capital 20,500."
+   ]
+  ],
+  "take": [
+   "Income statement first, then equity, then balance sheet",
+   "Closing resets revenues, expenses and withdrawals",
+   "The post-closing trial balance has permanent accounts only",
+   "The cycle repeats every period",
+   "The worksheet ties it all together on one page",
+   "Fix errors with correcting entries, never erasing"
+  ],
+  "outcomes": [
+   "Prepare statements from an adjusted trial balance",
+   "Record closing entries",
+   "Prepare a post-closing trial balance",
+   "Describe the full accounting cycle",
+   "Use a 10-column worksheet",
+   "Record correcting entries"
+  ]
+ },
+ "6": {
+  "warmup": [
+   "A store buys a jacket for $60 and sells it for $100. How much profit has it made? What would you need to know to be sure?",
+   "$40 gross profit, but you need the jacket's real cost (freight, discounts) and the store's other expenses. Today: merchandising."
+  ],
+  "acts": [
+   [
+    "Sales $90,000, cost of goods sold $54,000, operating expenses $25,000. Find gross profit and net income.",
+    "Gross profit 36,000; net income 11,000."
+   ],
+   [
+    "A store selling 10,000 low-value items without barcode scanners: perpetual or periodic? What risk does it run?",
+    "Probably periodic: cheaper. Risk: theft and damage hide in cost of goods sold until the count."
+   ],
+   [
+    "Journalize: buy $5,000 of goods on account, terms 2/10, n/30, FOB shipping point; pay $150 freight; pay within 10 days.",
+    "Dr Inventory 5,000, Cr AP 5,000. Dr Inventory 150, Cr Cash 150. Dr AP 5,000, Cr Inventory 100, Cr Cash 4,900."
+   ],
+   [
+    "Journalize a sale of $2,400 on account. The goods cost $1,500.",
+    "Dr AR 2,400, Cr Sales 2,400. Dr COGS 1,500, Cr Inventory 1,500."
+   ],
+   [
+    "The customer returns $400 of goods (cost $250), then pays the rest within the 2% discount period. Journalize both.",
+    "Dr Sales returns 400, Cr AR 400; Dr Inventory 250, Cr COGS 250. Dr Cash 1,960, Dr Sales discounts 40, Cr AR 2,000."
+   ],
+   [
+    "Net sales $120,000; gross profit $42,000. What's the gross margin ratio? Is it good?",
+    "35%. Compare with the industry and with prior years; on its own it's neither good nor bad."
+   ]
+  ],
+  "case": [
+   "Redwood River's first month of selling",
+   "In July Redwood River buys $10,000 of fencing and feed on account (2/10, n/30, FOB shipping point), pays $300 freight, returns $1,000 of damaged feed, and pays within the discount period. It sells $4,000 of fencing on account (cost $2,500), takes a $500 return (cost $300), collects the balance with a 2% discount, and makes $2,000 of cash sales (cost $1,200).",
+   [
+    "Journalize July's transactions.",
+    "Prepare a multi-step income statement through gross profit.",
+    "Calculate the gross margin ratio.",
+    "Then try mission 3 of Redwood River Books."
+   ],
+   "Net sales 6,000 − 500 − 70 = 5,430; COGS 2,500 − 300 + 1,200 = 3,400; gross profit 2,030; gross margin 37.4%."
+  ],
+  "exam": [
+   [
+    "Compare the perpetual and periodic inventory systems.",
+    5,
+    "Perpetual updates inventory and COGS at each transaction, gives current records and reveals shrinkage. Periodic records purchases and calculates COGS from a count at period end; simpler but less control."
+   ],
+   [
+    "Journalize, under perpetual: a $6,000 purchase on account, 2/10, n/30; payment within 10 days; a sale for $4,500 cash of goods costing $2,800.",
+    7,
+    "Dr Inventory 6,000, Cr AP. Dr AP 6,000, Cr Inventory 120, Cr Cash 5,880. Dr Cash 4,500, Cr Sales. Dr COGS 2,800, Cr Inventory."
+   ]
+  ],
+  "take": [
+   "Net sales − cost of goods sold = gross profit",
+   "Perpetual tracks inventory with every sale",
+   "Discounts and freight-in change inventory cost",
+   "Every perpetual sale needs two entries",
+   "Returns and discounts are contra-revenue",
+   "The multi-step statement shows gross and operating profit"
+  ],
+  "outcomes": [
+   "Contrast service and merchandising businesses",
+   "Compare perpetual and periodic systems",
+   "Record merchandise purchases",
+   "Record merchandise sales",
+   "Record sales discounts and returns",
+   "Prepare a multi-step income statement"
+  ]
+ },
+ "7": {
+  "warmup": [
+   "A gas station fills its tanks at $3.00 a gallon, then at $3.40. It sells some gas. What did that gas cost?",
+   "No single right answer: it depends on the assumption about which gallons were sold. That's cost flow."
+  ],
+  "acts": [
+   [
+    "Beginning 50 units @ $8; buy 100 @ $9; buy 50 @ $11. 120 units are sold. Total cost of goods available?",
+    "400 + 900 + 550 = 1,850."
+   ],
+   [
+    "Same data: FIFO cost of goods sold and ending inventory (periodic).",
+    "COGS 50 × 8 + 70 × 9 = 1,030; ending 30 × 9 + 50 × 11 = 820."
+   ],
+   [
+    "Same data: LIFO and weighted average cost of goods sold (periodic).",
+    "LIFO: 50 × 11 + 70 × 9 = 1,180. Average: 1,850 ÷ 200 = 9.25; 120 × 9.25 = 1,110."
+   ],
+   [
+    "Same data, but all 120 units were sold BEFORE the $11 purchase. Perpetual LIFO cost of goods sold?",
+    "100 × 9 + 20 × 8 = 1,060 (versus 1,180 periodic)."
+   ],
+   [
+    "Inventory cost $8,400; expected selling price $9,000; selling costs $1,100. What's reported, and what's the entry?",
+    "NRV 7,900 < cost; write down 500. Dr COGS 500, Cr Inventory 500."
+   ],
+   [
+    "Year 1 ending inventory was understated by $2,000. What happens to net income in years 1 and 2?",
+    "Year 1 understated by 2,000; year 2 overstated by 2,000; total correct."
+   ]
+  ],
+  "case": [
+   "Feed barn decisions",
+   "Redwood River's August feed card: 100 bags @ $10 on hand, 200 bought @ $11, 100 bought @ $13; 250 sold @ $20. Dana's tax adviser suggests switching from FIFO to LIFO 'to save tax'. Her banker wants the balance sheet to show inventory at realistic values.",
+   [
+    "Calculate COGS and gross profit under FIFO, LIFO and average.",
+    "Which method minimizes tax, and by how much profit?",
+    "What does the LIFO conformity rule mean for Dana?",
+    "Which method would you recommend, and why?"
+   ],
+   "COGS: FIFO 2,650, LIFO 2,950, average 2,812.50; gross profit 2,350 / 2,050 / 2,187.50. LIFO lowers profit by 300. Conformity: must use LIFO in the books too, which lowers reported profit and shows old costs on the balance sheet."
+  ],
+  "exam": [
+   [
+    "Explain how FIFO and LIFO affect net income and the balance sheet when prices are rising.",
+    6,
+    "FIFO: older, lower costs to COGS, higher income and taxes, inventory at recent costs. LIFO: newer, higher costs to COGS, lower income and taxes, inventory at old costs. LIFO allowed under GAAP, not IFRS; conformity rule."
+   ],
+   [
+    "Beginning 200 @ $5; purchase 300 @ $6. 350 units sold. Calculate COGS under FIFO, LIFO and weighted average (periodic).",
+    6,
+    "Available 2,800. FIFO 200 × 5 + 150 × 6 = 1,900. LIFO 300 × 6 + 50 × 5 = 2,050. Average 5.60 × 350 = 1,960."
+   ]
+  ],
+  "take": [
+   "The cost flow method changes profit, not the goods",
+   "FIFO: oldest costs to COGS",
+   "LIFO: newest costs to COGS; GAAP only",
+   "Timing makes perpetual and periodic differ",
+   "Write inventory down to net realizable value",
+   "Inventory errors reverse the next year"
+  ],
+  "outcomes": [
+   "Explain why cost flow matters",
+   "Apply specific identification and FIFO",
+   "Apply LIFO and weighted average",
+   "Compare perpetual and periodic results",
+   "Apply lower of cost and NRV",
+   "Analyze inventory errors and turnover"
+  ]
+ },
+ "8": {
+  "warmup": [
+   "Think of a shop, café or club where you've worked or volunteered. What stopped staff from taking cash out of the till?",
+   "Typical answers: registers, cameras, counts at shift end, two people closing up. These are internal controls; today we name and organize them."
+  ],
+  "acts": [
+   [
+    "A bookkeeper with money troubles has sole control of payments, and says 'they underpay me anyway'. Label each part of the fraud triangle.",
+    "Pressure: money troubles. Opportunity: sole control. Rationalization: 'they underpay me'."
+   ],
+   [
+    "Which SOX requirements would have helped investors in Enron or WorldCom? Pick two and explain.",
+    "CEO/CFO certification (personal liability); section 404 audit of internal control; PCAOB oversight of auditors."
+   ],
+   [
+    "Match to a COSO component: a code of conduct; an annual fraud-risk review; two signatures on large checks; internal audit testing controls.",
+    "Control environment; risk assessment; control activities; monitoring."
+   ],
+   [
+    "Redwood River has two staff. Design three cash controls Dana can run herself.",
+    "She opens bank statements and reviews every check; deposits daily; signs every check; reconciles the bank account monthly; uses prenumbered receipts."
+   ],
+   [
+    "A $150 petty cash fund holds $18 and receipts for postage $42, supplies $55, coffee $35. Record the replenishment.",
+    "Dr Postage 42, Supplies expense 55, Miscellaneous expense 35; Cr Cash 132. Fund balances: 18 + 132 = 150, so no shortage."
+   ],
+   [
+    "Bank balance $8,400; deposit in transit $900; outstanding checks $1,250; books show $8,120; service charge $20; NSF $50. Do both sides agree?",
+    "Bank 8,400 + 900 − 1,250 = 8,050. Books 8,120 − 20 − 50 = 8,050. Agree. Entries: service charge and NSF only."
+   ]
+  ],
+  "case": [
+   "Prairie Hardware's missing cash",
+   "Prairie Hardware has one bookkeeper who opens the mail, deposits checks, records payments, writes checks for the owner's signature, and reconciles the bank account. The owner signs checks without looking at invoices. Cash has been 'tight' for months even though sales are up.",
+   [
+    "Which side of the fraud triangle is strongest here?",
+    "List the control weaknesses.",
+    "Recommend controls, including for a small staff.",
+    "How would a bank reconciliation by someone else help?"
+   ],
+   "Opportunity is wide open. Weaknesses: one person handles, records and reconciles cash; owner signs blind. Controls: owner opens mail and statements, reviews supporting documents before signing, independent reconciliation, mandatory vacation. An independent reconciliation would reveal missing deposits or unauthorized checks."
+  ],
+  "exam": [
+   [
+    "Explain the fraud triangle and how internal controls address it.",
+    5,
+    "Pressure, opportunity, rationalization. Controls reduce opportunity through separation of duties, authorization, physical safeguards and independent checks."
+   ],
+   [
+    "Prepare a bank reconciliation: bank $10,200; deposits in transit $1,500; outstanding checks $2,300; books $9,400; note collected $300 plus $10 interest; service charge $25; NSF check $285. Give the journal entries.",
+    8,
+    "Adjusted bank 10,200 + 1,500 − 2,300 = 9,400. Adjusted books 9,400 + 310 − 25 − 285 = 9,400. Entries: Dr Cash 310, Cr Notes receivable 300, Interest revenue 10; Dr Bank service charges 25, Cr Cash 25; Dr Accounts receivable 285, Cr Cash 285."
+   ]
+  ],
+  "take": [
+   "Pressure, opportunity, rationalization: controls cut opportunity",
+   "SOX made control a yearly, audited duty",
+   "COSO: five components, not just procedures",
+   "Separate custody, recording and authorization of cash",
+   "Petty cash: imprest fund, replenished to a fixed amount",
+   "Only book-side reconciling items need entries"
+  ],
+  "outcomes": [
+   "Explain the fraud triangle",
+   "Describe the main requirements of SOX",
+   "Apply COSO's five components",
+   "Design controls over cash",
+   "Account for petty cash",
+   "Prepare a bank reconciliation"
+  ]
+ },
+ "9": {
+  "warmup": [
+   "Your friend owes you $20 and has stopped answering your texts. On your personal 'balance sheet', is that $20 still worth $20?",
+   "Probably not. Businesses face the same question with receivables: they report what they expect to collect."
+  ],
+  "acts": [
+   [
+    "Why might Redwood River accept a note receivable instead of an open account from a slow-paying farmer?",
+    "Formal written promise, a fixed maturity date and interest compensate for waiting; easier to enforce."
+   ],
+   [
+    "Direct write-off: a $900 account is written off in March for a sale made last November. Journalize, and explain the matching problem.",
+    "Dr Bad debt expense 900, Cr AR 900. The expense lands this year, but the revenue was last year."
+   ],
+   [
+    "Allowance method: estimate $3,000 of bad debts; later write off a $700 account. Journalize both. What happens to net receivables at the write-off?",
+    "Dr Bad debt expense 3,000, Cr Allowance 3,000. Dr Allowance 700, Cr AR 700. Net receivables don't change."
+   ],
+   [
+    "Credit sales $300,000 (1.5% uncollectible); receivables $60,000 (6% uncollectible); allowance has a $500 credit balance. Expense under each approach?",
+    "Income statement approach: 4,500. Balance sheet approach: 3,600 − 500 = 3,100."
+   ],
+   [
+    "Aging: current $20,000 at 2%; 31–60 days $8,000 at 10%; over 60 days $2,000 at 40%. Required allowance? Entry if the allowance has a $300 debit balance?",
+    "400 + 800 + 800 = 2,000. Entry: 2,300."
+   ],
+   [
+    "A $9,000, 6%, 120-day note is received on November 1. How much interest is accrued at December 31 (360-day year)? At maturity, how much is collected?",
+    "9,000 × 6% × 60/360 = 90 accrued; at maturity 9,180 collected (180 total interest)."
+   ]
+  ],
+  "case": [
+   "Redwood River's harvest receivables",
+   "After harvest Redwood River has $50,000 of receivables. Lakeview Farms ($600) has gone into liquidation. Hansen Family Farms asks to convert $6,000 of its balance into a 90-day, 8% note. Dana's aging report shows current $30,000 (1%), 1–30 days $10,000 (4%), 31–60 days $6,000 (10%), 61–90 days $3,000 (25%) and over 90 days $1,000 (50%). The allowance had $400 before the write-off.",
+   [
+    "Record the Lakeview write-off under the allowance method.",
+    "Record the note and its collection.",
+    "Calculate the required allowance and the year-end entry.",
+    "Then try mission 6 of Redwood River Books."
+   ],
+   "Write-off: Dr Allowance 600, Cr AR. Note: Dr NR 6,000, Cr AR; collect 6,120. Required allowance 2,550; allowance has 200 debit; entry 2,750."
+  ],
+  "exam": [
+   [
+    "Compare the direct write-off and allowance methods, explaining why GAAP prefers the allowance method.",
+    6,
+    "Direct write-off records expense when an account fails; simple, used for tax, but mismatches expense and revenue and overstates receivables. Allowance estimates bad debts in the period of sale and shows receivables at net realizable value."
+   ],
+   [
+    "Receivables $80,000; aging estimate of uncollectible $4,800; allowance has a $600 debit balance. Journalize the adjustment and show the balance sheet presentation.",
+    5,
+    "Dr Bad debt expense 5,400, Cr Allowance 5,400. AR 80,000 less allowance 4,800 = 75,200."
+   ]
+  ],
+  "take": [
+   "Credit sales trade risk for revenue",
+   "Direct write-off is simple but breaks matching",
+   "The allowance method estimates bad debts up front",
+   "Percent of sales vs. percent of receivables",
+   "Aging gives older balances higher loss rates",
+   "Interest = principal × rate × time"
+  ],
+  "outcomes": [
+   "Explain accounts receivable and credit sales",
+   "Apply the direct write-off method",
+   "Apply the allowance method",
+   "Compare the two estimation approaches",
+   "Prepare an aging schedule",
+   "Account for notes receivable"
+  ]
+ },
+ "10": {
+  "warmup": [
+   "You buy a $1,200 laptop for college that should last four years. Is it a 'cost' of this semester? Of this year? How would you spread it?",
+   "About $300 a year: that's depreciation. Draw out that the laptop also loses value faster at first, which leads to accelerated methods."
+  ],
+  "acts": [
+   [
+    "Classify: a delivery van, a trademark, farmland, a gravel pit, a copyright, an office building.",
+    "Tangible (PP&E); intangible; land; natural resource; intangible; tangible (PP&E)."
+   ],
+   [
+    "A machine's invoice is $25,000. Freight $800, installation $1,200, a first-year service contract $900, repairs after a dropped crate $400. What's the cost?",
+    "25,000 + 800 + 1,200 = 27,000. Service contract and repairs are expenses."
+   ],
+   [
+    "Cost $27,000, salvage $3,000, life 6 years. Straight-line depreciation and book value after 2 years?",
+    "4,000 a year; book value 27,000 − 8,000 = 19,000."
+   ],
+   [
+    "Same machine: expected to produce 120,000 units; 25,000 made in year 1. Units-of-production depreciation?",
+    "24,000 ÷ 120,000 = 0.20 a unit; 5,000."
+   ],
+   [
+    "Same machine under double-declining balance: years 1 and 2.",
+    "Rate 2/6 = 33.3%. Year 1: 9,000. Year 2: 18,000 × 33.3% = 6,000."
+   ],
+   [
+    "Bought September 1 (calendar year-end). Straight-line $4,000 a year. Year-1 depreciation? After 3 full years, the life is extended by 2 years: what next?",
+    "4,000 × 4/12 = 1,333. Then remaining base spread over the new remaining life, prospectively."
+   ]
+  ],
+  "case": [
+   "Choosing a depreciation method",
+   "Redwood River buys its delivery truck for $43,000 (5-year life, $3,000 salvage, about 100,000 miles). Dana expects to drive it hard in the first two years. Her banker focuses on net income; her tax adviser wants low taxable income.",
+   [
+    "Prepare a 5-year schedule under straight-line and double-declining balance.",
+    "Calculate year-1 units-of-production depreciation at 30,000 miles.",
+    "Which method best matches how the truck is used?",
+    "Which might Dana choose for her financial statements, and why?"
+   ],
+   "SL 8,000 a year. DDB 17,200, 10,320, 6,192, 3,715, 2,573. UOP 12,000 in year 1. Heavy early use supports DDB or UOP; tax depreciation (MACRS) is a separate question."
+  ],
+  "exam": [
+   [
+    "Explain what is included in the cost of a plant asset, with examples.",
+    4,
+    "All costs necessary to acquire it and get it ready for use: price, sales tax, freight, installation, testing. Not later repairs or running costs."
+   ],
+   [
+    "Equipment costs $50,000, salvage $5,000, life 5 years. Calculate years 1 and 2 depreciation under straight-line and double-declining balance.",
+    6,
+    "SL 9,000 each year. DDB 20,000 then 12,000."
+   ]
+  ],
+  "take": [
+   "Tangible, intangible and natural resources",
+   "Cost = everything to get the asset ready",
+   "Straight-line: equal amounts each year",
+   "Units of production: depreciation follows use",
+   "DDB front-loads depreciation",
+   "Partial years pro-rate; estimate changes go forward"
+  ],
+  "outcomes": [
+   "Classify long-term assets",
+   "Determine the cost of an asset",
+   "Apply straight-line depreciation",
+   "Apply units-of-production depreciation",
+   "Apply double-declining balance",
+   "Handle partial years and revised estimates"
+  ]
+ },
+ "11": {
+  "warmup": [
+   "You sell your old phone for $150. You paid $900 two years ago. Did you make a gain or a loss? What would an accountant need to know?",
+   "It depends on book value: cost less accumulated depreciation. Today: disposals and other long-term asset issues."
+  ],
+  "acts": [
+   [
+    "Capitalize or expense: a new transmission (adds 3 years); an annual inspection; a lift gate added to the truck; washing the fleet.",
+    "Capitalize; expense; capitalize; expense."
+   ],
+   [
+    "Cost $12,000; accumulated depreciation $9,000 after updating; sold for $2,000. Journalize.",
+    "Dr Cash 2,000, Dr Accumulated depreciation 9,000, Dr Loss 1,000; Cr Equipment 12,000."
+   ],
+   [
+    "A machine's carrying value is $40,000; future cash flows are $32,000; fair value is $25,000. Is it impaired? By how much?",
+    "Yes: cash flows can't recover the carrying value. Write down to fair value: 15,000 loss."
+   ],
+   [
+    "A timber tract cost $800,000, residual land value $100,000, 350,000 board feet. 60,000 board feet are cut. Depletion?",
+    "700,000 ÷ 350,000 = 2 a foot; 120,000."
+   ],
+   [
+    "A patent bought for $45,000 has 15 years of legal life but 9 years of useful life. Annual amortization? What about goodwill of $200,000?",
+    "45,000 ÷ 9 = 5,000. Goodwill is not amortized by public companies; it's tested for impairment."
+   ],
+   [
+    "Net sales $240,000; total assets $180,000 at the start of the year and $220,000 at the end. Asset turnover?",
+    "240,000 ÷ 200,000 = 1.2."
+   ]
+  ],
+  "case": [
+   "Redwood River trades up",
+   "On November 1 Redwood River sells its June shop equipment (cost $8,000, $133 a month depreciation, recorded for June only) for $7,000 and buys a $43,000 delivery truck. In December it pays $120 for an oil change and $2,400 for a refrigerated unit fitted to the truck.",
+   [
+    "Bring depreciation up to date and record the sale.",
+    "Record the truck purchase and the December costs.",
+    "Which December cost is capitalized, and why?",
+    "Then try mission 7 of Redwood River Books."
+   ],
+   "Update 4 months: 532. Book value 7,335; loss 335. Oil change expensed; refrigerated unit capitalized because it adds capacity."
+  ],
+  "exam": [
+   [
+    "Distinguish capital and revenue expenditures and explain the effect of misclassifying one.",
+    5,
+    "Capital expenditures extend life or add capacity and are capitalized; revenue expenditures maintain the asset and are expensed. Capitalizing an expense overstates assets and income now and understates income later."
+   ],
+   [
+    "Equipment cost $30,000, accumulated depreciation $18,000. Journalize its sale for (a) $14,000 and (b) $9,000.",
+    6,
+    "(a) Dr Cash 14,000, AD 18,000; Cr Equipment 30,000, Gain 2,000. (b) Dr Cash 9,000, AD 18,000, Loss 3,000; Cr Equipment 30,000."
+   ]
+  ],
+  "take": [
+   "Capitalize improvements; expense maintenance",
+   "Update depreciation, remove the asset, record gain or loss",
+   "Impairment writes assets down to fair value",
+   "Depletion spreads natural-resource cost by quantity",
+   "Amortize limited-life intangibles; test goodwill",
+   "Asset turnover shows how hard assets work"
+  ],
+  "outcomes": [
+   "Distinguish capital and revenue expenditures",
+   "Record asset disposals",
+   "Explain and record impairments",
+   "Calculate depletion",
+   "Account for intangible assets",
+   "Report long-term assets and asset turnover"
+  ]
+ },
+ "12": {
+  "warmup": [
+   "List everything you'll have to pay in the next 12 months: rent, phone, loans, subscriptions. Which are fixed amounts, and which are guesses?",
+   "Known liabilities versus estimates. Businesses have both, and today we classify and record them."
+  ],
+  "acts": [
+   [
+    "Current or long-term at Dec 31: wages owed; next year's $10,000 of a $50,000 loan; sales tax collected; a lawsuit settlement due in 3 years.",
+    "Current; current (10,000); current; long-term."
+   ],
+   [
+    "A $20,000, 9%, 4-month note is signed on December 1. Record the Dec 31 accrual and the April 1 repayment.",
+    "Accrue 150. At maturity interest 600: Dr NP 20,000, Interest payable 150, Interest expense 450; Cr Cash 20,600."
+   ],
+   [
+    "A sale of $2,500 with Minnesota sales tax at 6.875%. Journalize, ignoring cost of goods sold.",
+    "Dr Cash 2,671.88; Cr Sales 2,500, Sales tax payable 171.88."
+   ],
+   [
+    "A gym sells 300 annual memberships at $360 on January 1. Record the sale and the January 31 adjustment.",
+    "Dr Cash 108,000, Cr Unearned revenue 108,000. Dr Unearned revenue 9,000, Cr Membership revenue 9,000."
+   ],
+   [
+    "A $60,000 loan is repaid $15,000 a year. At year-end, $45,000 is outstanding. How is it reported?",
+    "15,000 current; 30,000 long-term."
+   ],
+   [
+    "Classify: a probable $50,000 lawsuit loss that can be estimated; a possible environmental fine; a remote claim; expected warranty repairs of 3% of $80,000 sales.",
+    "Record; disclose; nothing; record 2,400."
+   ]
+  ],
+  "case": [
+   "Redwood River's year-end liabilities",
+   "At December 31 Redwood River has: a $30,000, 6% truck loan taken out November 1, repayable at $6,000 a year; $68.75 of sales tax collected but not yet paid; $2,500 of unearned service revenue now fully earned; equipment sales of $10,000 with a 1-year warranty (2% expected cost); and a customer threatening to sue over a failed repair (lawyer: 'reasonably possible').",
+   [
+    "Record the necessary adjusting entries.",
+    "Show the current and long-term liabilities.",
+    "How is the lawsuit handled?",
+    "Then try mission 8 of Redwood River Books."
+   ],
+   "Interest 300; warranty 200; unearned to revenue 2,500. Current portion of loan 6,000; long-term 24,000. Lawsuit: disclose in the notes only."
+  ],
+  "exam": [
+   [
+    "Explain how contingent liabilities are accounted for, with an example of each treatment.",
+    6,
+    "Probable and estimable: record (warranty). Reasonably possible, or probable but not estimable: disclose (pending lawsuit). Remote: no action."
+   ],
+   [
+    "A company signs a $15,000, 8%, 6-month note on October 1. Journalize the note, the December 31 accrual and the repayment.",
+    6,
+    "Dr Cash 15,000, Cr NP. Dr Interest expense 300, Cr Interest payable. At maturity: Dr NP 15,000, Interest payable 300, Interest expense 300; Cr Cash 15,600."
+   ]
+  ],
+  "take": [
+   "Current liabilities are due within a year",
+   "Accrue interest on notes at period end",
+   "Sales tax is owed to the state, not revenue",
+   "Unearned revenue is a promise to deliver",
+   "Next year's principal is current",
+   "Record probable, estimable contingencies"
+  ],
+  "outcomes": [
+   "Identify current liabilities",
+   "Account for notes payable and interest",
+   "Record sales tax",
+   "Account for unearned revenue",
+   "Report the current portion of long-term debt",
+   "Account for contingencies and warranties"
+  ]
+ },
+ "13": {
+  "warmup": [
+   "Look at a real or imagined paycheck. Why is the take-home pay so much less than the wage? Where does the rest go?",
+   "Taxes, Social Security, Medicare, benefits. And the employer pays more on top. Today we follow every dollar."
+  ],
+  "acts": [
+   [
+    "An hourly worker earns $22 an hour and works 46 hours. Gross pay with overtime at 1.5 times?",
+    "40 × 22 + 6 × 33 = 880 + 198 = 1,078."
+   ],
+   [
+    "Gross pay $1,078. FICA (no limits reached)? List the other deductions you'd expect to see.",
+    "1,078 × 7.65% = 82.47. Federal and Minnesota income tax, health insurance, retirement contributions."
+   ],
+   [
+    "Employer taxes on $1,078: matching FICA, FUTA at 0.6%, SUTA at 1.2%. Total?",
+    "82.47 + 6.47 + 12.94 = 101.88."
+   ],
+   [
+    "Journalize a payroll: gross $2,000; federal tax $220; state tax $100; FICA $153; health $60; net paid.",
+    "Dr Wages 2,000; Cr Federal 220, State 100, SS 124, Medicare 29, Health 60, Cash 1,467."
+   ],
+   [
+    "Staff earn 1.5 vacation days a month at $180 a day. Record the monthly accrual. What happens when they take the days?",
+    "Dr Vacation benefits expense 270, Cr Vacation benefits payable 270. Taking the days reduces the payable, not new expense."
+   ],
+   [
+    "Match each form to its deadline or frequency: W-2, Form 941, Form 940, W-4.",
+    "W-2: by January 31. 941: quarterly. 940: annually. W-4: when hired or when circumstances change."
+   ]
+  ],
+  "case": [
+   "Redwood River's first full-time hire",
+   "Redwood River hires a warehouse worker at $1,000 a week. Withholdings: federal tax $90, Minnesota tax $45, health insurance $30, plus FICA. Employer taxes: FICA match, FUTA 0.6%, SUTA 1%. The worker earns one vacation day a month worth $200.",
+   [
+    "Prepare the payroll entry for one week.",
+    "Prepare the employer payroll tax entry.",
+    "What does the worker really cost Redwood River a week?",
+    "Then try mission 8 of Redwood River Books."
+   ],
+   "Net pay 758.50; employer taxes 92.50; total cost 1,092.50 a week, plus health contribution and vacation accrual of about 46 a week."
+  ],
+  "exam": [
+   [
+    "Distinguish payroll taxes withheld from employees from payroll taxes paid by employers.",
+    5,
+    "Withheld: federal and state income tax, employee FICA; liabilities, not employer expense. Employer: matching FICA, FUTA, SUTA; an extra payroll tax expense."
+   ],
+   [
+    "Gross wages $8,000 (no limits reached); federal tax withheld $900; state $400. Journalize the payroll and the employer's payroll taxes (FUTA 0.6%, SUTA 1.5%).",
+    8,
+    "Dr Wages 8,000; Cr Federal 900, State 400, SS 496, Medicare 116, Cash 6,088. Employer: Dr Payroll tax expense 780; Cr SS 496, Medicare 116, FUTA 48, SUTA 120."
+   ]
+  ],
+  "take": [
+   "Gross pay less deductions = net pay",
+   "FICA is 7.65%, shared by employee and employer",
+   "Employers also pay FUTA and SUTA",
+   "Every payroll takes two entries",
+   "Accrue benefits as employees earn them",
+   "W-4, 941, 940, W-2: know the forms"
+  ],
+  "outcomes": [
+   "Calculate gross and net pay",
+   "Identify employee withholdings",
+   "Calculate employer payroll taxes",
+   "Journalize a payroll",
+   "Account for benefits and compensated absences",
+   "Identify the main payroll forms"
+  ]
+ },
+ "14": {
+  "warmup": [
+   "If you started a business with a friend tomorrow, what could go wrong between you? How would you protect yourself?",
+   "Disagreements about profit, liability for the other's debts, what happens if one leaves. Business form and the partnership agreement answer these."
+  ],
+  "acts": [
+   [
+    "Recommend a form: a freelance designer; three doctors opening a clinic; a startup that wants venture capital.",
+    "Sole proprietorship (or single-member LLC); partnership or LLC/professional corporation; corporation."
+   ],
+   [
+    "Show the equity section for Redwood River as a partnership: Larson capital $40,000, Nguyen capital $20,000.",
+    "Larson, Capital 40,000; Nguyen, Capital 20,000; total partners' equity 60,000."
+   ],
+   [
+    "Income $45,000. Salaries $18,000 and $12,000; 10% on capital of $30,000 and $10,000; rest split 60:40. Each partner's share?",
+    "Allowances 30,000 + 4,000 = 34,000; remainder 11,000 → 6,600 and 4,400. A: 18,000 + 3,000 + 6,600 = 27,600. B: 12,000 + 1,000 + 4,400 = 17,400."
+   ],
+   [
+    "Issue 5,000 shares of $2 par stock for $12 each. Journalize. Then: net income $30,000, dividends $8,000. Change in retained earnings?",
+    "Dr Cash 60,000; Cr Common stock 10,000, Paid-in capital in excess of par 50,000. Retained earnings up 22,000."
+   ],
+   [
+    "Name two things a 1920s shareholder could NOT learn from the annual report that a 10-K reader can today.",
+    "Cash flows; detailed notes on accounting policies; segment results; auditor's report on internal control; management's discussion of risks."
+   ],
+   [
+    "In one minute, explain the accounting cycle to someone who missed the semester.",
+    "Analyze and journalize, post, trial balance, adjust, adjusted trial balance, statements, close, post-closing trial balance."
+   ]
+  ],
+  "case": [
+   "Should Redwood River incorporate?",
+   "Redwood River earned $60,000 this year. Dana and Sam Nguyen are partners with capital of $40,000 and $20,000. A farm supply chain wants to invest $100,000 for a share of the business, and a customer has threatened to sue over a failed repair.",
+   [
+    "What risks do Dana and Sam face as general partners?",
+    "How would incorporating change their liability and taxes?",
+    "How would the equity section change?",
+    "Would you recommend incorporating? Why?"
+   ],
+   "Unlimited liability, including for each other's actions; the lawsuit threatens personal assets. A corporation limits liability and makes outside investment easy, but brings double taxation (or consider an LLC or S corporation). Equity becomes common stock, paid-in capital and retained earnings."
+  ],
+  "exam": [
+   [
+    "Compare a partnership and a corporation in terms of liability, taxation and continuity.",
+    6,
+    "Partnership: unlimited liability (general partners), pass-through tax, ends when a partner leaves. Corporation: limited liability, taxed at entity level and again on dividends, indefinite life."
+   ],
+   [
+    "Net income $70,000. Salary allowances $25,000 and $20,000; interest 8% on capital of $50,000 and $30,000; remainder equally. Calculate each partner's share and journalize the closing entry.",
+    8,
+    "Allowances 45,000 + 6,400 = 51,400; remainder 18,600 → 9,300 each. A: 25,000 + 4,000 + 9,300 = 38,300. B: 20,000 + 2,400 + 9,300 = 31,700. Dr Income summary 70,000; Cr A Capital 38,300, B Capital 31,700."
+   ]
+  ],
+  "take": [
+   "Business form decides liability, tax and life",
+   "Equity labels change; the equation doesn't",
+   "Partners share income by their agreement",
+   "Corporate equity: contributed capital and retained earnings",
+   "Disclosure has grown enormously since the 1920s",
+   "The accounting cycle runs everything"
+  ],
+  "outcomes": [
+   "Compare the three forms of business",
+   "Present equity under each form",
+   "Divide partnership income",
+   "Record stock issues and retained earnings",
+   "Compare historical and modern reporting",
+   "Review the full accounting cycle"
+  ]
+ }
+}
