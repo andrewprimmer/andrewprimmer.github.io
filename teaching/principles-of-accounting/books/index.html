@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redwood River Books · ACCT 211 &middot; Andrew Primmer</title>
+<meta name="description" content="A bookkeeping simulator for ACCT 211: keep the books of Redwood River Supply for a year, from source documents to journal entries, T-accounts, the trial balance and financial statements.">
+<link rel="stylesheet" href="../../../assets/style.css">
+<link rel="stylesheet" href="books.css">
+</head>
+<body id="top">
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="../../../index.html" class="site-wordmark">
+      Andrew Primmer
+      <span class="site-wordmark-sub">Accounting Historian</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../../../index.html">Home</a>
+      <a href="../../../research.html">Research</a>
+      <a href="../../../publications.html">Publications</a>
+      <a href="../../../cv.html">CV</a>
+      <a href="../../../sources/">Primary Sources</a>
+      <a href="../../../teaching/" aria-current="page">Teaching</a>
+      <a href="../../../folioscribe/">FolioScribe</a>
+      <a href="../../../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="site-main">
+  <div class="site-narrow">
+    <header class="page-header">
+      <div class="page-eyebrow"><a href="../../">Teaching</a> &middot; <a href="../">ACCT 211 Principles of Accounting I</a> &middot; Simulator</div>
+      <h1 class="page-title">Redwood River Books</h1>
+      <p class="page-lede">Keep the books of a small Minnesota business for its first year. Every document in the in-tray becomes a journal entry, and every entry you post updates the ledger, the trial balance and the financial statements.</p>
+    </header>
+    <section class="page-section">
+      <h2 class="section-heading">How it works</h2>
+      <ol class="rrb-how">
+        <li>Choose a mission. Each one matches a part of the course, and you can start anywhere: earlier missions are brought forward as opening balances.</li>
+        <li>Read the document on the left. Work out which accounts it changes, whether each goes up or down, and by how much.</li>
+        <li>Enter the journal entry and press <em>Post entry</em>. If it's wrong, the feedback tells you whether the problem is an account, a side or an amount. After two tries you can see the answer.</li>
+        <li>Watch the trial balance, T-accounts and statements below change with every entry.</li>
+      </ol>
+    </section>
+  </div>
+
+  <div class="rrb-wrap">
+    <div id="rrb"><noscript>Redwood River Books needs JavaScript switched on.</noscript></div>
+    <p class="rrb-resets"><button type="button" id="rrb-reset-mission" class="rrb-link">Reset this mission</button> · <button type="button" id="rrb-reset-all" class="rrb-link">Start the whole year again</button></p>
+  </div>
+
+  <div class="site-narrow">
+    <section class="page-section">
+      <p style="color:var(--muted);font-size:.95rem">Redwood River Supply, its customers and suppliers are fictional, and figures are simplified for teaching. Tax rates are illustrative where noted. Your progress is kept in this browser. Corrections welcome at <a href="mailto:a.primmer@aston.ac.uk">a.primmer@aston.ac.uk</a>.</p>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <span>&copy; Andrew Primmer. All rights reserved.</span>
+    <span>Aston Business School &middot; Aston University</span>
+  </div>
+</footer>
+<script src="missions.js"></script>
+<script src="books.js"></script>
+</body>
+</html>
