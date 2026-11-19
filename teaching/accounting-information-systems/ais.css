@@ -81,3 +81,11 @@
 .download{border:1px solid var(--rule);padding:12px 16px;margin:18px 0 0}
 .download a{font-family:var(--display);color:var(--accent)}
 .download span{color:var(--soft);font-size:.9rem}
+.download.sim{border-color:var(--accent)}
+.download.sim span{display:block;margin-top:4px}
+.sim-feature{display:block;margin:26px 0 6px;padding:22px 24px;border:1px solid var(--accent);text-decoration:none;color:var(--ink);background:linear-gradient(135deg,rgba(99,191,168,.16),rgba(99,191,168,.02))}
+.sim-feature:hover{background:linear-gradient(135deg,rgba(99,191,168,.26),rgba(99,191,168,.06))}
+.sim-badge{display:inline-block;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--paper);background:var(--accent);padding:2px 8px}
+.sim-title{display:block;font-family:var(--display);font-size:1.6rem;margin:10px 0 6px}
+.sim-text{display:block;color:var(--soft)}
+.sim-go{display:inline-block;margin-top:12px;font-family:var(--display);color:var(--accent)}
