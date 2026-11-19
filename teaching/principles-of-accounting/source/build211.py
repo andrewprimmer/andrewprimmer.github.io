@@ -12,6 +12,9 @@ SCRIPTS = {}
 for f in glob.glob("/home/claude/vid/scripts/L*.json"):
     for v in json.load(open(f))["videos"]: SCRIPTS[v["id"]] = v
 DUR = json.load(open("/home/claude/vid/out/durations.json")) if os.path.exists("/home/claude/vid/out/durations.json") else {}
+def kb(n):
+    f = os.path.join(OUT, "slides", f"ACCT211-Lecture-{n:02d}.pptx")
+    return round(os.path.getsize(f) / 1024) if os.path.exists(f) else 0
 def has_video(vid): return os.path.exists(os.path.join(OUT, "videos", vid.replace(".", "-") + ".mp4"))
 def mmss(vid):
     t = DUR.get(vid); 
@@ -259,7 +262,7 @@ def header(depth, title, desc):
 
 FOOT = """
     <section class="page-section">
-      <p style="color:var(--muted);font-size:.95rem">ACCT 211 Principles of Accounting I is being built as a distance-learning course. Videos, slides and exercises are added as they are made. Readings and page numbers refer to the free OpenStax textbook. Corrections welcome at <a href="mailto:a.primmer@aston.ac.uk">a.primmer@aston.ac.uk</a>.</p>
+      <p style="color:var(--muted);font-size:.95rem">ACCT 211 Principles of Accounting I is a distance-learning course. Readings and page numbers refer to the free OpenStax textbook. Corrections welcome at <a href="mailto:a.primmer@aston.ac.uk">a.primmer@aston.ac.uk</a>.</p>
     </section>
 
   </div>
@@ -307,7 +310,7 @@ def lecture_page(i):
         <p><cite>Principles of Accounting, Volume 1</cite> (OpenStax), {ch}, {chp.replace('–','&ndash;')}. Week {week}. Each video below lists the exact section and pages.</p>
       </div>
       <p>Watch the six microteaches in order, then try the <a href="#practice">exercises</a> at the end. Each video ends with a quick-check question: pause it and answer before the reveal.</p>
-      <p class="download pending">Lecture slides <span>(PowerPoint, coming soon)</span></p>
+      <p class="download"><a href="slides/ACCT211-Lecture-{n:02d}.pptx" download>Download the lecture slides</a> <span>(PowerPoint, {kb(n)} KB)</span>. The slides have a QR code for each video, so you can follow along on your phone.</p>
 
       <h2 class="section-heading">Contents</h2>
       <ol class="lesson-index">
@@ -381,7 +384,7 @@ def course_index():
         <span class="sim-text">Keep the books of Redwood River Supply for its first year. Turn invoices, receipts, bank statements and payroll registers into journal entries, and watch every entry post to the T-accounts, the trial balance and the financial statements. Eight missions follow the course: opening the business, adjusting and closing, merchandising, FIFO, bank reconciliations, bad debts, buying a truck and running payroll.</span>
         <span class="sim-go">Open the simulator &rarr;</span>
       </a>
-      <div class="callout">This course is being built. The readings and all 84 videos are in place; every lecture has an interactive exercise set; lecture slides are added lecture by lecture. The videos are narrated with a synthetic voice.</div>
+      <div class="callout">Every lecture has a textbook reading, six videos, a slide deck and an interactive exercise set, and the Redwood River Books simulator runs alongside the course. The videos are narrated with a synthetic voice.</div>
 
       <h2 class="section-heading">Lectures</h2>
 """
@@ -410,7 +413,12 @@ def course_index():
       </table>
 
       <h2 class="section-heading">Lecture slides</h2>
-      <p>Each lecture will have a PowerPoint deck with a QR code for every video, worked examples and in-class exercises. Slides are added here as each lecture is finished.</p>
+      <p>Each lecture has a PowerPoint deck for a two-hour session. Every topic has a QR code that opens its video on your phone, followed by worked examples and a paired activity, then a case study and exam practice. Model answers and timings are in the speaker notes.</p>
+      <ol class="lesson-index">
+"""
+    for lec in L:
+        out += f'        <li><a href="slides/ACCT211-Lecture-{lec[0]:02d}.pptx" download><span class="li-num">L{lec[0]}</span><span><span class="li-title">{e(lec[2][0].upper() + lec[2][1:])}</span><span class="li-case">PowerPoint, {kb(lec[0])} KB</span></span><span class="li-done">Download</span></a></li>\n'
+    out += """      </ol>
     </section>
 """
     return out + FOOT.replace("</body>", '<script src="exercises.js"></script>\n</body>')
