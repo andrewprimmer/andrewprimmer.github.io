@@ -1,0 +1,408 @@
+{
+ "videos": [
+  {
+   "id": "1.1",
+   "title": "What is accounting?",
+   "lecture": "Lecture 1 · Accounting in society",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Every business decision, from opening a coffee shop to buying a rival company, starts with one question. How are we actually doing? Accounting is how we answer it."
+    },
+    {
+     "type": "define",
+     "big": "Accounting",
+     "sub": [
+      "The process of organizing, analyzing and communicating financial information",
+      "that is used for decision-making"
+     ],
+     "say": "Your textbook defines accounting as the process of organizing, analyzing and communicating financial information that is used for decision-making. Notice the last part. The point is not the numbers. The point is the decisions."
+    },
+    {
+     "type": "flow",
+     "heading": "What accountants do",
+     "items": [
+      "Identify",
+      "Record",
+      "Summarize",
+      "Report"
+     ],
+     "say": "Accountants do four things. They identify the economic events that matter, like a sale or a loan. They record them. They summarize them into totals that mean something. And they report them to the people who need them."
+    },
+    {
+     "type": "key",
+     "tag": "KEY IDEA",
+     "big": "The language of business",
+     "sub": [
+      "Owners, lenders, managers and governments",
+      "all read the same reports"
+     ],
+     "say": "That's why accounting is often called the language of business. Owners, lenders, managers and governments all read the same reports, so they all need to speak it."
+    },
+    {
+     "type": "list",
+     "heading": "Meet Redwood River Supply",
+     "labels": "none",
+     "items": [
+      "A small business in Marshall, Minnesota",
+      "Opened by its owner, Dana Larson",
+      "We will keep its books all semester"
+     ],
+     "say": "Throughout this course we'll follow one business, Redwood River Supply in Marshall, Minnesota. Its owner, Dana Larson, needs to know whether it's making money, whether it can pay its bills, and whether the bank will lend to it. Every one of those answers comes from accounting."
+    },
+    {
+     "type": "quiz",
+     "q": "What is the main purpose of accounting?",
+     "opts": [
+      "To calculate taxes",
+      "To help people make decisions",
+      "To count the cash in the till",
+      "To satisfy the bank"
+     ],
+     "answer": 1,
+     "say": "Quick check. What is the main purpose of accounting? Pause and pick.",
+     "reveal": "The answer is B. Taxes, cash and banks all matter, but they are uses of the information. The purpose is better decisions."
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "title": "Financial versus managerial accounting",
+   "lecture": "Lecture 1 · Accounting in society",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Same business, same transactions, two completely different sets of reports. Why? Because accounting has two main branches."
+    },
+    {
+     "type": "define",
+     "big": "Financial accounting",
+     "sub": [
+      "Reports for people outside the business:",
+      "investors, lenders, regulators"
+     ],
+     "say": "Financial accounting measures performance and position for people outside the company, like investors, lenders and regulators. These users can't walk in and ask questions, so the reports follow strict rules."
+    },
+    {
+     "type": "define",
+     "big": "Managerial accounting",
+     "sub": [
+      "Reports for people inside the business:",
+      "owners and managers making decisions"
+     ],
+     "say": "Managerial accounting produces information for people inside the company, like managers deciding what to price, what to make and what to cut. Those reports can look however management finds useful."
+    },
+    {
+     "type": "compare",
+     "heading": "How they differ",
+     "cols": [
+      "Financial",
+      "Managerial"
+     ],
+     "rows": [
+      [
+       "Users",
+       "Outsiders",
+       "Insiders"
+      ],
+      [
+       "Rules",
+       "GAAP",
+       "None required"
+      ],
+      [
+       "Focus",
+       "Past results",
+       "Future plans"
+      ],
+      [
+       "Detail",
+       "Whole company",
+       "Products, teams"
+      ],
+      [
+       "Timing",
+       "Fixed schedule",
+       "Whenever needed"
+      ]
+     ],
+     "say": "Here's the comparison. Financial accounting serves outsiders, follows generally accepted accounting principles, looks back at results, covers the whole company, and is published on a fixed schedule. Managerial accounting serves insiders, has no required format, looks forward, drills into products and teams, and is produced whenever it's needed."
+    },
+    {
+     "type": "key",
+     "big": "One set of data, two uses",
+     "sub": [
+      "ACCT 211 is about financial accounting"
+     ],
+     "say": "Both branches draw on the same underlying data. This course focuses on financial accounting: the statements that outsiders rely on."
+    },
+    {
+     "type": "quiz",
+     "q": "A sales manager wants a weekly report of profit by product line. Which branch?",
+     "opts": [
+      "Financial accounting",
+      "Managerial accounting",
+      "Tax accounting",
+      "Auditing"
+     ],
+     "answer": 1,
+     "say": "Quick check. A sales manager wants a weekly report of profit by product line. Which branch produces it? Pause and pick.",
+     "reveal": "It's managerial accounting. An internal user, a custom format and a focus on decisions."
+    }
+   ]
+  },
+  {
+   "id": "1.3",
+   "title": "Who uses accounting information?",
+   "lecture": "Lecture 1 · Accounting in society",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "If you've ever wondered who actually reads financial statements, the answer is: far more people than you'd think. And each of them is asking a different question."
+    },
+    {
+     "type": "list",
+     "heading": "External users",
+     "items": [
+      "Investors: will this earn a return?",
+      "Lenders: will we be repaid?",
+      "Suppliers: will they pay on time?",
+      "Government: is the tax right?",
+      "Customers: will they still be here?"
+     ],
+     "say": "Start outside the business. Investors ask whether it will earn them a return. Lenders ask whether they'll be repaid, with interest. Suppliers ask whether they'll be paid on time. Governments ask whether the right tax is being paid. And customers want to know the business will be around to honor its warranty."
+    },
+    {
+     "type": "list",
+     "heading": "Internal users",
+     "items": [
+      "Owners and managers",
+      "Employees and unions",
+      "Departments setting budgets"
+     ],
+     "say": "Inside the business, owners and managers use the information to plan and control. Employees and unions look at profits when negotiating pay. And every department uses it to set and track budgets."
+    },
+    {
+     "type": "list",
+     "heading": "Not just businesses",
+     "labels": "none",
+     "items": [
+      "Governments report how tax money is spent",
+      "Nonprofits report how donations are used"
+     ],
+     "say": "It's not only businesses. Governments account for how tax dollars are spent, and nonprofits show donors how their gifts were used. Different goals, same need for reliable numbers."
+    },
+    {
+     "type": "key",
+     "big": "Different questions, same statements",
+     "sub": [
+      "Redwood River Supply's bank asks:",
+      "can Dana repay the loan?"
+     ],
+     "say": "When Redwood River Supply asks the bank in Marshall for a loan, the loan officer will read the same statements Dana does, but with one question in mind: can this business repay us?"
+    },
+    {
+     "type": "quiz",
+     "q": "Which user is mainly asking 'Will I be repaid?'",
+     "opts": [
+      "An investor",
+      "A lender",
+      "A customer",
+      "A manager"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which user is mainly asking, will I be repaid? Pause and pick.",
+     "reveal": "The answer is B, a lender. Investors care about returns, but repayment is a creditor's question."
+    }
+   ]
+  },
+  {
+   "id": "1.4",
+   "title": "Where double entry came from",
+   "lecture": "Lecture 1 · Accounting in society",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "The system you'll learn this semester is more than five hundred years old. And it was written down by a friar who was friends with Leonardo da Vinci."
+    },
+    {
+     "type": "define",
+     "tag": "1494",
+     "big": "Luca Pacioli",
+     "sub": [
+      "Summa de Arithmetica, Venice",
+      "The first printed account of double entry"
+     ],
+     "say": "In 1494, an Italian friar and mathematician called Luca Pacioli published a book in Venice called the Summa de Arithmetica. Part of it described how Venetian merchants kept their books. It's the first printed explanation of double-entry bookkeeping."
+    },
+    {
+     "type": "list",
+     "heading": "What the merchants used",
+     "items": [
+      "A memorandum of daily events",
+      "A journal of entries",
+      "A ledger of accounts",
+      "Debits must equal credits"
+     ],
+     "say": "Pacioli described three books: a memorandum of each day's events, a journal where each event became an entry, and a ledger where entries were sorted into accounts. And one rule held it together: total debits must equal total credits."
+    },
+    {
+     "type": "key",
+     "big": "Every transaction has two sides",
+     "sub": [
+      "Something received, something given"
+     ],
+     "say": "The big idea is that every transaction has two sides. When a merchant bought cloth on credit, he gained cloth and took on a debt. Recording both sides means the books check themselves."
+    },
+    {
+     "type": "key",
+     "tag": "THEN AND NOW",
+     "big": "Same system, faster tools",
+     "sub": [
+      "Quill and ledger → QuickBooks and ERP"
+     ],
+     "say": "The tools have changed from quills to QuickBooks, but the logic hasn't. The journal, the ledger and the balancing rule you'll learn in Lecture 3 are the ones Pacioli wrote down."
+    },
+    {
+     "type": "quiz",
+     "q": "What rule holds double-entry bookkeeping together?",
+     "opts": [
+      "Assets always exceed liabilities",
+      "Total debits equal total credits",
+      "Cash is recorded first",
+      "Profit is never negative"
+     ],
+     "answer": 1,
+     "say": "Quick check. What rule holds double-entry bookkeeping together? Pause and pick.",
+     "reveal": "It's B. Total debits must equal total credits, every single time."
+    }
+   ]
+  },
+  {
+   "id": "1.5",
+   "title": "Who sets the rules?",
+   "lecture": "Lecture 1 · Accounting in society",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "If every company could choose its own accounting rules, no two sets of statements could be compared. So who decides what the rules are?"
+    },
+    {
+     "type": "define",
+     "big": "GAAP",
+     "sub": [
+      "Generally accepted accounting principles:",
+      "the US rules for financial reporting"
+     ],
+     "say": "In the United States, companies follow GAAP, which stands for generally accepted accounting principles. GAAP is the set of standards and procedures that decides how transactions are recorded and reported."
+    },
+    {
+     "type": "list",
+     "heading": "The rule-makers",
+     "items": [
+      "FASB writes US GAAP",
+      "SEC enforces it for public companies",
+      "IASB writes IFRS for most other countries"
+     ],
+     "say": "Three bodies matter. The Financial Accounting Standards Board, or FASB, is an independent private organization that writes US GAAP. The Securities and Exchange Commission, the SEC, is the government agency that has the legal power to require public companies to follow it. And the International Accounting Standards Board writes IFRS, the standards used in most other countries."
+    },
+    {
+     "type": "list",
+     "heading": "Some principles you'll meet",
+     "items": [
+      "Revenue recognition",
+      "Expense recognition (matching)",
+      "Cost principle",
+      "Going concern",
+      "Monetary measurement"
+     ],
+     "say": "GAAP rests on a handful of principles and assumptions you'll meet again and again: when to recognize revenue, matching expenses to the revenue they help earn, recording assets at cost, assuming the business will keep going, and measuring everything in dollars."
+    },
+    {
+     "type": "key",
+     "big": "Comparable and reliable",
+     "sub": [
+      "Shared rules let users compare companies"
+     ],
+     "say": "Shared rules are what let a lender compare Redwood River Supply with any other borrower. That's the whole point."
+    },
+    {
+     "type": "quiz",
+     "q": "Which body writes US GAAP?",
+     "opts": [
+      "The SEC",
+      "The IRS",
+      "The FASB",
+      "The IASB"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which body writes US GAAP? Pause and pick.",
+     "reveal": "It's C, the FASB. The SEC enforces the rules for public companies, but the FASB writes them."
+    }
+   ]
+  },
+  {
+   "id": "1.6",
+   "title": "Careers in accounting",
+   "lecture": "Lecture 1 · Accounting in society",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "An accounting degree doesn't lead to one job. It leads to dozens. Here's the map."
+    },
+    {
+     "type": "list",
+     "heading": "Where accountants work",
+     "items": [
+      "Public accounting: audit, tax, advisory",
+      "Corporate: controller, analyst, CFO",
+      "Government: IRS, FBI, state agencies",
+      "Nonprofits: hospitals, universities, charities"
+     ],
+     "say": "There are four broad paths. Public accounting firms sell audit, tax and advisory services to clients. Corporate accountants work inside one business, rising from analyst to controller to chief financial officer. Government accountants work at agencies like the IRS, the FBI, or state departments of revenue. And nonprofits, from hospitals to universities, need accountants too."
+    },
+    {
+     "type": "list",
+     "heading": "Credentials that open doors",
+     "items": [
+      "CPA: Certified Public Accountant",
+      "CMA: Certified Management Accountant",
+      "CIA: Certified Internal Auditor",
+      "EA: Enrolled Agent (tax)"
+     ],
+     "say": "Credentials open doors. The CPA is the license to sign audit opinions and is the best known. The CMA focuses on management accounting, the CIA on internal audit, and the Enrolled Agent on representing taxpayers before the IRS."
+    },
+    {
+     "type": "define",
+     "tag": "CPA IN MINNESOTA",
+     "big": "150 credit hours",
+     "sub": [
+      "plus the CPA exam and work experience"
+     ],
+     "say": "Most states, including Minnesota, require one hundred and fifty college credit hours to become a CPA, along with passing the CPA exam and gaining supervised work experience. So planning starts now, in this course."
+    },
+    {
+     "type": "key",
+     "big": "It all starts here",
+     "sub": [
+      "Every path uses the accounting cycle"
+     ],
+     "say": "Whichever path you choose, every one of them is built on what you'll learn this semester: recording transactions and turning them into financial statements."
+    },
+    {
+     "type": "quiz",
+     "q": "Which credential is needed to sign an audit opinion?",
+     "opts": [
+      "CMA",
+      "CPA",
+      "CIA",
+      "EA"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which credential do you need to sign an audit opinion on a company's financial statements? Pause and pick.",
+     "reveal": "It's B, the CPA. It's the licensed credential for public accounting."
+    }
+   ]
+  }
+ ]
+}
