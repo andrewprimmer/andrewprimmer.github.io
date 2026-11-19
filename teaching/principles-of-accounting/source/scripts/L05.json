@@ -1,0 +1,488 @@
+{
+ "videos": [
+  {
+   "id": "5.1",
+   "title": "From adjusted trial balance to statements",
+   "lecture": "Lecture 5 · Completing the cycle",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "You have an adjusted trial balance. Now turn it into three financial statements, in the right order."
+    },
+    {
+     "type": "flow",
+     "heading": "The order matters",
+     "items": [
+      "Income statement",
+      "Statement of owner's equity",
+      "Balance sheet"
+     ],
+     "say": "First the income statement, because you need net income. Then the statement of owner's equity, because you need ending capital. Then the balance sheet."
+    },
+    {
+     "type": "table",
+     "heading": "Income statement · June",
+     "rows": [
+      [
+       "Service revenue",
+       5100
+      ],
+      [
+       "Wages expense",
+       -1500
+      ],
+      [
+       "Supplies expense",
+       -450
+      ],
+      [
+       "Insurance expense",
+       -200
+      ],
+      [
+       "Depreciation expense",
+       -133
+      ],
+      [
+       "Interest expense",
+       -25
+      ],
+      [
+       "Net income",
+       2792,
+       "total"
+      ]
+     ],
+     "say": "Take every revenue and expense from the adjusted trial balance. Revenue of fifty-one hundred, less wages, supplies, insurance, depreciation and interest, leaves net income of two thousand seven hundred ninety-two."
+    },
+    {
+     "type": "table",
+     "heading": "Statement of owner's equity",
+     "rows": [
+      [
+       "Larson, Capital, June 1",
+       0
+      ],
+      [
+       "Investment",
+       20000
+      ],
+      [
+       "Net income",
+       2792
+      ],
+      [
+       "Withdrawals",
+       -1000
+      ],
+      [
+       "Larson, Capital, June 30",
+       21792,
+       "total"
+      ]
+     ],
+     "say": "Next, owner's equity. Twenty thousand invested, plus net income of two seven nine two, less one thousand withdrawn, gives ending capital of twenty-one thousand seven hundred ninety-two."
+    },
+    {
+     "type": "key",
+     "big": "21,792 → balance sheet",
+     "sub": [
+      "Assets = liabilities + 21,792"
+     ],
+     "say": "That figure goes onto the balance sheet as owner's equity, alongside the assets and liabilities from the trial balance. If the balance sheet balances, the chain is right."
+    },
+    {
+     "type": "quiz",
+     "q": "Which statement must you prepare first?",
+     "opts": [
+      "Balance sheet",
+      "Statement of owner's equity",
+      "Income statement",
+      "Post-closing trial balance"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which statement must be prepared first? Pause and pick.",
+     "reveal": "It's C, the income statement. Every other statement needs its net income."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "title": "Closing entries",
+   "lecture": "Lecture 5 · Completing the cycle",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "July first. Redwood River's revenue for July should start at zero, not carry on from June. Closing entries make that happen."
+    },
+    {
+     "type": "compare",
+     "heading": "Two kinds of account",
+     "cols": [
+      "Temporary",
+      "Permanent"
+     ],
+     "rows": [
+      [
+       "Examples",
+       "Revenue, expenses, withdrawals",
+       "Assets, liabilities, capital"
+      ],
+      [
+       "At period end",
+       "Reset to zero",
+       "Carry forward"
+      ]
+     ],
+     "say": "Temporary accounts, revenues, expenses and withdrawals, measure one period and are reset to zero. Permanent accounts, assets, liabilities and capital, carry their balances forward."
+    },
+    {
+     "type": "journal",
+     "heading": "Step 1 · Close revenue",
+     "rows": [
+      [
+       "Service revenue",
+       5100,
+       ""
+      ],
+      [
+       "Income summary",
+       "",
+       5100
+      ]
+     ],
+     "say": "Closing takes four steps. First, debit each revenue account to zero it and credit income summary, a temporary holding account."
+    },
+    {
+     "type": "journal",
+     "heading": "Step 2 · Close expenses",
+     "rows": [
+      [
+       "Income summary",
+       2308,
+       ""
+      ],
+      [
+       "Wages expense etc.",
+       "",
+       2308
+      ]
+     ],
+     "say": "Second, credit each expense account to zero it and debit income summary for the total, twenty-three hundred and eight."
+    },
+    {
+     "type": "journal",
+     "heading": "Steps 3 and 4",
+     "rows": [
+      [
+       "Income summary",
+       2792,
+       ""
+      ],
+      [
+       "Larson, Capital",
+       "",
+       2792
+      ],
+      [
+       "Larson, Capital",
+       1000,
+       ""
+      ],
+      [
+       "Larson, Withdrawals",
+       "",
+       1000
+      ]
+     ],
+     "say": "Third, close income summary into capital. Its credit balance is net income, two seven nine two, so debit income summary and credit capital. Fourth, close withdrawals straight to capital: debit capital one thousand, credit withdrawals."
+    },
+    {
+     "type": "quiz",
+     "q": "Which account is NOT closed at the end of the period?",
+     "opts": [
+      "Service revenue",
+      "Rent expense",
+      "Larson, Withdrawals",
+      "Accounts receivable"
+     ],
+     "answer": 3,
+     "say": "Quick check. Which of these accounts is not closed at the end of the period? Pause and pick.",
+     "reveal": "It's D, accounts receivable. It's an asset, a permanent account, so its balance carries forward."
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "title": "The post-closing trial balance",
+   "lecture": "Lecture 5 · Completing the cycle",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "After closing, one last check confirms the books are ready for next month."
+    },
+    {
+     "type": "define",
+     "big": "Post-closing trial balance",
+     "sub": [
+      "Lists only permanent accounts",
+      "after the closing entries are posted"
+     ],
+     "say": "The post-closing trial balance is prepared after closing entries are posted. It lists only the permanent accounts: assets, liabilities and the owner's capital."
+    },
+    {
+     "type": "list",
+     "heading": "What you should see",
+     "labels": "none",
+     "items": [
+      "Every asset and liability account",
+      "Larson, Capital at its new balance: 21,792",
+      "No revenue, expense or withdrawal accounts",
+      "Debits equal credits"
+     ],
+     "say": "You should see every asset and liability, capital at its new balance of twenty-one seven nine two, and no revenues, expenses or withdrawals at all, because they're now zero. And debits should still equal credits."
+    },
+    {
+     "type": "key",
+     "big": "Revenue in July starts at zero",
+     "sub": [
+      "The temporary accounts are wiped clean"
+     ],
+     "size": 84,
+     "say": "If a revenue or expense account appears on it, a closing entry was missed. When it's right, July begins with a clean slate for revenue and expenses."
+    },
+    {
+     "type": "list",
+     "heading": "Three trial balances",
+     "items": [
+      "Unadjusted: after posting transactions",
+      "Adjusted: after adjusting entries",
+      "Post-closing: after closing entries"
+     ],
+     "say": "So in one cycle you'll prepare three trial balances: unadjusted after posting transactions, adjusted after adjusting entries, and post-closing after closing entries."
+    },
+    {
+     "type": "quiz",
+     "q": "Which account appears on a post-closing trial balance?",
+     "opts": [
+      "Service revenue",
+      "Supplies expense",
+      "Wages payable",
+      "Income summary"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which account appears on a post-closing trial balance? Pause and pick.",
+     "reveal": "It's C, wages payable. It's a liability, so it's permanent. The others have all been closed."
+    }
+   ]
+  },
+  {
+   "id": "5.4",
+   "title": "The accounting cycle in ten steps",
+   "lecture": "Lecture 5 · Completing the cycle",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Every month, every business runs the same loop. Here is the whole accounting cycle in ten steps."
+    },
+    {
+     "type": "list",
+     "heading": "During the period",
+     "items": [
+      "Identify and analyze transactions",
+      "Record them in the journal",
+      "Post to the ledger",
+      "Prepare an unadjusted trial balance"
+     ],
+     "say": "During the period, you identify and analyze each transaction, record it in the journal, post it to the ledger, and prepare an unadjusted trial balance."
+    },
+    {
+     "type": "list",
+     "heading": "At the end of the period",
+     "items": [
+      "Record and post adjusting entries",
+      "Prepare an adjusted trial balance",
+      "Prepare the financial statements"
+     ],
+     "say": "At the end of the period, you record and post adjusting entries, prepare the adjusted trial balance, and prepare the financial statements."
+    },
+    {
+     "type": "list",
+     "heading": "To close the period",
+     "items": [
+      "Record and post closing entries",
+      "Prepare a post-closing trial balance",
+      "Reverse entries (optional)"
+     ],
+     "say": "Then, to close the period, you record and post closing entries and prepare the post-closing trial balance. Some businesses add a tenth, optional step: reversing entries on the first day of the new period."
+    },
+    {
+     "type": "key",
+     "big": "Then it starts again",
+     "sub": [
+      "Software automates posting and",
+      "trial balances, but not judgment"
+     ],
+     "say": "Then the cycle starts again. Software like QuickBooks posts entries and prints trial balances automatically, but identifying transactions and making adjustments still takes an accountant's judgment."
+    },
+    {
+     "type": "quiz",
+     "q": "Which step comes straight after preparing the adjusted trial balance?",
+     "opts": [
+      "Post to the ledger",
+      "Prepare the financial statements",
+      "Record closing entries",
+      "Analyze transactions"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which step comes straight after the adjusted trial balance? Pause and pick.",
+     "reveal": "It's B. The financial statements are prepared from the adjusted trial balance."
+    }
+   ]
+  },
+  {
+   "id": "5.5",
+   "title": "The 10-column worksheet",
+   "lecture": "Lecture 5 · Completing the cycle",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Before accounting software, accountants planned the month-end on one big sheet of paper. It's still the clearest way to see how the cycle fits together."
+    },
+    {
+     "type": "define",
+     "big": "The worksheet",
+     "sub": [
+      "An internal spreadsheet, not a statement",
+      "that runs the trial balance to the statements"
+     ],
+     "say": "The worksheet is an internal working paper, not a financial statement. It takes the trial balance through adjustments to the statements on a single page."
+    },
+    {
+     "type": "list",
+     "heading": "Five pairs of columns",
+     "items": [
+      "Trial balance",
+      "Adjustments",
+      "Adjusted trial balance",
+      "Income statement",
+      "Balance sheet"
+     ],
+     "say": "It has five pairs of debit and credit columns, ten in all: the trial balance, the adjustments, the adjusted trial balance, the income statement, and the balance sheet."
+    },
+    {
+     "type": "list",
+     "heading": "How it works",
+     "labels": "none",
+     "items": [
+      "Add the adjustments across each row",
+      "Revenue and expense rows → income statement columns",
+      "Everything else → balance sheet columns"
+     ],
+     "say": "You add the adjustments across each row to get the adjusted balance. Then you move each revenue and expense into the income statement columns, and everything else into the balance sheet columns."
+    },
+    {
+     "type": "key",
+     "big": "The balancing figure is net income",
+     "size": 76,
+     "sub": [
+      "Income statement credits − debits = 2,792",
+      "It also balances the balance sheet columns"
+     ],
+     "say": "The difference between the income statement columns is net income, for Redwood River two thousand seven hundred ninety-two. Add it to the balance sheet credit column and those columns balance too. That's your proof."
+    },
+    {
+     "type": "quiz",
+     "q": "Where does Accumulated depreciation go on the worksheet?",
+     "opts": [
+      "Income statement debit",
+      "Income statement credit",
+      "Balance sheet debit",
+      "Balance sheet credit"
+     ],
+     "answer": 3,
+     "say": "Quick check. On the worksheet, which column does accumulated depreciation go in? Pause and pick.",
+     "reveal": "It's D, the balance sheet credit column. It's a contra asset with a credit balance."
+    }
+   ]
+  },
+  {
+   "id": "5.6",
+   "title": "Correcting errors",
+   "lecture": "Lecture 5 · Completing the cycle",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Everyone makes recording mistakes. The rule for fixing them is simple: you never erase. You correct."
+    },
+    {
+     "type": "define",
+     "big": "Correcting entry",
+     "sub": [
+      "A new journal entry that fixes an earlier one,",
+      "leaving a clear audit trail"
+     ],
+     "say": "A correcting entry is a new journal entry that fixes an earlier error. The original stays in the books, so anyone checking later can see exactly what happened and when."
+    },
+    {
+     "type": "journal",
+     "heading": "The mistake",
+     "rows": [
+      [
+       "Supplies",
+       350,
+       ""
+      ],
+      [
+       "Cash",
+       "",
+       350
+      ]
+     ],
+     "note": "It was really a repair to the truck: an expense.",
+     "say": "Say Redwood River paid three hundred fifty dollars to repair its truck, but the clerk recorded it as supplies. Debit supplies, credit cash. Cash is right. Supplies is wrong."
+    },
+    {
+     "type": "journal",
+     "heading": "The correction",
+     "rows": [
+      [
+       "Repairs expense",
+       350,
+       ""
+      ],
+      [
+       "Supplies",
+       "",
+       350
+      ]
+     ],
+     "say": "The correcting entry moves the amount to where it belongs. Debit repairs expense three fifty, credit supplies three fifty. Cash is untouched because it was right the first time."
+    },
+    {
+     "type": "list",
+     "heading": "A three-step method",
+     "items": [
+      "Write the entry that was made",
+      "Write the entry that should have been made",
+      "Record the difference"
+     ],
+     "say": "Use this three-step method. Write the entry that was made. Write the entry that should have been made. Then record whatever entry turns the first into the second."
+    },
+    {
+     "type": "quiz",
+     "q": "A $500 customer payment was credited to Service revenue, not Accounts receivable. The fix?",
+     "opts": [
+      "Dr Cash, Cr Accounts receivable",
+      "Dr Service revenue, Cr Accounts receivable",
+      "Dr Accounts receivable, Cr Service revenue",
+      "Erase it and rewrite it"
+     ],
+     "answer": 1,
+     "say": "Quick check. A five hundred dollar collection from a customer was credited to service revenue instead of accounts receivable. What's the correction? Pause and pick.",
+     "reveal": "It's B. Debit service revenue to remove the wrong credit, and credit accounts receivable, where it should have gone."
+    }
+   ]
+  }
+ ]
+}
