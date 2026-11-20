@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rails &amp; Ledgers: a railway accounting game, 1896&ndash;1930 &middot; Andrew Primmer</title>
+<meta name="description" content="Build a colonial railway network on an isometric map and run its accounts from 1896 to 1930: capital versus revenue, renewals versus depreciation, dividends, disclosure, financing and the taxation of an indivisible railway.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%232b2118%22/%3E%3Cpath d=%22M6 26L16 6l10 20%22 stroke=%22%23d9b25f%22 stroke-width=%223%22 fill=%22none%22/%3E%3Cpath d=%22M9 20h14M11 15h10%22 stroke=%22%23d9b25f%22 stroke-width=%222%22/%3E%3C/svg%3E">
+<link rel="stylesheet" href="rails.css">
+</head>
+<body>
+<div id="game">
+  <header class="hud">
+    <a class="brand" href="../" title="Back to ACCT 360"><span class="brand-mark">R&amp;L</span><span class="brand-text"><b>Rails &amp; Ledgers</b><small>Port Lindsay &amp; Interior Railway Co. Ltd</small></span></a>
+    <div class="hud-stat date"><small>Date</small><b id="hDate">January 1896</b></div>
+    <div class="hud-stat"><small>Cash at bank</small><b id="hCash">£1,000,000</b></div>
+    <div class="hud-stat price"><small>£1 ordinary share</small><b id="hPrice">£1 0s</b><canvas id="spark" width="90" height="26"></canvas></div>
+    <div class="hud-stat"><small>Investor trust</small><div class="meter"><i id="hTrust"></i></div></div>
+    <div class="hud-stat"><small>Permanent way</small><div class="meter cond"><i id="hTrack"></i></div></div>
+    <div class="hud-stat"><small>Rolling stock</small><div class="meter cond"><i id="hStock"></i></div></div>
+    <div class="speed" role="group" aria-label="Game speed">
+      <button data-speed="0" title="Pause (space)">&#10074;&#10074;</button>
+      <button data-speed="1" class="on" title="Normal speed">&#9654;</button>
+      <button data-speed="2" title="Fast">&#9654;&#9654;</button>
+      <button data-speed="4" title="Fastest">&#9654;&#9654;&#9654;</button>
+    </div>
+  </header>
+
+  <nav class="tools" aria-label="Tools">
+    <button data-tool="inspect" class="on" title="Inspect (I)"><span>&#128269;</span>Inspect</button>
+    <button data-tool="build" title="Build line (B)"><span>&#9874;</span>Build line</button>
+    <button data-tool="loco" title="Rolling stock (L)"><span>&#128642;</span>Rolling stock</button>
+    <button data-tool="finance" title="Finance (F)"><span>&pound;</span>Finance</button>
+    <button data-tool="accounts" title="Accounts (A)"><span>&#128214;</span>Accounts</button>
+    <button data-tool="brief" title="Objectives"><span>&#9873;</span>Objectives</button>
+    <button data-tool="help" title="Help"><span>?</span>Guide</button>
+  </nav>
+
+  <div class="stage">
+    <canvas id="map" aria-label="Isometric map of the colony"></canvas>
+    <div class="zoom"><button id="zIn" aria-label="Zoom in">+</button><button id="zOut" aria-label="Zoom out">&minus;</button></div>
+    <canvas id="mini" width="216" height="108" aria-label="Minimap"></canvas>
+    <div id="toast" class="toast" hidden></div>
+    <div id="obj" class="objcard"></div>
+  </div>
+
+  <aside class="panel" id="panel" aria-live="polite"></aside>
+
+  <footer class="ticker"><span class="ticker-lab">The City Gazette</span><div class="ticker-track"><div id="ticker"></div></div></footer>
+</div>
+
+<div id="modal" class="modal" hidden><div class="sheet" id="sheet"></div></div>
+
+<noscript><p style="padding:2rem">Rails &amp; Ledgers needs JavaScript.</p></noscript>
+<script src="map.js"></script>
+<script src="economy.js"></script>
+<script src="render.js"></script>
+<script src="ui.js"></script>
+</body>
+</html>
