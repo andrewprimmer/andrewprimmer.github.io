@@ -89,3 +89,8 @@
 .sim-title{display:block;font-family:var(--display);font-size:1.6rem;margin:10px 0 6px}
 .sim-text{display:block;color:var(--soft)}
 .sim-go{display:inline-block;margin-top:12px;font-family:var(--display);color:var(--accent)}
+
+.sim-rails{border-color:#a07a2a;background:linear-gradient(135deg,rgba(201,162,79,.2),rgba(201,162,79,.03))}
+.sim-rails:hover{background:linear-gradient(135deg,rgba(201,162,79,.3),rgba(201,162,79,.08))}
+.sim-rails .sim-badge{background:#a07a2a}
+.sim-rails .sim-go{color:#a07a2a}
