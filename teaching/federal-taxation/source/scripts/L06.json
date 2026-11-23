@@ -1,0 +1,708 @@
+{
+ "meta": {
+  "n": 6,
+  "short": "Individual deductions",
+  "title": "Individual deductions",
+  "week": 6,
+  "ch": "Chapter 6",
+  "part": "The individual tax formula",
+  "summary": "Deductions for AGI, the new senior and car loan deductions, itemized deductions for medical costs, taxes, interest and charity, and the choice between itemizing and the standard deduction."
+ },
+ "videos": [
+  {
+   "id": "6.1",
+   "title": "Deductions for AGI",
+   "lecture": "Lecture 6 · Individual deductions",
+   "take": "Above-the-line deductions include half of SE tax, HSA and IRA contributions, and student loan interest",
+   "read": "Schedule 1 (Form 1040) instructions",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Above-the-line deductions are the best kind: everyone who qualifies gets them, and they lower AGI. Here are the main ones."
+    },
+    {
+     "type": "list",
+     "heading": "Common deductions for AGI",
+     "items": [
+      "Half of self-employment tax",
+      "Self-employed health insurance",
+      "Retirement contributions: IRA, SEP",
+      "Health savings account contributions",
+      "Student loan interest, up to $2,500"
+     ],
+     "say": "The main deductions for AGI are half of self-employment tax, health insurance premiums for the self-employed, contributions to traditional IRAs and self-employed retirement plans, contributions to a health savings account, and up to $2,500 of student loan interest."
+    },
+    {
+     "type": "table",
+     "heading": "2026 contribution limits",
+     "rows": [
+      [
+       "Traditional IRA",
+       7500
+      ],
+      [
+       "IRA catch-up, age 50+",
+       1100
+      ],
+      [
+       "HSA, self-only cover",
+       4400
+      ],
+      [
+       "HSA, family cover",
+       8750
+      ]
+     ],
+     "say": "For 2026 the IRA limit is $7,500, plus $1,100 if you're fifty or older. Health savings account limits are $4,400 for self-only coverage and $8,750 for family coverage."
+    },
+    {
+     "type": "key",
+     "big": "Half of SE tax",
+     "sub": [
+      "Mirrors the employer half",
+      "of payroll tax"
+     ],
+     "say": "Why half of self-employment tax? Employers deduct their half of payroll tax as a business expense. Letting the self-employed deduct half puts them on a similar footing."
+    },
+    {
+     "type": "table",
+     "heading": "Nora's deductions for AGI",
+     "rows": [
+      [
+       "Half of SE tax",
+       2119
+      ],
+      [
+       "HSA contribution",
+       3000
+      ],
+      [
+       "Total deductions for AGI",
+       5119,
+       "total"
+      ],
+      [
+       "Tax saved at 12%",
+       614
+      ]
+     ],
+     "say": "Suppose Nora also puts $3,000 into a family health savings account. With half her self-employment tax, that's $5,119 of deductions for AGI, saving $614 of income tax at twelve percent."
+    },
+    {
+     "type": "quiz",
+     "q": "Which is a deduction for AGI?",
+     "opts": [
+      "Mortgage interest",
+      "Charitable gifts",
+      "Student loan interest",
+      "State income tax"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which is a deduction for AGI? Pause and pick.",
+     "reveal": "It's C. Student loan interest is above the line. The others are itemized deductions."
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "title": "New deductions: seniors and car loans",
+   "lecture": "Lecture 6 · Individual deductions",
+   "take": "From 2025 to 2028, seniors deduct up to $6,000 and buyers of new US-assembled cars deduct up to $10,000 of loan interest",
+   "read": "Schedule 1-A (Form 1040)",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "The 2025 tax law created new deductions you can take whether or not you itemize. Two of them: one for seniors and one for car loans."
+    },
+    {
+     "type": "define",
+     "big": "Senior deduction",
+     "sub": [
+      "Up to $6,000 per person 65 or older,",
+      "2025 to 2028"
+     ],
+     "say": "Each taxpayer aged sixty-five or older can deduct up to $6,000 from 2025 through 2028, on top of the standard or itemized deductions. It phases out by six percent of modified AGI above $75,000, or $150,000 on a joint return."
+    },
+    {
+     "type": "table",
+     "heading": "Gary, single, 67",
+     "rows": [
+      [
+       "AGI",
+       23500
+      ],
+      [
+       "Standard deduction with 65+ amount",
+       -18150
+      ],
+      [
+       "Senior deduction",
+       -6000
+      ],
+      [
+       "Taxable income",
+       0,
+       "total"
+      ]
+     ],
+     "say": "Gary, single and sixty-seven, has AGI of $23,500. His standard deduction with the over-sixty-five amount is $18,150. The $6,000 senior deduction takes his taxable income to zero."
+    },
+    {
+     "type": "define",
+     "big": "Car loan interest",
+     "sub": [
+      "Up to $10,000 a year, new personal vehicle",
+      "with final assembly in the US"
+     ],
+     "say": "The second: interest on a loan for a new personal car, truck or SUV whose final assembly was in the United States. Up to $10,000 a year is deductible from 2025 through 2028, phasing out above $100,000 of modified AGI, or $200,000 joint."
+    },
+    {
+     "type": "table",
+     "heading": "Jake's new US-built pickup",
+     "rows": [
+      [
+       "Loan interest paid in 2026",
+       1800
+      ],
+      [
+       "MAGI $116,281: under $200,000",
+       "No phase-out"
+      ],
+      [
+       "Tax saved at 12%",
+       216,
+       "total"
+      ]
+     ],
+     "say": "Jake buys a new, US-assembled pickup for personal use and pays $1,800 of loan interest in 2026. The Lindqvists are well under the $200,000 threshold, so they deduct it all, saving $216."
+    },
+    {
+     "type": "quiz",
+     "q": "Which car loan qualifies for the deduction?",
+     "opts": [
+      "A used SUV bought in 2026",
+      "A new US-assembled car for personal use",
+      "A new imported car assembled in Japan",
+      "A new delivery van used only in Nora's business"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which car loan qualifies for the new deduction? Pause and pick.",
+     "reveal": "It's B. The vehicle must be new, for personal use, with final assembly in the US. Business vehicle interest is deducted as a business expense instead."
+    }
+   ]
+  },
+  {
+   "id": "6.3",
+   "title": "Itemized deductions: medical expenses",
+   "lecture": "Lecture 6 · Individual deductions",
+   "take": "Unreimbursed medical expenses are deductible only above 7.5% of AGI",
+   "read": "IRS Pub. 502",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Itemized deductions start with medical expenses. They're deductible, but only after a big floor."
+    },
+    {
+     "type": "list",
+     "heading": "Qualifying medical expenses",
+     "items": [
+      "Doctors, dentists, hospitals",
+      "Prescription drugs and insulin",
+      "Health insurance premiums you pay after tax",
+      "Medical travel: mileage, lodging"
+     ],
+     "say": "Qualifying costs include payments to doctors, dentists and hospitals, prescription drugs, health insurance premiums you pay with after-tax dollars, and travel for medical care."
+    },
+    {
+     "type": "key",
+     "big": "Only the part above 7.5% of AGI",
+     "sub": [
+      "Less any insurance or HSA reimbursement"
+     ],
+     "say": "Only unreimbursed expenses above seven point five percent of AGI are deductible. Anything paid by insurance or from a health savings account doesn't count."
+    },
+    {
+     "type": "table",
+     "heading": "The Lindqvists' medical deduction",
+     "rows": [
+      [
+       "Unreimbursed medical costs",
+       10000
+      ],
+      [
+       "Floor: 7.5% × $116,281",
+       -8721
+      ],
+      [
+       "Deductible",
+       1279,
+       "total"
+      ]
+     ],
+     "say": "If the Lindqvists paid $10,000 of unreimbursed medical costs, the floor is seven point five percent of $116,281, or $8,721. Only $1,279 is deductible, and only if they itemize."
+    },
+    {
+     "type": "key",
+     "big": "Bunch medical costs",
+     "sub": [
+      "Schedule elective care into one year",
+      "to clear the floor"
+     ],
+     "say": "That's why timing matters. Scheduling elective procedures in the same year can push costs over the floor."
+    },
+    {
+     "type": "quiz",
+     "q": "AGI is $60,000 and unreimbursed medical costs are $5,000. What is deductible?",
+     "opts": [
+      "$0",
+      "$500",
+      "$4,500",
+      "$5,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. AGI is sixty thousand dollars and unreimbursed medical costs are five thousand. What's deductible? Pause and pick.",
+     "reveal": "It's B. The floor is $4,500, so $500 is deductible."
+    }
+   ]
+  },
+  {
+   "id": "6.4",
+   "title": "Itemized deductions: taxes and the SALT cap",
+   "lecture": "Lecture 6 · Individual deductions",
+   "take": "State and local taxes are deductible up to $40,400 in 2026, less for very high incomes",
+   "read": "Schedule A instructions",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "State and local taxes, or SALT, are deductible. But there's a cap, and it changed in 2025."
+    },
+    {
+     "type": "list",
+     "heading": "Deductible taxes",
+     "items": [
+      "State and local income tax, or sales tax instead",
+      "Real property tax",
+      "Personal property tax based on value"
+     ],
+     "say": "You can deduct state and local income taxes, or sales taxes instead if you choose, plus real estate taxes and personal property taxes based on value."
+    },
+    {
+     "type": "table",
+     "heading": "The SALT cap",
+     "rows": [
+      [
+       "2018 to 2024",
+       10000
+      ],
+      [
+       "2025",
+       40000
+      ],
+      [
+       "2026",
+       40400
+      ],
+      [
+       "2030 onward",
+       10000
+      ]
+     ],
+     "say": "From 2018 to 2024, the deduction was capped at $10,000. The 2025 law raised it to $40,000 for 2025 and $40,400 for 2026, rising one percent a year, before returning to $10,000 in 2030."
+    },
+    {
+     "type": "key",
+     "big": "Phase-down above $505,000",
+     "sub": [
+      "Cap falls by 30% of the excess,",
+      "but never below $10,000"
+     ],
+     "say": "For 2026 the cap shrinks by thirty percent of modified AGI above $505,000, but never below $10,000."
+    },
+    {
+     "type": "table",
+     "heading": "The Lindqvists' taxes",
+     "rows": [
+      [
+       "Minnesota income tax",
+       5500
+      ],
+      [
+       "Marshall property tax",
+       3200
+      ],
+      [
+       "Deductible, under the cap",
+       8700,
+       "total"
+      ]
+     ],
+     "say": "The Lindqvists paid $5,500 of Minnesota income tax and $3,200 of property tax. That's $8,700, well under the cap."
+    },
+    {
+     "type": "quiz",
+     "q": "A couple with MAGI of $555,000 paid $45,000 of state taxes in 2026. What is their SALT cap?",
+     "opts": [
+      "$40,400",
+      "$25,400",
+      "$10,000",
+      "$45,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. A couple with modified AGI of five hundred fifty-five thousand dollars paid forty-five thousand of state taxes. What's their SALT cap? Pause and pick.",
+     "reveal": "It's B. They're $50,000 over the threshold. Thirty percent of that is $15,000, and $40,400 minus $15,000 is $25,400."
+    }
+   ]
+  },
+  {
+   "id": "6.5",
+   "title": "Itemized deductions: interest and charity",
+   "lecture": "Lecture 6 · Individual deductions",
+   "take": "Home mortgage interest on up to $750,000 of debt and gifts to charity are itemized deductions; from 2026, non-itemizers deduct cash gifts too",
+   "read": "IRS Pub. 526; Pub. 936",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "The other big itemized deductions are mortgage interest and gifts to charity, and charity changed in 2026."
+    },
+    {
+     "type": "define",
+     "big": "Qualified residence interest",
+     "sub": [
+      "Interest on up to $750,000 of debt",
+      "to buy, build or improve your home"
+     ],
+     "say": "Mortgage interest is deductible on up to $750,000 of debt used to buy, build or substantially improve your main home and one other home. From 2026, mortgage insurance premiums count as interest again."
+    },
+    {
+     "type": "list",
+     "heading": "Charitable gifts",
+     "items": [
+      "To qualified charities only, not people",
+      "Cash: up to 60% of AGI",
+      "Appreciated property: fair value, up to 30%",
+      "A receipt for any gift of $250 or more"
+     ],
+     "say": "Gifts to qualified charities are deductible; gifts to individuals aren't. Cash gifts are limited to sixty percent of AGI, appreciated long-term property is deducted at fair value up to thirty percent, and any single gift of $250 or more needs a written acknowledgment."
+    },
+    {
+     "type": "compare",
+     "heading": "Charity from 2026",
+     "cols": [
+      "Itemizers",
+      "Non-itemizers"
+     ],
+     "rows": [
+      [
+       "Rule",
+       "Only gifts above 0.5% of AGI",
+       "Cash gifts deducted anyway"
+      ],
+      [
+       "Limit",
+       "60% of AGI for cash",
+       "$1,000 single, $2,000 joint"
+      ]
+     ],
+     "say": "From 2026, itemizers can deduct only the part of their gifts above half a percent of AGI. And non-itemizers get a new deduction for cash gifts: up to $1,000, or $2,000 on a joint return, on top of the standard deduction."
+    },
+    {
+     "type": "table",
+     "heading": "Maria gives $1,500 to her church",
+     "rows": [
+      [
+       "Maria takes the standard deduction",
+       24150
+      ],
+      [
+       "Charitable deduction, non-itemizer",
+       1000
+      ],
+      [
+       "Tax saved at 12%",
+       120,
+       "total"
+      ]
+     ],
+     "say": "Maria Ortiz takes the head of household standard deduction and gives $1,500 to her church. As a non-itemizer filing alone, she can deduct $1,000, saving $120."
+    },
+    {
+     "type": "quiz",
+     "q": "Which gift is deductible?",
+     "opts": [
+      "$500 to a neighbor whose house burned down",
+      "$500 cash to the SMSU Foundation",
+      "Ten hours of volunteer work worth $300",
+      "$500 to a political campaign"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which gift is deductible? Pause and pick.",
+     "reveal": "It's B. Gifts must go to a qualified charity. Gifts to individuals and political campaigns aren't deductible, and the value of your time never is."
+    }
+   ]
+  },
+  {
+   "id": "6.6",
+   "title": "Standard deduction or itemize?",
+   "lecture": "Lecture 6 · Individual deductions",
+   "take": "Itemize only if itemized deductions exceed the standard deduction; most families now take the standard deduction",
+   "read": "Schedule A instructions",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Every year, every taxpayer takes the larger of the standard deduction or their itemized deductions. Let's run the Lindqvists' numbers."
+    },
+    {
+     "type": "table",
+     "heading": "The Lindqvists' itemized deductions",
+     "rows": [
+      [
+       "Medical: $3,000, under the floor",
+       0
+      ],
+      [
+       "State income and property taxes",
+       8700
+      ],
+      [
+       "Mortgage interest",
+       9800
+      ],
+      [
+       "Total itemized",
+       18500,
+       "total"
+      ],
+      [
+       "Standard deduction",
+       32200,
+       "total"
+      ]
+     ],
+     "say": "The Lindqvists' $3,000 of medical costs is below the floor. Taxes are $8,700 and mortgage interest is $9,800. That's $18,500 of itemized deductions, far less than the $32,200 standard deduction."
+    },
+    {
+     "type": "key",
+     "big": "Take the larger",
+     "sub": [
+      "About 90% of filers now",
+      "take the standard deduction"
+     ],
+     "say": "So they take the standard deduction. Since the 2017 law nearly doubled it, about nine out of ten filers do the same."
+    },
+    {
+     "type": "key",
+     "big": "Bunching",
+     "sub": [
+      "Pile two years of deductions into one,",
+      "itemize, then take the standard"
+     ],
+     "say": "Families near the line can bunch: pay two years of charitable gifts, or schedule medical care, in one year to itemize, then take the standard deduction the next."
+    },
+    {
+     "type": "list",
+     "heading": "Deductions everyone keeps",
+     "items": [
+      "Deductions for AGI",
+      "QBI deduction",
+      "Senior, tips, overtime and car loan deductions",
+      "Non-itemizer charity, from 2026"
+     ],
+     "say": "And remember what you keep either way: the deductions for AGI, the business income deduction, the new senior, tips, overtime and car loan deductions, and from 2026, the charitable deduction for non-itemizers."
+    },
+    {
+     "type": "quiz",
+     "q": "A single filer has $9,000 of state taxes, $6,000 of mortgage interest and $2,000 of gifts (AGI $100,000). Itemize?",
+     "opts": [
+      "Yes: $17,000 beats $16,100",
+      "Yes: $16,500 beats $16,100",
+      "No: take $16,100",
+      "No: itemizing is only for couples"
+     ],
+     "answer": 1,
+     "say": "Quick check. A single filer has nine thousand dollars of state taxes, six thousand of mortgage interest and two thousand of gifts, with AGI of a hundred thousand. Should she itemize? Pause and pick.",
+     "reveal": "It's B. Half a percent of $100,000 is $500, so $1,500 of the gifts count. $9,000 plus $6,000 plus $1,500 is $16,500, just above $16,100."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Which personal expenses do you think should be deductible: rent, student loan interest, medical bills, gifts to church, car payments? Vote, then we'll see what the law says.",
+   "Collect votes. Reveal: student loan interest (above the line), medical (over 7.5%), charity (yes), car loan interest (only new US-assembled cars, 2025–2028), rent (no). Leads to 6.1 and 6.2."
+  ],
+  "acts": [
+   [
+    "Nora, 37, has family HDHP cover. What is the most she and Jake can put into an HSA for 2026, and what does it save at 12% income tax?",
+    "$8,750 family limit; saves $1,050 of income tax (more if contributed through payroll, avoiding FICA)."
+   ],
+   [
+    "A married couple, both 66, have MAGI of $170,000. What is their total senior deduction?",
+    "Phase-out: 6% × (170,000 − 150,000) = 1,200 each. 4,800 × 2 = $9,600."
+   ],
+   [
+    "AGI $80,000; medical costs: doctor $2,500, prescriptions $1,200, gym membership $600, health premiums paid after tax $4,000, insurance reimbursed $1,000 of the doctor bills. Deductible amount?",
+    "Qualifying: 1,500 + 1,200 + 4,000 = 6,700 (gym not medical). Floor 6,000. Deductible $700."
+   ],
+   [
+    "A single filer with MAGI of $600,000 paid $50,000 of state income and property tax in 2026. What can she deduct?",
+    "Cap: 40,400 − 30% × 95,000 = 40,400 − 28,500 = 11,900 (above the $10,000 floor). Deduct $11,900."
+   ],
+   [
+    "The Lindqvists give $1,800 cash to their church in 2026 and take the standard deduction. What can they deduct? What if they itemized?",
+    "Non-itemizer: up to $2,000 joint, so $1,800. If itemizing: only the amount over 0.5% × 116,281 = 581, i.e. $1,219."
+   ],
+   [
+    "How could the Lindqvists bunch to itemize? Estimate what they'd need.",
+    "Itemized $18,500 vs $32,200: they'd need about $13,700 more, e.g. several years' charitable gifts through a donor-advised fund in one year. Probably not worth it."
+   ]
+  ],
+  "case": [
+   "Erik and Kari itemize",
+   "Erik and Kari Lindqvist live in Minneapolis and file jointly. Their 2026 AGI is $280,000. They paid $14,000 of Minnesota income tax and $9,500 of property tax, $16,000 of interest on a $500,000 mortgage, $3,000 of unreimbursed medical costs, and gave $6,000 cash to charity. They also contributed $8,750 to an HSA through Kari's employer.",
+   [
+    "Compute their itemized deductions.",
+    "Should they itemize?",
+    "What is the value of itemizing at their marginal rate?",
+    "How does the HSA affect the calculation?"
+   ],
+   "Taxes 23,500 (under $40,400); mortgage interest 16,000 (debt under $750,000); medical 0 (floor 21,000); charity 6,000 − 0.5% × 280,000 = 4,600. Total $44,100 vs $32,200: itemize, $11,900 more. Taxable income about $235,900 puts them in the 24% bracket, so itemizing is worth about $2,856. The HSA contribution through payroll is excluded from wages, so it already reduced AGI (and payroll tax)."
+  ],
+  "exam": [
+   [
+    "Distinguish deductions for AGI from itemized deductions and explain why the distinction matters. Give two examples of each.",
+    5,
+    "For AGI: available to all, reduce AGI (e.g. half SE tax, HSA, IRA, student loan interest). Itemized: only if they exceed the standard deduction (medical over 7.5%, SALT up to cap, mortgage interest, charity). AGI drives floors and phase-outs."
+   ],
+   [
+    "A single taxpayer, AGI $90,000, has medical costs of $8,000, state taxes of $7,000, mortgage interest of $5,500 and cash gifts to charity of $1,450. Compute itemized deductions and advise whether to itemize in 2026.",
+    6,
+    "Medical 8,000 − 6,750 = 1,250; taxes 7,000; interest 5,500; charity 1,450 − 450 = 1,000. Total 14,750 < 16,100: take the standard deduction plus $1,000 non-itemizer charitable deduction."
+   ]
+  ],
+  "outcomes": [
+   "Identify deductions for AGI",
+   "Apply the senior and car loan deductions",
+   "Compute the medical expense deduction",
+   "Apply the 2026 SALT cap",
+   "Deduct mortgage interest and charitable gifts",
+   "Choose between itemizing and the standard deduction"
+  ],
+  "take": [
+   "Above-the-line deductions help everyone and lower AGI",
+   "Seniors get $6,000 and new-car buyers up to $10,000, through 2028",
+   "Medical costs count only above 7.5% of AGI",
+   "SALT is capped at $40,400 in 2026",
+   "Mortgage interest up to $750,000 of debt; charity has a 0.5% floor and a non-itemizer deduction",
+   "Take the larger of standard or itemized"
+  ]
+ },
+ "ex": [
+  {
+   "type": "sort",
+   "q": "For AGI or itemized?",
+   "cats": [
+    "For AGI",
+    "Itemized"
+   ],
+   "items": [
+    [
+     "HSA contribution",
+     0
+    ],
+    [
+     "Property tax",
+     1
+    ],
+    [
+     "Half of SE tax",
+     0
+    ],
+    [
+     "Mortgage interest",
+     1
+    ],
+    [
+     "Student loan interest",
+     0
+    ],
+    [
+     "Medical costs over 7.5% of AGI",
+     1
+    ]
+   ],
+   "why": "Above-the-line deductions reduce AGI; itemized deductions compete with the standard deduction.",
+   "video": "6.1"
+  },
+  {
+   "type": "num",
+   "q": "A single filer, 70, has MAGI of $85,000. What is her senior deduction for 2026?",
+   "a": 5400,
+   "unit": "$",
+   "why": "6,000 − 6% × (85,000 − 75,000) = 6,000 − 600 = 5,400.",
+   "video": "6.2"
+  },
+  {
+   "type": "num",
+   "q": "AGI is $70,000 and unreimbursed medical costs are $9,000. What is the medical deduction?",
+   "a": 3750,
+   "unit": "$",
+   "why": "9,000 − 7.5% × 70,000 (5,250) = 3,750.",
+   "video": "6.3"
+  },
+  {
+   "type": "num",
+   "q": "A couple with MAGI of $305,000 paid $48,000 of state and local taxes in 2026. How much can they deduct?",
+   "a": 40400,
+   "unit": "$",
+   "why": "MAGI is under $505,000, so the full $40,400 cap applies.",
+   "video": "6.4"
+  },
+  {
+   "type": "mcq",
+   "q": "From 2026, how much can a married couple who take the standard deduction deduct for $3,000 of cash gifts to charity?",
+   "opts": [
+    "$0",
+    "$1,000",
+    "$2,000",
+    "$3,000"
+   ],
+   "a": 2,
+   "why": "Non-itemizers can deduct cash gifts up to $2,000 on a joint return.",
+   "video": "6.5"
+  },
+  {
+   "type": "num",
+   "q": "An itemizer with AGI of $120,000 gives $5,000 cash to charity in 2026. How much is deductible?",
+   "a": 4400,
+   "unit": "$",
+   "why": "Only gifts above 0.5% of AGI (600) count: 5,000 − 600 = 4,400.",
+   "video": "6.5"
+  },
+  {
+   "type": "mcq",
+   "q": "Which mortgage interest is deductible as qualified residence interest?",
+   "opts": [
+    "Interest on a home equity loan used to buy a boat",
+    "Interest on a $600,000 loan to buy a main home",
+    "Interest on a loan for a rental property",
+    "Interest on a credit card used for furniture"
+   ],
+   "a": 1,
+   "why": "Acquisition debt up to $750,000 on a main or second home qualifies; equity debt must be used to buy, build or improve the home.",
+   "video": "6.5"
+  },
+  {
+   "type": "mcq",
+   "q": "A married couple's itemized deductions total $29,000. What deduction do they take?",
+   "opts": [
+    "$29,000 itemized",
+    "$32,200 standard",
+    "$61,200, both",
+    "It depends on their bracket"
+   ],
+   "a": 1,
+   "why": "Take the larger: the $32,200 standard deduction.",
+   "video": "6.6"
+  }
+ ]
+}

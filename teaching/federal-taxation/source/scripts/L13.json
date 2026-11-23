@@ -1,0 +1,736 @@
+{
+ "meta": {
+  "n": 13,
+  "short": "Retirement savings",
+  "title": "Retirement savings and deferred compensation",
+  "week": 14,
+  "ch": "Chapter 13",
+  "part": "Compensation, retirement and the home",
+  "summary": "Defined benefit and defined contribution plans, traditional and Roth 401(k)s, distributions and penalties, IRAs, plans for the self-employed, and nonqualified deferred compensation."
+ },
+ "videos": [
+  {
+   "id": "13.1",
+   "title": "Defined benefit and defined contribution plans",
+   "lecture": "Lecture 13 · Retirement savings",
+   "take": "DB plans promise a pension; DC plans promise only contributions; both defer tax until withdrawal",
+   "read": "IRS Pub. 575",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Retirement plans are the biggest tax break most workers ever use. They come in two families."
+    },
+    {
+     "type": "compare",
+     "heading": "Two kinds of employer plan",
+     "cols": [
+      "Defined benefit",
+      "Defined contribution"
+     ],
+     "rows": [
+      [
+       "Promise",
+       "A pension formula",
+       "Contributions only"
+      ],
+      [
+       "Investment risk",
+       "Employer",
+       "Employee"
+      ],
+      [
+       "Example",
+       "Teacher pension",
+       "401(k), 403(b)"
+      ]
+     ],
+     "say": "A defined benefit plan promises a pension based on a formula, like years of service times final salary, and the employer carries the investment risk. A defined contribution plan, like a 401(k), promises only the contributions. What you retire with depends on how they're invested."
+    },
+    {
+     "type": "list",
+     "heading": "Why qualified plans are tax-favored",
+     "items": [
+      "Employer deducts contributions now",
+      "Employee isn't taxed until withdrawal",
+      "Earnings grow tax-deferred"
+     ],
+     "say": "Qualified plans get a triple benefit. The employer deducts contributions now. The employee isn't taxed until money comes out. And the investment earnings grow tax-deferred in between."
+    },
+    {
+     "type": "compare",
+     "heading": "Vesting: employer money",
+     "cols": [
+      "Cliff",
+      "Graded"
+     ],
+     "rows": [
+      [
+       "Defined contribution",
+       "100% after 3 years",
+       "20% a year, years 2 to 6"
+      ],
+      [
+       "Defined benefit",
+       "100% after 5 years",
+       "Over 3 to 7 years"
+      ]
+     ],
+     "say": "Your own contributions are always yours. Employer contributions vest over time. For defined contribution plans, either a three-year cliff or graded vesting from year two to year six. Defined benefit plans can take longer."
+    },
+    {
+     "type": "key",
+     "big": "Nondiscrimination",
+     "sub": [
+      "Qualified plans must cover",
+      "rank-and-file workers fairly"
+     ],
+     "say": "In exchange for the tax benefits, qualified plans must cover employees broadly and not favor highly paid workers."
+    },
+    {
+     "type": "quiz",
+     "q": "Jake leaves his job after 4 years. His 401(k) match vests on a 6-year graded schedule. What share of the match is his?",
+     "opts": [
+      "0%",
+      "40%",
+      "60%",
+      "100%"
+     ],
+     "answer": 2,
+     "say": "Quick check. Jake leaves his job after four years. His match vests on a six-year graded schedule. What share is his? Pause and pick.",
+     "reveal": "It's C. Twenty percent a year starting in year two: twenty percent after two years, forty after three, sixty after four."
+    }
+   ]
+  },
+  {
+   "id": "13.2",
+   "title": "Traditional or Roth 401(k)?",
+   "lecture": "Lecture 13 · Retirement savings",
+   "take": "Traditional saves tax now and taxes withdrawals; Roth taxes contributions now and withdrawals are tax-free",
+   "read": "IRS Pub. 560",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Most 401(k) plans now offer two flavors: traditional and Roth. The choice comes down to one question: is your tax rate higher now or later?"
+    },
+    {
+     "type": "table",
+     "heading": "2026 limits",
+     "rows": [
+      [
+       "Employee deferral",
+       24500
+      ],
+      [
+       "Catch-up, age 50 or older",
+       8000
+      ],
+      [
+       "Catch-up, age 60 to 63",
+       11250
+      ],
+      [
+       "Total, employee plus employer",
+       72000
+      ]
+     ],
+     "say": "For 2026 an employee can defer $24,500. Those fifty or older can add $8,000, and those aged sixty to sixty-three, $11,250. Employee and employer contributions together can't exceed $72,000. From 2026, catch-ups for anyone who earned over $150,000 in FICA wages last year must go in as Roth."
+    },
+    {
+     "type": "compare",
+     "heading": "The two flavors",
+     "cols": [
+      "Traditional",
+      "Roth"
+     ],
+     "rows": [
+      [
+       "Contribution",
+       "Pre-tax: lowers taxable wages",
+       "After-tax"
+      ],
+      [
+       "Growth",
+       "Tax-deferred",
+       "Tax-free"
+      ],
+      [
+       "Withdrawals",
+       "Taxed as ordinary income",
+       "Tax-free if qualified"
+      ]
+     ],
+     "say": "Traditional contributions are pre-tax: they lower your taxable wages now, and withdrawals are taxed later. Roth contributions are after-tax, but qualified withdrawals, including all the growth, are tax-free."
+    },
+    {
+     "type": "table",
+     "heading": "$1,000 of pay, grows 4× by retirement",
+     "rows": [
+      [
+       "Traditional: $4,000, taxed at 12% later",
+       3520
+      ],
+      [
+       "Roth: $780 after 22% now, grows to",
+       3120
+      ],
+      [
+       "Traditional wins when the rate falls",
+       400,
+       "total"
+      ]
+     ],
+     "say": "Take $1,000 of pay that grows four times by retirement. In traditional, it grows to $4,000, and at a twelve percent rate in retirement you keep $3,520. In Roth, twenty-two percent tax now leaves $780, which grows to $3,120. If your rate will fall, traditional wins. If it will rise, Roth wins. If it's the same, they tie."
+    },
+    {
+     "type": "key",
+     "big": "Take the full match",
+     "sub": [
+      "An employer match is an instant",
+      "return of 50% or 100%"
+     ],
+     "say": "Whatever you choose, contribute at least enough to get the full employer match. It's an instant return that no investment can beat."
+    },
+    {
+     "type": "quiz",
+     "q": "Sam, 20, is in the 0% bracket now and expects a higher rate later. Which suits him?",
+     "opts": [
+      "Traditional",
+      "Roth",
+      "Neither",
+      "It makes no difference"
+     ],
+     "answer": 1,
+     "say": "Quick check. Sam, twenty, pays no income tax now and expects a higher rate later. Which suits him? Pause and pick.",
+     "reveal": "It's B, Roth. He pays nothing on the contribution now, and all the growth comes out tax-free."
+    }
+   ]
+  },
+  {
+   "id": "13.3",
+   "title": "Taking money out",
+   "lecture": "Lecture 13 · Retirement savings",
+   "take": "Withdrawals before 59½ usually cost a 10% penalty; required minimum distributions start at 73 or 75",
+   "read": "IRS Pub. 590-B",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Retirement plans give you tax breaks going in. Rules on getting money out keep them for retirement."
+    },
+    {
+     "type": "define",
+     "big": "Early withdrawal penalty",
+     "sub": [
+      "10% extra tax before age 59½,",
+      "on top of ordinary income tax"
+     ],
+     "say": "Withdrawals from traditional accounts are taxed as ordinary income. Before age fifty-nine and a half, there's usually an extra ten percent penalty as well."
+    },
+    {
+     "type": "list",
+     "heading": "Some exceptions to the 10% penalty",
+     "items": [
+      "Leaving the employer at 55 or older (plans)",
+      "Death or disability",
+      "Substantially equal periodic payments",
+      "IRA: first home up to $10,000, college costs"
+     ],
+     "say": "There are exceptions: leaving your employer in or after the year you turn fifty-five, for that employer's plan; death or disability; a series of substantially equal payments; and for IRAs, up to $10,000 for a first home and qualified college costs."
+    },
+    {
+     "type": "table",
+     "heading": "Jake withdraws $10,000 at age 39",
+     "rows": [
+      [
+       "Income tax at 12%",
+       1200
+      ],
+      [
+       "10% penalty",
+       1000
+      ],
+      [
+       "Minnesota income tax, about",
+       680
+      ],
+      [
+       "Kept from $10,000",
+       7120,
+       "total"
+      ]
+     ],
+     "say": "If Jake withdrew $10,000 from his 401(k) at thirty-nine, he'd pay $1,200 of federal income tax, a $1,000 penalty and about $680 of Minnesota tax, keeping only $7,120."
+    },
+    {
+     "type": "define",
+     "big": "Required minimum distributions",
+     "sub": [
+      "From age 73, or 75 if born 1960 or later;",
+      "none from Roth accounts during life"
+     ],
+     "say": "At the other end, you can't defer forever. Required minimum distributions from traditional accounts begin at seventy-three, or seventy-five for those born in 1960 or later. Roth accounts have no required distributions during the owner's life."
+    },
+    {
+     "type": "quiz",
+     "q": "When is a Roth IRA withdrawal of earnings fully tax-free?",
+     "opts": [
+      "Any time",
+      "After age 59½ and 5 years after the first contribution",
+      "Only after age 73",
+      "Only for college costs"
+     ],
+     "answer": 1,
+     "say": "Quick check. When is a withdrawal of Roth IRA earnings fully tax-free? Pause and pick.",
+     "reveal": "It's B. A qualified distribution needs the account to be five years old and the owner to be fifty-nine and a half, disabled, or deceased."
+    }
+   ]
+  },
+  {
+   "id": "13.4",
+   "title": "Traditional and Roth IRAs",
+   "lecture": "Lecture 13 · Retirement savings",
+   "take": "Anyone with earned income can put up to $7,500 into IRAs in 2026; deductibility and Roth eligibility depend on income",
+   "read": "IRS Pub. 590-A",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Individual retirement accounts are open to anyone with earned income, with or without an employer plan."
+    },
+    {
+     "type": "table",
+     "heading": "2026 IRA limits",
+     "rows": [
+      [
+       "Contribution, all IRAs combined",
+       7500
+      ],
+      [
+       "Catch-up, age 50 or older",
+       1100
+      ],
+      [
+       "Deadline for 2026 contributions",
+       "April 15, 2027"
+      ]
+     ],
+     "say": "For 2026 you can put up to $7,500 into traditional and Roth IRAs combined, plus $1,100 if you're fifty or older, limited to your earned income. You have until April fifteenth, 2027 to make 2026 contributions."
+    },
+    {
+     "type": "compare",
+     "heading": "Traditional vs Roth IRA",
+     "cols": [
+      "Traditional",
+      "Roth"
+     ],
+     "rows": [
+      [
+       "Deduction",
+       "Yes, unless high pay + work plan",
+       "Never"
+      ],
+      [
+       "Who can contribute",
+       "Anyone with earned income",
+       "Below an income limit"
+      ],
+      [
+       "Withdrawals",
+       "Taxed",
+       "Tax-free if qualified"
+      ]
+     ],
+     "say": "A traditional IRA contribution is deductible for AGI, unless you're covered by a plan at work and your income is above a phase-out range. Roth contributions are never deductible, and high earners can't contribute directly at all."
+    },
+    {
+     "type": "define",
+     "big": "Spousal IRA",
+     "sub": [
+      "A non-working spouse can contribute",
+      "based on the couple's earned income"
+     ],
+     "say": "A spouse with little or no earnings can still contribute, based on the couple's combined earned income, on a joint return."
+    },
+    {
+     "type": "define",
+     "big": "Roth conversion",
+     "sub": [
+      "Move traditional money to Roth;",
+      "pay ordinary tax on it now"
+     ],
+     "say": "You can also convert traditional IRA money to a Roth at any income. The converted amount is taxed now, but there's no ten percent penalty, and future growth is tax-free. Conversions make sense in low-income years."
+    },
+    {
+     "type": "quiz",
+     "q": "Leo, 15, earned $3,000 editing photos. What is the most he can put in a Roth IRA for 2026?",
+     "opts": [
+      "$0, he's a minor",
+      "$3,000",
+      "$7,500",
+      "$1,100"
+     ],
+     "answer": 1,
+     "say": "Quick check. Leo, fifteen, earned three thousand dollars editing photos. What's the most he can put in a Roth IRA? Pause and pick.",
+     "reveal": "It's B. Contributions are limited to the lesser of $7,500 or earned income. There's no minimum age."
+    }
+   ]
+  },
+  {
+   "id": "13.5",
+   "title": "Retirement plans for the self-employed",
+   "lecture": "Lecture 13 · Retirement savings",
+   "take": "Sole proprietors can use a SEP IRA or a solo 401(k), deducting contributions for AGI",
+   "read": "IRS Pub. 560",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Nora has no employer plan. But self-employed people can set up plans of their own, often with bigger limits than an IRA."
+    },
+    {
+     "type": "compare",
+     "heading": "Two plans for Nora",
+     "cols": [
+      "SEP IRA",
+      "Solo 401(k)"
+     ],
+     "rows": [
+      [
+       "Contribution",
+       "About 20% of net earnings",
+       "$24,500 + 20% of net earnings"
+      ],
+      [
+       "Paperwork",
+       "Very simple",
+       "More, Form 5500 over $250,000"
+      ],
+      [
+       "Roth option",
+       "Limited",
+       "Yes"
+      ]
+     ],
+     "say": "A SEP IRA lets a sole proprietor contribute about twenty percent of net self-employment earnings. A solo 401(k) allows the same employer contribution plus an employee deferral of up to $24,500. Both are deductible for AGI."
+    },
+    {
+     "type": "table",
+     "heading": "Nora's maximum SEP contribution",
+     "rows": [
+      [
+       "Net profit",
+       30000
+      ],
+      [
+       "Less half of SE tax",
+       -2119
+      ],
+      [
+       "Net earnings",
+       27881,
+       "total"
+      ],
+      [
+       "× 20% = SEP contribution",
+       5576,
+       "total"
+      ]
+     ],
+     "say": "For a sole proprietor, the twenty percent applies to net profit after half of self-employment tax. Nora's net earnings are $27,881, so she can put $5,576 into a SEP."
+    },
+    {
+     "type": "key",
+     "big": "Solo 401(k): more room",
+     "sub": [
+      "$24,500 deferral + $5,576 employer,",
+      "up to her net earnings"
+     ],
+     "say": "With a solo 401(k) she could also defer up to $24,500 as the employee, though total contributions can't exceed her net earnings. That's useful in a big year."
+    },
+    {
+     "type": "key",
+     "big": "Deadlines",
+     "sub": [
+      "SEP: set up and fund by the return due date,",
+      "including extensions"
+     ],
+     "say": "A SEP can even be set up and funded after year-end, up to the due date of the return including extensions, which makes it a useful last-minute deduction."
+    },
+    {
+     "type": "quiz",
+     "q": "A sole proprietor's net profit is $100,000 and SE tax is $14,130. Maximum SEP contribution?",
+     "opts": [
+      "$20,000",
+      "$18,587",
+      "$25,000",
+      "$24,500"
+     ],
+     "answer": 1,
+     "say": "Quick check. A sole proprietor's net profit is a hundred thousand dollars, and self-employment tax is fourteen thousand one hundred thirty. What's the maximum SEP contribution? Pause and pick.",
+     "reveal": "It's B. Net earnings are $100,000 less half the SE tax, $7,065: $92,935. Twenty percent is $18,587."
+    }
+   ]
+  },
+  {
+   "id": "13.6",
+   "title": "Nonqualified deferred compensation",
+   "lecture": "Lecture 13 · Retirement savings",
+   "take": "Nonqualified plans defer executives' pay without contribution limits, but the employer's deduction is deferred too",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Executives often want to save more than qualified plans allow. Nonqualified deferred compensation fills the gap, at a price."
+    },
+    {
+     "type": "compare",
+     "heading": "Qualified vs nonqualified",
+     "cols": [
+      "Qualified plan",
+      "Nonqualified plan"
+     ],
+     "rows": [
+      [
+       "Limits",
+       "Yes",
+       "None"
+      ],
+      [
+       "Who is covered",
+       "Broad workforce",
+       "Selected executives"
+      ],
+      [
+       "Employer deduction",
+       "When contributed",
+       "When employee is taxed"
+      ],
+      [
+       "Security",
+       "Trust, protected",
+       "Unsecured promise"
+      ]
+     ],
+     "say": "A nonqualified plan has no contribution limits and can cover only selected executives. But the employer can't deduct the pay until the employee is taxed on it, years later. And the executive is an unsecured creditor: if the company fails, the money may be lost."
+    },
+    {
+     "type": "key",
+     "big": "Section 409A",
+     "sub": [
+      "Elect to defer before the year of service;",
+      "fixed payment events only"
+     ],
+     "say": "Section 409A sets strict rules. Deferral elections must generally be made before the year the work is done, and payments can only come on fixed events like separation from service or a set date. Breaking the rules makes the deferred pay taxable at once, plus a twenty percent penalty."
+    },
+    {
+     "type": "table",
+     "heading": "Kari defers a $50,000 bonus 5 years",
+     "rows": [
+      [
+       "Kari's rate now",
+       "35%"
+      ],
+      [
+       "Kari's expected rate when paid",
+       "24%"
+      ],
+      [
+       "Tax saved by deferring",
+       5500,
+       "total"
+      ],
+      [
+       "Employer's deduction delayed",
+       "5 years"
+      ]
+     ],
+     "say": "Kari defers a $50,000 bonus for five years, expecting her rate to fall from thirty-five to twenty-four percent. She saves $5,500 of tax, before the time value of money, but her employer waits five years for its deduction, and she bears the company's credit risk."
+    },
+    {
+     "type": "recap",
+     "big": "Deferral is a trade",
+     "sub": [
+      "Employee's deferral vs",
+      "employer's delayed deduction"
+     ],
+     "say": "Nonqualified deferral is a trade between the two parties: the employee's tax deferral against the employer's delayed deduction. It works best when the employee's rate will fall and the employer's won't."
+    },
+    {
+     "type": "quiz",
+     "q": "When does an employer deduct nonqualified deferred compensation?",
+     "opts": [
+      "When the service is performed",
+      "When the employee includes it in income",
+      "When it's set aside in a fund",
+      "Never"
+     ],
+     "answer": 1,
+     "say": "Quick check. When does the employer deduct nonqualified deferred compensation? Pause and pick.",
+     "reveal": "It's B. The deduction is matched to when the employee is taxed."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "If you put $1,000 a year in a retirement account from age 22 to 65 at 6%, roughly how much would you have? Guess, then we'll calculate.",
+   "About $200,000 (FV of annuity: 1,000 × 199.8). Emphasize tax-deferred compounding and starting early (Roth for young, low-rate savers)."
+  ],
+  "acts": [
+   [
+    "An employee leaves after 3 years. Employer contributions total $9,000. Vested amount under (a) 3-year cliff, (b) 6-year graded?",
+    "(a) $9,000. (b) 40% = $3,600 (graded runs 20% after 2 years, 40% after 3)."
+   ],
+   [
+    "A 62-year-old earning $90,000: maximum 401(k) deferral in 2026?",
+    "24,500 + 11,250 (age 60–63) = $35,750, as Roth or traditional since prior FICA wages are under $150,000."
+   ],
+   [
+    "A 45-year-old withdraws $20,000 from a traditional IRA to pay off a credit card. Federal cost at 22%?",
+    "4,400 income tax + 2,000 penalty = $6,400."
+   ],
+   [
+    "Jake and Nora are both 38. What can they put into IRAs in 2026? Would Jake's deduction be limited?",
+    "Up to $7,500 each ($15,000). Jake is covered at work; whether his deduction is limited depends on their MAGI versus the 2026 phase-out range for covered participants: check Pub. 590-A."
+   ],
+   [
+    "Compare a SEP and a solo 401(k) for a sole proprietor with $60,000 net profit, age 40.",
+    "Net earnings ≈ 60,000 − 4,239 = 55,761; SEP ≈ 11,152. Solo 401(k): 24,500 + 11,152 = 35,652 (within net earnings)."
+   ],
+   [
+    "Why would a company prefer paying an executive $100,000 of salary today to $100,000 of NQDC payable in 10 years?",
+    "It deducts the salary now; with NQDC its deduction is deferred 10 years (and the liability grows with earnings credits). It may prefer NQDC only for retention."
+   ]
+  ],
+  "case": [
+   "The Lindqvists save for retirement",
+   "Jake, 39, earns $88,000; his employer matches 100% of 401(k) deferrals up to 4% of pay. He currently defers 3%. Nora, 37, has no plan. The family is in the 12% bracket and expects to be in the 22% bracket in retirement thanks to Jake's pension from a previous employer. Leo earned $3,000 in 2026.",
+   [
+    "How much match is Jake leaving on the table?",
+    "Traditional or Roth for Jake, given the rates? For Nora?",
+    "Which plan should Nora set up, and how much can she contribute for 2026?",
+    "What should Leo do with some of his $3,000?"
+   ],
+   "Jake: raise deferral to 4% to get $3,520 of match (he's missing $880). At 12% now vs 22% later, Roth contributions look better for both. Nora: SEP ($5,576 max) is simplest and can be set up for 2026 until the return's due date; or a solo 401(k) with a Roth option. Leo: a Roth IRA, up to $3,000."
+  ],
+  "exam": [
+   [
+    "Compare traditional and Roth 401(k) contributions. Under what conditions does each produce more after-tax wealth?",
+    5,
+    "Traditional: deductible now, taxed on withdrawal. Roth: taxed now, qualified withdrawals tax-free. With equal rates they produce the same; traditional wins if the rate at withdrawal is lower, Roth if higher."
+   ],
+   [
+    "A self-employed taxpayer, age 52, has net profit of $120,000. Compute the SE tax, the deductible half and the maximum SEP contribution.",
+    5,
+    "SE: 120,000 × 92.35% = 110,820 × 15.3% = 16,955; half 8,478. Net earnings 111,522; SEP 20% = $22,304."
+   ]
+  ],
+  "outcomes": [
+   "Compare defined benefit and defined contribution plans",
+   "Choose between traditional and Roth 401(k)",
+   "Apply the early withdrawal and RMD rules",
+   "Apply the 2026 IRA rules and conversions",
+   "Compute SEP contributions for the self-employed",
+   "Explain nonqualified deferred compensation"
+  ],
+  "take": [
+   "Qualified plans: employer deducts now, employee taxed later",
+   "Traditional if your rate will fall, Roth if it will rise; always take the match",
+   "10% penalty before 59½; RMDs from 73 or 75",
+   "$7,500 to IRAs in 2026; conversions are taxed now",
+   "SEP: about 20% of net earnings; solo 401(k) adds a $24,500 deferral",
+   "NQDC defers the employee's tax and the employer's deduction"
+  ]
+ },
+ "ex": [
+  {
+   "type": "match",
+   "q": "Match each feature to the plan type.",
+   "pairs": [
+    [
+     "Promises a pension formula",
+     "Defined benefit"
+    ],
+    [
+     "Employee bears investment risk",
+     "Defined contribution"
+    ],
+    [
+     "No contribution limit, unsecured",
+     "Nonqualified deferred compensation"
+    ]
+   ],
+   "why": "DB promises a benefit, DC a contribution; NQDC is an unsecured promise outside the qualified plan rules.",
+   "video": "13.1"
+  },
+  {
+   "type": "num",
+   "q": "A 55-year-old's maximum 2026 401(k) employee deferral, including catch-up?",
+   "a": 32500,
+   "unit": "$",
+   "why": "24,500 + 8,000 = 32,500.",
+   "video": "13.2"
+  },
+  {
+   "type": "mcq",
+   "q": "A worker expects her tax rate to be much higher in retirement. Which is better?",
+   "opts": [
+    "Traditional 401(k)",
+    "Roth 401(k)",
+    "No difference",
+    "A taxable account"
+   ],
+   "a": 1,
+   "why": "Paying tax at today's lower rate and withdrawing tax-free wins when rates rise.",
+   "video": "13.2"
+  },
+  {
+   "type": "num",
+   "q": "A 40-year-old in the 22% bracket withdraws $8,000 from a traditional IRA with no exception. Federal tax plus penalty?",
+   "a": 2560,
+   "unit": "$",
+   "why": "22% × 8,000 = 1,760 + 10% penalty 800 = 2,560.",
+   "video": "13.3"
+  },
+  {
+   "type": "mcq",
+   "q": "Which withdrawal escapes the 10% penalty?",
+   "opts": [
+    "A 50-year-old's IRA withdrawal for a boat",
+    "A 58-year-old who left her employer at 56, from that employer's 401(k)",
+    "A 45-year-old's 401(k) loan default",
+    "A 30-year-old's IRA withdrawal for a car"
+   ],
+   "a": 1,
+   "why": "Separation from service in or after the year you turn 55 exempts distributions from that employer's plan.",
+   "video": "13.3"
+  },
+  {
+   "type": "num",
+   "q": "A 52-year-old with $60,000 of wages: maximum total IRA contribution for 2026?",
+   "a": 8600,
+   "unit": "$",
+   "why": "7,500 + 1,100 catch-up = 8,600.",
+   "video": "13.4"
+  },
+  {
+   "type": "num",
+   "q": "A sole proprietor has net profit of $50,000 and SE tax of $7,065. What is the maximum SEP contribution?",
+   "a": 9294,
+   "tol": 2,
+   "unit": "$",
+   "why": "(50,000 − 3,532.50) × 20% = 9,293.50.",
+   "video": "13.5"
+  },
+  {
+   "type": "mcq",
+   "q": "Under Section 409A, what happens if a deferred compensation plan breaks the rules?",
+   "opts": [
+    "Nothing until payment",
+    "Deferred amounts are taxed now, plus a 20% penalty",
+    "The employer loses its deduction forever",
+    "The plan becomes qualified"
+   ],
+   "a": 1,
+   "why": "409A failures accelerate income and add a 20% additional tax.",
+   "video": "13.6"
+  }
+ ]
+}

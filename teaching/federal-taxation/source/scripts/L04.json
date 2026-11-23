@@ -1,0 +1,743 @@
+{
+ "meta": {
+  "n": 4,
+  "short": "The individual tax formula",
+  "title": "Individual income tax overview, dependents and filing status",
+  "week": 4,
+  "ch": "Chapter 4",
+  "part": "The individual tax formula",
+  "summary": "The individual tax formula from gross income to tax due, deductions for and from AGI, qualifying children and relatives, and the five filing statuses."
+ },
+ "videos": [
+  {
+   "id": "4.1",
+   "title": "The individual tax formula",
+   "lecture": "Lecture 4 · The individual tax formula",
+   "take": "Gross income less deductions gives taxable income; tax less credits, plus other taxes, less payments gives the amount due",
+   "read": "Form 1040 and instructions",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Every Form 1040 follows the same formula. Learn it once, and every topic in this course has a place to land."
+    },
+    {
+     "type": "flow",
+     "heading": "From income to taxable income",
+     "items": [
+      "Gross income",
+      "minus deductions for AGI = AGI",
+      "minus standard or itemized deduction",
+      "minus QBI deduction = taxable income"
+     ],
+     "say": "Start with gross income. Subtract deductions for AGI to reach adjusted gross income. Subtract the larger of the standard deduction or itemized deductions, and the qualified business income deduction, to reach taxable income."
+    },
+    {
+     "type": "table",
+     "heading": "The Lindqvists, 2026",
+     "rows": [
+      [
+       "Gross income",
+       118400
+      ],
+      [
+       "Deductions for AGI",
+       -2119
+      ],
+      [
+       "Adjusted gross income",
+       116281,
+       "total"
+      ],
+      [
+       "Standard deduction",
+       -32200
+      ],
+      [
+       "QBI deduction",
+       -5576
+      ],
+      [
+       "Taxable income",
+       78505,
+       "total"
+      ]
+     ],
+     "say": "Jake earns $88,000, Nora's photography business nets $30,000, and they have $400 of interest. After deducting half of Nora's self-employment tax, their AGI is $116,281. Less the $32,200 standard deduction and a $5,576 business income deduction, taxable income is $78,505."
+    },
+    {
+     "type": "table",
+     "heading": "From taxable income to the refund",
+     "rows": [
+      [
+       "Income tax from the rate schedule",
+       8925
+      ],
+      [
+       "Child tax credit, two children",
+       -4400
+      ],
+      [
+       "Self-employment tax",
+       4239
+      ],
+      [
+       "Total tax",
+       8764,
+       "total"
+      ],
+      [
+       "Withheld and estimated payments",
+       -9000
+      ],
+      [
+       "Refund",
+       236,
+       "total"
+      ]
+     ],
+     "say": "Tax on $78,505 is $8,925. Two child tax credits cut it by $4,400. Add Nora's self-employment tax of $4,239 for total tax of $8,764. They've already paid $9,000 through withholding and estimates, so they get a $236 refund."
+    },
+    {
+     "type": "key",
+     "big": "Deductions cut income. Credits cut tax.",
+     "sub": [
+      "A $1,000 credit is worth $1,000;",
+      "a $1,000 deduction, $1,000 × your rate"
+     ],
+     "say": "Notice the difference. A deduction reduces income, so it's worth the deduction times your marginal rate. A credit reduces tax dollar for dollar."
+    },
+    {
+     "type": "quiz",
+     "q": "At a 12% marginal rate, which saves the Lindqvists more?",
+     "opts": [
+      "A $1,000 deduction",
+      "A $200 credit",
+      "They save the same",
+      "It depends on their AGI"
+     ],
+     "answer": 1,
+     "say": "Quick check. At a twelve percent marginal rate, which saves the Lindqvists more: a thousand-dollar deduction or a two hundred dollar credit? Pause and pick.",
+     "reveal": "It's B. The deduction saves twelve percent of $1,000, which is $120. The credit saves the full $200."
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "title": "For AGI, from AGI, and the standard deduction",
+   "lecture": "Lecture 4 · The individual tax formula",
+   "take": "Deductions for AGI are more valuable because AGI sets many floors and phase-outs",
+   "read": "IRS Pub. 501",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Deductions come in two kinds: above the line and below it. Where a deduction lands changes what it's worth."
+    },
+    {
+     "type": "compare",
+     "heading": "Two kinds of deduction",
+     "cols": [
+      "For AGI",
+      "From AGI"
+     ],
+     "rows": [
+      [
+       "Also called",
+       "Above the line",
+       "Below the line"
+      ],
+      [
+       "Examples",
+       "Half SE tax, IRA, HSA",
+       "Standard or itemized"
+      ],
+      [
+       "Who gets them",
+       "Everyone who qualifies",
+       "Itemizers or standard"
+      ]
+     ],
+     "say": "Deductions for AGI, called above-the-line, include half of self-employment tax and contributions to IRAs and health savings accounts. Deductions from AGI, below the line, are the standard deduction or itemized deductions."
+    },
+    {
+     "type": "key",
+     "big": "AGI is the yardstick",
+     "sub": [
+      "It sets floors, like 7.5% for medical,",
+      "and phase-outs for credits"
+     ],
+     "say": "Above-the-line deductions are better, because AGI is the yardstick for many other rules. Medical expenses are deductible only above seven and a half percent of AGI, and many credits phase out as AGI rises."
+    },
+    {
+     "type": "table",
+     "heading": "2026 standard deduction",
+     "rows": [
+      [
+       "Single or married filing separately",
+       16100
+      ],
+      [
+       "Married filing jointly",
+       32200
+      ],
+      [
+       "Head of household",
+       24150
+      ],
+      [
+       "Extra if 65 or blind: unmarried",
+       2050
+      ],
+      [
+       "Extra if 65 or blind: married, each",
+       1650
+      ]
+     ],
+     "say": "For 2026 the standard deduction is $16,100 for single filers, $32,200 for joint filers and $24,150 for heads of household. Taxpayers sixty-five or older, or blind, get an extra amount: $2,050 if unmarried, or $1,650 each if married."
+    },
+    {
+     "type": "define",
+     "big": "Dependent's standard deduction",
+     "sub": [
+      "Greater of $1,350 or earned income + $450,",
+      "up to the normal amount"
+     ],
+     "say": "Someone who can be claimed as a dependent gets a smaller standard deduction: the greater of $1,350 or earned income plus $450. That stops parents shifting investment income to children tax-free."
+    },
+    {
+     "type": "quiz",
+     "q": "Ruth, 68, is single and not blind. What is her 2026 standard deduction?",
+     "opts": [
+      "$16,100",
+      "$17,750",
+      "$18,150",
+      "$22,100"
+     ],
+     "answer": 2,
+     "say": "Quick check. Ruth, Jake's mother, is sixty-eight, single and not blind. What's her 2026 standard deduction? Pause and pick.",
+     "reveal": "It's C. $16,100 plus the $2,050 extra for an unmarried taxpayer over sixty-five gives $18,150. The new senior deduction comes on top, and we'll meet it in Lecture 6."
+    }
+   ]
+  },
+  {
+   "id": "4.3",
+   "title": "Who is a qualifying child?",
+   "lecture": "Lecture 4 · The individual tax formula",
+   "take": "A qualifying child passes the relationship, age, residence and support tests",
+   "read": "IRS Pub. 501",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Dependents unlock credits and filing statuses worth thousands. The first kind of dependent is a qualifying child. Here are the tests."
+    },
+    {
+     "type": "list",
+     "heading": "Qualifying child: four tests",
+     "items": [
+      "Relationship: child, stepchild, sibling or their descendant",
+      "Age: under 19, or under 24 if a full-time student",
+      "Residence: lived with you over half the year",
+      "Support: didn't pay over half their own support"
+     ],
+     "say": "Relationship: your child, stepchild, foster child, sibling, or a descendant of one. Age: under nineteen, or under twenty-four if a full-time student. Residence: lived with you over half the year. Support: the child didn't pay over half of their own support."
+    },
+    {
+     "type": "key",
+     "big": "Time away at school counts as home",
+     "sub": [
+      "Temporary absences don't break residence"
+     ],
+     "say": "Temporary absences for school, illness or military service count as time living at home. So Sam Ortiz, twenty, in an SMSU dorm, still lives with his mother for this test."
+    },
+    {
+     "type": "table",
+     "heading": "Is Sam a qualifying child?",
+     "rows": [
+      [
+       "Relationship: Maria's son",
+       "Yes"
+      ],
+      [
+       "Age: 20, full-time student",
+       "Yes"
+      ],
+      [
+       "Residence: dorm is temporary",
+       "Yes"
+      ],
+      [
+       "Support: earns $9,000, Maria pays $14,000",
+       "Yes"
+      ],
+      [
+       "Qualifying child of Maria",
+       "Yes",
+       "total"
+      ]
+     ],
+     "say": "Check Sam. He's Maria's son. He's twenty and a full-time student. The dorm is a temporary absence. He earns $9,000 waiting tables, but Maria provides $14,000 of his support. He's her qualifying child."
+    },
+    {
+     "type": "list",
+     "heading": "Tie-breakers if two people qualify",
+     "items": [
+      "A parent wins over a non-parent",
+      "Two parents: the one the child lived with longer",
+      "Then the parent with higher AGI"
+     ],
+     "say": "If two people can claim the same child, a parent wins. Between two parents, the child goes to the one they lived with longer, and if that's equal, to the parent with the higher AGI."
+    },
+    {
+     "type": "quiz",
+     "q": "Leo, 15, lives with the Lindqvists and earns $20,000 a year modeling, which he saves. Is he their qualifying child?",
+     "opts": [
+      "No, he earns too much",
+      "Yes, if he doesn't pay over half his own support",
+      "No, he's over 13",
+      "Only if he files a return"
+     ],
+     "answer": 1,
+     "say": "Quick check. Leo, fifteen, lives at home and earns twenty thousand dollars a year modeling, which he saves. Is he his parents' qualifying child? Pause and pick.",
+     "reveal": "It's B. There's no income limit for a qualifying child. The test is whether he paid more than half of his own support, and saving the money doesn't count as support."
+    }
+   ]
+  },
+  {
+   "id": "4.4",
+   "title": "Who is a qualifying relative?",
+   "lecture": "Lecture 4 · The individual tax formula",
+   "take": "A qualifying relative passes the relationship or household, gross income and support tests",
+   "read": "IRS Pub. 501",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Parents, grandparents, even a friend who lives with you can be a dependent. These are qualifying relatives."
+    },
+    {
+     "type": "list",
+     "heading": "Qualifying relative: tests",
+     "items": [
+      "Not anyone's qualifying child",
+      "Relative, or lived with you all year",
+      "Gross income under $5,300 in 2026",
+      "You provide over half their support"
+     ],
+     "say": "A qualifying relative can't be anyone's qualifying child. They must be a relative, or a member of your household all year. Their gross income must be under $5,300 for 2026. And you must provide more than half of their support."
+    },
+    {
+     "type": "key",
+     "big": "Parents needn't live with you",
+     "sub": [
+      "Close relatives qualify by relationship"
+     ],
+     "say": "Close relatives, like parents, grandparents, aunts and uncles, qualify by relationship alone. They don't have to live with you."
+    },
+    {
+     "type": "table",
+     "heading": "Is Ruth the Lindqvists' qualifying relative?",
+     "rows": [
+      [
+       "Social Security, mostly not taxable",
+       "Excluded"
+      ],
+      [
+       "IRA withdrawals: gross income",
+       4800
+      ],
+      [
+       "Under $5,300?",
+       "Yes"
+      ],
+      [
+       "Jake pays $11,000 of her $18,000 support",
+       "Yes"
+      ],
+      [
+       "Qualifying relative",
+       "Yes",
+       "total"
+      ]
+     ],
+     "say": "Ruth lives on her own in Tracy. Her non-taxable Social Security isn't gross income. Her IRA withdrawals of $4,800 are under the limit. Jake pays $11,000 of her $18,000 living costs, more than half. So she's his qualifying relative."
+    },
+    {
+     "type": "define",
+     "big": "Multiple support agreement",
+     "sub": [
+      "Several people together pay over half:",
+      "one, who pays over 10%, may claim"
+     ],
+     "say": "If several siblings together pay more than half of a parent's support, but none pays over half alone, they can sign a multiple support agreement. Any one who paid more than ten percent can claim the parent."
+    },
+    {
+     "type": "quiz",
+     "q": "Jake's adult cousin lives with the Lindqvists all year, earns $4,000 and Jake supports him. Is he a qualifying relative?",
+     "opts": [
+      "No, cousins aren't relatives for this test",
+      "Yes, as a member of the household all year",
+      "No, he earns income",
+      "Only if he is a student"
+     ],
+     "answer": 1,
+     "say": "Quick check. Jake's adult cousin lives with them all year, earns four thousand dollars, and Jake supports him. Is he a qualifying relative? Pause and pick.",
+     "reveal": "It's B. Cousins aren't on the relationship list, but anyone who lives with you all year as a member of your household passes, and his income is under $5,300."
+    }
+   ]
+  },
+  {
+   "id": "4.5",
+   "title": "The five filing statuses",
+   "lecture": "Lecture 4 · The individual tax formula",
+   "take": "Marital status on December 31 decides between joint, separate, surviving spouse, head of household and single",
+   "read": "IRS Pub. 501",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Filing status sets your standard deduction and your tax brackets. There are five, and the choice starts with one question: were you married on December thirty-first?"
+    },
+    {
+     "type": "list",
+     "heading": "The five statuses",
+     "items": [
+      "Married filing jointly",
+      "Married filing separately",
+      "Qualifying surviving spouse",
+      "Head of household",
+      "Single"
+     ],
+     "say": "The five statuses are married filing jointly, married filing separately, qualifying surviving spouse, head of household and single."
+    },
+    {
+     "type": "key",
+     "big": "Married on December 31?",
+     "sub": [
+      "Then married for the whole year"
+     ],
+     "say": "Marital status is decided on the last day of the year. Marry on December thirty-first and you're married for the whole year. Divorce is final by then, and you're unmarried for the whole year."
+    },
+    {
+     "type": "compare",
+     "heading": "Joint or separate?",
+     "cols": [
+      "Joint",
+      "Separate"
+     ],
+     "rows": [
+      [
+       "Brackets",
+       "Twice the single bands",
+       "Same as single, mostly"
+      ],
+      [
+       "Liability",
+       "Both liable for all tax",
+       "Each for their own"
+      ],
+      [
+       "Credits",
+       "All available",
+       "Many lost, like education"
+      ]
+     ],
+     "say": "Most married couples file jointly, which gives the widest brackets. Filing separately can protect a spouse from the other's tax debts, but it loses many credits and deductions."
+    },
+    {
+     "type": "define",
+     "big": "Qualifying surviving spouse",
+     "sub": [
+      "Joint rates for two years after",
+      "a spouse dies, with a dependent child"
+     ],
+     "say": "In the year a spouse dies, the survivor can still file jointly. For the next two years, a survivor who keeps a home for a dependent child can file as a qualifying surviving spouse, keeping the joint brackets and standard deduction."
+    },
+    {
+     "type": "quiz",
+     "q": "Kari and Erik married on December 28, 2026. What filing statuses can they use for 2026?",
+     "opts": [
+      "Single only",
+      "Married filing jointly or separately",
+      "Head of household",
+      "Single for 2026, married from 2027"
+     ],
+     "answer": 1,
+     "say": "Quick check. Kari and Erik married on December twenty-eighth, 2026. What filing statuses can they use for 2026? Pause and pick.",
+     "reveal": "It's B. Married on December thirty-first means married for the year, so they file jointly or separately."
+    }
+   ]
+  },
+  {
+   "id": "4.6",
+   "title": "Head of household",
+   "lecture": "Lecture 4 · The individual tax formula",
+   "take": "An unmarried taxpayer who pays over half the cost of a home for a qualifying person can file as head of household",
+   "read": "IRS Pub. 501",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Head of household gives single parents a bigger standard deduction and wider brackets than single status. Here's who qualifies."
+    },
+    {
+     "type": "list",
+     "heading": "Head of household tests",
+     "items": [
+      "Unmarried, or 'considered unmarried', at year-end",
+      "Paid over half the cost of keeping up the home",
+      "A qualifying person lived there over half the year"
+     ],
+     "say": "You must be unmarried at year-end, or considered unmarried. You must pay more than half the cost of keeping up a home. And a qualifying person, usually a qualifying child, must live there for more than half the year."
+    },
+    {
+     "type": "key",
+     "big": "A parent can live elsewhere",
+     "sub": [
+      "Pay over half the cost",
+      "of a dependent parent's home"
+     ],
+     "say": "One exception: a dependent parent doesn't have to live with you. You qualify if you pay more than half the cost of keeping up your parent's home."
+    },
+    {
+     "type": "table",
+     "heading": "Maria Ortiz, divorced, Sam's mother",
+     "rows": [
+      [
+       "Taxable income",
+       60850
+      ],
+      [
+       "Tax as single",
+       8099
+      ],
+      [
+       "Tax as head of household",
+       6948
+      ],
+      [
+       "Saved by head of household",
+       1151,
+       "total"
+      ]
+     ],
+     "say": "Maria Ortiz is divorced and keeps a home for Sam. Her AGI is $85,000, and after the head of household standard deduction her taxable income is $60,850. Single brackets would charge $8,099. Head of household brackets charge $6,948, a saving of $1,151, on top of the bigger standard deduction."
+    },
+    {
+     "type": "define",
+     "big": "Abandoned spouse",
+     "sub": [
+      "Married, but lived apart the last six months,",
+      "keeping a home for a child"
+     ],
+     "say": "A married person can be considered unmarried if their spouse didn't live in the home for the last six months of the year, and they paid over half the cost of keeping up a home for their dependent child."
+    },
+    {
+     "type": "quiz",
+     "q": "Maria's sister, single, pays all the costs of their dependent mother's apartment. What status can she use?",
+     "opts": [
+      "Single",
+      "Head of household",
+      "Qualifying surviving spouse",
+      "Married filing separately"
+     ],
+     "answer": 1,
+     "say": "Quick check. Maria's sister is single and pays all the costs of their dependent mother's apartment. What filing status can she use? Pause and pick.",
+     "reveal": "It's B. A dependent parent needn't live with you, so paying over half the cost of her home qualifies the sister as head of household."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Look at a blank 2026 Form 1040. Where would your own income, deductions and payments go?",
+   "Have students find lines for wages, AGI, standard deduction, taxable income, tax, credits and payments. This is the map for 4.1 and the whole course."
+  ],
+  "acts": [
+   [
+    "Order the lines: credits, AGI, taxable income, gross income, payments, tax, standard deduction.",
+    "Gross income, AGI, standard deduction, taxable income, tax, credits, payments."
+   ],
+   [
+    "Why would a taxpayer prefer a $2,000 deduction for AGI to a $2,000 itemized deduction?",
+    "It's available even if they take the standard deduction, and it lowers AGI, which raises the value of floors (medical) and keeps credits from phasing out."
+   ],
+   [
+    "Sam's parents are divorced. He lived 7 months with Maria and 5 with his father, who earns more. Who claims him?",
+    "Both are parents; Sam lived longer with Maria, so she wins the tie-breaker (AGI only matters if time is equal)."
+   ],
+   [
+    "Ruth's IRA withdrawals rise to $6,000. Can Jake still claim her?",
+    "No. Her gross income is above $5,300, so she fails the qualifying relative test."
+   ],
+   [
+    "A widow's husband died in March 2025. She has a dependent son. What status can she use for 2025, 2026, 2027 and 2028?",
+    "2025: married filing jointly. 2026 and 2027: qualifying surviving spouse. 2028: head of household if she still keeps a home for him."
+   ],
+   [
+    "Who qualifies as head of household? (a) A divorced father whose daughter lives with him 4 months. (b) A single woman supporting her mother in a nursing home. (c) A married man whose wife left in March, keeping a home for their son.",
+    "(a) No: under half the year. (b) Yes: a dependent parent's home. (c) Yes: considered unmarried (abandoned spouse)."
+   ]
+  ],
+  "case": [
+   "The Ortiz household",
+   "Maria Ortiz, 46, divorced in 2023, lives in Marshall. Sam, 20, is a full-time SMSU student who lives in a dorm from September to May and at home in summer. He earned $9,000 waiting tables in 2026, and Maria spent $14,000 on his tuition, food and car. Maria's niece Rosa, 30, moved in with them in February after losing her job; she had no income and Maria supported her. Sam's father, who earns more, wants to claim Sam.",
+   [
+    "Is Sam Maria's qualifying child, and can his father claim him?",
+    "Is Rosa a dependent of Maria? Why or why not?",
+    "What filing status should Maria use?",
+    "What standard deduction does Sam get on his own return?"
+   ],
+   "Sam passes all tests for Maria; his father can't win the tie-breaker because Sam lives with Maria (school absence is temporary). Rosa: a niece is a listed relative, gross income $0 and over half support, so she is a qualifying relative even though she arrived in February. Maria files head of household. Sam's standard deduction: greater of $1,350 or $9,000 + $450 = $9,450, so he owes no income tax but should file to recover withholding."
+  ],
+  "exam": [
+   [
+    "List and explain the tests for a qualifying child, and the tie-breaker rules.",
+    6,
+    "Relationship, age (under 19 / under 24 student / younger than claimant), residence (over half the year, temporary absences count), support (child not over half own support); joint return test. Tie-breakers: parent over non-parent; between parents, longer residence, then higher AGI."
+   ],
+   [
+    "A married couple filing jointly have gross income of $95,000, deductions for AGI of $3,000 and two children aged 10 and 12. Compute their 2026 taxable income and tax before credits, and the child tax credit.",
+    6,
+    "AGI 92,000; less 32,200 = 59,800 taxable. Tax: 2,480 + 12% × 35,000 = 4,200 → 6,680. CTC 2 × 2,200 = 4,400."
+   ]
+  ],
+  "outcomes": [
+   "Work through the individual tax formula",
+   "Tell deductions for AGI from deductions from AGI",
+   "Apply the qualifying child tests and tie-breakers",
+   "Apply the qualifying relative tests",
+   "Choose among the five filing statuses",
+   "Decide who qualifies as head of household"
+  ],
+  "take": [
+   "Gross income → AGI → taxable income → tax → credits → payments",
+   "Above-the-line deductions are worth more because AGI drives other limits",
+   "A qualifying child: relationship, age, residence, support",
+   "A qualifying relative: relationship or household, income under $5,300, support",
+   "Status depends on marital status on December 31",
+   "Head of household needs a home for a qualifying person"
+  ]
+ },
+ "ex": [
+  {
+   "type": "order",
+   "q": "Put the tax formula in order.",
+   "items": [
+    "Gross income",
+    "Adjusted gross income",
+    "Taxable income",
+    "Tax before credits",
+    "Tax after credits",
+    "Amount due or refund"
+   ],
+   "why": "Deductions for AGI give AGI; the standard or itemized deduction and QBI give taxable income; credits and payments come last.",
+   "video": "4.1"
+  },
+  {
+   "type": "num",
+   "q": "MFJ, AGI $80,000, standard deduction. What is 2026 taxable income?",
+   "a": 47800,
+   "unit": "$",
+   "why": "80,000 − 32,200 = 47,800.",
+   "video": "4.2"
+  },
+  {
+   "type": "sort",
+   "q": "Deduction for AGI or from AGI?",
+   "cats": [
+    "For AGI (above the line)",
+    "From AGI (below the line)"
+   ],
+   "items": [
+    [
+     "Half of self-employment tax",
+     0
+    ],
+    [
+     "Mortgage interest",
+     1
+    ],
+    [
+     "Traditional IRA contribution",
+     0
+    ],
+    [
+     "Charitable gifts by an itemizer",
+     1
+    ],
+    [
+     "HSA contribution",
+     0
+    ],
+    [
+     "Standard deduction",
+     1
+    ]
+   ],
+   "why": "Above-the-line deductions reduce AGI; the standard or itemized deductions come after.",
+   "video": "4.2"
+  },
+  {
+   "type": "num",
+   "q": "A married couple, both 67, file jointly. What is their 2026 standard deduction (before the senior deduction)?",
+   "a": 35500,
+   "unit": "$",
+   "why": "32,200 + 2 × 1,650 = 35,500.",
+   "video": "4.2"
+  },
+  {
+   "type": "mcq",
+   "q": "Which person can be a qualifying child of the taxpayer?",
+   "opts": [
+    "Her 25-year-old full-time student son",
+    "Her 17-year-old nephew who lives with her all year",
+    "Her mother who lives with her",
+    "Her 22-year-old daughter who works full time and lives at home"
+   ],
+   "a": 1,
+   "why": "A nephew is a descendant of a sibling, under 19 and lived with her. The 25-year-old is too old, a mother is a relative not a child, and the 22-year-old non-student fails the age test.",
+   "video": "4.3"
+  },
+  {
+   "type": "mcq",
+   "q": "Jake's father has $6,200 of taxable pension income. Jake provides 70% of his support. Can Jake claim him?",
+   "opts": [
+    "Yes, as a qualifying relative",
+    "No, his gross income is $5,300 or more",
+    "Yes, as a qualifying child",
+    "Only with a multiple support agreement"
+   ],
+   "a": 1,
+   "why": "A qualifying relative's gross income must be under $5,300 in 2026.",
+   "video": "4.4"
+  },
+  {
+   "type": "match",
+   "q": "Match each person to the best filing status.",
+   "pairs": [
+    [
+     "Married couple, December 31",
+     "Married filing jointly"
+    ],
+    [
+     "Widower, wife died last year, dependent child",
+     "Qualifying surviving spouse"
+    ],
+    [
+     "Divorced, keeps a home for her son",
+     "Head of household"
+    ],
+    [
+     "Unmarried, no dependents",
+     "Single"
+    ]
+   ],
+   "why": "Status follows marital status on December 31 and who lives in the home.",
+   "video": "4.5"
+  },
+  {
+   "type": "num",
+   "q": "A head of household has taxable income of $40,000 in 2026. What is her tax? (10% to $17,700; 12% to $67,450)",
+   "a": 4446,
+   "unit": "$",
+   "why": "1,770 + 12% × 22,300 = 2,676 → 4,446.",
+   "video": "4.6"
+  }
+ ]
+}

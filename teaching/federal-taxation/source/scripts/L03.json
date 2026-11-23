@@ -1,0 +1,713 @@
+{
+ "meta": {
+  "n": 3,
+  "short": "Tax planning",
+  "title": "Tax planning strategies and their limits",
+  "week": 3,
+  "ch": "Chapter 3",
+  "part": "The tax system",
+  "summary": "The three basic planning strategies: timing, income shifting and conversion, how the time value of money drives them, and the doctrines that stop plans going too far."
+ },
+ "videos": [
+  {
+   "id": "3.1",
+   "title": "Three ways to plan",
+   "lecture": "Lecture 3 · Tax planning",
+   "take": "Timing, income shifting and conversion are the three basic tax planning strategies",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Tax planning isn't about tricks. Almost every legitimate strategy is one of three moves. Here they are."
+    },
+    {
+     "type": "list",
+     "heading": "Three basic strategies",
+     "items": [
+      "Timing: when income and deductions land",
+      "Income shifting: who reports the income",
+      "Conversion: what kind of income it is"
+     ],
+     "say": "Timing changes when income or deductions are recognized. Income shifting moves income to a taxpayer in a lower bracket. Conversion changes the type of income, for example from ordinary income to a capital gain taxed at a lower rate."
+    },
+    {
+     "type": "key",
+     "big": "Plan for after-tax wealth",
+     "sub": [
+      "Not the lowest tax bill"
+     ],
+     "say": "The goal is to maximize after-tax wealth, not to minimize tax. Turning down a raise would cut your tax bill, but it would make you poorer."
+    },
+    {
+     "type": "list",
+     "heading": "Good planning considers",
+     "items": [
+      "Every party to the deal",
+      "Every tax: federal, state, payroll",
+      "Every cost, tax and non-tax"
+     ],
+     "say": "Good planning looks at every party to a transaction, every tax that applies, and every cost, including the non-tax ones like lost flexibility or legal fees."
+    },
+    {
+     "type": "compare",
+     "heading": "Which strategy?",
+     "cols": [
+      "Strategy",
+      "Example"
+     ],
+     "rows": [
+      [
+       "Pay property tax in December",
+       "Timing",
+       "Deduct this year"
+      ],
+      [
+       "Pay Leo for photo work",
+       "Shifting",
+       "Income taxed at his rate"
+      ],
+      [
+       "Hold shares over a year",
+       "Conversion",
+       "Capital gain rates"
+      ]
+     ],
+     "say": "Paying a property tax bill in December instead of January is timing. Paying fifteen-year-old Leo to help in Nora's business shifts income to him. Holding shares for more than a year converts a short-term gain into a lower-taxed long-term gain."
+    },
+    {
+     "type": "quiz",
+     "q": "Jake chooses a tax-exempt municipal bond over a taxable bond. Which strategy is this?",
+     "opts": [
+      "Timing",
+      "Income shifting",
+      "Conversion",
+      "Evasion"
+     ],
+     "answer": 2,
+     "say": "Quick check. Jake chooses a tax-exempt municipal bond over a taxable bond. Which strategy is it? Pause and pick.",
+     "reveal": "It's C, conversion. He changes the type of income, from taxable interest to tax-exempt interest."
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "title": "Timing and the time value of money",
+   "lecture": "Lecture 3 · Tax planning",
+   "take": "A deduction is worth more the sooner you take it, because of the time value of money",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "A dollar of tax saved today is worth more than a dollar saved next year. That simple fact drives timing strategies."
+    },
+    {
+     "type": "define",
+     "big": "Present value",
+     "sub": [
+      "What a future amount is worth today,",
+      "given a rate of return"
+     ],
+     "say": "Present value is what a future amount is worth today. At a six percent return, a dollar received next year is worth about ninety-four cents now."
+    },
+    {
+     "type": "table",
+     "heading": "A $10,000 deduction, 24% bracket, 6% rate",
+     "rows": [
+      [
+       "Tax saved if deducted this year",
+       2400
+      ],
+      [
+       "Tax saved next year, in today's dollars",
+       2264
+      ],
+      [
+       "Benefit of accelerating",
+       136,
+       "total"
+      ]
+     ],
+     "say": "Erik, Jake's brother, is in the twenty-four percent bracket. A ten thousand dollar deduction saves him $2,400. Taken this year, that's $2,400 today. Taken next year, it's worth only $2,264 today. Accelerating is worth $136."
+    },
+    {
+     "type": "list",
+     "heading": "So, when rates stay the same",
+     "items": [
+      "Accelerate deductions into this year",
+      "Defer income into next year"
+     ],
+     "say": "So, when tax rates stay the same, accelerate deductions and defer income. Both keep money in your hands longer."
+    },
+    {
+     "type": "key",
+     "big": "Deferral is an interest-free loan",
+     "sub": [
+      "from the government"
+     ],
+     "say": "Deferring tax is like an interest-free loan from the government. That's why retirement accounts, which defer tax for decades, are so valuable."
+    },
+    {
+     "type": "quiz",
+     "q": "Erik can deduct $5,000 in December or January. Same 24% rate both years. When should he?",
+     "opts": [
+      "December",
+      "January",
+      "It makes no difference",
+      "Split it"
+     ],
+     "answer": 0,
+     "say": "Quick check. Erik can deduct five thousand dollars in December or January, with the same twenty-four percent rate both years. When should he? Pause and pick.",
+     "reveal": "It's A, December. The $1,200 tax saving arrives a year sooner, so it's worth more."
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "title": "When rates change",
+   "lecture": "Lecture 3 · Tax planning",
+   "take": "If your rate will rise, reverse the rule: accelerate income and defer deductions",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Accelerate deductions and defer income. That rule flips when your tax rate is about to change."
+    },
+    {
+     "type": "table",
+     "heading": "$10,000 deduction, rate rising from 24% to 32%",
+     "rows": [
+      [
+       "Deduct this year: tax saved",
+       2400
+      ],
+      [
+       "Deduct next year: tax saved",
+       3200
+      ],
+      [
+       "Next year's saving in today's dollars",
+       3019
+      ],
+      [
+       "Benefit of deferring",
+       619,
+       "total"
+      ]
+     ],
+     "say": "Suppose Erik expects a promotion that moves him from twenty-four to thirty-two percent next year. Deducting now saves $2,400. Waiting saves $3,200, worth $3,019 today. Deferring the deduction wins by $619."
+    },
+    {
+     "type": "compare",
+     "heading": "The rule depends on rates",
+     "cols": [
+      "Deductions",
+      "Income"
+     ],
+     "rows": [
+      [
+       "Rates flat or falling",
+       "Accelerate",
+       "Defer"
+      ],
+      [
+       "Rates rising",
+       "Defer",
+       "Accelerate"
+      ]
+     ],
+     "say": "So if rates are flat or falling, accelerate deductions and defer income. If rates are rising enough, do the opposite: defer deductions and accelerate income."
+    },
+    {
+     "type": "list",
+     "heading": "Rates change when",
+     "items": [
+      "Income jumps or drops: a new job, retirement",
+      "Filing status changes: marriage, divorce",
+      "Congress changes the law"
+     ],
+     "say": "Your rate changes when your income jumps or drops, when your filing status changes, or when Congress changes the law, as it did in 2017 and again in 2025."
+    },
+    {
+     "type": "key",
+     "big": "Run the numbers",
+     "sub": [
+      "Compare present values",
+      "after tax"
+     ],
+     "say": "Don't apply the rule blindly. Compare the after-tax present value of each option."
+    },
+    {
+     "type": "quiz",
+     "q": "Nora expects a much lower rate next year while she cuts back work. When should she take a $3,000 bonus from a client?",
+     "opts": [
+      "This year",
+      "Next year",
+      "It never matters",
+      "Half each year"
+     ],
+     "answer": 1,
+     "say": "Quick check. Nora expects a much lower rate next year while she cuts back on work. When should she take a three thousand dollar payment from a client? Pause and pick.",
+     "reveal": "It's B, next year. Deferring income into a lower-rate year saves tax and delays it."
+    }
+   ]
+  },
+  {
+   "id": "3.4",
+   "title": "Shifting income within the family",
+   "lecture": "Lecture 3 · Tax planning",
+   "take": "Shift income to lower-bracket family members through real work, within the kiddie tax rules",
+   "read": "IRS Pub. 929",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Same income, lower bracket. Shifting income to a family member can save tax, if it's done properly."
+    },
+    {
+     "type": "table",
+     "heading": "Nora pays Leo $8,000 for real work",
+     "rows": [
+      [
+       "Nora's income tax saved at 12%",
+       960
+      ],
+      [
+       "Nora's self-employment tax saved",
+       1130
+      ],
+      [
+       "Leo's tax: standard deduction covers it",
+       0
+      ],
+      [
+       "Family saving",
+       2090,
+       "total"
+      ]
+     ],
+     "say": "Fifteen-year-old Leo edits photos for Nora's business. She pays him $8,000, a fair wage for the work. Nora deducts it, saving about $960 of income tax and $1,130 of self-employment tax. Leo's standard deduction covers his wages, so he pays nothing."
+    },
+    {
+     "type": "key",
+     "big": "The work must be real",
+     "sub": [
+      "Reasonable pay for services",
+      "actually performed"
+     ],
+     "say": "It only works if the work is real and the pay is reasonable. A child under eighteen working for a parent's sole proprietorship also owes no Social Security or Medicare tax."
+    },
+    {
+     "type": "define",
+     "big": "Kiddie tax",
+     "sub": [
+      "A child's unearned income over $2,700",
+      "is taxed at the parents' rate"
+     ],
+     "say": "Shifting investment income is harder. Under the kiddie tax, a child's unearned income over $2,700 in 2026 is taxed at the parents' rate. It applies to children under nineteen, and full-time students under twenty-four."
+    },
+    {
+     "type": "define",
+     "big": "Assignment of income",
+     "sub": [
+      "Income from services is taxed",
+      "to the person who earned it"
+     ],
+     "say": "And you can't simply assign your paycheck to your child. Income is taxed to whoever earns it. The Supreme Court said in 1930 that the fruit can't be attributed to a different tree from the one on which it grew."
+    },
+    {
+     "type": "quiz",
+     "q": "Ava, 8, has $5,000 of dividends in 2026. How much is taxed at her parents' rate?",
+     "opts": [
+      "$0",
+      "$1,350",
+      "$2,300",
+      "$5,000"
+     ],
+     "answer": 2,
+     "say": "Quick check. Eight-year-old Ava has five thousand dollars of dividends. How much is taxed at her parents' rate? Pause and pick.",
+     "reveal": "It's C. Unearned income above $2,700 is taxed at the parents' rate: 5,000 minus 2,700 is $2,300."
+    }
+   ]
+  },
+  {
+   "id": "3.5",
+   "title": "Conversion",
+   "lecture": "Lecture 3 · Tax planning",
+   "take": "Converting ordinary income into capital gains or tax-exempt income lowers the rate applied",
+   "read": "IRS Pub. 550",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Not all income is taxed alike. Conversion changes the character of income to reach a lower rate."
+    },
+    {
+     "type": "compare",
+     "heading": "Same dollars, different rates",
+     "cols": [
+      "2026 rate",
+      "Example"
+     ],
+     "rows": [
+      [
+       "Ordinary income",
+       "10% to 37%",
+       "Wages, interest"
+      ],
+      [
+       "Long-term capital gain",
+       "0%, 15% or 20%",
+       "Shares held over a year"
+      ],
+      [
+       "Tax-exempt income",
+       "0%",
+       "Municipal bond interest"
+      ]
+     ],
+     "say": "Wages and interest are ordinary income, taxed at ten to thirty-seven percent. Long-term capital gains and qualified dividends get zero, fifteen or twenty percent. Municipal bond interest is tax-exempt."
+    },
+    {
+     "type": "table",
+     "heading": "Erik sells shares at a $10,000 gain",
+     "rows": [
+      [
+       "Held 11 months: taxed at 24%",
+       2400
+      ],
+      [
+       "Held 13 months: taxed at 15%",
+       1500
+      ],
+      [
+       "Tax saved by waiting",
+       900,
+       "total"
+      ]
+     ],
+     "say": "Erik has a ten thousand dollar gain on shares. Sell after eleven months, and it's a short-term gain taxed at his twenty-four percent rate: $2,400. Wait until he's held them more than a year, and it's taxed at fifteen percent: $1,500."
+    },
+    {
+     "type": "list",
+     "heading": "Watch the non-tax costs",
+     "items": [
+      "Market risk while you wait",
+      "Lower pre-tax returns on tax-exempt bonds",
+      "Less diversification"
+     ],
+     "say": "But conversion has costs. While Erik waits, the share price could fall. Tax-exempt bonds pay lower pre-tax yields. A good plan weighs these against the tax saved."
+    },
+    {
+     "type": "recap",
+     "big": "Timing, shifting, conversion",
+     "sub": [
+      "When, who, and what kind"
+     ],
+     "say": "So the three strategies answer three questions: when is income taxed, who is taxed on it, and what kind of income is it."
+    },
+    {
+     "type": "quiz",
+     "q": "Which change converts income to a lower rate?",
+     "opts": [
+      "Taking a bonus in January instead of December",
+      "Holding stock 14 months instead of 10",
+      "Paying wages to a child",
+      "Prepaying property tax"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which change converts income to a lower rate? Pause and pick.",
+     "reveal": "It's B. Holding the stock over a year turns a short-term gain into a long-term capital gain. The others are timing or shifting."
+    }
+   ]
+  },
+  {
+   "id": "3.6",
+   "title": "Where planning stops",
+   "lecture": "Lecture 3 · Tax planning",
+   "take": "Business purpose, step transaction and substance over form limit planning; evasion is a crime",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Tax planning has limits. Here are the doctrines courts use to strike down plans that go too far."
+    },
+    {
+     "type": "define",
+     "big": "Constructive receipt",
+     "sub": [
+      "Income you could have taken",
+      "is taxed when it was available"
+     ],
+     "say": "First, constructive receipt. A cash-method taxpayer can't defer income by refusing to pick up a check. If the money was available to you without restriction, it's taxed when it was available."
+    },
+    {
+     "type": "list",
+     "heading": "Three judicial doctrines",
+     "items": [
+      "Business purpose: a deal needs a non-tax reason",
+      "Step transaction: linked steps are taxed as one",
+      "Substance over form: the economics decide"
+     ],
+     "say": "Courts also apply three doctrines. A transaction must have a business purpose beyond saving tax. Steps that only make sense together are collapsed into one. And the substance of a deal, not its legal form, decides how it's taxed."
+    },
+    {
+     "type": "compare",
+     "heading": "Avoidance or evasion?",
+     "cols": [
+      "Legal?",
+      "Example"
+     ],
+     "rows": [
+      [
+       "Tax avoidance",
+       "Yes",
+       "Waiting a year for the lower rate"
+      ],
+      [
+       "Tax evasion",
+       "No, a crime",
+       "Not reporting cash tips"
+      ]
+     ],
+     "say": "Tax avoidance, using the law to reduce tax, is legal. Tax evasion, hiding income or inventing deductions, is a crime, punishable by fines and prison."
+    },
+    {
+     "type": "key",
+     "big": "Would it make sense without the tax?",
+     "sub": [
+      "If not, expect a challenge"
+     ],
+     "say": "A useful test: would the transaction make sense if there were no tax? If not, expect the IRS to challenge it."
+    },
+    {
+     "type": "quiz",
+     "q": "On December 30 Nora's client hands her a $2,000 check. She holds it and deposits it in January. When is it income?",
+     "opts": [
+      "December, when she received it",
+      "January, when deposited",
+      "Whenever she chooses",
+      "When the check clears"
+     ],
+     "answer": 0,
+     "say": "Quick check. On December thirtieth a client hands Nora a two thousand dollar check. She deposits it in January. When is it income? Pause and pick.",
+     "reveal": "It's A, December. She received it and could have deposited it. Holding the check doesn't defer the income."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Your employer offers you a $5,000 bonus on December 28 or January 3. Which do you pick, and why?",
+   "Students usually pick December (cash now). Draw out the tax angle: January defers tax a year, December is better if next year's rate will be higher. Leads to 3.2 and 3.3."
+  ],
+  "acts": [
+   [
+    "Classify each as timing, shifting or conversion: (a) Roth IRA contribution, (b) gifting shares to a child in college, (c) delaying an invoice to January, (d) buying municipal bonds.",
+    "(a) Conversion (tax-free growth) and timing. (b) Shifting, subject to the kiddie tax for students under 24. (c) Timing. (d) Conversion."
+   ],
+   [
+    "A 22% taxpayer can deduct $8,000 now or in one year; the discount rate is 5%. What is the value of accelerating?",
+    "Now: 1,760. Next year: 1,760 ÷ 1.05 = 1,676. Benefit $84."
+   ],
+   [
+    "The same $8,000 deduction, but next year's rate will be 32%. Now or later?",
+    "Next year: 2,560 ÷ 1.05 = 2,438 > 1,760. Defer."
+   ],
+   [
+    "Nora wants to pay Ava, 8, $10,000 for 'modeling' in two photos. What concerns would the IRS raise?",
+    "Reasonableness: $10,000 for two photos is not an arm's-length wage. The excess is a disguised gift; the deduction would be denied."
+   ],
+   [
+    "Erik's shares have a $6,000 gain after 10 months. He is in the 24% bracket. What does waiting 3 more months save, and what is the risk?",
+    "6,000 × (24% − 15%) = $540. Risk: the price could fall by more than $540."
+   ],
+   [
+    "A taxpayer sells land to his wholly owned corporation and has it sell to a buyer the next day. Which doctrine applies?",
+    "Step transaction (and substance over form): the steps are collapsed into a direct sale."
+   ]
+  ],
+  "case": [
+   "The Lindqvists' year-end plan",
+   "In December 2026, Nora's photography business has had a strong year and the Lindqvists are in the 22% bracket. Next year Nora plans to take six months off when the family adopts a baby, so they expect to fall into the 12% bracket. Nora is owed $6,000 by clients and has $4,000 of new equipment she could buy in December or January. Leo, 15, has been helping with editing.",
+   [
+    "Should Nora bill and collect the $6,000 before or after December 31?",
+    "Should she buy the equipment in December or January?",
+    "Is paying Leo a sensible shift? What records should she keep?",
+    "Which non-tax factors matter?"
+   ],
+   "Income: defer to the 12% year (bill in late December, collect in January only if not constructively received). Equipment: accelerate the deduction into the 22% year. Paying Leo a reasonable wage for real editing work shifts income and saves SE tax; keep timesheets and pay by check. Non-tax: cash flow, client relations, whether she needs the equipment now."
+  ],
+  "exam": [
+   [
+    "Explain the three basic tax planning strategies and give one example of each.",
+    6,
+    "Timing (when: accelerate deductions, defer income); income shifting (who: wages to children, subject to kiddie tax and assignment-of-income limits); conversion (what kind: long-term gains, municipal interest)."
+   ],
+   [
+    "A taxpayer in the 24% bracket can take a $20,000 deduction this year or next. The discount rate is 6%. Compute the present value of the tax savings in each case if (a) rates stay the same and (b) next year's rate is 35%. Advise.",
+    6,
+    "(a) Now 4,800; next 4,800 ÷ 1.06 = 4,528: accelerate. (b) Next 7,000 ÷ 1.06 = 6,604 > 4,800: defer."
+   ]
+  ],
+  "outcomes": [
+   "Name the three basic planning strategies",
+   "Use present value to compare timing choices",
+   "Explain why rising rates reverse the timing rule",
+   "Shift income within limits, including the kiddie tax",
+   "Convert ordinary income to lower-taxed income",
+   "Apply the judicial doctrines and tell avoidance from evasion"
+  ],
+  "take": [
+   "Plan for after-tax wealth, not the lowest tax",
+   "Accelerate deductions and defer income when rates hold",
+   "Reverse the rule when rates will rise",
+   "Shifting needs real work and reasonable pay",
+   "Long-term gains and tax-exempt income convert to lower rates",
+   "A plan needs a business purpose; evasion is a crime"
+  ]
+ },
+ "ex": [
+  {
+   "type": "sort",
+   "q": "Timing, shifting or conversion?",
+   "cats": [
+    "Timing",
+    "Shifting",
+    "Conversion"
+   ],
+   "items": [
+    [
+     "Prepay property tax in December",
+     0
+    ],
+    [
+     "Pay a child a wage for real work",
+     1
+    ],
+    [
+     "Buy municipal bonds",
+     2
+    ],
+    [
+     "Delay a client invoice to January",
+     0
+    ],
+    [
+     "Hold shares longer than a year",
+     2
+    ],
+    [
+     "Give shares to a grandparent in a low bracket",
+     1
+    ]
+   ],
+   "why": "Timing is when, shifting is who, conversion is what kind of income.",
+   "video": "3.1"
+  },
+  {
+   "type": "num",
+   "q": "A 24% taxpayer's $10,000 deduction is delayed one year. At a 6% discount rate, what is the present value of the tax saved next year?",
+   "a": 2264,
+   "tol": 2,
+   "unit": "$",
+   "why": "2,400 ÷ 1.06 = 2,264.",
+   "video": "3.2"
+  },
+  {
+   "type": "mcq",
+   "q": "Rates are rising from 24% to 35% next year. What should a taxpayer generally do?",
+   "opts": [
+    "Accelerate deductions, defer income",
+    "Defer deductions, accelerate income",
+    "Accelerate both",
+    "Defer both"
+   ],
+   "a": 1,
+   "why": "A deduction is worth more and income costs more in the high-rate year.",
+   "video": "3.3"
+  },
+  {
+   "type": "num",
+   "q": "A 12-year-old has $4,000 of interest income in 2026. How much is taxed at the parents' rate?",
+   "a": 1300,
+   "unit": "$",
+   "why": "Unearned income over $2,700 is taxed at the parents' rate: 4,000 − 2,700 = 1,300.",
+   "video": "3.4"
+  },
+  {
+   "type": "num",
+   "q": "A 24% taxpayer has an $8,000 gain. How much tax does holding for more than a year save if the long-term rate is 15%?",
+   "a": 720,
+   "unit": "$",
+   "why": "8,000 × (24% − 15%) = 720.",
+   "video": "3.5"
+  },
+  {
+   "type": "match",
+   "q": "Match each doctrine to its idea.",
+   "pairs": [
+    [
+     "Business purpose",
+     "A deal needs a non-tax reason"
+    ],
+    [
+     "Step transaction",
+     "Linked steps are taxed as one"
+    ],
+    [
+     "Substance over form",
+     "Economic reality decides"
+    ],
+    [
+     "Constructive receipt",
+     "Available income is taxed now"
+    ]
+   ],
+   "why": "These doctrines stop form-only planning.",
+   "video": "3.6"
+  },
+  {
+   "type": "sort",
+   "q": "Avoidance or evasion?",
+   "cats": [
+    "Avoidance (legal)",
+    "Evasion (illegal)"
+   ],
+   "items": [
+    [
+     "Contributing to a 401(k)",
+     0
+    ],
+    [
+     "Leaving cash tips off the return",
+     1
+    ],
+    [
+     "Claiming a dependent who doesn't exist",
+     1
+    ],
+    [
+     "Buying municipal bonds",
+     0
+    ],
+    [
+     "Timing a sale for long-term treatment",
+     0
+    ]
+   ],
+   "why": "Avoidance uses the rules; evasion breaks them.",
+   "video": "3.6"
+  },
+  {
+   "type": "mcq",
+   "q": "Under the assignment-of-income doctrine, who is taxed on Jake's salary if he directs his employer to pay it to Leo?",
+   "opts": [
+    "Leo",
+    "Jake",
+    "Split equally",
+    "Neither, it's a gift"
+   ],
+   "a": 1,
+   "why": "Income from services is taxed to the person who earns it.",
+   "video": "3.4"
+  }
+ ]
+}

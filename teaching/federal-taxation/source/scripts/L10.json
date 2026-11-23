@@ -1,0 +1,707 @@
+{
+ "meta": {
+  "n": 10,
+  "short": "Cost recovery",
+  "title": "Property acquisition and cost recovery",
+  "week": 11,
+  "ch": "Chapter 10",
+  "part": "Business and property",
+  "summary": "Cost basis and capital versus repair, MACRS recovery periods and conventions, the MACRS tables, Section 179, bonus depreciation, real property, listed property and amortization."
+ },
+ "videos": [
+  {
+   "id": "10.1",
+   "title": "Basis and cost recovery",
+   "lecture": "Lecture 10 · Cost recovery",
+   "take": "A business asset's basis includes everything paid to get it ready for use; that cost is recovered over time",
+   "read": "IRS Pub. 946",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "When a business buys an asset that lasts for years, it can't usually deduct the cost at once. It recovers it over time. First, what is the cost?"
+    },
+    {
+     "type": "define",
+     "big": "Cost basis",
+     "sub": [
+      "Price + sales tax + freight",
+      "+ installation + setup"
+     ],
+     "say": "An asset's cost basis is everything paid to acquire it and get it ready for use: the price, sales tax, delivery and installation."
+    },
+    {
+     "type": "compare",
+     "heading": "Three ways to recover cost",
+     "cols": [
+      "Method",
+      "Examples"
+     ],
+     "rows": [
+      [
+       "Tangible property",
+       "Depreciation",
+       "Cameras, trucks, buildings"
+      ],
+      [
+       "Intangibles",
+       "Amortization",
+       "Goodwill, patents"
+      ],
+      [
+       "Natural resources",
+       "Depletion",
+       "Timber, oil"
+      ]
+     ],
+     "say": "Tangible property is depreciated, intangible property is amortized, and natural resources are depleted. Land is never depreciated, because it doesn't wear out."
+    },
+    {
+     "type": "compare",
+     "heading": "Capital or repair?",
+     "cols": [
+      "Treatment",
+      "Example"
+     ],
+     "rows": [
+      [
+       "Betterment or restoration",
+       "Capitalize",
+       "New roof on the studio"
+      ],
+      [
+       "Routine maintenance",
+       "Deduct",
+       "Replacing a lens cap"
+      ],
+      [
+       "Items up to $2,500",
+       "Deduct (safe harbor)",
+       "A $1,200 laptop"
+      ]
+     ],
+     "say": "Costs that better, restore or adapt an asset are capitalized. Routine repairs are deducted. And under the de minimis safe harbor, a small business can deduct items costing $2,500 or less each."
+    },
+    {
+     "type": "key",
+     "big": "Basis falls as you depreciate",
+     "sub": [
+      "Adjusted basis = cost − depreciation"
+     ],
+     "say": "Every dollar of depreciation reduces the asset's adjusted basis. That matters when you sell, as we'll see in Lecture 11."
+    },
+    {
+     "type": "quiz",
+     "q": "Nora buys a printer for $3,800 plus $300 sales tax and $150 delivery. Her basis?",
+     "opts": [
+      "$3,800",
+      "$4,100",
+      "$4,250",
+      "$3,950"
+     ],
+     "answer": 2,
+     "say": "Quick check. Nora buys a printer for thirty-eight hundred dollars plus three hundred sales tax and one fifty delivery. What's her basis? Pause and pick.",
+     "reveal": "It's C. Basis includes the tax and delivery: $4,250."
+    }
+   ]
+  },
+  {
+   "id": "10.2",
+   "title": "MACRS: classes and conventions",
+   "lecture": "Lecture 10 · Cost recovery",
+   "take": "MACRS assigns each asset a recovery period, a method and a convention",
+   "read": "IRS Pub. 946",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "The tax depreciation system is called MACRS. It doesn't ask how long your asset will really last. It tells you."
+    },
+    {
+     "type": "table",
+     "heading": "Common MACRS classes",
+     "rows": [
+      [
+       "Cars, light trucks, computers",
+       "5 years"
+      ],
+      [
+       "Office furniture, most equipment",
+       "7 years"
+      ],
+      [
+       "Residential rental buildings",
+       "27.5 years"
+      ],
+      [
+       "Nonresidential buildings",
+       "39 years"
+      ]
+     ],
+     "say": "Cars, light trucks and computers are five-year property. Office furniture and most machinery are seven-year. Residential rental buildings are twenty-seven and a half years, and other buildings thirty-nine."
+    },
+    {
+     "type": "compare",
+     "heading": "Method",
+     "cols": [
+      "Method",
+      "Salvage"
+     ],
+     "rows": [
+      [
+       "5 and 7-year property",
+       "200% declining balance",
+       "Ignored"
+      ],
+      [
+       "Buildings",
+       "Straight-line",
+       "Ignored"
+      ]
+     ],
+     "say": "Personal property uses double-declining balance, switching to straight-line when that gives more. Buildings use straight-line. Salvage value is always ignored."
+    },
+    {
+     "type": "list",
+     "heading": "Conventions",
+     "items": [
+      "Half-year: personal property",
+      "Mid-quarter: over 40% bought in Q4",
+      "Mid-month: real property"
+     ],
+     "say": "Conventions decide how much you get in the first and last year. Personal property assumes it was placed in service mid-year, the half-year convention. If more than forty percent of the year's purchases come in the last quarter, the mid-quarter convention applies. Buildings use mid-month."
+    },
+    {
+     "type": "key",
+     "big": "Half-year means 6 years",
+     "sub": [
+      "5-year property is depreciated",
+      "over six tax years"
+     ],
+     "say": "Because of the half-year convention, five-year property is depreciated over six tax years: half a year at the start and half at the end."
+    },
+    {
+     "type": "quiz",
+     "q": "Nora buys $6,000 of equipment in March and $5,000 in November, her only purchases in 2026. Which convention?",
+     "opts": [
+      "Half-year",
+      "Mid-quarter",
+      "Mid-month",
+      "Full-year"
+     ],
+     "answer": 1,
+     "say": "Quick check. Nora buys six thousand dollars of equipment in March and five thousand in November, her only purchases. Which convention applies? Pause and pick.",
+     "reveal": "It's B. $5,000 of $11,000 is forty-five percent in the fourth quarter, over forty percent, so mid-quarter."
+    }
+   ]
+  },
+  {
+   "id": "10.3",
+   "title": "Using the MACRS tables",
+   "lecture": "Lecture 10 · Cost recovery",
+   "take": "Multiply the asset's basis by the table percentage for its class and year",
+   "read": "IRS Pub. 946, Table A-1",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "In practice, nobody computes double-declining balance by hand. You use the IRS tables. Here's how."
+    },
+    {
+     "type": "table",
+     "heading": "Half-year convention, rates",
+     "rows": [
+      [
+       "Year",
+       "5-yr | 7-yr",
+       "head"
+      ],
+      [
+       "1",
+       "20.00% | 14.29%"
+      ],
+      [
+       "2",
+       "32.00% | 24.49%"
+      ],
+      [
+       "3",
+       "19.20% | 17.49%"
+      ],
+      [
+       "4",
+       "11.52% | 12.49%"
+      ],
+      [
+       "5",
+       "11.52% | 8.93%"
+      ],
+      [
+       "6",
+       "5.76% | 8.92%"
+      ]
+     ],
+     "say": "The table gives a percentage for each year. Five-year property: twenty percent in year one, thirty-two in year two, nineteen point two in year three, eleven point five two in years four and five, and five point seven six in year six. Seven-year property starts at fourteen point two nine percent."
+    },
+    {
+     "type": "table",
+     "heading": "Nora's cameras: $10,000, five-year, 2025",
+     "rows": [
+      [
+       "2025: 20%",
+       2000
+      ],
+      [
+       "2026: 32%",
+       3200
+      ],
+      [
+       "Adjusted basis, end of 2026",
+       4800,
+       "total"
+      ]
+     ],
+     "say": "Nora bought $10,000 of cameras and lenses in 2025 and chose not to use bonus depreciation. Year one is twenty percent, $2,000. In 2026, year two, it's thirty-two percent: the $3,200 on her Schedule C. Adjusted basis falls to $4,800."
+    },
+    {
+     "type": "key",
+     "big": "Sold mid-life? Half a year",
+     "sub": [
+      "Under the half-year convention,",
+      "take half the year's amount"
+     ],
+     "say": "If you dispose of property before it's fully depreciated, take half of that year's amount under the half-year convention."
+    },
+    {
+     "type": "table",
+     "heading": "If Nora sells the cameras in 2027",
+     "rows": [
+      [
+       "Full year-three amount: 19.2%",
+       1920
+      ],
+      [
+       "Half-year in year of sale",
+       960,
+       "total"
+      ]
+     ],
+     "say": "If Nora sells the cameras in 2027, the full year-three amount would be $1,920. She takes half: $960."
+    },
+    {
+     "type": "quiz",
+     "q": "A $20,000 seven-year machine is placed in service in 2026 (half-year, no bonus). Year-one depreciation?",
+     "opts": [
+      "$2,858",
+      "$4,000",
+      "$3,333",
+      "$1,429"
+     ],
+     "answer": 0,
+     "say": "Quick check. A twenty thousand dollar seven-year machine is placed in service in 2026, with no bonus. What's year-one depreciation? Pause and pick.",
+     "reveal": "It's A. Fourteen point two nine percent of $20,000 is $2,858."
+    }
+   ]
+  },
+  {
+   "id": "10.4",
+   "title": "Section 179 expensing",
+   "lecture": "Lecture 10 · Cost recovery",
+   "take": "Section 179 lets a business expense up to $2,560,000 of equipment in 2026, limited to business income",
+   "read": "Form 4562 instructions",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Why depreciate over six years when you can deduct it all now? Section 179 lets businesses expense equipment immediately."
+    },
+    {
+     "type": "define",
+     "big": "Section 179",
+     "sub": [
+      "Elect to expense qualifying property",
+      "in the year placed in service"
+     ],
+     "say": "Section 179 lets a business elect to deduct the cost of qualifying equipment, machinery, software and certain building improvements in the year it's placed in service."
+    },
+    {
+     "type": "table",
+     "heading": "2026 limits",
+     "rows": [
+      [
+       "Maximum deduction",
+       2560000
+      ],
+      [
+       "Phase-out begins at purchases of",
+       4090000
+      ]
+     ],
+     "say": "For 2026 the maximum is $2,560,000. It's reduced dollar for dollar once purchases of qualifying property exceed $4,090,000, so it targets small and mid-sized businesses."
+    },
+    {
+     "type": "key",
+     "big": "Limited to business income",
+     "sub": [
+      "Can't create a loss;",
+      "the excess carries forward"
+     ],
+     "say": "The deduction can't exceed taxable income from active businesses. Any excess carries forward. So Section 179 can't create a loss."
+    },
+    {
+     "type": "table",
+     "heading": "2027: Nora buys a $14,000 drone kit",
+     "rows": [
+      [
+       "Cost",
+       14000
+      ],
+      [
+       "Section 179 elected",
+       14000
+      ],
+      [
+       "Business income before it",
+       30000
+      ],
+      [
+       "Remaining MACRS basis",
+       0,
+       "total"
+      ]
+     ],
+     "say": "In 2027, Nora buys a $14,000 professional drone kit and elects Section 179 for the full amount. Her business income is well above that, so she deducts all $14,000 that year, and there's nothing left to depreciate."
+    },
+    {
+     "type": "quiz",
+     "q": "A business with $40,000 of taxable income elects $60,000 of Section 179. What is deductible this year?",
+     "opts": [
+      "$60,000",
+      "$40,000",
+      "$20,000",
+      "$0"
+     ],
+     "answer": 1,
+     "say": "Quick check. A business with forty thousand dollars of taxable income elects sixty thousand of Section 179. What's deductible this year? Pause and pick.",
+     "reveal": "It's B. The deduction is limited to $40,000 of business income. The other $20,000 carries forward."
+    }
+   ]
+  },
+  {
+   "id": "10.5",
+   "title": "Bonus depreciation",
+   "lecture": "Lecture 10 · Cost recovery",
+   "take": "100% bonus depreciation is permanent for property acquired after January 19, 2025, and can create a loss",
+   "read": "Form 4562 instructions",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bonus depreciation does what Section 179 does, but with no dollar cap and no income limit. The 2025 law made it permanent at one hundred percent."
+    },
+    {
+     "type": "flow",
+     "heading": "Bonus depreciation's path",
+     "items": [
+      "2017–2022: 100%",
+      "2023–2024: 80%, then 60%",
+      "After Jan 19, 2025: 100%, permanent"
+     ],
+     "say": "The 2017 law allowed one hundred percent bonus depreciation, phasing down from 2023. The 2025 law restored one hundred percent permanently for property acquired after January nineteenth, 2025."
+    },
+    {
+     "type": "compare",
+     "heading": "Section 179 vs bonus",
+     "cols": [
+      "Section 179",
+      "Bonus"
+     ],
+     "rows": [
+      [
+       "Dollar limit",
+       "$2,560,000",
+       "None"
+      ],
+      [
+       "Income limit",
+       "Yes",
+       "No: can create a loss"
+      ],
+      [
+       "Default",
+       "Must elect",
+       "Automatic unless you opt out"
+      ]
+     ],
+     "say": "Section 179 has a dollar limit and an income limit, and you must elect it. Bonus depreciation has neither limit, can create a loss, and applies automatically unless you elect out for a whole class of property."
+    },
+    {
+     "type": "flow",
+     "heading": "Order of deductions",
+     "items": [
+      "Section 179 first",
+      "Then bonus on what's left",
+      "Then regular MACRS on any remainder"
+     ],
+     "say": "When both apply, take Section 179 first, then bonus on the remaining basis, then regular MACRS on anything left."
+    },
+    {
+     "type": "key",
+     "big": "Why elect out?",
+     "sub": [
+      "Save deductions for higher-rate years,",
+      "or keep income for the QBI deduction"
+     ],
+     "say": "Why opt out? If you expect higher rates later, deductions are worth more then. Large deductions can also shrink your QBI deduction or waste credits."
+    },
+    {
+     "type": "quiz",
+     "q": "In 2026 a startup with a loss buys $50,000 of equipment. Which gives a 2026 deduction that adds to its loss?",
+     "opts": [
+      "Section 179",
+      "Bonus depreciation",
+      "Neither",
+      "Both equally"
+     ],
+     "answer": 1,
+     "say": "Quick check. In 2026, a startup with a loss buys fifty thousand dollars of equipment. Which method gives a deduction that adds to its loss? Pause and pick.",
+     "reveal": "It's B. Section 179 can't create a loss, but bonus depreciation can."
+    }
+   ]
+  },
+  {
+   "id": "10.6",
+   "title": "Buildings, listed property and intangibles",
+   "lecture": "Lecture 10 · Cost recovery",
+   "take": "Buildings use straight-line and mid-month; listed property needs over 50% business use; Section 197 intangibles are amortized over 15 years",
+   "read": "IRS Pub. 946; Pub. 527",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "A few more cost recovery rules: for buildings, for property with personal use, and for intangibles."
+    },
+    {
+     "type": "table",
+     "heading": "Erik's rental duplex, bought in July 2026",
+     "rows": [
+      [
+       "Purchase price",
+       325000
+      ],
+      [
+       "Less land: not depreciable",
+       -50000
+      ],
+      [
+       "Building basis",
+       275000,
+       "total"
+      ],
+      [
+       "Full year: 275,000 ÷ 27.5",
+       10000
+      ],
+      [
+       "2026, mid-month: 5.5 months",
+       4583,
+       "total"
+      ]
+     ],
+     "say": "Erik buys a rental duplex in July for $325,000, of which $50,000 is land. The building's $275,000 basis is depreciated straight-line over twenty-seven and a half years: $10,000 a year. Under the mid-month convention, July counts as half a month, so 2026 gets five and a half months: $4,583."
+    },
+    {
+     "type": "define",
+     "big": "Listed property",
+     "sub": [
+      "Cars and other property with personal use;",
+      "needs over 50% business use for MACRS"
+     ],
+     "say": "Listed property, mainly passenger cars, gets accelerated depreciation, Section 179 and bonus only if business use exceeds fifty percent. Otherwise it's straight-line. Passenger cars also face annual dollar caps, the so-called luxury auto limits."
+    },
+    {
+     "type": "define",
+     "big": "Section 197 intangibles",
+     "sub": [
+      "Goodwill, customer lists, non-competes:",
+      "amortized over 15 years"
+     ],
+     "say": "Purchased intangibles, like goodwill, customer lists and non-compete agreements, are amortized straight-line over fifteen years."
+    },
+    {
+     "type": "key",
+     "big": "Start-up costs",
+     "sub": [
+      "Deduct up to $5,000 at once,",
+      "amortize the rest over 180 months"
+     ],
+     "say": "Business start-up and organization costs can be deducted up to $5,000 each in the first year, phasing out above $50,000 of costs, with the rest amortized over a hundred and eighty months."
+    },
+    {
+     "type": "quiz",
+     "q": "Nora buys a retiring photographer's client list for $30,000. Annual amortization?",
+     "opts": [
+      "$6,000",
+      "$3,000",
+      "$2,000",
+      "$30,000"
+     ],
+     "answer": 2,
+     "say": "Quick check. Nora buys a retiring photographer's client list for thirty thousand dollars. What's the annual amortization? Pause and pick.",
+     "reveal": "It's C. A customer list is a Section 197 intangible: $30,000 over fifteen years is $2,000 a year."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Your business buys a $3,000 laptop. Should it be an expense this year or spread over its life? Argue both sides.",
+   "Matching says spread it; simplicity and incentives say expense it. Tax law does both: de minimis safe harbor (up to $2,500), Section 179, bonus, or MACRS."
+  ],
+  "acts": [
+   [
+    "Capitalize or deduct? (a) Repainting the studio. (b) Adding a darkroom. (c) A $900 lens. (d) Replacing the studio's entire HVAC system.",
+    "(a) Deduct (maintenance). (b) Capitalize (betterment). (c) Deduct under the $2,500 de minimis safe harbor. (d) Capitalize (restoration of a unit of property)."
+   ],
+   [
+    "Which convention? Purchases: $20,000 in February, $8,000 in October, $10,000 in December.",
+    "Q4 = 18,000 of 38,000 = 47% > 40%: mid-quarter."
+   ],
+   [
+    "Compute MACRS for 2026–2028 on a $30,000 seven-year machine placed in service in 2026 (no bonus, no 179).",
+    "4,287; 7,347; 5,247."
+   ],
+   [
+    "A business with $100,000 of taxable income buys $150,000 of equipment and elects $150,000 of Section 179. What is deductible, and what carries forward? What would bonus do instead?",
+    "Section 179 deduction $100,000; $50,000 carries forward. Bonus: $150,000 deducted, creating a $50,000 loss (NOL)."
+   ],
+   [
+    "Erik's duplex: what depreciation in 2027 and 2028? What if it were an office building?",
+    "$10,000 each year (27.5 years). Office: 39 years, $275,000 ÷ 39 = $7,051 a year."
+   ],
+   [
+    "Nora pays $8,000 of legal and setup costs to start a second business. What can she deduct in year one if it starts on July 1?",
+    "$5,000 now; $3,000 over 180 months: $16.67 × 6 = $100. Total $5,100."
+   ]
+  ],
+  "case": [
+   "Prairie Lens buys equipment",
+   "Suppose that in 2026 Nora's business had made $30,000 of profit before any of these purchases, and she bought: a $14,000 drone kit (five-year) in May; a $4,500 studio lighting set (seven-year) in August; a $2,200 laptop in September; and an SUV for $45,000 in October that she'll use 70% for business. The couple's taxable income puts them in the 12% bracket.",
+   [
+    "Which items qualify for the de minimis safe harbor?",
+    "Which convention applies, and why does it matter?",
+    "Should Nora use Section 179, bonus or regular MACRS? Consider her income, SE tax and QBI deduction.",
+    "What special rules apply to the SUV?"
+   ],
+   "Laptop: de minimis ($2,200). Q4 purchases: 45,000 of 63,500 depreciable cost = 71%, over 40%: mid-quarter for MACRS (property expensed under Section 179 is left out of the 40% test, so expensing the drone and lights would make it worse). Expensing everything would wipe out profit and SE tax but also the QBI deduction, and deductions are worth only 12% plus SE tax now; she might expense the drone kit and lighting and use regular MACRS on the SUV. SUV: listed property, 70% business use > 50%, so MACRS on the 70% business share; check the luxury auto caps (heavy SUVs over 6,000 lbs are exempt from the caps but have a lower Section 179 limit)."
+  ],
+  "exam": [
+   [
+    "Compare Section 179 and bonus depreciation in 2026 under four headings: dollar limit, income limit, election, and effect on a loss.",
+    4,
+    "179: $2,560,000 limit (phase-out above $4,090,000); limited to business income; must elect; can't create a loss. Bonus: no limit; no income limit; automatic unless elected out; can create a loss."
+   ],
+   [
+    "A $50,000 five-year asset is placed in service in 2026; the taxpayer elects $20,000 of Section 179 and elects out of bonus. Compute 2026 and 2027 deductions.",
+    5,
+    "2026: 20,000 + 20% × 30,000 = 26,000. 2027: 32% × 30,000 = 9,600."
+   ]
+  ],
+  "outcomes": [
+   "Determine cost basis and capitalize correctly",
+   "Assign MACRS classes and conventions",
+   "Compute MACRS from the tables",
+   "Apply Section 179 and its limits",
+   "Apply bonus depreciation and the ordering rules",
+   "Depreciate buildings, apply listed property rules and amortize intangibles"
+  ],
+  "take": [
+   "Basis is everything paid to get the asset ready",
+   "MACRS: class, method, convention; salvage ignored",
+   "Basis × table rate, half a year in the year of sale",
+   "Section 179: up to $2,560,000, limited to income",
+   "Bonus: 100%, permanent, can create a loss",
+   "Buildings 27.5 or 39 years; intangibles 15 years"
+  ]
+ },
+ "ex": [
+  {
+   "type": "num",
+   "q": "Equipment costs $12,000 plus $800 sales tax and $1,200 installation. What is its basis?",
+   "a": 14000,
+   "unit": "$",
+   "why": "12,000 + 800 + 1,200 = 14,000.",
+   "video": "10.1"
+  },
+  {
+   "type": "match",
+   "q": "Match each asset to its MACRS recovery period.",
+   "pairs": [
+    [
+     "Computer",
+     "5 years"
+    ],
+    [
+     "Office desk",
+     "7 years"
+    ],
+    [
+     "Apartment building",
+     "27.5 years"
+    ],
+    [
+     "Warehouse",
+     "39 years"
+    ]
+   ],
+   "why": "These are the standard MACRS classes.",
+   "video": "10.2"
+  },
+  {
+   "type": "num",
+   "q": "A $15,000 five-year asset is placed in service in 2026 (half-year, no bonus or 179). What is 2027 depreciation?",
+   "a": 4800,
+   "unit": "$",
+   "why": "Year 2 rate 32% × 15,000 = 4,800.",
+   "video": "10.3"
+  },
+  {
+   "type": "num",
+   "q": "A seven-year asset costing $10,000 (half-year) is sold in its third year. What is depreciation in the year of sale? (Year 3 rate 17.49%)",
+   "a": 875,
+   "tol": 1,
+   "unit": "$",
+   "why": "Half of 17.49% × 10,000 = 874.50, about $875.",
+   "video": "10.3"
+  },
+  {
+   "type": "num",
+   "q": "A business with $25,000 of taxable income elects $35,000 of Section 179. How much carries forward?",
+   "a": 10000,
+   "unit": "$",
+   "why": "The deduction is limited to taxable business income; 10,000 carries forward.",
+   "video": "10.4"
+  },
+  {
+   "type": "order",
+   "q": "Put the cost recovery deductions in the order they are applied.",
+   "items": [
+    "Section 179",
+    "Bonus depreciation",
+    "Regular MACRS"
+   ],
+   "why": "179 first, bonus on the remaining basis, then MACRS.",
+   "video": "10.5"
+  },
+  {
+   "type": "num",
+   "q": "A residential rental building (not land) cost $220,000. What is a full year's depreciation?",
+   "a": 8000,
+   "unit": "$",
+   "why": "220,000 ÷ 27.5 = 8,000.",
+   "video": "10.6"
+  },
+  {
+   "type": "num",
+   "q": "Goodwill is purchased for $90,000. What is the annual amortization?",
+   "a": 6000,
+   "unit": "$",
+   "why": "Section 197: 15 years. 90,000 ÷ 15 = 6,000.",
+   "video": "10.6"
+  }
+ ]
+}

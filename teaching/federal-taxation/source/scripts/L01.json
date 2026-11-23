@@ -1,0 +1,720 @@
+{
+ "meta": {
+  "n": 1,
+  "short": "Introduction to tax",
+  "title": "An introduction to tax",
+  "week": 1,
+  "ch": "Chapter 1",
+  "part": "The tax system",
+  "summary": "What a tax is, how to measure tax rates, progressive and regressive structures, the taxes Americans pay, where the income tax came from, and what makes a good tax."
+ },
+ "videos": [
+  {
+   "id": "1.1",
+   "title": "What makes something a tax?",
+   "lecture": "Lecture 1 · An introduction to tax",
+   "take": "A tax is a required payment to government that buys no specific benefit in return",
+   "read": "IRS Pub. 17, introduction",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Taxes pay for roads, schools and defense. But not every payment you make to a government is a tax. Here's the test."
+    },
+    {
+     "type": "define",
+     "big": "Tax",
+     "sub": [
+      "A payment required by a government",
+      "that buys no specific benefit in return"
+     ],
+     "say": "A tax is a payment required by a government that isn't tied to any specific benefit you receive. You pay it whether or not you use the roads it builds."
+    },
+    {
+     "type": "list",
+     "heading": "Three features of a tax",
+     "items": [
+      "Required by law, not voluntary",
+      "Paid to a government body",
+      "Unrequited: no direct good or service back"
+     ],
+     "say": "So a tax has three features. It's required by law. It's paid to a government. And it's unrequited: you get no particular good or service in exchange."
+    },
+    {
+     "type": "compare",
+     "heading": "Tax or not?",
+     "cols": [
+      "Tax?",
+      "Why"
+     ],
+     "rows": [
+      [
+       "Federal income tax",
+       "Yes",
+       "Required, nothing direct in return"
+      ],
+      [
+       "State park pass",
+       "No",
+       "A fee for a specific benefit"
+      ],
+      [
+       "Speeding ticket",
+       "No",
+       "A fine to punish behavior"
+      ],
+      [
+       "Cigarette tax",
+       "Yes",
+       "Required; also deters smoking"
+      ]
+     ],
+     "say": "Test some payments. Federal income tax is a tax. A state park pass is a fee: it buys entry. A speeding ticket is a fine. A cigarette tax is still a tax, even though it also discourages smoking."
+    },
+    {
+     "type": "key",
+     "big": "Raise revenue. Shape behavior.",
+     "sub": [
+      "Most taxes do both jobs",
+      "Credits and sin taxes steer choices"
+     ],
+     "say": "Taxes do two jobs. They raise the revenue government needs, and they shape behavior. Sin taxes discourage things, and tax credits reward things, like saving for retirement or paying for college."
+    },
+    {
+     "type": "quiz",
+     "q": "Which of these is a tax?",
+     "opts": [
+      "A $40 state park pass",
+      "Minnesota sales tax on a new laptop",
+      "A parking fine",
+      "Tuition at SMSU"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which of these is a tax? Pause and pick.",
+     "reveal": "It's B. Sales tax is required and buys nothing specific. The park pass and tuition are fees for a service, and the parking fine is a penalty."
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "title": "Marginal, average and effective rates",
+   "lecture": "Lecture 1 · An introduction to tax",
+   "take": "The marginal rate taxes the next dollar; the average rate divides total tax by taxable income",
+   "read": "Form 1040 instructions, 2026 tax rate schedules",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Someone tells you they're in the twenty-two percent bracket. That doesn't mean they pay twenty-two percent of their income. Here's why."
+    },
+    {
+     "type": "define",
+     "big": "Marginal tax rate",
+     "sub": [
+      "The rate on the next dollar of income"
+     ],
+     "say": "The marginal tax rate is the rate on your next dollar of taxable income. The US income tax works in brackets, and each bracket's rate applies only to the income inside it."
+    },
+    {
+     "type": "table",
+     "heading": "Single filer, 2026, taxable income $60,000",
+     "rows": [
+      [
+       "10% on the first $12,400",
+       1240
+      ],
+      [
+       "12% on the next $38,000",
+       4560
+      ],
+      [
+       "22% on the last $9,600",
+       2112
+      ],
+      [
+       "Tax",
+       7912,
+       "total"
+      ]
+     ],
+     "say": "Take a single filer with $60,000 of taxable income in 2026. The first $12,400 is taxed at ten percent, the next $38,000 at twelve percent, and only the last $9,600 at twenty-two percent. Total tax: $7,912."
+    },
+    {
+     "type": "table",
+     "heading": "Three rates, one taxpayer",
+     "rows": [
+      [
+       "Marginal rate",
+       "22%"
+      ],
+      [
+       "Average rate: 7,912 ÷ 60,000",
+       "13.2%"
+      ],
+      [
+       "Effective: 7,912 ÷ 76,100 income",
+       "10.4%"
+      ]
+     ],
+     "say": "Her marginal rate is twenty-two percent. Her average rate, tax divided by taxable income, is 13.2 percent. Her effective rate divides tax by all her income, including the $16,100 standard deduction: about 10.4 percent."
+    },
+    {
+     "type": "key",
+     "big": "A raise never cuts take-home pay",
+     "sub": [
+      "Only income above the threshold",
+      "is taxed at the higher rate"
+     ],
+     "say": "So a raise never leaves you worse off: only the dollars above the threshold are taxed at the higher rate. Use the marginal rate for decisions, and the average rate to describe the overall burden."
+    },
+    {
+     "type": "quiz",
+     "q": "A single filer's 2026 taxable income rises from $50,000 to $51,000. How much more income tax?",
+     "opts": [
+      "$120",
+      "$180",
+      "$220",
+      "$5,610"
+     ],
+     "answer": 1,
+     "say": "Quick check. A single filer's taxable income rises from fifty thousand to fifty-one thousand dollars. How much more income tax? Pause and pick.",
+     "reveal": "It's B. The first $400 is still in the twelve percent bracket, so $48. The other $600 is taxed at twenty-two percent, $132. Total $180."
+    }
+   ]
+  },
+  {
+   "id": "1.3",
+   "title": "Progressive, proportional and regressive",
+   "lecture": "Lecture 1 · An introduction to tax",
+   "take": "Tax structures are judged by how the average rate changes as the tax base grows",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Some taxes take a bigger share from people with more income, some the same share, and some a smaller share. Here are the three structures."
+    },
+    {
+     "type": "list",
+     "heading": "Three tax rate structures",
+     "items": [
+      "Progressive: average rate rises as the base rises",
+      "Proportional: one flat rate on every dollar",
+      "Regressive: average rate falls as the base rises"
+     ],
+     "say": "A progressive tax has an average rate that rises as the tax base rises. A proportional, or flat, tax charges one rate on every dollar. A regressive tax has an average rate that falls as the base rises."
+    },
+    {
+     "type": "compare",
+     "heading": "US examples",
+     "cols": [
+      "Structure",
+      "Why"
+     ],
+     "rows": [
+      [
+       "Federal income tax",
+       "Progressive",
+       "Brackets rise from 10% to 37%"
+      ],
+      [
+       "Medicare tax",
+       "Proportional",
+       "1.45% on every dollar of wages"
+      ],
+      [
+       "Social Security tax",
+       "Regressive above the cap",
+       "No tax on wages over $184,500"
+      ],
+      [
+       "Sales tax",
+       "Regressive on income",
+       "Low earners spend more of income"
+      ]
+     ],
+     "say": "The federal income tax is progressive. The Medicare tax is proportional. Social Security tax stops at $184,500 of wages in 2026, so it's regressive above that cap. And sales tax is regressive when measured against income."
+    },
+    {
+     "type": "table",
+     "heading": "Minnesota sales tax at 6.875%",
+     "rows": [
+      [
+       "A: earns $40,000, spends $30,000",
+       2063
+      ],
+      [
+       "Share of income",
+       "5.2%"
+      ],
+      [
+       "B: earns $200,000, spends $60,000",
+       4125
+      ],
+      [
+       "Share of income",
+       "2.1%"
+      ]
+     ],
+     "say": "Household A earns $40,000 and spends $30,000 on taxable goods, paying about $2,063 of sales tax: 5.2 percent of income. Household B earns $200,000 but spends $60,000, paying $4,125: only 2.1 percent."
+    },
+    {
+     "type": "key",
+     "big": "Judge by the average rate",
+     "sub": [
+      "Measured against the tax base,",
+      "or against income"
+     ],
+     "say": "So the test is always the average rate. Against its own base, sales tax is flat. Against income, it's regressive. Be clear about which base you're using."
+    },
+    {
+     "type": "quiz",
+     "q": "A tax charges 10% on the first $50,000 and 5% on everything above. What structure is it?",
+     "opts": [
+      "Progressive",
+      "Proportional",
+      "Regressive",
+      "It depends on filing status"
+     ],
+     "answer": 2,
+     "say": "Quick check. A tax charges ten percent on the first fifty thousand dollars and five percent above that. What structure is it? Pause and pick.",
+     "reveal": "It's C, regressive. As the base grows, more of it is taxed at five percent, so the average rate falls."
+    }
+   ]
+  },
+  {
+   "id": "1.4",
+   "title": "The taxes Americans pay",
+   "lecture": "Lecture 1 · An introduction to tax",
+   "take": "Federal, state and local governments levy income, payroll, sales, property, excise and transfer taxes",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "The income tax gets the attention, but Americans pay many other taxes. Here's a quick map."
+    },
+    {
+     "type": "list",
+     "heading": "Federal taxes",
+     "items": [
+      "Individual and corporate income taxes",
+      "Payroll taxes: Social Security and Medicare",
+      "Excise taxes: fuel, alcohol, tobacco",
+      "Transfer taxes: estate and gift"
+     ],
+     "say": "At the federal level there are individual and corporate income taxes, payroll taxes for Social Security and Medicare, excise taxes on things like fuel and alcohol, and transfer taxes on large estates and gifts."
+    },
+    {
+     "type": "list",
+     "heading": "State and local taxes",
+     "items": [
+      "State income taxes, Minnesota included",
+      "Sales and use taxes",
+      "Property taxes on homes and land"
+     ],
+     "say": "States and local governments add their own income taxes, which Minnesota has, sales and use taxes, and property taxes, which mostly fund schools and local services."
+    },
+    {
+     "type": "table",
+     "heading": "Transfer taxes, 2026",
+     "rows": [
+      [
+       "Annual gift exclusion, per recipient",
+       19000
+      ],
+      [
+       "Estate tax exclusion",
+       15000000
+      ],
+      [
+       "Top estate and gift tax rate",
+       "40%"
+      ]
+     ],
+     "say": "Transfer taxes reach very few people. In 2026 you can give $19,000 a year to each person tax-free, and the estate tax exclusion is fifteen million dollars."
+    },
+    {
+     "type": "define",
+     "big": "Implicit tax",
+     "sub": [
+      "A lower return you accept",
+      "on a tax-favored investment"
+     ],
+     "say": "There's also the implicit tax. Municipal bond interest is tax-free, so those bonds pay a lower rate than taxable bonds. The return you give up is an implicit tax, even though no one sends a check to the IRS."
+    },
+    {
+     "type": "quiz",
+     "q": "A taxable bond yields 5% and a similar municipal bond yields 3.5%. What is the implicit tax rate?",
+     "opts": [
+      "1.5%",
+      "30%",
+      "3.5%",
+      "70%"
+     ],
+     "answer": 1,
+     "say": "Quick check. A taxable bond yields five percent and a similar municipal bond yields three and a half. What's the implicit tax rate? Pause and pick.",
+     "reveal": "It's B. The muni gives up 1.5 points out of 5, which is thirty percent. An investor in a higher bracket should buy the muni."
+    }
+   ]
+  },
+  {
+   "id": "1.5",
+   "title": "Where the income tax came from",
+   "lecture": "Lecture 1 · An introduction to tax",
+   "take": "The Sixteenth Amendment of 1913 made a permanent federal income tax possible",
+   "read": "Instructor's own material",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "The federal income tax is younger than you might think. It took a civil war, a Supreme Court defeat and a constitutional amendment."
+    },
+    {
+     "type": "flow",
+     "heading": "A short history",
+     "items": [
+      "1861: first income tax pays for the Civil War",
+      "1872: allowed to lapse",
+      "1895: Pollock strikes down the 1894 tax",
+      "1913: Sixteenth Amendment ratified",
+      "1943: withholding from paychecks"
+     ],
+     "say": "Congress first taxed incomes in 1861 to pay for the Civil War, then let the tax lapse in 1872. A new income tax in 1894 was struck down by the Supreme Court in Pollock. The Sixteenth Amendment of 1913 settled the question, and paycheck withholding arrived in 1943."
+    },
+    {
+     "type": "key",
+     "big": "1913: a tax for the few",
+     "sub": [
+      "1% normal tax above $3,000,",
+      "surtax to a top rate of 7%"
+     ],
+     "say": "The 1913 tax was a tax on the few. It began at one percent on income above $3,000, at a time when most workers earned far less, with a surtax that took the top rate to seven percent."
+    },
+    {
+     "type": "list",
+     "heading": "Three codes",
+     "items": [
+      "Internal Revenue Code of 1939",
+      "Internal Revenue Code of 1954",
+      "Internal Revenue Code of 1986, today's code"
+     ],
+     "say": "The rules have been gathered into a code three times: in 1939, 1954 and 1986. We still work under the 1986 code, amended many times, most recently by the 2025 law called the One Big Beautiful Bill Act."
+    },
+    {
+     "type": "key",
+     "tag": "WHY IT MATTERS",
+     "big": "Mass tax, mass compliance",
+     "sub": [
+      "Withholding turned the income tax",
+      "into a tax on most workers"
+     ],
+     "say": "The Second World War turned the income tax into a mass tax, and withholding made it collectible. That's why most Americans now file a return every spring."
+    },
+    {
+     "type": "quiz",
+     "q": "Which event made a permanent federal income tax constitutional?",
+     "opts": [
+      "The Revenue Act of 1861",
+      "Pollock v. Farmers' Loan and Trust",
+      "The Sixteenth Amendment",
+      "The Current Tax Payment Act of 1943"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which event made a permanent federal income tax constitutional? Pause and pick.",
+     "reveal": "It's C. The Sixteenth Amendment, ratified in 1913, let Congress tax incomes without dividing the tax among the states by population."
+    }
+   ]
+  },
+  {
+   "id": "1.6",
+   "title": "What makes a good tax?",
+   "lecture": "Lecture 1 · An introduction to tax",
+   "take": "Judge a tax by sufficiency, equity, certainty, convenience and economy",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Politicians argue about taxes constantly. Economists give us five tests for judging whether a tax is a good one."
+    },
+    {
+     "type": "list",
+     "heading": "Five tests of a good tax",
+     "items": [
+      "Sufficiency: raises enough revenue",
+      "Equity: fair across taxpayers",
+      "Certainty: you know what you owe",
+      "Convenience: easy to pay and collect",
+      "Economy: cheap to run and comply with"
+     ],
+     "say": "A good tax is sufficient: it raises enough revenue. It's equitable, certain, convenient to pay, and economical to run. Four of these tests go back to Adam Smith in 1776."
+    },
+    {
+     "type": "compare",
+     "heading": "Two kinds of equity",
+     "cols": [
+      "Means",
+      "Example"
+     ],
+     "rows": [
+      [
+       "Horizontal",
+       "Same situation, same tax",
+       "Two families earning $90,000"
+      ],
+      [
+       "Vertical",
+       "More ability, more tax",
+       "Progressive brackets"
+      ]
+     ],
+     "say": "Equity comes in two kinds. Horizontal equity says people in the same situation pay the same tax. Vertical equity says people with more ability to pay should pay more."
+    },
+    {
+     "type": "compare",
+     "heading": "When rates rise",
+     "cols": [
+      "Effect",
+      "Result"
+     ],
+     "rows": [
+      [
+       "Income effect",
+       "Work more",
+       "To keep the same after-tax income"
+      ],
+      [
+       "Substitution effect",
+       "Work less",
+       "Leisure now costs less"
+      ]
+     ],
+     "say": "Rate changes also change behavior. Under the income effect, people work more to keep their after-tax income. Under the substitution effect, they work less, because leisure got cheaper. A static forecast ignores both. A dynamic forecast tries to include them."
+    },
+    {
+     "type": "recap",
+     "big": "No tax scores perfectly",
+     "sub": [
+      "Every design trades one test",
+      "against another"
+     ],
+     "say": "No tax scores perfectly. A flat tax is simple and certain but weaker on vertical equity. Targeted credits help fairness but add complexity. Policy is a series of trade-offs."
+    },
+    {
+     "type": "quiz",
+     "q": "Two single filers each earn $70,000 but one pays more because of where she was born. Which test fails?",
+     "opts": [
+      "Sufficiency",
+      "Horizontal equity",
+      "Vertical equity",
+      "Economy"
+     ],
+     "answer": 1,
+     "say": "Quick check. Two single filers each earn seventy thousand dollars, but one pays more tax because of where she was born. Which test fails? Pause and pick.",
+     "reveal": "It's B, horizontal equity. Taxpayers in the same situation should pay the same tax."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Add up every tax you paid in the last week. Which ones did you notice, and which didn't you?",
+   "Expect sales tax, gas tax, payroll tax on a paycheck, maybe property tax through rent. Most students forget excise and payroll taxes. Hidden taxes come back in 1.4 (implicit taxes)."
+  ],
+  "acts": [
+   [
+    "Classify each as a tax, fee or fine: a Marshall utility bill, the federal gas tax, a library late charge, a Minnesota vehicle registration tax.",
+    "Utility bill: fee. Gas tax: tax (excise). Late charge: fine. Vehicle registration tax: a tax, though it is collected through a registration, because the amount isn't tied to a service."
+   ],
+   [
+    "A single filer has 2026 taxable income of $110,000. Compute her tax, marginal rate and average rate.",
+    "1,240 + 4,560 + 12,166 (22% × 55,300) + 24% × 4,300 = 1,032. Tax $18,998. Marginal 24%. Average 17.3%."
+   ],
+   [
+    "Argue whether the federal income tax is still progressive for someone whose income is mostly long-term capital gains.",
+    "Gains are taxed at 0%, 15% or 20%, so a very high earner living on gains can have a lower average rate than a salaried worker. The rate schedule is progressive; the outcome depends on the mix of income."
+   ],
+   [
+    "A Minnesota investor in the 24% federal bracket can earn 5% taxable or 3.9% tax-exempt. Which should she buy, ignoring state tax?",
+    "After-tax taxable yield: 5% × 0.76 = 3.8%, less than 3.9%. Buy the municipal bond."
+   ],
+   [
+    "Why did the 1913 income tax affect so few households, and what changed in the 1940s?",
+    "The $3,000 exemption was well above most incomes. Wartime rate rises and lower exemptions widened the base, and 1943 withholding made collection practical."
+   ],
+   [
+    "Score a national sales tax replacing the income tax on the five tests.",
+    "Strong on convenience and economy, possibly certainty; weak on vertical equity (regressive); sufficiency depends on the rate and evasion."
+   ]
+  ],
+  "case": [
+   "The Lindqvists debate a flat tax",
+   "Jake and Nora Lindqvist live in Marshall with their children Ava (8) and Leo (15). Jake earns $88,000 as an agronomist; Nora's photography business makes about $30,000. At a family dinner Jake's brother argues for a 17% flat tax on all income above a $40,000 family allowance, with no other deductions or credits, saying it would be simpler and fairer.",
+   [
+    "Is the proposed flat tax progressive, proportional or regressive? Why?",
+    "What would the Lindqvists pay on $118,000 of income?",
+    "Which of the five tests does it pass well, and which poorly?",
+    "What behavior might change under the income and substitution effects?"
+   ],
+   "With an allowance, the average rate rises with income, so it is mildly progressive even with one rate. Tax: 17% × 78,000 = $13,260. Strong on certainty, convenience, economy; weaker on vertical equity, and sufficiency depends on the rate. The loss of child credits matters to this family. Discuss income versus substitution effects for Nora's hours."
+  ],
+  "exam": [
+   [
+    "Distinguish marginal, average and effective tax rates. Which should a taxpayer use when deciding whether to take on extra work?",
+    5,
+    "Marginal: rate on the next dollar. Average: total tax ÷ taxable income. Effective: total tax ÷ economic income. Decisions use the marginal rate because only the extra income is taxed at that rate."
+   ],
+   [
+    "A single filer has 2026 taxable income of $80,000. Compute the tax and the average tax rate.",
+    5,
+    "1,240 + 4,560 + 22% × 29,600 = 6,512. Tax $12,312. Average rate 15.4%."
+   ]
+  ],
+  "outcomes": [
+   "Define a tax and tell it from a fee or fine",
+   "Compute marginal, average and effective rates",
+   "Classify progressive, proportional and regressive taxes",
+   "Describe the main US taxes, including implicit taxes",
+   "Outline how the federal income tax began",
+   "Evaluate a tax on five tests"
+  ],
+  "take": [
+   "A tax is required and buys nothing specific",
+   "Use the marginal rate for decisions, the average rate to describe burden",
+   "Judge structure by how the average rate changes",
+   "Payroll, sales and property taxes matter as much as income tax for many families",
+   "The 1913 amendment and 1943 withholding created the modern income tax",
+   "Every tax trades sufficiency, equity, certainty, convenience and economy"
+  ]
+ },
+ "ex": [
+  {
+   "type": "sort",
+   "q": "Tax, fee or fine?",
+   "cats": [
+    "Tax",
+    "Fee",
+    "Fine"
+   ],
+   "items": [
+    [
+     "Federal gas tax",
+     0
+    ],
+    [
+     "State park pass",
+     1
+    ],
+    [
+     "Speeding ticket",
+     2
+    ],
+    [
+     "Minnesota sales tax",
+     0
+    ],
+    [
+     "Passport application charge",
+     1
+    ],
+    [
+     "Late-filing penalty",
+     2
+    ]
+   ],
+   "why": "A tax is required and unrequited; a fee buys a specific service; a fine punishes behavior.",
+   "video": "1.1"
+  },
+  {
+   "type": "num",
+   "q": "A single filer has 2026 taxable income of $60,000. What is her federal income tax?",
+   "a": 7912,
+   "unit": "$",
+   "why": "1,240 + 4,560 + 22% × 9,600 = 7,912.",
+   "video": "1.2"
+  },
+  {
+   "type": "num",
+   "q": "Same filer: what is her average tax rate, in percent, to one decimal place?",
+   "a": 13.2,
+   "tol": 0.1,
+   "unit": "%",
+   "why": "7,912 ÷ 60,000 = 13.2%.",
+   "video": "1.2"
+  },
+  {
+   "type": "match",
+   "q": "Match each tax to its structure.",
+   "pairs": [
+    [
+     "Federal income tax",
+     "Progressive"
+    ],
+    [
+     "Medicare tax on wages",
+     "Proportional"
+    ],
+    [
+     "Sales tax, measured against income",
+     "Regressive"
+    ]
+   ],
+   "why": "Rising brackets make the income tax progressive; Medicare is flat; sales tax takes a larger share of a smaller income.",
+   "video": "1.3"
+  },
+  {
+   "type": "num",
+   "q": "A taxable bond yields 6% and an equivalent municipal bond yields 4.5%. What is the implicit tax rate, in percent?",
+   "a": 25,
+   "tol": 0.1,
+   "unit": "%",
+   "why": "(6 − 4.5) ÷ 6 = 25%.",
+   "video": "1.4"
+  },
+  {
+   "type": "order",
+   "q": "Put these events in order.",
+   "items": [
+    "Civil War income tax",
+    "Pollock v. Farmers' Loan and Trust",
+    "Sixteenth Amendment",
+    "Payroll withholding begins",
+    "Internal Revenue Code of 1986"
+   ],
+   "why": "1861, 1895, 1913, 1943, 1986.",
+   "video": "1.5"
+  },
+  {
+   "type": "match",
+   "q": "Match each test of a good tax to its meaning.",
+   "pairs": [
+    [
+     "Sufficiency",
+     "Raises enough revenue"
+    ],
+    [
+     "Certainty",
+     "Taxpayers know what they owe"
+    ],
+    [
+     "Convenience",
+     "Easy to pay and collect"
+    ],
+    [
+     "Economy",
+     "Low cost to run and comply with"
+    ]
+   ],
+   "why": "These, with equity, are the standard tests.",
+   "video": "1.6"
+  },
+  {
+   "type": "mcq",
+   "q": "A rate cut leads Nora to work fewer hours because she can now hit her income goal sooner. Which effect is this?",
+   "opts": [
+    "Substitution effect",
+    "Income effect",
+    "Implicit tax",
+    "Horizontal equity"
+   ],
+   "a": 1,
+   "why": "Under the income effect, people adjust work to reach a target after-tax income; with a lower rate she needs fewer hours.",
+   "video": "1.6"
+  }
+ ]
+}

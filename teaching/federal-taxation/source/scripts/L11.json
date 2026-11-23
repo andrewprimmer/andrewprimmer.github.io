@@ -1,0 +1,707 @@
+{
+ "meta": {
+  "n": 11,
+  "short": "Property dispositions",
+  "title": "Property dispositions",
+  "week": 12,
+  "ch": "Chapter 11",
+  "part": "Business and property",
+  "summary": "Amount realized and gain, the character of gains, Section 1245 and 1250 recapture, Section 1231 netting, like-kind exchanges, involuntary conversions and installment sales."
+ },
+ "videos": [
+  {
+   "id": "11.1",
+   "title": "Amount realized and gain",
+   "lecture": "Lecture 11 · Property dispositions",
+   "take": "Gain realized is amount realized minus adjusted basis; amount realized includes debt the buyer takes over",
+   "read": "IRS Pub. 544",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Every sale of property starts with the same calculation. What you received, minus what you have invested, is your gain or loss."
+    },
+    {
+     "type": "define",
+     "big": "Amount realized",
+     "sub": [
+      "Cash + fair value of property received",
+      "+ debt the buyer assumes − selling costs"
+     ],
+     "say": "The amount realized is the cash plus the fair value of any property you receive, plus any of your debt the buyer takes over, less selling costs like commissions."
+    },
+    {
+     "type": "define",
+     "big": "Adjusted basis",
+     "sub": [
+      "Cost + improvements",
+      "− depreciation taken"
+     ],
+     "say": "Adjusted basis is your original cost, plus capital improvements, minus depreciation you've taken or could have taken."
+    },
+    {
+     "type": "table",
+     "heading": "Nora sells her cameras in 2027",
+     "rows": [
+      [
+       "Amount realized",
+       6000
+      ],
+      [
+       "Original cost",
+       10000
+      ],
+      [
+       "Depreciation 2025 to 2027",
+       -6160
+      ],
+      [
+       "Adjusted basis",
+       3840,
+       "total"
+      ],
+      [
+       "Gain realized",
+       2160,
+       "total"
+      ]
+     ],
+     "say": "Nora sells her cameras in 2027 for $6,000. They cost $10,000, and she's taken $6,160 of depreciation: $2,000, $3,200 and a half-year $960. Adjusted basis is $3,840, so her gain is $2,160."
+    },
+    {
+     "type": "key",
+     "big": "Realized ≠ recognized",
+     "sub": [
+      "Some realized gains are deferred,",
+      "like a like-kind exchange"
+     ],
+     "say": "A realized gain is usually recognized, meaning taxed, now. But some provisions, like like-kind exchanges and involuntary conversions, let you defer it."
+    },
+    {
+     "type": "quiz",
+     "q": "Erik sells land with a $40,000 mortgage; the buyer pays $60,000 cash and takes over the mortgage. Commission $5,000. Amount realized?",
+     "opts": [
+      "$60,000",
+      "$95,000",
+      "$100,000",
+      "$55,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Erik sells land with a forty thousand dollar mortgage. The buyer pays sixty thousand cash and takes over the mortgage, and the commission is five thousand. What's the amount realized? Pause and pick.",
+     "reveal": "It's B. $60,000 plus $40,000 of debt relief, less $5,000 of commission: $95,000."
+    }
+   ]
+  },
+  {
+   "id": "11.2",
+   "title": "The character of gains and losses",
+   "lecture": "Lecture 11 · Property dispositions",
+   "take": "Assets are ordinary, capital or Section 1231, and the character decides the rate",
+   "read": "IRS Pub. 544",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "A gain can be ordinary, capital, or something in between called Section 1231. The type of asset decides."
+    },
+    {
+     "type": "compare",
+     "heading": "Three kinds of asset",
+     "cols": [
+      "Examples",
+      "Gain taxed as"
+     ],
+     "rows": [
+      [
+       "Ordinary",
+       "Inventory, receivables",
+       "Ordinary income"
+      ],
+      [
+       "Capital",
+       "Shares, personal-use items",
+       "Capital gain"
+      ],
+      [
+       "Section 1231",
+       "Business property held over 1 year",
+       "Best of both"
+      ]
+     ],
+     "say": "Ordinary assets, like inventory and receivables, produce ordinary income. Capital assets, like investments and personal-use property, produce capital gains. Section 1231 assets, business property held more than a year, get the best of both worlds."
+    },
+    {
+     "type": "key",
+     "big": "Section 1231: heads I win",
+     "sub": [
+      "Net gains → long-term capital gain",
+      "Net losses → ordinary loss"
+     ],
+     "say": "Section 1231 is generous. If your 1231 transactions net to a gain, it's taxed as a long-term capital gain. If they net to a loss, it's an ordinary loss, fully deductible."
+    },
+    {
+     "type": "key",
+     "big": "Personal-use losses: no deduction",
+     "sub": [
+      "Selling your own car at a loss",
+      "isn't deductible"
+     ],
+     "say": "Personal-use property is a capital asset, but losses on it aren't deductible. If you sell your family car for less than you paid, there's no tax benefit. Gains, though, are taxable."
+    },
+    {
+     "type": "compare",
+     "heading": "Classify",
+     "cols": [
+      "Asset type",
+      "Character"
+     ],
+     "rows": [
+      [
+       "Nora's camera, held 3 years",
+       "Section 1231",
+       "Subject to recapture"
+      ],
+      [
+       "Jake's personal pickup",
+       "Capital",
+       "Loss not deductible"
+      ],
+      [
+       "A print held for sale",
+       "Ordinary",
+       "Inventory"
+      ]
+     ],
+     "say": "Nora's business camera, held three years, is Section 1231 property. Jake's personal pickup is a capital asset. A photo print Nora holds for sale to customers is inventory, an ordinary asset."
+    },
+    {
+     "type": "quiz",
+     "q": "Nora sells business equipment held 8 months at a loss. Character of the loss?",
+     "opts": [
+      "Section 1231 loss",
+      "Ordinary loss",
+      "Short-term capital loss",
+      "Not deductible"
+     ],
+     "answer": 1,
+     "say": "Quick check. Nora sells business equipment she's held for eight months, at a loss. What's the character? Pause and pick.",
+     "reveal": "It's B. Business property held a year or less isn't 1231 property; it's an ordinary asset, so the loss is ordinary."
+    }
+   ]
+  },
+  {
+   "id": "11.3",
+   "title": "Section 1245 recapture",
+   "lecture": "Lecture 11 · Property dispositions",
+   "take": "Gain on business personal property is ordinary income up to the depreciation taken",
+   "read": "Form 4797 instructions",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Depreciation saves tax at ordinary rates. When you sell, the Code takes some of that back. It's called recapture."
+    },
+    {
+     "type": "define",
+     "big": "Section 1245 recapture",
+     "sub": [
+      "Gain on personal property is ordinary",
+      "up to the depreciation taken"
+     ],
+     "say": "Section 1245 applies to depreciable personal property, like equipment, vehicles and furniture. Any gain is ordinary income up to the amount of depreciation you've taken. Only gain above that can be Section 1231 gain."
+    },
+    {
+     "type": "table",
+     "heading": "Nora sells the cameras for $6,000",
+     "rows": [
+      [
+       "Gain",
+       2160
+      ],
+      [
+       "Depreciation taken",
+       6160
+      ],
+      [
+       "Ordinary income: lesser of the two",
+       2160,
+       "total"
+      ],
+      [
+       "Section 1231 gain",
+       0,
+       "total"
+      ]
+     ],
+     "say": "Nora's gain on the cameras is $2,160. She took $6,160 of depreciation, so all of the gain, the lesser of the two, is ordinary income."
+    },
+    {
+     "type": "table",
+     "heading": "What if she sold them for $12,000?",
+     "rows": [
+      [
+       "Gain: 12,000 − 3,840",
+       8160
+      ],
+      [
+       "Ordinary, up to depreciation",
+       6160,
+       "total"
+      ],
+      [
+       "Section 1231 gain: the rest",
+       2000,
+       "total"
+      ]
+     ],
+     "say": "If she sold them for $12,000, above original cost, her gain would be $8,160. The first $6,160 is ordinary recapture, and the $2,000 above original cost is Section 1231 gain."
+    },
+    {
+     "type": "key",
+     "big": "Losses aren't recaptured",
+     "sub": [
+      "A loss on 1245 property",
+      "is a 1231 loss"
+     ],
+     "say": "Recapture only applies to gains. A loss on business property held over a year is a Section 1231 loss."
+    },
+    {
+     "type": "quiz",
+     "q": "Equipment cost $50,000; depreciation taken $30,000; sold for $35,000. Ordinary income?",
+     "opts": [
+      "$15,000",
+      "$30,000",
+      "$35,000",
+      "$0"
+     ],
+     "answer": 0,
+     "say": "Quick check. Equipment cost fifty thousand dollars, thirty thousand of depreciation was taken, and it sells for thirty-five thousand. How much is ordinary income? Pause and pick.",
+     "reveal": "It's A. Adjusted basis is $20,000, so the gain is $15,000. That's less than the $30,000 of depreciation, so it's all ordinary."
+    }
+   ]
+  },
+  {
+   "id": "11.4",
+   "title": "Real estate and Section 1231 netting",
+   "lecture": "Lecture 11 · Property dispositions",
+   "take": "Depreciation on buildings is taxed at up to 25% on sale; net 1231 gains are long-term, subject to a five-year lookback",
+   "read": "Form 4797 instructions",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Buildings follow different recapture rules. And then all Section 1231 gains and losses are netted together."
+    },
+    {
+     "type": "define",
+     "big": "Unrecaptured §1250 gain",
+     "sub": [
+      "Gain on real property up to",
+      "depreciation: taxed at up to 25%"
+     ],
+     "say": "For individuals, buildings depreciated straight-line have no ordinary recapture. But the gain up to the depreciation taken, called unrecaptured section 1250 gain, is taxed at a maximum of twenty-five percent, not fifteen."
+    },
+    {
+     "type": "table",
+     "heading": "Erik sells an older rental building",
+     "rows": [
+      [
+       "Gain on the building",
+       80000
+      ],
+      [
+       "Depreciation taken",
+       60000
+      ],
+      [
+       "Unrecaptured §1250 gain: up to 25%",
+       60000,
+       "total"
+      ],
+      [
+       "Remaining gain: 15%",
+       20000,
+       "total"
+      ]
+     ],
+     "say": "Erik sells an older rental building at an $80,000 gain. He's taken $60,000 of depreciation. That $60,000 is unrecaptured section 1250 gain, taxed at up to twenty-five percent. The other $20,000 is taxed at fifteen percent."
+    },
+    {
+     "type": "flow",
+     "heading": "Section 1231 netting",
+     "items": [
+      "Add up all 1231 gains and losses",
+      "Net gain: long-term capital gain",
+      "Net loss: ordinary loss"
+     ],
+     "say": "After recapture, add up all the year's Section 1231 gains and losses. A net gain is treated as long-term capital gain. A net loss is an ordinary loss."
+    },
+    {
+     "type": "define",
+     "big": "Five-year lookback",
+     "sub": [
+      "Net 1231 gain is ordinary to the extent",
+      "of net 1231 losses in the past five years"
+     ],
+     "say": "There's a catch to stop people timing gains and losses. A net Section 1231 gain is ordinary income to the extent of net 1231 losses deducted in the previous five years."
+    },
+    {
+     "type": "quiz",
+     "q": "This year's net 1231 gain is $10,000. Three years ago there was a $4,000 net 1231 loss. How is the gain taxed?",
+     "opts": [
+      "$10,000 capital gain",
+      "$4,000 ordinary, $6,000 capital gain",
+      "$10,000 ordinary",
+      "$6,000 ordinary, $4,000 capital"
+     ],
+     "answer": 1,
+     "say": "Quick check. This year's net 1231 gain is ten thousand dollars. Three years ago there was a four thousand dollar net 1231 loss. How is the gain taxed? Pause and pick.",
+     "reveal": "It's B. The lookback makes $4,000 ordinary, and the remaining $6,000 is long-term capital gain."
+    }
+   ]
+  },
+  {
+   "id": "11.5",
+   "title": "Like-kind exchanges",
+   "lecture": "Lecture 11 · Property dispositions",
+   "take": "Exchanging real property for like-kind real property defers gain, except to the extent of boot",
+   "read": "Form 8824 instructions",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Swap one investment property for another, and you can defer the gain entirely. That's Section 1031."
+    },
+    {
+     "type": "list",
+     "heading": "Section 1031 requirements",
+     "items": [
+      "Real property only, since 2018",
+      "Held for business or investment, both sides",
+      "Identify the replacement within 45 days",
+      "Close within 180 days"
+     ],
+     "say": "Since 2018, like-kind exchanges are only for real property. Both the property given up and the property received must be held for business or investment, not personal use. Using an intermediary, you have forty-five days to identify the replacement and a hundred and eighty days to close."
+    },
+    {
+     "type": "define",
+     "big": "Boot",
+     "sub": [
+      "Cash or other property received:",
+      "gain recognized up to the boot"
+     ],
+     "say": "If you receive cash or other non-like-kind property, called boot, you recognize gain equal to the lesser of the boot or the realized gain."
+    },
+    {
+     "type": "table",
+     "heading": "Erik swaps rental land",
+     "rows": [
+      [
+       "Erik's land: basis",
+       100000
+      ],
+      [
+       "Receives: land worth",
+       150000
+      ],
+      [
+       "Receives: cash (boot)",
+       20000
+      ],
+      [
+       "Gain realized",
+       70000,
+       "total"
+      ],
+      [
+       "Gain recognized: the boot",
+       20000,
+       "total"
+      ],
+      [
+       "Basis of the new land",
+       100000,
+       "total"
+      ]
+     ],
+     "say": "Erik exchanges land with a basis of $100,000 for land worth $150,000 plus $20,000 cash. His realized gain is $70,000. He recognizes $20,000, the boot. The new land's basis is old basis plus gain recognized minus boot: $100,000, which preserves the $50,000 deferred gain."
+    },
+    {
+     "type": "key",
+     "big": "Deferral, not forgiveness",
+     "sub": [
+      "The gain waits in the new basis"
+     ],
+     "say": "A like-kind exchange defers gain; it doesn't forgive it. The unrecognized gain waits in the lower basis of the new property, unless the owner dies and the basis steps up."
+    },
+    {
+     "type": "quiz",
+     "q": "Which exchange can qualify under Section 1031 in 2026?",
+     "opts": [
+      "A business truck for another truck",
+      "Rental farmland for a rental apartment building",
+      "Your home for a rental condo",
+      "Shares for real estate"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which exchange can qualify under section ten thirty-one in 2026? Pause and pick.",
+     "reveal": "It's B. Any investment or business real property is like-kind to any other. Trucks are personal property, a home is personal use, and shares don't qualify."
+    }
+   ]
+  },
+  {
+   "id": "11.6",
+   "title": "Involuntary conversions and installment sales",
+   "lecture": "Lecture 11 · Property dispositions",
+   "take": "Reinvesting insurance or condemnation proceeds defers gain; installment sales spread gain over the years payments arrive",
+   "read": "IRS Pub. 537; Pub. 547",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Two more ways to defer gain: when property is destroyed or taken, and when the buyer pays over time."
+    },
+    {
+     "type": "define",
+     "big": "Involuntary conversion",
+     "sub": [
+      "Property destroyed, stolen or condemned;",
+      "reinvest and defer the gain"
+     ],
+     "say": "When property is destroyed, stolen or condemned, and insurance or compensation exceeds its basis, there's a gain. If you reinvest in similar property within two years, three for condemned real estate, you can defer it, except for proceeds you don't reinvest."
+    },
+    {
+     "type": "table",
+     "heading": "A hailstorm destroys Erik's rental garage",
+     "rows": [
+      [
+       "Insurance proceeds",
+       40000
+      ],
+      [
+       "Adjusted basis",
+       25000
+      ],
+      [
+       "Gain realized",
+       15000,
+       "total"
+      ],
+      [
+       "Rebuilds for $36,000: gain recognized",
+       4000,
+       "total"
+      ]
+     ],
+     "say": "A hailstorm destroys Erik's rental garage. Insurance pays $40,000 and his basis was $25,000, so he realizes a $15,000 gain. He rebuilds for $36,000. He recognizes only the $4,000 he didn't reinvest."
+    },
+    {
+     "type": "define",
+     "big": "Installment sale",
+     "sub": [
+      "Gain recognized as payments arrive:",
+      "payment × gross profit %"
+     ],
+     "say": "In an installment sale, at least one payment comes after the year of sale. Gain is recognized as cash arrives: each payment of principal times the gross profit percentage."
+    },
+    {
+     "type": "table",
+     "heading": "Ruth sells land for $100,000 over 4 years",
+     "rows": [
+      [
+       "Basis",
+       40000
+      ],
+      [
+       "Gross profit: 60,000 ÷ 100,000",
+       "60%"
+      ],
+      [
+       "Payment received each year",
+       25000
+      ],
+      [
+       "Gain recognized each year",
+       15000,
+       "total"
+      ]
+     ],
+     "say": "Ruth sells land with a $40,000 basis for $100,000, paid $25,000 a year for four years. Her gross profit percentage is sixty percent, so she recognizes $15,000 of gain each year. Depreciation recapture, though, is always taxed in the year of sale."
+    },
+    {
+     "type": "quiz",
+     "q": "Insurance pays $50,000 for a destroyed machine with a $30,000 basis. Nora buys a replacement for $55,000. Gain recognized?",
+     "opts": [
+      "$20,000",
+      "$5,000",
+      "$0",
+      "$25,000"
+     ],
+     "answer": 2,
+     "say": "Quick check. Insurance pays fifty thousand dollars for a destroyed machine with a thirty thousand dollar basis. Nora buys a replacement for fifty-five thousand. What gain is recognized? Pause and pick.",
+     "reveal": "It's C. She reinvested all the proceeds, so the whole $20,000 gain is deferred."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "You sell your old phone for $150. You paid $900. Can you deduct the loss? Should you?",
+   "No: personal-use property losses aren't deductible. Contrast with a business phone (1231 or ordinary loss). Leads to 11.2."
+  ],
+  "acts": [
+   [
+    "Compute gain: a building sold for $500,000 cash plus the buyer assuming a $200,000 mortgage, commission $35,000; original cost $600,000, improvements $50,000, depreciation $180,000.",
+    "Amount realized 665,000. Adjusted basis 470,000. Gain $195,000."
+   ],
+   [
+    "Classify: (a) a delivery van held 3 years, (b) shares held 3 years, (c) a forklift held 6 months, (d) accounts receivable sold to a factor.",
+    "(a) 1231 (with 1245 recapture). (b) Capital. (c) Ordinary. (d) Ordinary."
+   ],
+   [
+    "A machine cost $80,000; depreciation $55,000. Compute ordinary and 1231 gain if sold for (a) $40,000, (b) $90,000, (c) $20,000.",
+    "(a) Gain 15,000, all ordinary. (b) Gain 65,000: 55,000 ordinary, 10,000 1231. (c) Loss 5,000: 1231 loss."
+   ],
+   [
+    "A taxpayer has a $30,000 1231 gain and a $12,000 1231 loss this year and an $8,000 net 1231 loss two years ago. How is the net gain taxed?",
+    "Net 18,000: 8,000 ordinary (lookback), 10,000 long-term capital gain."
+   ],
+   [
+    "Exchange: Building A (basis $300,000, FMV $500,000) for Building B (FMV $450,000) plus $50,000 cash. Gain recognized and basis of B?",
+    "Realized 200,000; recognized 50,000 (boot). Basis B = 300,000 + 50,000 − 50,000 = 300,000 (deferred gain 150,000)."
+   ],
+   [
+    "Ruth's buyer pays $20,000 down and $80,000 over 4 years, plus interest. Recognized gain in the year of sale?",
+    "20,000 × 60% = $12,000; interest is ordinary income as received."
+   ]
+  ],
+  "case": [
+   "Nora upgrades her gear",
+   "In 2027 Nora sells: her old cameras (cost $10,000, depreciation $6,160) for $6,000; a studio printer bought 7 months ago for $3,000 for $2,400; and a lighting set held 4 years (cost $5,000, depreciation $4,000) for $500. A storm destroys her drone (basis $2,000) and insurance pays $9,000; she replaces it for $12,000 within a year. She had a $1,500 net 1231 loss in 2024.",
+   [
+    "Compute the gain or loss on each disposition.",
+    "Classify each as ordinary, 1245 recapture or 1231.",
+    "Net the 1231 items and apply the lookback.",
+    "What is the basis of the new drone?"
+   ],
+   "Cameras: gain 2,160, all 1245 ordinary. Printer: loss 600, ordinary (held under a year). Lighting: loss 500, 1231. Drone: gain 7,000 realized, fully deferred (reinvested), basis 12,000 − 7,000 = 5,000. Net 1231: (500) loss → ordinary loss; the lookback only matters for net gains."
+  ],
+  "exam": [
+   [
+    "Explain Section 1231 netting and the five-year lookback rule, and why Section 1231 is favorable to taxpayers.",
+    5,
+    "Net all 1231 gains and losses after recapture: net gain → LTCG, net loss → ordinary loss. Net gain is ordinary to the extent of unrecaptured net 1231 losses in the prior five years. Favorable because gains get capital rates and losses are fully deductible."
+   ],
+   [
+    "Equipment (cost $60,000, accumulated depreciation $35,000) is sold for $45,000. A building (adjusted basis $200,000, straight-line depreciation $90,000) is sold for $280,000. Compute and characterize each gain for an individual.",
+    6,
+    "Equipment: gain 20,000, all 1245 ordinary. Building: gain 80,000, all unrecaptured 1250 gain (up to 25%), as it is less than the 90,000 depreciation; it's 1231 gain otherwise."
+   ]
+  ],
+  "outcomes": [
+   "Compute amount realized, adjusted basis and gain",
+   "Classify assets as ordinary, capital or 1231",
+   "Apply Section 1245 recapture",
+   "Apply unrecaptured 1250 gain, 1231 netting and the lookback",
+   "Apply like-kind exchange rules and compute basis",
+   "Defer gain on involuntary conversions and installment sales"
+  ],
+  "take": [
+   "Amount realized includes debt relief; basis falls with depreciation",
+   "1231: gains are capital, losses ordinary",
+   "1245: gain is ordinary up to depreciation",
+   "Real estate depreciation is taxed at up to 25% on sale",
+   "1031 defers gain on real property, except boot",
+   "Reinvest proceeds, or get paid over time, to defer gain"
+  ]
+ },
+ "ex": [
+  {
+   "type": "num",
+   "q": "A building is sold for $300,000 cash and the buyer assumes a $100,000 mortgage; commission is $20,000. What is the amount realized?",
+   "a": 380000,
+   "unit": "$",
+   "why": "300,000 + 100,000 − 20,000 = 380,000.",
+   "video": "11.1"
+  },
+  {
+   "type": "sort",
+   "q": "Ordinary, capital or Section 1231 asset?",
+   "cats": [
+    "Ordinary",
+    "Capital",
+    "Section 1231"
+   ],
+   "items": [
+    [
+     "Inventory",
+     0
+    ],
+    [
+     "Shares held as an investment",
+     1
+    ],
+    [
+     "Business truck held 2 years",
+     2
+    ],
+    [
+     "Your personal car",
+     1
+    ],
+    [
+     "Accounts receivable",
+     0
+    ],
+    [
+     "Business land held 5 years",
+     2
+    ]
+   ],
+   "why": "Business property held over a year is 1231; investments and personal-use property are capital; inventory and receivables are ordinary.",
+   "video": "11.2"
+  },
+  {
+   "type": "num",
+   "q": "Equipment cost $40,000, depreciation taken $25,000, sold for $30,000. How much is Section 1245 ordinary income?",
+   "a": 15000,
+   "unit": "$",
+   "why": "Gain 30,000 − 15,000 = 15,000, less than depreciation, so all ordinary.",
+   "video": "11.3"
+  },
+  {
+   "type": "num",
+   "q": "Same equipment sold for $46,000. How much is Section 1231 gain?",
+   "a": 6000,
+   "unit": "$",
+   "why": "Gain 31,000: 25,000 is recapture, 6,000 is 1231.",
+   "video": "11.3"
+  },
+  {
+   "type": "num",
+   "q": "Net 1231 gain this year is $12,000; net 1231 losses in the prior five years were $5,000 (not yet recaptured). How much is long-term capital gain?",
+   "a": 7000,
+   "unit": "$",
+   "why": "5,000 is ordinary under the lookback; 7,000 is LTCG.",
+   "video": "11.4"
+  },
+  {
+   "type": "num",
+   "q": "Land (basis $80,000) is exchanged for land worth $110,000 plus $15,000 cash. How much gain is recognized?",
+   "a": 15000,
+   "unit": "$",
+   "why": "Realized 45,000; recognized is the lesser of boot (15,000) or realized gain.",
+   "video": "11.5"
+  },
+  {
+   "type": "num",
+   "q": "In that exchange, what is the basis of the new land?",
+   "a": 80000,
+   "unit": "$",
+   "why": "80,000 + 15,000 recognized − 15,000 boot = 80,000.",
+   "video": "11.5"
+  },
+  {
+   "type": "num",
+   "q": "Land with a $30,000 basis is sold for $120,000, payable $40,000 a year for 3 years. What gain is recognized in each year?",
+   "a": 30000,
+   "unit": "$",
+   "why": "Gross profit % = 90,000 ÷ 120,000 = 75%; 75% × 40,000 = 30,000.",
+   "video": "11.6"
+  }
+ ]
+}

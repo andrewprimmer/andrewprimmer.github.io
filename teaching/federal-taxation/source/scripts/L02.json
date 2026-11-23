@@ -1,0 +1,699 @@
+{
+ "meta": {
+  "n": 2,
+  "short": "Compliance and the IRS",
+  "title": "Tax compliance, the IRS and tax authorities",
+  "week": 2,
+  "ch": "Chapter 2",
+  "part": "The tax system",
+  "summary": "Who must file and when, the statute of limitations, how audits are selected and resolved, the sources of tax law, and the penalties and standards that govern taxpayers and preparers."
+ },
+ "videos": [
+  {
+   "id": "2.1",
+   "title": "Who must file, and when",
+   "lecture": "Lecture 2 · Compliance and the IRS",
+   "take": "Most people must file when gross income reaches the standard deduction; the 2026 return is due April 15, 2027",
+   "read": "IRS Pub. 501; Form 4868",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Not everyone has to file a federal tax return. Here's who does, when the return is due, and what an extension really gets you."
+    },
+    {
+     "type": "table",
+     "heading": "Must file for 2026 if gross income is at least",
+     "rows": [
+      [
+       "Single, under 65",
+       16100
+      ],
+      [
+       "Married filing jointly, both under 65",
+       32200
+      ],
+      [
+       "Head of household, under 65",
+       24150
+      ],
+      [
+       "Self-employed: net earnings of",
+       400
+      ]
+     ],
+     "say": "The general rule: you must file if your gross income reaches your standard deduction. For 2026 that's $16,100 for a single filer under sixty-five and $32,200 for a married couple filing jointly. Anyone with $400 or more of self-employment earnings must file too."
+    },
+    {
+     "type": "key",
+     "big": "File anyway to get a refund",
+     "sub": [
+      "Withholding and refundable credits",
+      "come back only if you file"
+     ],
+     "say": "Even if you're below the threshold, file if tax was withheld from your pay or you qualify for a refundable credit. The money only comes back if you file."
+    },
+    {
+     "type": "flow",
+     "heading": "The 2026 return",
+     "items": [
+      "Tax year ends December 31, 2026",
+      "Return and payment due April 15, 2027",
+      "Form 4868 extends filing to October 15"
+     ],
+     "say": "For individuals the tax year is the calendar year. The 2026 return is due April fifteenth, 2027. Form 4868 gives an automatic six-month extension to October fifteenth."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "An extension to file is not an extension to pay",
+     "sub": [
+      "Estimate and pay by April 15",
+      "or interest and penalties run"
+     ],
+     "say": "But an extension to file is not an extension to pay. You must estimate what you owe and pay it by April fifteenth, or interest and penalties start to run."
+    },
+    {
+     "type": "quiz",
+     "q": "Nora's photography sideline made $650 net in 2026 and she has no other income. Must she file?",
+     "opts": [
+      "No, she's below the standard deduction",
+      "Yes, self-employment earnings are $400 or more",
+      "Only if she wants a refund",
+      "Only if she had a 1099"
+     ],
+     "answer": 1,
+     "say": "Quick check. Nora's photography sideline made six hundred fifty dollars net, and she has no other income. Must she file? Pause and pick.",
+     "reveal": "It's B. Self-employment earnings of $400 or more trigger a filing requirement, because she owes self-employment tax."
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "title": "The statute of limitations",
+   "lecture": "Lecture 2 · Compliance and the IRS",
+   "take": "The IRS normally has three years to assess, six if income is understated by more than 25%, and forever for fraud",
+   "read": "IRS Pub. 556",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "How long can the IRS come back and ask for more tax? Not forever, usually. Here's the statute of limitations."
+    },
+    {
+     "type": "define",
+     "big": "Statute of limitations",
+     "sub": [
+      "The window in which the IRS",
+      "can assess more tax"
+     ],
+     "say": "The statute of limitations is the period in which the IRS can assess additional tax. Once it closes, the year is final, even if the return was wrong."
+    },
+    {
+     "type": "table",
+     "heading": "How long the IRS has",
+     "rows": [
+      [
+       "Ordinary case",
+       "3 years"
+      ],
+      [
+       "Income understated by over 25%",
+       "6 years"
+      ],
+      [
+       "Fraud, or no return filed",
+       "No limit"
+      ]
+     ],
+     "say": "The normal period is three years from the later of the due date or the date you filed. It's six years if you left out more than twenty-five percent of your gross income. And there's no limit at all for fraud or if you never filed."
+    },
+    {
+     "type": "flow",
+     "heading": "Jake files his 2026 return early",
+     "items": [
+      "Files March 1, 2027",
+      "Treated as filed April 15, 2027",
+      "Period closes April 15, 2030"
+     ],
+     "say": "An early return is treated as filed on the due date. Jake files on March first, 2027, but the clock starts on April fifteenth, so the three years run to April fifteenth, 2030."
+    },
+    {
+     "type": "key",
+     "big": "Keep records at least three years",
+     "sub": [
+      "Keep basis records until three years",
+      "after you sell the property"
+     ],
+     "say": "So keep tax records for at least three years after filing. Keep records of what you paid for property, like a house or shares, until three years after you sell it."
+    },
+    {
+     "type": "quiz",
+     "q": "Ruth reported $60,000 of gross income but left out $20,000. How long does the IRS have?",
+     "opts": [
+      "3 years",
+      "6 years",
+      "No limit",
+      "2 years"
+     ],
+     "answer": 1,
+     "say": "Quick check. Ruth reported sixty thousand dollars of gross income but left out twenty thousand. How long does the IRS have? Pause and pick.",
+     "reveal": "It's B. Twenty thousand is more than twenty-five percent of the $60,000 she reported, so the period is six years."
+    }
+   ]
+  },
+  {
+   "id": "2.3",
+   "title": "How the IRS picks returns to audit",
+   "lecture": "Lecture 2 · Compliance and the IRS",
+   "take": "Computer scoring and document matching pick most audits; most are handled by mail",
+   "read": "IRS Pub. 556",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Fewer than one percent of individual returns are audited each year. So how does the IRS choose them?"
+    },
+    {
+     "type": "list",
+     "heading": "How returns are selected",
+     "items": [
+      "DIF score: a computer rates the chance of change",
+      "Document matching against W-2s and 1099s",
+      "Related audits: a partner or business is examined",
+      "Random research audits"
+     ],
+     "say": "Most selections start with the DIF score, a computer rating of how likely a return is to need changes. Information matching compares your return with W-2s and 1099s. Some audits follow from a related return, and a few are random, to keep the scoring model accurate."
+    },
+    {
+     "type": "compare",
+     "heading": "Three kinds of audit",
+     "cols": [
+      "Where",
+      "Typical scope"
+     ],
+     "rows": [
+      [
+       "Correspondence",
+       "By mail",
+       "One or two simple items"
+      ],
+      [
+       "Office",
+       "IRS office",
+       "Several items, some records"
+      ],
+      [
+       "Field",
+       "Your home or business",
+       "Complex business returns"
+      ]
+     ],
+     "say": "Correspondence audits happen by mail and are the most common. Office audits ask you to bring records to an IRS office. Field audits send an agent to your home or business, usually for complex business returns."
+    },
+    {
+     "type": "key",
+     "big": "Most 'audits' are letters",
+     "sub": [
+      "A CP2000 notice proposes changes",
+      "when a 1099 doesn't match"
+     ],
+     "say": "Many taxpayers never meet an agent. A matching notice, the CP2000, simply proposes a change when a 1099 doesn't match your return. Answer it on time, with records."
+    },
+    {
+     "type": "recap",
+     "big": "Report every information return",
+     "sub": [
+      "The IRS already has a copy"
+     ],
+     "say": "The lesson: report every amount on your W-2s and 1099s. The IRS already has a copy."
+    },
+    {
+     "type": "quiz",
+     "q": "Sam forgot a $900 1099 from a summer job. What is the most likely result?",
+     "opts": [
+      "A field audit",
+      "A matching notice by mail",
+      "Criminal prosecution",
+      "Nothing, it's under $1,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Sam forgot to report a nine hundred dollar 1099 from a summer job. What's the most likely result? Pause and pick.",
+     "reveal": "It's B. Document matching catches the missing 1099, and the IRS proposes the extra tax by letter."
+    }
+   ]
+  },
+  {
+   "id": "2.4",
+   "title": "After the audit: appeals and courts",
+   "lecture": "Lecture 2 · Compliance and the IRS",
+   "take": "A taxpayer can appeal within the IRS, then go to the Tax Court without paying, or pay and sue for a refund",
+   "read": "IRS Pub. 5",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "The agent says you owe more, and you disagree. Here's the path from the audit to the courtroom."
+    },
+    {
+     "type": "flow",
+     "heading": "The appeals path",
+     "items": [
+      "30-day letter: proposed changes",
+      "IRS Independent Office of Appeals",
+      "90-day letter: notice of deficiency",
+      "Petition a court"
+     ],
+     "say": "After the audit you get a thirty-day letter proposing changes. You can ask for a hearing with the IRS Independent Office of Appeals. If you don't settle, a ninety-day letter, the statutory notice of deficiency, gives you ninety days to go to court."
+    },
+    {
+     "type": "compare",
+     "heading": "Three trial courts",
+     "cols": [
+      "Pay first?",
+      "Appeal to"
+     ],
+     "rows": [
+      [
+       "US Tax Court",
+       "No",
+       "Circuit court of appeals"
+      ],
+      [
+       "US District Court",
+       "Yes, then sue",
+       "Circuit court of appeals"
+      ],
+      [
+       "Court of Federal Claims",
+       "Yes, then sue",
+       "Federal Circuit"
+      ]
+     ],
+     "say": "There are three trial courts. The Tax Court is the only one where you don't pay first, which is why most cases go there. In a district court or the Court of Federal Claims, you pay the tax and sue for a refund."
+    },
+    {
+     "type": "key",
+     "big": "Small cases: under $50,000",
+     "sub": [
+      "Tax Court's simpler procedure",
+      "No appeal allowed"
+     ],
+     "say": "If $50,000 or less is in dispute for a year, the Tax Court's small case procedure is quicker and informal, but the decision can't be appealed."
+    },
+    {
+     "type": "define",
+     "big": "Golsen rule",
+     "sub": [
+      "The Tax Court follows the precedent",
+      "of the taxpayer's circuit"
+     ],
+     "say": "One more rule. Under the Golsen rule, the Tax Court follows the precedent of the circuit the taxpayer lives in. Marshall is in the Eighth Circuit."
+    },
+    {
+     "type": "quiz",
+     "q": "The Lindqvists dispute $8,000 and can't afford to pay it first. Where should they go?",
+     "opts": [
+      "US District Court",
+      "Court of Federal Claims",
+      "US Tax Court",
+      "The Supreme Court"
+     ],
+     "answer": 2,
+     "say": "Quick check. The Lindqvists dispute eight thousand dollars and can't afford to pay it first. Where should they go? Pause and pick.",
+     "reveal": "It's C, the Tax Court. It hears cases before payment, and at $8,000 they can use the small case procedure."
+    }
+   ]
+  },
+  {
+   "id": "2.5",
+   "title": "Sources of tax law",
+   "lecture": "Lecture 2 · Compliance and the IRS",
+   "take": "Primary authority comes from Congress, Treasury and the IRS, and the courts; the Code sits at the top",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "When you research a tax question, which sources count, and which count most? Here's the hierarchy."
+    },
+    {
+     "type": "compare",
+     "heading": "Primary authority",
+     "cols": [
+      "Source",
+      "Examples"
+     ],
+     "rows": [
+      [
+       "Statutory",
+       "Congress",
+       "Internal Revenue Code, treaties"
+      ],
+      [
+       "Administrative",
+       "Treasury and IRS",
+       "Regulations, revenue rulings"
+      ],
+      [
+       "Judicial",
+       "The courts",
+       "Tax Court, circuits, Supreme Court"
+      ]
+     ],
+     "say": "Primary authorities are the law itself. Statutory sources come from Congress, chiefly the Internal Revenue Code. Administrative sources come from Treasury and the IRS. Judicial sources are court decisions."
+    },
+    {
+     "type": "list",
+     "heading": "Administrative sources, strongest first",
+     "items": [
+      "Final regulations",
+      "Temporary and proposed regulations",
+      "Revenue rulings and procedures",
+      "Private letter rulings: binding only on the taxpayer"
+     ],
+     "say": "Among administrative sources, final regulations carry the most weight. Revenue rulings apply the law to a set of facts, and revenue procedures explain how to comply. A private letter ruling binds the IRS only for the taxpayer who asked."
+    },
+    {
+     "type": "define",
+     "big": "Secondary authority",
+     "sub": [
+      "Textbooks, tax services, journals:",
+      "useful for finding law, not citing it"
+     ],
+     "say": "Secondary authorities, like this course's textbook, tax services and journal articles, help you find and understand the law. They aren't the law."
+    },
+    {
+     "type": "flow",
+     "heading": "The research process",
+     "items": [
+      "Get the facts",
+      "Identify the issues",
+      "Find the authorities",
+      "Analyze them",
+      "Document and communicate"
+     ],
+     "say": "Tax research follows five steps: get the facts, identify the issues, find the relevant authorities, analyze them, and document and communicate your conclusion, usually in a memo to the file."
+    },
+    {
+     "type": "quiz",
+     "q": "Which source carries the most weight?",
+     "opts": [
+      "A revenue ruling",
+      "A private letter ruling issued to another taxpayer",
+      "The Internal Revenue Code",
+      "A tax textbook"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which source carries the most weight? Pause and pick.",
+     "reveal": "It's C. The Code is the statute, so it outranks regulations and rulings. A letter ruling for someone else isn't authority for you, and a textbook is secondary."
+    }
+   ]
+  },
+  {
+   "id": "2.6",
+   "title": "Penalties and professional standards",
+   "lecture": "Lecture 2 · Compliance and the IRS",
+   "take": "File on time even if you can't pay; preparers answer to Circular 230 and the AICPA's standards",
+   "read": "IRS Circular 230",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Filing late, paying late, getting it wrong. Each has a price. And the people who prepare returns have rules of their own."
+    },
+    {
+     "type": "table",
+     "heading": "Penalties per month, unpaid tax",
+     "rows": [
+      [
+       "Failure to file",
+       "5%"
+      ],
+      [
+       "Failure to pay",
+       "0.5%"
+      ],
+      [
+       "Maximum for each",
+       "25%"
+      ]
+     ],
+     "say": "The failure-to-file penalty is five percent of the unpaid tax for each month or part of a month the return is late. The failure-to-pay penalty is only half a percent a month. Each tops out at twenty-five percent."
+    },
+    {
+     "type": "key",
+     "big": "File on time, even if you can't pay",
+     "sub": [
+      "Late filing costs ten times",
+      "as much as late payment"
+     ],
+     "say": "So file on time even if you can't pay. Filing late costs ten times as much each month as paying late. And interest runs on unpaid tax either way."
+    },
+    {
+     "type": "compare",
+     "heading": "Getting it wrong",
+     "cols": [
+      "Penalty",
+      "When"
+     ],
+     "rows": [
+      [
+       "Accuracy-related",
+       "20% of the shortfall",
+       "Negligence or big understatement"
+      ],
+      [
+       "Civil fraud",
+       "75% of the shortfall",
+       "Intent to evade"
+      ]
+     ],
+     "say": "Errors cost more. Negligence or a substantial understatement brings a twenty percent accuracy penalty. Civil fraud brings seventy-five percent, and the statute of limitations never closes."
+    },
+    {
+     "type": "list",
+     "heading": "Rules for preparers",
+     "items": [
+      "Circular 230: practice before the IRS",
+      "AICPA Statements on Standards for Tax Services",
+      "A PTIN for every paid preparer",
+      "Penalties for unreasonable positions"
+     ],
+     "say": "Preparers have rules too. Circular 230 governs CPAs, attorneys and enrolled agents who practice before the IRS. CPAs also follow the AICPA's Statements on Standards for Tax Services. Every paid preparer needs a PTIN, and unreasonable positions bring preparer penalties."
+    },
+    {
+     "type": "quiz",
+     "q": "Leo's aunt files 3 months late and owes $2,000. What is the failure-to-file penalty, ignoring the late-payment offset?",
+     "opts": [
+      "$30",
+      "$100",
+      "$300",
+      "$500"
+     ],
+     "answer": 2,
+     "say": "Quick check. Leo's aunt files three months late and owes two thousand dollars. What's the failure-to-file penalty, ignoring the offset for late payment? Pause and pick.",
+     "reveal": "It's C. Five percent a month for three months is fifteen percent of $2,000: $300."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Have you ever filed a tax return? What made you file, and what document did you need first?",
+   "Most students filed for a refund of withholding using a W-2. Connect to 2.1: filing to get withholding back even when not required."
+  ],
+  "acts": [
+   [
+    "Who must file for 2026? (a) Single, 30, wages $15,000. (b) MFJ, both 40, wages $35,000. (c) Single, 22, net self-employment income $500, no other income.",
+    "(a) No: below $16,100, though she should file to recover withholding. (b) Yes: above $32,200. (c) Yes: self-employment earnings of $400 or more."
+   ],
+   [
+    "A 2026 return is filed on June 30, 2027. When does the normal assessment period end? What if $40,000 of $120,000 gross income was omitted?",
+    "June 30, 2030 (three years from filing, as filing was after the due date). Omitting $40,000 is more than 25% of the $120,000 reported, so six years: June 30, 2033."
+   ],
+   [
+    "Rank these by likelihood of triggering IRS contact: an unreported 1099-NEC, a large charitable deduction, a math error.",
+    "Math errors are corrected automatically by notice; the unreported 1099 is caught by matching; the large deduction may raise the DIF score."
+   ],
+   [
+    "A client disputes $70,000 and has cash to pay. Compare the three courts for her.",
+    "Tax Court: no payment, tax specialist judges, regular procedure (over $50,000). District Court: pay first, jury possible. Court of Federal Claims: pay first, Federal Circuit precedent. Consider circuit precedent under Golsen."
+   ],
+   [
+    "Put in order of authority: revenue ruling, Code section, proposed regulation, final regulation, tax service article.",
+    "Code, final regulation, proposed regulation, revenue ruling, tax service (secondary)."
+   ],
+   [
+    "A client owes $10,000 and files and pays 2 months late. Estimate the penalties.",
+    "Failure to pay: 0.5% × 2 × 10,000 = $100. Failure to file: 5% × 2 = 10% = $1,000, reduced by the $100 failure-to-pay penalty for the same months, so $900. Total about $1,000 plus interest."
+   ]
+  ],
+  "case": [
+   "Sam's missing 1099",
+   "Sam Ortiz, 20, is a full-time SMSU student who waits tables in Marshall. He filed his 2025 return in February 2026 using his W-2, but forgot a $1,800 Form 1099-NEC for photography work he did for Nora Lindqvist's business. In November 2026 he receives a CP2000 notice proposing extra income tax and self-employment tax. He wants to ignore it because he 'has no money until summer.'",
+   [
+    "What kind of IRS contact is this, and how was Sam selected?",
+    "What happens if he ignores the notice?",
+    "What should he do now, and what are his options if he can't pay?",
+    "How long could the IRS have come back for this year?"
+   ],
+   "It's an information-matching notice, not a field audit. Ignoring it leads to a statutory notice of deficiency and assessment, with interest and possibly a 20% accuracy penalty. Respond by the deadline, agree or explain, and ask for a payment plan. Normal period: three years from April 15, 2026; the omission ($1,800) is not over 25% of his gross income, so not six years."
+  ],
+  "exam": [
+   [
+    "Explain the statute of limitations for assessment, including the exceptions.",
+    5,
+    "Three years from the later of the due date or filing date; six years if gross income is understated by more than 25%; unlimited for fraud or no return. Early returns are treated as filed on the due date."
+   ],
+   [
+    "Describe the path of a disputed audit from the 30-day letter to a court decision, and explain why most taxpayers choose the Tax Court.",
+    6,
+    "30-day letter, optional Appeals conference, 90-day letter (notice of deficiency), petition to Tax Court or pay and sue in District Court or Court of Federal Claims, then appeal to circuit court and possibly the Supreme Court. Tax Court requires no prepayment."
+   ]
+  ],
+  "outcomes": [
+   "Identify who must file and when",
+   "Apply the statute of limitations",
+   "Explain how returns are selected for audit",
+   "Trace a dispute from audit to court",
+   "Rank the sources of tax law",
+   "Compute filing penalties and describe preparer standards"
+  ],
+  "take": [
+   "File when gross income reaches the standard deduction, or SE earnings reach $400",
+   "Three years normally, six for big omissions, unlimited for fraud",
+   "Report every W-2 and 1099: matching catches omissions",
+   "Only the Tax Court hears a case before you pay",
+   "The Code outranks regulations, rulings and textbooks",
+   "File on time even if you can't pay"
+  ]
+ },
+ "ex": [
+  {
+   "type": "sort",
+   "q": "Must each person file a 2026 return?",
+   "cats": [
+    "Must file",
+    "Not required"
+   ],
+   "items": [
+    [
+     "Single, 25, wages $18,000",
+     0
+    ],
+    [
+     "Single, 25, wages $14,000",
+     1
+    ],
+    [
+     "MFJ, both 40, wages $30,000",
+     1
+    ],
+    [
+     "MFJ, both 40, wages $45,000",
+     0
+    ],
+    [
+     "Single, 19, net self-employment $500, nothing else",
+     0
+    ]
+   ],
+   "why": "Compare gross income with the 2026 standard deduction ($16,100 single, $32,200 MFJ); $400 of self-employment earnings always requires a return.",
+   "video": "2.1"
+  },
+  {
+   "type": "mcq",
+   "q": "A 2026 return is filed on February 20, 2027. When does the normal assessment period end?",
+   "opts": [
+    "February 20, 2030",
+    "April 15, 2030",
+    "December 31, 2029",
+    "April 15, 2033"
+   ],
+   "a": 1,
+   "why": "An early return is treated as filed on the due date, April 15, 2027; three years later is April 15, 2030.",
+   "video": "2.2"
+  },
+  {
+   "type": "match",
+   "q": "Match each situation to the assessment period.",
+   "pairs": [
+    [
+     "Honest mistake on a deduction",
+     "3 years"
+    ],
+    [
+     "Omitted 30% of gross income",
+     "6 years"
+    ],
+    [
+     "Deliberately hid income",
+     "No limit"
+    ]
+   ],
+   "why": "Three years is normal, six for omissions over 25% of gross income, and no limit for fraud.",
+   "video": "2.2"
+  },
+  {
+   "type": "match",
+   "q": "Match each audit type to its description.",
+   "pairs": [
+    [
+     "Correspondence",
+     "Handled by mail"
+    ],
+    [
+     "Office",
+     "At an IRS office"
+    ],
+    [
+     "Field",
+     "At the taxpayer's home or business"
+    ]
+   ],
+   "why": "Most audits are by mail; field audits are for complex returns.",
+   "video": "2.3"
+  },
+  {
+   "type": "order",
+   "q": "Put the dispute process in order.",
+   "items": [
+    "Audit",
+    "30-day letter",
+    "Appeals conference",
+    "90-day letter",
+    "Tax Court petition"
+   ],
+   "why": "The 90-day letter (notice of deficiency) is the ticket to the Tax Court.",
+   "video": "2.4"
+  },
+  {
+   "type": "mcq",
+   "q": "Which trial court does not require the taxpayer to pay the tax first?",
+   "opts": [
+    "US District Court",
+    "Court of Federal Claims",
+    "US Tax Court",
+    "None of them"
+   ],
+   "a": 2,
+   "why": "Only the Tax Court hears deficiency cases before payment.",
+   "video": "2.4"
+  },
+  {
+   "type": "order",
+   "q": "Rank from most to least authoritative.",
+   "items": [
+    "Internal Revenue Code",
+    "Final regulation",
+    "Revenue ruling",
+    "Tax textbook"
+   ],
+   "why": "Statute, then regulations, then rulings; textbooks are secondary authority.",
+   "video": "2.5"
+  },
+  {
+   "type": "num",
+   "q": "A taxpayer owes $4,000 and files 4 months late. What is the failure-to-file penalty before any offset?",
+   "a": 800,
+   "unit": "$",
+   "why": "5% × 4 months = 20% of $4,000 = $800 (below the 25% cap).",
+   "video": "2.6"
+  }
+ ]
+}
