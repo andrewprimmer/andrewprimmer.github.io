@@ -1,0 +1,696 @@
+{
+ "meta": {
+  "n": 12,
+  "short": "Compensation",
+  "title": "Compensation",
+  "week": 13,
+  "ch": "Chapter 12",
+  "part": "Compensation, retirement and the home",
+  "summary": "Salary and withholding, the new deductions for tips and overtime, employees versus contractors, stock options, restricted stock and the Section 83(b) election, and accountable plans."
+ },
+ "videos": [
+  {
+   "id": "12.1",
+   "title": "Salary, bonuses and withholding",
+   "lecture": "Lecture 12 · Compensation",
+   "take": "Employers deduct reasonable pay; employees are taxed when paid, with tax withheld under the W-4",
+   "read": "IRS Pub. 15-T; Form W-4",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Compensation is a two-sided deal: the employee is taxed, and the employer deducts. Start with plain salary and bonuses."
+    },
+    {
+     "type": "compare",
+     "heading": "Two sides of a paycheck",
+     "cols": [
+      "Employee",
+      "Employer"
+     ],
+     "rows": [
+      [
+       "Income tax",
+       "Taxed when received",
+       "Deducts if reasonable"
+      ],
+      [
+       "FICA",
+       "Pays 7.65%",
+       "Pays 7.65% and deducts it"
+      ]
+     ],
+     "say": "The employee includes wages in income when received and pays their half of FICA. The employer deducts the wages, as long as they're reasonable, and pays and deducts its matching half of FICA."
+    },
+    {
+     "type": "key",
+     "big": "The 2½-month rule",
+     "sub": [
+      "An accrual employer can deduct a bonus",
+      "this year if paid by March 15"
+     ],
+     "say": "Timing can differ. An accrual-method employer can deduct a year-end bonus in the year it's accrued if it's paid within two and a half months after year-end, while the cash-method employee isn't taxed until it's paid."
+    },
+    {
+     "type": "list",
+     "heading": "Form W-4, since 2020",
+     "items": [
+      "No more withholding allowances",
+      "Step 2: multiple jobs or a working spouse",
+      "Step 3: credits for children",
+      "Step 4: other income and extra deductions"
+     ],
+     "say": "Withholding is set by Form W-4. Since 2020 it no longer uses allowances. Instead, it asks about multiple jobs, dependents, other income and extra deductions, so withholding comes closer to the actual tax."
+    },
+    {
+     "type": "key",
+     "big": "Public companies: $1 million cap",
+     "sub": [
+      "On deducting pay to top executives"
+     ],
+     "say": "One limit on the employer side: a public company can't deduct more than a million dollars a year of pay to each of its top executives."
+    },
+    {
+     "type": "quiz",
+     "q": "Jake's employer, on the accrual method, declares a $5,000 bonus on December 20, 2026 and pays it February 10, 2027. When does each side report it?",
+     "opts": [
+      "Both in 2026",
+      "Employer 2026, Jake 2027",
+      "Employer 2027, Jake 2026",
+      "Both in 2027"
+     ],
+     "answer": 1,
+     "say": "Quick check. Jake's employer, on the accrual method, declares a five thousand dollar bonus on December twentieth and pays it February tenth. When does each side report it? Pause and pick.",
+     "reveal": "It's B. The employer deducts it in 2026 under the two-and-a-half-month rule. Jake includes it in 2027, when he's paid."
+    }
+   ]
+  },
+  {
+   "id": "12.2",
+   "title": "No tax on tips and overtime",
+   "lecture": "Lecture 12 · Compensation",
+   "take": "From 2025 to 2028 workers can deduct up to $25,000 of qualified tips and up to $12,500 of overtime premium",
+   "read": "Schedule 1-A (Form 1040)",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "The 2025 law promised no tax on tips and overtime. In practice, they're two new deductions, with limits."
+    },
+    {
+     "type": "define",
+     "big": "Qualified tips deduction",
+     "sub": [
+      "Up to $25,000 of voluntary tips",
+      "in a tipped occupation, 2025 to 2028"
+     ],
+     "say": "Workers in occupations that customarily receive tips can deduct up to $25,000 of qualified tips a year from 2025 through 2028. Tips must be voluntary, so automatic service charges don't count. The deduction phases out above $150,000 of modified AGI, or $300,000 joint."
+    },
+    {
+     "type": "table",
+     "heading": "Jess, a server in Marshall",
+     "rows": [
+      [
+       "Wages",
+       18000
+      ],
+      [
+       "Reported tips",
+       22000
+      ],
+      [
+       "AGI",
+       40000,
+       "total"
+      ],
+      [
+       "Standard deduction",
+       -16100
+      ],
+      [
+       "Tips deduction",
+       -22000
+      ],
+      [
+       "Taxable income",
+       1900,
+       "total"
+      ]
+     ],
+     "say": "Jess, twenty-eight, is a server at the restaurant where Sam works. She earns $18,000 of wages and reports $22,000 of tips. After her standard deduction and the tips deduction, her taxable income is only $1,900, and her income tax falls from about $2,620 to $190."
+    },
+    {
+     "type": "define",
+     "big": "Qualified overtime deduction",
+     "sub": [
+      "The premium part of FLSA overtime:",
+      "up to $12,500, $25,000 joint"
+     ],
+     "say": "The overtime deduction covers only the premium part of overtime required by the Fair Labor Standards Act, the half in time-and-a-half. It's capped at $12,500, or $25,000 on a joint return, with the same phase-out."
+    },
+    {
+     "type": "table",
+     "heading": "Dan: $30 an hour, 300 overtime hours",
+     "rows": [
+      [
+       "Overtime paid at $45 an hour",
+       13500
+      ],
+      [
+       "Regular-rate part: $30 × 300",
+       9000
+      ],
+      [
+       "Deductible premium: $15 × 300",
+       4500,
+       "total"
+      ]
+     ],
+     "say": "Dan, a technician at a Marshall plant, earns thirty dollars an hour and works three hundred overtime hours at forty-five. Only the fifteen-dollar premium counts: $4,500 is deductible."
+    },
+    {
+     "type": "quiz",
+     "q": "Which is still taxed under these deductions?",
+     "opts": [
+      "Income tax on qualified tips",
+      "Social Security and Medicare tax on tips",
+      "Income tax on the overtime premium",
+      "None of them"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which is still taxed? Pause and pick.",
+     "reveal": "It's B. Both deductions cut income tax only. Tips and overtime are still wages for Social Security and Medicare."
+    }
+   ]
+  },
+  {
+   "id": "12.3",
+   "title": "Employee or independent contractor?",
+   "lecture": "Lecture 12 · Compensation",
+   "take": "Control decides worker status, which decides who pays payroll taxes and who withholds",
+   "read": "IRS Pub. 15-A",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "When Nora hires help, is the worker her employee or an independent contractor? The answer decides who pays payroll taxes."
+    },
+    {
+     "type": "list",
+     "heading": "The IRS looks at control",
+     "items": [
+      "Behavioral: who controls how the work is done",
+      "Financial: who supplies tools, bears profit or loss",
+      "Relationship: benefits, permanence, contracts"
+     ],
+     "say": "The IRS looks at control. Behavioral control: does the business direct how the work is done? Financial control: who provides equipment and bears the risk of loss? And the relationship: are there benefits, and is it ongoing?"
+    },
+    {
+     "type": "compare",
+     "heading": "The consequences",
+     "cols": [
+      "Employee",
+      "Contractor"
+     ],
+     "rows": [
+      [
+       "Payroll taxes",
+       "Split 7.65% each",
+       "Contractor pays 15.3%"
+      ],
+      [
+       "Withholding",
+       "Employer withholds",
+       "None; estimates instead"
+      ],
+      [
+       "Form",
+       "W-2",
+       "1099-NEC over $2,000"
+      ]
+     ],
+     "say": "An employee splits FICA with the employer, and the employer withholds income tax and files a W-2. A contractor pays all of their self-employment tax and makes estimated payments. From 2026, a business must file a 1099-NEC for a contractor paid $2,000 or more, up from $600."
+    },
+    {
+     "type": "key",
+     "big": "Misclassification is costly",
+     "sub": [
+      "Back payroll taxes, penalties",
+      "and interest for the business"
+     ],
+     "say": "Calling an employee a contractor to save payroll tax is risky. The business can owe the back taxes it should have withheld and paid, plus penalties and interest."
+    },
+    {
+     "type": "compare",
+     "heading": "Nora's two helpers",
+     "cols": [
+      "Status",
+      "Why"
+     ],
+     "rows": [
+      [
+       "Second shooter at weddings",
+       "Contractor",
+       "Own gear and methods, many clients"
+      ],
+      [
+       "Studio assistant, 25 hrs/week",
+       "Employee",
+       "Nora sets hours and tasks"
+      ]
+     ],
+     "say": "Nora's second shooter brings her own cameras, works for other photographers and decides how to shoot: a contractor. Her studio assistant works set hours on tasks Nora assigns: an employee."
+    },
+    {
+     "type": "quiz",
+     "q": "Nora pays a freelance editor $1,500 in 2026. Must she file a 1099-NEC?",
+     "opts": [
+      "Yes, over $600",
+      "No, under $2,000",
+      "Only if the editor asks",
+      "Yes, always"
+     ],
+     "answer": 1,
+     "say": "Quick check. Nora pays a freelance editor fifteen hundred dollars in 2026. Must she file a ten ninety-nine N E C? Pause and pick.",
+     "reveal": "It's B. From 2026 the threshold is $2,000. The editor must still report the income."
+    }
+   ]
+  },
+  {
+   "id": "12.4",
+   "title": "Stock options",
+   "lecture": "Lecture 12 · Compensation",
+   "take": "Nonqualified options create ordinary income at exercise; ISOs can turn the whole gain into long-term capital gain",
+   "read": "IRS Pub. 525",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Stock options let employees buy company shares at a fixed price. How they're taxed depends on the type."
+    },
+    {
+     "type": "define",
+     "big": "Bargain element",
+     "sub": [
+      "Share value at exercise",
+      "minus the exercise price"
+     ],
+     "say": "When you exercise an option, the bargain element is the share's value minus the price you pay. Kari, Erik's wife, holds options on a thousand shares at twenty dollars, and exercises when the shares are worth fifty: a $30,000 bargain element."
+    },
+    {
+     "type": "compare",
+     "heading": "Nonqualified vs incentive options",
+     "cols": [
+      "NQO",
+      "ISO"
+     ],
+     "rows": [
+      [
+       "At exercise",
+       "$30,000 ordinary income",
+       "No regular tax (AMT item)"
+      ],
+      [
+       "At sale for $70",
+       "$20,000 capital gain",
+       "$50,000 capital gain"
+      ],
+      [
+       "Employer deduction",
+       "$30,000",
+       "None"
+      ]
+     ],
+     "say": "With nonqualified options, Kari has $30,000 of ordinary income at exercise, subject to payroll tax, and her employer deducts the same amount. Selling later at seventy gives a $20,000 capital gain. With incentive stock options, there's no regular tax at exercise, and the whole $50,000 is capital gain on sale. But the employer gets no deduction."
+    },
+    {
+     "type": "list",
+     "heading": "ISO holding periods",
+     "items": [
+      "Hold 2 years from grant, and",
+      "1 year from exercise",
+      "Otherwise: a disqualifying disposition, taxed like an NQO"
+     ],
+     "say": "To get ISO treatment, Kari must hold the shares two years from the grant and one year from exercise. Selling sooner is a disqualifying disposition, taxed like a nonqualified option."
+    },
+    {
+     "type": "key",
+     "big": "Watch the AMT",
+     "sub": [
+      "The ISO bargain element is",
+      "income for the AMT"
+     ],
+     "say": "One catch: the ISO bargain element counts for the alternative minimum tax in the year of exercise, which can bring a surprise AMT bill."
+    },
+    {
+     "type": "quiz",
+     "q": "Kari exercises NQOs: 500 shares, exercise price $10, value $25. Income at exercise?",
+     "opts": [
+      "$0",
+      "$5,000 capital gain",
+      "$7,500 ordinary income",
+      "$12,500 ordinary income"
+     ],
+     "answer": 2,
+     "say": "Quick check. Kari exercises nonqualified options on five hundred shares, at ten dollars, when they're worth twenty-five. What income does she have? Pause and pick.",
+     "reveal": "It's C. The bargain element is fifteen dollars times five hundred: $7,500 of ordinary income."
+    }
+   ]
+  },
+  {
+   "id": "12.5",
+   "title": "Restricted stock and the 83(b) election",
+   "lecture": "Lecture 12 · Compensation",
+   "take": "Restricted stock is taxed at vesting unless the employee makes an 83(b) election to be taxed at grant",
+   "read": "IRS Pub. 525",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Restricted stock is real shares, but you lose them if you leave before they vest. When are they taxed? Usually at vesting, unless you choose otherwise."
+    },
+    {
+     "type": "define",
+     "big": "Restricted stock",
+     "sub": [
+      "Taxed as ordinary income",
+      "at value when it vests"
+     ],
+     "say": "Under Section 83, restricted stock is taxed as ordinary income when it vests, at its value on that date. The employer deducts the same amount."
+    },
+    {
+     "type": "compare",
+     "heading": "Kari: 1,000 shares, $10 at grant, $40 at vesting",
+     "cols": [
+      "No election",
+      "83(b) election"
+     ],
+     "rows": [
+      [
+       "Ordinary income",
+       "$40,000 at vesting",
+       "$10,000 at grant"
+      ],
+      [
+       "Basis",
+       "$40,000",
+       "$10,000"
+      ],
+      [
+       "Later growth",
+       "Capital gain from $40",
+       "Capital gain from $10"
+      ]
+     ],
+     "say": "Kari is granted a thousand restricted shares worth ten dollars, vesting in three years, when they're worth forty. Without an election, she has $40,000 of ordinary income at vesting. With an eighty-three B election within thirty days of the grant, she has only $10,000 of ordinary income now, and all later growth is capital gain."
+    },
+    {
+     "type": "key",
+     "big": "30 days, no second chances",
+     "sub": [
+      "File within 30 days of the grant"
+     ],
+     "say": "The election must be filed within thirty days of the grant. Miss it, and it's gone."
+    },
+    {
+     "type": "key",
+     "tag": "THE RISK",
+     "big": "Forfeit, and the tax is lost",
+     "sub": [
+      "Leave before vesting: no deduction",
+      "for income already taxed"
+     ],
+     "say": "The risk: if Kari leaves before the shares vest and forfeits them, she gets no deduction for the $10,000 she already paid tax on. The election is a bet that the shares will rise and that she'll stay."
+    },
+    {
+     "type": "quiz",
+     "q": "When is an 83(b) election most attractive?",
+     "opts": [
+      "Shares are expected to fall",
+      "Value at grant is low and growth is expected",
+      "The employee plans to leave soon",
+      "The shares are already vested"
+     ],
+     "answer": 1,
+     "say": "Quick check. When is an eighty-three B election most attractive? Pause and pick.",
+     "reveal": "It's B. A low value at grant means little tax now, and expected growth becomes capital gain."
+    }
+   ]
+  },
+  {
+   "id": "12.6",
+   "title": "Employee expenses and accountable plans",
+   "lecture": "Lecture 12 · Compensation",
+   "take": "Unreimbursed employee expenses aren't deductible, so reimbursement through an accountable plan is the tax-efficient route",
+   "read": "IRS Pub. 463",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Jake pays for a conference out of his own pocket. Can he deduct it? Not anymore. Here's why reimbursement matters."
+    },
+    {
+     "type": "key",
+     "big": "No deduction for employees",
+     "sub": [
+      "Unreimbursed employee business expenses:",
+      "suspended in 2018, eliminated in 2025"
+     ],
+     "say": "Unreimbursed employee business expenses used to be a miscellaneous itemized deduction. The 2017 law suspended it, and the 2025 law made that permanent. Employees generally can't deduct work costs they pay themselves."
+    },
+    {
+     "type": "list",
+     "heading": "An accountable plan requires",
+     "items": [
+      "A business connection",
+      "Substantiation within a reasonable time",
+      "Excess advances returned"
+     ],
+     "say": "The answer is an accountable plan. If the expense has a business connection, the employee substantiates it promptly, and any excess advance is returned, reimbursements are tax-free to the employee and deductible by the employer."
+    },
+    {
+     "type": "compare",
+     "heading": "Jake's $2,000 conference",
+     "cols": [
+      "Jake's tax",
+      "Employer"
+     ],
+     "rows": [
+      [
+       "Accountable plan reimbursement",
+       "None",
+       "Deducts $2,000"
+      ],
+      [
+       "$2,000 'allowance' with no receipts",
+       "Wages: taxed",
+       "Deducts as wages"
+      ],
+      [
+       "Jake pays, no reimbursement",
+       "No deduction",
+       "Nothing"
+      ]
+     ],
+     "say": "If Jake's employer reimburses his $2,000 conference under an accountable plan, it's tax-free to him. If it pays a flat allowance with no receipts, that's wages. If Jake pays and isn't reimbursed, he gets no deduction at all."
+    },
+    {
+     "type": "key",
+     "big": "Negotiate reimbursement, not salary",
+     "sub": [
+      "$2,000 reimbursed beats",
+      "$2,000 more salary"
+     ],
+     "say": "So an employee with regular work costs is better off with an accountable reimbursement than an equal raise. The raise is taxed; the reimbursement isn't."
+    },
+    {
+     "type": "quiz",
+     "q": "Jake buys $300 of work boots required by his job and isn't reimbursed. What can he deduct?",
+     "opts": [
+      "$300 for AGI",
+      "$300 itemized",
+      "Nothing",
+      "$150"
+     ],
+     "answer": 2,
+     "say": "Quick check. Jake buys three hundred dollars of work boots his job requires, and isn't reimbursed. What can he deduct? Pause and pick.",
+     "reveal": "It's C, nothing. Unreimbursed employee expenses aren't deductible."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Would you rather have a $5,000 raise or $5,000 of employer-paid health insurance? A $5,000 bonus or $5,000 of company shares?",
+   "Draw out tax-free fringes (L5), the new tips/overtime deductions for some workers, and the timing and risk of equity pay (12.4, 12.5)."
+  ],
+  "acts": [
+   [
+    "A cash-method employee earns a $10,000 bonus declared December 15, 2026 and paid January 5, 2027 by an accrual-method employer. A second employer pays a bonus on April 1, 2027. Timing?",
+    "First: employer deducts 2026 (within 2½ months), employee includes 2027. Second: paid after March 15, so the employer deducts in 2027."
+   ],
+   [
+    "A bartender with $70,000 MAGI, single, has $30,000 of tips. Tips deduction?",
+    "Capped at $25,000; no phase-out under $150,000."
+   ],
+   [
+    "A single worker with MAGI of $170,000 has $10,000 of qualified overtime premium. Deduction?",
+    "Reduced by $100 per $1,000 over $150,000: 20 × 100 = 2,000. Deduction $8,000."
+   ],
+   [
+    "Nora's assistant: Nora sets hours, provides equipment, trains her, pays hourly. Status and consequences?",
+    "Employee: Nora withholds, pays 7.65% FICA, FUTA and Minnesota unemployment, files W-2."
+   ],
+   [
+    "Kari's ISOs: 1,000 shares at $20, exercised at $50, sold 6 months later at $60. Tax result?",
+    "Disqualifying disposition: $30,000 ordinary income (bargain element), $10,000 short-term capital gain. Employer deducts $30,000."
+   ],
+   [
+    "A startup grants an engineer 50,000 shares worth $0.10 each, vesting in 4 years. Should she file an 83(b)?",
+    "Probably: $5,000 of income now vs potentially large ordinary income at vesting; risk of forfeiture is small in dollars."
+   ]
+  ],
+  "case": [
+   "Sam's restaurant job",
+   "Sam Ortiz, 20, works at a Marshall restaurant: $3,000 of wages and $6,000 of tips in 2026. The restaurant adds an automatic 18% service charge to parties of eight or more, and Sam received $800 of that. He also photographs events for Nora, who paid him $2,500 and treats him as a contractor, though she sets his schedule and provides the cameras. Maria claims Sam as a dependent.",
+   [
+    "Which of Sam's receipts are qualified tips?",
+    "Is Sam Nora's employee or a contractor? What changes if he is an employee?",
+    "Compute Sam's standard deduction and taxable income, before and after the tips deduction.",
+    "What forms should Sam receive?"
+   ],
+   "Qualified tips: $6,000 voluntary tips; the $800 service charge is wages, not tips. With Nora setting hours and providing cameras, Sam looks like an employee; Nora would withhold, pay FICA and issue a W-2 (as a contractor he'd owe SE tax on $2,500 and get a 1099-NEC since it's over $2,000). Standard deduction: earned income 12,300 + 450 = 12,750. Taxable before tips: 12,300 − 12,750 = 0. Tips deduction adds nothing: he already owes no income tax, but still owes FICA. Forms: W-2 from the restaurant (and from Nora if an employee)."
+  ],
+  "exam": [
+   [
+    "Compare the tax treatment of nonqualified stock options and incentive stock options for the employee and employer at grant, exercise and sale.",
+    6,
+    "Grant: nothing for either. Exercise: NQO bargain element is ordinary income (FICA), employer deducts; ISO no regular tax (AMT adjustment), no employer deduction. Sale: NQO gain over FMV at exercise is capital; ISO whole gain is LTCG if held 2 years from grant and 1 from exercise, otherwise disqualifying disposition."
+   ],
+   [
+    "Explain the qualified tips and qualified overtime deductions, including limits, and state what they do not change.",
+    5,
+    "2025–2028; tips: voluntary tips in customarily tipped occupations, up to $25,000; overtime: premium portion of FLSA overtime, up to $12,500 ($25,000 joint); phase-out $100 per $1,000 over $150,000 MAGI ($300,000 joint); SSN required; available to non-itemizers. No effect on FICA."
+   ]
+  ],
+  "outcomes": [
+   "Explain the timing of wages and bonuses for both parties",
+   "Apply the tips and overtime deductions",
+   "Classify workers as employees or contractors",
+   "Compare NQOs and ISOs",
+   "Decide when an 83(b) election makes sense",
+   "Use accountable plans for employee expenses"
+  ],
+  "take": [
+   "Wages: employee taxed when paid; employer deducts reasonable pay",
+   "Tips up to $25,000 and overtime premium up to $12,500, through 2028",
+   "Control decides employee or contractor; 1099-NEC at $2,000 from 2026",
+   "NQO: ordinary at exercise; ISO: capital gain if held",
+   "83(b): pay tax at grant, convert growth to capital gain",
+   "Employees can't deduct work costs: reimburse through an accountable plan"
+  ]
+ },
+ "ex": [
+  {
+   "type": "mcq",
+   "q": "An accrual-method employer declares a bonus on December 28, 2026 and pays it on April 2, 2027. When does it deduct the bonus?",
+   "opts": [
+    "2026",
+    "2027",
+    "Half in each year",
+    "Never"
+   ],
+   "a": 1,
+   "why": "Payment after March 15 misses the 2½-month window, so the deduction waits until 2027.",
+   "video": "12.1"
+  },
+  {
+   "type": "num",
+   "q": "A single server has $30,000 of qualified tips and MAGI of $160,000. What is the tips deduction?",
+   "a": 24000,
+   "unit": "$",
+   "why": "Cap 25,000, reduced by $100 per $1,000 over 150,000: 25,000 − 1,000 = 24,000.",
+   "video": "12.2"
+  },
+  {
+   "type": "num",
+   "q": "A worker paid $24 an hour works 200 FLSA overtime hours at $36. What is the qualified overtime deduction?",
+   "a": 2400,
+   "unit": "$",
+   "why": "Only the $12 premium counts: 12 × 200 = 2,400.",
+   "video": "12.2"
+  },
+  {
+   "type": "sort",
+   "q": "Points toward employee or contractor?",
+   "cats": [
+    "Employee",
+    "Contractor"
+   ],
+   "items": [
+    [
+     "Business sets hours",
+     0
+    ],
+    [
+     "Worker uses own equipment",
+     1
+    ],
+    [
+     "Worker gets health benefits",
+     0
+    ],
+    [
+     "Worker serves many clients",
+     1
+    ],
+    [
+     "Business trains the worker",
+     0
+    ],
+    [
+     "Worker can make or lose money",
+     1
+    ]
+   ],
+   "why": "Control over the work, finances and relationship decide status.",
+   "video": "12.3"
+  },
+  {
+   "type": "num",
+   "q": "NQOs: 2,000 shares, exercise price $15, value at exercise $40. Ordinary income at exercise?",
+   "a": 50000,
+   "unit": "$",
+   "why": "(40 − 15) × 2,000 = 50,000.",
+   "video": "12.4"
+  },
+  {
+   "type": "mcq",
+   "q": "ISOs are exercised in March 2026 (granted 2023) and the shares are sold in December 2026 at a gain. What is the result?",
+   "opts": [
+    "All long-term capital gain",
+    "Disqualifying disposition: bargain element is ordinary income",
+    "No tax until 2027",
+    "All short-term capital gain"
+   ],
+   "a": 1,
+   "why": "The shares weren't held one year from exercise.",
+   "video": "12.4"
+  },
+  {
+   "type": "num",
+   "q": "Restricted shares worth $5,000 at grant and $45,000 at vesting. With an 83(b) election, how much ordinary income is there in total?",
+   "a": 5000,
+   "unit": "$",
+   "why": "With the election, only the value at grant is ordinary income; growth is capital gain on sale.",
+   "video": "12.5"
+  },
+  {
+   "type": "mcq",
+   "q": "An employer pays employees a flat $200 a month 'car allowance' with no mileage records. How is it treated?",
+   "opts": [
+    "Tax-free reimbursement",
+    "Taxable wages",
+    "Deductible by the employee",
+    "A de minimis fringe"
+   ],
+   "a": 1,
+   "why": "Without substantiation it's a nonaccountable plan, so the allowance is wages.",
+   "video": "12.6"
+  }
+ ]
+}

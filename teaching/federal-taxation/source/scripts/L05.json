@@ -1,0 +1,700 @@
+{
+ "meta": {
+  "n": 5,
+  "short": "Gross income and exclusions",
+  "title": "Gross income and exclusions",
+  "week": 5,
+  "ch": "Chapter 5",
+  "part": "The individual tax formula",
+  "summary": "The all-inclusive definition of gross income, when and to whom income is taxed, common types of income, Social Security benefits, and the main exclusions and fringe benefits."
+ },
+ "videos": [
+  {
+   "id": "5.1",
+   "title": "What counts as gross income?",
+   "lecture": "Lecture 5 · Gross income and exclusions",
+   "take": "Gross income is all realized income from whatever source, unless the Code excludes it",
+   "read": "IRS Pub. 525",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "The Code doesn't list what's taxable. It says everything is, unless something says otherwise. Here's how gross income works."
+    },
+    {
+     "type": "define",
+     "big": "Gross income",
+     "sub": [
+      "All income from whatever source derived,",
+      "Section 61"
+     ],
+     "say": "Section 61 defines gross income as all income from whatever source derived. That's deliberately broad: wages, tips, business profits, rent, prizes, even illegal income."
+    },
+    {
+     "type": "list",
+     "heading": "Income is taxed when it is",
+     "items": [
+      "An accession to wealth: you are better off",
+      "Realized: an exchange has happened",
+      "Not a return of capital",
+      "Not excluded or deferred by the Code"
+     ],
+     "say": "Income is taxed when it's an accession to wealth, when it's been realized through a transaction, when it isn't just getting your own money back, and when no provision excludes or defers it."
+    },
+    {
+     "type": "key",
+     "big": "No sale, no income",
+     "sub": [
+      "Shares that rise in value",
+      "aren't taxed until sold"
+     ],
+     "say": "Realization matters. If Jake's shares rise by $5,000 this year, he's wealthier, but there's no income until he sells. That's why gains can be deferred for decades."
+    },
+    {
+     "type": "define",
+     "big": "Return of capital",
+     "sub": [
+      "Getting back what you paid",
+      "isn't income"
+     ],
+     "say": "And getting back your own money isn't income. If Jake sells shares that cost $3,000 for $5,000, only the $2,000 gain is income. The $3,000 is a return of capital."
+    },
+    {
+     "type": "quiz",
+     "q": "Which is gross income in 2026?",
+     "opts": [
+      "Jake's house rises $20,000 in value",
+      "Nora wins a $500 photography prize",
+      "Ruth gets back a $1,000 loan she made to a friend",
+      "Leo's savings account balance grows from deposits"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which of these is gross income? Pause and pick.",
+     "reveal": "It's B. The prize is realized and makes Nora wealthier. The house hasn't been sold, the loan repayment is a return of capital, and deposits are Leo's own money."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "title": "When, and to whom, income is taxed",
+   "lecture": "Lecture 5 · Gross income and exclusions",
+   "take": "Cash-method taxpayers report income when received or constructively received; income is taxed to whoever earns it",
+   "read": "IRS Pub. 538",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Two questions follow every dollar of income. In which year is it taxed? And who pays the tax on it?"
+    },
+    {
+     "type": "compare",
+     "heading": "Accounting methods",
+     "cols": [
+      "Cash method",
+      "Accrual method"
+     ],
+     "rows": [
+      [
+       "Income when",
+       "Received",
+       "Earned"
+      ],
+      [
+       "Who uses it",
+       "Almost all individuals",
+       "Larger businesses"
+      ]
+     ],
+     "say": "Almost all individuals use the cash method: income is taxed when it's received. Larger businesses use the accrual method: income is taxed when it's earned, whether or not the cash has arrived."
+    },
+    {
+     "type": "list",
+     "heading": "Cash-method rules",
+     "items": [
+      "Constructive receipt: available to you counts",
+      "Cash equivalents: checks and property count",
+      "Claim of right: income you hold, even if disputed",
+      "Prepaid income: generally taxed when received"
+     ],
+     "say": "Cash-method taxpayers still face rules. Income available to you is constructively received. A check or property counts as cash. Money you receive under a claim of right is taxed now, even if you might have to repay it. And prepaid income is generally taxed when received."
+    },
+    {
+     "type": "define",
+     "big": "Assignment of income",
+     "sub": [
+      "Service income: taxed to the earner",
+      "Property income: taxed to the owner"
+     ],
+     "say": "On the question of who, income from services is taxed to the person who did the work. Income from property is taxed to whoever owns the property. To shift investment income, you have to give away the property itself."
+    },
+    {
+     "type": "key",
+     "big": "Community property states",
+     "sub": [
+      "Nine states split income 50/50",
+      "between spouses; Minnesota isn't one"
+     ],
+     "say": "Nine states, including California and Texas, use community property rules, which split most income earned during marriage equally between spouses. Minnesota is a common-law state, so each spouse owns what they earn."
+    },
+    {
+     "type": "quiz",
+     "q": "On December 31, 2026 Nora's client says, 'Your $1,200 check is at the front desk.' Nora collects it on January 2. When is it income?",
+     "opts": [
+      "2026",
+      "2027",
+      "When the check clears",
+      "When she deposits it"
+     ],
+     "answer": 0,
+     "say": "Quick check. On December thirty-first, a client tells Nora her twelve hundred dollar check is at the front desk. She picks it up on January second. When is it income? Pause and pick.",
+     "reveal": "It's A, 2026. The check was available to her without restriction, so she constructively received it on December thirty-first."
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "title": "Common types of income",
+   "lecture": "Lecture 5 · Gross income and exclusions",
+   "take": "Wages, tips, business and rental income, investment income, prizes, unemployment and forgiven debt are all taxable",
+   "read": "IRS Pub. 525",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Most income is easy to spot. Some is less obvious. Here's a tour of the common types, including a few that surprise people."
+    },
+    {
+     "type": "list",
+     "heading": "Clearly taxable",
+     "items": [
+      "Wages, salaries, bonuses and tips",
+      "Business, rental and farm income",
+      "Interest, dividends and capital gains",
+      "Unemployment compensation"
+     ],
+     "say": "Wages, bonuses and tips are taxable, as are business, rental and farm profits, interest, dividends and capital gains. So is unemployment compensation."
+    },
+    {
+     "type": "list",
+     "heading": "Less obvious, still taxable",
+     "items": [
+      "Prizes, awards and gambling winnings",
+      "Barter: the value of what you receive",
+      "Forgiven debt",
+      "Illegal income"
+     ],
+     "say": "Less obvious: prizes and gambling winnings are taxable. If you trade services, the value of what you receive is income. If a lender forgives a debt, the forgiven amount is generally income. And illegal income is taxable too, which is how Al Capone went to prison in 1931."
+    },
+    {
+     "type": "compare",
+     "heading": "Alimony",
+     "cols": [
+      "Payer",
+      "Recipient"
+     ],
+     "rows": [
+      [
+       "Divorce before 2019",
+       "Deducts it",
+       "Includes it"
+      ],
+      [
+       "Divorce in 2019 or later",
+       "No deduction",
+       "Not income"
+      ]
+     ],
+     "say": "Alimony depends on the date of the divorce. For divorces finalized before 2019, the payer deducts alimony and the recipient includes it. For divorces in 2019 or later, neither does. Child support is never income or deductible."
+    },
+    {
+     "type": "key",
+     "big": "Taxable even without a form",
+     "sub": [
+      "Cash, barter and app payments",
+      "must be reported"
+     ],
+     "say": "Income is taxable whether or not you get a W-2 or a 1099. Cash jobs, barter and payments through apps must all be reported."
+    },
+    {
+     "type": "quiz",
+     "q": "Nora photographs a plumber's wedding in exchange for $1,500 of plumbing work. What does she report?",
+     "opts": [
+      "Nothing, no cash changed hands",
+      "$1,500 of income",
+      "$750, half the value",
+      "Only if the plumber sends a 1099"
+     ],
+     "answer": 1,
+     "say": "Quick check. Nora photographs a plumber's wedding in exchange for fifteen hundred dollars of plumbing work. What does she report? Pause and pick.",
+     "reveal": "It's B. Barter income is the fair value of what she receives: $1,500."
+    }
+   ]
+  },
+  {
+   "id": "5.4",
+   "title": "Taxing Social Security benefits",
+   "lecture": "Lecture 5 · Gross income and exclusions",
+   "take": "Up to 85% of Social Security benefits are taxable, depending on provisional income",
+   "read": "IRS Pub. 915",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Are Social Security benefits taxable? Sometimes. It depends on a figure called provisional income."
+    },
+    {
+     "type": "define",
+     "big": "Provisional income",
+     "sub": [
+      "AGI without benefits + tax-exempt interest",
+      "+ half of benefits"
+     ],
+     "say": "Provisional income is your AGI without the benefits, plus tax-exempt interest, plus half of your Social Security benefits."
+    },
+    {
+     "type": "table",
+     "heading": "Provisional income thresholds",
+     "rows": [
+      [
+       "Single: up to 50% taxable above",
+       25000
+      ],
+      [
+       "Single: up to 85% taxable above",
+       34000
+      ],
+      [
+       "Joint: up to 50% taxable above",
+       32000
+      ],
+      [
+       "Joint: up to 85% taxable above",
+       44000
+      ]
+     ],
+     "say": "For a single filer, benefits start to be taxable above $25,000 of provisional income, and up to eighty-five percent can be taxable above $34,000. For joint filers the thresholds are $32,000 and $44,000. These thresholds have never been indexed for inflation."
+    },
+    {
+     "type": "table",
+     "heading": "Ruth's neighbor Gary, single",
+     "rows": [
+      [
+       "Pension income",
+       20000
+      ],
+      [
+       "Half of $24,000 benefits",
+       12000
+      ],
+      [
+       "Provisional income",
+       32000,
+       "total"
+      ],
+      [
+       "Taxable: 50% × (32,000 − 25,000)",
+       3500,
+       "total"
+      ]
+     ],
+     "say": "Gary is single, with a $20,000 pension and $24,000 of Social Security. His provisional income is $32,000. That's between the two thresholds, so the taxable amount is the lesser of half his benefits or half the excess over $25,000: $3,500."
+    },
+    {
+     "type": "key",
+     "big": "Ruth's benefits are tax-free",
+     "sub": [
+      "$4,800 IRA + $12,000 half of benefits",
+      "= $16,800, under $25,000"
+     ],
+     "say": "Ruth's provisional income is only $16,800, her IRA withdrawals plus half her benefits, so none of her Social Security is taxable."
+    },
+    {
+     "type": "quiz",
+     "q": "A single retiree has provisional income of $20,000. How much of her benefits is taxable?",
+     "opts": [
+      "None",
+      "50%",
+      "85%",
+      "All of it"
+     ],
+     "answer": 0,
+     "say": "Quick check. A single retiree has provisional income of twenty thousand dollars. How much of her benefits is taxable? Pause and pick.",
+     "reveal": "It's A, none. She's below the $25,000 threshold."
+    }
+   ]
+  },
+  {
+   "id": "5.5",
+   "title": "Exclusions",
+   "lecture": "Lecture 5 · Gross income and exclusions",
+   "take": "Gifts, inheritances, life insurance, municipal interest and qualified scholarships are excluded from gross income",
+   "read": "IRS Pub. 525; Pub. 970",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Exclusions are income the Code lets you leave out entirely. Here are the ones you'll meet most often."
+    },
+    {
+     "type": "list",
+     "heading": "Common exclusions",
+     "items": [
+      "Gifts and inheritances",
+      "Life insurance paid on a death",
+      "Municipal bond interest",
+      "Damages for physical injury",
+      "Gain on selling your home, up to a limit"
+     ],
+     "say": "Gifts and inheritances are excluded, though income they later earn is taxable. So are life insurance proceeds paid on a death, interest on state and local bonds, damages for physical injury or sickness, and most gain on selling your home, which we'll cover in Lecture 14."
+    },
+    {
+     "type": "define",
+     "big": "Qualified scholarship",
+     "sub": [
+      "Excluded for tuition, fees, books",
+      "Taxable for room and board"
+     ],
+     "say": "Scholarships are excluded only to the extent they pay for tuition, required fees, books and supplies. Amounts for room and board are taxable. And payment for services, like a teaching assistantship, is wages."
+    },
+    {
+     "type": "table",
+     "heading": "Sam's $6,000 SMSU scholarship",
+     "rows": [
+      [
+       "Tuition and fees",
+       5200
+      ],
+      [
+       "Required books",
+       500
+      ],
+      [
+       "Excluded",
+       5700,
+       "total"
+      ],
+      [
+       "Used for dorm room: taxable",
+       300,
+       "total"
+      ]
+     ],
+     "say": "Sam gets a $6,000 scholarship. $5,200 covers tuition and fees and $500 his required books, so $5,700 is excluded. The remaining $300 goes toward his dorm room, and that's taxable income."
+    },
+    {
+     "type": "key",
+     "big": "Foreign earned income",
+     "sub": [
+      "Up to $132,900 excluded in 2026",
+      "for qualifying citizens living abroad"
+     ],
+     "say": "One more: US citizens who live and work abroad can exclude up to $132,900 of foreign earned income in 2026."
+    },
+    {
+     "type": "quiz",
+     "q": "Ruth inherits shares worth $40,000 and receives $600 of dividends on them. What is her gross income?",
+     "opts": [
+      "$0",
+      "$600",
+      "$40,000",
+      "$40,600"
+     ],
+     "answer": 1,
+     "say": "Quick check. Ruth inherits shares worth forty thousand dollars and then receives six hundred dollars of dividends on them. What's her gross income? Pause and pick.",
+     "reveal": "It's B. The inheritance is excluded, but the dividends it earns are taxable: $600."
+    }
+   ]
+  },
+  {
+   "id": "5.6",
+   "title": "Fringe benefits",
+   "lecture": "Lecture 5 · Gross income and exclusions",
+   "take": "Many employer-provided benefits are tax-free, which makes them worth more than equal cash pay",
+   "read": "IRS Pub. 15-B",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "A dollar of health insurance from your employer can be worth more than a dollar of salary. Here's why fringe benefits matter."
+    },
+    {
+     "type": "list",
+     "heading": "Tax-free fringe benefits",
+     "items": [
+      "Health insurance and group-term life to $50,000",
+      "No-additional-cost services and employee discounts",
+      "Working-condition and de minimis benefits",
+      "Parking and transit, up to $340 a month",
+      "Dependent care assistance, up to $7,500"
+     ],
+     "say": "Common tax-free fringes include employer health insurance and group-term life insurance up to $50,000, no-additional-cost services like an airline's empty seats, employee discounts, work tools, small de minimis perks, parking and transit up to $340 a month, and dependent care assistance up to $7,500 in 2026."
+    },
+    {
+     "type": "table",
+     "heading": "Jake: $6,000 of health insurance",
+     "rows": [
+      [
+       "As salary: taxed at 12% + 7.65%",
+       6000
+      ],
+      [
+       "Tax on it",
+       1179
+      ],
+      [
+       "As a tax-free benefit: tax",
+       0
+      ],
+      [
+       "Saved",
+       1179,
+       "total"
+      ]
+     ],
+     "say": "Jake's employer pays $6,000 of his family's health insurance. If he got that as salary instead, he'd pay twelve percent income tax and seven point six five percent payroll tax: $1,179. As a fringe benefit, it's tax-free."
+    },
+    {
+     "type": "key",
+     "big": "Nondiscrimination rules",
+     "sub": [
+      "Many fringes must be offered broadly,",
+      "not only to executives"
+     ],
+     "say": "To be tax-free, many fringe benefits must be offered to employees broadly, not just to owners and highly paid executives."
+    },
+    {
+     "type": "define",
+     "big": "Cafeteria plan",
+     "sub": [
+      "Employees choose cash or benefits;",
+      "health FSA up to $3,400 in 2026"
+     ],
+     "say": "A cafeteria plan lets employees choose between cash and benefits without being taxed on the choice. Health flexible spending accounts are capped at $3,400 for 2026."
+    },
+    {
+     "type": "quiz",
+     "q": "Which benefit is taxable to Jake?",
+     "opts": [
+      "$50,000 of group-term life insurance",
+      "A $25 holiday turkey",
+      "A $500 cash gift card",
+      "Free parking at work"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which benefit is taxable to Jake? Pause and pick.",
+     "reveal": "It's C. Cash and gift cards are never de minimis, however small. The life cover, the turkey and the parking are tax-free."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Your grandmother gives you $1,000 for your birthday, and your employer gives you a $1,000 bonus. Are they taxed the same way?",
+   "No: the gift is excluded and the bonus is wages. Use it to introduce the all-inclusive definition and exclusions."
+  ],
+  "acts": [
+   [
+    "Income or not? (a) Finding $500 cash in a used couch. (b) A $2,000 increase in a 401(k) balance. (c) A tax refund of Minnesota income tax deducted last year. (d) Frequent-flyer miles earned on personal travel.",
+    "(a) Income (treasure trove). (b) Not yet: deferred. (c) Income under the tax benefit rule if deducted with a benefit. (d) IRS doesn't tax personal-use miles."
+   ],
+   [
+    "A landlord receives, in December 2026, January 2027 rent of $1,500 and a refundable security deposit of $1,500. What is 2026 income?",
+    "$1,500: prepaid rent is taxed when received. The refundable deposit is not income while it may be returned."
+   ],
+   [
+    "A bank cancels $8,000 of a solvent taxpayer's credit card debt. What is the tax effect?",
+    "$8,000 of gross income from discharge of debt (Form 1099-C), unless an exclusion such as insolvency applies."
+   ],
+   [
+    "Married retirees: pension $30,000, Social Security $28,000, municipal interest $4,000. Compute provisional income and the taxable benefits.",
+    "Provisional: 30,000 + 4,000 + 14,000 = 48,000 (over $44,000). Taxable: lesser of 85% × 28,000 = 23,800 or 85% × (48,000 − 44,000) + lesser of 6,000 or 50% × 28,000 = 3,400 + 6,000 = 9,400. Taxable $9,400."
+   ],
+   [
+    "Sam's roommate gets a $10,000 scholarship: $7,000 tuition, $600 books, $2,400 housing. He also earns $3,000 as a lab assistant. Gross income?",
+    "$2,400 housing + $3,000 wages = $5,400."
+   ],
+   [
+    "Rank these by after-tax value to Jake (12% income tax, 7.65% payroll): $1,000 cash, $1,000 of health insurance, $1,000 of dependent care assistance.",
+    "Health insurance and dependent care are worth $1,000; cash is worth about $803."
+   ]
+  ],
+  "case": [
+   "Ruth's retirement income",
+   "Ruth Lindqvist, 68, widowed, lives in Tracy on $24,000 of Social Security and $4,800 of IRA withdrawals. Suppose that in 2026 she also earns $900 of interest on a CD and $400 on Minnesota municipal bonds, inherits $30,000 from her sister, receives $10,000 of life insurance on her sister's death, and wins $1,200 at a casino.",
+   [
+    "Compute Ruth's provisional income.",
+    "How much of her Social Security is taxable?",
+    "List what is excluded and what is included.",
+    "Does she still qualify as Jake's dependent?"
+   ],
+   "Provisional: 4,800 + 900 + 1,200 + 400 (muni) + 12,000 = 19,300 < 25,000, so benefits are not taxable. Included: IRA 4,800, interest 900, gambling 1,200 = 6,900. Excluded: inheritance, life insurance, muni interest, benefits. Gross income $6,900 is over $5,300, so she no longer qualifies as Jake's dependent: the casino win cost Jake a $500 credit."
+  ],
+  "exam": [
+   [
+    "Explain the realization principle and the return-of-capital principle, with an example of each.",
+    4,
+    "Income is taxed only when realized in a transaction (unsold shares that rise are not taxed). Recovering your investment is not income (sale for $5,000 of shares costing $3,000 gives $2,000 of income)."
+   ],
+   [
+    "A single taxpayer has a pension of $18,000, tax-exempt interest of $2,000 and Social Security of $20,000. Compute the taxable Social Security.",
+    5,
+    "Provisional: 18,000 + 2,000 + 10,000 = 30,000. Between 25,000 and 34,000: lesser of 50% × 20,000 = 10,000 or 50% × 5,000 = 2,500. Taxable $2,500."
+   ]
+  ],
+  "outcomes": [
+   "Apply the all-inclusive definition of gross income",
+   "Decide when and to whom income is taxed",
+   "Identify common and less obvious income",
+   "Compute taxable Social Security benefits",
+   "Apply the main exclusions, including scholarships",
+   "Explain the tax value of fringe benefits"
+  ],
+  "take": [
+   "Everything is income unless excluded",
+   "Cash-method income is taxed when received or available",
+   "Barter, prizes, forgiven debt and illegal income are taxable",
+   "Up to 85% of benefits are taxable, by provisional income",
+   "Scholarships are tax-free only for tuition, fees and books",
+   "Tax-free fringes are worth more than equal cash"
+  ]
+ },
+ "ex": [
+  {
+   "type": "sort",
+   "q": "Included in gross income or excluded?",
+   "cats": [
+    "Included",
+    "Excluded"
+   ],
+   "items": [
+    [
+     "Tips",
+     0
+    ],
+    [
+     "Inheritance",
+     1
+    ],
+    [
+     "Unemployment compensation",
+     0
+    ],
+    [
+     "Municipal bond interest",
+     1
+    ],
+    [
+     "Lottery winnings",
+     0
+    ],
+    [
+     "Life insurance received on a death",
+     1
+    ],
+    [
+     "Forgiven credit card debt",
+     0
+    ]
+   ],
+   "why": "Section 61 includes everything unless a specific exclusion applies.",
+   "video": "5.5"
+  },
+  {
+   "type": "mcq",
+   "q": "Which concept means shares that rise in value are not taxed until sold?",
+   "opts": [
+    "Return of capital",
+    "Realization",
+    "Constructive receipt",
+    "Claim of right"
+   ],
+   "a": 1,
+   "why": "Income is recognized only when realized in a transaction.",
+   "video": "5.1"
+  },
+  {
+   "type": "mcq",
+   "q": "A cash-method dentist receives $3,000 in December 2026 for work in January 2027. When is it income?",
+   "opts": [
+    "2026",
+    "2027",
+    "Half in each year",
+    "When the work is finished"
+   ],
+   "a": 0,
+   "why": "Prepaid income is generally taxed when received by a cash-method taxpayer.",
+   "video": "5.2"
+  },
+  {
+   "type": "match",
+   "q": "Match each divorce payment to its tax treatment.",
+   "pairs": [
+    [
+     "Alimony, divorce in 2017",
+     "Deducted by payer, income to recipient"
+    ],
+    [
+     "Alimony, divorce in 2022",
+     "Not deducted, not income"
+    ],
+    [
+     "Child support",
+     "Never deducted or income"
+    ]
+   ],
+   "why": "The TCJA changed alimony for divorces executed after 2018.",
+   "video": "5.3"
+  },
+  {
+   "type": "num",
+   "q": "A single retiree has a pension of $22,000 and Social Security of $16,000 (no tax-exempt interest). How much of the benefits is taxable?",
+   "a": 2500,
+   "unit": "$",
+   "why": "Provisional income 22,000 + 8,000 = 30,000; lesser of 8,000 or 50% × 5,000 = 2,500.",
+   "video": "5.4"
+  },
+  {
+   "type": "num",
+   "q": "A student's $8,000 scholarship pays $6,500 tuition, $400 books and $1,100 housing. How much is taxable?",
+   "a": 1100,
+   "unit": "$",
+   "why": "Only tuition, fees, books and supplies are excluded; housing is taxable.",
+   "video": "5.5"
+  },
+  {
+   "type": "sort",
+   "q": "Taxable or tax-free fringe benefit?",
+   "cats": [
+    "Tax-free",
+    "Taxable"
+   ],
+   "items": [
+    [
+     "Employer health insurance",
+     0
+    ],
+    [
+     "A $100 gift card",
+     1
+    ],
+    [
+     "Group-term life up to $50,000",
+     0
+    ],
+    [
+     "Employer pays an employee's personal car loan",
+     1
+    ],
+    [
+     "Transit pass of $200 a month",
+     0
+    ]
+   ],
+   "why": "Cash equivalents and personal expenses paid by an employer are wages.",
+   "video": "5.6"
+  },
+  {
+   "type": "num",
+   "q": "Jake gets $2,000 more salary instead of $2,000 of dependent care assistance. At 12% income tax and 7.65% payroll tax, how much less is the salary worth after tax?",
+   "a": 393,
+   "tol": 1,
+   "unit": "$",
+   "why": "2,000 × 19.65% = 393.",
+   "video": "5.6"
+  }
+ ]
+}

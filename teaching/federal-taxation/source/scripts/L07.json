@@ -1,0 +1,726 @@
+{
+ "meta": {
+  "n": 7,
+  "short": "Investments",
+  "title": "Investments",
+  "week": 7,
+  "ch": "Chapter 7",
+  "part": "The individual tax formula",
+  "summary": "Interest and dividends, basis and holding period, capital gains rates, netting gains and losses, wash sales, investment interest, the net investment income tax and passive losses."
+ },
+ "videos": [
+  {
+   "id": "7.1",
+   "title": "Interest and dividends",
+   "lecture": "Lecture 7 · Investments",
+   "take": "Interest is ordinary income unless it is municipal; qualified dividends get capital gains rates",
+   "read": "IRS Pub. 550",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Investment income comes as interest, dividends and gains. Each is taxed differently. Start with interest and dividends."
+    },
+    {
+     "type": "compare",
+     "heading": "Interest",
+     "cols": [
+      "Federal",
+      "Minnesota"
+     ],
+     "rows": [
+      [
+       "Bank and corporate bonds",
+       "Taxable",
+       "Taxable"
+      ],
+      [
+       "US Treasury bonds",
+       "Taxable",
+       "Exempt"
+      ],
+      [
+       "Municipal bonds",
+       "Exempt",
+       "Taxable if out of state"
+      ]
+     ],
+     "say": "Interest from banks and corporate bonds is ordinary income. Treasury interest is federally taxable but exempt from state income tax. Municipal bond interest is federally exempt, and Minnesota taxes interest on bonds from other states."
+    },
+    {
+     "type": "define",
+     "big": "Qualified dividend",
+     "sub": [
+      "From a US or qualified foreign company,",
+      "shares held over 60 days around the ex-date"
+     ],
+     "say": "Most dividends from US companies are qualified dividends, taxed at the lower capital gains rates, if you've held the shares for more than sixty days in the hundred and twenty-one days around the ex-dividend date. Other dividends are ordinary income."
+    },
+    {
+     "type": "table",
+     "heading": "Jake's $1,000 of dividends, 22% bracket",
+     "rows": [
+      [
+       "As ordinary dividends: 22%",
+       220
+      ],
+      [
+       "As qualified dividends: 15%",
+       150
+      ],
+      [
+       "Saved",
+       70,
+       "total"
+      ]
+     ],
+     "say": "If Jake were in the twenty-two percent bracket, $1,000 of ordinary dividends would cost $220. As qualified dividends, taxed at fifteen percent, they cost $150."
+    },
+    {
+     "type": "key",
+     "big": "Double taxation",
+     "sub": [
+      "Corporations pay 21% first;",
+      "lower dividend rates soften it"
+     ],
+     "say": "Why the break? Corporate profits are taxed at twenty-one percent before they're paid out, then again as dividends. The lower dividend rate softens that double tax."
+    },
+    {
+     "type": "quiz",
+     "q": "Which income does Minnesota exempt but the IRS taxes?",
+     "opts": [
+      "Corporate bond interest",
+      "US Treasury bond interest",
+      "Minneapolis city bond interest",
+      "Bank CD interest"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which interest does Minnesota exempt but the IRS taxes? Pause and pick.",
+     "reveal": "It's B. States can't tax interest on federal debt, but it's fully taxable federally."
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "title": "Basis and holding period",
+   "lecture": "Lecture 7 · Investments",
+   "take": "Gain is amount realized less basis; property held more than one year is long-term",
+   "read": "IRS Pub. 551",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "To compute a gain you need two numbers: what you got and what you paid. And the calendar decides the rate."
+    },
+    {
+     "type": "define",
+     "big": "Gain = amount realized − basis",
+     "size": 82,
+     "sub": [
+      "Basis: what you paid, plus fees"
+     ],
+     "say": "Gain or loss is the amount realized minus your basis. For purchased shares, basis is the price plus commissions."
+    },
+    {
+     "type": "compare",
+     "heading": "Basis depends on how you got it",
+     "cols": [
+      "Basis",
+      "Holding period"
+     ],
+     "rows": [
+      [
+       "Bought",
+       "Cost",
+       "From purchase"
+      ],
+      [
+       "Inherited",
+       "Value at death",
+       "Always long-term"
+      ],
+      [
+       "Gift",
+       "Donor's basis",
+       "Includes donor's"
+      ]
+     ],
+     "say": "Bought property has a cost basis. Inherited property gets a basis equal to its value at death, called a step-up, and is always long-term. A gift carries over the donor's basis and holding period."
+    },
+    {
+     "type": "table",
+     "heading": "Ruth gives Leo shares",
+     "rows": [
+      [
+       "Ruth's cost in 2015",
+       2000
+      ],
+      [
+       "Value when given in 2026",
+       10000
+      ],
+      [
+       "Leo's basis: carryover",
+       2000,
+       "total"
+      ],
+      [
+       "If inherited instead, Leo's basis",
+       10000,
+       "total"
+      ]
+     ],
+     "say": "Ruth bought shares in 2015 for $2,000. Now they're worth $10,000. If she gives them to Leo, his basis is her $2,000, and he'll owe tax on $8,000 when he sells. If he inherited them, his basis would be $10,000 and the gain would disappear."
+    },
+    {
+     "type": "key",
+     "big": "More than one year = long-term",
+     "sub": [
+      "Bought March 3, 2026:",
+      "long-term from March 4, 2027"
+     ],
+     "say": "Property held more than one year is long-term. Shares bought on March third, 2026 are long-term if sold on or after March fourth, 2027."
+    },
+    {
+     "type": "quiz",
+     "q": "Jake inherits shares worth $15,000 that his father bought for $4,000, and sells them a month later for $15,500. His gain?",
+     "opts": [
+      "$500 short-term",
+      "$500 long-term",
+      "$11,500 long-term",
+      "$11,000 short-term"
+     ],
+     "answer": 1,
+     "say": "Quick check. Jake inherits shares worth fifteen thousand dollars that his father bought for four thousand, and sells them a month later for fifteen thousand five hundred. What's his gain? Pause and pick.",
+     "reveal": "It's B. His basis steps up to $15,000, so the gain is $500, and inherited property is always long-term."
+    }
+   ]
+  },
+  {
+   "id": "7.3",
+   "title": "Capital gains rates",
+   "lecture": "Lecture 7 · Investments",
+   "take": "Long-term gains are taxed at 0%, 15% or 20% depending on taxable income; short-term gains at ordinary rates",
+   "read": "Schedule D instructions",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Long-term capital gains get their own rate schedule. Some families pay nothing at all on them."
+    },
+    {
+     "type": "table",
+     "heading": "2026 long-term gain rates: taxable income up to",
+     "rows": [
+      [
+       "0%: single",
+       49450
+      ],
+      [
+       "0%: married filing jointly",
+       98900
+      ],
+      [
+       "15%: single",
+       545500
+      ],
+      [
+       "15%: married filing jointly",
+       613700
+      ],
+      [
+       "20%",
+       "Above those"
+      ]
+     ],
+     "say": "In 2026, long-term gains and qualified dividends are taxed at zero percent while taxable income stays under $49,450 for a single filer or $98,900 for a joint return. Then fifteen percent, up to $545,500 single or $613,700 joint, and twenty percent above."
+    },
+    {
+     "type": "compare",
+     "heading": "Special rates",
+     "cols": [
+      "Rate",
+      "Applies to"
+     ],
+     "rows": [
+      [
+       "Collectibles",
+       "28% maximum",
+       "Art, coins, gold"
+      ],
+      [
+       "Unrecaptured §1250",
+       "25% maximum",
+       "Depreciation on real estate"
+      ],
+      [
+       "Short-term gains",
+       "Ordinary rates",
+       "Held one year or less"
+      ]
+     ],
+     "say": "A few gains have special maximum rates: twenty-eight percent for collectibles like coins and art, and twenty-five percent for depreciation taken on real estate. Short-term gains are taxed at ordinary rates."
+    },
+    {
+     "type": "table",
+     "heading": "The Lindqvists sell shares at a $10,000 gain",
+     "rows": [
+      [
+       "Taxable income before the gain",
+       78505
+      ],
+      [
+       "Plus long-term gain",
+       10000
+      ],
+      [
+       "Taxable income",
+       88505,
+       "total"
+      ],
+      [
+       "Under $98,900: tax on the gain",
+       0,
+       "total"
+      ]
+     ],
+     "say": "The Lindqvists' taxable income is $78,505. If they sell shares at a $10,000 long-term gain, taxable income rises to $88,505, still below $98,900. The whole gain is taxed at zero percent."
+    },
+    {
+     "type": "key",
+     "big": "Gains sit on top",
+     "sub": [
+      "Ordinary income fills the brackets first;",
+      "gains stack above it"
+     ],
+     "say": "The key idea is stacking. Ordinary income fills the brackets first, and gains sit on top. Only the part of the gain above the threshold moves to fifteen percent."
+    },
+    {
+     "type": "quiz",
+     "q": "A single filer has $60,000 of ordinary taxable income and a $5,000 long-term gain. Tax on the gain?",
+     "opts": [
+      "$0",
+      "$750",
+      "$1,100",
+      "$1,200"
+     ],
+     "answer": 1,
+     "say": "Quick check. A single filer has sixty thousand dollars of ordinary taxable income and a five thousand dollar long-term gain. What's the tax on the gain? Pause and pick.",
+     "reveal": "It's B. Ordinary income alone is above $49,450, so the whole gain is taxed at fifteen percent: $750."
+    }
+   ]
+  },
+  {
+   "id": "7.4",
+   "title": "Netting gains and losses",
+   "lecture": "Lecture 7 · Investments",
+   "take": "Net short-term and long-term results separately, then together; deduct up to $3,000 of net capital loss a year",
+   "read": "Schedule D instructions",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Most investors have gains and losses in the same year. The netting rules decide what's taxed and at what rate."
+    },
+    {
+     "type": "flow",
+     "heading": "The netting process",
+     "items": [
+      "Net short-term gains and losses",
+      "Net long-term gains and losses",
+      "Net the two results against each other"
+     ],
+     "say": "First, net short-term gains and losses together. Then net long-term gains and losses. If one result is a gain and the other a loss, net them against each other."
+    },
+    {
+     "type": "table",
+     "heading": "Jake's 2026 trades",
+     "rows": [
+      [
+       "Short-term gain",
+       3000
+      ],
+      [
+       "Short-term loss",
+       -5000
+      ],
+      [
+       "Net short-term loss",
+       -2000,
+       "total"
+      ],
+      [
+       "Long-term gain",
+       6000
+      ],
+      [
+       "Long-term loss",
+       -1000
+      ],
+      [
+       "Net long-term gain",
+       5000,
+       "total"
+      ],
+      [
+       "Net long-term capital gain",
+       3000,
+       "total"
+      ]
+     ],
+     "say": "Jake has a $3,000 short-term gain and a $5,000 short-term loss: net short-term loss, $2,000. A $6,000 long-term gain and a $1,000 long-term loss: net long-term gain, $5,000. Together, a net long-term gain of $3,000, taxed at the capital gains rate."
+    },
+    {
+     "type": "key",
+     "big": "$3,000 loss limit",
+     "sub": [
+      "Deduct up to $3,000 of net capital loss",
+      "against ordinary income; carry the rest forward"
+     ],
+     "say": "If the final result is a loss, you can deduct up to $3,000 a year against ordinary income, $1,500 if married filing separately. The rest carries forward indefinitely, keeping its short- or long-term character."
+    },
+    {
+     "type": "table",
+     "heading": "Erik's $10,000 net loss",
+     "rows": [
+      [
+       "Deducted in 2026",
+       3000
+      ],
+      [
+       "Carried to 2027",
+       7000,
+       "total"
+      ]
+     ],
+     "say": "Erik's net capital loss is $10,000. He deducts $3,000 in 2026 and carries $7,000 to 2027."
+    },
+    {
+     "type": "quiz",
+     "q": "Net short-term gain $4,000; net long-term loss $9,000. What happens?",
+     "opts": [
+      "Deduct $5,000 this year",
+      "Deduct $3,000, carry forward $2,000 long-term",
+      "Deduct $3,000, carry forward $2,000 short-term",
+      "Nothing is deductible"
+     ],
+     "answer": 1,
+     "say": "Quick check. Net short-term gain four thousand; net long-term loss nine thousand. What happens? Pause and pick.",
+     "reveal": "It's B. The net loss is $5,000, all long-term. Deduct $3,000 and carry $2,000 forward as a long-term loss."
+    }
+   ]
+  },
+  {
+   "id": "7.5",
+   "title": "Wash sales and related-party losses",
+   "lecture": "Lecture 7 · Investments",
+   "take": "A loss is disallowed if you buy the same security within 30 days, or sell to a related party",
+   "read": "IRS Pub. 550",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Selling shares at a loss in December to cut your tax bill is fine. Buying them straight back isn't. Here are the loss traps."
+    },
+    {
+     "type": "define",
+     "big": "Wash sale",
+     "sub": [
+      "Buy substantially identical shares",
+      "within 30 days before or after a loss sale"
+     ],
+     "say": "A wash sale happens when you sell shares at a loss and buy substantially identical shares within thirty days before or after the sale. The loss is disallowed."
+    },
+    {
+     "type": "table",
+     "heading": "Jake's wash sale",
+     "rows": [
+      [
+       "Dec 10: sells $8,000 shares for",
+       5000
+      ],
+      [
+       "Loss disallowed",
+       3000
+      ],
+      [
+       "December 28: buys the same shares for",
+       5200
+      ],
+      [
+       "New basis: 5,200 + 3,000",
+       8200,
+       "total"
+      ]
+     ],
+     "say": "Jake sells shares that cost $8,000 for $5,000 on December tenth, then buys them back on December twenty-eighth for $5,200. The $3,000 loss is disallowed, but it isn't lost: it's added to the basis of the new shares, making it $8,200."
+    },
+    {
+     "type": "key",
+     "big": "Deferred, not lost",
+     "sub": [
+      "The holding period carries over too"
+     ],
+     "say": "So a wash sale defers the loss rather than destroying it. The old holding period carries over as well."
+    },
+    {
+     "type": "define",
+     "big": "Related-party losses",
+     "sub": [
+      "No loss on sales to family",
+      "or controlled entities"
+     ],
+     "say": "Losses on sales to related parties, like a parent, child, sibling, or a company you control, are disallowed outright. The buyer can use the disallowed loss only to reduce a later gain when they sell."
+    },
+    {
+     "type": "quiz",
+     "q": "Jake sells shares at a $2,000 loss to his brother Erik. Can Jake deduct it?",
+     "opts": [
+      "Yes, it's a real sale",
+      "No, Erik is a related party",
+      "Only half of it",
+      "Only if Erik holds them a year"
+     ],
+     "answer": 1,
+     "say": "Quick check. Jake sells shares at a two thousand dollar loss to his brother Erik. Can Jake deduct it? Pause and pick.",
+     "reveal": "It's B. Siblings are related parties, so the loss is disallowed."
+    }
+   ]
+  },
+  {
+   "id": "7.6",
+   "title": "Investment interest, NIIT and passive losses",
+   "lecture": "Lecture 7 · Investments",
+   "take": "Investment interest is limited to investment income, high earners pay a 3.8% NIIT, and passive losses offset only passive income",
+   "read": "Form 8960; IRS Pub. 925",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Three more investment rules, each aimed at a different kind of tax shelter."
+    },
+    {
+     "type": "define",
+     "big": "Investment interest expense",
+     "sub": [
+      "Deductible only up to",
+      "net investment income"
+     ],
+     "say": "Interest on money borrowed to buy investments is an itemized deduction, but only up to your net investment income. The excess carries forward. Qualified dividends and long-term gains count only if you elect to tax them at ordinary rates."
+    },
+    {
+     "type": "define",
+     "big": "Net investment income tax",
+     "sub": [
+      "3.8% on investment income above",
+      "$200,000 single, $250,000 joint MAGI"
+     ],
+     "say": "The net investment income tax adds three point eight percent on interest, dividends, gains, rents and passive income, to the extent modified AGI exceeds $200,000 single or $250,000 joint. These thresholds aren't indexed."
+    },
+    {
+     "type": "define",
+     "big": "Passive activity",
+     "sub": [
+      "A business you don't materially",
+      "participate in; most rentals"
+     ],
+     "say": "A passive activity is a business you don't materially participate in, and most rental real estate. Passive losses can only offset passive income. Unused losses wait until you have passive income or sell the activity."
+    },
+    {
+     "type": "key",
+     "big": "$25,000 rental exception",
+     "sub": [
+      "For active participants; phases out",
+      "between $100,000 and $150,000 of AGI"
+     ],
+     "say": "One exception: if you actively participate in a rental, you can deduct up to $25,000 of rental losses against other income. It phases out between $100,000 and $150,000 of AGI."
+    },
+    {
+     "type": "quiz",
+     "q": "Erik (AGI $280,000) has a $15,000 loss on a rental he manages. How much can he deduct in 2026?",
+     "opts": [
+      "$15,000",
+      "$12,500",
+      "$0, it's suspended",
+      "$3,000"
+     ],
+     "answer": 2,
+     "say": "Quick check. Erik, with AGI of two hundred eighty thousand, has a fifteen thousand dollar loss on a rental he manages. How much can he deduct? Pause and pick.",
+     "reveal": "It's C. His AGI is above $150,000, so the $25,000 exception is gone. The loss is suspended until he has passive income or sells the property."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "You bought a share for $100 and it's now $70. Should you sell before December 31? What if you still like the company?",
+   "Draw out tax-loss harvesting and the wash sale trap (7.4, 7.5). Ask what happens if you buy it back next week."
+  ],
+  "acts": [
+   [
+    "Rank by after-tax yield for a Minnesota resident in the 24% federal and 7.85% state bracket: 5% corporate bond, 4.6% Treasury, 3.8% Minnesota municipal bond.",
+    "Corporate: 5 × (1 − 0.24 − 0.0785) ≈ 3.41%. Treasury: 4.6 × 0.76 = 3.50%. Minnesota muni: 3.8% (exempt both). Muni wins. (Ignores the federal deduction for state tax, which is capped.)"
+   ],
+   [
+    "Ruth gives Leo shares worth $6,000 with her basis $9,000. Leo sells them for $5,000. What is his loss? What if he sells for $7,000?",
+    "Dual basis: for loss, basis is the lower FMV $6,000, loss $1,000. For gain, basis is $9,000, but $7,000 is between, so no gain or loss."
+   ],
+   [
+    "A single filer has $40,000 of ordinary taxable income and a $20,000 long-term gain. Compute the tax on the gain.",
+    "0% band ends at 49,450: 9,450 at 0%; 10,550 at 15% = $1,582.50."
+   ],
+   [
+    "Net: STCG 2,000, STCL (7,000), LTCG 3,000, LTCL (1,000). Result?",
+    "Net ST loss (5,000); net LT gain 2,000; net ST loss (3,000): deduct $3,000, no carryforward."
+   ],
+   [
+    "Jake sells 100 shares at a $1,500 loss on December 20 and buys 60 of the same shares on January 5. What is disallowed?",
+    "60% of the loss, $900, is disallowed and added to the basis of the 60 new shares; $600 is deductible."
+   ],
+   [
+    "A single filer has MAGI of $230,000, including $40,000 of net investment income. Compute the NIIT.",
+    "3.8% × lesser of 40,000 or (230,000 − 200,000 = 30,000) = $1,140."
+   ]
+  ],
+  "case": [
+   "Jake's portfolio review",
+   "In 2026 Jake sold: shares bought in 2019 for $4,000, sold for $9,000; shares bought in June 2026 for $6,000, sold in November for $4,500; shares inherited from his father worth $12,000 at death, sold for $11,000; and a gold coin bought in 2010 for $1,000, sold for $2,500. He also wants to sell his losing bank shares (cost $7,000, value $3,000) in December and buy them back in January.",
+   [
+    "Classify each sale and compute the gain or loss.",
+    "Net the results. What rate applies, given the Lindqvists' taxable income of $78,505 before these sales?",
+    "Advise on the December bank share plan.",
+    "What would happen if Jake sold the bank shares to Erik instead?"
+   ],
+   "2019 shares: LTCG 5,000. June shares: STCL (1,500). Inherited: LTCL (1,000), always long-term. Coin: LT collectible gain 1,500 (28% max). Net LT 5,500 (incl. 1,500 collectible); net ST (1,500); offsets first against the 28% gain, so net gain 4,000 at 0% for regular LT gains as taxable income stays under $98,900. Bank shares: a January buyback within 30 days is a wash sale; wait 31 days or buy a different bank. Selling to Erik: related party, loss disallowed."
+  ],
+  "exam": [
+   [
+    "Explain how basis is determined for purchased, inherited and gifted property, and how each affects the holding period.",
+    6,
+    "Purchased: cost plus fees, holding from purchase. Inherited: FMV at death (step-up), always long-term. Gift: carryover basis (lower FMV for losses if value is below basis), holding period tacks."
+   ],
+   [
+    "A married couple has ordinary taxable income of $90,000, a net long-term capital gain of $20,000 and qualified dividends of $5,000. Compute their 2026 tax.",
+    7,
+    "Ordinary tax on 90,000: 2,480 + 12% × 65,200 = 7,824 → 10,304. 0% band to 98,900: 8,900 of the 25,000 at 0%; 16,100 at 15% = 2,415. Total $12,719."
+   ]
+  ],
+  "outcomes": [
+   "Tax interest and dividends correctly",
+   "Determine basis and holding period",
+   "Apply 2026 capital gains rates",
+   "Net gains and losses and apply the $3,000 limit",
+   "Spot wash sales and related-party losses",
+   "Apply the investment interest, NIIT and passive loss rules"
+  ],
+  "take": [
+   "Muni interest is federally exempt; qualified dividends get gain rates",
+   "Inherited property steps up; gifts carry over basis",
+   "Gains stack on top of ordinary income: 0%, 15%, 20%",
+   "Net within, then across; deduct $3,000 of net loss",
+   "Wash sales defer losses; related-party losses are lost",
+   "3.8% NIIT and passive rules target high earners and shelters"
+  ]
+ },
+ "ex": [
+  {
+   "type": "sort",
+   "q": "Taxed at ordinary rates or capital gains rates?",
+   "cats": [
+    "Ordinary rates",
+    "Capital gains rates"
+   ],
+   "items": [
+    [
+     "Bank interest",
+     0
+    ],
+    [
+     "Qualified dividends",
+     1
+    ],
+    [
+     "Short-term gain",
+     0
+    ],
+    [
+     "Long-term gain on shares",
+     1
+    ],
+    [
+     "Corporate bond interest",
+     0
+    ]
+   ],
+   "why": "Only qualified dividends and long-term gains get the 0/15/20% rates.",
+   "video": "7.1"
+  },
+  {
+   "type": "match",
+   "q": "Match how the property was acquired to its basis.",
+   "pairs": [
+    [
+     "Purchased",
+     "Cost plus fees"
+    ],
+    [
+     "Inherited",
+     "Value at date of death"
+    ],
+    [
+     "Gift (value above basis)",
+     "Donor's basis"
+    ]
+   ],
+   "why": "Inheritance steps basis up; a gift carries it over.",
+   "video": "7.2"
+  },
+  {
+   "type": "num",
+   "q": "A married couple has $85,000 of ordinary taxable income and a $20,000 long-term gain. How much of the gain is taxed at 0%?",
+   "a": 13900,
+   "unit": "$",
+   "why": "The 0% band runs to $98,900: 98,900 − 85,000 = 13,900.",
+   "video": "7.3"
+  },
+  {
+   "type": "num",
+   "q": "Net short-term gain $2,000 and net long-term loss $8,000. How much carries forward after the 2026 deduction?",
+   "a": 3000,
+   "unit": "$",
+   "why": "Net loss 6,000; deduct 3,000; carry forward 3,000.",
+   "video": "7.4"
+  },
+  {
+   "type": "num",
+   "q": "Shares costing $9,000 are sold for $6,000; identical shares are bought 10 days later for $6,500. What is the basis of the new shares?",
+   "a": 9500,
+   "unit": "$",
+   "why": "The $3,000 disallowed loss is added: 6,500 + 3,000 = 9,500.",
+   "video": "7.5"
+  },
+  {
+   "type": "mcq",
+   "q": "Which sale's loss is disallowed under the related-party rules?",
+   "opts": [
+    "Sale to a cousin",
+    "Sale to a brother",
+    "Sale to a friend",
+    "Sale to a brother-in-law"
+   ],
+   "a": 1,
+   "why": "Related parties include siblings, spouses, ancestors and descendants, but not cousins or in-laws.",
+   "video": "7.5"
+  },
+  {
+   "type": "num",
+   "q": "A married couple has MAGI of $290,000 including $25,000 of dividends. What is the NIIT?",
+   "a": 950,
+   "unit": "$",
+   "why": "3.8% × lesser of 25,000 or 40,000 = 950.",
+   "video": "7.6"
+  },
+  {
+   "type": "num",
+   "q": "A landlord with AGI of $120,000 who actively participates has a $20,000 rental loss. How much can she deduct this year?",
+   "a": 15000,
+   "unit": "$",
+   "why": "The $25,000 allowance falls by 50% of AGI over 100,000: 25,000 − 10,000 = 15,000, so she can deduct $15,000.",
+   "video": "7.6"
+  }
+ ]
+}

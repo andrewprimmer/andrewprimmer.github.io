@@ -1,0 +1,763 @@
+{
+ "meta": {
+  "n": 9,
+  "short": "Business income and deductions",
+  "title": "Business income, deductions and accounting methods",
+  "week": 10,
+  "ch": "Chapter 9",
+  "part": "Business and property",
+  "summary": "The ordinary and necessary test, limits on business deductions, mixed-use expenses such as the home office, hobbies, accounting periods and methods, and the qualified business income deduction."
+ },
+ "videos": [
+  {
+   "id": "9.1",
+   "title": "Ordinary, necessary and reasonable",
+   "lecture": "Lecture 9 · Business income and deductions",
+   "take": "Business expenses are deductible if they are ordinary, necessary and reasonable in amount",
+   "read": "IRS Pub. 334; Schedule C instructions",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Nora's photography business is a sole proprietorship. Its income and expenses go on Schedule C. What can she deduct?"
+    },
+    {
+     "type": "list",
+     "heading": "Section 162: deductible if",
+     "items": [
+      "Ordinary: normal in that line of business",
+      "Necessary: helpful and appropriate",
+      "Reasonable in amount",
+      "Paid in carrying on a trade or business"
+     ],
+     "say": "Section 162 allows a deduction for expenses that are ordinary, meaning normal in that kind of business, and necessary, meaning helpful and appropriate. They must be reasonable in amount and paid in carrying on a trade or business."
+    },
+    {
+     "type": "table",
+     "heading": "Prairie Lens Photography, Schedule C, 2026",
+     "rows": [
+      [
+       "Gross receipts",
+       42000
+      ],
+      [
+       "Supplies, software, insurance",
+       -3300
+      ],
+      [
+       "Advertising",
+       -1800
+      ],
+      [
+       "Vehicle expenses",
+       -2200
+      ],
+      [
+       "Home office",
+       -1500
+      ],
+      [
+       "Depreciation",
+       -3200
+      ],
+      [
+       "Net profit",
+       30000,
+       "total"
+      ]
+     ],
+     "say": "Here's Nora's Schedule C. Receipts of $42,000, less supplies and software, advertising, vehicle costs, insurance, a home office and depreciation on her cameras, leave a net profit of $30,000. That profit carries to her Form 1040 and to Schedule S-E."
+    },
+    {
+     "type": "define",
+     "big": "Reasonable compensation",
+     "sub": [
+      "Pay above market value for work",
+      "is not deductible"
+     ],
+     "say": "Reasonableness matters most for pay. When Nora paid Leo, the deduction depended on the wage being what she'd pay anyone for that work."
+    },
+    {
+     "type": "key",
+     "big": "Capitalize, don't expense",
+     "sub": [
+      "Assets lasting beyond the year",
+      "are recovered over time"
+     ],
+     "say": "And costs that create assets lasting beyond the year, like a new camera, are capitalized and recovered through depreciation, which is Lecture 10."
+    },
+    {
+     "type": "quiz",
+     "q": "Which of Nora's costs is deductible on Schedule C?",
+     "opts": [
+      "Her family's grocery bill",
+      "A $90 lens-cleaning kit for work",
+      "A $400 speeding ticket on the way to a shoot",
+      "Her daughter's dance lessons"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which of Nora's costs is deductible on Schedule C? Pause and pick.",
+     "reveal": "It's B. The cleaning kit is ordinary and necessary. Groceries and lessons are personal, and fines are never deductible."
+    }
+   ]
+  },
+  {
+   "id": "9.2",
+   "title": "Limits on business deductions",
+   "lecture": "Lecture 9 · Business income and deductions",
+   "take": "Meals are 50% deductible; entertainment, fines, political spending and personal costs are not",
+   "read": "IRS Pub. 463",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Some costs pass the ordinary and necessary test but are still limited or banned. Here are the common ones."
+    },
+    {
+     "type": "compare",
+     "heading": "Limited or disallowed",
+     "cols": [
+      "Deduction",
+      "Why"
+     ],
+     "rows": [
+      [
+       "Business meals",
+       "50%",
+       "Part personal consumption"
+      ],
+      [
+       "Entertainment",
+       "None",
+       "Disallowed since 2018"
+      ],
+      [
+       "Fines and penalties",
+       "None",
+       "Public policy"
+      ],
+      [
+       "Political contributions, lobbying",
+       "None",
+       "Public policy"
+      ]
+     ],
+     "say": "Business meals with clients are fifty percent deductible. Entertainment, like concert tickets for a client, has been disallowed since 2018. Fines, penalties, political contributions and most lobbying are never deductible."
+    },
+    {
+     "type": "list",
+     "heading": "Also not deductible",
+     "items": [
+      "Personal living expenses",
+      "Expenses to earn tax-exempt income",
+      "Business gifts above $25 per person"
+     ],
+     "say": "Personal living expenses aren't deductible, nor are costs of earning tax-exempt income. And business gifts are capped at $25 per recipient per year."
+    },
+    {
+     "type": "table",
+     "heading": "Nora's client costs",
+     "rows": [
+      [
+       "Lunch with a wedding client",
+       80
+      ],
+      [
+       "Deductible: 50%",
+       40,
+       "total"
+      ],
+      [
+       "Concert tickets for a client",
+       200
+      ],
+      [
+       "Deductible",
+       0,
+       "total"
+      ]
+     ],
+     "say": "Nora takes a wedding client to an eighty-dollar lunch: forty dollars is deductible. She buys the same client two hundred dollars of concert tickets: nothing is deductible."
+    },
+    {
+     "type": "key",
+     "big": "Keep records",
+     "sub": [
+      "Who, what, when, where and why"
+     ],
+     "say": "For meals, travel and gifts, keep records of who, what, when, where and the business purpose. Without them, the deduction can be lost on audit."
+    },
+    {
+     "type": "quiz",
+     "q": "Nora sends 4 clients holiday gifts costing $60 each. How much can she deduct?",
+     "opts": [
+      "$240",
+      "$120",
+      "$100",
+      "$0"
+     ],
+     "answer": 2,
+     "say": "Quick check. Nora sends four clients holiday gifts costing sixty dollars each. How much can she deduct? Pause and pick.",
+     "reveal": "It's C. Gifts are capped at $25 per person: four times $25 is $100."
+    }
+   ]
+  },
+  {
+   "id": "9.3",
+   "title": "Home office, vehicles and travel",
+   "lecture": "Lecture 9 · Business income and deductions",
+   "take": "Mixed-use costs are deductible only for the business share, under strict rules for home offices and commuting",
+   "read": "IRS Pub. 587; Pub. 463",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Some costs are part business and part personal: a home office, a car, a trip. Only the business share is deductible."
+    },
+    {
+     "type": "list",
+     "heading": "Home office: the space must be",
+     "items": [
+      "Used regularly and exclusively for business",
+      "Your principal place of business, or",
+      "Where you meet clients in the normal course"
+     ],
+     "say": "A home office must be used regularly and exclusively for business, and must be your principal place of business or a place where you meet clients. A corner of the dining table doesn't count."
+    },
+    {
+     "type": "compare",
+     "heading": "Two methods",
+     "cols": [
+      "Simplified",
+      "Actual"
+     ],
+     "rows": [
+      [
+       "Amount",
+       "$5 per square foot",
+       "Business % of home costs"
+      ],
+      [
+       "Limit",
+       "300 sq ft, $1,500",
+       "Business income"
+      ],
+      [
+       "Depreciation",
+       "None",
+       "Yes, and later recapture"
+      ]
+     ],
+     "say": "You can use the simplified method, five dollars a square foot up to three hundred square feet, or the actual method, the business percentage of mortgage interest, taxes, utilities and depreciation. Nora's three-hundred-square-foot studio gives her $1,500 under the simplified method."
+    },
+    {
+     "type": "compare",
+     "heading": "Vehicle use",
+     "cols": [
+      "Deductible?",
+      "Example"
+     ],
+     "rows": [
+      [
+       "Commuting",
+       "No",
+       "Home to a regular office"
+      ],
+      [
+       "Between work sites",
+       "Yes",
+       "Studio to a wedding venue"
+      ],
+      [
+       "From a home office",
+       "Yes",
+       "Home studio to a client"
+      ]
+     ],
+     "say": "Commuting from home to a regular workplace is personal. Driving between work locations is business. Because Nora's home is her principal place of business, her drives to shoots count."
+    },
+    {
+     "type": "key",
+     "big": "Travel: away overnight",
+     "sub": [
+      "Transport, lodging and 50% of meals",
+      "for a primarily business trip"
+     ],
+     "say": "Travel away from home overnight for business makes transport, lodging and half of meals deductible. If the trip is mainly personal, only the business portion of costs at the destination counts."
+    },
+    {
+     "type": "quiz",
+     "q": "Jake drives 20 miles from home to his seed company office each day. Is it deductible?",
+     "opts": [
+      "Yes, it's work-related",
+      "No, it's commuting",
+      "Only half",
+      "Yes, if he takes calls on the way"
+     ],
+     "answer": 1,
+     "say": "Quick check. Jake drives twenty miles from home to his office each day. Is that deductible? Pause and pick.",
+     "reveal": "It's B. Driving from home to a regular place of work is commuting, a personal expense."
+    }
+   ]
+  },
+  {
+   "id": "9.4",
+   "title": "Hobby or business?",
+   "lecture": "Lecture 9 · Business income and deductions",
+   "take": "Hobby income is taxable but hobby expenses are not deductible; profit motive decides",
+   "read": "IRS Pub. 535",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Leo sells a few drone videos. Ruth sells quilts. Business or hobby? The answer changes everything."
+    },
+    {
+     "type": "compare",
+     "heading": "The stakes",
+     "cols": [
+      "Business",
+      "Hobby"
+     ],
+     "rows": [
+      [
+       "Income",
+       "Taxable",
+       "Taxable"
+      ],
+      [
+       "Expenses",
+       "Deductible",
+       "Not deductible"
+      ],
+      [
+       "Losses",
+       "Offset other income",
+       "Not allowed"
+      ]
+     ],
+     "say": "Both business and hobby income are taxable. But a business deducts its expenses and can use losses against other income. Since 2018, hobby expenses aren't deductible at all."
+    },
+    {
+     "type": "list",
+     "heading": "Signs of a profit motive",
+     "items": [
+      "Run in a businesslike manner, with records",
+      "Time and effort put in",
+      "Expertise, or advisers consulted",
+      "History of income and losses",
+      "Little personal pleasure involved"
+     ],
+     "say": "The regulations list factors that show a profit motive: running it like a business with good records, the time and effort you put in, your expertise, your history of profits and losses, and how much personal pleasure is involved."
+    },
+    {
+     "type": "key",
+     "big": "Profit in 3 of 5 years",
+     "sub": [
+      "Creates a presumption",
+      "that it's a business"
+     ],
+     "say": "There's also a safe harbor. If an activity shows a profit in three of five consecutive years, it's presumed to be a business."
+    },
+    {
+     "type": "table",
+     "heading": "Ruth's quilting, 2026",
+     "rows": [
+      [
+       "Sales at craft fairs",
+       1800
+      ],
+      [
+       "Fabric and booth fees",
+       2600
+      ],
+      [
+       "If a hobby: taxable income",
+       1800,
+       "total"
+      ],
+      [
+       "If a business: loss",
+       -800,
+       "total"
+      ]
+     ],
+     "say": "Ruth sells $1,800 of quilts but spends $2,600 on fabric and booth fees. As a hobby, she reports $1,800 of income and deducts nothing. As a business, she'd have an $800 loss. Her lack of records and years of losses point to a hobby."
+    },
+    {
+     "type": "quiz",
+     "q": "Which fact best supports treating an activity as a business?",
+     "opts": [
+      "The owner enjoys it",
+      "It has lost money for eight years",
+      "A separate bank account and a business plan",
+      "It started as a pastime"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which fact best supports treating an activity as a business? Pause and pick.",
+     "reveal": "It's C. Separate accounts and a business plan show it's run in a businesslike manner."
+    }
+   ]
+  },
+  {
+   "id": "9.5",
+   "title": "Accounting periods and methods",
+   "lecture": "Lecture 9 · Business income and deductions",
+   "take": "Most small businesses use the cash method; accrual businesses deduct when all events and economic performance have occurred",
+   "read": "IRS Pub. 538",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "When does a business count its income and expenses? That depends on its tax year and its accounting method."
+    },
+    {
+     "type": "compare",
+     "heading": "Tax years",
+     "cols": [
+      "Calendar year",
+      "Fiscal year"
+     ],
+     "rows": [
+      [
+       "Ends",
+       "December 31",
+       "Last day of any other month"
+      ],
+      [
+       "Who uses it",
+       "Individuals, sole proprietors",
+       "Many corporations"
+      ]
+     ],
+     "say": "Individuals and sole proprietors use the calendar year. Corporations can choose a fiscal year ending on the last day of any month."
+    },
+    {
+     "type": "compare",
+     "heading": "Methods",
+     "cols": [
+      "Cash",
+      "Accrual"
+     ],
+     "rows": [
+      [
+       "Income",
+       "When received",
+       "When earned"
+      ],
+      [
+       "Expenses",
+       "When paid",
+       "All events + economic performance"
+      ],
+      [
+       "Who",
+       "Most small firms",
+       "Larger firms, inventory"
+      ]
+     ],
+     "say": "Under the cash method, income counts when received and expenses when paid. Under the accrual method, income counts when earned, and expenses when all events have fixed the liability and economic performance has occurred. Small businesses below an inflation-indexed gross receipts test, currently over thirty million dollars, can use the cash method."
+    },
+    {
+     "type": "key",
+     "big": "Prepaid expenses: 12-month rule",
+     "sub": [
+      "A cash-method business can deduct prepaid",
+      "costs for benefits lasting up to 12 months"
+     ],
+     "say": "A cash-method business can deduct a prepayment, like insurance, if the benefit lasts no more than twelve months and doesn't extend past the end of next year."
+    },
+    {
+     "type": "key",
+     "big": "Tax and book can differ",
+     "sub": [
+      "GAAP accrual ≠ tax accrual",
+      "for some items"
+     ],
+     "say": "Tax accrual isn't always GAAP accrual. For tax, prepaid income can usually be deferred only one year, and reserves for bad debts or warranties aren't deductible until actually incurred."
+    },
+    {
+     "type": "quiz",
+     "q": "On December 1, 2026 Nora pays $1,200 for 12 months of liability insurance. What can she deduct in 2026 as a cash-method taxpayer?",
+     "opts": [
+      "$100",
+      "$1,200",
+      "$0",
+      "$600"
+     ],
+     "answer": 1,
+     "say": "Quick check. On December first, 2026, Nora pays twelve hundred dollars for twelve months of insurance. What can she deduct in 2026? Pause and pick.",
+     "reveal": "It's B. Under the twelve-month rule, the whole $1,200 is deductible when paid."
+    }
+   ]
+  },
+  {
+   "id": "9.6",
+   "title": "The QBI deduction",
+   "lecture": "Lecture 9 · Business income and deductions",
+   "take": "Owners of pass-through businesses deduct up to 20% of qualified business income",
+   "read": "Form 8995 instructions",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Owners of sole proprietorships, partnerships and S corporations get a deduction worth up to twenty percent of their business income. It's now permanent."
+    },
+    {
+     "type": "define",
+     "big": "QBI deduction",
+     "sub": [
+      "20% of qualified business income,",
+      "Section 199A"
+     ],
+     "say": "The qualified business income deduction is twenty percent of qualified business income from a pass-through business. It's a deduction from AGI, but you get it whether or not you itemize."
+    },
+    {
+     "type": "table",
+     "heading": "Nora's QBI deduction",
+     "rows": [
+      [
+       "Net profit",
+       30000
+      ],
+      [
+       "Less deductible half of SE tax",
+       -2119
+      ],
+      [
+       "Qualified business income",
+       27881,
+       "total"
+      ],
+      [
+       "20% of QBI",
+       5576
+      ],
+      [
+       "Limit: 20% of taxable income $84,081",
+       16816
+      ],
+      [
+       "QBI deduction",
+       5576,
+       "total"
+      ]
+     ],
+     "say": "Nora's qualified business income is her $30,000 profit less the deductible half of her self-employment tax: $27,881. Twenty percent is $5,576. The deduction can't exceed twenty percent of taxable income before the deduction, here $16,816, so she gets the full $5,576."
+    },
+    {
+     "type": "key",
+     "big": "Under $201,750 single, $403,500 joint",
+     "sub": [
+      "Simple 20%. Above, wage and property",
+      "limits and service-business rules phase in"
+     ],
+     "say": "Below $201,750 of taxable income, or $403,500 on a joint return, the calculation is that simple. Above those thresholds, limits based on wages paid and property owned phase in, and owners of specified service businesses, like doctors and lawyers, gradually lose the deduction."
+    },
+    {
+     "type": "key",
+     "big": "Why it exists",
+     "sub": [
+      "Corporations pay 21%; the QBI deduction",
+      "narrows the gap for pass-throughs"
+     ],
+     "say": "Why does it exist? When the 2017 law cut the corporate rate to twenty-one percent, Congress gave pass-through owners this deduction to narrow the gap. The 2025 law made it permanent."
+    },
+    {
+     "type": "quiz",
+     "q": "A single sole proprietor has QBI of $50,000 and taxable income before QBI of $40,000. What is the deduction?",
+     "opts": [
+      "$10,000",
+      "$8,000",
+      "$50,000",
+      "$0"
+     ],
+     "answer": 1,
+     "say": "Quick check. A single sole proprietor has qualified business income of fifty thousand dollars but taxable income before the deduction of only forty thousand. What's the deduction? Pause and pick.",
+     "reveal": "It's B. Twenty percent of QBI is $10,000, but it's limited to twenty percent of taxable income, $8,000."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Name three things a photographer might spend money on. Which would you allow as tax deductions, and which not?",
+   "Expect cameras (capitalize), software, travel, clothing (not deductible unless unsuitable for street wear), meals. Introduces ordinary and necessary, capitalization and limits."
+  ],
+  "acts": [
+   [
+    "Deductible on Schedule C? (a) Nora's continuing-education course in drone photography. (b) A suit to wear at weddings. (c) A $500 fine for flying a drone illegally. (d) Website hosting.",
+    "(a) Yes: maintains skills in her existing business. (b) No: suitable for everyday wear. (c) No: fines. (d) Yes."
+   ],
+   [
+    "Nora spends $300 on client lunches, $500 on baseball tickets for clients and $90 on a gift basket for one client. Deduction?",
+    "Meals 150 + entertainment 0 + gift 25 = $175."
+   ],
+   [
+    "Nora's home is 2,000 sq ft; her studio is 300 sq ft. Actual home costs (interest, taxes, utilities, depreciation) are $16,000. Compare methods.",
+    "Actual: 15% × 16,000 = $2,400 (with depreciation recapture later). Simplified: $1,500. Actual gives more now."
+   ],
+   [
+    "Leo earns $1,200 selling drone footage online, spends $1,500 on gear and software, keeps no records and does it for fun. Tax result?",
+    "Likely a hobby: $1,200 of income, no deduction for the $1,500."
+   ],
+   [
+    "An accrual-method business receives $24,000 on December 1, 2026 for a 24-month service contract. How much income in 2026 for tax?",
+    "Under the one-year deferral: 2026 income is the 1,000 earned for financial reporting; the remaining $23,000 is taxed in 2027 (deferral beyond one year isn't allowed)."
+   ],
+   [
+    "A single dentist's taxable income before QBI is $150,000 with QBI of $120,000. What is the deduction?",
+    "Below the $201,750 threshold, specified service rules don't bite: lesser of 20% × 120,000 = 24,000 or 20% × 150,000 = 30,000 → $24,000."
+   ]
+  ],
+  "case": [
+   "Prairie Lens grows",
+   "In 2027 Nora expects receipts of $90,000. She is considering: hiring an assistant at $20,000; renting a downtown Marshall studio for $9,600 a year and giving up her home office; leasing an SUV used 80% for business; and taking a client trip to a photography trade show in Las Vegas with two extra vacation days.",
+   [
+    "Which costs are deductible, and how much?",
+    "What happens to her home office deduction and her commuting?",
+    "How are the Las Vegas trip costs treated?",
+    "How do these changes affect her QBI deduction and SE tax?"
+   ],
+   "Wages and rent are ordinary and necessary. With a downtown studio as her principal place of business, the home office goes and trips from home to the studio become commuting. SUV: 80% of costs. Las Vegas: airfare fully deductible if the trip is primarily business; lodging and 50% of meals for business days only. Lower net profit means lower SE tax and a smaller QBI deduction, but more after-tax profit overall if the costs generate revenue."
+  ],
+  "exam": [
+   [
+    "Explain the requirements for deducting a home office and compare the two methods of computing it.",
+    5,
+    "Regular and exclusive use; principal place of business or client meetings. Simplified: $5/sq ft, max 300 sq ft ($1,500), no depreciation. Actual: business % of home costs including depreciation, limited to business income; depreciation is recaptured on sale."
+   ],
+   [
+    "A married sole proprietor has net profit of $60,000. The couple's taxable income before QBI is $70,000. Compute SE tax, the deduction for half of it, QBI and the QBI deduction.",
+    6,
+    "SE tax 60,000 × 92.35% × 15.3% = 8,478; half 4,239. QBI 60,000 − 4,239 = 55,761; 20% = 11,152; limit 20% × 70,000 = 14,000; deduction $11,152."
+   ]
+  ],
+  "outcomes": [
+   "Apply the ordinary, necessary and reasonable tests",
+   "Apply limits on meals, entertainment, gifts and fines",
+   "Compute home office, vehicle and travel deductions",
+   "Distinguish a business from a hobby",
+   "Apply accounting periods and methods",
+   "Compute the QBI deduction below the threshold"
+  ],
+  "take": [
+   "Ordinary, necessary, reasonable, and in a trade or business",
+   "Meals 50%, entertainment 0%, gifts $25",
+   "Home office: regular and exclusive; commuting is personal",
+   "Hobby income is taxed, hobby costs aren't deductible",
+   "Cash for most small businesses; accrual needs all events and performance",
+   "20% of QBI, limited to 20% of taxable income"
+  ]
+ },
+ "ex": [
+  {
+   "type": "sort",
+   "q": "Deductible business expense or not?",
+   "cats": [
+    "Deductible",
+    "Not deductible"
+   ],
+   "items": [
+    [
+     "Advertising on Facebook",
+     0
+    ],
+    [
+     "A parking ticket at a shoot",
+     1
+    ],
+    [
+     "Photo-editing software",
+     0
+    ],
+    [
+     "Donation to a mayoral campaign",
+     1
+    ],
+    [
+     "Liability insurance",
+     0
+    ],
+    [
+     "Family vacation",
+     1
+    ]
+   ],
+   "why": "Ordinary and necessary costs are deductible; fines, political spending and personal costs are not.",
+   "video": "9.1"
+  },
+  {
+   "type": "num",
+   "q": "A client dinner costs $240 and tickets to a basketball game for the client cost $300. What is deductible?",
+   "a": 120,
+   "unit": "$",
+   "why": "Meals are 50% (120); entertainment is not deductible.",
+   "video": "9.2"
+  },
+  {
+   "type": "num",
+   "q": "A 250 sq ft home office qualifies. What is the deduction under the simplified method?",
+   "a": 1250,
+   "unit": "$",
+   "why": "$5 × 250 = 1,250.",
+   "video": "9.3"
+  },
+  {
+   "type": "mcq",
+   "q": "Which trip is deductible?",
+   "opts": [
+    "Home to a regular office",
+    "A home office (principal place of business) to a client",
+    "Home to the gym",
+    "Office to lunch with friends"
+   ],
+   "a": 1,
+   "why": "Trips from a qualifying home office to business locations are business travel.",
+   "video": "9.3"
+  },
+  {
+   "type": "match",
+   "q": "Match the activity to its tax treatment.",
+   "pairs": [
+    [
+     "Business with a loss",
+     "Loss offsets other income"
+    ],
+    [
+     "Hobby with costs above income",
+     "Income taxed, costs not deductible"
+    ],
+    [
+     "Profit in 3 of 5 years",
+     "Presumed to be a business"
+    ]
+   ],
+   "why": "Profit motive decides; hobby expenses are not deductible since 2018.",
+   "video": "9.4"
+  },
+  {
+   "type": "mcq",
+   "q": "A cash-method sole proprietor pays a $2,400 bill for 24 months of insurance on January 1, 2026. What is deductible in 2026?",
+   "opts": [
+    "$2,400",
+    "$1,200",
+    "$0",
+    "$200"
+   ],
+   "a": 1,
+   "why": "The 12-month rule doesn't apply to a 24-month benefit, so the cost is spread: $1,200 in 2026.",
+   "video": "9.5"
+  },
+  {
+   "type": "num",
+   "q": "Single, QBI $30,000, taxable income before QBI $100,000. What is the QBI deduction?",
+   "a": 6000,
+   "unit": "$",
+   "why": "Lesser of 20% × 30,000 = 6,000 or 20% × 100,000 = 20,000.",
+   "video": "9.6"
+  },
+  {
+   "type": "num",
+   "q": "Married, QBI $70,000, taxable income before QBI $60,000. What is the QBI deduction?",
+   "a": 12000,
+   "unit": "$",
+   "why": "Lesser of 14,000 or 20% × 60,000 = 12,000.",
+   "video": "9.6"
+  }
+ ]
+}

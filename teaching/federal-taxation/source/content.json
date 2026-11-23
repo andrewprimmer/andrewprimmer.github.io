@@ -1,0 +1,996 @@
+{
+ "1": {
+  "warmup": [
+   "Add up every tax you paid in the last week. Which ones did you notice, and which didn't you?",
+   "Expect sales tax, gas tax, payroll tax on a paycheck, maybe property tax through rent. Most students forget excise and payroll taxes. Hidden taxes come back in 1.4 (implicit taxes)."
+  ],
+  "acts": [
+   [
+    "Classify each as a tax, fee or fine: a Marshall utility bill, the federal gas tax, a library late charge, a Minnesota vehicle registration tax.",
+    "Utility bill: fee. Gas tax: tax (excise). Late charge: fine. Vehicle registration tax: a tax, though it is collected through a registration, because the amount isn't tied to a service."
+   ],
+   [
+    "A single filer has 2026 taxable income of $110,000. Compute her tax, marginal rate and average rate.",
+    "1,240 + 4,560 + 12,166 (22% × 55,300) + 24% × 4,300 = 1,032. Tax $18,998. Marginal 24%. Average 17.3%."
+   ],
+   [
+    "Argue whether the federal income tax is still progressive for someone whose income is mostly long-term capital gains.",
+    "Gains are taxed at 0%, 15% or 20%, so a very high earner living on gains can have a lower average rate than a salaried worker. The rate schedule is progressive; the outcome depends on the mix of income."
+   ],
+   [
+    "A Minnesota investor in the 24% federal bracket can earn 5% taxable or 3.9% tax-exempt. Which should she buy, ignoring state tax?",
+    "After-tax taxable yield: 5% × 0.76 = 3.8%, less than 3.9%. Buy the municipal bond."
+   ],
+   [
+    "Why did the 1913 income tax affect so few households, and what changed in the 1940s?",
+    "The $3,000 exemption was well above most incomes. Wartime rate rises and lower exemptions widened the base, and 1943 withholding made collection practical."
+   ],
+   [
+    "Score a national sales tax replacing the income tax on the five tests.",
+    "Strong on convenience and economy, possibly certainty; weak on vertical equity (regressive); sufficiency depends on the rate and evasion."
+   ]
+  ],
+  "case": [
+   "The Lindqvists debate a flat tax",
+   "Jake and Nora Lindqvist live in Marshall with their children Ava (8) and Leo (15). Jake earns $88,000 as an agronomist; Nora's photography business makes about $30,000. At a family dinner Jake's brother argues for a 17% flat tax on all income above a $40,000 family allowance, with no other deductions or credits, saying it would be simpler and fairer.",
+   [
+    "Is the proposed flat tax progressive, proportional or regressive? Why?",
+    "What would the Lindqvists pay on $118,000 of income?",
+    "Which of the five tests does it pass well, and which poorly?",
+    "What behavior might change under the income and substitution effects?"
+   ],
+   "With an allowance, the average rate rises with income, so it is mildly progressive even with one rate. Tax: 17% × 78,000 = $13,260. Strong on certainty, convenience, economy; weaker on vertical equity, and sufficiency depends on the rate. The loss of child credits matters to this family. Discuss income versus substitution effects for Nora's hours."
+  ],
+  "exam": [
+   [
+    "Distinguish marginal, average and effective tax rates. Which should a taxpayer use when deciding whether to take on extra work?",
+    5,
+    "Marginal: rate on the next dollar. Average: total tax ÷ taxable income. Effective: total tax ÷ economic income. Decisions use the marginal rate because only the extra income is taxed at that rate."
+   ],
+   [
+    "A single filer has 2026 taxable income of $80,000. Compute the tax and the average tax rate.",
+    5,
+    "1,240 + 4,560 + 22% × 29,600 = 6,512. Tax $12,312. Average rate 15.4%."
+   ]
+  ],
+  "outcomes": [
+   "Define a tax and tell it from a fee or fine",
+   "Compute marginal, average and effective rates",
+   "Classify progressive, proportional and regressive taxes",
+   "Describe the main US taxes, including implicit taxes",
+   "Outline how the federal income tax began",
+   "Evaluate a tax on five tests"
+  ],
+  "take": [
+   "A tax is required and buys nothing specific",
+   "Use the marginal rate for decisions, the average rate to describe burden",
+   "Judge structure by how the average rate changes",
+   "Payroll, sales and property taxes matter as much as income tax for many families",
+   "The 1913 amendment and 1943 withholding created the modern income tax",
+   "Every tax trades sufficiency, equity, certainty, convenience and economy"
+  ]
+ },
+ "2": {
+  "warmup": [
+   "Have you ever filed a tax return? What made you file, and what document did you need first?",
+   "Most students filed for a refund of withholding using a W-2. Connect to 2.1: filing to get withholding back even when not required."
+  ],
+  "acts": [
+   [
+    "Who must file for 2026? (a) Single, 30, wages $15,000. (b) MFJ, both 40, wages $35,000. (c) Single, 22, net self-employment income $500, no other income.",
+    "(a) No: below $16,100, though she should file to recover withholding. (b) Yes: above $32,200. (c) Yes: self-employment earnings of $400 or more."
+   ],
+   [
+    "A 2026 return is filed on June 30, 2027. When does the normal assessment period end? What if $40,000 of $120,000 gross income was omitted?",
+    "June 30, 2030 (three years from filing, as filing was after the due date). Omitting $40,000 is more than 25% of the $120,000 reported, so six years: June 30, 2033."
+   ],
+   [
+    "Rank these by likelihood of triggering IRS contact: an unreported 1099-NEC, a large charitable deduction, a math error.",
+    "Math errors are corrected automatically by notice; the unreported 1099 is caught by matching; the large deduction may raise the DIF score."
+   ],
+   [
+    "A client disputes $70,000 and has cash to pay. Compare the three courts for her.",
+    "Tax Court: no payment, tax specialist judges, regular procedure (over $50,000). District Court: pay first, jury possible. Court of Federal Claims: pay first, Federal Circuit precedent. Consider circuit precedent under Golsen."
+   ],
+   [
+    "Put in order of authority: revenue ruling, Code section, proposed regulation, final regulation, tax service article.",
+    "Code, final regulation, proposed regulation, revenue ruling, tax service (secondary)."
+   ],
+   [
+    "A client owes $10,000 and files and pays 2 months late. Estimate the penalties.",
+    "Failure to pay: 0.5% × 2 × 10,000 = $100. Failure to file: 5% × 2 = 10% = $1,000, reduced by the $100 failure-to-pay penalty for the same months, so $900. Total about $1,000 plus interest."
+   ]
+  ],
+  "case": [
+   "Sam's missing 1099",
+   "Sam Ortiz, 20, is a full-time SMSU student who waits tables in Marshall. He filed his 2025 return in February 2026 using his W-2, but forgot a $1,800 Form 1099-NEC for photography work he did for Nora Lindqvist's business. In November 2026 he receives a CP2000 notice proposing extra income tax and self-employment tax. He wants to ignore it because he 'has no money until summer.'",
+   [
+    "What kind of IRS contact is this, and how was Sam selected?",
+    "What happens if he ignores the notice?",
+    "What should he do now, and what are his options if he can't pay?",
+    "How long could the IRS have come back for this year?"
+   ],
+   "It's an information-matching notice, not a field audit. Ignoring it leads to a statutory notice of deficiency and assessment, with interest and possibly a 20% accuracy penalty. Respond by the deadline, agree or explain, and ask for a payment plan. Normal period: three years from April 15, 2026; the omission ($1,800) is not over 25% of his gross income, so not six years."
+  ],
+  "exam": [
+   [
+    "Explain the statute of limitations for assessment, including the exceptions.",
+    5,
+    "Three years from the later of the due date or filing date; six years if gross income is understated by more than 25%; unlimited for fraud or no return. Early returns are treated as filed on the due date."
+   ],
+   [
+    "Describe the path of a disputed audit from the 30-day letter to a court decision, and explain why most taxpayers choose the Tax Court.",
+    6,
+    "30-day letter, optional Appeals conference, 90-day letter (notice of deficiency), petition to Tax Court or pay and sue in District Court or Court of Federal Claims, then appeal to circuit court and possibly the Supreme Court. Tax Court requires no prepayment."
+   ]
+  ],
+  "outcomes": [
+   "Identify who must file and when",
+   "Apply the statute of limitations",
+   "Explain how returns are selected for audit",
+   "Trace a dispute from audit to court",
+   "Rank the sources of tax law",
+   "Compute filing penalties and describe preparer standards"
+  ],
+  "take": [
+   "File when gross income reaches the standard deduction, or SE earnings reach $400",
+   "Three years normally, six for big omissions, unlimited for fraud",
+   "Report every W-2 and 1099: matching catches omissions",
+   "Only the Tax Court hears a case before you pay",
+   "The Code outranks regulations, rulings and textbooks",
+   "File on time even if you can't pay"
+  ]
+ },
+ "3": {
+  "warmup": [
+   "Your employer offers you a $5,000 bonus on December 28 or January 3. Which do you pick, and why?",
+   "Students usually pick December (cash now). Draw out the tax angle: January defers tax a year, December is better if next year's rate will be higher. Leads to 3.2 and 3.3."
+  ],
+  "acts": [
+   [
+    "Classify each as timing, shifting or conversion: (a) Roth IRA contribution, (b) gifting shares to a child in college, (c) delaying an invoice to January, (d) buying municipal bonds.",
+    "(a) Conversion (tax-free growth) and timing. (b) Shifting, subject to the kiddie tax for students under 24. (c) Timing. (d) Conversion."
+   ],
+   [
+    "A 22% taxpayer can deduct $8,000 now or in one year; the discount rate is 5%. What is the value of accelerating?",
+    "Now: 1,760. Next year: 1,760 ÷ 1.05 = 1,676. Benefit $84."
+   ],
+   [
+    "The same $8,000 deduction, but next year's rate will be 32%. Now or later?",
+    "Next year: 2,560 ÷ 1.05 = 2,438 > 1,760. Defer."
+   ],
+   [
+    "Nora wants to pay Ava, 8, $10,000 for 'modeling' in two photos. What concerns would the IRS raise?",
+    "Reasonableness: $10,000 for two photos is not an arm's-length wage. The excess is a disguised gift; the deduction would be denied."
+   ],
+   [
+    "Erik's shares have a $6,000 gain after 10 months. He is in the 24% bracket. What does waiting 3 more months save, and what is the risk?",
+    "6,000 × (24% − 15%) = $540. Risk: the price could fall by more than $540."
+   ],
+   [
+    "A taxpayer sells land to his wholly owned corporation and has it sell to a buyer the next day. Which doctrine applies?",
+    "Step transaction (and substance over form): the steps are collapsed into a direct sale."
+   ]
+  ],
+  "case": [
+   "The Lindqvists' year-end plan",
+   "In December 2026, Nora's photography business has had a strong year and the Lindqvists are in the 22% bracket. Next year Nora plans to take six months off when the family adopts a baby, so they expect to fall into the 12% bracket. Nora is owed $6,000 by clients and has $4,000 of new equipment she could buy in December or January. Leo, 15, has been helping with editing.",
+   [
+    "Should Nora bill and collect the $6,000 before or after December 31?",
+    "Should she buy the equipment in December or January?",
+    "Is paying Leo a sensible shift? What records should she keep?",
+    "Which non-tax factors matter?"
+   ],
+   "Income: defer to the 12% year (bill in late December, collect in January only if not constructively received). Equipment: accelerate the deduction into the 22% year. Paying Leo a reasonable wage for real editing work shifts income and saves SE tax; keep timesheets and pay by check. Non-tax: cash flow, client relations, whether she needs the equipment now."
+  ],
+  "exam": [
+   [
+    "Explain the three basic tax planning strategies and give one example of each.",
+    6,
+    "Timing (when: accelerate deductions, defer income); income shifting (who: wages to children, subject to kiddie tax and assignment-of-income limits); conversion (what kind: long-term gains, municipal interest)."
+   ],
+   [
+    "A taxpayer in the 24% bracket can take a $20,000 deduction this year or next. The discount rate is 6%. Compute the present value of the tax savings in each case if (a) rates stay the same and (b) next year's rate is 35%. Advise.",
+    6,
+    "(a) Now 4,800; next 4,800 ÷ 1.06 = 4,528: accelerate. (b) Next 7,000 ÷ 1.06 = 6,604 > 4,800: defer."
+   ]
+  ],
+  "outcomes": [
+   "Name the three basic planning strategies",
+   "Use present value to compare timing choices",
+   "Explain why rising rates reverse the timing rule",
+   "Shift income within limits, including the kiddie tax",
+   "Convert ordinary income to lower-taxed income",
+   "Apply the judicial doctrines and tell avoidance from evasion"
+  ],
+  "take": [
+   "Plan for after-tax wealth, not the lowest tax",
+   "Accelerate deductions and defer income when rates hold",
+   "Reverse the rule when rates will rise",
+   "Shifting needs real work and reasonable pay",
+   "Long-term gains and tax-exempt income convert to lower rates",
+   "A plan needs a business purpose; evasion is a crime"
+  ]
+ },
+ "4": {
+  "warmup": [
+   "Look at a blank 2026 Form 1040. Where would your own income, deductions and payments go?",
+   "Have students find lines for wages, AGI, standard deduction, taxable income, tax, credits and payments. This is the map for 4.1 and the whole course."
+  ],
+  "acts": [
+   [
+    "Order the lines: credits, AGI, taxable income, gross income, payments, tax, standard deduction.",
+    "Gross income, AGI, standard deduction, taxable income, tax, credits, payments."
+   ],
+   [
+    "Why would a taxpayer prefer a $2,000 deduction for AGI to a $2,000 itemized deduction?",
+    "It's available even if they take the standard deduction, and it lowers AGI, which raises the value of floors (medical) and keeps credits from phasing out."
+   ],
+   [
+    "Sam's parents are divorced. He lived 7 months with Maria and 5 with his father, who earns more. Who claims him?",
+    "Both are parents; Sam lived longer with Maria, so she wins the tie-breaker (AGI only matters if time is equal)."
+   ],
+   [
+    "Ruth's IRA withdrawals rise to $6,000. Can Jake still claim her?",
+    "No. Her gross income is above $5,300, so she fails the qualifying relative test."
+   ],
+   [
+    "A widow's husband died in March 2025. She has a dependent son. What status can she use for 2025, 2026, 2027 and 2028?",
+    "2025: married filing jointly. 2026 and 2027: qualifying surviving spouse. 2028: head of household if she still keeps a home for him."
+   ],
+   [
+    "Who qualifies as head of household? (a) A divorced father whose daughter lives with him 4 months. (b) A single woman supporting her mother in a nursing home. (c) A married man whose wife left in March, keeping a home for their son.",
+    "(a) No: under half the year. (b) Yes: a dependent parent's home. (c) Yes: considered unmarried (abandoned spouse)."
+   ]
+  ],
+  "case": [
+   "The Ortiz household",
+   "Maria Ortiz, 46, divorced in 2023, lives in Marshall. Sam, 20, is a full-time SMSU student who lives in a dorm from September to May and at home in summer. He earned $9,000 waiting tables in 2026, and Maria spent $14,000 on his tuition, food and car. Maria's niece Rosa, 30, moved in with them in February after losing her job; she had no income and Maria supported her. Sam's father, who earns more, wants to claim Sam.",
+   [
+    "Is Sam Maria's qualifying child, and can his father claim him?",
+    "Is Rosa a dependent of Maria? Why or why not?",
+    "What filing status should Maria use?",
+    "What standard deduction does Sam get on his own return?"
+   ],
+   "Sam passes all tests for Maria; his father can't win the tie-breaker because Sam lives with Maria (school absence is temporary). Rosa: a niece is a listed relative, gross income $0 and over half support, so she is a qualifying relative even though she arrived in February. Maria files head of household. Sam's standard deduction: greater of $1,350 or $9,000 + $450 = $9,450, so he owes no income tax but should file to recover withholding."
+  ],
+  "exam": [
+   [
+    "List and explain the tests for a qualifying child, and the tie-breaker rules.",
+    6,
+    "Relationship, age (under 19 / under 24 student / younger than claimant), residence (over half the year, temporary absences count), support (child not over half own support); joint return test. Tie-breakers: parent over non-parent; between parents, longer residence, then higher AGI."
+   ],
+   [
+    "A married couple filing jointly have gross income of $95,000, deductions for AGI of $3,000 and two children aged 10 and 12. Compute their 2026 taxable income and tax before credits, and the child tax credit.",
+    6,
+    "AGI 92,000; less 32,200 = 59,800 taxable. Tax: 2,480 + 12% × 35,000 = 4,200 → 6,680. CTC 2 × 2,200 = 4,400."
+   ]
+  ],
+  "outcomes": [
+   "Work through the individual tax formula",
+   "Tell deductions for AGI from deductions from AGI",
+   "Apply the qualifying child tests and tie-breakers",
+   "Apply the qualifying relative tests",
+   "Choose among the five filing statuses",
+   "Decide who qualifies as head of household"
+  ],
+  "take": [
+   "Gross income → AGI → taxable income → tax → credits → payments",
+   "Above-the-line deductions are worth more because AGI drives other limits",
+   "A qualifying child: relationship, age, residence, support",
+   "A qualifying relative: relationship or household, income under $5,300, support",
+   "Status depends on marital status on December 31",
+   "Head of household needs a home for a qualifying person"
+  ]
+ },
+ "5": {
+  "warmup": [
+   "Your grandmother gives you $1,000 for your birthday, and your employer gives you a $1,000 bonus. Are they taxed the same way?",
+   "No: the gift is excluded and the bonus is wages. Use it to introduce the all-inclusive definition and exclusions."
+  ],
+  "acts": [
+   [
+    "Income or not? (a) Finding $500 cash in a used couch. (b) A $2,000 increase in a 401(k) balance. (c) A tax refund of Minnesota income tax deducted last year. (d) Frequent-flyer miles earned on personal travel.",
+    "(a) Income (treasure trove). (b) Not yet: deferred. (c) Income under the tax benefit rule if deducted with a benefit. (d) IRS doesn't tax personal-use miles."
+   ],
+   [
+    "A landlord receives, in December 2026, January 2027 rent of $1,500 and a refundable security deposit of $1,500. What is 2026 income?",
+    "$1,500: prepaid rent is taxed when received. The refundable deposit is not income while it may be returned."
+   ],
+   [
+    "A bank cancels $8,000 of a solvent taxpayer's credit card debt. What is the tax effect?",
+    "$8,000 of gross income from discharge of debt (Form 1099-C), unless an exclusion such as insolvency applies."
+   ],
+   [
+    "Married retirees: pension $30,000, Social Security $28,000, municipal interest $4,000. Compute provisional income and the taxable benefits.",
+    "Provisional: 30,000 + 4,000 + 14,000 = 48,000 (over $44,000). Taxable: lesser of 85% × 28,000 = 23,800 or 85% × (48,000 − 44,000) + lesser of 6,000 or 50% × 28,000 = 3,400 + 6,000 = 9,400. Taxable $9,400."
+   ],
+   [
+    "Sam's roommate gets a $10,000 scholarship: $7,000 tuition, $600 books, $2,400 housing. He also earns $3,000 as a lab assistant. Gross income?",
+    "$2,400 housing + $3,000 wages = $5,400."
+   ],
+   [
+    "Rank these by after-tax value to Jake (12% income tax, 7.65% payroll): $1,000 cash, $1,000 of health insurance, $1,000 of dependent care assistance.",
+    "Health insurance and dependent care are worth $1,000; cash is worth about $803."
+   ]
+  ],
+  "case": [
+   "Ruth's retirement income",
+   "Ruth Lindqvist, 68, widowed, lives in Tracy on $24,000 of Social Security and $4,800 of IRA withdrawals. Suppose that in 2026 she also earns $900 of interest on a CD and $400 on Minnesota municipal bonds, inherits $30,000 from her sister, receives $10,000 of life insurance on her sister's death, and wins $1,200 at a casino.",
+   [
+    "Compute Ruth's provisional income.",
+    "How much of her Social Security is taxable?",
+    "List what is excluded and what is included.",
+    "Does she still qualify as Jake's dependent?"
+   ],
+   "Provisional: 4,800 + 900 + 1,200 + 400 (muni) + 12,000 = 19,300 < 25,000, so benefits are not taxable. Included: IRA 4,800, interest 900, gambling 1,200 = 6,900. Excluded: inheritance, life insurance, muni interest, benefits. Gross income $6,900 is over $5,300, so she no longer qualifies as Jake's dependent: the casino win cost Jake a $500 credit."
+  ],
+  "exam": [
+   [
+    "Explain the realization principle and the return-of-capital principle, with an example of each.",
+    4,
+    "Income is taxed only when realized in a transaction (unsold shares that rise are not taxed). Recovering your investment is not income (sale for $5,000 of shares costing $3,000 gives $2,000 of income)."
+   ],
+   [
+    "A single taxpayer has a pension of $18,000, tax-exempt interest of $2,000 and Social Security of $20,000. Compute the taxable Social Security.",
+    5,
+    "Provisional: 18,000 + 2,000 + 10,000 = 30,000. Between 25,000 and 34,000: lesser of 50% × 20,000 = 10,000 or 50% × 5,000 = 2,500. Taxable $2,500."
+   ]
+  ],
+  "outcomes": [
+   "Apply the all-inclusive definition of gross income",
+   "Decide when and to whom income is taxed",
+   "Identify common and less obvious income",
+   "Compute taxable Social Security benefits",
+   "Apply the main exclusions, including scholarships",
+   "Explain the tax value of fringe benefits"
+  ],
+  "take": [
+   "Everything is income unless excluded",
+   "Cash-method income is taxed when received or available",
+   "Barter, prizes, forgiven debt and illegal income are taxable",
+   "Up to 85% of benefits are taxable, by provisional income",
+   "Scholarships are tax-free only for tuition, fees and books",
+   "Tax-free fringes are worth more than equal cash"
+  ]
+ },
+ "6": {
+  "warmup": [
+   "Which personal expenses do you think should be deductible: rent, student loan interest, medical bills, gifts to church, car payments? Vote, then we'll see what the law says.",
+   "Collect votes. Reveal: student loan interest (above the line), medical (over 7.5%), charity (yes), car loan interest (only new US-assembled cars, 2025–2028), rent (no). Leads to 6.1 and 6.2."
+  ],
+  "acts": [
+   [
+    "Nora, 37, has family HDHP cover. What is the most she and Jake can put into an HSA for 2026, and what does it save at 12% income tax?",
+    "$8,750 family limit; saves $1,050 of income tax (more if contributed through payroll, avoiding FICA)."
+   ],
+   [
+    "A married couple, both 66, have MAGI of $170,000. What is their total senior deduction?",
+    "Phase-out: 6% × (170,000 − 150,000) = 1,200 each. 4,800 × 2 = $9,600."
+   ],
+   [
+    "AGI $80,000; medical costs: doctor $2,500, prescriptions $1,200, gym membership $600, health premiums paid after tax $4,000, insurance reimbursed $1,000 of the doctor bills. Deductible amount?",
+    "Qualifying: 1,500 + 1,200 + 4,000 = 6,700 (gym not medical). Floor 6,000. Deductible $700."
+   ],
+   [
+    "A single filer with MAGI of $600,000 paid $50,000 of state income and property tax in 2026. What can she deduct?",
+    "Cap: 40,400 − 30% × 95,000 = 40,400 − 28,500 = 11,900 (above the $10,000 floor). Deduct $11,900."
+   ],
+   [
+    "The Lindqvists give $1,800 cash to their church in 2026 and take the standard deduction. What can they deduct? What if they itemized?",
+    "Non-itemizer: up to $2,000 joint, so $1,800. If itemizing: only the amount over 0.5% × 116,281 = 581, i.e. $1,219."
+   ],
+   [
+    "How could the Lindqvists bunch to itemize? Estimate what they'd need.",
+    "Itemized $18,500 vs $32,200: they'd need about $13,700 more, e.g. several years' charitable gifts through a donor-advised fund in one year. Probably not worth it."
+   ]
+  ],
+  "case": [
+   "Erik and Kari itemize",
+   "Erik and Kari Lindqvist live in Minneapolis and file jointly. Their 2026 AGI is $280,000. They paid $14,000 of Minnesota income tax and $9,500 of property tax, $16,000 of interest on a $500,000 mortgage, $3,000 of unreimbursed medical costs, and gave $6,000 cash to charity. They also contributed $8,750 to an HSA through Kari's employer.",
+   [
+    "Compute their itemized deductions.",
+    "Should they itemize?",
+    "What is the value of itemizing at their marginal rate?",
+    "How does the HSA affect the calculation?"
+   ],
+   "Taxes 23,500 (under $40,400); mortgage interest 16,000 (debt under $750,000); medical 0 (floor 21,000); charity 6,000 − 0.5% × 280,000 = 4,600. Total $44,100 vs $32,200: itemize, $11,900 more. Taxable income about $235,900 puts them in the 24% bracket, so itemizing is worth about $2,856. The HSA contribution through payroll is excluded from wages, so it already reduced AGI (and payroll tax)."
+  ],
+  "exam": [
+   [
+    "Distinguish deductions for AGI from itemized deductions and explain why the distinction matters. Give two examples of each.",
+    5,
+    "For AGI: available to all, reduce AGI (e.g. half SE tax, HSA, IRA, student loan interest). Itemized: only if they exceed the standard deduction (medical over 7.5%, SALT up to cap, mortgage interest, charity). AGI drives floors and phase-outs."
+   ],
+   [
+    "A single taxpayer, AGI $90,000, has medical costs of $8,000, state taxes of $7,000, mortgage interest of $5,500 and cash gifts to charity of $1,450. Compute itemized deductions and advise whether to itemize in 2026.",
+    6,
+    "Medical 8,000 − 6,750 = 1,250; taxes 7,000; interest 5,500; charity 1,450 − 450 = 1,000. Total 14,750 < 16,100: take the standard deduction plus $1,000 non-itemizer charitable deduction."
+   ]
+  ],
+  "outcomes": [
+   "Identify deductions for AGI",
+   "Apply the senior and car loan deductions",
+   "Compute the medical expense deduction",
+   "Apply the 2026 SALT cap",
+   "Deduct mortgage interest and charitable gifts",
+   "Choose between itemizing and the standard deduction"
+  ],
+  "take": [
+   "Above-the-line deductions help everyone and lower AGI",
+   "Seniors get $6,000 and new-car buyers up to $10,000, through 2028",
+   "Medical costs count only above 7.5% of AGI",
+   "SALT is capped at $40,400 in 2026",
+   "Mortgage interest up to $750,000 of debt; charity has a 0.5% floor and a non-itemizer deduction",
+   "Take the larger of standard or itemized"
+  ]
+ },
+ "7": {
+  "warmup": [
+   "You bought a share for $100 and it's now $70. Should you sell before December 31? What if you still like the company?",
+   "Draw out tax-loss harvesting and the wash sale trap (7.4, 7.5). Ask what happens if you buy it back next week."
+  ],
+  "acts": [
+   [
+    "Rank by after-tax yield for a Minnesota resident in the 24% federal and 7.85% state bracket: 5% corporate bond, 4.6% Treasury, 3.8% Minnesota municipal bond.",
+    "Corporate: 5 × (1 − 0.24 − 0.0785) ≈ 3.41%. Treasury: 4.6 × 0.76 = 3.50%. Minnesota muni: 3.8% (exempt both). Muni wins. (Ignores the federal deduction for state tax, which is capped.)"
+   ],
+   [
+    "Ruth gives Leo shares worth $6,000 with her basis $9,000. Leo sells them for $5,000. What is his loss? What if he sells for $7,000?",
+    "Dual basis: for loss, basis is the lower FMV $6,000, loss $1,000. For gain, basis is $9,000, but $7,000 is between, so no gain or loss."
+   ],
+   [
+    "A single filer has $40,000 of ordinary taxable income and a $20,000 long-term gain. Compute the tax on the gain.",
+    "0% band ends at 49,450: 9,450 at 0%; 10,550 at 15% = $1,582.50."
+   ],
+   [
+    "Net: STCG 2,000, STCL (7,000), LTCG 3,000, LTCL (1,000). Result?",
+    "Net ST loss (5,000); net LT gain 2,000; net ST loss (3,000): deduct $3,000, no carryforward."
+   ],
+   [
+    "Jake sells 100 shares at a $1,500 loss on December 20 and buys 60 of the same shares on January 5. What is disallowed?",
+    "60% of the loss, $900, is disallowed and added to the basis of the 60 new shares; $600 is deductible."
+   ],
+   [
+    "A single filer has MAGI of $230,000, including $40,000 of net investment income. Compute the NIIT.",
+    "3.8% × lesser of 40,000 or (230,000 − 200,000 = 30,000) = $1,140."
+   ]
+  ],
+  "case": [
+   "Jake's portfolio review",
+   "In 2026 Jake sold: shares bought in 2019 for $4,000, sold for $9,000; shares bought in June 2026 for $6,000, sold in November for $4,500; shares inherited from his father worth $12,000 at death, sold for $11,000; and a gold coin bought in 2010 for $1,000, sold for $2,500. He also wants to sell his losing bank shares (cost $7,000, value $3,000) in December and buy them back in January.",
+   [
+    "Classify each sale and compute the gain or loss.",
+    "Net the results. What rate applies, given the Lindqvists' taxable income of $78,505 before these sales?",
+    "Advise on the December bank share plan.",
+    "What would happen if Jake sold the bank shares to Erik instead?"
+   ],
+   "2019 shares: LTCG 5,000. June shares: STCL (1,500). Inherited: LTCL (1,000), always long-term. Coin: LT collectible gain 1,500 (28% max). Net LT 5,500 (incl. 1,500 collectible); net ST (1,500); offsets first against the 28% gain, so net gain 4,000 at 0% for regular LT gains as taxable income stays under $98,900. Bank shares: a January buyback within 30 days is a wash sale; wait 31 days or buy a different bank. Selling to Erik: related party, loss disallowed."
+  ],
+  "exam": [
+   [
+    "Explain how basis is determined for purchased, inherited and gifted property, and how each affects the holding period.",
+    6,
+    "Purchased: cost plus fees, holding from purchase. Inherited: FMV at death (step-up), always long-term. Gift: carryover basis (lower FMV for losses if value is below basis), holding period tacks."
+   ],
+   [
+    "A married couple has ordinary taxable income of $90,000, a net long-term capital gain of $20,000 and qualified dividends of $5,000. Compute their 2026 tax.",
+    7,
+    "Ordinary tax on 90,000: 2,480 + 12% × 65,200 = 7,824 → 10,304. 0% band to 98,900: 8,900 of the 25,000 at 0%; 16,100 at 15% = 2,415. Total $12,719."
+   ]
+  ],
+  "outcomes": [
+   "Tax interest and dividends correctly",
+   "Determine basis and holding period",
+   "Apply 2026 capital gains rates",
+   "Net gains and losses and apply the $3,000 limit",
+   "Spot wash sales and related-party losses",
+   "Apply the investment interest, NIIT and passive loss rules"
+  ],
+  "take": [
+   "Muni interest is federally exempt; qualified dividends get gain rates",
+   "Inherited property steps up; gifts carry over basis",
+   "Gains stack on top of ordinary income: 0%, 15%, 20%",
+   "Net within, then across; deduct $3,000 of net loss",
+   "Wash sales defer losses; related-party losses are lost",
+   "3.8% NIIT and passive rules target high earners and shelters"
+  ]
+ },
+ "8": {
+  "warmup": [
+   "A tax refund: good news or bad planning? Discuss.",
+   "A refund means you lent the IRS money interest-free; a big balance due risks penalties. The aim is to land near zero using withholding and estimates (8.6)."
+  ],
+  "acts": [
+   [
+    "Compute 2026 tax for a single filer with taxable income of $95,000 using the rate schedule.",
+    "5,800 + 22% × 44,600 = 9,812 → $15,612."
+   ],
+   [
+    "A 16-year-old has $7,000 of interest and no earned income. How much is taxed at the parents' rate?",
+    "7,000 − 2,700 = $4,300."
+   ],
+   [
+    "An employee earns $200,000 of wages in 2026. Compute employee and employer FICA.",
+    "Employee: 6.2% × 184,500 = 11,439 + 1.45% × 200,000 = 2,900 → 14,339 (no additional Medicare until over $200,000). Employer: the same, $14,339."
+   ],
+   [
+    "A head of household with AGI $40,000 pays $6,000 of care for two children under 13. Compute the dependent care credit.",
+    "Rate: 50% − 1 point per $2,000 over $15,000 = 50 − 13 = 37%. Credit 37% × 6,000 = $2,220."
+   ],
+   [
+    "A married couple with MAGI $170,000 pays $5,000 of first-year tuition for their daughter. AOTC?",
+    "2,500 × (180,000 − 170,000)/20,000 = $1,250."
+   ],
+   [
+    "Nora expects her 2026 profit to double. Why might paying 100% of last year's tax still be wise?",
+    "It is a safe harbor regardless of this year's income, avoiding penalties; she must still pay the balance by April 15, 2027."
+   ]
+  ],
+  "case": [
+   "The Lindqvists' 2026 credits",
+   "The Lindqvists' 2026 regular tax is $8,925 on taxable income of $78,505 (AGI $116,281). Ava (8) and Leo (15) are qualifying children. They paid $3,000 for Ava's after-school care. Jake took a $3,000 graduate course. Ruth qualifies as Jake's dependent. Nora's self-employment tax is $4,239. Jake had $6,000 withheld and Nora paid $3,000 of estimates.",
+   [
+    "Compute each credit the family can claim.",
+    "Which credits are refundable?",
+    "Compute the tax due or refund.",
+    "Did they meet a safe harbor if last year's tax was $8,400?"
+   ],
+   "CTC 2 × 2,200 = 4,400; ODC for Ruth 500; dependent care 35% × 3,000 = 1,050; lifetime learning 20% × 3,000 = 600 (MAGI under $160,000). Nonrefundable credits used against tax: 8,925 − 6,550 = 2,375. Add SE tax 4,239: total tax 6,614. Payments 9,000: refund $2,386. Payments exceeded 100% of last year's $8,400, so no penalty."
+  ],
+  "exam": [
+   [
+    "Distinguish refundable from nonrefundable credits and give an example of each. Why does the difference matter for low-income families?",
+    5,
+    "Nonrefundable credits reduce tax only to zero (dependent care, lifetime learning, ODC); refundable credits are paid out (EITC, part of CTC and AOTC). Low-income families owe little tax, so only refundable credits help them fully."
+   ],
+   [
+    "A self-employed single taxpayer has net profit of $80,000 and no other income. Compute self-employment tax and the deduction for AGI.",
+    5,
+    "80,000 × 92.35% = 73,880 × 15.3% = $11,304 SE tax; deduction $5,652."
+   ]
+  ],
+  "outcomes": [
+   "Compute the regular tax from the 2026 schedules",
+   "Apply the kiddie tax and describe the AMT",
+   "Compute FICA and self-employment tax",
+   "Compute the child tax and dependent care credits",
+   "Compare and compute the education credits",
+   "Describe the EITC and apply the estimated tax safe harbors"
+  ],
+  "take": [
+   "Each rate applies only to income in its bracket",
+   "Kiddie tax above $2,700; AMT is a parallel, broader tax",
+   "SE tax is 15.3% of 92.35% of net profit; half is deductible",
+   "$2,200 per child under 17; care credit 20%–50% from 2026",
+   "AOTC up to $2,500; lifetime learning 20% of $10,000",
+   "Pay as you go: 90% now, 100% or 110% of last year"
+  ]
+ },
+ "9": {
+  "warmup": [
+   "Name three things a photographer might spend money on. Which would you allow as tax deductions, and which not?",
+   "Expect cameras (capitalize), software, travel, clothing (not deductible unless unsuitable for street wear), meals. Introduces ordinary and necessary, capitalization and limits."
+  ],
+  "acts": [
+   [
+    "Deductible on Schedule C? (a) Nora's continuing-education course in drone photography. (b) A suit to wear at weddings. (c) A $500 fine for flying a drone illegally. (d) Website hosting.",
+    "(a) Yes: maintains skills in her existing business. (b) No: suitable for everyday wear. (c) No: fines. (d) Yes."
+   ],
+   [
+    "Nora spends $300 on client lunches, $500 on baseball tickets for clients and $90 on a gift basket for one client. Deduction?",
+    "Meals 150 + entertainment 0 + gift 25 = $175."
+   ],
+   [
+    "Nora's home is 2,000 sq ft; her studio is 300 sq ft. Actual home costs (interest, taxes, utilities, depreciation) are $16,000. Compare methods.",
+    "Actual: 15% × 16,000 = $2,400 (with depreciation recapture later). Simplified: $1,500. Actual gives more now."
+   ],
+   [
+    "Leo earns $1,200 selling drone footage online, spends $1,500 on gear and software, keeps no records and does it for fun. Tax result?",
+    "Likely a hobby: $1,200 of income, no deduction for the $1,500."
+   ],
+   [
+    "An accrual-method business receives $24,000 on December 1, 2026 for a 24-month service contract. How much income in 2026 for tax?",
+    "Under the one-year deferral: 2026 income is the 1,000 earned for financial reporting; the remaining $23,000 is taxed in 2027 (deferral beyond one year isn't allowed)."
+   ],
+   [
+    "A single dentist's taxable income before QBI is $150,000 with QBI of $120,000. What is the deduction?",
+    "Below the $201,750 threshold, specified service rules don't bite: lesser of 20% × 120,000 = 24,000 or 20% × 150,000 = 30,000 → $24,000."
+   ]
+  ],
+  "case": [
+   "Prairie Lens grows",
+   "In 2027 Nora expects receipts of $90,000. She is considering: hiring an assistant at $20,000; renting a downtown Marshall studio for $9,600 a year and giving up her home office; leasing an SUV used 80% for business; and taking a client trip to a photography trade show in Las Vegas with two extra vacation days.",
+   [
+    "Which costs are deductible, and how much?",
+    "What happens to her home office deduction and her commuting?",
+    "How are the Las Vegas trip costs treated?",
+    "How do these changes affect her QBI deduction and SE tax?"
+   ],
+   "Wages and rent are ordinary and necessary. With a downtown studio as her principal place of business, the home office goes and trips from home to the studio become commuting. SUV: 80% of costs. Las Vegas: airfare fully deductible if the trip is primarily business; lodging and 50% of meals for business days only. Lower net profit means lower SE tax and a smaller QBI deduction, but more after-tax profit overall if the costs generate revenue."
+  ],
+  "exam": [
+   [
+    "Explain the requirements for deducting a home office and compare the two methods of computing it.",
+    5,
+    "Regular and exclusive use; principal place of business or client meetings. Simplified: $5/sq ft, max 300 sq ft ($1,500), no depreciation. Actual: business % of home costs including depreciation, limited to business income; depreciation is recaptured on sale."
+   ],
+   [
+    "A married sole proprietor has net profit of $60,000. The couple's taxable income before QBI is $70,000. Compute SE tax, the deduction for half of it, QBI and the QBI deduction.",
+    6,
+    "SE tax 60,000 × 92.35% × 15.3% = 8,478; half 4,239. QBI 60,000 − 4,239 = 55,761; 20% = 11,152; limit 20% × 70,000 = 14,000; deduction $11,152."
+   ]
+  ],
+  "outcomes": [
+   "Apply the ordinary, necessary and reasonable tests",
+   "Apply limits on meals, entertainment, gifts and fines",
+   "Compute home office, vehicle and travel deductions",
+   "Distinguish a business from a hobby",
+   "Apply accounting periods and methods",
+   "Compute the QBI deduction below the threshold"
+  ],
+  "take": [
+   "Ordinary, necessary, reasonable, and in a trade or business",
+   "Meals 50%, entertainment 0%, gifts $25",
+   "Home office: regular and exclusive; commuting is personal",
+   "Hobby income is taxed, hobby costs aren't deductible",
+   "Cash for most small businesses; accrual needs all events and performance",
+   "20% of QBI, limited to 20% of taxable income"
+  ]
+ },
+ "10": {
+  "warmup": [
+   "Your business buys a $3,000 laptop. Should it be an expense this year or spread over its life? Argue both sides.",
+   "Matching says spread it; simplicity and incentives say expense it. Tax law does both: de minimis safe harbor (up to $2,500), Section 179, bonus, or MACRS."
+  ],
+  "acts": [
+   [
+    "Capitalize or deduct? (a) Repainting the studio. (b) Adding a darkroom. (c) A $900 lens. (d) Replacing the studio's entire HVAC system.",
+    "(a) Deduct (maintenance). (b) Capitalize (betterment). (c) Deduct under the $2,500 de minimis safe harbor. (d) Capitalize (restoration of a unit of property)."
+   ],
+   [
+    "Which convention? Purchases: $20,000 in February, $8,000 in October, $10,000 in December.",
+    "Q4 = 18,000 of 38,000 = 47% > 40%: mid-quarter."
+   ],
+   [
+    "Compute MACRS for 2026–2028 on a $30,000 seven-year machine placed in service in 2026 (no bonus, no 179).",
+    "4,287; 7,347; 5,247."
+   ],
+   [
+    "A business with $100,000 of taxable income buys $150,000 of equipment and elects $150,000 of Section 179. What is deductible, and what carries forward? What would bonus do instead?",
+    "Section 179 deduction $100,000; $50,000 carries forward. Bonus: $150,000 deducted, creating a $50,000 loss (NOL)."
+   ],
+   [
+    "Erik's duplex: what depreciation in 2027 and 2028? What if it were an office building?",
+    "$10,000 each year (27.5 years). Office: 39 years, $275,000 ÷ 39 = $7,051 a year."
+   ],
+   [
+    "Nora pays $8,000 of legal and setup costs to start a second business. What can she deduct in year one if it starts on July 1?",
+    "$5,000 now; $3,000 over 180 months: $16.67 × 6 = $100. Total $5,100."
+   ]
+  ],
+  "case": [
+   "Prairie Lens buys equipment",
+   "Suppose that in 2026 Nora's business had made $30,000 of profit before any of these purchases, and she bought: a $14,000 drone kit (five-year) in May; a $4,500 studio lighting set (seven-year) in August; a $2,200 laptop in September; and an SUV for $45,000 in October that she'll use 70% for business. The couple's taxable income puts them in the 12% bracket.",
+   [
+    "Which items qualify for the de minimis safe harbor?",
+    "Which convention applies, and why does it matter?",
+    "Should Nora use Section 179, bonus or regular MACRS? Consider her income, SE tax and QBI deduction.",
+    "What special rules apply to the SUV?"
+   ],
+   "Laptop: de minimis ($2,200). Q4 purchases: 45,000 of 63,500 depreciable cost = 71%, over 40%: mid-quarter for MACRS (property expensed under Section 179 is left out of the 40% test, so expensing the drone and lights would make it worse). Expensing everything would wipe out profit and SE tax but also the QBI deduction, and deductions are worth only 12% plus SE tax now; she might expense the drone kit and lighting and use regular MACRS on the SUV. SUV: listed property, 70% business use > 50%, so MACRS on the 70% business share; check the luxury auto caps (heavy SUVs over 6,000 lbs are exempt from the caps but have a lower Section 179 limit)."
+  ],
+  "exam": [
+   [
+    "Compare Section 179 and bonus depreciation in 2026 under four headings: dollar limit, income limit, election, and effect on a loss.",
+    4,
+    "179: $2,560,000 limit (phase-out above $4,090,000); limited to business income; must elect; can't create a loss. Bonus: no limit; no income limit; automatic unless elected out; can create a loss."
+   ],
+   [
+    "A $50,000 five-year asset is placed in service in 2026; the taxpayer elects $20,000 of Section 179 and elects out of bonus. Compute 2026 and 2027 deductions.",
+    5,
+    "2026: 20,000 + 20% × 30,000 = 26,000. 2027: 32% × 30,000 = 9,600."
+   ]
+  ],
+  "outcomes": [
+   "Determine cost basis and capitalize correctly",
+   "Assign MACRS classes and conventions",
+   "Compute MACRS from the tables",
+   "Apply Section 179 and its limits",
+   "Apply bonus depreciation and the ordering rules",
+   "Depreciate buildings, apply listed property rules and amortize intangibles"
+  ],
+  "take": [
+   "Basis is everything paid to get the asset ready",
+   "MACRS: class, method, convention; salvage ignored",
+   "Basis × table rate, half a year in the year of sale",
+   "Section 179: up to $2,560,000, limited to income",
+   "Bonus: 100%, permanent, can create a loss",
+   "Buildings 27.5 or 39 years; intangibles 15 years"
+  ]
+ },
+ "11": {
+  "warmup": [
+   "You sell your old phone for $150. You paid $900. Can you deduct the loss? Should you?",
+   "No: personal-use property losses aren't deductible. Contrast with a business phone (1231 or ordinary loss). Leads to 11.2."
+  ],
+  "acts": [
+   [
+    "Compute gain: a building sold for $500,000 cash plus the buyer assuming a $200,000 mortgage, commission $35,000; original cost $600,000, improvements $50,000, depreciation $180,000.",
+    "Amount realized 665,000. Adjusted basis 470,000. Gain $195,000."
+   ],
+   [
+    "Classify: (a) a delivery van held 3 years, (b) shares held 3 years, (c) a forklift held 6 months, (d) accounts receivable sold to a factor.",
+    "(a) 1231 (with 1245 recapture). (b) Capital. (c) Ordinary. (d) Ordinary."
+   ],
+   [
+    "A machine cost $80,000; depreciation $55,000. Compute ordinary and 1231 gain if sold for (a) $40,000, (b) $90,000, (c) $20,000.",
+    "(a) Gain 15,000, all ordinary. (b) Gain 65,000: 55,000 ordinary, 10,000 1231. (c) Loss 5,000: 1231 loss."
+   ],
+   [
+    "A taxpayer has a $30,000 1231 gain and a $12,000 1231 loss this year and an $8,000 net 1231 loss two years ago. How is the net gain taxed?",
+    "Net 18,000: 8,000 ordinary (lookback), 10,000 long-term capital gain."
+   ],
+   [
+    "Exchange: Building A (basis $300,000, FMV $500,000) for Building B (FMV $450,000) plus $50,000 cash. Gain recognized and basis of B?",
+    "Realized 200,000; recognized 50,000 (boot). Basis B = 300,000 + 50,000 − 50,000 = 300,000 (deferred gain 150,000)."
+   ],
+   [
+    "Ruth's buyer pays $20,000 down and $80,000 over 4 years, plus interest. Recognized gain in the year of sale?",
+    "20,000 × 60% = $12,000; interest is ordinary income as received."
+   ]
+  ],
+  "case": [
+   "Nora upgrades her gear",
+   "In 2027 Nora sells: her old cameras (cost $10,000, depreciation $6,160) for $6,000; a studio printer bought 7 months ago for $3,000 for $2,400; and a lighting set held 4 years (cost $5,000, depreciation $4,000) for $500. A storm destroys her drone (basis $2,000) and insurance pays $9,000; she replaces it for $12,000 within a year. She had a $1,500 net 1231 loss in 2024.",
+   [
+    "Compute the gain or loss on each disposition.",
+    "Classify each as ordinary, 1245 recapture or 1231.",
+    "Net the 1231 items and apply the lookback.",
+    "What is the basis of the new drone?"
+   ],
+   "Cameras: gain 2,160, all 1245 ordinary. Printer: loss 600, ordinary (held under a year). Lighting: loss 500, 1231. Drone: gain 7,000 realized, fully deferred (reinvested), basis 12,000 − 7,000 = 5,000. Net 1231: (500) loss → ordinary loss; the lookback only matters for net gains."
+  ],
+  "exam": [
+   [
+    "Explain Section 1231 netting and the five-year lookback rule, and why Section 1231 is favorable to taxpayers.",
+    5,
+    "Net all 1231 gains and losses after recapture: net gain → LTCG, net loss → ordinary loss. Net gain is ordinary to the extent of unrecaptured net 1231 losses in the prior five years. Favorable because gains get capital rates and losses are fully deductible."
+   ],
+   [
+    "Equipment (cost $60,000, accumulated depreciation $35,000) is sold for $45,000. A building (adjusted basis $200,000, straight-line depreciation $90,000) is sold for $280,000. Compute and characterize each gain for an individual.",
+    6,
+    "Equipment: gain 20,000, all 1245 ordinary. Building: gain 80,000, all unrecaptured 1250 gain (up to 25%), as it is less than the 90,000 depreciation; it's 1231 gain otherwise."
+   ]
+  ],
+  "outcomes": [
+   "Compute amount realized, adjusted basis and gain",
+   "Classify assets as ordinary, capital or 1231",
+   "Apply Section 1245 recapture",
+   "Apply unrecaptured 1250 gain, 1231 netting and the lookback",
+   "Apply like-kind exchange rules and compute basis",
+   "Defer gain on involuntary conversions and installment sales"
+  ],
+  "take": [
+   "Amount realized includes debt relief; basis falls with depreciation",
+   "1231: gains are capital, losses ordinary",
+   "1245: gain is ordinary up to depreciation",
+   "Real estate depreciation is taxed at up to 25% on sale",
+   "1031 defers gain on real property, except boot",
+   "Reinvest proceeds, or get paid over time, to defer gain"
+  ]
+ },
+ "12": {
+  "warmup": [
+   "Would you rather have a $5,000 raise or $5,000 of employer-paid health insurance? A $5,000 bonus or $5,000 of company shares?",
+   "Draw out tax-free fringes (L5), the new tips/overtime deductions for some workers, and the timing and risk of equity pay (12.4, 12.5)."
+  ],
+  "acts": [
+   [
+    "A cash-method employee earns a $10,000 bonus declared December 15, 2026 and paid January 5, 2027 by an accrual-method employer. A second employer pays a bonus on April 1, 2027. Timing?",
+    "First: employer deducts 2026 (within 2½ months), employee includes 2027. Second: paid after March 15, so the employer deducts in 2027."
+   ],
+   [
+    "A bartender with $70,000 MAGI, single, has $30,000 of tips. Tips deduction?",
+    "Capped at $25,000; no phase-out under $150,000."
+   ],
+   [
+    "A single worker with MAGI of $170,000 has $10,000 of qualified overtime premium. Deduction?",
+    "Reduced by $100 per $1,000 over $150,000: 20 × 100 = 2,000. Deduction $8,000."
+   ],
+   [
+    "Nora's assistant: Nora sets hours, provides equipment, trains her, pays hourly. Status and consequences?",
+    "Employee: Nora withholds, pays 7.65% FICA, FUTA and Minnesota unemployment, files W-2."
+   ],
+   [
+    "Kari's ISOs: 1,000 shares at $20, exercised at $50, sold 6 months later at $60. Tax result?",
+    "Disqualifying disposition: $30,000 ordinary income (bargain element), $10,000 short-term capital gain. Employer deducts $30,000."
+   ],
+   [
+    "A startup grants an engineer 50,000 shares worth $0.10 each, vesting in 4 years. Should she file an 83(b)?",
+    "Probably: $5,000 of income now vs potentially large ordinary income at vesting; risk of forfeiture is small in dollars."
+   ]
+  ],
+  "case": [
+   "Sam's restaurant job",
+   "Sam Ortiz, 20, works at a Marshall restaurant: $3,000 of wages and $6,000 of tips in 2026. The restaurant adds an automatic 18% service charge to parties of eight or more, and Sam received $800 of that. He also photographs events for Nora, who paid him $2,500 and treats him as a contractor, though she sets his schedule and provides the cameras. Maria claims Sam as a dependent.",
+   [
+    "Which of Sam's receipts are qualified tips?",
+    "Is Sam Nora's employee or a contractor? What changes if he is an employee?",
+    "Compute Sam's standard deduction and taxable income, before and after the tips deduction.",
+    "What forms should Sam receive?"
+   ],
+   "Qualified tips: $6,000 voluntary tips; the $800 service charge is wages, not tips. With Nora setting hours and providing cameras, Sam looks like an employee; Nora would withhold, pay FICA and issue a W-2 (as a contractor he'd owe SE tax on $2,500 and get a 1099-NEC since it's over $2,000). Standard deduction: earned income 12,300 + 450 = 12,750. Taxable before tips: 12,300 − 12,750 = 0. Tips deduction adds nothing: he already owes no income tax, but still owes FICA. Forms: W-2 from the restaurant (and from Nora if an employee)."
+  ],
+  "exam": [
+   [
+    "Compare the tax treatment of nonqualified stock options and incentive stock options for the employee and employer at grant, exercise and sale.",
+    6,
+    "Grant: nothing for either. Exercise: NQO bargain element is ordinary income (FICA), employer deducts; ISO no regular tax (AMT adjustment), no employer deduction. Sale: NQO gain over FMV at exercise is capital; ISO whole gain is LTCG if held 2 years from grant and 1 from exercise, otherwise disqualifying disposition."
+   ],
+   [
+    "Explain the qualified tips and qualified overtime deductions, including limits, and state what they do not change.",
+    5,
+    "2025–2028; tips: voluntary tips in customarily tipped occupations, up to $25,000; overtime: premium portion of FLSA overtime, up to $12,500 ($25,000 joint); phase-out $100 per $1,000 over $150,000 MAGI ($300,000 joint); SSN required; available to non-itemizers. No effect on FICA."
+   ]
+  ],
+  "outcomes": [
+   "Explain the timing of wages and bonuses for both parties",
+   "Apply the tips and overtime deductions",
+   "Classify workers as employees or contractors",
+   "Compare NQOs and ISOs",
+   "Decide when an 83(b) election makes sense",
+   "Use accountable plans for employee expenses"
+  ],
+  "take": [
+   "Wages: employee taxed when paid; employer deducts reasonable pay",
+   "Tips up to $25,000 and overtime premium up to $12,500, through 2028",
+   "Control decides employee or contractor; 1099-NEC at $2,000 from 2026",
+   "NQO: ordinary at exercise; ISO: capital gain if held",
+   "83(b): pay tax at grant, convert growth to capital gain",
+   "Employees can't deduct work costs: reimburse through an accountable plan"
+  ]
+ },
+ "13": {
+  "warmup": [
+   "If you put $1,000 a year in a retirement account from age 22 to 65 at 6%, roughly how much would you have? Guess, then we'll calculate.",
+   "About $200,000 (FV of annuity: 1,000 × 199.8). Emphasize tax-deferred compounding and starting early (Roth for young, low-rate savers)."
+  ],
+  "acts": [
+   [
+    "An employee leaves after 3 years. Employer contributions total $9,000. Vested amount under (a) 3-year cliff, (b) 6-year graded?",
+    "(a) $9,000. (b) 40% = $3,600 (graded runs 20% after 2 years, 40% after 3)."
+   ],
+   [
+    "A 62-year-old earning $90,000: maximum 401(k) deferral in 2026?",
+    "24,500 + 11,250 (age 60–63) = $35,750, as Roth or traditional since prior FICA wages are under $150,000."
+   ],
+   [
+    "A 45-year-old withdraws $20,000 from a traditional IRA to pay off a credit card. Federal cost at 22%?",
+    "4,400 income tax + 2,000 penalty = $6,400."
+   ],
+   [
+    "Jake and Nora are both 38. What can they put into IRAs in 2026? Would Jake's deduction be limited?",
+    "Up to $7,500 each ($15,000). Jake is covered at work; whether his deduction is limited depends on their MAGI versus the 2026 phase-out range for covered participants: check Pub. 590-A."
+   ],
+   [
+    "Compare a SEP and a solo 401(k) for a sole proprietor with $60,000 net profit, age 40.",
+    "Net earnings ≈ 60,000 − 4,239 = 55,761; SEP ≈ 11,152. Solo 401(k): 24,500 + 11,152 = 35,652 (within net earnings)."
+   ],
+   [
+    "Why would a company prefer paying an executive $100,000 of salary today to $100,000 of NQDC payable in 10 years?",
+    "It deducts the salary now; with NQDC its deduction is deferred 10 years (and the liability grows with earnings credits). It may prefer NQDC only for retention."
+   ]
+  ],
+  "case": [
+   "The Lindqvists save for retirement",
+   "Jake, 39, earns $88,000; his employer matches 100% of 401(k) deferrals up to 4% of pay. He currently defers 3%. Nora, 37, has no plan. The family is in the 12% bracket and expects to be in the 22% bracket in retirement thanks to Jake's pension from a previous employer. Leo earned $3,000 in 2026.",
+   [
+    "How much match is Jake leaving on the table?",
+    "Traditional or Roth for Jake, given the rates? For Nora?",
+    "Which plan should Nora set up, and how much can she contribute for 2026?",
+    "What should Leo do with some of his $3,000?"
+   ],
+   "Jake: raise deferral to 4% to get $3,520 of match (he's missing $880). At 12% now vs 22% later, Roth contributions look better for both. Nora: SEP ($5,576 max) is simplest and can be set up for 2026 until the return's due date; or a solo 401(k) with a Roth option. Leo: a Roth IRA, up to $3,000."
+  ],
+  "exam": [
+   [
+    "Compare traditional and Roth 401(k) contributions. Under what conditions does each produce more after-tax wealth?",
+    5,
+    "Traditional: deductible now, taxed on withdrawal. Roth: taxed now, qualified withdrawals tax-free. With equal rates they produce the same; traditional wins if the rate at withdrawal is lower, Roth if higher."
+   ],
+   [
+    "A self-employed taxpayer, age 52, has net profit of $120,000. Compute the SE tax, the deductible half and the maximum SEP contribution.",
+    5,
+    "SE: 120,000 × 92.35% = 110,820 × 15.3% = 16,955; half 8,478. Net earnings 111,522; SEP 20% = $22,304."
+   ]
+  ],
+  "outcomes": [
+   "Compare defined benefit and defined contribution plans",
+   "Choose between traditional and Roth 401(k)",
+   "Apply the early withdrawal and RMD rules",
+   "Apply the 2026 IRA rules and conversions",
+   "Compute SEP contributions for the self-employed",
+   "Explain nonqualified deferred compensation"
+  ],
+  "take": [
+   "Qualified plans: employer deducts now, employee taxed later",
+   "Traditional if your rate will fall, Roth if it will rise; always take the match",
+   "10% penalty before 59½; RMDs from 73 or 75",
+   "$7,500 to IRAs in 2026; conversions are taxed now",
+   "SEP: about 20% of net earnings; solo 401(k) adds a $24,500 deferral",
+   "NQDC defers the employee's tax and the employer's deduction"
+  ]
+ },
+ "14": {
+  "warmup": [
+   "Rent or buy? List every tax factor you can think of on each side.",
+   "Buy: mortgage interest and property tax (only if itemizing), tax-free gain on sale. Rent: no deductions but flexibility; standard deduction often makes the buying advantage smaller than people think."
+  ],
+  "acts": [
+   [
+    "A married couple bought a home for $300,000, added $50,000 of improvements and sells it after 8 years for $900,000 with $50,000 of costs. Taxable gain?",
+    "Realized 850,000 − 350,000 = 500,000. Fully excluded. Any more would be LTCG."
+   ],
+   [
+    "A single owner lived in a home for 2 years, then rented it out for 3 years (depreciation $20,000) and sold it. Gain $150,000. Taxable?",
+    "The 3 rental years came after the last use as a main home, so they aren't nonqualified use. Depreciation $20,000 is taxable (unrecaptured 1250); the remaining $130,000 is excluded."
+   ],
+   [
+    "The Lindqvists take a $60,000 home equity loan: $40,000 for a kitchen remodel and $20,000 to pay off car loans. What interest is deductible?",
+    "Two-thirds (the remodel portion) is qualified residence interest, if they itemize."
+   ],
+   [
+    "A buyer pays $2,000 of points on a $300,000 mortgage for a new main home and $1,500 on a refinance of a 15-year loan. Deduction this year (refinance in July)?",
+    "Purchase points $2,000 now; refinance 1,500 ÷ 180 months × 6 = $50."
+   ],
+   [
+    "A home is sold on March 15 (73 days). Annual property tax $4,380, paid by the buyer. Who deducts what?",
+    "Seller 73/365 × 4,380 = $876; buyer $3,504."
+   ],
+   [
+    "A condo is rented 200 days and used personally 25 days. Which category? What if personal use were 15 days?",
+    "25 days > 20 (10% of 200): residence with rental use. 15 days: not more than 20, so rental property."
+   ]
+  ],
+  "case": [
+   "The Lindqvists move to a bigger house",
+   "In 2026 the Lindqvists sell their Marshall home (cost $180,000 in 2014, $40,000 addition, home office used by Nora with the simplified method) for $420,000, with $25,000 of selling costs, and buy a larger home for $480,000 with a $380,000 mortgage, paying $3,800 of points. The sale closes on June 30; the year's $3,650 of property tax on the old home is paid by the buyer in October. They also rented the old house for 10 days during Farmfest for $2,000.",
+   [
+    "What is the gain on the old home, and how much is excluded? Does the home office matter?",
+    "How are the points treated?",
+    "Who deducts the property tax on the old home?",
+    "Should they itemize in 2026? What extra information do you need?"
+   ],
+   "Gain 175,000, all excluded; the simplified home office method claims no depreciation, so no recapture. Purchase points: deductible in 2026 if itemizing. Old-home taxes: seller's share 180/365 × 3,650 = $1,800 (Jan 1 to June 29), buyer $1,850. Farmfest rent is tax-free (under 15 days). Itemizing: compare mortgage interest on both homes, points, Minnesota income tax and property taxes (under the SALT cap) and charity over the floor against $32,200."
+  ],
+  "exam": [
+   [
+    "Explain the requirements for the Section 121 exclusion and when a reduced exclusion is available.",
+    5,
+    "Ownership and use as main home for 2 of the last 5 years; no exclusion in the prior 2 years; $250,000/$500,000 (both spouses meet use for $500,000). Reduced (prorated by months/24) for sales due to employment change, health or unforeseen circumstances."
+   ],
+   [
+    "A taxpayer rents a vacation home for 90 days and uses it 30 days. Rent $12,000; mortgage interest and taxes $9,000; operating costs $4,000; depreciation $8,000 (all annual totals). Using the IRS allocation, compute deductible rental expenses and any carryforward.",
+    7,
+    "Rental share 90/120 = 75%. Interest and taxes 6,750; operating 3,000 (cumulative 9,750); depreciation 6,000 but only 2,250 of income left: deduct 2,250, carry forward 3,750. Net rental income zero."
+   ]
+  ],
+  "outcomes": [
+   "Apply the Section 121 exclusion",
+   "Compute partial exclusions and spot nonqualified use",
+   "Determine deductible mortgage interest and points",
+   "Prorate property taxes at closing",
+   "Classify and tax the rental use of a home",
+   "Assemble a complete individual return"
+  ],
+  "take": [
+   "$250,000/$500,000 of home gain excluded: own and use 2 of 5 years",
+   "Early sales for work, health or unforeseen events get a prorated cap",
+   "Interest on up to $750,000 of acquisition debt; purchase points now",
+   "Property tax splits by days owned",
+   "Under 15 rental days: tax-free; heavy personal use limits deductions",
+   "Gross income → AGI → taxable income → tax → credits → refund"
+  ]
+ }
+}

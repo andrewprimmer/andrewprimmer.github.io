@@ -1,0 +1,749 @@
+{
+ "meta": {
+  "n": 14,
+  "short": "Home ownership and review",
+  "title": "Tax consequences of home ownership, and course review",
+  "week": 15,
+  "ch": "Chapter 14",
+  "part": "Compensation, retirement and the home",
+  "summary": "The exclusion of gain on a home sale, partial exclusions, mortgage interest and points, property taxes at closing, renting out a home or vacation home, and a full return to close the course."
+ },
+ "videos": [
+  {
+   "id": "14.1",
+   "title": "Excluding gain on selling your home",
+   "lecture": "Lecture 14 · Home ownership",
+   "take": "Up to $250,000 of gain ($500,000 joint) on a main home is excluded if owned and used two of the last five years",
+   "read": "IRS Pub. 523",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "For most families, their home is their biggest investment. And most of the gain on selling it is never taxed."
+    },
+    {
+     "type": "define",
+     "big": "Section 121 exclusion",
+     "sub": [
+      "Up to $250,000 of gain,",
+      "$500,000 for a married couple"
+     ],
+     "say": "Section 121 excludes up to $250,000 of gain on the sale of your main home, or $500,000 for a married couple filing jointly."
+    },
+    {
+     "type": "list",
+     "heading": "To qualify",
+     "items": [
+      "Owned the home 2 of the last 5 years",
+      "Lived in it as a main home 2 of the last 5 years",
+      "No exclusion used in the last 2 years"
+     ],
+     "say": "You must have owned the home and lived in it as your main home for at least two of the five years before the sale, and not used the exclusion on another sale in the past two years. For the five hundred thousand dollar amount, either spouse can meet the ownership test, but both must meet the use test."
+    },
+    {
+     "type": "table",
+     "heading": "The Lindqvists sell in 2026",
+     "rows": [
+      [
+       "Sale price",
+       420000
+      ],
+      [
+       "Selling costs",
+       -25000
+      ],
+      [
+       "Amount realized",
+       395000,
+       "total"
+      ],
+      [
+       "Cost in 2014 plus a $40,000 addition",
+       -220000
+      ],
+      [
+       "Gain realized",
+       175000,
+       "total"
+      ],
+      [
+       "Excluded, under $500,000",
+       175000,
+       "total"
+      ]
+     ],
+     "say": "Suppose the Lindqvists sell their Marshall home for $420,000, paying $25,000 in commissions. They bought it in 2014 for $180,000 and added a $40,000 bedroom. Their $175,000 gain is entirely excluded."
+    },
+    {
+     "type": "key",
+     "big": "Losses aren't deductible",
+     "sub": [
+      "A home is personal-use property"
+     ],
+     "say": "The flip side: a loss on selling your home isn't deductible, because it's personal-use property. And the limits haven't been raised since 1997."
+    },
+    {
+     "type": "quiz",
+     "q": "A single owner sells her home of 10 years at a $310,000 gain. How much is taxable?",
+     "opts": [
+      "$0",
+      "$60,000",
+      "$155,000",
+      "$310,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. A single owner sells her home of ten years at a three hundred ten thousand dollar gain. How much is taxable? Pause and pick.",
+     "reveal": "It's B. She excludes $250,000, so $60,000 is taxable as a long-term capital gain."
+    }
+   ]
+  },
+  {
+   "id": "14.2",
+   "title": "Partial exclusions and nonqualified use",
+   "lecture": "Lecture 14 · Home ownership",
+   "take": "Moving early for work, health or unforeseen reasons earns a prorated exclusion; depreciation is never excluded",
+   "read": "IRS Pub. 523",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "What if you have to sell before two years are up? Or the home was a rental before you lived in it? The exclusion can shrink."
+    },
+    {
+     "type": "list",
+     "heading": "Reduced exclusion if you sell early because of",
+     "items": [
+      "A change in place of employment",
+      "Health",
+      "Unforeseen circumstances, like divorce or job loss"
+     ],
+     "say": "If you sell before meeting the two-year tests because of a job change, health, or unforeseen circumstances like divorce or losing your job, you get a reduced exclusion."
+    },
+    {
+     "type": "table",
+     "heading": "Erik and Kari move after 1 year for work",
+     "rows": [
+      [
+       "Full joint exclusion",
+       500000
+      ],
+      [
+       "Fraction: 12 months ÷ 24",
+       "50%"
+      ],
+      [
+       "Maximum exclusion",
+       250000,
+       "total"
+      ],
+      [
+       "Their gain",
+       40000
+      ],
+      [
+       "Taxable",
+       0,
+       "total"
+      ]
+     ],
+     "say": "Erik and Kari sell after twelve months because Kari's job moves to Chicago. Their maximum exclusion is twelve twenty-fourths of $500,000: $250,000. Their $40,000 gain is fully excluded. Note that the fraction reduces the cap, not the gain."
+    },
+    {
+     "type": "define",
+     "big": "Nonqualified use",
+     "sub": [
+      "Time as a rental or second home",
+      "before it became your main home"
+     ],
+     "say": "If the home was a rental or vacation home before it became your main home, the gain is split. The share of ownership time that was nonqualified use, after 2008, isn't eligible for the exclusion."
+    },
+    {
+     "type": "key",
+     "big": "Depreciation is never excluded",
+     "sub": [
+      "Gain up to depreciation taken after",
+      "May 6, 1997 is taxed, at up to 25%"
+     ],
+     "say": "And any gain up to depreciation you took, for a home office using the actual method or for rental periods, is taxable as unrecaptured section twelve fifty gain."
+    },
+    {
+     "type": "quiz",
+     "q": "A single owner sells after 18 months because of a job transfer. Maximum exclusion?",
+     "opts": [
+      "$250,000",
+      "$187,500",
+      "$125,000",
+      "$0"
+     ],
+     "answer": 1,
+     "say": "Quick check. A single owner sells after eighteen months because of a job transfer. What's her maximum exclusion? Pause and pick.",
+     "reveal": "It's B. Eighteen of twenty-four months is seventy-five percent of $250,000: $187,500."
+    }
+   ]
+  },
+  {
+   "id": "14.3",
+   "title": "Mortgage interest and points",
+   "lecture": "Lecture 14 · Home ownership",
+   "take": "Interest on up to $750,000 of acquisition debt is deductible; points on a purchase are deductible when paid, on a refinance over the loan's life",
+   "read": "IRS Pub. 936",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Mortgage interest is the classic homeowner deduction. Since 2018, it's narrower than it used to be."
+    },
+    {
+     "type": "define",
+     "big": "Acquisition debt",
+     "sub": [
+      "Debt to buy, build or substantially",
+      "improve a main or second home"
+     ],
+     "say": "Interest is deductible on acquisition debt: borrowing to buy, build or substantially improve your main home and one second home, up to $750,000 of total debt. Loans from before December sixteenth, 2017 keep the old one-million-dollar limit."
+    },
+    {
+     "type": "compare",
+     "heading": "Home equity loans",
+     "cols": [
+      "Interest deductible?",
+      "Why"
+     ],
+     "rows": [
+      [
+       "Used to add a bedroom",
+       "Yes",
+       "Improves the home"
+      ],
+      [
+       "Used to buy a truck",
+       "No",
+       "Personal use"
+      ],
+      [
+       "Used for Nora's business",
+       "Yes, on Schedule C",
+       "Traced to business use"
+      ]
+     ],
+     "say": "Home equity borrowing counts only if it's used to buy, build or improve the home. Interest on a home equity loan spent on a car or a vacation isn't deductible, though if it's traced to business use, it can be a business expense."
+    },
+    {
+     "type": "compare",
+     "heading": "Points",
+     "cols": [
+      "Deduction",
+      "When"
+     ],
+     "rows": [
+      [
+       "Buying your main home",
+       "Fully deductible",
+       "Year paid"
+      ],
+      [
+       "Refinancing",
+       "Deductible",
+       "Over the loan's life"
+      ]
+     ],
+     "say": "Points are prepaid interest. Points paid to buy your main home are deductible in the year paid. Points on a refinance are deducted evenly over the life of the loan."
+    },
+    {
+     "type": "table",
+     "heading": "Refinance: $3,000 of points, 30-year loan",
+     "rows": [
+      [
+       "Deduction per year: 3,000 ÷ 30",
+       100
+      ],
+      [
+       "Deducted over the first 5 years",
+       500
+      ],
+      [
+       "Deducted on refinancing again",
+       2500,
+       "total"
+      ]
+     ],
+     "say": "If the Lindqvists refinance and pay $3,000 of points on a thirty-year loan, they deduct a hundred dollars a year. If they refinance again after five years, they deduct the remaining $2,500 then."
+    },
+    {
+     "type": "quiz",
+     "q": "Which interest is deductible as qualified residence interest?",
+     "opts": [
+      "A home equity loan used to pay off credit cards",
+      "A $400,000 mortgage used to buy a main home",
+      "A loan for a boat",
+      "A home equity loan for a family vacation"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which interest is deductible as qualified residence interest? Pause and pick.",
+     "reveal": "It's B. Acquisition debt under $750,000 qualifies. The others are personal uses."
+    }
+   ]
+  },
+  {
+   "id": "14.4",
+   "title": "Property taxes at closing",
+   "lecture": "Lecture 14 · Home ownership",
+   "take": "Real estate taxes are split between buyer and seller by days owned, whoever actually pays them",
+   "read": "IRS Pub. 530",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "When a home changes hands mid-year, who deducts the property tax? The days decide, not who writes the check."
+    },
+    {
+     "type": "define",
+     "big": "Proration",
+     "sub": [
+      "Seller deducts taxes up to the day before sale;",
+      "buyer from the date of sale"
+     ],
+     "say": "Real estate taxes for the year are divided by days. The seller is treated as paying the tax up to the day before the sale, and the buyer from the sale date on, whoever actually pays the bill."
+    },
+    {
+     "type": "table",
+     "heading": "Erik sells on May 1; annual tax $3,650",
+     "rows": [
+      [
+       "Seller's days: January 1 to April 30",
+       "120"
+      ],
+      [
+       "Seller's share: 120 ÷ 365 × 3,650",
+       1200
+      ],
+      [
+       "Buyer's share",
+       2450,
+       "total"
+      ]
+     ],
+     "say": "Erik sells on May first. The year's tax is $3,650, paid by the buyer in October. Erik owned the home a hundred and twenty days, so his share is $1,200, and the buyer's is $2,450."
+    },
+    {
+     "type": "list",
+     "heading": "Settling up",
+     "items": [
+      "Seller's share credited to the buyer at closing",
+      "Seller deducts $1,200",
+      "Buyer deducts $2,450, and reduces basis by any seller taxes they pay"
+     ],
+     "say": "At closing, Erik credits the buyer with his $1,200 share. Erik deducts $1,200 and the buyer $2,450. If the buyer pays taxes that belong to the seller without reimbursement, they add them to the cost basis instead."
+    },
+    {
+     "type": "key",
+     "big": "Still subject to the SALT cap",
+     "sub": [
+      "$40,400 in 2026, with income",
+      "and property taxes combined"
+     ],
+     "say": "Property taxes go into the same capped bucket as state income taxes: $40,400 for 2026, and they only help if you itemize."
+    },
+    {
+     "type": "quiz",
+     "q": "A home is sold on July 1 (182 days into a 365-day year). Annual taxes are $7,300. The seller's deduction?",
+     "opts": [
+      "$3,650",
+      "$3,640",
+      "$7,300",
+      "$0"
+     ],
+     "answer": 1,
+     "say": "Quick check. A home is sold on July first, after a hundred and eighty-two days. Annual taxes are seventy-three hundred dollars. What's the seller's deduction? Pause and pick.",
+     "reveal": "It's B. A hundred and eighty-two over three sixty-five, times $7,300, is $3,640."
+    }
+   ]
+  },
+  {
+   "id": "14.5",
+   "title": "Renting out a home or vacation home",
+   "lecture": "Lecture 14 · Home ownership",
+   "take": "Rent for under 15 days is tax-free; heavy personal use limits rental deductions to rental income",
+   "read": "IRS Pub. 527",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Rent out your home, a cabin or a room, and the tax result depends on counting days."
+    },
+    {
+     "type": "compare",
+     "heading": "Three cases",
+     "cols": [
+      "Rental days / personal use",
+      "Result"
+     ],
+     "rows": [
+      [
+       "Rented under 15 days",
+       "Any personal use",
+       "Tax-free rent, no deductions"
+      ],
+      [
+       "Residence with rental use",
+       "Personal use over 14 days and 10%",
+       "Deductions limited to rent"
+      ],
+      [
+       "Rental property",
+       "Little personal use",
+       "Full deductions, passive rules"
+      ]
+     ],
+     "say": "If you rent a home for fewer than fifteen days, the rent is tax-free and you deduct nothing extra. If personal use is more than fourteen days and more than ten percent of rental days, it's a residence with rental use, and rental deductions can't exceed rental income. With little personal use, it's a rental property under the passive loss rules."
+    },
+    {
+     "type": "key",
+     "big": "Farmfest week",
+     "sub": [
+      "The Lindqvists rent their house for 10 days:",
+      "$2,000, tax-free"
+     ],
+     "say": "The Lindqvists rent their Marshall house to visitors during Farmfest for ten days at two hundred dollars a night. The $2,000 is tax-free."
+    },
+    {
+     "type": "table",
+     "heading": "Erik's cabin on Lake Shetek",
+     "rows": [
+      [
+       "Rental income, 60 days",
+       9000
+      ],
+      [
+       "Rental share of interest and taxes: 2/3",
+       -4000
+      ],
+      [
+       "Rental share of operating costs",
+       -2000
+      ],
+      [
+       "Depreciation allowed: what's left",
+       -3000
+      ],
+      [
+       "Net rental income",
+       0,
+       "total"
+      ],
+      [
+       "Depreciation carried forward",
+       1000
+      ]
+     ],
+     "say": "Erik rents his cabin on Lake Shetek for sixty days and uses it for thirty. With over fourteen days of personal use, rental deductions are limited to the $9,000 of rent. Two-thirds of costs are rental: interest and taxes first, then operating costs, then depreciation only up to what's left. Net rental income is zero, and $1,000 of depreciation carries forward."
+    },
+    {
+     "type": "key",
+     "big": "The personal share",
+     "sub": [
+      "Interest and taxes for personal days",
+      "can still be itemized"
+     ],
+     "say": "The personal share of mortgage interest and property taxes can still be itemized, as second-home interest and state and local taxes."
+    },
+    {
+     "type": "quiz",
+     "q": "A cabin is rented 100 days and used personally 9 days. How is it treated?",
+     "opts": [
+      "Tax-free rental",
+      "Residence with rental use",
+      "Rental property",
+      "Personal property only"
+     ],
+     "answer": 2,
+     "say": "Quick check. A cabin is rented a hundred days and used personally nine days. How is it treated? Pause and pick.",
+     "reveal": "It's C. Personal use isn't more than the greater of fourteen days or ten percent of rental days, so it's a rental property."
+    }
+   ]
+  },
+  {
+   "id": "14.6",
+   "title": "Course recap: one return, start to finish",
+   "lecture": "Lecture 14 · Course review",
+   "take": "Every topic in the course fits a line of the tax formula",
+   "read": "Form 1040 and instructions",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Fourteen lectures, one formula. Here's the Lindqvists' 2026 return, and where each part of the course fits."
+    },
+    {
+     "type": "table",
+     "heading": "Gross income to taxable income",
+     "rows": [
+      [
+       "Wages, business profit, interest: L5, L9",
+       118400
+      ],
+      [
+       "Half of SE tax: L6, L8",
+       -2119
+      ],
+      [
+       "AGI",
+       116281,
+       "total"
+      ],
+      [
+       "Standard deduction: L4, L6",
+       -32200
+      ],
+      [
+       "QBI deduction: L9",
+       -5576
+      ],
+      [
+       "Taxable income",
+       78505,
+       "total"
+      ]
+     ],
+     "say": "Gross income comes from Lecture 5 and Nora's Schedule C from Lecture 9: $118,400. Half of her self-employment tax brings AGI to $116,281. The standard deduction from Lectures 4 and 6 and the QBI deduction from Lecture 9 give taxable income of $78,505."
+    },
+    {
+     "type": "table",
+     "heading": "Taxable income to refund",
+     "rows": [
+      [
+       "Regular tax: L8",
+       8925
+      ],
+      [
+       "Child tax credit: L8",
+       -4400
+      ],
+      [
+       "Self-employment tax: L8",
+       4239
+      ],
+      [
+       "Total tax",
+       8764,
+       "total"
+      ],
+      [
+       "Withholding and estimates: L8, L12",
+       -9000
+      ],
+      [
+       "Refund",
+       236,
+       "total"
+      ]
+     ],
+     "say": "Lecture 8 gives the tax, $8,925, the child tax credit of $4,400 and self-employment tax of $4,239. Withholding and estimates of $9,000 leave a $236 refund."
+    },
+    {
+     "type": "list",
+     "heading": "And around the return",
+     "items": [
+      "Who must file and when: L2",
+      "Planning: timing, shifting, conversion: L3",
+      "Investments and property: L7, L10, L11",
+      "Pay, retirement and the home: L12 to L14"
+     ],
+     "say": "Around the return sit the rules for filing and disputes, the planning strategies of Lecture 3, investments and business property, and the rules for pay, retirement and the home."
+    },
+    {
+     "type": "recap",
+     "big": "Income, deductions, rates, credits",
+     "sub": [
+      "Who, when, how much, what kind"
+     ],
+     "say": "Every question in this course is a version of four: what's income, what's deductible, at what rate, and what credits apply. Ask who is taxed, when, and on what kind of income, and you can work through any return."
+    },
+    {
+     "type": "quiz",
+     "q": "Which line of the formula does the senior deduction affect?",
+     "opts": [
+      "Gross income",
+      "AGI",
+      "Taxable income, after AGI",
+      "Credits"
+     ],
+     "answer": 2,
+     "say": "One last quick check. Which part of the formula does the new senior deduction affect? Pause and pick.",
+     "reveal": "It's C. It's taken after AGI, like the standard deduction, but whether or not you itemize. Good luck in the final."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Rent or buy? List every tax factor you can think of on each side.",
+   "Buy: mortgage interest and property tax (only if itemizing), tax-free gain on sale. Rent: no deductions but flexibility; standard deduction often makes the buying advantage smaller than people think."
+  ],
+  "acts": [
+   [
+    "A married couple bought a home for $300,000, added $50,000 of improvements and sells it after 8 years for $900,000 with $50,000 of costs. Taxable gain?",
+    "Realized 850,000 − 350,000 = 500,000. Fully excluded. Any more would be LTCG."
+   ],
+   [
+    "A single owner lived in a home for 2 years, then rented it out for 3 years (depreciation $20,000) and sold it. Gain $150,000. Taxable?",
+    "The 3 rental years came after the last use as a main home, so they aren't nonqualified use. Depreciation $20,000 is taxable (unrecaptured 1250); the remaining $130,000 is excluded."
+   ],
+   [
+    "The Lindqvists take a $60,000 home equity loan: $40,000 for a kitchen remodel and $20,000 to pay off car loans. What interest is deductible?",
+    "Two-thirds (the remodel portion) is qualified residence interest, if they itemize."
+   ],
+   [
+    "A buyer pays $2,000 of points on a $300,000 mortgage for a new main home and $1,500 on a refinance of a 15-year loan. Deduction this year (refinance in July)?",
+    "Purchase points $2,000 now; refinance 1,500 ÷ 180 months × 6 = $50."
+   ],
+   [
+    "A home is sold on March 15 (73 days). Annual property tax $4,380, paid by the buyer. Who deducts what?",
+    "Seller 73/365 × 4,380 = $876; buyer $3,504."
+   ],
+   [
+    "A condo is rented 200 days and used personally 25 days. Which category? What if personal use were 15 days?",
+    "25 days > 20 (10% of 200): residence with rental use. 15 days: not more than 20, so rental property."
+   ]
+  ],
+  "case": [
+   "The Lindqvists move to a bigger house",
+   "In 2026 the Lindqvists sell their Marshall home (cost $180,000 in 2014, $40,000 addition, home office used by Nora with the simplified method) for $420,000, with $25,000 of selling costs, and buy a larger home for $480,000 with a $380,000 mortgage, paying $3,800 of points. The sale closes on June 30; the year's $3,650 of property tax on the old home is paid by the buyer in October. They also rented the old house for 10 days during Farmfest for $2,000.",
+   [
+    "What is the gain on the old home, and how much is excluded? Does the home office matter?",
+    "How are the points treated?",
+    "Who deducts the property tax on the old home?",
+    "Should they itemize in 2026? What extra information do you need?"
+   ],
+   "Gain 175,000, all excluded; the simplified home office method claims no depreciation, so no recapture. Purchase points: deductible in 2026 if itemizing. Old-home taxes: seller's share 180/365 × 3,650 = $1,800 (Jan 1 to June 29), buyer $1,850. Farmfest rent is tax-free (under 15 days). Itemizing: compare mortgage interest on both homes, points, Minnesota income tax and property taxes (under the SALT cap) and charity over the floor against $32,200."
+  ],
+  "exam": [
+   [
+    "Explain the requirements for the Section 121 exclusion and when a reduced exclusion is available.",
+    5,
+    "Ownership and use as main home for 2 of the last 5 years; no exclusion in the prior 2 years; $250,000/$500,000 (both spouses meet use for $500,000). Reduced (prorated by months/24) for sales due to employment change, health or unforeseen circumstances."
+   ],
+   [
+    "A taxpayer rents a vacation home for 90 days and uses it 30 days. Rent $12,000; mortgage interest and taxes $9,000; operating costs $4,000; depreciation $8,000 (all annual totals). Using the IRS allocation, compute deductible rental expenses and any carryforward.",
+    7,
+    "Rental share 90/120 = 75%. Interest and taxes 6,750; operating 3,000 (cumulative 9,750); depreciation 6,000 but only 2,250 of income left: deduct 2,250, carry forward 3,750. Net rental income zero."
+   ]
+  ],
+  "outcomes": [
+   "Apply the Section 121 exclusion",
+   "Compute partial exclusions and spot nonqualified use",
+   "Determine deductible mortgage interest and points",
+   "Prorate property taxes at closing",
+   "Classify and tax the rental use of a home",
+   "Assemble a complete individual return"
+  ],
+  "take": [
+   "$250,000/$500,000 of home gain excluded: own and use 2 of 5 years",
+   "Early sales for work, health or unforeseen events get a prorated cap",
+   "Interest on up to $750,000 of acquisition debt; purchase points now",
+   "Property tax splits by days owned",
+   "Under 15 rental days: tax-free; heavy personal use limits deductions",
+   "Gross income → AGI → taxable income → tax → credits → refund"
+  ]
+ },
+ "ex": [
+  {
+   "type": "num",
+   "q": "A married couple sells their main home of 12 years at a $560,000 gain. How much is taxable?",
+   "a": 60000,
+   "unit": "$",
+   "why": "560,000 − 500,000 exclusion = 60,000.",
+   "video": "14.1"
+  },
+  {
+   "type": "mcq",
+   "q": "Which owner qualifies for the full exclusion?",
+   "opts": [
+    "Owned 5 years, lived in it 1 year",
+    "Owned and lived in it 3 of the last 5 years",
+    "Lived in it 4 years as a renter, owned 1 year",
+    "Owned and lived in it 18 months, sold to buy a bigger home"
+   ],
+   "a": 1,
+   "why": "Both the ownership and use tests need 2 of the last 5 years; wanting a bigger home is not an unforeseen circumstance.",
+   "video": "14.1"
+  },
+  {
+   "type": "num",
+   "q": "A single owner sells after 9 months because of a job transfer. What is the maximum exclusion?",
+   "a": 93750,
+   "unit": "$",
+   "why": "9/24 × 250,000 = 93,750.",
+   "video": "14.2"
+  },
+  {
+   "type": "sort",
+   "q": "Is the interest deductible as qualified residence interest?",
+   "cats": [
+    "Yes",
+    "No"
+   ],
+   "items": [
+    [
+     "$500,000 mortgage to buy a main home",
+     0
+    ],
+    [
+     "Home equity loan used to buy a car",
+     1
+    ],
+    [
+     "Loan to build a second home",
+     0
+    ],
+    [
+     "Home equity loan used to add a garage",
+     0
+    ],
+    [
+     "Home equity loan used for tuition",
+     1
+    ]
+   ],
+   "why": "Only debt used to buy, build or substantially improve a qualified residence counts.",
+   "video": "14.3"
+  },
+  {
+   "type": "num",
+   "q": "Points of $3,600 are paid on a 30-year refinance in January. How much is deductible in the first year?",
+   "a": 120,
+   "unit": "$",
+   "why": "3,600 ÷ 30 = 120 a year.",
+   "video": "14.3"
+  },
+  {
+   "type": "num",
+   "q": "A home sells on day 146 of a 365-day year (the seller owned it 146 days). Annual property tax is $5,475. What is the seller's share?",
+   "a": 2190,
+   "unit": "$",
+   "why": "146/365 × 5,475 = 2,190.",
+   "video": "14.4"
+  },
+  {
+   "type": "mcq",
+   "q": "A family rents its home for 12 days for $3,600. How is the rent taxed?",
+   "opts": [
+    "Fully taxable",
+    "Taxable less expenses",
+    "Tax-free, no rental deductions",
+    "Half taxable"
+   ],
+   "a": 2,
+   "why": "Rentals of fewer than 15 days are excluded.",
+   "video": "14.5"
+  },
+  {
+   "type": "order",
+   "q": "Put the formula in order.",
+   "items": [
+    "Gross income",
+    "Deductions for AGI",
+    "Standard or itemized deduction",
+    "Taxable income",
+    "Credits",
+    "Payments"
+   ],
+   "why": "This is the structure behind every lecture.",
+   "video": "14.6"
+  }
+ ]
+}
