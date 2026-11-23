@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exit quiz &middot; AI and Automation in Accounting &middot; Andrew Primmer</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Spectral:wght@400;600&display=swap">
+<style>
+  :root { --ink:#F0EDE4; --paper:#14304C; --card:#1A3A5A; --soft:#9FB4C4; --accent:#63BFA8; --ok:#63BFA8; --ok-bg:#1E4A4F; --bad:#E08A7A; --bad-bg:#4A2E3A; --line:#2E4C68; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:Spectral, Georgia, serif; font-size:17px; line-height:1.5; }
+  main { max-width:640px; margin:0 auto; padding:28px 18px 48px; }
+  .back { margin:0 0 18px; font-size:15px; } .back a { color:var(--accent); }
+  .eyebrow { font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--accent); margin:0 0 6px; }
+  h1 { font-family:'Libre Caslon Display', Georgia, serif; font-weight:400; font-size:30px; line-height:1.15; margin:0 0 8px; }
+  .intro { color:var(--soft); margin:0 0 22px; }
+  .progress { display:flex; gap:6px; margin-bottom:18px; }
+  .progress span { flex:1; height:6px; background:var(--line); border-radius:3px; }
+  .progress span.done { background:var(--accent); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px; }
+  .qnum { font-size:14px; color:var(--soft); margin:0 0 6px; }
+  .q { font-size:20px; font-weight:700; line-height:1.3; margin:0 0 16px; }
+  .opts { display:flex; flex-direction:column; gap:10px; }
+  button.opt { text-align:left; font:inherit; color:var(--ink); background:#14304C; border:2px solid var(--line); border-radius:10px; padding:14px 14px; cursor:pointer; display:flex; gap:12px; align-items:flex-start; min-height:52px; }
+  button.opt:hover:not(:disabled) { border-color:var(--accent); }
+  button.opt:focus-visible { outline:3px solid var(--accent); outline-offset:2px; }
+  button.opt .l { font-weight:700; color:var(--accent); min-width:18px; }
+  button.opt:disabled { cursor:default; }
+  button.opt.right { background:var(--ok-bg); border-color:var(--ok); }
+  button.opt.wrong { background:var(--bad-bg); border-color:var(--bad); }
+  .feedback { margin-top:16px; padding:14px; border-radius:10px; display:none; }
+  .feedback.show { display:block; }
+  .feedback.ok { background:var(--ok-bg); }
+  .feedback.no { background:var(--bad-bg); }
+  .feedback b { display:block; margin-bottom:4px; }
+  .next { margin-top:16px; width:100%; font:inherit; font-weight:600; color:#14304C; background:var(--accent); border:0; border-radius:10px; padding:14px; cursor:pointer; display:none; }
+  .next.show { display:block; }
+  .result { text-align:center; }
+  .result .score { font-size:64px; font-weight:700; color:var(--accent); line-height:1; margin:8px 0; }
+  .result p { color:var(--soft); }
+  .review { text-align:left; margin-top:18px; border-top:1px solid var(--line); padding-top:14px; }
+  .review div { padding:8px 0; border-bottom:1px solid var(--line); font-size:15px; }
+</style>
+</head>
+<body>
+<main>
+  <p class="back"><a href="./">&larr; AI and Automation in Accounting</a></p>
+  <p class="eyebrow">Exit quiz · 4 questions</p>
+  <h1>AI and Automation in Accounting</h1>
+  <p class="intro">One answer per question. You’ll see why straight away. Show your tutor your score at the end.</p>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="card" id="card" aria-live="polite"></div>
+</main>
+<script>
+const QUESTIONS = [
+  {
+    q: "Which part of the four-part prompt frame tells the AI what to do when a figure is missing, zero or negative?",
+    opts: ["Context", "Task", "Format", "Checks"],
+    a: 3,
+    why: "Checks tells the AI what to flag rather than guess. Without it, a tool quietly makes a choice for you, such as treating a blank as zero."
+  },
+  {
+    q: "A company’s inventory figure is blank. The tool treats the blank as zero. What happens to the quick ratio?",
+    opts: ["It is understated", "It is overstated: it equals the current ratio", "It is unaffected", "It cannot be calculated, so the tool crashes"],
+    a: 1,
+    why: "Quick ratio = (current assets − inventory) / current liabilities. Subtracting zero instead of the real inventory makes it equal to the current ratio, which looks plausible. That is what makes it dangerous."
+  },
+  {
+    q: "The provision matrix gives a required allowance of £18,000. The opening allowance is £24,000. What is the year-end journal?",
+    opts: ["Dr Impairment loss £18,000 / Cr Allowance £18,000", "Dr Impairment loss £6,000 / Cr Allowance £6,000", "Dr Allowance £6,000 / Cr Impairment loss £6,000", "No entry: the allowance is already big enough"],
+    a: 2,
+    why: "You journal only the movement. The allowance must fall by £6,000, so it is debited and the impairment loss in profit or loss is credited (a reversal)."
+  },
+  {
+    q: "Your manager asks you to age a real client’s sales ledger quickly. What should you do with the AI tool?",
+    opts: ["Paste it into a free AI chatbot: it’s faster", "Delete the customer names, then paste it into a free chatbot", "Use only a tool your firm has approved for client data, and keep evidence of your review", "Don’t use AI at all for anything involving clients"],
+    a: 2,
+    why: "Client data is confidential. Free tools may keep or use what you paste, and removing names often doesn’t make data anonymous. Approved tools under firm policy, plus a documented review, keep you accountable."
+  }
+];
+const L = ["A", "B", "C", "D"];
+let i = 0, score = 0;
+const answers = [];
+const card = document.getElementById("card");
+const prog = document.getElementById("progress");
+prog.innerHTML = QUESTIONS.map(() => "<span></span>").join("");
+
+function esc(s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;"); }
+
+function render() {
+  [...prog.children].forEach((s, k) => s.classList.toggle("done", k < i));
+  if (i >= QUESTIONS.length) return finish();
+  const Q = QUESTIONS[i];
+  card.innerHTML =
+    `<p class="qnum">Question ${i + 1} of ${QUESTIONS.length}</p>` +
+    `<p class="q">${esc(Q.q)}</p>` +
+    `<div class="opts">` + Q.opts.map((o, k) =>
+      `<button class="opt" data-k="${k}"><span class="l">${L[k]}</span><span>${esc(o)}</span></button>`).join("") +
+    `</div><div class="feedback" id="fb"></div>` +
+    `<button class="next" id="next">${i === QUESTIONS.length - 1 ? "See my score" : "Next question"}</button>`;
+  card.querySelectorAll("button.opt").forEach(b => b.addEventListener("click", () => choose(+b.dataset.k)));
+  document.getElementById("next").addEventListener("click", () => { i++; render(); });
+}
+
+function choose(k) {
+  const Q = QUESTIONS[i];
+  const ok = k === Q.a;
+  if (ok) score++;
+  answers.push(ok);
+  card.querySelectorAll("button.opt").forEach(b => {
+    const n = +b.dataset.k;
+    b.disabled = true;
+    if (n === Q.a) b.classList.add("right");
+    else if (n === k) b.classList.add("wrong");
+  });
+  const fb = document.getElementById("fb");
+  fb.className = "feedback show " + (ok ? "ok" : "no");
+  fb.innerHTML = `<b>${ok ? "Correct." : "Not quite. The answer is " + L[Q.a] + "."}</b>${esc(Q.why)}`;
+  const nx = document.getElementById("next");
+  nx.classList.add("show");
+  nx.focus();
+}
+
+function finish() {
+  const msg = score === 4 ? "Full marks. You checked the output, not just the code."
+            : score >= 2 ? "Good. Look again at the ones you missed before the follow-up task."
+            : "Worth another look: the handout has the prompt frame and both practicals.";
+  card.innerHTML =
+    `<div class="result"><p class="qnum">Your score</p><p class="score">${score} / ${QUESTIONS.length}</p><p>${msg}</p>` +
+    `<div class="review">` + QUESTIONS.map((Q, k) =>
+      `<div>${answers[k] ? "Correct" : "Missed"}: Q${k + 1}. Answer ${L[Q.a]}, ${esc(Q.opts[Q.a])}</div>`).join("") +
+    `</div><button class="next show" id="again">Try again</button></div>`;
+  document.getElementById("again").addEventListener("click", () => { i = 0; score = 0; answers.length = 0; render(); });
+}
+render();
+</script>
+</body>
+</html>

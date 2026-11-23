@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI and Automation in Accounting &middot; Andrew Primmer</title>
+<meta name="description" content="A three-hour practical session on using AI to build accounting analysis tools: a ratio analyser and an aged debtor review in Google Colab, with datasets, prompts, slides and an exit quiz.">
+<link rel="stylesheet" href="../../assets/style.css">
+<style>
+  .lesson-index{list-style:none;margin:22px 0 0;padding:0;border-top:1px solid var(--ink)}
+  .site-narrow .lesson-index{padding:0;max-width:none}
+  .lesson-index li{border-bottom:1px solid var(--rule);margin:0}
+  .lesson-index a{display:grid;grid-template-columns:5.6rem 1fr;gap:12px;align-items:baseline;padding:14px 0;text-decoration:none;color:var(--ink)}
+  .lesson-index a:hover .li-title,.lesson-index a:focus-visible .li-title{color:var(--accent)}
+  .lesson-index .li-num{font-family:var(--display);color:var(--accent);font-size:.95rem}
+  .lesson-index .li-title{display:block;font-family:var(--display);font-size:1.12rem}
+  .lesson-index .li-case{display:block;font-size:.88rem;color:var(--soft);font-style:italic}
+  .lesson-num{font-family:var(--display);font-size:.95rem;color:var(--accent);display:block;margin-bottom:2px}
+  .lesson-case{margin:4px 0 0;font-style:italic;color:var(--soft)}
+  .callout{border-left:3px solid var(--accent);padding:2px 0 2px 20px;margin:24px 0;font-style:italic;color:var(--soft)}
+  .micro{scroll-margin-top:16px;border-top:1px solid var(--rule);padding-top:28px}
+  .site-narrow .downloads{list-style:none;padding:0;margin:18px 0 0;border-top:1px solid var(--ink);max-width:none}
+  .downloads li{border-bottom:1px solid var(--rule);padding:12px 0;margin:0}
+  .downloads a{font-family:var(--display);font-size:1.08rem}
+  .downloads span{display:block;font-size:.88rem;color:var(--soft);font-style:italic}
+  .prompt{border:1px solid var(--rule);margin:18px 0 0;padding:12px 16px 14px;background:rgba(255,255,255,.03)}
+  .prompt-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+  .prompt-head span{font-size:.85rem;color:var(--soft);font-style:italic}
+  .site-narrow .prompt pre.gprompt{margin:8px 0 0;padding:0;border:0;background:none;white-space:pre-wrap;overflow-wrap:anywhere;font-size:.88rem;line-height:1.5}
+  .copy{background:none;border:1px solid var(--rule);color:var(--soft);padding:4px 11px;font-family:var(--display);font-size:.88rem;cursor:pointer}
+  .copy:hover{border-color:var(--accent);color:var(--accent)}
+  .copy:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  .label{font-family:var(--display);font-weight:400;color:var(--accent)}
+  .answer{margin:14px 0 0;border:1px solid var(--rule);padding:10px 16px}
+  .answer summary{cursor:pointer;font-family:var(--display);color:var(--accent)}
+  .answer p,.answer li{font-size:.95rem}
+  .sub-heading{font-family:var(--display);font-weight:400;font-size:1.25rem;margin:32px 0 8px}
+  .frame-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:18px 0 0}
+  .frame-grid div{border-top:3px solid var(--accent);padding:12px 0 0}
+  .frame-grid b{display:block;font-family:var(--display);font-weight:400;font-size:1.12rem}
+  .frame-grid span{display:block;font-size:.93rem;color:var(--soft);margin-top:4px}
+  .frame-grid code{display:block;margin-top:8px;font-size:.82rem}
+  .quiz-link{display:inline-block;margin-top:12px;border:1px solid var(--accent);padding:10px 18px;font-family:var(--display);text-decoration:none}
+  .quiz-link:hover{background:var(--accent);color:var(--paper)}
+  .back{margin-top:6px;font-size:.9rem}
+  @media (max-width:640px){ .lesson-index a{grid-template-columns:4.6rem 1fr} }
+</style>
+</head>
+<body id="top">
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="../../index.html" class="site-wordmark">
+      Andrew Primmer
+      <span class="site-wordmark-sub">Accounting Historian</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../../index.html">Home</a>
+      <a href="../../research.html">Research</a>
+      <a href="../../publications.html">Publications</a>
+      <a href="../../cv.html">CV</a>
+      <a href="../../sources/">Primary Sources</a>
+      <a href="../" aria-current="page">Teaching</a>
+      <a href="../../teaching/accounting-information-systems/railway/">Rails &amp; Ledgers</a>
+      <a href="../../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="site-main">
+  <div class="site-narrow">
+
+    <header class="page-header">
+      <div class="page-eyebrow"><a href="../">Teaching</a> &middot; AI and Automation</div>
+      <h1 class="page-title">AI and Automation in Accounting</h1>
+      <p class="page-lede">A three-hour practical session. You use AI to write two accounting tools, a ratio analyser and an aged debtor review, and then prove that they are right. You write the spec, the AI writes the code, and you own the numbers.</p>
+    </header>
+
+    <section class="page-section">
+      <p>No coding experience is needed. The AI writes Python, you run it in Google Colab in your browser, and your accounting knowledge does the rest: deciding what the tool should calculate, and catching it when it is wrong. Both datasets have errors planted in them on purpose.</p>
+      <div class="callout">Every company, customer and figure here is fictional. Never paste real client or employer data into a free AI tool.</div>
+
+      <h2 class="section-heading">Downloads</h2>
+      <ul class="downloads">
+        <li><a href="files/ratios_data.csv" download>ratios_data.csv</a><span>1 KB &middot; Practical 1: three fictional companies over three years, in &pound;000</span></li>
+        <li><a href="files/sales_ledger.csv" download>sales_ledger.csv</a><span>11 KB &middot; Practical 2: 198 invoices for Kestrel Supplies Ltd, year end 31 March 2026</span></li>
+        <li><a href="files/AI_Automation_Block1_Slides.pdf" download>Framing lecture slides (.pdf)</a><span>1.2 MB &middot; 12 slides: automation versus AI, the prompt frame and the live demo</span></li>
+      </ul>
+
+      <h2 class="section-heading">The session</h2>
+      <ol class="lesson-index">
+        <li><a href="#before"><span class="li-num">0:00</span><span><span class="li-title">Framing lecture and setup</span><span class="li-case">Where AI and automation sit in accounting; the prompt frame</span></span></a></li>
+        <li><a href="#practical-1"><span class="li-num">0:40</span><span><span class="li-title">Practical 1: build a ratio analyser</span><span class="li-case">ratios_data.csv &middot; 50 minutes in pairs</span></span></a></li>
+        <li><a href="#practical-2"><span class="li-num">1:45</span><span><span class="li-title">Practical 2: automate an aged debtor review</span><span class="li-case">sales_ledger.csv &middot; 50 minutes in pairs</span></span></a></li>
+        <li><a href="#controls"><span class="li-num">2:35</span><span><span class="li-title">Controls, ethics and the exit quiz</span><span class="li-case">Break each other&rsquo;s tools; who signs off?</span></span></a></li>
+      </ol>
+    </section>
+
+    <section class="page-section micro" id="before">
+      <h2 class="section-heading"><span class="lesson-num">Before you start</span>Setup and the prompt frame</h2>
+      <ol>
+        <li>Sign in to a Google account and open <a href="https://colab.research.google.com">Google Colab</a>. Click <b>New notebook</b>.</li>
+        <li>Open <a href="https://gemini.google.com">Gemini</a> or <a href="https://claude.ai">Claude</a> in a second tab.</li>
+        <li>Download both CSV files above.</li>
+        <li>Work in pairs. One of you prompts, the other checks. Swap halfway through each practical.</li>
+      </ol>
+      <p>To run code in Colab, paste the AI&rsquo;s code into a cell and press Shift + Enter. To load a CSV, click the folder icon on the left and upload the file, or run <code>from google.colab import files; files.upload()</code>.</p>
+
+      <h3 class="sub-heading">Four parts in every prompt</h3>
+      <p>The AI can only be as precise as you are. Every prompt today should have all four parts.</p>
+      <div class="frame-grid">
+        <div><b>1. Context</b><span>Who you are and what the data is.</span><code>&ldquo;I have a CSV with columns&hellip;&rdquo;</code></div>
+        <div><b>2. Task</b><span>The calculation, with every formula written out.</span><code>&ldquo;Quick ratio = (CA &minus; inventory) / CL&rdquo;</code></div>
+        <div><b>3. Format</b><span>What the output should look like.</span><code>&ldquo;A table, 2 decimal places&rdquo;</code></div>
+        <div><b>4. Checks</b><span>What to flag rather than guess.</span><code>&ldquo;Warn if data is missing or negative&rdquo;</code></div>
+      </div>
+      <p style="margin-top:18px">Two habits help: ask the AI to explain each step in a comment, and to print totals before and after each step so you can follow what it did.</p>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+
+    <section class="page-section micro" id="practical-1">
+      <h2 class="section-heading"><span class="lesson-num">Practical one</span>Build a ratio analyser</h2>
+      <p class="lesson-case">ratios_data.csv &middot; 50 minutes</p>
+      <p>You will prompt an AI to write a Python tool that calculates five ratios for three companies over three years, then prove it is right.</p>
+
+      <h3 class="sub-heading">Step 1. Hand calculation (10 minutes)</h3>
+      <p>Before touching the AI, calculate these for <b>Brindley Engineering Ltd, 2023</b>: revenue 12,400; cost of sales 8,680; operating profit 1,240; current assets 4,960; inventory 2,170; current liabilities 3,100; total debt 2,800; equity 5,600 (all &pound;000). This is your control.</p>
+      <table>
+        <thead><tr><th>Ratio</th><th>Formula</th></tr></thead>
+        <tbody>
+          <tr><td>Current ratio</td><td>Current assets / current liabilities</td></tr>
+          <tr><td>Quick ratio</td><td>(Current assets &minus; inventory) / current liabilities</td></tr>
+          <tr><td>Gross margin</td><td>(Revenue &minus; cost of sales) / revenue</td></tr>
+          <tr><td>Operating margin</td><td>Operating profit / revenue</td></tr>
+          <tr><td>Debt-to-equity</td><td>Total debt / equity</td></tr>
+        </tbody>
+      </table>
+      <details class="answer">
+        <summary>Check your hand calculation</summary>
+        <p>Current ratio 1.60 &middot; quick ratio 0.90 &middot; gross margin 30.0% &middot; operating margin 10.0% &middot; debt-to-equity 0.50.</p>
+      </details>
+
+      <h3 class="sub-heading">Step 2. Prompt and run (15 minutes)</h3>
+      <p>Copy this prompt into Gemini or Claude. Paste the code it gives you into Colab, upload the CSV and run it.</p>
+      <div class="prompt">
+        <div class="prompt-head"><span>Starter prompt</span><button type="button" class="copy" data-target="prompt-1">Copy prompt</button></div>
+        <pre class="gprompt" id="prompt-1">I am an accounting student. I have a CSV file called ratios_data.csv with columns: company, year, revenue, cost_of_sales, operating_profit, current_assets, inventory, current_liabilities, total_debt, equity.
+
+Write a Python script for Google Colab that:
+1. Reads the CSV with pandas.
+2. Calculates, for each company and year:
+   - Current ratio = current_assets / current_liabilities
+   - Quick ratio = (current_assets - inventory) / current_liabilities
+   - Gross margin = (revenue - cost_of_sales) / revenue
+   - Operating margin = operating_profit / revenue
+   - Debt-to-equity = total_debt / equity
+3. Prints a table rounded to 2 decimal places.
+4. Does NOT guess when data is missing, zero or negative: print a warning naming the company, year and ratio instead.
+Explain each step of the code in a short comment.</pre>
+      </div>
+
+      <h3 class="sub-heading">Step 3. Reconcile (10 minutes)</h3>
+      <p>Compare the tool&rsquo;s figures for Brindley 2023 with your hand calculation. Every difference needs a reason: rounding, a different definition, or an error.</p>
+
+      <h3 class="sub-heading">Step 4. Hunt the traps (10 minutes)</h3>
+      <p>The data contains <b>three</b> problems that a careless tool gets wrong. Find them. For each, note what the tool did (crashed, gave nonsense, or warned you) and re-prompt until it handles it properly.</p>
+      <details class="answer">
+        <summary>Show the three traps</summary>
+        <ul>
+          <li><b>Brindley Engineering 2025:</b> current liabilities of zero, almost certainly a data entry error. Dividing by zero returns infinity or crashes the tool.</li>
+          <li><b>Corve Retail 2024:</b> inventory is missing. A tool that treats the blank as zero gives a quick ratio of 1.07, the same as the current ratio. It looks plausible, which is the danger.</li>
+          <li><b>Wrekin Software 2025:</b> negative equity. A debt-to-equity of &minus;5.21 looks like low gearing if nobody reads the sign. The ratio is meaningless.</li>
+        </ul>
+        <p>Wrekin&rsquo;s zero inventory in every year is not a trap. It is a software company, so its quick ratio equals its current ratio. Zero is not the same as missing.</p>
+      </details>
+
+      <h3 class="sub-heading">Step 5. Extend (if you finish early)</h3>
+      <p>Ask for a line chart of operating margin by company over time, or a two-sentence plain-English commentary on each company.</p>
+      <p><b class="label">Discuss:</b> Which error would you not have spotted without your hand calculation?</p>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+
+    <section class="page-section micro" id="practical-2">
+      <h2 class="section-heading"><span class="lesson-num">Practical two</span>Automate an aged debtor review</h2>
+      <p class="lesson-case">sales_ledger.csv &middot; 50 minutes</p>
+      <p>Kestrel Supplies Ltd has a year end of 31 March 2026. Its sales ledger holds 198 rows (customer, invoice number, invoice date, amount, amount paid), and it is messy, as real ledgers are. Produce an aged debtor report, the loss allowance and the year-end journal, and show that they reconcile.</p>
+
+      <h3 class="sub-heading">Step 1. Find the problems, but don&rsquo;t fix them yet (15 minutes)</h3>
+      <p>The judgement stays with you. Ask the AI only to look.</p>
+      <div class="prompt">
+        <div class="prompt-head"><span>Find-the-problems prompt</span><button type="button" class="copy" data-target="prompt-2">Copy prompt</button></div>
+        <pre class="gprompt" id="prompt-2">I have a CSV called sales_ledger.csv with columns customer, invoice_no, invoice_date, amount, amount_paid. Write Python for Google Colab that reads it and REPORTS any data quality problems, without changing anything. Check for: date formats, duplicate invoice numbers, credit notes, inconsistent customer names, and anything else unusual. Print the total outstanding (amount - amount_paid) at the start.</pre>
+      </div>
+      <p style="margin-top:16px">List each problem and decide how to treat it. Then prompt for the cleaning code, telling the AI your decisions and asking it to print the outstanding total after every step.</p>
+      <details class="answer">
+        <summary>Show the four planted problems</summary>
+        <ul>
+          <li><b>Mixed date formats:</b> 153 rows dd/mm/yyyy, 31 rows yyyy-mm-dd and 14 rows like &ldquo;4 Apr 2025&rdquo;. All are UK day-first. A tool that reads 03/04/2025 as 3 April is right; one that reads it as 4 March puts nine invoices in the future.</li>
+          <li><b>Duplicate invoice:</b> INV-1131 (Ashdown Builders, &pound;500.30) appears twice. Remove one.</li>
+          <li><b>Credit note sign:</b> CN-0007 (Fenwick Garages, &pound;1,200) is entered as a positive amount. It should be negative.</li>
+          <li><b>Customer spelled two ways:</b> &ldquo;Harrington and Cole Ltd&rdquo; and &ldquo;Harrington &amp; Cole Ltd&rdquo;. Standardise to one name.</li>
+        </ul>
+      </details>
+
+      <h3 class="sub-heading">Step 2. Age the balances (10 minutes)</h3>
+      <p>Prompt for a report that ages each outstanding balance at 31 March 2026 by days since invoice date: 0&ndash;30, 31&ndash;60, 61&ndash;90 and 90+ days, with totals by customer and by bucket.</p>
+
+      <h3 class="sub-heading">Step 3. Calculate the loss allowance (10 minutes)</h3>
+      <p>Use this provision matrix (IFRS 9 simplified approach). Apply each rate to its <b>bucket total</b>, not to the whole ledger. The rates are set for the exercise.</p>
+      <table>
+        <thead><tr><th>Days outstanding</th><th>0&ndash;30</th><th>31&ndash;60</th><th>61&ndash;90</th><th>90+</th></tr></thead>
+        <tbody><tr><td>Expected loss rate</td><td>1%</td><td>3%</td><td>10%</td><td>40%</td></tr></tbody>
+      </table>
+
+      <h3 class="sub-heading">Step 4. Draft the journal (10 minutes)</h3>
+      <p>The opening allowance for credit losses is <b>&pound;24,000</b>. Journal only the movement needed to reach your closing allowance. What would the entry be if the required allowance were lower than &pound;24,000?</p>
+
+      <h3 class="sub-heading">Step 5. Reconcile (5 minutes)</h3>
+      <p>The aged report total must equal the cleaned ledger&rsquo;s outstanding balance. Show this line before you call the task done.</p>
+      <details class="answer">
+        <summary>Show the headline answer</summary>
+        <p>Cleaned outstanding balance &pound;151,368.57, which the aged report matches. By bucket: 0&ndash;30 days &pound;63,430.28; 31&ndash;60 &pound;3,938.38; 61&ndash;90 &pound;10,142.63; 90+ &pound;73,857.28. Closing allowance &pound;31,309.63.</p>
+        <p>Journal: Dr Impairment loss on trade receivables &pound;7,309.63, Cr Allowance for credit losses &pound;7,309.63. Had the allowance fallen, the entry would reverse: Dr Allowance, Cr Impairment loss.</p>
+      </details>
+      <p><b class="label">Stuck?</b> The same prompts work in Gemini in Google Sheets or Claude for Excel: ask for formulas instead of Python. See also the aged debtor exercise in <a href="../halden-motors/#exercise-7">Management Accounting with Claude for Excel</a>.</p>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+
+    <section class="page-section micro" id="controls">
+      <h2 class="section-heading"><span class="lesson-num">Close</span>Controls, ethics and the exit quiz</h2>
+      <p><b>Red-team swap.</b> Swap notebooks with the pair next to you and try to break their tool: change a figure, add a blank row, enter a future date. Report one weakness you found.</p>
+      <p><b>Discuss, one question per table:</b></p>
+      <ol>
+        <li><b>Confidentiality.</b> Would you paste a client&rsquo;s real sales ledger into a free AI tool? What changes with an enterprise licence?</li>
+        <li><b>Accountability.</b> The tool overstated the allowance by &pound;40,000. Who signs off, and what evidence of review do you keep?</li>
+        <li><b>Skills.</b> If AI writes the code, what does a junior accountant still need to know?</li>
+      </ol>
+      <p>As a table, write a five-bullet &ldquo;AI use policy&rdquo; for a small finance team.</p>
+      <h3 class="sub-heading">Exit quiz</h3>
+      <p>Four questions, on your phone. Show your tutor your score.</p>
+      <a class="quiz-link" href="quiz.html">Take the exit quiz</a>
+      <h3 class="sub-heading">Follow-up task</h3>
+      <p>Pick one accounting job, such as a depreciation schedule, a VAT return check or a cash-flow forecast, and use AI to build a tool for it. Submit the prompts you used, the output, one figure you checked by hand, and 300 words on what the AI got wrong and how you found it.</p>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+
+    <section class="page-section micro" id="tutors">
+      <h2 class="section-heading"><span class="lesson-num">For tutors</span>Answer key and backup notebooks</h2>
+      <ul class="downloads">
+        <li><a href="tutor/answer_key.xlsx" download>Answer key (.xlsx)</a><span>28 KB &middot; ratios with the traps flagged, the four data problems, the cleaned ledger, the aged report, the provision matrix and the journal, all as live formulas</span></li>
+        <li><a href="tutor/practical1_ratio_analyser.ipynb" download>Practical 1 worked notebook (.ipynb)</a><span>6 KB &middot; open in Colab with File &rsaquo; Upload notebook</span></li>
+        <li><a href="tutor/practical2_aged_debtors.ipynb" download>Practical 2 worked notebook (.ipynb)</a><span>7 KB &middot; prints the outstanding total after every cleaning step</span></li>
+      </ul>
+    </section>
+
+    <section class="page-section">
+      <p style="color:var(--muted);font-size:.95rem">Made for teaching AI and automation in accounting at Aston Business School. The provision rates and opening allowance are teaching assumptions. AI tools can make mistakes: check their work before you rely on it. Reuse freely with attribution; corrections welcome at <a href="mailto:a.primmer@aston.ac.uk">a.primmer@aston.ac.uk</a>.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <span>&copy; Andrew Primmer. All rights reserved.</span>
+    <span>Aston Business School &middot; Aston University</span>
+  </div>
+</footer>
+<script>
+document.querySelectorAll(".copy").forEach(function (b) {
+  b.addEventListener("click", function () {
+    var t = document.getElementById(b.dataset.target).innerText;
+    var done = function () { b.textContent = "Copied"; setTimeout(function () { b.textContent = "Copy prompt"; }, 1800); };
+    if (navigator.clipboard) { navigator.clipboard.writeText(t).then(done, function () { b.textContent = "Select and copy"; }); }
+    else { b.textContent = "Select and copy"; }
+  });
+});
+</script>
+</body>
+</html>
