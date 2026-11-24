@@ -1,0 +1,706 @@
+{
+ "meta": {
+  "n": 8,
+  "short": "Pricing and target costing",
+  "title": "Pricing decisions and cost management",
+  "week": 9,
+  "ch": "Chapter 14",
+  "part": "Decisions",
+  "summary": "Customers, competitors and costs as influences on price, target pricing and target costing, value engineering, cost-plus pricing, life-cycle budgeting, and price discrimination and the law."
+ },
+ "videos": [
+  {
+   "id": "8.1",
+   "title": "What sets a price?",
+   "lecture": "Lecture 8 · Pricing",
+   "take": "Customers, competitors and costs all shape prices; their weight depends on the time horizon and market",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "How should Tallgrass price a new commuter e-bike? Three forces push and pull on every price."
+    },
+    {
+     "type": "list",
+     "heading": "Three influences",
+     "items": [
+      "Customers: what they value and will pay",
+      "Competitors: their prices and products",
+      "Costs: what it takes to supply the product"
+     ],
+     "say": "Customers set the ceiling: what they'll pay. Competitors shape what's possible: if a rival sells a similar bike for less, customers will notice. And costs set the floor: in the long run, price must cover them."
+    },
+    {
+     "type": "compare",
+     "heading": "Short run vs long run",
+     "cols": [
+      "Short run",
+      "Long run"
+     ],
+     "rows": [
+      [
+       "Horizon",
+       "Under a year",
+       "Over a year"
+      ],
+      [
+       "Costs that matter",
+       "Incremental only",
+       "All costs"
+      ],
+      [
+       "Example",
+       "Special order",
+       "A new model's list price"
+      ]
+     ],
+     "say": "Short-run pricing, like a one-off special order, can be set on incremental costs if capacity is idle. Long-run pricing must cover all costs, fixed included, and earn a return on investment."
+    },
+    {
+     "type": "key",
+     "big": "Competitive markets: price-takers",
+     "sub": [
+      "Tallgrass's commuter bike competes",
+      "with dozens of brands"
+     ],
+     "say": "In crowded markets, companies have little say over price: they're price-takers, and the job is to get costs below the market price. In less competitive markets, with unique products, companies have more freedom."
+    },
+    {
+     "type": "key",
+     "big": "Costs still matter",
+     "sub": [
+      "They tell you whether you can",
+      "profitably meet the market"
+     ],
+     "say": "Even when the market sets the price, costs decide whether you can sell profitably at that price. That's the idea behind target costing."
+    },
+    {
+     "type": "quiz",
+     "q": "For a 5-year price on a new bike model, which costs matter?",
+     "opts": [
+      "Only variable costs",
+      "Only fixed costs",
+      "All costs, plus a return on investment",
+      "Only direct materials"
+     ],
+     "answer": 2,
+     "say": "Quick check. For a long-term price on a new model, which costs matter? Pause and pick.",
+     "reveal": "It's C. In the long run, prices must cover all costs and earn a return."
+    }
+   ]
+  },
+  {
+   "id": "8.2",
+   "title": "Target price and target cost",
+   "lecture": "Lecture 8 · Pricing",
+   "take": "Target cost = target price − target operating income per unit",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Instead of 'what does it cost, add a markup', target costing starts with the market price and works backwards."
+    },
+    {
+     "type": "flow",
+     "heading": "Target pricing",
+     "items": [
+      "Develop a product customers want",
+      "Choose a target price",
+      "Derive a target cost",
+      "Engineer the product to hit it"
+     ],
+     "say": "Four steps: develop a product customers want; choose a target price from customers and competitors; subtract the profit you need to get a target cost; then design and engineer the product to meet that cost."
+    },
+    {
+     "type": "table",
+     "heading": "The Commuter e-bike",
+     "rows": [
+      [
+       "Competitors' price for similar bikes",
+       2000
+      ],
+      [
+       "Target operating income: 15% of price",
+       -300
+      ],
+      [
+       "Target full cost per bike",
+       1700,
+       "total"
+      ],
+      [
+       "Current estimated full cost",
+       1950
+      ],
+      [
+       "Cost gap to close",
+       250,
+       "total"
+      ]
+     ],
+     "say": "Rival commuter e-bikes sell for about $2,000. Tallgrass wants fifteen percent of price as operating income, $300, so the target full cost is $1,700. Engineering's current design would cost $1,950. There's a $250 gap to close."
+    },
+    {
+     "type": "define",
+     "big": "Target cost",
+     "sub": [
+      "Full cost the product must hit,",
+      "across the whole value chain"
+     ],
+     "say": "The target cost covers the whole value chain, not just manufacturing: design, marketing, distribution and warranty too."
+    },
+    {
+     "type": "key",
+     "big": "The market decides first",
+     "sub": [
+      "Costs adjust to the price,",
+      "not the other way round"
+     ],
+     "say": "The mindset shift: the market decides the price, and costs must adjust to it, not the other way round."
+    },
+    {
+     "type": "quiz",
+     "q": "Target price $800; target operating income 20% of price. Target cost?",
+     "opts": [
+      "$640",
+      "$960",
+      "$160",
+      "$600"
+     ],
+     "answer": 0,
+     "say": "Quick check. Target price eight hundred dollars; target operating income twenty percent of price. Target cost? Pause and pick.",
+     "reveal": "It's A. Eight hundred less a hundred sixty is $640."
+    }
+   ]
+  },
+  {
+   "id": "8.3",
+   "title": "Value engineering",
+   "lecture": "Lecture 8 · Pricing",
+   "take": "Value engineering cuts costs across the value chain while keeping what customers value",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Closing a $250 cost gap without making a worse bike takes value engineering."
+    },
+    {
+     "type": "define",
+     "big": "Value engineering",
+     "sub": [
+      "Systematic review of every value chain",
+      "cost, keeping customer value"
+     ],
+     "say": "Value engineering is a systematic evaluation of every part of the value chain, aiming to cut costs while still satisfying customers."
+    },
+    {
+     "type": "table",
+     "heading": "The team's ideas, per bike",
+     "rows": [
+      [
+       "Battery: dual sourcing",
+       60
+      ],
+      [
+       "Frame: fewer welds, one tube size",
+       80
+      ],
+      [
+       "Assembly: snap-fit wiring, fewer fasteners",
+       50
+      ],
+      [
+       "Warranty: tougher motor seals",
+       40
+      ],
+      [
+       "Distribution: flat-pack shipping",
+       30
+      ],
+      [
+       "Total savings",
+       260,
+       "total"
+      ]
+     ],
+     "say": "Tallgrass's cross-functional team finds savings: dual-sourcing batteries, $60; a frame with fewer welds, $80; snap-fit wiring, $50; tougher motor seals that cut warranty claims, $40; and flat-pack shipping, $30. That's $260, enough to close the gap."
+    },
+    {
+     "type": "compare",
+     "heading": "Keep or cut?",
+     "cols": [
+      "Customer view",
+      "Action"
+     ],
+     "rows": [
+      [
+       "Range of 50 miles",
+       "Valued",
+       "Keep"
+      ],
+      [
+       "Hydraulic brakes",
+       "Valued",
+       "Keep"
+      ],
+      [
+       "Custom paint options",
+       "Rarely bought",
+       "Cut to 3 colors"
+      ]
+     ],
+     "say": "The test for each feature: do customers value it enough to pay for it? Range and good brakes stay. Twelve paint colors, rarely chosen, become three."
+    },
+    {
+     "type": "key",
+     "big": "Cross-functional teams",
+     "sub": [
+      "Design, purchasing, production,",
+      "marketing, accounting together"
+     ],
+     "say": "Value engineering works best with cross-functional teams, because the biggest savings come from design changes that affect purchasing, production and service at once."
+    },
+    {
+     "type": "quiz",
+     "q": "Which change is most likely to cut cost without cutting customer value?",
+     "opts": [
+      "Shorter battery range",
+      "Fewer unique fasteners",
+      "Cheaper brakes",
+      "Removing the warranty"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which change is most likely to cut cost without cutting customer value? Pause and pick.",
+     "reveal": "It's B. Customers don't notice fastener types, but they do notice range, brakes and warranties."
+    }
+   ]
+  },
+  {
+   "id": "8.4",
+   "title": "Cost-plus pricing",
+   "lecture": "Lecture 8 · Pricing",
+   "take": "Cost-plus pricing adds a markup to a cost base; it's simple but must be checked against the market",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Many companies still start with cost and add a markup. Here's how it works, and where it goes wrong."
+    },
+    {
+     "type": "define",
+     "big": "Cost-plus price",
+     "sub": [
+      "Cost base × (1 + markup %)"
+     ],
+     "say": "Cost-plus pricing takes a cost base and adds a markup. The cost base might be variable cost, manufacturing cost or full cost; the markup is set to cover the costs not in the base and earn a return."
+    },
+    {
+     "type": "table",
+     "heading": "The Cargo bike",
+     "rows": [
+      [
+       "Full cost per bike",
+       3000
+      ],
+      [
+       "Markup: 20%",
+       600
+      ],
+      [
+       "Prospective price",
+       3600,
+       "total"
+      ]
+     ],
+     "say": "The Cargo bike's full cost is $3,000. A twenty percent markup gives a price of $3,600."
+    },
+    {
+     "type": "define",
+     "big": "Target rate of return on investment",
+     "sub": [
+      "Target operating income ÷ invested capital"
+     ],
+     "say": "One way to set the markup: a target rate of return on investment. If the Cargo line uses $1,500,000 of capital and Tallgrass wants an eighteen percent return, it needs $270,000 of operating income."
+    },
+    {
+     "type": "compare",
+     "heading": "Cost-plus: pros and cons",
+     "cols": [
+      "Pros",
+      "Cons"
+     ],
+     "rows": [
+      [
+       "Simplicity",
+       "Easy, quick",
+       "Ignores customers"
+      ],
+      [
+       "Defensibility",
+       "Justifies price",
+       "Ignores competitors"
+      ],
+      [
+       "Cost recovery",
+       "Covers all costs",
+       "Depends on a volume guess"
+      ]
+     ],
+     "say": "Cost-plus is simple and easy to defend, and it ensures costs are covered at the expected volume. But it ignores what customers will pay and what competitors charge, and it relies on a volume estimate. Use it as a starting point, then check against the market."
+    },
+    {
+     "type": "quiz",
+     "q": "Full cost $250; markup 30%. Price?",
+     "opts": [
+      "$280",
+      "$325",
+      "$75",
+      "$357"
+     ],
+     "answer": 1,
+     "say": "Quick check. Full cost two fifty, markup thirty percent. Price? Pause and pick.",
+     "reveal": "It's B, $325."
+    }
+   ]
+  },
+  {
+   "id": "8.5",
+   "title": "Life-cycle budgeting and costing",
+   "lecture": "Lecture 8 · Pricing",
+   "take": "Life-cycle budgeting estimates all costs from R&D to support, so prices cover them over the product's life",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "A bike model's costs start years before the first sale and continue after the last. Life-cycle budgeting captures them all."
+    },
+    {
+     "type": "define",
+     "big": "Product life cycle",
+     "sub": [
+      "From initial R&D to final customer",
+      "service and support"
+     ],
+     "say": "The product life cycle runs from initial research and development to the end of customer service and support for the last unit sold."
+    },
+    {
+     "type": "table",
+     "heading": "Commuter e-bike, 5-year budget",
+     "rows": [
+      [
+       "R&D and design",
+       400000
+      ],
+      [
+       "Manufacturing: 4,000 bikes × $1,350",
+       5400000
+      ],
+      [
+       "Marketing and distribution",
+       900000
+      ],
+      [
+       "Customer service and warranty",
+       300000
+      ],
+      [
+       "Life-cycle cost",
+       7000000,
+       "total"
+      ],
+      [
+       "Per bike",
+       1750
+      ]
+     ],
+     "say": "Tallgrass budgets the Commuter's whole life: $400,000 of R&D and design, $5,400,000 of manufacturing for four thousand bikes, $900,000 of marketing and distribution, and $300,000 of service and warranty. Seven million dollars, or $1,750 a bike."
+    },
+    {
+     "type": "key",
+     "big": "Up-front costs are easy to forget",
+     "sub": [
+      "R&D is spent years before",
+      "the revenue arrives"
+     ],
+     "say": "Annual accounting spreads these costs across years and expenses R&D as incurred, so a product can look profitable each year while never earning back its development cost. Life-cycle reporting shows the whole picture."
+    },
+    {
+     "type": "define",
+     "big": "Customer life-cycle costs",
+     "sub": [
+      "What the customer spends over",
+      "ownership: price + charging + repairs"
+     ],
+     "say": "Customers think in life-cycle terms too. A buyer compares total cost of ownership: price, charging, repairs and battery replacement. A longer-lasting battery can justify a higher price."
+    },
+    {
+     "type": "quiz",
+     "q": "Life-cycle costs $3,200,000 for 2,000 units. Minimum average price to break even over the life cycle?",
+     "opts": [
+      "$1,600",
+      "$3,200",
+      "$1,000",
+      "$6,400"
+     ],
+     "answer": 0,
+     "say": "Quick check. Life-cycle costs are three point two million for two thousand units. What's the minimum average price over the life cycle? Pause and pick.",
+     "reveal": "It's A, $1,600 a unit."
+    }
+   ]
+  },
+  {
+   "id": "8.6",
+   "title": "Price discrimination and the law",
+   "lecture": "Lecture 8 · Pricing",
+   "take": "Prices can differ by customer or time when costs differ; predatory pricing, dumping and collusion are illegal",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Charging different prices to different customers can be smart, or illegal. Here's the line."
+    },
+    {
+     "type": "compare",
+     "heading": "Legitimate price differences",
+     "cols": [
+      "How it works",
+      "Example"
+     ],
+     "rows": [
+      [
+       "Price discrimination",
+       "Different prices by customer group",
+       "Student and fleet discounts"
+      ],
+      [
+       "Peak-load pricing",
+       "Higher price when capacity is full",
+       "Spring delivery premium"
+      ]
+     ],
+     "say": "Price discrimination charges different customers different prices for the same product, based on what they'll pay, like student or fleet discounts. Peak-load pricing charges more when demand presses on capacity, like a premium for spring delivery."
+    },
+    {
+     "type": "list",
+     "heading": "Illegal pricing",
+     "items": [
+      "Predatory pricing: below cost to drive out rivals",
+      "Dumping: selling abroad below cost or home price",
+      "Collusion: agreeing prices with competitors"
+     ],
+     "say": "But some practices are illegal. Predatory pricing sets prices below cost to drive rivals out, then raises them. Dumping sells abroad below cost or below the home price. And collusive pricing, agreeing prices with competitors, is a crime."
+    },
+    {
+     "type": "key",
+     "big": "Robinson-Patman Act, 1936",
+     "sub": [
+      "Price differences between business buyers",
+      "must be justified, for example by cost"
+     ],
+     "say": "In the US, the Robinson-Patman Act of 1936 limits price differences between competing business buyers unless they can be justified, for example by differences in the cost of serving them. That's another reason to have good customer cost data."
+    },
+    {
+     "type": "key",
+     "big": "Cost data is your defense",
+     "sub": [
+      "Show that a lower price reflects",
+      "lower costs to serve"
+     ],
+     "say": "If Tallgrass gives a big chain a lower price than small dealers, it should be able to show the chain costs less to serve: bigger orders, fewer deliveries, no co-op advertising."
+    },
+    {
+     "type": "quiz",
+     "q": "Two e-bike makers agree to keep prices above $2,200. This is:",
+     "opts": [
+      "Peak-load pricing",
+      "Price discrimination",
+      "Collusive pricing: illegal",
+      "Target pricing"
+     ],
+     "answer": 2,
+     "say": "Quick check. Two e-bike makers agree to keep prices above twenty-two hundred dollars. What is this? Pause and pick.",
+     "reveal": "It's C, collusion, which is illegal."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Name a product whose price you check before buying, and one whose price you barely notice. Why the difference?",
+   "Competitive, comparable goods vs unique or low-share-of-wallet goods. Introduces customers, competitors and costs."
+  ],
+  "acts": [
+   [
+    "Which influence dominates: (a) a generic phone charger, (b) a patented medical device, (c) a custom trailer?",
+    "(a) Competitors. (b) Customers (value) and costs. (c) Costs plus customer value."
+   ],
+   [
+    "Target price $2,000; Tallgrass raises its target margin to 18%. New target cost and cost gap from $1,950?",
+    "Target cost 1,640; gap $310."
+   ],
+   [
+    "Suggest three value-engineering ideas for a kids' balance bike and say which customers would notice.",
+    "Fewer frame sizes, molded wheels, simpler packaging; parents may notice wheel quality, not packaging."
+   ],
+   [
+    "Cargo bike: invested capital $1,500,000, target ROI 18%, 1,000 bikes, full cost $3,000. Required markup on full cost?",
+    "270,000 ÷ 1,000 = 270; 270 ÷ 3,000 = 9%; price $3,270."
+   ],
+   [
+    "If Commuter volume is 3,000 instead of 4,000, what is the life-cycle cost per bike (manufacturing variable at $1,350; others fixed)?",
+    "400,000 + 4,050,000 + 900,000 + 300,000 = 5,650,000 ÷ 3,000 = $1,883."
+   ],
+   [
+    "Tallgrass gives a national chain a 12% discount. What evidence would justify it under Robinson-Patman?",
+    "Lower costs to serve: order size, delivery frequency, no co-op advertising, fewer returns."
+   ]
+  ],
+  "case": [
+   "Launching the Commuter",
+   "Tallgrass plans the Commuter e-bike. Rivals sell at $1,900–$2,100. Marketing believes a $2,000 price with a 4-year warranty would win 1,000 sales a year for 4 years. Engineering's design costs $1,950 full cost per bike. Ana's team has found $260 of savings, but marketing now wants to add a connected-app feature costing $45 per bike.",
+   [
+    "Compute target cost and the gap at a 15% margin.",
+    "Does the value engineering plan close the gap if the app is kept?",
+    "What life-cycle costs should be included?",
+    "Would you launch? What price?"
+   ],
+   "Target cost 1,700; gap 250. Savings of 260 bring cost to 1,690, meeting the target. Adding the app raises it to 1,735: margin (2,000 − 1,735) ÷ 2,000 = 13.25%, a $35 gap. Include R&D, marketing, warranty and app maintenance over the life cycle. Launch if more savings can be found, or if customers value the app enough to pay about $2,050; otherwise drop the app."
+  ],
+  "exam": [
+   [
+    "Explain target pricing and target costing, and contrast them with cost-plus pricing.",
+    5,
+    "Market-based: target price from customers/competitors, minus target profit = target cost; value engineering closes the gap. Cost-plus starts with cost and adds a markup, ignoring the market."
+   ],
+   [
+    "A product's life-cycle costs: R&D $600,000, manufacturing $45 per unit, marketing $200,000, service $100,000. Expected 50,000 units. Target margin 20% of price. Compute the life-cycle cost per unit and the price needed.",
+    5,
+    "Total 900,000 + 2,250,000 = 3,150,000 ÷ 50,000 = $63; price 63 ÷ 0.8 = $78.75."
+   ]
+  ],
+  "outcomes": [
+   "Explain the three influences on price",
+   "Compute target cost and the cost gap",
+   "Apply value engineering",
+   "Compute cost-plus prices and markups",
+   "Prepare a life-cycle budget",
+   "Distinguish legal price differences from illegal practices"
+  ],
+  "take": [
+   "Customers, competitors and costs",
+   "Target cost = target price − target profit",
+   "Engineer out cost, keep what customers value",
+   "Cost-plus is a start, not an answer",
+   "Price must cover the whole life cycle",
+   "Justify price differences with cost; never collude"
+  ]
+ },
+ "ex": [
+  {
+   "type": "match",
+   "q": "Match the influence to its role.",
+   "pairs": [
+    [
+     "Customers",
+     "Set the ceiling: what they'll pay"
+    ],
+    [
+     "Competitors",
+     "Limit what's possible"
+    ],
+    [
+     "Costs",
+     "Set the long-run floor"
+    ]
+   ],
+   "why": "All three shape prices.",
+   "video": "8.1"
+  },
+  {
+   "type": "num",
+   "q": "Target price $1,500; target operating income 20% of price. Target cost?",
+   "a": 1200,
+   "unit": "$",
+   "why": "1,500 − 300 = 1,200.",
+   "video": "8.2"
+  },
+  {
+   "type": "num",
+   "q": "Current full cost $1,320; target cost $1,200. Cost gap?",
+   "a": 120,
+   "unit": "$",
+   "why": "1,320 − 1,200 = 120.",
+   "video": "8.2"
+  },
+  {
+   "type": "mcq",
+   "q": "Value engineering aims to:",
+   "opts": [
+    "Cut every feature",
+    "Cut costs while keeping what customers value",
+    "Raise prices",
+    "Reduce only manufacturing costs"
+   ],
+   "a": 1,
+   "why": "It reviews the whole value chain and keeps valued features.",
+   "video": "8.3"
+  },
+  {
+   "type": "num",
+   "q": "Full cost $480; markup 25%. Cost-plus price?",
+   "a": 600,
+   "unit": "$",
+   "why": "480 × 1.25 = 600.",
+   "video": "8.4"
+  },
+  {
+   "type": "num",
+   "q": "Invested capital $2,000,000; target ROI 15%; 5,000 units; full cost $400. Required markup percentage?",
+   "a": 15,
+   "tol": 0.1,
+   "unit": "%",
+   "why": "300,000 ÷ 5,000 = 60 per unit; 60 ÷ 400 = 15%.",
+   "video": "8.4"
+  },
+  {
+   "type": "num",
+   "q": "Life-cycle costs: R&D $300,000, manufacturing $1,200,000, marketing $250,000, service $50,000; 6,000 units. Cost per unit?",
+   "a": 300,
+   "unit": "$",
+   "why": "1,800,000 ÷ 6,000 = 300.",
+   "video": "8.5"
+  },
+  {
+   "type": "sort",
+   "q": "Legal or illegal?",
+   "cats": [
+    "Generally legal",
+    "Illegal"
+   ],
+   "items": [
+    [
+     "Student discount",
+     0
+    ],
+    [
+     "Agreeing prices with a rival",
+     1
+    ],
+    [
+     "Pricing below cost to bankrupt a competitor",
+     1
+    ],
+    [
+     "Higher prices in peak season",
+     0
+    ],
+    [
+     "Volume discount justified by lower cost to serve",
+     0
+    ]
+   ],
+   "why": "Price differences must be justified; collusion and predation are illegal.",
+   "video": "8.6"
+  }
+ ]
+}

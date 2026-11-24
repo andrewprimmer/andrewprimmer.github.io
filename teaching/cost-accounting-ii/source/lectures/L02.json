@@ -1,0 +1,103 @@
+{
+ "meta": {"n": 2, "short": "Data analytics and prediction", "title": "Data analytic thinking and prediction", "week": 2, "ch": "Chapter 11", "part": "Cost behavior and prediction",
+  "summary": "A framework for data analytics, classification with decision trees, measuring purity, overfitting and validation, evaluating predictions with a confusion matrix, and turning predictions into decisions."},
+ "videos": [
+  {"id": "2.1", "title": "A framework for data analytics", "lecture": "Lecture 2 · Data analytics",
+   "take": "Data analytics starts with the business problem and ends with a deployed, monitored model", "read": "",
+   "scenes": [
+    {"type": "title", "say": "Management accountants now build prediction models, not just budgets. Here's the framework that keeps a model useful."},
+    {"type": "flow", "heading": "Six steps", "items": ["Understand the business problem", "Understand the data", "Prepare the data", "Build the model", "Evaluate the model", "Deploy and monitor"], "say": "Six steps. Understand the business problem. Understand the data you have. Prepare it, cleaning errors and creating useful variables. Build a model. Evaluate it on data it hasn't seen. Then deploy it and keep monitoring."},
+    {"type": "key", "big": "Tallgrass's problem", "sub": ["Which bike dealers will pay late?", "Late payers cost $3,000 each"], "say": "Tallgrass sells through about two hundred bike dealers. Some pay months late, which costs Tallgrass about $3,000 per late account in financing, collection and write-offs. Ana wants to predict which dealers will pay late."},
+    {"type": "compare", "heading": "Kinds of analytics", "cols": ["Question", "Example"], "rows": [["Descriptive", "What happened?", "Late accounts last year"], ["Predictive", "What will happen?", "Who will pay late?"], ["Prescriptive", "What should we do?", "Require prepayment?"]], "say": "Descriptive analytics says what happened. Predictive analytics says what's likely to happen. Prescriptive analytics recommends what to do. Ana needs all three."},
+    {"type": "key", "big": "Start with the decision", "sub": ["A model is only worth building if", "it changes what someone does"], "say": "The first step is the most important: a model is worth building only if its predictions will change a decision, here whether to demand prepayment."},
+    {"type": "quiz", "q": "Splitting addresses into city and state and filling missing values is which step?", "opts": ["Business understanding", "Data preparation", "Modeling", "Deployment"], "answer": 1,
+     "say": "Quick check. Cleaning addresses and filling missing values is which step? Pause and pick.", "reveal": "It's B, data preparation, which often takes most of the time."}
+   ]},
+  {"id": "2.2", "title": "Classification with decision trees", "lecture": "Lecture 2 · Data analytics",
+   "take": "A decision tree splits data on features to sort cases into classes such as late or on-time", "read": "",
+   "scenes": [
+    {"type": "title", "say": "Classification models sort cases into groups. The easiest to read is the decision tree."},
+    {"type": "define", "big": "Classification", "sub": ["Predict a category:", "late payer or on-time payer"], "say": "A classification model predicts which category a case falls into. Here: will a dealer pay late, or on time? It learns from past dealers whose outcomes are known."},
+    {"type": "flow", "heading": "Ana's tree", "items": ["Over 60 days late last year?", "Yes, under 3 years a customer → late", "Yes, 3+ years a customer → on time", "No → on time"], "say": "Ana's tree first asks: was any payment more than sixty days late last year? If not, predict on time. If so, ask how long they've been a customer: under three years predicts late; three years or more predicts on time."},
+    {"type": "key", "big": "Features", "sub": ["Payment history, years as customer,", "order size, region, credit score"], "say": "The variables the tree splits on are called features. Ana tried payment history, years as a customer, order size, region and a credit score. The tree picks the features that best separate late from on-time payers."},
+    {"type": "key", "big": "Easy to explain", "sub": ["Managers can follow the logic,", "unlike many black-box models"], "say": "Trees are popular in accounting because managers can follow the logic and explain a decision to a dealer, unlike many black-box models."},
+    {"type": "quiz", "q": "A dealer had no payments over 60 days late last year. What does Ana's tree predict?", "opts": ["Late", "On time", "It depends on years as a customer", "No prediction"], "answer": 1,
+     "say": "Quick check. A dealer had no payments over sixty days late last year. What does the tree predict? Pause and pick.", "reveal": "It's B, on time. The 'no' branch ends there."}
+   ]},
+  {"id": "2.3", "title": "Choosing splits: purity", "lecture": "Lecture 2 · Data analytics",
+   "take": "Trees choose the split that makes the resulting groups purest, measured by Gini impurity or entropy", "read": "",
+   "scenes": [
+    {"type": "title", "say": "How does a tree decide which question to ask first? It picks the split that makes the groups purest."},
+    {"type": "define", "big": "Gini impurity = 1 − Σp²", "size": 76, "sub": ["0 when a group is all one class;", "highest when classes are mixed"], "say": "One measure is Gini impurity: one minus the sum of the squared shares of each class. A group that's all late payers scores zero. A fifty-fifty mix scores point five, the worst for two classes."},
+    {"type": "table", "heading": "40 dealers, 10 late", "rows": [["Share late: 10 ÷ 40", "0.25"], ["Gini: 1 − (0.25² + 0.75²)", "0.375"]], "say": "Start with forty dealers, ten of them late. The share late is a quarter. Gini impurity is one minus point two five squared minus point seven five squared: point three seven five."},
+    {"type": "table", "heading": "Split on 'over 60 days late last year'", "rows": [["Yes: 12 dealers, 8 late", "Gini 0.44"], ["No: 28 dealers, 2 late", "Gini 0.13"], ["Weighted Gini", "0.23", "total"], ["Improvement from 0.375", "0.15", "total"]], "say": "Split on payment history. Twelve dealers were late last year, and eight of them pay late again: Gini point four four. Of the other twenty-eight, only two pay late: Gini point one three. Weighted, that's point two three, a big improvement on point three seven five."},
+    {"type": "key", "big": "Greedy, one split at a time", "sub": ["The tree tests every feature,", "takes the best, then repeats"], "say": "The algorithm tests every feature, takes the split with the biggest improvement, then repeats inside each branch."},
+    {"type": "quiz", "q": "Which group has the lowest Gini impurity?", "opts": ["10 dealers: 5 late, 5 on time", "10 dealers: 9 on time, 1 late", "10 dealers: 7 on time, 3 late", "10 dealers: 6 late, 4 on time"], "answer": 1,
+     "say": "Quick check. Which group has the lowest impurity? Pause and pick.", "reveal": "It's B. Nine to one is the purest mix, with a Gini of point one eight."}
+   ]},
+  {"id": "2.4", "title": "Overfitting and validation", "lecture": "Lecture 2 · Data analytics",
+   "take": "Test models on data they weren't built on; prune trees that fit noise", "read": "",
+   "scenes": [
+    {"type": "title", "say": "A model can be perfect on old data and useless on new data. That's overfitting, and validation catches it."},
+    {"type": "define", "big": "Overfitting", "sub": ["Learning the noise in past data,", "not the pattern"], "say": "Overfitting happens when a model learns the quirks of its training data rather than the real pattern. Keep splitting a tree and eventually every leaf holds one dealer: perfect on past data, poor at predicting."},
+    {"type": "compare", "heading": "Training and test data", "cols": ["Used to", "Share"], "rows": [["Training set", "Build the model", "About 70%"], ["Test set", "Measure real accuracy", "About 30%"]], "say": "So split the data. Build the model on a training set, say seventy percent of dealers. Measure its accuracy on the thirty percent it has never seen. Cross-validation repeats this with different splits."},
+    {"type": "table", "heading": "Ana's trees", "rows": [["Tree depth", "Train | Test", "head"], ["2 levels", "86% | 84%"], ["5 levels", "93% | 85%"], ["12 levels", "100% | 71%"]], "say": "Ana's two-level tree is eighty-six percent accurate on training data and eighty-four on test data. A five-level tree is a little better on both. A twelve-level tree is perfect on training data but only seventy-one percent on test data: overfitted."},
+    {"type": "define", "big": "Pruning", "sub": ["Cut branches that don't improve", "accuracy on new data"], "say": "Pruning removes branches that don't improve performance on new data. Simpler models usually generalize better."},
+    {"type": "quiz", "q": "Which tree should Ana deploy?", "opts": ["2 levels", "5 levels", "12 levels", "None"], "answer": 1,
+     "say": "Quick check. Which tree should Ana use? Pause and pick.", "reveal": "It's B. Five levels has the best accuracy on test data."}
+   ]},
+  {"id": "2.5", "title": "Evaluating predictions", "lecture": "Lecture 2 · Data analytics",
+   "take": "A confusion matrix shows true and false positives and negatives; accuracy alone can mislead", "read": "",
+   "scenes": [
+    {"type": "title", "say": "Ninety percent accurate sounds great. But accuracy alone can hide the mistakes that matter."},
+    {"type": "table", "heading": "Test set: 200 dealers, 30 actually late", "rows": [["Flagged late, were late (true positive)", "24"], ["Flagged late, paid on time (false positive)", "16"], ["Not flagged, were late (false negative)", "6"], ["Not flagged, paid on time (true negative)", "154"]], "say": "On two hundred test dealers, thirty actually paid late. The model flagged forty: twenty-four correctly and sixteen wrongly. It missed six late payers, and correctly cleared a hundred fifty-four."},
+    {"type": "table", "heading": "Three measures", "rows": [["Accuracy: (24 + 154) ÷ 200", "89%"], ["Precision: 24 ÷ 40 flagged", "60%"], ["Recall: 24 ÷ 30 late", "80%"]], "say": "Accuracy, the share of correct predictions, is eighty-nine percent. Precision, the share of flagged dealers who really were late, is sixty percent. Recall, the share of late dealers the model caught, is eighty percent."},
+    {"type": "key", "tag": "WATCH OUT", "big": "Accuracy can mislead", "sub": ["'Nobody pays late' is 85% accurate", "and catches no one"], "say": "Why not just use accuracy? Predicting that nobody pays late would be eighty-five percent accurate here, and completely useless."},
+    {"type": "key", "big": "Errors have different costs", "sub": ["Missed late payer: $3,000", "Wrongly flagged dealer: lost goodwill"], "say": "And the two kinds of error cost different amounts. Missing a late payer costs about $3,000. Wrongly flagging a good dealer risks the relationship. That leads to the decision step."},
+    {"type": "quiz", "q": "A model flags 50 dealers; 35 are actually late, out of 40 late in total. What is recall?", "opts": ["70%", "87.5%", "80%", "35%"], "answer": 1,
+     "say": "Quick check. A model flags fifty dealers; thirty-five really are late, out of forty late in total. What's recall? Pause and pick.", "reveal": "It's B. Recall is thirty-five out of forty: eighty-seven and a half percent."}
+   ]},
+  {"id": "2.6", "title": "From prediction to decision", "lecture": "Lecture 2 · Data analytics",
+   "take": "Weigh the benefits of correct predictions against the cost of errors to decide whether and how to use a model", "read": "",
+   "scenes": [
+    {"type": "title", "say": "A prediction is only useful if it improves a decision. Ana must decide what to do with the dealers her model flags."},
+    {"type": "list", "heading": "The proposed policy", "items": ["Flagged dealers must prepay", "Prepaying avoids the $3,000 late-payment cost", "But a good dealer forced to prepay costs $800 of lost margin"], "say": "The proposal: flagged dealers must prepay their orders. That avoids the $3,000 cost of each late payer caught. But a good dealer wrongly forced to prepay may buy less, costing about $800 of margin."},
+    {"type": "table", "heading": "Value of the model, per 200 dealers", "rows": [["True positives: 24 × $3,000 saved", 72000], ["False positives: 16 × $800 lost", -12800], ["Net benefit", 59200, "total"]], "say": "Per two hundred dealers, catching twenty-four late payers saves $72,000. Wrongly flagging sixteen good dealers costs $12,800. The net benefit is $59,200, so the policy is worth adopting."},
+    {"type": "key", "big": "Tune the threshold", "sub": ["Flag more: higher recall, more false positives", "Flag fewer: the reverse"], "say": "Ana can tune the model's threshold. Flagging more dealers catches more late payers but annoys more good ones. The best threshold maximizes net benefit, not accuracy."},
+    {"type": "list", "heading": "After deployment", "items": ["Monitor accuracy as conditions change", "Check for unfair treatment of groups", "Retrain on new data"], "say": "And after deployment, keep watching. Economic conditions change, models drift, and features can treat groups of customers unfairly. Monitoring is part of the job."},
+    {"type": "quiz", "q": "A new threshold flags 60 dealers: 28 true positives, 32 false positives. Net benefit at $3,000 and $800?", "opts": ["$58,400", "$84,000", "$59,200", "$25,600"], "answer": 0,
+     "say": "Quick check. A new threshold flags sixty dealers: twenty-eight true positives and thirty-two false positives. What's the net benefit? Pause and pick.", "reveal": "It's A. $84,000 saved minus $25,600 lost is $58,400, slightly worse than before."}
+   ]}
+ ],
+ "content": {
+  "warmup": ["Your bank's app flags a purchase as possible fraud. Is that a good model? What would you want to know?", "How often it's right (precision), how much fraud it catches (recall), and the cost of each error. Previews 2.5 and 2.6."],
+  "acts": [
+   ["Frame Tallgrass's warranty-claim problem in the six steps: which claims are likely fraudulent?", "Business: cost of paying false claims vs annoying honest customers. Data: claim history, dealer, bike age. Prepare: clean, create features. Model: tree. Evaluate on test claims. Deploy: route flagged claims to inspection; monitor."],
+   ["Suggest four features to predict whether a dealer pays late, and explain each.", "Prior late payments, years as customer, order size relative to dealer revenue, credit score, region's economic conditions."],
+   ["Compute Gini for 20 dealers with 4 late, and for a split into (10 dealers, 0 late) and (10 dealers, 4 late).", "Parent: 1 − (0.04 + 0.64) = 0.32. Children: 0 and 1 − (0.16 + 0.36) = 0.48; weighted 0.24. Improvement 0.08."],
+   ["Explain why a model with 100% training accuracy might be a bad choice.", "It likely overfits; judge on test data, prefer simpler pruned trees."],
+   ["Confusion matrix: TP 18, FP 12, FN 12, TN 158. Compute accuracy, precision and recall.", "Accuracy 176/200 = 88%; precision 18/30 = 60%; recall 18/30 = 60%."],
+   ["With TP saving $3,000 and FP costing $800, what minimum precision makes flagging a dealer worthwhile?", "Flag if p × 3,000 > (1 − p) × 800 → p > 800/3,800 ≈ 21%."]
+  ],
+  "case": ["Predicting dealer defaults",
+   "Ana has five years of data on 600 dealers. A consultant offers a neural network with 94% test accuracy that can't explain its predictions; Ana's pruned tree has 89% test accuracy, 60% precision and 80% recall. Sales managers worry that requiring prepayment will drive good dealers to competitors. The consultant's model has 70% precision and 75% recall.",
+   ["Compute the net benefit of each model per 200 dealers (30 late), using $3,000 and $800.", "Which would you deploy, and why?", "What non-financial issues matter?", "How should the model be monitored?"],
+   "Tree: TP 24, FP 16 → 72,000 − 12,800 = 59,200. Network: recall 75% → TP 22.5, flagged = 22.5/0.7 = 32.1, FP 9.6 → 67,500 − 7,700 = 59,800. Nearly equal value; the tree is explainable to dealers and sales staff, so prefer it unless the gap grows. Monitor drift, fairness, and dealer churn."],
+  "exam": [
+   ["Explain overfitting and two ways to guard against it.", 4, "A model learns noise in training data and predicts poorly on new data. Guard with a holdout test set or cross-validation, and pruning/simpler models."],
+   ["A model's test results: TP 40, FP 20, FN 10, TN 130. Compute accuracy, precision and recall, and the net benefit if a TP saves $2,000 and an FP costs $500.", 6, "Accuracy 170/200 = 85%; precision 40/60 = 66.7%; recall 40/50 = 80%. Net benefit 80,000 − 10,000 = $70,000."]
+  ],
+  "outcomes": ["Apply a six-step analytics framework", "Read a classification tree", "Compute Gini impurity for a split", "Explain overfitting, validation and pruning", "Compute accuracy, precision and recall", "Turn predictions into decisions using error costs"],
+  "take": ["Start with the decision the model will change", "Trees split on features to classify cases", "Choose splits that make groups purest", "Judge models on data they haven't seen", "Accuracy can mislead; look at precision and recall", "Weigh the value of right predictions against the cost of errors"]
+ },
+ "ex": [
+  {"type": "order", "q": "Put the analytics steps in order.", "items": ["Understand the business problem", "Understand the data", "Prepare the data", "Build the model", "Evaluate the model", "Deploy and monitor"], "why": "Start with the business question; end by monitoring.", "video": "2.1"},
+  {"type": "match", "q": "Match each question to its type of analytics.", "pairs": [["What were last year's late accounts?", "Descriptive"], ["Which dealers will pay late?", "Predictive"], ["Should we require prepayment?", "Prescriptive"]], "why": "What happened, what will happen, what to do.", "video": "2.1"},
+  {"type": "mcq", "q": "In a decision tree, what is a feature?", "opts": ["The predicted class", "A variable the tree splits on", "The test set", "The final leaf"], "a": 1, "why": "Features are input variables used for splits.", "video": "2.2"},
+  {"type": "num", "q": "A group of 50 dealers has 10 late payers. What is its Gini impurity (to 2 decimals)?", "a": 0.32, "tol": 0.005, "unit": "", "why": "1 − (0.2² + 0.8²) = 0.32.", "video": "2.3"},
+  {"type": "mcq", "q": "A tree scores 99% on training data and 68% on test data. What is the likely problem?", "opts": ["Underfitting", "Overfitting", "Too little training data used", "Wrong business question"], "a": 1, "why": "A large gap between training and test accuracy signals overfitting.", "video": "2.4"},
+  {"type": "num", "q": "TP 30, FP 10, FN 20, TN 140. What is precision, in percent?", "a": 75, "tol": 0.1, "unit": "%", "why": "30 ÷ 40 = 75%.", "video": "2.5"},
+  {"type": "num", "q": "Same matrix: what is recall, in percent?", "a": 60, "tol": 0.1, "unit": "%", "why": "30 ÷ 50 = 60%.", "video": "2.5"},
+  {"type": "num", "q": "Each true positive saves $2,500 and each false positive costs $600. TP 20, FP 15. What is the net benefit?", "a": 41000, "unit": "$", "why": "50,000 − 9,000 = 41,000.", "video": "2.6"}
+ ]
+}

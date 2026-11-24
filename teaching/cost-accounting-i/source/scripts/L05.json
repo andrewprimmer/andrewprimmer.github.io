@@ -1,0 +1,569 @@
+{
+ "videos": [
+  {
+   "id": "5.1",
+   "title": "Journal entries under normal costing",
+   "lecture": "Lecture 5 \u00b7 Overhead and year-end",
+   "take": "Actual overhead is debited to MOH control; applied overhead is credited to MOH allocated and debited to WIP",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Under normal costing, overhead travels on two separate tracks: what's actually spent, and what's applied to jobs."
+    },
+    {
+     "type": "journal",
+     "heading": "Actual overhead incurred, 2027",
+     "rows": [
+      [
+       "MOH control",
+       1800000,
+       ""
+      ],
+      [
+       "Various accounts",
+       "",
+       1800000
+      ]
+     ],
+     "say": "During 2027, Prairie Gate's actual overhead costs, supervisors, utilities, depreciation and supplies, total $1,800,000. Each is debited to manufacturing overhead control."
+    },
+    {
+     "type": "journal",
+     "heading": "Overhead applied to jobs",
+     "rows": [
+      [
+       "WIP control",
+       1764000,
+       ""
+      ],
+      [
+       "MOH allocated",
+       "",
+       1764000
+      ]
+     ],
+     "say": "Separately, as jobs are worked on, overhead is applied at thirty-six dollars per direct labor hour. Workers logged forty-nine thousand hours, so $1,764,000 is debited to work in process and credited to manufacturing overhead allocated."
+    },
+    {
+     "type": "taccount",
+     "heading": "The two overhead accounts",
+     "accounts": [
+      {
+       "name": "MOH control",
+       "entries": [
+        [
+         "dr",
+         1800000
+        ]
+       ]
+      },
+      {
+       "name": "MOH allocated",
+       "entries": [
+        [
+         "cr",
+         1764000
+        ]
+       ]
+      }
+     ],
+     "say": "At year-end, the two accounts don't match. Control shows $1,800,000 actually spent. Allocated shows $1,764,000 applied to jobs."
+    },
+    {
+     "type": "key",
+     "big": "Jobs carry applied overhead",
+     "sub": [
+      "WIP, finished goods and COGS",
+      "all hold the budgeted-rate amounts"
+     ],
+     "say": "Every job, and so work in process, finished goods and cost of goods sold, carries overhead at the budgeted rate. The difference must be dealt with before the books close."
+    },
+    {
+     "type": "quiz",
+     "q": "Which entry applies overhead to jobs?",
+     "opts": [
+      "Dr MOH control, Cr Cash",
+      "Dr WIP control, Cr MOH allocated",
+      "Dr MOH allocated, Cr WIP",
+      "Dr COGS, Cr MOH control"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which entry applies overhead to jobs? Pause and pick.",
+     "reveal": "It's B. Debit work in process, credit manufacturing overhead allocated."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "title": "Under- and overallocated overhead",
+   "lecture": "Lecture 5 \u00b7 Overhead and year-end",
+   "take": "Underallocated overhead means actual exceeded applied; overallocated means applied exceeded actual",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Applied overhead almost never equals actual overhead. Here's how to measure the gap."
+    },
+    {
+     "type": "table",
+     "heading": "Prairie Gate, 2027",
+     "rows": [
+      [
+       "Actual overhead incurred",
+       1800000
+      ],
+      [
+       "Allocated: 49,000 hours \u00d7 $36",
+       -1764000
+      ],
+      [
+       "Underallocated overhead",
+       36000,
+       "total"
+      ]
+     ],
+     "say": "Prairie Gate spent $1,800,000 on overhead but applied only $1,764,000. Overhead is underallocated by $36,000: jobs were charged too little."
+    },
+    {
+     "type": "compare",
+     "heading": "Two directions",
+     "cols": [
+      "Means",
+      "Job costs were"
+     ],
+     "rows": [
+      [
+       "Underallocated",
+       "Actual > allocated",
+       "Too low"
+      ],
+      [
+       "Overallocated",
+       "Allocated > actual",
+       "Too high"
+      ]
+     ],
+     "say": "Underallocated, or underapplied, means actual exceeds allocated, so job costs were understated. Overallocated means allocated exceeds actual, so jobs were overcharged."
+    },
+    {
+     "type": "list",
+     "heading": "Two possible causes",
+     "items": [
+      "The numerator: overhead spending differed from budget",
+      "The denominator: labor hours differed from budget"
+     ],
+     "say": "The gap has two possible causes. Overhead spending was different from budget, here $1,800,000 instead of $1,728,000. Or activity was different, here forty-nine thousand hours instead of forty-eight thousand. Lecture 14 separates these with variances."
+    },
+    {
+     "type": "key",
+     "big": "It must be cleared",
+     "sub": [
+      "The accounts are temporary:",
+      "closed at year-end"
+     ],
+     "say": "The two overhead accounts are temporary. At year-end the difference is cleared out using one of three approaches."
+    },
+    {
+     "type": "quiz",
+     "q": "Actual overhead $520,000; allocated $545,000. What is the result?",
+     "opts": [
+      "Underallocated $25,000",
+      "Overallocated $25,000",
+      "Underallocated $545,000",
+      "No difference"
+     ],
+     "answer": 1,
+     "say": "Quick check. Actual overhead five twenty thousand, allocated five forty-five. What's the result? Pause and pick.",
+     "reveal": "It's B. More was allocated than spent: overallocated by $25,000."
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "title": "The adjusted allocation-rate approach",
+   "lecture": "Lecture 5 \u00b7 Overhead and year-end",
+   "take": "Restating every job at the actual rate turns normal costs into actual costs",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "The most accurate fix is to go back and recost every job at the actual overhead rate."
+    },
+    {
+     "type": "table",
+     "heading": "The actual rate",
+     "rows": [
+      [
+       "Actual overhead",
+       1800000
+      ],
+      [
+       "Actual direct labor hours",
+       "49,000"
+      ],
+      [
+       "Actual rate per hour",
+       "$36.73",
+       "total"
+      ]
+     ],
+     "say": "The actual overhead rate for 2027 is $1,800,000 divided by forty-nine thousand hours: $36.73 per hour."
+    },
+    {
+     "type": "table",
+     "heading": "Trailer #418 restated",
+     "rows": [
+      [
+       "Overhead at budgeted rate: 80 \u00d7 $36",
+       2880
+      ],
+      [
+       "Overhead at actual rate: 80 \u00d7 $36.73",
+       2939
+      ],
+      [
+       "Adjustment to job 418",
+       59,
+       "total"
+      ]
+     ],
+     "say": "Trailer four-eighteen took eighty hours, so its overhead rises from $2,880 to $2,939, an adjustment of $59. Every job, in work in process, finished goods and cost of goods sold, is restated the same way."
+    },
+    {
+     "type": "key",
+     "big": "Normal costing becomes actual costing",
+     "sub": [
+      "Each job gets its true share",
+      "of actual overhead"
+     ],
+     "say": "The result is actual costing: each job carries its true share of actual overhead. With computerized job records, this is easy to do."
+    },
+    {
+     "type": "key",
+     "big": "Still worth having the budget rate",
+     "sub": [
+      "Timely costs during the year,",
+      "accurate costs at year-end"
+     ],
+     "say": "Companies still keep the budgeted rate during the year for timely pricing and control, then adjust at year-end."
+    },
+    {
+     "type": "quiz",
+     "q": "Actual overhead $630,000; actual machine hours 21,000. Actual rate?",
+     "opts": [
+      "$30",
+      "$33",
+      "$21",
+      "$63"
+     ],
+     "answer": 0,
+     "say": "Quick check. Actual overhead six thirty thousand; actual machine hours twenty-one thousand. What's the actual rate? Pause and pick.",
+     "reveal": "It's A, thirty dollars an hour."
+    }
+   ]
+  },
+  {
+   "id": "5.4",
+   "title": "Proration",
+   "lecture": "Lecture 5 \u00b7 Overhead and year-end",
+   "take": "Proration spreads the difference over WIP, finished goods and COGS in proportion to overhead allocated in each",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "A simpler way to get close to actual costs: spread the difference over the accounts that hold this year's overhead."
+    },
+    {
+     "type": "table",
+     "heading": "Overhead allocated in each account, year-end",
+     "rows": [
+      [
+       "Work in process: 10%",
+       176400
+      ],
+      [
+       "Finished goods: 15%",
+       264600
+      ],
+      [
+       "Cost of goods sold: 75%",
+       1323000
+      ],
+      [
+       "Total allocated",
+       1764000,
+       "total"
+      ]
+     ],
+     "say": "At year-end, ten percent of the overhead allocated this year sits in work in process, fifteen percent in finished goods, and seventy-five percent in cost of goods sold."
+    },
+    {
+     "type": "table",
+     "heading": "Prorating the $36,000 underallocation",
+     "rows": [
+      [
+       "Work in process: 10%",
+       3600
+      ],
+      [
+       "Finished goods: 15%",
+       5400
+      ],
+      [
+       "Cost of goods sold: 75%",
+       27000
+      ],
+      [
+       "Total",
+       36000,
+       "total"
+      ]
+     ],
+     "say": "So the $36,000 underallocation is spread the same way: $3,600 to work in process, $5,400 to finished goods and $27,000 to cost of goods sold."
+    },
+    {
+     "type": "journal",
+     "heading": "The proration entry",
+     "rows": [
+      [
+       "MOH allocated",
+       1764000,
+       ""
+      ],
+      [
+       "WIP control",
+       3600,
+       ""
+      ],
+      [
+       "Finished goods",
+       5400,
+       ""
+      ],
+      [
+       "Cost of goods sold",
+       27000,
+       ""
+      ],
+      [
+       "MOH control",
+       "",
+       1800000
+      ]
+     ],
+     "say": "The entry closes both overhead accounts. Debit allocated for $1,764,000, debit the three accounts for their shares, and credit control for $1,800,000."
+    },
+    {
+     "type": "key",
+     "big": "Prorate on overhead, not totals",
+     "sub": [
+      "Use the overhead component in each",
+      "account for the closest result"
+     ],
+     "say": "Prorating on the overhead component in each account gives the same balances as the adjusted-rate approach. Prorating on total ending balances is a rougher shortcut."
+    },
+    {
+     "type": "quiz",
+     "q": "Overallocated by $20,000. COGS holds 80% of allocated overhead. Adjustment to COGS?",
+     "opts": [
+      "Increase $16,000",
+      "Decrease $16,000",
+      "Decrease $20,000",
+      "Increase $4,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Overhead is overallocated by twenty thousand, and cost of goods sold holds eighty percent of allocated overhead. What's the adjustment to cost of goods sold? Pause and pick.",
+     "reveal": "It's B. Jobs were overcharged, so cost of goods sold falls by $16,000."
+    }
+   ]
+  },
+  {
+   "id": "5.5",
+   "title": "Write-off to cost of goods sold",
+   "lecture": "Lecture 5 \u00b7 Overhead and year-end",
+   "take": "Writing the whole difference off to COGS is simplest and fine when the amount is immaterial",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "The simplest approach of all: put the whole difference into cost of goods sold."
+    },
+    {
+     "type": "journal",
+     "heading": "Write-off entry",
+     "rows": [
+      [
+       "MOH allocated",
+       1764000,
+       ""
+      ],
+      [
+       "Cost of goods sold",
+       36000,
+       ""
+      ],
+      [
+       "MOH control",
+       "",
+       1800000
+      ]
+     ],
+     "say": "Debit allocated for $1,764,000, debit cost of goods sold for the full $36,000, and credit control for $1,800,000. Both overhead accounts are closed."
+    },
+    {
+     "type": "compare",
+     "heading": "Choosing an approach",
+     "cols": [
+      "Accuracy",
+      "Effort"
+     ],
+     "rows": [
+      [
+       "Adjusted rate",
+       "Highest",
+       "Highest"
+      ],
+      [
+       "Proration",
+       "High",
+       "Medium"
+      ],
+      [
+       "Write-off to COGS",
+       "Lowest",
+       "Lowest"
+      ]
+     ],
+     "say": "The adjusted allocation-rate approach is the most accurate and the most work. Proration comes close. Writing off to cost of goods sold is simplest but leaves inventories at budgeted-rate costs."
+    },
+    {
+     "type": "key",
+     "big": "Materiality decides",
+     "sub": [
+      "$36,000 on $1.8 million is 2%:",
+      "writing it off is reasonable"
+     ],
+     "say": "Materiality decides. A $36,000 difference is two percent of overhead, and most of it would end up in cost of goods sold anyway, so writing it off is reasonable. A large difference, or large inventories, call for proration."
+    },
+    {
+     "type": "key",
+     "big": "Income effect",
+     "sub": [
+      "Write-off: all $36,000 hits this year's income",
+      "Proration: $9,000 stays in inventory"
+     ],
+     "say": "The choice affects income. Writing off charges all $36,000 against this year's income. Proration leaves $9,000 in inventory, to be expensed when those trailers are sold."
+    },
+    {
+     "type": "quiz",
+     "q": "Overhead is underallocated by $36,000. Compared with proration (75% to COGS), how much lower is income under write-off?",
+     "opts": [
+      "$36,000",
+      "$27,000",
+      "$9,000",
+      "$0"
+     ],
+     "answer": 2,
+     "say": "Quick check. Compared with proration, how much lower is this year's income if Prairie Gate writes the whole $36,000 off to cost of goods sold? Pause and pick.",
+     "reveal": "It's C, $9,000: the part proration would have left in inventory."
+    }
+   ]
+  },
+  {
+   "id": "5.6",
+   "title": "Department overhead rates",
+   "lecture": "Lecture 5 \u00b7 Overhead and year-end",
+   "take": "Separate rates for departments with different cost drivers give more accurate job costs",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "One plant-wide rate assumes every department's overhead is driven the same way. Often it isn't."
+    },
+    {
+     "type": "compare",
+     "heading": "Prairie Gate's two departments",
+     "cols": [
+      "Main overhead",
+      "Best driver"
+     ],
+     "rows": [
+      [
+       "Welding",
+       "Robots, power, gas",
+       "Machine hours"
+      ],
+      [
+       "Finishing",
+       "Supervision, paint booth labor",
+       "Labor hours"
+      ]
+     ],
+     "say": "Welding's overhead is mostly robots, power and gas, driven by machine hours. Finishing's overhead is mostly supervision and labor-driven costs. One labor-hour rate can't capture both."
+    },
+    {
+     "type": "table",
+     "heading": "Department rates, 2027 budget",
+     "rows": [
+      [
+       "Welding: $1,080,000 \u00f7 18,000 MH",
+       "$60/MH"
+      ],
+      [
+       "Finishing: $648,000 \u00f7 24,000 DLH",
+       "$27/DLH"
+      ]
+     ],
+     "say": "So Ana budgets a rate for each department: sixty dollars per machine hour in welding, and twenty-seven dollars per labor hour in finishing. Together they still total $1,728,000."
+    },
+    {
+     "type": "table",
+     "heading": "Trailer #418 recosted",
+     "rows": [
+      [
+       "Welding: 20 MH \u00d7 $60",
+       1200
+      ],
+      [
+       "Finishing: 50 DLH \u00d7 $27",
+       1350
+      ],
+      [
+       "Overhead with department rates",
+       2550,
+       "total"
+      ],
+      [
+       "Overhead with plant-wide rate",
+       2880
+      ]
+     ],
+     "say": "Trailer four-eighteen used twenty machine hours in welding and fifty labor hours in finishing. Department rates give it $2,550 of overhead, $330 less than the plant-wide rate. Trailers heavy on robot welding would get more."
+    },
+    {
+     "type": "key",
+     "big": "More pools, more accuracy",
+     "sub": [
+      "If the extra cost of the system",
+      "is worth it"
+     ],
+     "say": "More cost pools usually give more accurate job costs, as long as the benefit justifies the cost of the system. Activity-based costing, next lecture, takes this idea further."
+    },
+    {
+     "type": "quiz",
+     "q": "A job uses 10 welding MH and 30 finishing DLH. Overhead with department rates of $60 and $27?",
+     "opts": [
+      "$1,410",
+      "$1,440",
+      "$810",
+      "$2,700"
+     ],
+     "answer": 0,
+     "say": "Quick check. A job uses ten welding machine hours and thirty finishing labor hours. What's its overhead with department rates? Pause and pick.",
+     "reveal": "It's A. $600 plus $810 is $1,410."
+    }
+   ]
+  }
+ ]
+}

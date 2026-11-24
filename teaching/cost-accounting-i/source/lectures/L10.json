@@ -1,0 +1,769 @@
+{
+ "meta": {
+  "n": 10,
+  "short": "Spoilage, rework and scrap",
+  "title": "Spoilage, rework and scrap",
+  "week": 11,
+  "ch": "Chapter 19",
+  "part": "Process costing",
+  "summary": "Definitions of spoilage, rework and scrap, normal and abnormal spoilage, spoilage in process costing, spoilage and rework in job costing, and accounting for scrap."
+ },
+ "videos": [
+  {
+   "id": "10.1",
+   "title": "Spoilage, rework and scrap",
+   "lecture": "Lecture 10 · Spoilage, rework and scrap",
+   "take": "Spoiled units are discarded or sold cheaply, reworked units are fixed, scrap is leftover material",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "No process is perfect. Some units fail inspection, some get fixed, and some material is left over. Each is accounted for differently."
+    },
+    {
+     "type": "compare",
+     "heading": "Three kinds of waste",
+     "cols": [
+      "Means",
+      "Example"
+     ],
+     "rows": [
+      [
+       "Spoilage",
+       "Units discarded or sold cheaply",
+       "Cheese blocks with bad texture"
+      ],
+      [
+       "Rework",
+       "Units fixed and sold as good",
+       "A trailer weld redone"
+      ],
+      [
+       "Scrap",
+       "Leftover material, low value",
+       "Steel offcuts, whey"
+      ]
+     ],
+     "say": "Spoilage is units that don't meet standards and are discarded or sold at a reduced price, like cheese blocks with bad texture. Rework is units that are repaired and sold as good, like a trailer with a weld redone. Scrap is leftover material with little value, like steel offcuts."
+    },
+    {
+     "type": "key",
+     "big": "Why it matters",
+     "sub": [
+      "Waste is a cost of quality;",
+      "measuring it is the first step to cutting it"
+     ],
+     "say": "Waste is expensive, and you can't reduce what you don't measure. Accounting for it properly shows managers where quality problems cost the most."
+    },
+    {
+     "type": "key",
+     "big": "The key question",
+     "sub": [
+      "Is it normal: part of an efficient process?",
+      "Or abnormal: avoidable?"
+     ],
+     "say": "The key question for each kind of waste: is it a normal part of an efficient process, or is it abnormal and avoidable? The answer decides where the cost goes."
+    },
+    {
+     "type": "key",
+     "big": "Two settings",
+     "sub": [
+      "Process costing: Redwood Valley",
+      "Job costing: Prairie Gate"
+     ],
+     "say": "We'll look at waste in both settings: process costing at Redwood Valley Creamery, and job costing at Prairie Gate Trailers."
+    },
+    {
+     "type": "quiz",
+     "q": "A cracked trailer weld is ground out and rewelded, and the trailer is sold as good. This is:",
+     "opts": [
+      "Spoilage",
+      "Rework",
+      "Scrap",
+      "Normal capacity"
+     ],
+     "answer": 1,
+     "say": "Quick check. A cracked weld is ground out and redone, and the trailer is sold as good. What's that? Pause and pick.",
+     "reveal": "It's B, rework."
+    }
+   ]
+  },
+  {
+   "id": "10.2",
+   "title": "Normal and abnormal spoilage",
+   "lecture": "Lecture 10 · Spoilage, rework and scrap",
+   "take": "Normal spoilage is a cost of good units; abnormal spoilage is a loss for the period",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Some spoilage is the price of making a product at all. Some is a mistake. The accounting treats them very differently."
+    },
+    {
+     "type": "compare",
+     "heading": "Two kinds of spoilage",
+     "cols": [
+      "Normal",
+      "Abnormal"
+     ],
+     "rows": [
+      [
+       "Cause",
+       "Inherent in efficient operation",
+       "Avoidable: errors, breakdowns"
+      ],
+      [
+       "Accounting",
+       "Added to cost of good units",
+       "Loss from abnormal spoilage"
+      ],
+      [
+       "Shows up in",
+       "Inventory and COGS",
+       "Income statement, separately"
+      ]
+     ],
+     "say": "Normal spoilage is inherent in a process operating efficiently: cheese making always loses a few blocks. Its cost is added to the cost of the good units. Abnormal spoilage is avoidable, caused by errors or breakdowns, and is written off as a loss in the period, so managers see it."
+    },
+    {
+     "type": "define",
+     "big": "Normal rate",
+     "sub": [
+      "A percentage of good units passing",
+      "inspection, set by management"
+     ],
+     "say": "Management sets a normal spoilage rate, usually as a percentage of the good units that pass inspection. Redwood Valley's is two percent."
+    },
+    {
+     "type": "key",
+     "big": "Inspection point matters",
+     "sub": [
+      "Units are spoiled when inspected;",
+      "they carry costs up to that point"
+     ],
+     "say": "Spoilage is identified at an inspection point. Spoiled units carry all the costs added up to that point, and only units that have passed the inspection point bear the normal spoilage cost."
+    },
+    {
+     "type": "key",
+     "big": "Aim for zero",
+     "sub": [
+      "Many firms now treat all spoilage",
+      "as abnormal, to keep pressure on quality"
+     ],
+     "say": "Many companies now set the normal rate at zero, treating all spoilage as abnormal so it's always visible and always targeted."
+    },
+    {
+     "type": "quiz",
+     "q": "Good units 9,200; normal spoilage 2% of good units. Normal spoiled units?",
+     "opts": [
+      "184",
+      "200",
+      "92",
+      "400"
+     ],
+     "answer": 0,
+     "say": "Quick check. Ninety-two hundred good units pass inspection, and normal spoilage is two percent of good units. How many normal spoiled units? Pause and pick.",
+     "reveal": "It's A, a hundred eighty-four."
+    }
+   ]
+  },
+  {
+   "id": "10.3",
+   "title": "Spoilage in process costing",
+   "lecture": "Lecture 10 · Spoilage, rework and scrap",
+   "take": "Count spoiled units in equivalent units; add normal spoilage cost to good units and write off abnormal",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Let's account for spoilage in Redwood Valley's Mixing department, using weighted average."
+    },
+    {
+     "type": "table",
+     "heading": "Mixing, May: units",
+     "rows": [
+      [
+       "Started (no beginning WIP)",
+       "10,000"
+      ],
+      [
+       "Good units completed",
+       "9,200"
+      ],
+      [
+       "Spoiled at inspection (end)",
+       "400"
+      ],
+      [
+       "Ending WIP: DM 100%, CC 50%",
+       "400"
+      ],
+      [
+       "Normal spoilage: 2% × 9,200",
+       "184"
+      ],
+      [
+       "Abnormal spoilage",
+       "216"
+      ]
+     ],
+     "say": "Mixing started ten thousand blocks in May. Ninety-two hundred passed inspection, four hundred failed and four hundred are still in process, half converted. Normal spoilage is two percent of good units, a hundred eighty-four. The other two hundred sixteen are abnormal."
+    },
+    {
+     "type": "table",
+     "heading": "Equivalent units and costs",
+     "rows": [
+      [
+       "Category",
+       "DM | Conversion",
+       "head"
+      ],
+      [
+       "Good + spoiled + ending WIP",
+       "10,000 | 9,800"
+      ],
+      [
+       "Costs added",
+       "$300,000 | $196,000"
+      ],
+      [
+       "Cost per EU",
+       "$30 | $20"
+      ]
+     ],
+     "say": "Spoiled units were inspected at the end, so they're complete. Equivalent units: ten thousand for materials and ninety-eight hundred for conversion. Costs per equivalent unit: thirty and twenty dollars, fifty dollars a block."
+    },
+    {
+     "type": "table",
+     "heading": "Assigning costs",
+     "rows": [
+      [
+       "Good units: 9,200 × $50",
+       460000
+      ],
+      [
+       "+ normal spoilage: 184 × $50",
+       9200
+      ],
+      [
+       "Cost transferred out: $51 a block",
+       469200,
+       "total"
+      ],
+      [
+       "Abnormal spoilage: 216 × $50",
+       10800
+      ],
+      [
+       "Ending WIP: 400 × $30 + 200 × $20",
+       16000
+      ],
+      [
+       "Total",
+       496000,
+       "total"
+      ]
+     ],
+     "say": "Good blocks cost $460,000, plus $9,200 of normal spoilage: $469,200, or fifty-one dollars a block, transferred to Aging. Abnormal spoilage, $10,800, goes to a loss account. Ending inventory, $16,000. Total: $496,000."
+    },
+    {
+     "type": "key",
+     "big": "Ending WIP bears none",
+     "sub": [
+      "It hasn't reached inspection yet"
+     ],
+     "say": "Ending inventory gets no spoilage cost, because it hasn't reached the inspection point yet."
+    },
+    {
+     "type": "quiz",
+     "q": "Cost per spoiled unit $50; 300 abnormal spoiled units. Loss from abnormal spoilage?",
+     "opts": [
+      "$1,500",
+      "$15,000",
+      "$300",
+      "$50,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Each spoiled unit cost fifty dollars, and three hundred are abnormal. Loss from abnormal spoilage? Pause and pick.",
+     "reveal": "It's B, $15,000."
+    }
+   ]
+  },
+  {
+   "id": "10.4",
+   "title": "Spoilage in job costing",
+   "lecture": "Lecture 10 · Spoilage, rework and scrap",
+   "take": "Normal spoilage for a specific job stays with the job; normal spoilage common to all jobs goes into overhead",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "In job costing, spoilage has three possible homes. It depends on who caused it."
+    },
+    {
+     "type": "compare",
+     "heading": "Three cases",
+     "cols": [
+      "Cost goes to",
+      "Example"
+     ],
+     "rows": [
+      [
+       "Normal, specific job",
+       "That job",
+       "Customer's tight tolerances"
+      ],
+      [
+       "Normal, all jobs",
+       "Overhead rate",
+       "Routine cutting errors"
+      ],
+      [
+       "Abnormal",
+       "Loss account",
+       "Wrong steel ordered"
+      ]
+     ],
+     "say": "Normal spoilage caused by a specific job's requirements, like a customer's very tight tolerances, stays with that job. Normal spoilage common to all jobs is built into the overhead rate. Abnormal spoilage goes to a loss account."
+    },
+    {
+     "type": "table",
+     "heading": "Job 431: two side panels spoiled",
+     "rows": [
+      [
+       "Cost of spoiled panels",
+       900
+      ],
+      [
+       "Disposal value as scrap",
+       -100
+      ],
+      [
+       "Net spoilage cost",
+       800,
+       "total"
+      ]
+     ],
+     "say": "On job four-thirty-one, two aluminum side panels are spoiled. They cost $900, and can be sold as scrap for $100. Net spoilage cost: $800."
+    },
+    {
+     "type": "journal",
+     "heading": "If caused by the customer's specs",
+     "rows": [
+      [
+       "Materials control (scrap)",
+       100,
+       ""
+      ],
+      [
+       "WIP control (job 431)",
+       "",
+       100
+      ]
+     ],
+     "say": "If the customer's unusual design caused it, only the scrap value is removed from the job. The $800 net cost stays in job four-thirty-one, and the customer should be priced for it."
+    },
+    {
+     "type": "journal",
+     "heading": "If common to all jobs, or abnormal",
+     "rows": [
+      [
+       "Materials control (scrap)",
+       100,
+       ""
+      ],
+      [
+       "MOH control or loss",
+       800,
+       ""
+      ],
+      [
+       "WIP control (job 431)",
+       "",
+       900
+      ]
+     ],
+     "say": "If panels are routinely spoiled across all jobs, the $800 goes to manufacturing overhead control, spread through the rate. If it was an avoidable mistake, it goes to a loss from abnormal spoilage."
+    },
+    {
+     "type": "quiz",
+     "q": "Spoilage is normal and common to all jobs. Where does its net cost go?",
+     "opts": [
+      "The specific job",
+      "Manufacturing overhead control",
+      "Loss from abnormal spoilage",
+      "Finished goods"
+     ],
+     "answer": 1,
+     "say": "Quick check. Spoilage is normal and common to all jobs. Where does its net cost go? Pause and pick.",
+     "reveal": "It's B, manufacturing overhead, spread through the rate."
+    }
+   ]
+  },
+  {
+   "id": "10.5",
+   "title": "Rework",
+   "lecture": "Lecture 10 · Spoilage, rework and scrap",
+   "take": "Rework follows the same three cases: the job, overhead, or a loss",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Reworked units are repaired and sold as good. The cost of fixing them follows the same three cases."
+    },
+    {
+     "type": "table",
+     "heading": "Reworking a cracked weld, job 433",
+     "rows": [
+      [
+       "Direct materials",
+       120
+      ],
+      [
+       "Direct labor: 8 hours × $30",
+       240
+      ],
+      [
+       "Overhead: 8 hours × $36",
+       288
+      ],
+      [
+       "Rework cost",
+       648,
+       "total"
+      ]
+     ],
+     "say": "On job four-thirty-three a weld cracks in testing and is redone: $120 of materials, eight hours of labor and the overhead those hours carry. Rework cost: $648."
+    },
+    {
+     "type": "compare",
+     "heading": "Where the $648 goes",
+     "cols": [
+      "Debit",
+      "When"
+     ],
+     "rows": [
+      [
+       "The job",
+       "WIP: job 433",
+       "Customer's special requirement"
+      ],
+      [
+       "Overhead",
+       "MOH control",
+       "Normal across all jobs"
+      ],
+      [
+       "Loss",
+       "Loss from abnormal rework",
+       "Avoidable error"
+      ]
+     ],
+     "say": "If the customer's requirements caused it, charge job four-thirty-three. If it's normal across all jobs, charge overhead. If it was avoidable, say a welder skipped preheating, charge a loss from abnormal rework."
+    },
+    {
+     "type": "key",
+     "big": "Rework is often hidden",
+     "sub": [
+      "Charged as normal labor,",
+      "it disappears into job costs"
+     ],
+     "say": "Rework is often hidden: if welders just fix problems and log the hours to the job, nobody sees the cost. Separate rework codes on time records make it visible."
+    },
+    {
+     "type": "key",
+     "big": "Track it to reduce it",
+     "sub": [
+      "Rework hours by cause:",
+      "material, training, equipment"
+     ],
+     "say": "Once rework is tracked by cause, managers can attack the biggest causes, such as a batch of poor steel, a training gap or a badly maintained welder."
+    },
+    {
+     "type": "quiz",
+     "q": "Rework caused by a welder's avoidable error. Debit:",
+     "opts": [
+      "The job",
+      "MOH control",
+      "Loss from abnormal rework",
+      "Cost of goods sold"
+     ],
+     "answer": 2,
+     "say": "Quick check. Rework caused by a welder's avoidable error. What's debited? Pause and pick.",
+     "reveal": "It's C, loss from abnormal rework."
+    }
+   ]
+  },
+  {
+   "id": "10.6",
+   "title": "Accounting for scrap",
+   "lecture": "Lecture 10 · Spoilage, rework and scrap",
+   "take": "Scrap revenue reduces the cost of the job or overhead, recognized at sale or at production",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Scrap has some value, so it needs accounting too. The questions are when to recognize it, and what it reduces."
+    },
+    {
+     "type": "compare",
+     "heading": "Two questions",
+     "cols": [
+      "Option A",
+      "Option B"
+     ],
+     "rows": [
+      [
+       "When recognized",
+       "When sold",
+       "When produced"
+      ],
+      [
+       "What it reduces",
+       "A specific job's cost",
+       "Overhead, all jobs"
+      ]
+     ],
+     "say": "Scrap can be recognized when it's sold, which is simplest when amounts are small, or when it's produced, if it's valuable and should be controlled as inventory. And its value can reduce a specific job's cost, or overhead if it's common to all jobs."
+    },
+    {
+     "type": "journal",
+     "heading": "Steel offcuts sold, common to all jobs",
+     "rows": [
+      [
+       "Cash",
+       1200,
+       ""
+      ],
+      [
+       "MOH control",
+       "",
+       1200
+      ]
+     ],
+     "say": "Prairie Gate sells a month's steel offcuts for $1,200. They come from all jobs, so the cash reduces manufacturing overhead control."
+    },
+    {
+     "type": "journal",
+     "heading": "Valuable scrap recorded at production",
+     "rows": [
+      [
+       "Materials control (scrap)",
+       1200,
+       ""
+      ],
+      [
+       "MOH control",
+       "",
+       1200
+      ]
+     ],
+     "say": "If scrap is valuable, like aluminum offcuts, it's recorded as inventory when produced, at its expected sale value, and controlled like any other material."
+    },
+    {
+     "type": "key",
+     "big": "Scrap is also a signal",
+     "sub": [
+      "Rising scrap may mean poor cutting",
+      "plans or worn equipment"
+     ],
+     "say": "Scrap is also a signal. Rising offcuts may mean poor cutting layouts or worn blades. Better nesting software at Prairie Gate could cut steel use as well as scrap."
+    },
+    {
+     "type": "quiz",
+     "q": "Scrap from a single job is sold for $300 and is significant for that job. What does the cash reduce?",
+     "opts": [
+      "Overhead",
+      "That job's work in process",
+      "Revenue",
+      "Nothing"
+     ],
+     "answer": 1,
+     "say": "Quick check. Scrap traceable to a single job is sold for three hundred dollars. What does it reduce? Pause and pick.",
+     "reveal": "It's B, that job's cost in work in process."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "When you bake cookies, a few always burn. Should their cost be part of the cost of the good cookies?",
+   "If it always happens, yes: normal spoilage. If you forgot the timer, it's abnormal. Leads to 10.2."
+  ],
+  "acts": [
+   [
+    "Classify: (a) cheese blocks too soft to sell, (b) a trailer repainted after a run, (c) whey sold to a pig farmer, (d) milk spilled when a valve failed.",
+    "(a) Spoilage. (b) Rework. (c) Scrap (or byproduct, Lecture 12). (d) Abnormal spoilage."
+   ],
+   [
+    "Normal spoilage is 3% of good units; 12,000 good units; 500 spoiled. Normal and abnormal units?",
+    "Normal 360; abnormal 140."
+   ],
+   [
+    "Redo Mixing's May example if normal spoilage is 4% of good units.",
+    "Normal 368; abnormal 32. Transferred out 460,000 + 18,400 = 478,400 ($52); loss 1,600; ending WIP 16,000."
+   ],
+   [
+    "Job 440: spoiled parts cost $1,500, scrap value $200, caused by a routine machine error common to all jobs. Entry?",
+    "Dr Materials (scrap) 200; Dr MOH control 1,300; Cr WIP (job 440) 1,500."
+   ],
+   [
+    "Rework of $2,000 on job 450 was caused by the customer changing specs mid-build. Entry, and what should Karen do?",
+    "Dr WIP (job 450) 2,000 / Cr Materials, Wages, MOH allocated. Bill the customer for the change order."
+   ],
+   [
+    "Prairie Gate sells $4,500 of aluminum scrap from job 461 alone. Entry?",
+    "Dr Cash 4,500 / Cr WIP (job 461) 4,500."
+   ]
+  ],
+  "case": [
+   "A bad month at the creamery",
+   "In June, a refrigeration failure at Redwood Valley spoiled 900 blocks in Mixing on top of the usual 2%. The plant manager asks the accountant to report all spoilage as normal, 'since it's a cost of making cheese'. Good units were 9,000; ending WIP 300 (CC 50%); no beginning WIP; DM $327,000; CC $206,000. Spoiled units were inspected at the end.",
+   [
+    "Compute normal and abnormal spoiled units.",
+    "Compute the cost per equivalent unit and the cost of abnormal spoilage.",
+    "What happens to the cost per good block if all spoilage is called normal?",
+    "Respond to the plant manager."
+   ],
+   "Spoiled = 900 + 180 normal = 1,080; normal 180, abnormal 900. EU DM 9,000 + 1,080 + 300 = 10,380 → $31.50; CC 9,000 + 1,080 + 150 = 10,230 → $20.14. Per spoiled unit $51.64; abnormal loss ≈ $46,476. Calling it normal would raise the cost of good blocks by about $5.16 and hide the failure in inventory. Report it as abnormal; it's avoidable and needs attention."
+  ],
+  "exam": [
+   [
+    "Distinguish spoilage, rework and scrap, and explain the treatment of normal and abnormal spoilage.",
+    6,
+    "Spoilage: units discarded/sold at reduced price; rework: repaired and sold as good; scrap: leftover material of low value. Normal spoilage cost added to good units (or job, or overhead); abnormal is a loss."
+   ],
+   [
+    "Started 20,000 units, no beginning WIP; good units 18,000; spoiled 1,000 (inspected at end); ending WIP 1,000 (DM 100%, CC 40%). Normal spoilage 5% of good units. DM $400,000; CC $380,000. Compute costs transferred out, abnormal loss and ending WIP.",
+    8,
+    "EU DM 20,000 → $20; CC 19,400 → $19.588. Spoiled unit $39.588. Normal 900, abnormal 100. Out: 18,000 × 39.588 + 900 × 39.588 = 748,206. Loss 3,959. Ending 20,000 + 7,835 = 27,835. Total 780,000 (rounded)."
+   ]
+  ],
+  "outcomes": [
+   "Define spoilage, rework and scrap",
+   "Distinguish normal and abnormal spoilage",
+   "Account for spoilage in process costing",
+   "Account for spoilage in job costing",
+   "Account for rework",
+   "Account for scrap"
+  ],
+  "take": [
+   "Spoiled, reworked or leftover",
+   "Normal: part of product cost; abnormal: a loss",
+   "Spoiled units count in equivalent units; ending WIP bears no spoilage if not inspected",
+   "Job-specific, all-jobs or abnormal",
+   "Track rework by cause",
+   "Scrap reduces the job or overhead"
+  ]
+ },
+ "ex": [
+  {
+   "type": "match",
+   "q": "Match each item to its category.",
+   "pairs": [
+    [
+     "Blocks with bad texture, discarded",
+     "Spoilage"
+    ],
+    [
+     "Weld redone, trailer sold as good",
+     "Rework"
+    ],
+    [
+     "Steel offcuts sold",
+     "Scrap"
+    ]
+   ],
+   "why": "Spoiled units fail; reworked units are fixed; scrap is leftover material.",
+   "video": "10.1"
+  },
+  {
+   "type": "num",
+   "q": "Good units 15,000; total spoiled 400; normal spoilage 2% of good units. Abnormal spoiled units?",
+   "a": 100,
+   "unit": "units",
+   "why": "Normal 300; abnormal 400 − 300 = 100.",
+   "video": "10.2"
+  },
+  {
+   "type": "mcq",
+   "q": "Where does the cost of normal spoilage go in process costing?",
+   "opts": [
+    "A loss account",
+    "The cost of good units",
+    "Ending WIP always",
+    "Selling expense"
+   ],
+   "a": 1,
+   "why": "Normal spoilage is part of the cost of making good units.",
+   "video": "10.2"
+  },
+  {
+   "type": "num",
+   "q": "Cost per spoiled unit $45; normal spoiled units 200; good units 10,000 at $45 each. Cost per good unit including normal spoilage?",
+   "a": 45.9,
+   "tol": 0.01,
+   "unit": "$",
+   "why": "(450,000 + 9,000) ÷ 10,000 = 45.90.",
+   "video": "10.3"
+  },
+  {
+   "type": "num",
+   "q": "Ending WIP 600 units: DM 100% at $30, CC 50% at $20. Inspection at the end. Ending WIP cost?",
+   "a": 24000,
+   "unit": "$",
+   "why": "600 × 30 + 300 × 20 = 18,000 + 6,000.",
+   "video": "10.3"
+  },
+  {
+   "type": "sort",
+   "q": "Where does the spoilage or rework cost go?",
+   "cats": [
+    "The specific job",
+    "Manufacturing overhead",
+    "Loss account"
+   ],
+   "items": [
+    [
+     "Rework caused by a customer's special specs",
+     0
+    ],
+    [
+     "Routine spoilage common to all jobs",
+     1
+    ],
+    [
+     "Spoilage from ordering the wrong steel",
+     2
+    ],
+    [
+     "Normal rework across all jobs",
+     1
+    ]
+   ],
+   "why": "Job-specific, all-jobs normal, or abnormal.",
+   "video": "10.4"
+  },
+  {
+   "type": "num",
+   "q": "Rework: DM $80, 6 labor hours at $30, overhead $36 an hour. Rework cost?",
+   "a": 476,
+   "unit": "$",
+   "why": "80 + 180 + 216 = 476.",
+   "video": "10.5"
+  },
+  {
+   "type": "mcq",
+   "q": "Scrap common to all jobs is sold for cash. Which account is credited?",
+   "opts": [
+    "Revenue",
+    "Manufacturing overhead control",
+    "Work in process for one job",
+    "Finished goods"
+   ],
+   "a": 1,
+   "why": "Scrap common to all jobs reduces overhead.",
+   "video": "10.6"
+  }
+ ]
+}

@@ -1,0 +1,719 @@
+{
+ "meta": {
+  "n": 6,
+  "short": "Inventory costing and capacity",
+  "title": "Inventory costing and capacity analysis",
+  "week": 6,
+  "ch": "Chapter 9",
+  "part": "Planning",
+  "summary": "Variable and absorption costing, why their incomes differ, the incentive to overproduce, throughput costing, four capacity levels for the fixed overhead rate, and the downward demand spiral."
+ },
+ "videos": [
+  {
+   "id": "6.1",
+   "title": "Variable vs absorption costing",
+   "lecture": "Lecture 6 · Inventory costing and capacity",
+   "take": "Absorption costing puts fixed manufacturing overhead in inventory; variable costing expenses it",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "There are two ways to cost a bike for inventory. The only difference is fixed manufacturing overhead, but it can change profit a lot."
+    },
+    {
+     "type": "compare",
+     "heading": "What goes into inventory?",
+     "cols": [
+      "Variable costing",
+      "Absorption costing"
+     ],
+     "rows": [
+      [
+       "Direct materials and labor",
+       "Yes",
+       "Yes"
+      ],
+      [
+       "Variable overhead",
+       "Yes",
+       "Yes"
+      ],
+      [
+       "Fixed manufacturing overhead",
+       "No: expensed",
+       "Yes"
+      ]
+     ],
+     "say": "Both methods inventory direct materials, direct labor and variable manufacturing overhead. Absorption costing also inventories fixed manufacturing overhead. Variable costing expenses it in the period, as a period cost."
+    },
+    {
+     "type": "table",
+     "heading": "Tallgrass, 2027",
+     "rows": [
+      [
+       "Variable manufacturing cost per bike",
+       1300
+      ],
+      [
+       "Fixed manufacturing overhead",
+       366000
+      ],
+      [
+       "Bikes produced",
+       "1,220"
+      ],
+      [
+       "Fixed overhead per bike: 366,000 ÷ 1,220",
+       300
+      ]
+     ],
+     "say": "Each Trail bike has $1,300 of variable manufacturing cost. Fixed manufacturing overhead is $366,000 a year, and Tallgrass produces twelve hundred twenty bikes, so absorption costing adds $300 of fixed overhead to each bike."
+    },
+    {
+     "type": "table",
+     "heading": "Inventory cost per bike",
+     "rows": [
+      [
+       "Variable costing",
+       1300
+      ],
+      [
+       "Absorption costing: 1,300 + 300",
+       1600
+      ]
+     ],
+     "say": "So a bike in inventory is worth $1,300 under variable costing and $1,600 under absorption costing."
+    },
+    {
+     "type": "key",
+     "big": "GAAP requires absorption",
+     "sub": [
+      "Variable costing is for",
+      "internal decisions"
+     ],
+     "say": "GAAP and tax rules require absorption costing for external reports. Many companies use variable costing internally, because it fits the contribution margin thinking of CVP."
+    },
+    {
+     "type": "quiz",
+     "q": "Under variable costing, fixed manufacturing overhead is:",
+     "opts": [
+      "Inventoried",
+      "Expensed in the period incurred",
+      "Ignored",
+      "Added to direct materials"
+     ],
+     "answer": 1,
+     "say": "Quick check. Under variable costing, fixed manufacturing overhead is what? Pause and pick.",
+     "reveal": "It's B: expensed in the period, like a period cost."
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "title": "Why incomes differ",
+   "lecture": "Lecture 6 · Inventory costing and capacity",
+   "take": "Absorption income minus variable income equals the change in fixed overhead held in inventory",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Same company, same year, two different profits. The difference comes down to inventory."
+    },
+    {
+     "type": "table",
+     "heading": "Variable costing income statement, 2027",
+     "rows": [
+      [
+       "Revenue: 1,200 × $2,400",
+       2880000
+      ],
+      [
+       "Variable costs: 1,200 × $1,500",
+       -1800000
+      ],
+      [
+       "Contribution margin",
+       1080000,
+       "total"
+      ],
+      [
+       "All fixed costs",
+       -540000
+      ],
+      [
+       "Operating income",
+       540000,
+       "total"
+      ]
+     ],
+     "say": "Under variable costing, twelve hundred bikes give a contribution margin of $1,080,000. All $540,000 of fixed costs, including the $366,000 of fixed manufacturing overhead, are expensed. Operating income is $540,000."
+    },
+    {
+     "type": "define",
+     "big": "Absorption − variable income",
+     "sub": [
+      "= fixed overhead in ending inventory",
+      "− fixed overhead in beginning inventory"
+     ],
+     "say": "Absorption costing income differs by the change in fixed manufacturing overhead held in inventory: fixed overhead in ending inventory minus fixed overhead in beginning inventory."
+    },
+    {
+     "type": "table",
+     "heading": "The difference",
+     "rows": [
+      [
+       "Ending inventory: 60 bikes × $300",
+       18000
+      ],
+      [
+       "Beginning inventory: 40 bikes × $300",
+       -12000
+      ],
+      [
+       "Absorption income higher by",
+       6000,
+       "total"
+      ],
+      [
+       "Absorption operating income",
+       546000,
+       "total"
+      ]
+     ],
+     "say": "Tallgrass ends the year with sixty bikes, holding $18,000 of fixed overhead, and began with forty, holding $12,000. So absorption income is $6,000 higher: $546,000."
+    },
+    {
+     "type": "compare",
+     "heading": "The rule",
+     "cols": [
+      "Inventory",
+      "Absorption income is"
+     ],
+     "rows": [
+      [
+       "Production > sales",
+       "Rises",
+       "Higher"
+      ],
+      [
+       "Production < sales",
+       "Falls",
+       "Lower"
+      ],
+      [
+       "Production = sales",
+       "Unchanged",
+       "The same"
+      ]
+     ],
+     "say": "When production exceeds sales, inventory grows and absorption income is higher. When sales exceed production, it's lower. When they're equal, the two match."
+    },
+    {
+     "type": "quiz",
+     "q": "Fixed overhead per unit $50; inventory falls from 800 to 500 units. Which income is higher, and by how much?",
+     "opts": [
+      "Absorption, by $15,000",
+      "Variable, by $15,000",
+      "Variable, by $40,000",
+      "They're equal"
+     ],
+     "answer": 1,
+     "say": "Quick check. Fixed overhead is fifty dollars a unit, and inventory falls from eight hundred to five hundred units. Which income is higher, and by how much? Pause and pick.",
+     "reveal": "It's B. Three hundred units times $50 of fixed overhead released from inventory: absorption income is $15,000 lower."
+    }
+   ]
+  },
+  {
+   "id": "6.3",
+   "title": "The incentive to overproduce",
+   "lecture": "Lecture 6 · Inventory costing and capacity",
+   "take": "Under absorption costing, building inventory raises reported income, which can tempt managers",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Under absorption costing, a manager can raise profit without selling a single extra bike. Here's how."
+    },
+    {
+     "type": "table",
+     "heading": "Produce 1,500 bikes, still sell 1,200",
+     "rows": [
+      [
+       "Fixed overhead per bike: 366,000 ÷ 1,500",
+       244
+      ],
+      [
+       "Ending inventory: 340 bikes × $244",
+       82960
+      ],
+      [
+       "Beginning inventory fixed overhead",
+       -12000
+      ],
+      [
+       "Absorption income: 540,000 + 70,960",
+       610960,
+       "total"
+      ]
+     ],
+     "say": "Suppose the plant manager builds fifteen hundred bikes but sales stay at twelve hundred. Fixed overhead per bike falls to $244. Three hundred forty bikes now sit in inventory, carrying $82,960 of fixed overhead. Absorption income jumps to about $611,000, with no extra sales."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "Profit up, company worse off",
+     "sub": [
+      "Extra inventory ties up cash,",
+      "storage and obsolescence risk"
+     ],
+     "say": "The company is worse off: it has spent cash building bikes nobody ordered, which must be stored and may go out of date. But a bonus tied to absorption income rewards it."
+    },
+    {
+     "type": "list",
+     "heading": "Guarding against it",
+     "items": [
+      "Evaluate managers on variable costing income",
+      "Charge managers for carrying inventory",
+      "Add nonfinancial targets: inventory turns",
+      "Lengthen the evaluation period"
+     ],
+     "say": "Ways to guard against it: evaluate managers on variable costing income; charge them for the cost of carrying inventory; set nonfinancial targets like inventory turnover; and judge performance over several years."
+    },
+    {
+     "type": "key",
+     "big": "Variable costing removes it",
+     "sub": [
+      "Income depends on sales,",
+      "not on production"
+     ],
+     "say": "Under variable costing, income depends only on sales, so producing for inventory doesn't help."
+    },
+    {
+     "type": "quiz",
+     "q": "Under which method can a manager raise operating income simply by producing more?",
+     "opts": [
+      "Variable costing",
+      "Absorption costing",
+      "Both",
+      "Neither"
+     ],
+     "answer": 1,
+     "say": "Quick check. Under which method can a manager raise income simply by producing more? Pause and pick.",
+     "reveal": "It's B, absorption costing, because fixed overhead is deferred in inventory."
+    }
+   ]
+  },
+  {
+   "id": "6.4",
+   "title": "Throughput costing",
+   "lecture": "Lecture 6 · Inventory costing and capacity",
+   "take": "Throughput costing inventories only direct materials, removing almost all incentive to build inventory",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Some companies go further than variable costing. Throughput costing treats almost everything as a period cost."
+    },
+    {
+     "type": "define",
+     "big": "Throughput costing",
+     "sub": [
+      "Only direct materials are inventoried;",
+      "everything else is a period cost"
+     ],
+     "say": "Throughput costing, sometimes called super-variable costing, inventories only direct materials. Direct labor and all overhead are treated as period costs."
+    },
+    {
+     "type": "table",
+     "heading": "Inventory cost per bike, three ways",
+     "rows": [
+      [
+       "Throughput: direct materials only",
+       1100
+      ],
+      [
+       "Variable: + labor and variable overhead",
+       1300
+      ],
+      [
+       "Absorption: + fixed overhead",
+       1600
+      ]
+     ],
+     "say": "A Tallgrass bike in inventory is worth $1,100 under throughput costing, its direct materials. $1,300 under variable costing. And $1,600 under absorption costing."
+    },
+    {
+     "type": "define",
+     "big": "Throughput margin",
+     "sub": [
+      "Revenue − direct materials",
+      "of the units sold"
+     ],
+     "say": "The income statement shows throughput margin: revenue minus direct materials of the units sold. Each bike's throughput margin is $2,400 minus $1,100, or $1,300."
+    },
+    {
+     "type": "key",
+     "big": "Short-run view",
+     "sub": [
+      "Assumes labor is fixed in the short run;",
+      "not allowed for GAAP"
+     ],
+     "say": "It reflects the view that in the short run, labor and overhead are fixed and only materials vary. It's for internal use only; GAAP doesn't allow it."
+    },
+    {
+     "type": "quiz",
+     "q": "Rank inventory values from lowest to highest.",
+     "opts": [
+      "Absorption, variable, throughput",
+      "Throughput, variable, absorption",
+      "Variable, throughput, absorption",
+      "All equal"
+     ],
+     "answer": 1,
+     "say": "Quick check. Rank the inventory values, lowest to highest. Pause and pick.",
+     "reveal": "It's B: throughput, then variable, then absorption."
+    }
+   ]
+  },
+  {
+   "id": "6.5",
+   "title": "Four capacity levels",
+   "lecture": "Lecture 6 · Inventory costing and capacity",
+   "take": "The fixed overhead rate depends on the denominator: theoretical, practical, normal or master-budget capacity",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Fixed overhead per bike depends on the number you divide by. There are four choices, and they give very different costs."
+    },
+    {
+     "type": "compare",
+     "heading": "Capacity levels",
+     "cols": [
+      "Means",
+      "Tallgrass bikes"
+     ],
+     "rows": [
+      [
+       "Theoretical",
+       "Perfect operations, no downtime",
+       "1,830"
+      ],
+      [
+       "Practical",
+       "Allows for maintenance, holidays",
+       "1,500"
+      ],
+      [
+       "Normal utilization",
+       "Average demand over 3–5 years",
+       "1,300"
+      ],
+      [
+       "Master-budget",
+       "This year's planned output",
+       "1,220"
+      ]
+     ],
+     "say": "Theoretical capacity assumes perfect, nonstop operation: eighteen thirty bikes. Practical capacity allows for maintenance and holidays: fifteen hundred. Normal capacity utilization is average demand over several years: thirteen hundred. Master-budget utilization is this year's plan: twelve twenty."
+    },
+    {
+     "type": "table",
+     "heading": "Fixed overhead per bike: $366,000 ÷",
+     "rows": [
+      [
+       "Theoretical: 1,830",
+       200
+      ],
+      [
+       "Practical: 1,500",
+       244
+      ],
+      [
+       "Normal: 1,300",
+       282
+      ],
+      [
+       "Master budget: 1,220",
+       300
+      ]
+     ],
+     "say": "Dividing $366,000 by each gives fixed overhead per bike of $200, $244, about $282, or $300."
+    },
+    {
+     "type": "key",
+     "big": "Practical capacity is often best",
+     "sub": [
+      "It charges products only for",
+      "capacity they use; idle capacity shows up separately"
+     ],
+     "say": "Many experts favor practical capacity. Products are charged only for the capacity they use, and the cost of unused capacity, here $366,000 minus twelve twenty times $244, shows up separately for managers to act on."
+    },
+    {
+     "type": "key",
+     "big": "Unused capacity is visible",
+     "sub": [
+      "280 bikes × $244 = $68,320",
+      "of idle capacity cost"
+     ],
+     "say": "That's two hundred eighty bikes of spare capacity, or $68,320 of fixed cost Tallgrass is paying for but not using: a prompt to find more sales or shrink the plant."
+    },
+    {
+     "type": "quiz",
+     "q": "Fixed overhead $500,000; practical capacity 25,000 units; budget 20,000. Rate using practical capacity?",
+     "opts": [
+      "$25",
+      "$20",
+      "$40",
+      "$50"
+     ],
+     "answer": 1,
+     "say": "Quick check. Fixed overhead five hundred thousand, practical capacity twenty-five thousand units, budget twenty thousand. What's the rate using practical capacity? Pause and pick.",
+     "reveal": "It's B, twenty dollars a unit."
+    }
+   ]
+  },
+  {
+   "id": "6.6",
+   "title": "The downward demand spiral",
+   "lecture": "Lecture 6 · Inventory costing and capacity",
+   "take": "Spreading fixed costs over shrinking budgeted volume raises unit costs and prices, driving demand lower",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Using budgeted volume as the denominator can trap a company in a vicious circle. It's called the downward demand spiral."
+    },
+    {
+     "type": "flow",
+     "heading": "The spiral",
+     "items": [
+      "Demand falls",
+      "Same fixed costs over fewer units",
+      "Unit cost rises",
+      "Price is raised to cover cost",
+      "Demand falls further"
+     ],
+     "say": "Demand falls. The same fixed costs are spread over fewer units, so reported unit cost rises. Managers raise prices to cover the higher cost. Customers buy even less, and the cycle repeats."
+    },
+    {
+     "type": "table",
+     "heading": "If budgeted volume falls",
+     "rows": [
+      [
+       "1,220 bikes: fixed overhead per bike",
+       300
+      ],
+      [
+       "1,000 bikes",
+       366
+      ],
+      [
+       "800 bikes",
+       458
+      ]
+     ],
+     "say": "If Tallgrass budgets twelve twenty bikes, fixed overhead is $300 a bike. If demand drops to a thousand, it's $366. At eight hundred, $458. Cost-plus pricing would push prices up just as customers are leaving."
+    },
+    {
+     "type": "key",
+     "big": "Use practical capacity",
+     "sub": [
+      "Unit cost stays at $244;",
+      "unused capacity is reported separately"
+     ],
+     "say": "With practical capacity as the denominator, unit cost stays at $244 whatever demand does. The cost of idle capacity is reported separately, not loaded onto customers."
+    },
+    {
+     "type": "key",
+     "big": "Price on value, not just cost",
+     "sub": [
+      "Competitors and customers set limits"
+     ],
+     "say": "And prices should reflect what customers will pay and what competitors charge, not just a cost figure. That's Lecture 8."
+    },
+    {
+     "type": "quiz",
+     "q": "Which denominator choice avoids the downward demand spiral?",
+     "opts": [
+      "Master-budget utilization",
+      "Practical capacity",
+      "Actual output",
+      "Last year's sales"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which denominator avoids the downward demand spiral? Pause and pick.",
+     "reveal": "It's B. Practical capacity doesn't change when demand falls."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "A bakery bakes 200 loaves but sells 150. Its oven costs $300 a day whatever it bakes. How much of the oven cost belongs to today's sales?",
+   "Under absorption costing, 150/200 of it; 50 loaves carry $75 into inventory. Under variable costing, all $300 is today's expense. Leads to 6.1–6.2."
+  ],
+  "acts": [
+   [
+    "Compute inventory cost per bike under absorption costing if production is 1,000 bikes.",
+    "Fixed per bike 366; 1,300 + 366 = $1,666."
+   ],
+   [
+    "In 2028 Tallgrass produces 1,100 bikes and sells 1,150. Beginning inventory is 60 bikes carrying $300 of fixed overhead each; fixed MOH is still $366,000 (use FIFO). Which income is higher, and by how much?",
+    "Fixed per bike 366,000 ÷ 1,100 = 332.73. Ending inventory 10 bikes × 332.73 = 3,327, versus 18,000 at the start. Variable-costing income is higher by $14,673."
+   ],
+   [
+    "List three performance measures that discourage overproduction under absorption costing.",
+    "Inventory turnover, inventory carrying charge, variable costing income, multi-year evaluation, on-time delivery."
+   ],
+   [
+    "Compute throughput margin and operating income for 1,200 bikes if all non-materials costs total $1,020,000 (labor, overhead, selling).",
+    "Throughput margin 1,200 × 1,300 = 1,560,000; OI 540,000."
+   ],
+   [
+    "Which capacity level would you choose for pricing and why? Compute the cost of unused capacity at 1,220 bikes.",
+    "Practical; 280 × 244 = $68,320."
+   ],
+   [
+    "Show the spiral if Tallgrass prices at full manufacturing cost plus 40% and demand falls 15% each time price rises 5%.",
+    "Illustrate with budgeted volume denominator: rising fixed cost per bike raises price, which cuts volume, repeating; practical capacity stops it."
+   ]
+  ],
+  "case": [
+   "The plant manager's bonus",
+   "Tallgrass's plant manager earns a bonus of 2% of absorption-costing operating income. In 2027 he produced 1,500 bikes though sales were 1,200, saying he was 'building for spring'. Ana notices inventory has risen to 340 bikes, a new warehouse has been rented for $4,000 a month, and two bike colors have been discontinued by marketing.",
+   [
+    "How much did overproduction add to absorption income and to his bonus?",
+    "What did it cost Tallgrass?",
+    "How would you change the bonus plan?",
+    "Which capacity denominator would you recommend for internal product costing?"
+   ],
+   "Income rose from 546,000 (1,220 produced) to about 610,960: about $65,000, adding about $1,300 to his bonus. Costs: cash tied up (340 × $1,300 variable = $442,000), $48,000 a year warehouse rent, obsolescence on discontinued colors. Base the bonus on variable costing income or add inventory targets and carrying charges; use practical capacity."
+  ],
+  "exam": [
+   [
+    "Explain why absorption-costing and variable-costing operating incomes differ, and state the formula for the difference.",
+    5,
+    "Absorption defers fixed manufacturing overhead in inventory. Difference = fixed MOH in ending inventory − fixed MOH in beginning inventory; positive when production > sales."
+   ],
+   [
+    "Fixed MOH $240,000; practical capacity 12,000 units; budgeted 10,000; actual production 10,000. Compute the fixed overhead rate under each denominator and the cost of unused capacity under practical capacity.",
+    5,
+    "Practical $20; budget $24. Unused: 2,000 × 20 = $40,000."
+   ]
+  ],
+  "outcomes": [
+   "Distinguish variable and absorption costing",
+   "Reconcile the two operating incomes",
+   "Explain and prevent the incentive to overproduce",
+   "Describe throughput costing",
+   "Compare four capacity denominators",
+   "Explain and avoid the downward demand spiral"
+  ],
+  "take": [
+   "Only fixed manufacturing overhead differs",
+   "Difference = change in fixed overhead in inventory",
+   "Building inventory raises absorption income",
+   "Throughput costing inventories only materials",
+   "Theoretical, practical, normal, master-budget",
+   "Practical capacity breaks the demand spiral"
+  ]
+ },
+ "ex": [
+  {
+   "type": "mcq",
+   "q": "Which cost is inventoried under absorption costing but not variable costing?",
+   "opts": [
+    "Direct materials",
+    "Variable overhead",
+    "Fixed manufacturing overhead",
+    "Sales commissions"
+   ],
+   "a": 2,
+   "why": "Only fixed manufacturing overhead differs.",
+   "video": "6.1"
+  },
+  {
+   "type": "num",
+   "q": "Variable manufacturing cost $40; fixed MOH $200,000; production 10,000 units. Absorption inventory cost per unit?",
+   "a": 60,
+   "unit": "$",
+   "why": "40 + 200,000 ÷ 10,000 = 60.",
+   "video": "6.1"
+  },
+  {
+   "type": "num",
+   "q": "Fixed MOH per unit $20; beginning inventory 1,000 units; ending 1,500. How much higher is absorption income?",
+   "a": 10000,
+   "unit": "$",
+   "why": "(1,500 − 1,000) × 20 = 10,000.",
+   "video": "6.2"
+  },
+  {
+   "type": "mcq",
+   "q": "Sales exceed production. Which is true?",
+   "opts": [
+    "Absorption income is higher",
+    "Variable income is higher",
+    "They're equal",
+    "Neither can be computed"
+   ],
+   "a": 1,
+   "why": "Inventory falls, releasing fixed overhead under absorption costing.",
+   "video": "6.2"
+  },
+  {
+   "type": "mcq",
+   "q": "Which measure best discourages overproduction?",
+   "opts": [
+    "Absorption operating income",
+    "Inventory turnover target",
+    "Units produced",
+    "Gross margin"
+   ],
+   "a": 1,
+   "why": "Targets on inventory, or variable-costing income, remove the incentive.",
+   "video": "6.3"
+  },
+  {
+   "type": "num",
+   "q": "DM $30, DL $15, variable MOH $5, fixed MOH per unit $10. Throughput costing inventory cost per unit?",
+   "a": 30,
+   "unit": "$",
+   "why": "Only direct materials are inventoried.",
+   "video": "6.4"
+  },
+  {
+   "type": "match",
+   "q": "Match each capacity level.",
+   "pairs": [
+    [
+     "No downtime at all",
+     "Theoretical"
+    ],
+    [
+     "Allows for unavoidable downtime",
+     "Practical"
+    ],
+    [
+     "Average demand over several years",
+     "Normal utilization"
+    ],
+    [
+     "This year's planned output",
+     "Master-budget utilization"
+    ]
+   ],
+   "why": "These are the four denominator choices.",
+   "video": "6.5"
+  },
+  {
+   "type": "num",
+   "q": "Fixed MOH $360,000; practical capacity 1,800 units; actual 1,500. Cost of unused capacity?",
+   "a": 60000,
+   "unit": "$",
+   "why": "Rate 200; 300 unused × 200 = 60,000.",
+   "video": "6.6"
+  }
+ ]
+}

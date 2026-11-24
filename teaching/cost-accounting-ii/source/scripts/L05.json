@@ -1,0 +1,498 @@
+{
+ "videos": [
+  {
+   "id": "5.1",
+   "title": "Responsibility centers",
+   "lecture": "Lecture 5 \u00b7 Responsibility and sales variances",
+   "take": "Cost, revenue, profit and investment centers hold managers accountable for what they control",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "A budget only works if someone is responsible for each part of it. That's responsibility accounting."
+    },
+    {
+     "type": "compare",
+     "heading": "Four kinds of responsibility center",
+     "cols": [
+      "Accountable for",
+      "Tallgrass example"
+     ],
+     "rows": [
+      [
+       "Cost center",
+       "Costs",
+       "Assembly plant"
+      ],
+      [
+       "Revenue center",
+       "Revenues",
+       "Dealer sales team"
+      ],
+      [
+       "Profit center",
+       "Revenues and costs",
+       "Parts and accessories"
+      ],
+      [
+       "Investment center",
+       "Profit and assets",
+       "Tallgrass as a whole"
+      ]
+     ],
+     "say": "A cost center manager is accountable for costs, like the assembly plant. A revenue center for revenues, like the dealer sales team. A profit center for both, like the parts and accessories business. An investment center for profit and the assets used to earn it."
+    },
+    {
+     "type": "key",
+     "big": "Match measure to authority",
+     "sub": [
+      "Judge managers on what they can decide"
+     ],
+     "say": "The key is matching measures to authority. The assembly manager decides how bikes are built, not their price, so she's judged on cost, not profit."
+    },
+    {
+     "type": "key",
+     "big": "Centers shape behavior",
+     "sub": [
+      "A cost center may cut quality;",
+      "a revenue center may discount"
+     ],
+     "say": "Each type also creates temptations. A cost center manager might cut quality to save money. A revenue center might discount heavily to hit sales targets. Good systems add measures to balance them."
+    },
+    {
+     "type": "key",
+     "big": "Investment centers: Lecture 14",
+     "sub": [
+      "ROI, residual income and EVA"
+     ],
+     "say": "Measuring investment centers, with return on investment and residual income, comes in Lecture 14."
+    },
+    {
+     "type": "quiz",
+     "q": "The manager of Tallgrass's online store sets prices, buys stock and controls costs, but not the warehouse investment. What type of center?",
+     "opts": [
+      "Cost center",
+      "Revenue center",
+      "Profit center",
+      "Investment center"
+     ],
+     "answer": 2,
+     "say": "Quick check. The online store manager sets prices, buys stock and controls costs, but not the warehouse investment. What type of center is that? Pause and pick.",
+     "reveal": "It's C, a profit center."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "title": "Controllability and performance reports",
+   "lecture": "Lecture 5 \u00b7 Responsibility and sales variances",
+   "take": "Performance reports should separate controllable items and be used to learn, not to blame",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Should a manager be blamed for a cost she can't control? Usually not. But it's not that simple."
+    },
+    {
+     "type": "define",
+     "big": "Controllability",
+     "sub": [
+      "The degree of influence a manager",
+      "has over a cost, revenue or item"
+     ],
+     "say": "Controllability is the degree of influence a manager has over an item. Few costs are fully controllable by one person. Battery prices, for example, depend on suppliers and world markets."
+    },
+    {
+     "type": "compare",
+     "heading": "Assembly plant report, March",
+     "cols": [
+      "Budget",
+      "Actual"
+     ],
+     "rows": [
+      [
+       "Assembly labor",
+       "$58,000",
+       "$61,500"
+      ],
+      [
+       "Supplies",
+       "$9,000",
+       "$8,600"
+      ],
+      [
+       "Allocated head-office IT",
+       "$12,000",
+       "$14,000"
+      ]
+     ],
+     "say": "The assembly plant's March report shows labor over budget and supplies under budget. It also shows a head-office IT allocation over budget, which the plant manager can't influence. Reports should separate it."
+    },
+    {
+     "type": "key",
+     "big": "Ask who knows the most",
+     "sub": [
+      "Hold the manager with the best information",
+      "accountable for explaining an item"
+     ],
+     "say": "A better question than 'who controls it?' is 'who knows the most about it?' The purchasing manager can't set battery prices, but she should explain them and look for alternatives."
+    },
+    {
+     "type": "key",
+     "big": "Information, not blame",
+     "sub": [
+      "Variances start questions;",
+      "they don't end them"
+     ],
+     "say": "Performance reports work best as information for learning. Used only to blame, they encourage padding budgets and hiding problems."
+    },
+    {
+     "type": "quiz",
+     "q": "Which item is least controllable by the assembly plant manager?",
+     "opts": [
+      "Overtime hours",
+      "Supplies used",
+      "Allocated head-office IT cost",
+      "Scrap rates"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which item is least controllable by the assembly manager? Pause and pick.",
+     "reveal": "It's C. Head-office IT costs are set elsewhere and allocated in."
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "title": "The sales-volume variance",
+   "lecture": "Lecture 5 \u00b7 Responsibility and sales variances",
+   "take": "Sales-volume variance = (actual units \u2212 budgeted units) \u00d7 budgeted contribution margin per unit",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Tallgrass sold fewer bikes than planned. How much did that cost? The sales-volume variance answers that."
+    },
+    {
+     "type": "table",
+     "heading": "2027 budget and actual",
+     "rows": [
+      [
+       "Product",
+       "Budget | Actual",
+       "head"
+      ],
+      [
+       "Trail bikes, CM $900",
+       "900 | 880"
+      ],
+      [
+       "Cargo bikes, CM $1,500",
+       "300 | 220"
+      ],
+      [
+       "Total bikes",
+       "1,200 | 1,100"
+      ]
+     ],
+     "say": "The budget was nine hundred Trail bikes, with a contribution margin of $900 each, and three hundred Cargo bikes at $1,500. Actual sales were eight hundred eighty Trail bikes and two hundred twenty Cargo bikes."
+    },
+    {
+     "type": "define",
+     "big": "Sales-volume variance",
+     "sub": [
+      "(Actual units \u2212 budgeted units)",
+      "\u00d7 budgeted CM per unit"
+     ],
+     "say": "The sales-volume variance is actual units minus budgeted units, times the budgeted contribution margin per unit. Using budgeted margins isolates the effect of volume alone."
+    },
+    {
+     "type": "table",
+     "heading": "Sales-volume variance",
+     "rows": [
+      [
+       "Trail: (880 \u2212 900) \u00d7 $900",
+       -18000
+      ],
+      [
+       "Cargo: (220 \u2212 300) \u00d7 $1,500",
+       -120000
+      ],
+      [
+       "Total sales-volume variance",
+       -138000,
+       "total"
+      ]
+     ],
+     "say": "Trail bikes: twenty short, times $900, $18,000 unfavorable. Cargo bikes: eighty short, times $1,500, $120,000 unfavorable. In total, selling fewer bikes cost $138,000 of contribution margin."
+    },
+    {
+     "type": "key",
+     "big": "It builds on ACCT 413",
+     "sub": [
+      "Static budget variance =",
+      "flexible-budget + sales-volume variances"
+     ],
+     "say": "Recall from ACCT four thirteen: the static budget variance splits into a flexible-budget variance, about prices and costs, and this sales-volume variance. Now we dig into the volume part."
+    },
+    {
+     "type": "quiz",
+     "q": "Budget 500 units, actual 540, budgeted CM $80. Sales-volume variance?",
+     "opts": [
+      "$3,200 U",
+      "$3,200 F",
+      "$40 F",
+      "$43,200 F"
+     ],
+     "answer": 1,
+     "say": "Quick check. Budget five hundred units, actual five forty, budgeted contribution margin eighty dollars. What's the sales-volume variance? Pause and pick.",
+     "reveal": "It's B. Forty extra units times $80 is $3,200 favorable."
+    }
+   ]
+  },
+  {
+   "id": "5.4",
+   "title": "Sales-mix and sales-quantity variances",
+   "lecture": "Lecture 5 \u00b7 Responsibility and sales variances",
+   "take": "The sales-volume variance splits into a mix effect and a quantity effect",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Tallgrass sold fewer bikes overall, and a less profitable mix. Two variances separate those effects."
+    },
+    {
+     "type": "table",
+     "heading": "Budgeted and actual mix",
+     "rows": [
+      [
+       "Trail: budget 75%, actual 80%",
+       ""
+      ],
+      [
+       "Cargo: budget 25%, actual 20%",
+       ""
+      ],
+      [
+       "Budget CM a bike: 1,260,000 \u00f7 1,200",
+       "$1,050"
+      ]
+     ],
+     "say": "The budgeted mix was seventy-five percent Trail and twenty-five percent Cargo. The actual mix was eighty and twenty. At the budgeted mix, the average contribution margin per bike is $1,050."
+    },
+    {
+     "type": "table",
+     "heading": "Sales-mix variance",
+     "rows": [
+      [
+       "Trail: 1,100 \u00d7 (80% \u2212 75%) \u00d7 $900",
+       49500
+      ],
+      [
+       "Cargo: 1,100 \u00d7 (20% \u2212 25%) \u00d7 $1,500",
+       -82500
+      ],
+      [
+       "Sales-mix variance",
+       -33000,
+       "total"
+      ]
+     ],
+     "say": "The sales-mix variance takes total actual units times the change in mix times budgeted margin. Selling more Trail bikes adds $49,500. Selling fewer Cargo bikes costs $82,500. The shift toward the cheaper bike cost $33,000."
+    },
+    {
+     "type": "table",
+     "heading": "Sales-quantity variance",
+     "rows": [
+      [
+       "(1,100 \u2212 1,200) \u00d7 $1,050",
+       -105000
+      ],
+      [
+       "Sales-mix variance",
+       -33000
+      ],
+      [
+       "Sales-volume variance",
+       -138000,
+       "total"
+      ]
+     ],
+     "say": "The sales-quantity variance is the change in total units times the budgeted average margin: a hundred fewer bikes times $1,050, $105,000 unfavorable. Mix plus quantity gives the $138,000 sales-volume variance."
+    },
+    {
+     "type": "key",
+     "big": "Two different problems",
+     "sub": [
+      "Mix: customers chose cheaper bikes",
+      "Quantity: fewer bikes sold overall"
+     ],
+     "say": "These point to different problems: the mix variance says customers chose the cheaper bike; the quantity variance says fewer bikes were sold overall."
+    },
+    {
+     "type": "quiz",
+     "q": "Actual units equal budgeted units, but the mix shifted toward the high-CM product. Which variance is favorable?",
+     "opts": [
+      "Sales-quantity",
+      "Sales-mix",
+      "Both",
+      "Neither"
+     ],
+     "answer": 1,
+     "say": "Quick check. Total units hit budget, but the mix shifted toward the high-margin product. Which variance is favorable? Pause and pick.",
+     "reveal": "It's B, sales mix. The quantity variance is zero."
+    }
+   ]
+  },
+  {
+   "id": "5.5",
+   "title": "Market-share and market-size variances",
+   "lecture": "Lecture 5 \u00b7 Responsibility and sales variances",
+   "take": "The sales-quantity variance splits into market-share and market-size effects",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Did Tallgrass sell fewer bikes because the market shrank, or because competitors took share? Two more variances tell us."
+    },
+    {
+     "type": "table",
+     "heading": "Upper Midwest e-bike market",
+     "rows": [
+      [
+       "Item",
+       "Budget | Actual",
+       "head"
+      ],
+      [
+       "Market size, bikes",
+       "24,000 | 25,000"
+      ],
+      [
+       "Tallgrass share",
+       "5.0% | 4.4%"
+      ],
+      [
+       "Tallgrass bikes",
+       "1,200 | 1,100"
+      ]
+     ],
+     "say": "Ana budgeted a regional market of twenty-four thousand e-bikes with a five percent share. The market actually grew to twenty-five thousand, but Tallgrass's share fell to four point four percent."
+    },
+    {
+     "type": "table",
+     "heading": "Splitting the sales-quantity variance",
+     "rows": [
+      [
+       "Share: 25,000 \u00d7 \u22120.6% \u00d7 $1,050",
+       -157500
+      ],
+      [
+       "Size: 1,000 \u00d7 5% \u00d7 $1,050",
+       52500
+      ],
+      [
+       "Sales-quantity variance",
+       -105000,
+       "total"
+      ]
+     ],
+     "say": "The market-share variance is actual market size times the change in share, times budgeted average margin: $157,500 unfavorable. The market-size variance is the change in market size times budgeted share and margin: $52,500 favorable. Together, the $105,000."
+    },
+    {
+     "type": "key",
+     "big": "The real problem: share",
+     "sub": [
+      "The market grew;",
+      "Tallgrass lost ground"
+     ],
+     "say": "This changes the story. Sales didn't fall because of a weak market; the market grew. Tallgrass lost share to competitors, which is a problem for marketing and product strategy."
+    },
+    {
+     "type": "key",
+     "big": "Needs reliable market data",
+     "sub": [
+      "Industry associations, dealer surveys"
+     ],
+     "say": "These variances are only as good as the market-size data, which comes from industry associations, registrations or surveys."
+    },
+    {
+     "type": "quiz",
+     "q": "Market fell from 10,000 to 9,000 units; budgeted share 10%; budgeted CM $200. Market-size variance?",
+     "opts": [
+      "$20,000 U",
+      "$20,000 F",
+      "$200,000 U",
+      "$2,000 U"
+     ],
+     "answer": 0,
+     "say": "Quick check. The market fell from ten thousand to nine thousand units, budgeted share ten percent, budgeted margin two hundred dollars. What's the market-size variance? Pause and pick.",
+     "reveal": "It's A. A thousand fewer units times ten percent times $200: $20,000 unfavorable."
+    }
+   ]
+  },
+  {
+   "id": "5.6",
+   "title": "Using sales variances",
+   "lecture": "Lecture 5 \u00b7 Responsibility and sales variances",
+   "take": "Layered variances point to causes, but managers must still investigate",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "We've broken one disappointing number into four. Now, what should Ana tell the CEO?"
+    },
+    {
+     "type": "flow",
+     "heading": "The variance tree",
+     "items": [
+      "Sales-volume: $138,000 U",
+      "Mix $33,000 U + Quantity $105,000 U",
+      "Share $157,500 U + Size $52,500 F"
+     ],
+     "say": "The sales-volume variance of $138,000 splits into a mix effect of $33,000 and a quantity effect of $105,000. Quantity splits into a share loss of $157,500, partly offset by $52,500 from a growing market."
+    },
+    {
+     "type": "list",
+     "heading": "Questions to ask",
+     "items": [
+      "Why did Cargo bikes lose share: price, range, competition?",
+      "Did dealers push the Trail bike over the Cargo?",
+      "Did a competitor launch a new model?"
+     ],
+     "say": "The variances point to questions. Why did the Cargo bike underperform? Did dealers push the cheaper Trail bike? Did a competitor launch something new? The numbers don't answer these; people do."
+    },
+    {
+     "type": "key",
+     "big": "Who is responsible?",
+     "sub": [
+      "Marketing: share and mix",
+      "No one: market size"
+     ],
+     "say": "Responsibility follows. The marketing and sales teams answer for share and mix. No one at Tallgrass controls the size of the market."
+    },
+    {
+     "type": "key",
+     "big": "Then act",
+     "sub": [
+      "Dealer incentives on Cargo bikes,",
+      "competitive review, product update"
+     ],
+     "say": "Then act: perhaps dealer incentives for Cargo bikes, a review of competitors' models, or a product update. And next year's budget should use better market forecasts."
+    },
+    {
+     "type": "quiz",
+     "q": "Which variance is least controllable by Tallgrass's marketing team?",
+     "opts": [
+      "Market-share variance",
+      "Sales-mix variance",
+      "Market-size variance",
+      "Sales-quantity variance"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which variance is least controllable by marketing? Pause and pick.",
+     "reveal": "It's C. The size of the regional market depends on the economy and consumer trends."
+    }
+   ]
+  }
+ ]
+}

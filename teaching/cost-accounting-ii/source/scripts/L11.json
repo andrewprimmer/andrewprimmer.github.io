@@ -1,0 +1,495 @@
+{
+ "videos": [
+  {
+   "id": "11.1",
+   "title": "Two kinds of quality",
+   "lecture": "Lecture 11 \u00b7 Quality and time",
+   "take": "Quality of design fits the product to customer needs; conformance quality makes it to specification",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "For a differentiator like Tallgrass, quality isn't optional. But quality means two different things."
+    },
+    {
+     "type": "compare",
+     "heading": "Two kinds of quality",
+     "cols": [
+      "Means",
+      "Failure looks like"
+     ],
+     "rows": [
+      [
+       "Quality of design",
+       "Product meets customer needs",
+       "50-mile range when riders need 70"
+      ],
+      [
+       "Conformance quality",
+       "Product meets its specs",
+       "Motor seals that leak"
+      ]
+     ],
+     "say": "Quality of design is how well a product's features match what customers need: a fifty-mile range when commuters need seventy is a design failure. Conformance quality is how well the product meets its own specifications: a motor seal that leaks is a conformance failure."
+    },
+    {
+     "type": "key",
+     "big": "Both cost money",
+     "sub": [
+      "Design failures lose sales;",
+      "conformance failures create rework and claims"
+     ],
+     "say": "Both cost money. Design failures lose sales to better-designed rivals. Conformance failures create rework, warranty claims and angry customers."
+    },
+    {
+     "type": "key",
+     "big": "Quality standards",
+     "sub": [
+      "ISO 9000: documented processes,",
+      "required by many buyers"
+     ],
+     "say": "Many companies certify their processes under the ISO nine thousand standards, which require documented, consistent quality procedures. Some large buyers insist on it."
+    },
+    {
+     "type": "key",
+     "big": "Quality and the scorecard",
+     "sub": [
+      "Warranty claims, defect rates,",
+      "on-time delivery: internal process measures"
+     ],
+     "say": "Quality measures sit in the internal-process perspective of the balanced scorecard from Lecture 10, and drive customer satisfaction and financial results."
+    },
+    {
+     "type": "quiz",
+     "q": "Tallgrass's bikes meet every specification, but buyers want a longer range than the design offers. This is a failure of:",
+     "opts": [
+      "Conformance quality",
+      "Quality of design",
+      "Appraisal",
+      "ISO certification"
+     ],
+     "answer": 1,
+     "say": "Quick check. Tallgrass's bikes meet every specification, but buyers want more range than the design offers. What's failing? Pause and pick.",
+     "reveal": "It's B, quality of design."
+    }
+   ]
+  },
+  {
+   "id": "11.2",
+   "title": "The costs of quality",
+   "lecture": "Lecture 11 \u00b7 Quality and time",
+   "take": "Costs of quality fall into prevention, appraisal, internal failure and external failure",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Poor quality is expensive, but the costs are scattered across the company. A cost-of-quality report pulls them together."
+    },
+    {
+     "type": "compare",
+     "heading": "Four categories",
+     "cols": [
+      "When",
+      "Tallgrass examples"
+     ],
+     "rows": [
+      [
+       "Prevention",
+       "Stop defects happening",
+       "Design reviews, training"
+      ],
+      [
+       "Appraisal",
+       "Find defects before shipping",
+       "Inspection, road tests"
+      ],
+      [
+       "Internal failure",
+       "Defects found before sale",
+       "Rework, scrap"
+      ],
+      [
+       "External failure",
+       "Defects found by customers",
+       "Warranty, returns, lost sales"
+      ]
+     ],
+     "say": "Prevention costs stop defects from happening: design reviews, supplier evaluation, training. Appraisal costs find defects before shipping: inspection and testing. Internal failure costs arise from defects caught in-house: rework and scrap. External failure costs arise after the sale: warranty repairs, returns and lost future sales."
+    },
+    {
+     "type": "table",
+     "heading": "Tallgrass cost-of-quality report, 2027",
+     "rows": [
+      [
+       "Prevention",
+       60000
+      ],
+      [
+       "Appraisal",
+       70000
+      ],
+      [
+       "Internal failure",
+       60000
+      ],
+      [
+       "External failure, incl. lost sales",
+       180000
+      ],
+      [
+       "Total cost of quality",
+       370000,
+       "total"
+      ],
+      [
+       "As % of revenue of $2,880,000",
+       "12.8%"
+      ]
+     ],
+     "say": "Tallgrass's 2027 report: $60,000 of prevention, $70,000 of appraisal, $60,000 of internal failure and $180,000 of external failure, including an estimated $70,000 of contribution from lost sales. Total: $370,000, almost thirteen percent of revenue."
+    },
+    {
+     "type": "key",
+     "big": "Prevention is cheapest",
+     "sub": [
+      "A dollar spent preventing defects saves",
+      "many dollars of failure costs"
+     ],
+     "say": "The pattern is typical: most of the cost is failure, especially external failure. Shifting spending toward prevention usually lowers the total."
+    },
+    {
+     "type": "key",
+     "big": "Opportunity costs count",
+     "sub": [
+      "Lost sales aren't in the ledger,",
+      "but they're real"
+     ],
+     "say": "Notice that lost sales are an opportunity cost, estimated, not recorded in the accounts. Ignoring them understates how much poor quality really costs."
+    },
+    {
+     "type": "quiz",
+     "q": "Road-testing every finished bike is which category?",
+     "opts": [
+      "Prevention",
+      "Appraisal",
+      "Internal failure",
+      "External failure"
+     ],
+     "answer": 1,
+     "say": "Quick check. Road-testing every finished bike is which category? Pause and pick.",
+     "reveal": "It's B, appraisal: finding defects before shipping."
+    }
+   ]
+  },
+  {
+   "id": "11.3",
+   "title": "Finding quality problems",
+   "lecture": "Lecture 11 \u00b7 Quality and time",
+   "take": "Control charts spot problems, Pareto diagrams rank them, and fishbone diagrams trace their causes",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "To fix quality problems you have to find them, rank them, and trace their causes. Three tools help."
+    },
+    {
+     "type": "define",
+     "big": "Control chart",
+     "sub": [
+      "Plots a process over time against",
+      "limits, often \u00b1 2 or 3 standard deviations"
+     ],
+     "say": "A control chart plots a process measure, like defects per day, against limits set from its normal variation, often two or three standard deviations from the mean. Points outside the limits signal a problem to investigate."
+    },
+    {
+     "type": "table",
+     "heading": "Pareto: warranty claims by cause, 2027",
+     "rows": [
+      [
+       "Motor seal leaks",
+       "41"
+      ],
+      [
+       "Battery connector faults",
+       "22"
+      ],
+      [
+       "Brake adjustment",
+       "9"
+      ],
+      [
+       "Paint chips",
+       "6"
+      ],
+      [
+       "Other",
+       "4"
+      ]
+     ],
+     "say": "A Pareto diagram ranks problems by frequency. Of eighty-two warranty claims, forty-one were motor seal leaks and twenty-two battery connector faults. Two causes account for three-quarters of claims. Fix those first."
+    },
+    {
+     "type": "list",
+     "heading": "Fishbone: why do seals leak?",
+     "items": [
+      "Methods: seal pressed at an angle",
+      "Machines: worn press fixture",
+      "Materials: supplier changed rubber compound",
+      "People: new assemblers untrained"
+     ],
+     "say": "A cause-and-effect, or fishbone, diagram lists possible causes under headings like methods, machines, materials and people. For the leaking seals: a seal pressed at an angle, a worn press fixture, a supplier's new rubber compound, or untrained new assemblers."
+    },
+    {
+     "type": "key",
+     "big": "Then test the causes",
+     "sub": [
+      "Data, not opinions, decide"
+     ],
+     "say": "Then the team tests the candidate causes with data. At Tallgrass, leaks clustered in bikes built after the supplier changed its rubber compound."
+    },
+    {
+     "type": "quiz",
+     "q": "Which tool ranks problems by how often they occur?",
+     "opts": [
+      "Control chart",
+      "Pareto diagram",
+      "Fishbone diagram",
+      "Strategy map"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which tool ranks problems by frequency? Pause and pick.",
+     "reveal": "It's B, the Pareto diagram."
+    }
+   ]
+  },
+  {
+   "id": "11.4",
+   "title": "Is a quality improvement worth it?",
+   "lecture": "Lecture 11 \u00b7 Quality and time",
+   "take": "Compare the relevant costs of a quality program with the failure costs it saves, including lost contribution",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "A better motor seal costs more. Is it worth it? Relevant cost analysis answers."
+    },
+    {
+     "type": "table",
+     "heading": "Upgraded seal: costs",
+     "rows": [
+      [
+       "Extra cost: $25 \u00d7 1,200 bikes",
+       30000
+      ],
+      [
+       "One-time redesign and testing",
+       15000
+      ],
+      [
+       "Total relevant cost",
+       45000,
+       "total"
+      ]
+     ],
+     "say": "The upgraded seal costs an extra twenty-five dollars a bike, $30,000 for twelve hundred bikes, plus $15,000 of one-time redesign and testing: $45,000."
+    },
+    {
+     "type": "table",
+     "heading": "Upgraded seal: savings",
+     "rows": [
+      [
+       "Warranty repairs avoided",
+       40000
+      ],
+      [
+       "Rework avoided",
+       10000
+      ],
+      [
+       "Lost sales recovered: 20 \u00d7 $900 CM",
+       18000
+      ],
+      [
+       "Total relevant savings",
+       68000,
+       "total"
+      ],
+      [
+       "Net benefit",
+       23000,
+       "total"
+      ]
+     ],
+     "say": "It's expected to avoid $40,000 of warranty repairs and $10,000 of rework, and to recover twenty lost sales worth $900 each in contribution, $18,000. Savings total $68,000, a net benefit of $23,000."
+    },
+    {
+     "type": "key",
+     "big": "Only relevant costs",
+     "sub": [
+      "Fixed inspection staff who stay",
+      "aren't savings"
+     ],
+     "say": "Include only costs that actually change. If Tallgrass keeps its inspectors anyway, their salaries aren't savings, even if they inspect fewer seals."
+    },
+    {
+     "type": "key",
+     "big": "Nonfinancial benefits too",
+     "sub": [
+      "Reputation, dealer confidence,",
+      "fewer stranded riders"
+     ],
+     "say": "And count the nonfinancial benefits: brand reputation, dealer confidence and fewer riders stranded with a dead motor, which matter a great deal for a differentiator."
+    },
+    {
+     "type": "quiz",
+     "q": "A $50,000 program saves $30,000 of warranty costs and recovers 25 sales at $900 CM. Net benefit?",
+     "opts": [
+      "$2,500",
+      "\u2212$20,000",
+      "$22,500",
+      "$5,000"
+     ],
+     "answer": 0,
+     "say": "Quick check. A fifty thousand dollar program saves thirty thousand of warranty costs and recovers twenty-five sales at nine hundred dollars contribution. Net benefit? Pause and pick.",
+     "reveal": "It's A. Savings of $52,500 less $50,000: $2,500."
+    }
+   ]
+  },
+  {
+   "id": "11.5",
+   "title": "Customer-response time and queues",
+   "lecture": "Lecture 11 \u00b7 Quality and time",
+   "take": "Response time includes waiting; as capacity fills, waiting time grows sharply",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Customers care how fast they get their bike. Most of the delay isn't work; it's waiting."
+    },
+    {
+     "type": "flow",
+     "heading": "Customer-response time",
+     "items": [
+      "Order placed",
+      "Receipt time: order reaches production",
+      "Waiting time: in the queue",
+      "Manufacturing time",
+      "Delivery time"
+     ],
+     "say": "Customer-response time runs from the order to delivery. It includes receipt time, until the order reaches production; waiting time in the queue; manufacturing time; and delivery time."
+    },
+    {
+     "type": "define",
+     "big": "Average waiting time",
+     "sub": [
+      "(Orders \u00d7 time per order\u00b2)",
+      "\u00f7 [2 \u00d7 (capacity \u2212 orders \u00d7 time per order)]"
+     ],
+     "say": "For a single bottleneck with random order arrivals, average waiting time can be estimated as orders times processing time squared, divided by two times the capacity left over."
+    },
+    {
+     "type": "table",
+     "heading": "Custom paint booth: 4,000 hours a year",
+     "rows": [
+      [
+       "Now: 100 orders \u00d7 30 hours",
+       "Wait 45 hours"
+      ],
+      [
+       "+ 25 new orders \u00d7 20 hours",
+       "Wait 100 hours"
+      ]
+     ],
+     "say": "Tallgrass's custom paint booth has four thousand hours a year. A hundred orders at thirty hours each means an average wait of forty-five hours. Add twenty-five new orders at twenty hours, and the booth is eighty-seven and a half percent busy: the average wait more than doubles to a hundred hours."
+    },
+    {
+     "type": "key",
+     "big": "Busy resources mean long waits",
+     "sub": [
+      "Waiting rises steeply as",
+      "utilization approaches 100%"
+     ],
+     "say": "The lesson: waiting time rises steeply as a resource approaches full use. A new product can slow every existing order. The cost of those delays, lost sales and price discounts, belongs in the decision."
+    },
+    {
+     "type": "quiz",
+     "q": "Orders 50 \u00d7 40 hours; capacity 3,000 hours. Average waiting time?",
+     "opts": [
+      "40 hours",
+      "80 hours",
+      "20 hours",
+      "100 hours"
+     ],
+     "answer": 0,
+     "say": "Quick check. Fifty orders at forty hours each; capacity three thousand hours. Average waiting time? Pause and pick.",
+     "reveal": "It's A. 50 times 1,600 is 80,000, divided by 2 times 1,000 spare hours: forty hours."
+    }
+   ]
+  },
+  {
+   "id": "11.6",
+   "title": "The theory of constraints",
+   "lecture": "Lecture 11 \u00b7 Quality and time",
+   "take": "Manage the bottleneck: maximize throughput margin through it, then relieve it",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "The theory of constraints says one resource limits the whole system. Manage that, and the rest follows."
+    },
+    {
+     "type": "define",
+     "big": "Throughput margin",
+     "sub": [
+      "Revenue \u2212 direct materials"
+     ],
+     "say": "The theory of constraints focuses on throughput margin: revenue minus direct materials. In the short run, other costs are treated as fixed."
+    },
+    {
+     "type": "flow",
+     "heading": "Five steps",
+     "items": [
+      "Identify the bottleneck",
+      "Maximize throughput through it",
+      "Subordinate everything else to it",
+      "Relieve the bottleneck",
+      "Repeat"
+     ],
+     "say": "Five steps: identify the bottleneck; get the most throughput margin out of it; pace everything else to it, avoiding inventory piling up in front; relieve the bottleneck by adding capacity; then find the next one."
+    },
+    {
+     "type": "list",
+     "heading": "Relieving the paint booth",
+     "items": [
+      "Never let it sit idle: cover breaks",
+      "Inspect before painting, not after",
+      "Shift simple jobs to an outside painter",
+      "Add a second booth if margin justifies it"
+     ],
+     "say": "For the paint booth: never let it sit idle, covering breaks; inspect frames before painting so the booth never paints a defective frame; send simple jobs to an outside painter; and add a second booth if the extra throughput margin justifies the cost."
+    },
+    {
+     "type": "key",
+     "big": "An hour lost at the bottleneck",
+     "sub": [
+      "is an hour lost for the whole plant"
+     ],
+     "say": "The key insight: an hour lost at the bottleneck is an hour lost for the whole plant, while an hour saved elsewhere is often worth nothing."
+    },
+    {
+     "type": "quiz",
+     "q": "Where should quality inspection happen if painting is the bottleneck?",
+     "opts": [
+      "After painting",
+      "Before painting",
+      "Only at the end",
+      "It doesn't matter"
+     ],
+     "answer": 1,
+     "say": "Quick check. If painting is the bottleneck, where should inspection happen? Pause and pick.",
+     "reveal": "It's B, before painting, so the bottleneck never wastes time on defective frames."
+    }
+   ]
+  }
+ ]
+}

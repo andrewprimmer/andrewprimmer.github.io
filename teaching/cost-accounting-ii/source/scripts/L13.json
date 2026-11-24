@@ -1,0 +1,486 @@
+{
+ "videos": [
+  {
+   "id": "13.1",
+   "title": "Capital budgeting and the time value of money",
+   "lecture": "Lecture 13 \u00b7 Capital budgeting",
+   "take": "Capital budgeting evaluates long-term investments; their cash flows must be discounted for the time value of money",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "A robotic welding cell costs $300,000 today and saves money for five years. Is it worth it? That's capital budgeting."
+    },
+    {
+     "type": "flow",
+     "heading": "Six stages",
+     "items": [
+      "Identify projects that fit strategy",
+      "Search for alternatives",
+      "Gather information and predict cash flows",
+      "Select using NPV and other tools",
+      "Arrange financing",
+      "Implement, control and audit"
+     ],
+     "say": "Capital budgeting has six stages: identify projects that fit the strategy, search for alternatives, gather information and predict cash flows, select projects, arrange financing, and implement, control and later audit the results."
+    },
+    {
+     "type": "define",
+     "big": "Time value of money",
+     "sub": [
+      "A dollar today is worth more",
+      "than a dollar in five years"
+     ],
+     "say": "Long-term decisions must recognize the time value of money: a dollar today can be invested to earn a return, so it's worth more than a dollar received in five years."
+    },
+    {
+     "type": "define",
+     "big": "Required rate of return",
+     "sub": [
+      "The minimum acceptable return;",
+      "Tallgrass uses its 10% cost of capital"
+     ],
+     "say": "The required rate of return, also called the discount rate or hurdle rate, is the minimum return an investment must earn. Tallgrass uses its ten percent cost of capital."
+    },
+    {
+     "type": "table",
+     "heading": "The welding cell",
+     "rows": [
+      [
+       "Investment today",
+       300000
+      ],
+      [
+       "Net cash savings each year, years 1\u20135",
+       90000
+      ],
+      [
+       "Disposal value at end of year 5",
+       20000
+      ]
+     ],
+     "say": "The robotic frame-welding cell costs $300,000 today. It will save $90,000 of cash a year, mostly labor, for five years, and can be sold for $20,000 at the end."
+    },
+    {
+     "type": "quiz",
+     "q": "Which stage compares projects using NPV?",
+     "opts": [
+      "Identify",
+      "Search",
+      "Select",
+      "Implement"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which stage compares projects using net present value? Pause and pick.",
+     "reveal": "It's C, the selection stage."
+    }
+   ]
+  },
+  {
+   "id": "13.2",
+   "title": "Net present value",
+   "lecture": "Lecture 13 \u00b7 Capital budgeting",
+   "take": "NPV = present value of future cash flows \u2212 investment; accept projects with NPV \u2265 0",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Net present value converts every future cash flow into today's dollars, then subtracts the investment."
+    },
+    {
+     "type": "define",
+     "big": "NPV",
+     "sub": [
+      "Present value of all expected cash flows,",
+      "discounted at the required rate"
+     ],
+     "say": "Net present value is the present value of all expected cash flows, in and out, discounted at the required rate of return. If NPV is zero or positive, the project earns at least the required return."
+    },
+    {
+     "type": "table",
+     "heading": "NPV of the welding cell at 10%",
+     "rows": [
+      [
+       "Savings: $90,000 \u00d7 3.791",
+       341190
+      ],
+      [
+       "Disposal: $20,000 \u00d7 0.621",
+       12420
+      ],
+      [
+       "Present value of inflows",
+       353610,
+       "total"
+      ],
+      [
+       "Investment",
+       -300000
+      ],
+      [
+       "Net present value",
+       53610,
+       "total"
+      ]
+     ],
+     "say": "Five years of $90,000 savings, discounted at ten percent using the annuity factor of three point seven nine one, are worth $341,190 today. The $20,000 disposal value, times point six two one, is worth $12,420. Less the $300,000 investment, NPV is $53,610. Accept."
+    },
+    {
+     "type": "key",
+     "big": "NPV is in dollars",
+     "sub": [
+      "It shows how much value",
+      "the project adds today"
+     ],
+     "say": "NPV is measured in dollars: the project adds about $53,600 of value to Tallgrass in today's money. That makes it the best measure for comparing projects."
+    },
+    {
+     "type": "key",
+     "big": "Higher rates, lower NPV",
+     "sub": [
+      "Riskier projects deserve",
+      "higher required returns"
+     ],
+     "say": "The higher the required rate, the lower the NPV. Riskier projects should be discounted at higher rates."
+    },
+    {
+     "type": "quiz",
+     "q": "PV of inflows $480,000; investment $500,000. Decision?",
+     "opts": [
+      "Accept: NPV $20,000",
+      "Reject: NPV \u2212$20,000",
+      "Accept: NPV $980,000",
+      "Can't tell"
+     ],
+     "answer": 1,
+     "say": "Quick check. The present value of inflows is four hundred eighty thousand, and the investment five hundred thousand. Decision? Pause and pick.",
+     "reveal": "It's B. NPV is negative $20,000: reject."
+    }
+   ]
+  },
+  {
+   "id": "13.3",
+   "title": "Internal rate of return",
+   "lecture": "Lecture 13 \u00b7 Capital budgeting",
+   "take": "IRR is the discount rate that makes NPV zero; accept if IRR exceeds the required rate",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Many managers prefer a percentage. The internal rate of return gives one."
+    },
+    {
+     "type": "define",
+     "big": "Internal rate of return",
+     "sub": [
+      "The discount rate at which",
+      "NPV equals zero"
+     ],
+     "say": "The internal rate of return is the discount rate at which the present value of expected cash inflows equals the investment: the rate that makes NPV zero."
+    },
+    {
+     "type": "table",
+     "heading": "Finding the welding cell's IRR",
+     "rows": [
+      [
+       "NPV at 10%",
+       53610
+      ],
+      [
+       "NPV at 16%",
+       "about +$4,200"
+      ],
+      [
+       "NPV at 17%",
+       "about \u2212$3,000"
+      ],
+      [
+       "IRR",
+       "about 16.6%",
+       "total"
+      ]
+     ],
+     "say": "At ten percent, NPV is about $53,600. At sixteen percent, it's still slightly positive. At seventeen, slightly negative. So the IRR is about sixteen point six percent. Spreadsheets find it exactly."
+    },
+    {
+     "type": "key",
+     "big": "Accept if IRR > required rate",
+     "sub": [
+      "16.6% > 10%: accept"
+     ],
+     "say": "The rule: accept if the IRR exceeds the required rate of return. Sixteen point six percent beats ten percent."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "IRR can mislead when ranking",
+     "sub": [
+      "A small project can have a high IRR",
+      "but add little value"
+     ],
+     "say": "But IRR can mislead when ranking projects of different sizes or timing. A tiny project with a forty percent IRR may add less value than a big one at twenty percent. When they conflict, NPV wins."
+    },
+    {
+     "type": "quiz",
+     "q": "Project A: IRR 25%, NPV $10,000. Project B: IRR 18%, NPV $60,000. Only one can be chosen. Which?",
+     "opts": [
+      "A, higher IRR",
+      "B, higher NPV",
+      "Neither",
+      "Either"
+     ],
+     "answer": 1,
+     "say": "Quick check. Project A has an IRR of twenty-five percent and NPV of ten thousand. Project B, eighteen percent and sixty thousand. Only one can go ahead. Which? Pause and pick.",
+     "reveal": "It's B. NPV measures the value added."
+    }
+   ]
+  },
+  {
+   "id": "13.4",
+   "title": "Payback and accrual accounting rate of return",
+   "lecture": "Lecture 13 \u00b7 Capital budgeting",
+   "take": "Payback and AARR are simple and popular, but ignore the time value of money",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Two simpler measures are still widely used. They're useful, but limited."
+    },
+    {
+     "type": "define",
+     "big": "Payback period",
+     "sub": [
+      "Time to recover the investment",
+      "from net cash inflows"
+     ],
+     "say": "The payback period is the time it takes to recover the investment from net cash inflows. For the welding cell: $300,000 divided by $90,000 a year, three point three years."
+    },
+    {
+     "type": "table",
+     "heading": "Accrual accounting rate of return",
+     "rows": [
+      [
+       "Annual cash savings",
+       90000
+      ],
+      [
+       "Depreciation: (300,000 \u2212 20,000) \u00f7 5",
+       -56000
+      ],
+      [
+       "Increase in operating income",
+       34000,
+       "total"
+      ],
+      [
+       "AARR: 34,000 \u00f7 300,000",
+       "11.3%",
+       "total"
+      ]
+     ],
+     "say": "The accrual accounting rate of return uses accounting income. Annual savings of $90,000 less depreciation of $56,000 raise operating income by $34,000. Divided by the $300,000 investment, that's eleven point three percent."
+    },
+    {
+     "type": "compare",
+     "heading": "Strengths and weaknesses",
+     "cols": [
+      "Strength",
+      "Weakness"
+     ],
+     "rows": [
+      [
+       "Payback",
+       "Simple; shows liquidity",
+       "Ignores later cash, time value"
+      ],
+      [
+       "AARR",
+       "Matches manager evaluation",
+       "Ignores time value"
+      ]
+     ],
+     "say": "Payback is simple and shows how quickly cash comes back, a rough measure of risk, but ignores everything after payback and the time value of money. AARR matches how managers are evaluated, on accounting income, but also ignores the time value of money."
+    },
+    {
+     "type": "key",
+     "big": "Use them alongside NPV",
+     "sub": [
+      "Never instead of it"
+     ],
+     "say": "Use payback and AARR as supplements to NPV, never as replacements."
+    },
+    {
+     "type": "quiz",
+     "q": "Investment $120,000; annual cash inflows $30,000. Payback period?",
+     "opts": [
+      "3 years",
+      "4 years",
+      "25%",
+      "5 years"
+     ],
+     "answer": 1,
+     "say": "Quick check. Investment a hundred twenty thousand; annual cash inflows thirty thousand. Payback period? Pause and pick.",
+     "reveal": "It's B, four years."
+    }
+   ]
+  },
+  {
+   "id": "13.5",
+   "title": "Income taxes and relevant cash flows",
+   "lecture": "Lecture 13 \u00b7 Capital budgeting",
+   "take": "Use after-tax cash flows; depreciation matters only through its tax shield",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Taxes change the numbers. Depreciation isn't a cash flow, but it saves tax, and that saving is."
+    },
+    {
+     "type": "list",
+     "heading": "Relevant cash flows",
+     "items": [
+      "Initial investment, including working capital",
+      "Operating cash flows, after tax",
+      "Depreciation tax shield",
+      "Terminal disposal value, after tax; working capital recovered"
+     ],
+     "say": "Relevant cash flows include the initial investment, plus any working capital needed; operating cash flows after tax; the tax saved by depreciation; and at the end, the after-tax disposal value and any working capital recovered."
+    },
+    {
+     "type": "table",
+     "heading": "After tax at 25%",
+     "rows": [
+      [
+       "Savings after tax: 90,000 \u00d7 75%",
+       67500
+      ],
+      [
+       "Depreciation tax shield: 60,000 \u00d7 25%",
+       15000
+      ],
+      [
+       "After-tax cash flow, years 1\u20135",
+       82500,
+       "total"
+      ],
+      [
+       "NPV after tax",
+       22073,
+       "total"
+      ]
+     ],
+     "say": "At a twenty-five percent tax rate, the $90,000 of savings is worth $67,500 after tax. Straight-line tax depreciation of $60,000 a year saves $15,000 of tax. That's $82,500 a year. The disposal value, fully taxed, is worth $15,000. After tax, NPV falls to about $22,000: still positive."
+    },
+    {
+     "type": "key",
+     "big": "Faster depreciation, higher NPV",
+     "sub": [
+      "100% bonus depreciation: $75,000",
+      "of tax saved in year 0"
+     ],
+     "say": "Faster tax depreciation raises NPV by bringing tax savings forward. With one hundred percent bonus depreciation, covered in Federal Tax I, Tallgrass would save $75,000 of tax right away, raising NPV to about $40,000."
+    },
+    {
+     "type": "key",
+     "big": "Sunk costs stay out",
+     "sub": [
+      "Past studies and prototypes",
+      "aren't relevant"
+     ],
+     "say": "And as always, sunk costs, like the consultant's feasibility study last year, stay out of the analysis."
+    },
+    {
+     "type": "quiz",
+     "q": "Annual tax depreciation $40,000; tax rate 25%. Annual depreciation tax shield?",
+     "opts": [
+      "$40,000",
+      "$10,000",
+      "$30,000",
+      "$0"
+     ],
+     "answer": 1,
+     "say": "Quick check. Annual tax depreciation forty thousand dollars; tax rate twenty-five percent. Annual tax shield? Pause and pick.",
+     "reveal": "It's B, $10,000."
+    }
+   ]
+  },
+  {
+   "id": "13.6",
+   "title": "After the decision",
+   "lecture": "Lecture 13 \u00b7 Capital budgeting",
+   "take": "Post-investment audits check predictions; evaluation by early-year accounting income can block good projects",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Approving the project isn't the end. Two things matter afterwards: checking the predictions, and how managers are judged."
+    },
+    {
+     "type": "define",
+     "big": "Post-investment audit",
+     "sub": [
+      "Compares actual results with",
+      "the predictions used to approve"
+     ],
+     "say": "A post-investment audit compares the project's actual cash flows and performance with the predictions used to approve it. It improves future forecasts and discourages managers from inflating them."
+    },
+    {
+     "type": "table",
+     "heading": "Welding cell, year 1 audit",
+     "rows": [
+      [
+       "Predicted savings",
+       90000
+      ],
+      [
+       "Actual savings",
+       74000
+      ],
+      [
+       "Shortfall",
+       -16000,
+       "total"
+      ],
+      [
+       "Cause: robot programming took 4 months",
+       ""
+      ]
+     ],
+     "say": "After a year, the welding cell saved $74,000, not $90,000. The audit finds that programming the robot took four months longer than planned. Savings are now on track, and future proposals will allow more start-up time."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "The ROI trap",
+     "sub": [
+      "Depreciation and start-up costs make",
+      "year-one accounting income low"
+     ],
+     "say": "The behavioral trap: a manager judged on year-one accounting income or return on investment may reject a positive-NPV project, because depreciation and start-up costs make early profits look poor. Align evaluation with the NPV decision, or judge over several years."
+    },
+    {
+     "type": "key",
+     "big": "Strategic value",
+     "sub": [
+      "Options to expand, learning,",
+      "quality: hard to quantify"
+     ],
+     "say": "Finally, some benefits are hard to quantify: options to expand later, learning, better quality. They shouldn't be ignored just because they're hard to put in a spreadsheet."
+    },
+    {
+     "type": "quiz",
+     "q": "Why might a manager reject a project with a positive NPV?",
+     "opts": [
+      "NPV is unreliable",
+      "Her bonus depends on short-term accounting income",
+      "The IRR is too high",
+      "Payback is too short"
+     ],
+     "answer": 1,
+     "say": "Quick check. Why might a manager reject a positive-NPV project? Pause and pick.",
+     "reveal": "It's B. Short-term evaluation can conflict with long-term value."
+    }
+   ]
+  }
+ ]
+}

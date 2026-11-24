@@ -1,0 +1,521 @@
+{
+ "videos": [
+  {
+   "id": "6.1",
+   "title": "Peanut-butter costing",
+   "lecture": "Lecture 6 \u00b7 Activity-based costing",
+   "take": "Spreading overhead evenly over diverse products overcosts simple products and undercosts complex ones",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Spread overhead evenly like peanut butter, and some products look cheaper than they are. Others look more expensive. Here's why."
+    },
+    {
+     "type": "define",
+     "big": "Broad averaging",
+     "sub": [
+      "Assigning costs uniformly to products",
+      "that use resources differently"
+     ],
+     "say": "Broad averaging, or peanut-butter costing, assigns indirect costs uniformly to products that actually use resources in very different ways."
+    },
+    {
+     "type": "compare",
+     "heading": "Prairie Gate's two lines",
+     "cols": [
+      "Utility trailers",
+      "Livestock trailers"
+     ],
+     "rows": [
+      [
+       "Volume a year",
+       "400",
+       "100"
+      ],
+      [
+       "Design",
+       "Standard",
+       "Custom every time"
+      ],
+      [
+       "Setups",
+       "Few, long runs",
+       "Many, short runs"
+      ]
+     ],
+     "say": "Prairie Gate builds four hundred standard utility trailers a year in long runs. It builds only a hundred livestock trailers, each custom-designed, with frequent setups. Their demands on overhead are very different."
+    },
+    {
+     "type": "table",
+     "heading": "Plant-wide rate: $36 per labor hour",
+     "rows": [
+      [
+       "Utility: 28,000 DLH \u00d7 $36 \u00f7 400",
+       2520
+      ],
+      [
+       "Livestock: 20,000 DLH \u00d7 $36 \u00f7 100",
+       7200
+      ]
+     ],
+     "say": "With one rate of thirty-six dollars per labor hour, each utility trailer gets $2,520 of overhead and each livestock trailer $7,200. But labor hours don't capture design time or setups."
+    },
+    {
+     "type": "define",
+     "big": "Cross-subsidization",
+     "sub": [
+      "Undercosting one product means",
+      "overcosting another"
+     ],
+     "say": "Because total overhead is fixed, if one product is undercosted, another must be overcosted. That's product-cost cross-subsidization."
+    },
+    {
+     "type": "quiz",
+     "q": "Utility trailers rarely win bids, while livestock trailers win easily. What does this suggest?",
+     "opts": [
+      "Utility trailers are undercosted",
+      "Utility trailers are overcosted",
+      "Both are costed correctly",
+      "Livestock trailers are overcosted"
+     ],
+     "answer": 1,
+     "say": "Quick check. Utility trailers rarely win bids, while livestock trailers win easily. What does that suggest? Pause and pick.",
+     "reveal": "It's B. Overcosted utility trailers are bid too high, and undercosted livestock trailers too low."
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "title": "Refining a costing system",
+   "lecture": "Lecture 6 \u00b7 Activity-based costing",
+   "take": "Refine costs by tracing more directly, using more cost pools, and using drivers that cause the costs",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "When product costs look wrong, the fix is to refine the costing system. There are three ways."
+    },
+    {
+     "type": "list",
+     "heading": "Three refinements",
+     "items": [
+      "Trace more costs directly",
+      "Use more indirect cost pools",
+      "Use cost drivers that cause the costs"
+     ],
+     "say": "First, trace more costs as direct costs, for example by metering power to each machine. Second, split overhead into more pools of similar costs. Third, allocate each pool with a driver that actually causes it."
+    },
+    {
+     "type": "list",
+     "heading": "Signs a system needs refining",
+     "items": [
+      "Products differ widely in complexity",
+      "Overhead is large and growing",
+      "Managers can't explain winning or losing bids",
+      "Profitable-looking products don't make money"
+     ],
+     "say": "Signs a system needs refining: products differ a lot in complexity; overhead is a big and growing share of costs; managers can't explain why they win or lose bids; and products that look profitable don't seem to make money."
+    },
+    {
+     "type": "define",
+     "big": "Activity-based costing",
+     "sub": [
+      "Cost pools for activities,",
+      "each with its own driver"
+     ],
+     "say": "Activity-based costing is the best-known refinement. It builds cost pools around activities, like designing, setting up and welding, and allocates each with its own driver."
+    },
+    {
+     "type": "key",
+     "big": "From products to activities",
+     "sub": [
+      "Products consume activities;",
+      "activities consume resources"
+     ],
+     "say": "The logic of ABC: products consume activities, and activities consume resources. Cost each activity, then charge products for the activities they use."
+    },
+    {
+     "type": "quiz",
+     "q": "Which is NOT a way to refine a costing system?",
+     "opts": [
+      "Direct tracing",
+      "More cost pools",
+      "Causal cost drivers",
+      "One plant-wide rate"
+     ],
+     "answer": 3,
+     "say": "Quick check. Which is not a refinement? Pause and pick.",
+     "reveal": "It's D. A single plant-wide rate is the broad averaging we're trying to fix."
+    }
+   ]
+  },
+  {
+   "id": "6.3",
+   "title": "Activities and the cost hierarchy",
+   "lecture": "Lecture 6 \u00b7 Activity-based costing",
+   "take": "Group activity costs by level: unit, batch, product-sustaining and facility-sustaining",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Not every cost rises with the number of trailers. The cost hierarchy sorts activities by what drives them."
+    },
+    {
+     "type": "compare",
+     "heading": "The cost hierarchy",
+     "cols": [
+      "Varies with",
+      "Prairie Gate activity"
+     ],
+     "rows": [
+      [
+       "Unit-level",
+       "Each unit",
+       "Welding, finishing"
+      ],
+      [
+       "Batch-level",
+       "Each batch or setup",
+       "Machine setups"
+      ],
+      [
+       "Product-sustaining",
+       "Each product line",
+       "Custom design work"
+      ],
+      [
+       "Facility-sustaining",
+       "The plant",
+       "Plant manager, insurance"
+      ]
+     ],
+     "say": "Unit-level costs vary with each trailer, like welding. Batch-level costs vary with the number of batches, like setups. Product-sustaining costs support a product line or design, like engineering. Facility-sustaining costs keep the plant running, whatever is made."
+    },
+    {
+     "type": "table",
+     "heading": "Prairie Gate's activity pools, 2027",
+     "rows": [
+      [
+       "Design: per design hour",
+       360000
+      ],
+      [
+       "Setups: per setup",
+       240000
+      ],
+      [
+       "Welding: per machine hour",
+       648000
+      ],
+      [
+       "Finishing: per labor hour",
+       480000
+      ],
+      [
+       "Total overhead",
+       1728000,
+       "total"
+      ]
+     ],
+     "say": "Ana groups Prairie Gate's $1,728,000 of overhead into four activity pools: design, $360,000; setups, $240,000; welding, $648,000; and finishing and inspection, $480,000."
+    },
+    {
+     "type": "key",
+     "big": "Facility costs: allocate with care",
+     "sub": [
+      "No causal driver exists;",
+      "some firms don't allocate them at all"
+     ],
+     "say": "Facility-sustaining costs have no causal driver. Some companies allocate them on a rough basis; others leave them unallocated so they don't distort product decisions."
+    },
+    {
+     "type": "key",
+     "big": "Batch costs explain small orders",
+     "sub": [
+      "A 1-trailer run costs as much to set up",
+      "as a 20-trailer run"
+     ],
+     "say": "Batch-level thinking explains why small, custom orders are expensive: setting up for one livestock trailer takes as long as setting up for a run of twenty utility trailers."
+    },
+    {
+     "type": "quiz",
+     "q": "Engineering a new trailer model is which level?",
+     "opts": [
+      "Unit",
+      "Batch",
+      "Product-sustaining",
+      "Facility-sustaining"
+     ],
+     "answer": 2,
+     "say": "Quick check. Engineering a new trailer model is which level? Pause and pick.",
+     "reveal": "It's C. It supports a product, regardless of how many units or batches are made."
+    }
+   ]
+  },
+  {
+   "id": "6.4",
+   "title": "Building the ABC system",
+   "lecture": "Lecture 6 \u00b7 Activity-based costing",
+   "take": "Compute a rate for each activity and charge products for the quantity of each driver they use",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Now let's build Prairie Gate's ABC system and recost both trailer lines."
+    },
+    {
+     "type": "table",
+     "heading": "Activity rates",
+     "rows": [
+      [
+       "Design: $360,000 \u00f7 3,000 hours",
+       "$120/hr"
+      ],
+      [
+       "Setups: $240,000 \u00f7 200 setups",
+       "$1,200"
+      ],
+      [
+       "Welding: $648,000 \u00f7 10,800 MH",
+       "$60/MH"
+      ],
+      [
+       "Finishing: $480,000 \u00f7 48,000 DLH",
+       "$10/DLH"
+      ]
+     ],
+     "say": "Each pool is divided by its driver. Design: a hundred twenty dollars per design hour. Setups: $1,200 per setup. Welding: sixty dollars per machine hour. Finishing: ten dollars per labor hour."
+    },
+    {
+     "type": "table",
+     "heading": "Utility trailers: 400 a year",
+     "rows": [
+      [
+       "Design: 600 hours \u00d7 $120",
+       72000
+      ],
+      [
+       "Setups: 40 \u00d7 $1,200",
+       48000
+      ],
+      [
+       "Welding: 6,000 MH \u00d7 $60",
+       360000
+      ],
+      [
+       "Finishing: 28,000 DLH \u00d7 $10",
+       280000
+      ],
+      [
+       "Overhead per trailer: 760,000 \u00f7 400",
+       1900,
+       "total"
+      ]
+     ],
+     "say": "Utility trailers use six hundred design hours, forty setups, six thousand machine hours and twenty-eight thousand labor hours: $760,000 of overhead, or $1,900 a trailer."
+    },
+    {
+     "type": "table",
+     "heading": "Livestock trailers: 100 a year",
+     "rows": [
+      [
+       "Design: 2,400 hours \u00d7 $120",
+       288000
+      ],
+      [
+       "Setups: 160 \u00d7 $1,200",
+       192000
+      ],
+      [
+       "Welding: 4,800 MH \u00d7 $60",
+       288000
+      ],
+      [
+       "Finishing: 20,000 DLH \u00d7 $10",
+       200000
+      ],
+      [
+       "Overhead per trailer: 968,000 \u00f7 100",
+       9680,
+       "total"
+      ]
+     ],
+     "say": "Livestock trailers use twenty-four hundred design hours, a hundred sixty setups, forty-eight hundred machine hours and twenty thousand labor hours: $968,000, or $9,680 a trailer."
+    },
+    {
+     "type": "key",
+     "big": "Totals still match",
+     "sub": [
+      "$760,000 + $968,000 = $1,728,000"
+     ],
+     "say": "Together, the two lines still absorb exactly $1,728,000. ABC doesn't change total overhead. It changes who carries it."
+    },
+    {
+     "type": "quiz",
+     "q": "A custom job uses 30 design hours, 2 setups, 40 MH and 120 DLH. ABC overhead?",
+     "opts": [
+      "$9,600",
+      "$9,000",
+      "$4,320",
+      "$10,800"
+     ],
+     "answer": 0,
+     "say": "Quick check. A custom job uses thirty design hours, two setups, forty machine hours and a hundred twenty labor hours. What's its overhead under ABC? Pause and pick.",
+     "reveal": "It's A. $3,600 plus $2,400 plus $2,400 plus $1,200 is $9,600."
+    }
+   ]
+  },
+  {
+   "id": "6.5",
+   "title": "ABC versus traditional costing",
+   "lecture": "Lecture 6 \u00b7 Activity-based costing",
+   "take": "ABC shows which products were under- or overcosted, changing prices, bids and product mix",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "So how wrong was the old system? Let's compare."
+    },
+    {
+     "type": "table",
+     "heading": "Overhead per trailer",
+     "rows": [
+      [
+       "Line",
+       "Plant-wide | ABC",
+       "head"
+      ],
+      [
+       "Utility",
+       "$2,520 | $1,900"
+      ],
+      [
+       "Livestock",
+       "$7,200 | $9,680"
+      ]
+     ],
+     "say": "Under the plant-wide rate, each utility trailer carried $2,520 of overhead. ABC says $1,900. Each livestock trailer carried $7,200; ABC says $9,680."
+    },
+    {
+     "type": "table",
+     "heading": "The distortion",
+     "rows": [
+      [
+       "Utility overcosted by, per trailer",
+       620
+      ],
+      [
+       "Livestock undercosted by, per trailer",
+       2480
+      ],
+      [
+       "Check: 400 \u00d7 620 = 100 \u00d7 2,480",
+       248000
+      ]
+     ],
+     "say": "Utility trailers were overcosted by $620 each; livestock trailers undercosted by $2,480 each. The total, $248,000, shifts from one line to the other."
+    },
+    {
+     "type": "list",
+     "heading": "What Karen does now",
+     "items": [
+      "Lower utility bids to win more volume",
+      "Raise livestock prices or charge for design",
+      "Charge customers for extra setups",
+      "Simplify designs with standard options"
+     ],
+     "say": "Now Karen can act. She can bid more aggressively on utility trailers, raise livestock prices or charge separately for custom design, charge for small runs that need extra setups, and offer standard options that cut design hours."
+    },
+    {
+     "type": "key",
+     "big": "Better costs, better strategy",
+     "sub": [
+      "The old system steered Prairie Gate",
+      "toward its least profitable work"
+     ],
+     "say": "The old system was quietly steering Prairie Gate toward its least profitable work. That's the real cost of broad averaging."
+    },
+    {
+     "type": "quiz",
+     "q": "Under ABC, what happens to the reported cost of the livestock line?",
+     "opts": [
+      "Falls",
+      "Rises",
+      "Stays the same",
+      "Becomes zero"
+     ],
+     "answer": 1,
+     "say": "Quick check. Under ABC, what happens to the reported cost of the livestock line? Pause and pick.",
+     "reveal": "It's B. It rises, because the line uses most of the design and setup activity."
+    }
+   ]
+  },
+  {
+   "id": "6.6",
+   "title": "Is ABC worth it?",
+   "lecture": "Lecture 6 \u00b7 Activity-based costing",
+   "take": "ABC pays off when products are diverse and overhead is large; time-driven ABC makes it cheaper",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "ABC costs money to build and maintain. When is it worth it?"
+    },
+    {
+     "type": "list",
+     "heading": "ABC is most valuable when",
+     "items": [
+      "Indirect costs are a large share of total cost",
+      "Products differ in volume, size and complexity",
+      "Overhead is mostly batch and product-level",
+      "Competition is tight, so pricing errors hurt"
+     ],
+     "say": "ABC pays off when indirect costs are large, when products differ widely in volume and complexity, when much overhead is batch or product-level, and when competition is tight enough that pricing errors hurt."
+    },
+    {
+     "type": "list",
+     "heading": "Challenges",
+     "items": [
+      "Measuring activities takes time and money",
+      "Systems go out of date",
+      "Facility costs are still arbitrary",
+      "Managers may resist new numbers"
+     ],
+     "say": "The challenges: interviewing staff and measuring activities costs money; activity data goes out of date; facility-level costs are still allocated arbitrarily; and managers whose products suddenly look unprofitable may resist."
+    },
+    {
+     "type": "define",
+     "big": "Time-driven ABC",
+     "sub": [
+      "Cost per minute of capacity",
+      "\u00d7 minutes each activity takes"
+     ],
+     "say": "Time-driven ABC is a cheaper version. It estimates the cost per minute of each department's capacity and how many minutes each activity takes, rather than surveying staff about how they spend their time."
+    },
+    {
+     "type": "key",
+     "big": "Not just for factories",
+     "sub": [
+      "Banks, hospitals and retailers",
+      "use ABC to cost services and customers"
+     ],
+     "say": "ABC isn't only for factories. Banks use it to cost accounts, hospitals to cost procedures, and retailers to cost customers and delivery."
+    },
+    {
+     "type": "quiz",
+     "q": "Which company is LEAST likely to benefit from ABC?",
+     "opts": [
+      "A plant making hundreds of custom products",
+      "A firm making one standard product",
+      "A hospital with many procedures",
+      "A bank with many account types"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which company is least likely to benefit from ABC? Pause and pick.",
+     "reveal": "It's B. With one product, all overhead belongs to it anyway."
+    }
+   ]
+  }
+ ]
+}

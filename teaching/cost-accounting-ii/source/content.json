@@ -1,0 +1,996 @@
+{
+ "1": {
+  "warmup": [
+   "Your phone bill is $30 a month plus $10 per GB over 5 GB. Sketch it. Fixed, variable or mixed?",
+   "Mixed with a step: flat to 5 GB, then rising. Introduces cost functions and the relevant range."
+  ],
+  "acts": [
+   [
+    "Classify for Tallgrass: (a) motors, (b) plant manager's salary, (c) electricity, (d) quality inspectors hired one per 200 bikes a week.",
+    "(a) Variable. (b) Fixed. (c) Mixed. (d) Step-fixed."
+   ],
+   [
+    "Which method would you use to estimate the labor time for a new wheel-truing step? Why?",
+    "Industrial engineering: a new physical process with no history; time studies are feasible."
+   ],
+   [
+    "Data: 1,500 hours $14,000; 4,500 hours $27,500 (high and low). Find the cost function.",
+    "b = 13,500 ÷ 3,000 = $4.50; a = 27,500 − 20,250 = $7,250."
+   ],
+   [
+    "A regression has r-squared 0.25 and t-value 1.2. Would you use it?",
+    "No: weak fit and insignificant slope; look for a better driver."
+   ],
+   [
+    "Classify: frame painting per batch, design engineer for the cargo model, property tax on the plant, battery per bike.",
+    "Batch; product-sustaining; facility-sustaining; unit-level."
+   ],
+   [
+    "On an 80% curve with 100 hours for unit 1 and $40 per hour, what labor cost should Ana budget for units 5–8?",
+    "Total for 8 = 409.6 hours; for 4 = 256; units 5–8 = 153.6 hours × 40 = $6,144."
+   ]
+  ],
+  "case": [
+   "Budgeting maintenance at Tallgrass",
+   "Ana must budget 2027 maintenance. She has 24 months of data. The high-low method gives $10,000 + $4.00 per machine hour; regression gives $9,200 + $4.25 per machine hour (r-squared 0.86). One month in the data included a $6,000 emergency repair after a flood. Next year Tallgrass plans 48,000 machine hours.",
+   [
+    "Predict 2027 maintenance with each method.",
+    "Which would you use, and why?",
+    "How should the flood month be handled?",
+    "What other driver might Ana test?"
+   ],
+   "High-low: 120,000 + 192,000 = $312,000. Regression: 110,400 + 204,000 = $314,400. Prefer regression (all data, fit measured), after removing or adjusting the flood outlier, which distorts both but high-low most if it's an extreme point. Test number of setups or bike-model changes."
+  ],
+  "exam": [
+   [
+    "Explain the three criteria for choosing a cost driver.",
+    5,
+    "Economic plausibility (causal link); goodness of fit (r-squared); slope of the regression line (steep, significant)."
+   ],
+   [
+    "Using the high-low method: 3,000 hours $21,000; 7,000 hours $37,000. Find the cost function and predict cost at 5,500 hours.",
+    5,
+    "b = 16,000 ÷ 4,000 = $4; a = 21,000 − 12,000 = 9,000; at 5,500: 9,000 + 22,000 = $31,000."
+   ]
+  ],
+  "outcomes": [
+   "Describe linear cost functions and the relevant range",
+   "Compare four cost estimation methods",
+   "Apply the high-low method",
+   "Interpret regression output",
+   "Choose cost drivers and use the cost hierarchy",
+   "Apply the cumulative average-time learning model"
+  ],
+  "take": [
+   "y = a + bX within a relevant range",
+   "Engineering, conference, account analysis, quantitative",
+   "High-low uses two activity extremes",
+   "Read slope, r-squared and t-value",
+   "Plausibility, fit and slope pick drivers",
+   "Learning curves: time falls as output doubles"
+  ]
+ },
+ "2": {
+  "warmup": [
+   "Your bank's app flags a purchase as possible fraud. Is that a good model? What would you want to know?",
+   "How often it's right (precision), how much fraud it catches (recall), and the cost of each error. Previews 2.5 and 2.6."
+  ],
+  "acts": [
+   [
+    "Frame Tallgrass's warranty-claim problem in the six steps: which claims are likely fraudulent?",
+    "Business: cost of paying false claims vs annoying honest customers. Data: claim history, dealer, bike age. Prepare: clean, create features. Model: tree. Evaluate on test claims. Deploy: route flagged claims to inspection; monitor."
+   ],
+   [
+    "Suggest four features to predict whether a dealer pays late, and explain each.",
+    "Prior late payments, years as customer, order size relative to dealer revenue, credit score, region's economic conditions."
+   ],
+   [
+    "Compute Gini for 20 dealers with 4 late, and for a split into (10 dealers, 0 late) and (10 dealers, 4 late).",
+    "Parent: 1 − (0.04 + 0.64) = 0.32. Children: 0 and 1 − (0.16 + 0.36) = 0.48; weighted 0.24. Improvement 0.08."
+   ],
+   [
+    "Explain why a model with 100% training accuracy might be a bad choice.",
+    "It likely overfits; judge on test data, prefer simpler pruned trees."
+   ],
+   [
+    "Confusion matrix: TP 18, FP 12, FN 12, TN 158. Compute accuracy, precision and recall.",
+    "Accuracy 176/200 = 88%; precision 18/30 = 60%; recall 18/30 = 60%."
+   ],
+   [
+    "With TP saving $3,000 and FP costing $800, what minimum precision makes flagging a dealer worthwhile?",
+    "Flag if p × 3,000 > (1 − p) × 800 → p > 800/3,800 ≈ 21%."
+   ]
+  ],
+  "case": [
+   "Predicting dealer defaults",
+   "Ana has five years of data on 600 dealers. A consultant offers a neural network with 94% test accuracy that can't explain its predictions; Ana's pruned tree has 89% test accuracy, 60% precision and 80% recall. Sales managers worry that requiring prepayment will drive good dealers to competitors. The consultant's model has 70% precision and 75% recall.",
+   [
+    "Compute the net benefit of each model per 200 dealers (30 late), using $3,000 and $800.",
+    "Which would you deploy, and why?",
+    "What non-financial issues matter?",
+    "How should the model be monitored?"
+   ],
+   "Tree: TP 24, FP 16 → 72,000 − 12,800 = 59,200. Network: recall 75% → TP 22.5, flagged = 22.5/0.7 = 32.1, FP 9.6 → 67,500 − 7,700 = 59,800. Nearly equal value; the tree is explainable to dealers and sales staff, so prefer it unless the gap grows. Monitor drift, fairness, and dealer churn."
+  ],
+  "exam": [
+   [
+    "Explain overfitting and two ways to guard against it.",
+    4,
+    "A model learns noise in training data and predicts poorly on new data. Guard with a holdout test set or cross-validation, and pruning/simpler models."
+   ],
+   [
+    "A model's test results: TP 40, FP 20, FN 10, TN 130. Compute accuracy, precision and recall, and the net benefit if a TP saves $2,000 and an FP costs $500.",
+    6,
+    "Accuracy 170/200 = 85%; precision 40/60 = 66.7%; recall 40/50 = 80%. Net benefit 80,000 − 10,000 = $70,000."
+   ]
+  ],
+  "outcomes": [
+   "Apply a six-step analytics framework",
+   "Read a classification tree",
+   "Compute Gini impurity for a split",
+   "Explain overfitting, validation and pruning",
+   "Compute accuracy, precision and recall",
+   "Turn predictions into decisions using error costs"
+  ],
+  "take": [
+   "Start with the decision the model will change",
+   "Trees split on features to classify cases",
+   "Choose splits that make groups purest",
+   "Judge models on data they haven't seen",
+   "Accuracy can mislead; look at precision and recall",
+   "Weigh the value of right predictions against the cost of errors"
+  ]
+ },
+ "3": {
+  "warmup": [
+   "A food truck sells tacos at $4 with ingredients costing $1.50. Its permit and truck lease cost $2,500 a month. How many tacos to break even?",
+   "CM $2.50; 1,000 tacos. Introduces contribution margin and breakeven."
+  ],
+  "acts": [
+   [
+    "Tallgrass's variable cost rises to $1,600 per Trail bike. Recompute CM, CM ratio and breakeven.",
+    "CM 800; ratio 33.3%; breakeven 675 bikes, $1,620,000."
+   ],
+   [
+    "Using the equation method, find breakeven if price is $2,600, variable cost $1,500 and fixed costs $594,000.",
+    "1,100Q = 594,000; Q = 540."
+   ],
+   [
+    "Target net income $120,000 at a 21% tax rate. How many Trail bikes?",
+    "OI = 151,899; (540,000 + 151,899) ÷ 900 = 768.8 → 769."
+   ],
+   [
+    "Evaluate: a $40 per bike sales commission increase expected to add 60 bikes.",
+    "New CM 860; 960 × 860 = 825,600 vs 810,000: +$15,600. Accept."
+   ],
+   [
+    "Compute DOL and income at 1,000 bikes for the current and robotic structures.",
+    "Current: CM 900,000, OI 360,000. Robotic: CM 1,100 × 1,000 = 1,100,000, OI 380,000. At 900: DOL 3.0 vs 990,000 ÷ 270,000 = 3.67."
+   ],
+   [
+    "Mix 2 Trail : 1 Cargo. Compute breakeven units of each.",
+    "Bundle CM 3,300; 540,000 ÷ 3,300 = 163.6 bundles; about 327 Trail and 164 Cargo."
+   ]
+  ],
+  "case": [
+   "Tallgrass plans 2027",
+   "Ana's 2027 plan: Trail bikes at $2,400 (variable $1,500) and Cargo bikes at $3,600 (variable $2,100), in a 3:1 mix; fixed costs $540,000; expected sales 1,200 bikes. Options: (a) automate assembly, cutting variable cost $200 a bike but raising fixed costs $180,000; (b) launch a $60,000 ad campaign expected to shift the mix to 2:1.",
+   [
+    "Compute 2027 operating income under the current plan.",
+    "Evaluate option (a) at 1,200 bikes and its new breakeven.",
+    "Evaluate option (b).",
+    "Which would you recommend, considering risk?"
+   ],
+   "Current: 300 bundles × 4,200 = 1,260,000 − 540,000 = $720,000. (a): bundle CM 4,200 + 800 = 5,000; 300 × 5,000 = 1,500,000 − 720,000 = $780,000; breakeven 144 bundles (576 bikes) vs 129 (514). (b): 2:1 bundle CM 3,300 per 3 bikes; 400 bundles × 3,300 = 1,320,000 − 600,000 = $720,000: no gain. (a) adds $60,000 but more operating leverage; recommend if 1,200 bikes is reliable."
+  ],
+  "exam": [
+   [
+    "Define contribution margin and explain why it is useful for short-run decisions.",
+    4,
+    "Revenue minus variable costs; shows how operating income changes with volume when fixed costs don't change; used for breakeven, target income and what-if analysis."
+   ],
+   [
+    "Price $500, variable cost $300, fixed costs $400,000, tax rate 25%. Compute breakeven units, units for net income of $90,000, and the margin of safety at 2,600 units.",
+    6,
+    "BE 2,000 units. OI 120,000 → 520,000 ÷ 200 = 2,600 units. MOS 600 units, $300,000 (23%)."
+   ]
+  ],
+  "outcomes": [
+   "Compute contribution margin and the CM ratio",
+   "Compute breakeven in units and revenue",
+   "Compute units for target income before and after tax",
+   "Use CVP for what-if decisions and margin of safety",
+   "Explain cost structure and operating leverage",
+   "Compute breakeven with a sales mix"
+  ],
+  "take": [
+   "CM covers fixed costs, then profit",
+   "Breakeven = fixed costs ÷ CM",
+   "Gross up after-tax targets by 1 − t",
+   "Test decisions by their effect on total CM",
+   "More fixed costs mean more operating leverage and risk",
+   "Breakeven depends on the sales mix"
+  ]
+ },
+ "4": {
+  "warmup": [
+   "Do you keep a personal budget? What happens when an unexpected bill arrives?",
+   "Links personal budgets to planning, cash flow timing and the value of a cushion versus slack."
+  ],
+  "acts": [
+   [
+    "List five benefits of budgeting and one danger of each.",
+    "Planning (rigidity), coordination (time-consuming), communication (information overload), benchmark (gaming), motivation (slack or demotivation if unrealistic)."
+   ],
+   [
+    "Order the budgets: cash, production, revenue, DL, budgeted income statement, DM purchases.",
+    "Revenue, production, DM purchases, DL, budgeted income statement, cash."
+   ],
+   [
+    "Q2 sales 450 bikes; target ending FG = 20% of Q3 sales of 300; beginning FG 80. Production?",
+    "450 + 60 − 80 = 430."
+   ],
+   [
+    "Frames: 1 per bike at $220; production 430; beginning 70; target ending 50. Purchases in dollars?",
+    "430 + 50 − 70 = 410 × 220 = $90,200."
+   ],
+   [
+    "Sales: Jan $200,000, Feb $260,000, Mar $320,000. Collections: 40% month of sale, 55% next month, 5% bad debts. March collections?",
+    "40% × 320,000 + 55% × 260,000 = 128,000 + 143,000 = $271,000."
+   ],
+   [
+    "Design a bonus scheme for Tallgrass's sales manager that discourages slack.",
+    "Reward accuracy (penalize large under-forecasts), use relative performance or benchmarks, combine with long-run measures."
+   ]
+  ],
+  "case": [
+   "Tallgrass's second quarter",
+   "Ana is budgeting Q2 2027. Budgeted sales: April 140 bikes, May 180, June 160, July 120, at $2,400. Target ending FG each month is 25% of next month's sales; April begins with 35 bikes. Each bike uses one battery pack at $310; target ending packs are 10% of next month's production; April begins with 15 packs. Dealers pay 50% in the month of sale and 50% the next month; March sales were $264,000.",
+   [
+    "Prepare the production budget for April, May and June.",
+    "Prepare battery pack purchases for April and May (June production needed for May).",
+    "Compute cash collections for April, May and June.",
+    "What risks would you flag to the CEO?"
+   ],
+   "Production: April 140 + 45 − 35 = 150; May 180 + 40 − 45 = 175; June 160 + 30 − 40 = 150. Packs: April 150 + 17.5 − 15 = 152.5 → 153 (×310 = $47,430); May 175 + 15 − 17.5 = 172.5 → 173 ($53,630). Collections: April 168,000 + 132,000 = 300,000; May 216,000 + 168,000 = 384,000; June 192,000 + 216,000 = 408,000. Risks: forecast error, battery lead times, dealer payment delays."
+  ],
+  "exam": [
+   [
+    "Explain the sequence of the operating budget and why the revenue budget comes first.",
+    5,
+    "Revenue → production → DM/DL/MOH → ending inventory and COGS → nonmanufacturing → budgeted income statement. Sales determine production and therefore all costs."
+   ],
+   [
+    "Sales 2,000 units, beginning FG 150, target ending FG 200; each unit needs 3 kg at $4; beginning materials 900 kg, target ending 1,100 kg. Compute production and materials purchases in dollars.",
+    5,
+    "Production 2,050; usage 6,150 kg; purchases 6,350 kg × $4 = $25,400."
+   ]
+  ],
+  "outcomes": [
+   "Explain the benefits and types of budgets",
+   "Order the components of the master budget",
+   "Prepare revenue and production budgets",
+   "Prepare materials and labor budgets",
+   "Prepare a cash budget and financing needs",
+   "Address slack and behavioral issues in budgeting"
+  ],
+  "take": [
+   "Budgets plan, coordinate, communicate, benchmark and motivate",
+   "Start with revenue; end with the income statement and cash",
+   "Production = sales + ending FG − beginning FG",
+   "Purchases = usage + ending − beginning materials",
+   "The cash budget shows when to borrow",
+   "Participation brings buy-in and slack"
+  ]
+ },
+ "5": {
+  "warmup": [
+   "A coffee shop sells fewer lattes than planned in a month when a new café opens next door, but the town has more tourists than usual. How would you separate the effects?",
+   "Market-size (more tourists) versus market-share (lost to the new café). Previews 5.5."
+  ],
+  "acts": [
+   [
+    "Classify as cost, revenue, profit or investment center: (a) Tallgrass's paint shop, (b) e-commerce site that sets prices, (c) the whole company, (d) regional sales office paid on revenue.",
+    "(a) Cost. (b) Profit. (c) Investment. (d) Revenue."
+   ],
+   [
+    "Redesign the assembly plant report to separate controllable and uncontrollable items. Who should explain the IT allocation?",
+    "Show controllable items first; list allocations separately; head-office IT manager explains it."
+   ],
+   [
+    "Budget: A 600 units, CM $50; B 400, CM $80. Actual: A 650, B 300. Compute sales-volume variances.",
+    "A +2,500 F; B −8,000 U; total 5,500 U."
+   ],
+   [
+    "Same data: budgeted mix 60/40; actual 950 units (68.4%/31.6%). Budgeted average CM $62. Compute mix and quantity variances.",
+    "Mix: A 950 × 8.42% × 50 = 4,000 F; B 950 × −8.42% × 80 = 6,400 U; mix 2,400 U. Quantity: (950 − 1,000) × 62 = 3,100 U. Total 5,500 U."
+   ],
+   [
+    "Budget market 20,000 units, share 5%; actual market 19,000, share 5%. Budgeted average CM $62. Market-share and market-size variances?",
+    "Share: 0. Size: (19,000 − 20,000) × 5% × 62 = 3,100 U."
+   ],
+   [
+    "Draft a one-paragraph memo to Tallgrass's CEO summarizing the 2027 sales variances.",
+    "Volume $138,000 U: mostly lost share ($157,500 U) in a growing market ($52,500 F) and a shift away from Cargo bikes ($33,000 U). Recommend reviewing Cargo competitiveness and dealer incentives."
+   ]
+  ],
+  "case": [
+   "The Cargo bike problem",
+   "Tallgrass's 2027 results show the variances in this lecture. Dealers report that a competitor launched a cargo e-bike with longer range at $3,300, and that Tallgrass pays dealers the same 8% commission on both models. The sales director is paid a bonus on total units sold.",
+   [
+    "Which variances does this information help explain?",
+    "How might the bonus and commission structure affect mix?",
+    "What changes would you propose?",
+    "What would you monitor in 2028?"
+   ],
+   "It explains the share and mix variances. Equal commissions and a units-based bonus encourage selling easier, cheaper Trail bikes; reward contribution margin instead (or higher commission on Cargo). Consider a range upgrade or price response on the Cargo. Monitor share, mix and margin, not just units."
+  ],
+  "exam": [
+   [
+    "Explain the four types of responsibility center and give an example of each.",
+    4,
+    "Cost (assembly plant), revenue (sales team), profit (online store/parts business), investment (division or company)."
+   ],
+   [
+    "Budget: X 800 units CM $40, Y 200 units CM $90 (mix 80/20). Actual: X 900, Y 150. Compute the sales-volume, sales-mix and sales-quantity variances.",
+    7,
+    "Volume: X 4,000 F; Y 4,500 U; total 500 U. Budgeted average CM 50. Actual 1,050 units (85.7/14.3). Mix: X 1,050 × 5.71% × 40 = 2,400 F; Y 1,050 × −5.71% × 90 = 5,400 U; mix 3,000 U. Quantity: 50 × 50 = 2,500 F. Total 500 U."
+   ]
+  ],
+  "outcomes": [
+   "Classify responsibility centers",
+   "Apply controllability in performance reports",
+   "Compute the sales-volume variance",
+   "Split it into sales-mix and sales-quantity variances",
+   "Compute market-share and market-size variances",
+   "Interpret sales variances and assign responsibility"
+  ],
+  "take": [
+   "Match the measure to the manager's authority",
+   "Report controllable items separately; learn, don't blame",
+   "Volume variance uses budgeted CM",
+   "Mix + quantity = volume",
+   "Share + size = quantity",
+   "Variances raise questions; managers answer them"
+  ]
+ },
+ "6": {
+  "warmup": [
+   "A bakery bakes 200 loaves but sells 150. Its oven costs $300 a day whatever it bakes. How much of the oven cost belongs to today's sales?",
+   "Under absorption costing, 150/200 of it; 50 loaves carry $75 into inventory. Under variable costing, all $300 is today's expense. Leads to 6.1–6.2."
+  ],
+  "acts": [
+   [
+    "Compute inventory cost per bike under absorption costing if production is 1,000 bikes.",
+    "Fixed per bike 366; 1,300 + 366 = $1,666."
+   ],
+   [
+    "In 2028 Tallgrass produces 1,100 bikes and sells 1,150. Beginning inventory is 60 bikes carrying $300 of fixed overhead each; fixed MOH is still $366,000 (use FIFO). Which income is higher, and by how much?",
+    "Fixed per bike 366,000 ÷ 1,100 = 332.73. Ending inventory 10 bikes × 332.73 = 3,327, versus 18,000 at the start. Variable-costing income is higher by $14,673."
+   ],
+   [
+    "List three performance measures that discourage overproduction under absorption costing.",
+    "Inventory turnover, inventory carrying charge, variable costing income, multi-year evaluation, on-time delivery."
+   ],
+   [
+    "Compute throughput margin and operating income for 1,200 bikes if all non-materials costs total $1,020,000 (labor, overhead, selling).",
+    "Throughput margin 1,200 × 1,300 = 1,560,000; OI 540,000."
+   ],
+   [
+    "Which capacity level would you choose for pricing and why? Compute the cost of unused capacity at 1,220 bikes.",
+    "Practical; 280 × 244 = $68,320."
+   ],
+   [
+    "Show the spiral if Tallgrass prices at full manufacturing cost plus 40% and demand falls 15% each time price rises 5%.",
+    "Illustrate with budgeted volume denominator: rising fixed cost per bike raises price, which cuts volume, repeating; practical capacity stops it."
+   ]
+  ],
+  "case": [
+   "The plant manager's bonus",
+   "Tallgrass's plant manager earns a bonus of 2% of absorption-costing operating income. In 2027 he produced 1,500 bikes though sales were 1,200, saying he was 'building for spring'. Ana notices inventory has risen to 340 bikes, a new warehouse has been rented for $4,000 a month, and two bike colors have been discontinued by marketing.",
+   [
+    "How much did overproduction add to absorption income and to his bonus?",
+    "What did it cost Tallgrass?",
+    "How would you change the bonus plan?",
+    "Which capacity denominator would you recommend for internal product costing?"
+   ],
+   "Income rose from 546,000 (1,220 produced) to about 610,960: about $65,000, adding about $1,300 to his bonus. Costs: cash tied up (340 × $1,300 variable = $442,000), $48,000 a year warehouse rent, obsolescence on discontinued colors. Base the bonus on variable costing income or add inventory targets and carrying charges; use practical capacity."
+  ],
+  "exam": [
+   [
+    "Explain why absorption-costing and variable-costing operating incomes differ, and state the formula for the difference.",
+    5,
+    "Absorption defers fixed manufacturing overhead in inventory. Difference = fixed MOH in ending inventory − fixed MOH in beginning inventory; positive when production > sales."
+   ],
+   [
+    "Fixed MOH $240,000; practical capacity 12,000 units; budgeted 10,000; actual production 10,000. Compute the fixed overhead rate under each denominator and the cost of unused capacity under practical capacity.",
+    5,
+    "Practical $20; budget $24. Unused: 2,000 × 20 = $40,000."
+   ]
+  ],
+  "outcomes": [
+   "Distinguish variable and absorption costing",
+   "Reconcile the two operating incomes",
+   "Explain and prevent the incentive to overproduce",
+   "Describe throughput costing",
+   "Compare four capacity denominators",
+   "Explain and avoid the downward demand spiral"
+  ],
+  "take": [
+   "Only fixed manufacturing overhead differs",
+   "Difference = change in fixed overhead in inventory",
+   "Building inventory raises absorption income",
+   "Throughput costing inventories only materials",
+   "Theoretical, practical, normal, master-budget",
+   "Practical capacity breaks the demand spiral"
+  ]
+ },
+ "7": {
+  "warmup": [
+   "You paid $60 for a concert ticket, but on the night you're sick and a friend offers you $20 for it. Does the $60 matter to your decision?",
+   "No: it's sunk. Compare $20 now with how much you'd value going sick. Leads to relevance."
+  ],
+  "acts": [
+   [
+    "Classify as relevant or irrelevant to a special order: (a) direct materials, (b) factory depreciation, (c) a one-time setup cost for the order, (d) the CEO's salary, (e) shipping.",
+    "(a) R. (b) I. (c) R. (d) I. (e) R."
+   ],
+   [
+    "Redo the special order if Tallgrass is at capacity and would lose regular Trail sales (CM $900) for each order bike.",
+    "Order CM 450 < lost CM 900 per bike: reject (income falls $67,500)."
+   ],
+   [
+    "Make or buy: variable cost $85 per unit, 5,000 units, avoidable fixed $40,000, allocated fixed $60,000; price $95. Decide.",
+    "Make: 425,000 + 40,000 = 465,000; buy 475,000: make, by $10,000."
+   ],
+   [
+    "Tallgrass has 7,200 assembly hours; demand 1,000 Trail and 300 Cargo. What mix maximizes contribution?",
+    "Trail 1,000 × 6 = 6,000 hrs; 1,200 hrs left → 100 Cargo. CM 900,000 + 150,000 = $1,050,000."
+   ],
+   [
+    "Balance bikes: if dropping them lets Tallgrass rent the space for $25,000 a year, should it drop the line?",
+    "Lose 36,000, save 20,000, gain 25,000: income rises $9,000. Drop (weigh spillovers)."
+   ],
+   [
+    "Propose a performance measure that would encourage the plant manager to replace the paint machine.",
+    "Multi-year cost or cash-based measure; exclude disposal losses on approved replacements; post-audit of decisions."
+   ]
+  ],
+  "case": [
+   "The Rochester dealer chain",
+   "A large Rochester dealer chain offers to buy 300 Trail bikes at $1,950, delivered over the next 6 months, with its own branding. Tallgrass has capacity for 280 more bikes; beyond that it would lose regular sales (CM $900) or pay overtime of $120 per bike. Rebranding costs $15,000 one-time. Shipping is $50 a bike and no dealer commission applies. Ana worries that existing Minnesota dealers will discover the price.",
+   [
+    "Compute the relevant gain using overtime for the last 20 bikes.",
+    "Compare with giving up 20 regular sales.",
+    "What is the minimum price for the order?",
+    "What qualitative factors should weigh in the decision?"
+   ],
+   "Contribution: 300 × (1,950 − 1,350) = 180,000 − 15,000 rebranding − 20 × 120 overtime = $162,600. Giving up 20 regular sales costs 18,000 instead of 2,400: gain $147,000; overtime is better. Minimum price: (300 × 1,350 + 15,000 + 2,400) ÷ 300 = $1,408. Qualitative: dealer reaction, brand dilution, channel conflict, future orders."
+  ],
+  "exam": [
+   [
+    "Define relevant costs and explain why sunk costs and allocated unavoidable costs are irrelevant.",
+    5,
+    "Expected future costs that differ among alternatives. Sunk costs are past and unchangeable; allocated unavoidable costs are the same whatever is decided."
+   ],
+   [
+    "A product line: revenue $300,000, variable costs $210,000, avoidable fixed $70,000, allocated unavoidable $40,000. Should it be dropped? What if its space could earn $25,000?",
+    5,
+    "Dropping loses 90,000 CM, saves 70,000: income falls 20,000, keep. With $25,000 rent: +5,000, drop (subject to qualitative factors)."
+   ]
+  ],
+  "outcomes": [
+   "Identify relevant and irrelevant costs",
+   "Evaluate special orders",
+   "Decide make or buy, including opportunity cost",
+   "Choose product mix under a constraint",
+   "Decide whether to keep or drop a line",
+   "Analyze equipment replacement and the evaluation conflict"
+  ],
+  "take": [
+   "Relevant = future and different",
+   "Accept special orders priced above incremental cost, if capacity is idle",
+   "Include opportunity costs in make-or-buy",
+   "Rank by CM per unit of the scarce resource",
+   "Drop a line only if avoidable costs exceed CM",
+   "Book value is sunk, but bonuses may not treat it so"
+  ]
+ },
+ "8": {
+  "warmup": [
+   "Name a product whose price you check before buying, and one whose price you barely notice. Why the difference?",
+   "Competitive, comparable goods vs unique or low-share-of-wallet goods. Introduces customers, competitors and costs."
+  ],
+  "acts": [
+   [
+    "Which influence dominates: (a) a generic phone charger, (b) a patented medical device, (c) a custom trailer?",
+    "(a) Competitors. (b) Customers (value) and costs. (c) Costs plus customer value."
+   ],
+   [
+    "Target price $2,000; Tallgrass raises its target margin to 18%. New target cost and cost gap from $1,950?",
+    "Target cost 1,640; gap $310."
+   ],
+   [
+    "Suggest three value-engineering ideas for a kids' balance bike and say which customers would notice.",
+    "Fewer frame sizes, molded wheels, simpler packaging; parents may notice wheel quality, not packaging."
+   ],
+   [
+    "Cargo bike: invested capital $1,500,000, target ROI 18%, 1,000 bikes, full cost $3,000. Required markup on full cost?",
+    "270,000 ÷ 1,000 = 270; 270 ÷ 3,000 = 9%; price $3,270."
+   ],
+   [
+    "If Commuter volume is 3,000 instead of 4,000, what is the life-cycle cost per bike (manufacturing variable at $1,350; others fixed)?",
+    "400,000 + 4,050,000 + 900,000 + 300,000 = 5,650,000 ÷ 3,000 = $1,883."
+   ],
+   [
+    "Tallgrass gives a national chain a 12% discount. What evidence would justify it under Robinson-Patman?",
+    "Lower costs to serve: order size, delivery frequency, no co-op advertising, fewer returns."
+   ]
+  ],
+  "case": [
+   "Launching the Commuter",
+   "Tallgrass plans the Commuter e-bike. Rivals sell at $1,900–$2,100. Marketing believes a $2,000 price with a 4-year warranty would win 1,000 sales a year for 4 years. Engineering's design costs $1,950 full cost per bike. Ana's team has found $260 of savings, but marketing now wants to add a connected-app feature costing $45 per bike.",
+   [
+    "Compute target cost and the gap at a 15% margin.",
+    "Does the value engineering plan close the gap if the app is kept?",
+    "What life-cycle costs should be included?",
+    "Would you launch? What price?"
+   ],
+   "Target cost 1,700; gap 250. Savings of 260 bring cost to 1,690, meeting the target. Adding the app raises it to 1,735: margin (2,000 − 1,735) ÷ 2,000 = 13.25%, a $35 gap. Include R&D, marketing, warranty and app maintenance over the life cycle. Launch if more savings can be found, or if customers value the app enough to pay about $2,050; otherwise drop the app."
+  ],
+  "exam": [
+   [
+    "Explain target pricing and target costing, and contrast them with cost-plus pricing.",
+    5,
+    "Market-based: target price from customers/competitors, minus target profit = target cost; value engineering closes the gap. Cost-plus starts with cost and adds a markup, ignoring the market."
+   ],
+   [
+    "A product's life-cycle costs: R&D $600,000, manufacturing $45 per unit, marketing $200,000, service $100,000. Expected 50,000 units. Target margin 20% of price. Compute the life-cycle cost per unit and the price needed.",
+    5,
+    "Total 900,000 + 2,250,000 = 3,150,000 ÷ 50,000 = $63; price 63 ÷ 0.8 = $78.75."
+   ]
+  ],
+  "outcomes": [
+   "Explain the three influences on price",
+   "Compute target cost and the cost gap",
+   "Apply value engineering",
+   "Compute cost-plus prices and markups",
+   "Prepare a life-cycle budget",
+   "Distinguish legal price differences from illegal practices"
+  ],
+  "take": [
+   "Customers, competitors and costs",
+   "Target cost = target price − target profit",
+   "Engineer out cost, keep what customers value",
+   "Cost-plus is a start, not an answer",
+   "Price must cover the whole life cycle",
+   "Justify price differences with cost; never collude"
+  ]
+ },
+ "9": {
+  "warmup": [
+   "Your favorite coffee shop has a customer who orders one black coffee a day and one who orders six complex drinks with modifications. Which is more profitable?",
+   "It depends on margin and cost to serve. Introduces customer profitability."
+  ],
+  "acts": [
+   [
+    "Which criterion? (a) allocate HR by headcount, (b) allocate a shared website by revenue, (c) allocate a new ERP by divisions' profit.",
+    "(a) Cause and effect. (b) Benefits received. (c) Ability to bear."
+   ],
+   [
+    "Allocate Tallgrass's $250,000 of corporate admin by revenue (Bikes $2.9M, Parts $0.5M) for segment reporting. Why not for decisions?",
+    "Bikes $213,235; Parts $36,765. No causal link: allocation wouldn't change if a division's decisions changed."
+   ],
+   [
+    "Prairie Pedals' discount rises to 12%. Effect on its revenue and profit at 200 bikes?",
+    "Net price 2,112; revenue falls 9,600; profit $92,100."
+   ],
+   [
+    "Classify: warranty repairs per bike, dealer training day, delivery truck, online store manager, CFO salary.",
+    "Unit; customer-sustaining; batch; channel; corporate."
+   ],
+   [
+    "Compute Lakes Cycle's customer-level costs and income from its activity data (30 orders, 30 Minnesota deliveries, 12 visits, 10 rushes, $2,000 co-op).",
+    "1,200 + 9,000 + 3,000 + 1,500 + 2,000 = 16,700; income 40,800 − 16,700 = $24,100."
+   ],
+   [
+    "What would Big Sky's income be if it also cut returns by half (returns $3,000 of the $6,000)?",
+    "9,570 + 1,500 = $11,070 (if returns cost $3,000, half saves $1,500)."
+   ]
+  ],
+  "case": [
+   "The dealer review",
+   "Tallgrass has 40 dealers. Ana's analysis shows the top 8 earn 140% of customer-level income and 12 dealers lose money. The sales director, paid on revenue, resists any change: 'Every dealer is a showroom for our brand.' Several loss-making dealers are in new territories where Tallgrass has no other presence.",
+   [
+    "Explain the whale curve in this situation.",
+    "How might the sales director's pay contribute to the problem?",
+    "Propose a policy for loss-making dealers.",
+    "What would you measure for new-territory dealers?"
+   ],
+   "Top dealers create more than all the profit; loss-makers destroy 40%+. Revenue-based pay ignores cost to serve and rewards discounting and service promises. Policy: tiered service levels, minimum orders, fees for rushes and returns, and drop only after changes fail. For new territories, track growth, lifetime value and brand presence, with a time-limited investment."
+  ],
+  "exam": [
+   [
+    "State four purposes of cost allocation and four criteria for choosing allocation bases. Which criteria are preferred?",
+    6,
+    "Purposes: economic decisions, motivation, cost justification/reimbursement, income and asset measurement. Criteria: cause and effect, benefits received, fairness, ability to bear; the first two preferred."
+   ],
+   [
+    "A customer buys 100 units at $50 list less 8%; cost of goods $30 a unit; 20 orders at $25; 20 deliveries at $60; 5 visits at $200. Compute customer-level income.",
+    5,
+    "Revenue 4,600; COGS 3,000; GM 1,600; costs 500 + 1,200 + 1,000 = 2,700; income −$1,100."
+   ]
+  ],
+  "outcomes": [
+   "Explain the purposes and criteria of cost allocation",
+   "Allocate corporate costs to divisions",
+   "Analyze customer revenues and discounts",
+   "Apply the customer cost hierarchy",
+   "Build and interpret customer-profitability profiles",
+   "Recommend actions for unprofitable customers"
+  ],
+  "take": [
+   "Allocate for a purpose, by cause and effect",
+   "Leave costs with no causal link unallocated for decisions",
+   "Record list price and discounts separately",
+   "Unit, batch, customer, channel, corporate",
+   "A few customers often earn most of the profit",
+   "Fix cost to serve before dropping a customer"
+  ]
+ },
+ "10": {
+  "warmup": [
+   "What does your favorite brand compete on: price or something else? How would you measure whether its strategy is working?",
+   "Introduces differentiation vs cost leadership and the need for nonfinancial measures."
+  ],
+  "acts": [
+   [
+    "Classify the strategy of: a discount online e-bike seller; a Minnesota maker of hand-built titanium bikes; a big-box retailer's store-brand bike.",
+    "Cost leadership; differentiation; cost leadership."
+   ],
+   [
+    "Write one measure for each perspective for Redwood Valley Creamery, which competes on artisanal quality.",
+    "Financial: price premium vs commodity cheese; customer: repeat buyers; process: % blocks graded premium; learning: cheesemaker training hours."
+   ],
+   [
+    "Draw a strategy map for Tallgrass's goal of raising Cargo bike share.",
+    "Learning: battery engineering skills → process: longer-range design, faster dealer delivery → customer: Cargo share, satisfaction → financial: revenue growth, margin."
+   ],
+   [
+    "2028: 1,200 bikes at $2,450; kits $1,060; 6,900 hours at $31. Using 2027 as base (6 hours per bike), compute the three components (ignore fixed costs).",
+    "Growth: 100 × (2,400 − 1,040 − 180) = 118,000. Price recovery: revenue 50 × 1,200 = 60,000; kits 20 × 1,200 = 24,000; labor 1 × 7,200 = 7,200 → 28,800. Productivity: (6,900 − 7,200) × 31 = +9,300. Total 156,100."
+   ],
+   [
+    "Assembly has 24,000 hours of capacity at $30; 3,300 bikes need 6 hours each. Cost of unused capacity?",
+    "Used 19,800; unused 4,200 × 30 = $126,000."
+   ],
+   [
+    "Cut Tallgrass's scorecard of 40 measures to 12. Which would you keep?",
+    "3 per perspective tied to the strategy map: OI growth, price premium, cash flow; share, dealer satisfaction, repeat riders; warranty claims, delivery time, new-model time; certification, engineer retention, IT uptime."
+   ]
+  ],
+  "case": [
+   "The CEO wants to cut training",
+   "Tallgrass's 2027 operating income growth was 8% against a 10% target. To hit 2028's target, the CEO proposes cutting the $120,000 dealer and assembler training budget and delaying the battery R&D project ($200,000). Ana's scorecard shows warranty claims falling as certification rose, and the strategic analysis shows most 2027 income growth came from price recovery.",
+   [
+    "Classify the proposed cuts as engineered or discretionary.",
+    "What would the cuts do to 2028 income and to the scorecard?",
+    "How do the strategic analysis results argue against the cuts?",
+    "What would you recommend?"
+   ],
+   "Both are discretionary. They add $320,000 to 2028 income but hurt learning-and-growth and, later, quality, price premium and share. Price recovery shows customers pay for quality, so cutting what sustains it undermines the strategy. Recommend keeping them, finding productivity gains or unused-capacity reductions instead, and resetting targets if needed."
+  ],
+  "exam": [
+   [
+    "Explain the four perspectives of the balanced scorecard, giving one measure for each for an e-bike maker following a differentiation strategy.",
+    6,
+    "Financial (OI growth, price premium); customer (market share, satisfaction); internal process (warranty claims, delivery time, new-product development time); learning and growth (training, certification, retention). Linked by cause and effect."
+   ],
+   [
+    "Explain the growth, price-recovery and productivity components of the change in operating income, and which matters most for a cost leader and for a differentiator.",
+    5,
+    "Growth: change in output at prior-year prices and productivity. Price recovery: change in output prices relative to input prices. Productivity: fewer inputs for the output. Cost leader: productivity; differentiator: price recovery."
+   ]
+  ],
+  "outcomes": [
+   "Distinguish differentiation and cost leadership",
+   "Explain the balanced scorecard's four perspectives",
+   "Build and interpret a scorecard and strategy map",
+   "Split operating income into growth, price recovery and productivity",
+   "Distinguish engineered and discretionary costs",
+   "Avoid scorecard pitfalls and add sustainability measures"
+  ],
+  "take": [
+   "Pick a strategy, then measure it",
+   "Financial, customer, process, learning and growth",
+   "Measures need targets and causal links",
+   "Growth + price recovery + productivity = change in income",
+   "Discretionary cuts help now and hurt later",
+   "Few measures, linked to strategy and rewards"
+  ]
+ },
+ "11": {
+  "warmup": [
+   "Think of a product that failed you. What did the failure cost you, and what did it cost the company?",
+   "Leads to external failure costs, including lost future sales."
+  ],
+  "acts": [
+   [
+    "Classify as design or conformance quality problems: (a) bikes too heavy for apartment stairs, (b) loose spokes, (c) app doesn't support Android, (d) frame welds below spec.",
+    "Design, conformance, design, conformance."
+   ],
+   [
+    "Classify: supplier audits, final inspection, scrap, warranty repairs, assembler training, product recalls.",
+    "Prevention, appraisal, internal failure, external failure, prevention, external failure."
+   ],
+   [
+    "Build a Pareto ranking from: paint chips 12, brake noise 30, seal leaks 45, connector faults 13. What share do the top two causes represent?",
+    "Seal leaks 45, brake noise 30: 75 of 100 = 75%."
+   ],
+   [
+    "A $20,000 inspection system reduces warranty claims by $12,000 and rework by $5,000, and recovers 4 lost sales at $900 CM. Accept?",
+    "Savings 20,600 vs 20,000: marginally yes; consider nonfinancial benefits."
+   ],
+   [
+    "Paint booth: 4,000 hours; 120 orders × 25 hours. Compute average waiting time.",
+    "120 × 625 = 75,000 ÷ (2 × 1,000) = 37.5 hours."
+   ],
+   [
+    "A second paint booth costs $40,000 a year and would allow 40 more custom orders at a throughput margin of $1,400. Should Tallgrass add it?",
+    "56,000 > 40,000: yes, if demand exists, adding $16,000."
+   ]
+  ],
+  "case": [
+   "The new custom line",
+   "Tallgrass is considering a custom-paint 'Signature' line: 25 orders a year, 20 paint-booth hours each, price premium giving $600 more throughput margin per bike than standard. The booth now handles 100 orders at 30 hours (4,000-hour capacity). Existing custom customers expect delivery within 3 weeks; Ana estimates that each extra 10 hours of average wait loses 2 existing orders (throughput margin $1,400 each).",
+   [
+    "Compute average waiting time with and without the new line.",
+    "Estimate the lost margin from slower delivery.",
+    "Should Tallgrass add the Signature line?",
+    "How could it relieve the booth?"
+   ],
+   "Without: 45 hours; with: 100 hours (+55 → about 11 lost orders × $1,400 = $15,400). New line margin 25 × 600 = $15,000. Roughly break-even or worse: don't add unless the booth is relieved, by inspecting before painting, outsourcing simple jobs, or adding capacity."
+  ],
+  "exam": [
+   [
+    "Describe the four categories of costs of quality and give an example of each.",
+    4,
+    "Prevention (training, design reviews); appraisal (inspection, testing); internal failure (rework, scrap); external failure (warranty, returns, lost sales)."
+   ],
+   [
+    "A bottleneck has 3,600 hours of capacity. 80 orders × 30 hours. Compute average waiting time; recompute if 20 more orders × 20 hours are added.",
+    5,
+    "80 × 900 = 72,000 ÷ (2 × 1,200) = 30 hours. With new: (72,000 + 8,000) ÷ (2 × 800) = 50 hours."
+   ]
+  ],
+  "outcomes": [
+   "Distinguish quality of design and conformance quality",
+   "Prepare a cost-of-quality report",
+   "Use control charts, Pareto and fishbone diagrams",
+   "Evaluate quality investments with relevant costs",
+   "Estimate customer-response and waiting times",
+   "Apply the theory of constraints"
+  ],
+  "take": [
+   "Design quality fits needs; conformance meets specs",
+   "Prevention, appraisal, internal and external failure",
+   "Spot, rank, then trace causes",
+   "Count lost contribution as a benefit of quality",
+   "Waiting time explodes near full capacity",
+   "An hour lost at the bottleneck is lost for everyone"
+  ]
+ },
+ "12": {
+  "warmup": [
+   "Do you buy groceries once a week or every day? What does each approach cost you?",
+   "Weekly: fewer trips (ordering cost) but more food in the fridge (carrying, spoilage). Daily: the reverse. That's the EOQ trade-off."
+  ],
+  "acts": [
+   [
+    "Classify: forklift operator's wages in the warehouse, customs paperwork per order, lost sale when tires run out, obsolete paint colors.",
+    "Carrying; ordering; stockout; shrinkage/obsolescence."
+   ],
+   [
+    "Compute EOQ for tires: D 2,500, P $50, C $4.",
+    "√(2 × 2,500 × 50 ÷ 4) = √62,500 = 250 tires."
+   ],
+   [
+    "Tires: usage 50 a week, lead time 3 weeks, safety stock 60. Reorder point?",
+    "150 + 60 = 210."
+   ],
+   [
+    "If C for battery packs were really $35, what would the true EOQ be, and the cost of using 126?",
+    "EOQ √(432,000 ÷ 35) = 111. Cost at 111: 1,946 + 1,943 ≈ 3,889; at 126: 1,714 + 2,205 = 3,919; error ≈ $30."
+   ],
+   [
+    "List three conditions for successful JIT purchasing.",
+    "Reliable, nearby suppliers; high quality (few inspections); stable demand and small, frequent deliveries; good information sharing."
+   ],
+   [
+    "Backflush with trigger at completion: 80 bikes finished, standard DM $1,100, conversion $200. Entry?",
+    "Dr FG 104,000 / Cr Materials and in-process 88,000, Cr Conversion costs allocated 16,000."
+   ]
+  ],
+  "case": [
+   "Batteries in a crisis",
+   "In 2027, port delays stretched battery lead times from 8 to 14 weeks. Tallgrass ran out of packs for 3 weeks in April, losing 60 bike sales (CM $900 each). The purchasing manager, evaluated on purchase price variance, had been ordering 400 packs at a time for a 5% quantity discount. The CFO now proposes holding 6 weeks of safety stock.",
+   [
+    "Compute the stockout cost in April.",
+    "Compute the new reorder point with 14-week lead times and 6 weeks of safety stock.",
+    "What does the extra safety stock cost to carry each year?",
+    "How would you change the purchasing manager's evaluation?"
+   ],
+   "Stockout: 60 × 900 = $54,000. Reorder point: 24 × 14 + 144 = 480 packs. Extra 4 weeks of safety stock (96 packs) × $27 = $2,592 a year: worth it. Evaluate purchasing on total inventory costs, including carrying and stockouts, not just price variances."
+  ],
+  "exam": [
+   [
+    "Describe the costs associated with inventory and explain the EOQ trade-off.",
+    5,
+    "Purchasing, ordering, carrying (including opportunity cost of capital), stockout, quality, shrinkage. EOQ balances ordering (falls with larger orders) and carrying (rises with larger orders)."
+   ],
+   [
+    "D = 9,000 units, P = $250 an order, C = $5 a unit per year. Compute EOQ, orders per year and total relevant cost. Usage 180 a week, lead time 2 weeks, safety stock 100: reorder point?",
+    6,
+    "EOQ √(900,000) = 949; orders 9.5; TRC 2,371 + 2,372 ≈ 4,743. Reorder point 460."
+   ]
+  ],
+  "outcomes": [
+   "Identify the costs of holding inventory",
+   "Compute the economic order quantity",
+   "Compute reorder points with safety stock",
+   "Assess the cost of prediction errors and evaluation conflicts",
+   "Evaluate just-in-time purchasing and production",
+   "Record backflush costing entries"
+  ],
+  "take": [
+   "Carrying costs include capital tied up",
+   "EOQ balances ordering and carrying",
+   "Reorder at lead-time usage plus safety stock",
+   "EOQ is robust; incentives may not be",
+   "JIT needs reliable suppliers and quality",
+   "Backflush skips WIP when inventory is low"
+  ]
+ },
+ "13": {
+  "warmup": [
+   "Would you rather have $1,000 today or $1,150 in two years? What does your answer imply about your required rate of return?",
+   "Indifference at about 7.2% a year; introduces discounting."
+  ],
+  "acts": [
+   [
+    "Tallgrass will receive $90,000 in five years. At 10% (year-5 factor 0.621), what is it worth today, and why less?",
+    "$55,890. Money today can be invested to earn 10%, so future cash is worth less."
+   ],
+   [
+    "Compute NPV at 12% for the welding cell (annuity factor 3.605; year-5 factor 0.567).",
+    "90,000 × 3.605 = 324,450 + 11,340 − 300,000 = $35,790."
+   ],
+   [
+    "A $200,000 project returns $55,000 a year for 5 years with no disposal value. Compute NPV at 10% and estimate IRR (5-year annuity factors: 3.696 at 11%, 3.605 at 12%).",
+    "NPV 55,000 × 3.791 − 200,000 = $8,505. Required factor 200,000 ÷ 55,000 = 3.636, so IRR ≈ 11.7%."
+   ],
+   [
+    "Compute payback and AARR for that project (straight-line depreciation).",
+    "Payback 3.64 years; AARR (55,000 − 40,000) ÷ 200,000 = 7.5%."
+   ],
+   [
+    "Recompute the welding cell's after-tax NPV with a 21% tax rate. Then add $30,000 of working capital needed at the start and recovered at the end.",
+    "Savings 71,100 + shield 12,600 = 83,700 × 3.791 = 317,307; disposal 15,800 × 0.621 = 9,812; NPV ≈ $27,119. Working capital: −30,000 + 18,630 = −11,370, so NPV ≈ $15,749."
+   ],
+   [
+    "Design an evaluation approach that removes the ROI trap for the plant manager.",
+    "Evaluate approved projects against their NPV plan via post-audits; use multi-year averages; exclude start-up costs of approved projects; use residual income with economic depreciation."
+   ]
+  ],
+  "case": [
+   "Two proposals, one budget",
+   "Ana has $300,000 to invest. Option A: the robotic welding cell (pre-tax NPV $53,610 at 10%, IRR 16.6%, payback 3.3 years). Option B: an online sales platform costing $100,000 with cash inflows of $45,000 a year for 4 years (no disposal value). The plant manager supports A; the sales director supports B. Only one can be funded this year, and unspent funds earn 10%.",
+   [
+    "Compute NPV, IRR and payback for B (4-year annuity factor at 10% = 3.170).",
+    "Which project ranks higher on each measure?",
+    "Which should Ana choose, and why?",
+    "What nonfinancial factors matter?"
+   ],
+   "B: NPV 45,000 × 3.170 − 100,000 = $42,650; IRR ≈ 28.5%; payback 2.2 years. B wins on IRR and payback; A wins on NPV ($53,610 vs $42,650, with unspent $200,000 earning 10% adding nothing to NPV). Choose A on NPV, unless B's strategic value (direct-to-consumer channel) or lower risk justifies it. Consider channel conflict with dealers for B, and labor relations and quality for A."
+  ],
+  "exam": [
+   [
+    "Compare NPV, IRR, payback and AARR, noting the weaknesses of each.",
+    6,
+    "NPV: dollars of value, needs a discount rate; best for ranking. IRR: % return, can mislead with size/timing differences. Payback: simple, ignores time value and later cash flows. AARR: accrual-based, ignores time value."
+   ],
+   [
+    "A $500,000 machine saves $140,000 a year before tax for 5 years; tax rate 25%; straight-line depreciation, no disposal value; required return 10% (annuity factor 3.791). Compute after-tax NPV.",
+    6,
+    "Savings after tax 105,000; shield 25,000; flow 130,000 × 3.791 = 492,830 − 500,000 = −$7,170: reject (unless faster depreciation helps)."
+   ]
+  ],
+  "outcomes": [
+   "Describe the stages of capital budgeting",
+   "Compute and interpret NPV",
+   "Estimate and interpret IRR",
+   "Compute payback and AARR",
+   "Include income taxes and working capital in cash flows",
+   "Use post-investment audits and avoid evaluation conflicts"
+  ],
+  "take": [
+   "Discount future cash at the required rate",
+   "Accept if NPV ≥ 0",
+   "IRR is the rate that makes NPV zero",
+   "Payback and AARR ignore time value",
+   "Depreciation matters through its tax shield",
+   "Audit projects; judge managers over the right horizon"
+  ]
+ },
+ "14": {
+  "warmup": [
+   "Motors could sell every drive unit outside for $320. Assembly says it should pay full cost, $260. Who's right, and does it matter to Tallgrass as a whole?",
+   "Sets up the minimum transfer price and the difference between company-wide and divisional profit."
+  ],
+  "acts": [
+   [
+    "Motors has idle capacity. An outside supplier offers Assembly drive units at $250. Should Tallgrass buy outside? What transfer price range works?",
+    "No: Tallgrass pays $250 vs $180 incremental. Any price from $180 to $250 makes both divisions better off."
+   ],
+   [
+    "Motors is at full capacity. Assembly's outside offer is $290. Should Assembly buy outside?",
+    "Yes: internal minimum $300 exceeds $290; buying outside lets Motors earn $140 margin, a $10 company gain."
+   ],
+   [
+    "Compute the tax effect of a $40 higher transfer price on 10,000 units with tax rates of 25% (buyer) and 10% (seller).",
+    "Shifts $400,000; saves 400,000 × 15% = $60,000, subject to arm's-length rules."
+   ],
+   [
+    "Assembly's revenue is $9,000,000. Break its 12% ROI into margin and turnover.",
+    "Margin 900,000 ÷ 9,000,000 = 10%; turnover 9,000,000 ÷ 7,500,000 = 1.2; 10% × 1.2 = 12%."
+   ],
+   [
+    "Assembly has a project: $500,000 investment, $60,000 operating income. Would a manager judged on ROI accept it? On RI at 10%?",
+    "Project ROI 12% = division ROI, so ROI stays 12% (indifferent); RI +$10,000: accept."
+   ],
+   [
+    "Motors' plant is old and nearly fully depreciated. Why might its 15% ROI overstate performance compared with Assembly?",
+    "Net book value shrinks the denominator; use gross book or current cost to compare."
+   ]
+  ],
+  "case": [
+   "Motors versus Assembly",
+   "Motors (full capacity) sells drive units outside at $320, with variable cost $180 and $20 of selling costs saved internally. Assembly can buy a comparable unit outside for $305. Motors demands $320; Assembly offers $260 (full cost). Ana Vang must settle the dispute and also choose between ROI and RI for the year-end bonus plan.",
+   [
+    "What is the minimum transfer price, and should the transfer happen at all?",
+    "What happens to Tallgrass if Ana imposes $260?",
+    "Recommend a transfer pricing policy.",
+    "Recommend ROI or RI for bonuses and explain."
+   ],
+   "Minimum $300; Assembly's maximum $305: transfer is worthwhile, price between $300 and $305 (company gains $5/unit vs buying outside). Imposing $260 pays Motors $40 a unit less than it gives up by not selling outside, harming Motors' evaluation and autonomy. Policy: market-based, less savings, with negotiation within the range; arbitration if needed. Use RI (or EVA) with gross-book or current-cost assets to avoid the ROI trap, plus balanced scorecard measures."
+  ],
+  "exam": [
+   [
+    "Explain the minimum transfer price rule and apply it to a division with and without idle capacity.",
+    6,
+    "Incremental cost + opportunity cost. Idle: variable cost only. Full: incremental cost + lost contribution margin = market price − savings."
+   ],
+   [
+    "Division X: operating income $480,000; assets $3,000,000; required return 12%. A project costing $600,000 earns $84,000. Compute ROI and RI before and after, and explain the conflict.",
+    6,
+    "Before ROI 16%, RI $120,000. Project ROI 14%. After ROI 564/3,600 = 15.7%; RI $132,000. ROI falls so an ROI-judged manager rejects a value-adding project; RI rises."
+   ]
+  ],
+  "outcomes": [
+   "Explain goals of management control systems",
+   "Compare market, cost-based and negotiated transfer prices",
+   "Apply the minimum transfer price rule",
+   "Analyze tax effects of multinational transfer prices",
+   "Compute ROI, residual income and EVA",
+   "Evaluate measurement choices and their effect on decisions"
+  ],
+  "take": [
+   "Transfer prices split profit and affect decisions",
+   "Minimum TP = incremental + opportunity cost",
+   "Arm's-length rules limit tax shifting",
+   "ROI = margin × turnover",
+   "RI and EVA favor any project above the hurdle",
+   "Different costs for different purposes"
+  ]
+ }
+}

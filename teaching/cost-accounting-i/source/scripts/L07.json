@@ -1,0 +1,518 @@
+{
+ "videos": [
+  {
+   "id": "7.1",
+   "title": "Using ABC for pricing and mix",
+   "lecture": "Lecture 7 \u00b7 Activity-based management",
+   "take": "Activity-based management uses ABC information to make better pricing, mix and process decisions",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "ABC is only worth building if managers use it. Using activity information to run the business is called activity-based management."
+    },
+    {
+     "type": "define",
+     "big": "Activity-based management",
+     "sub": [
+      "Decisions that use activity",
+      "cost information"
+     ],
+     "say": "Activity-based management, or A-B-M, is the use of activity cost information to make decisions: about prices, product mix, cost reduction, process improvement and design."
+    },
+    {
+     "type": "table",
+     "heading": "Prairie Gate's lines under ABC",
+     "rows": [
+      [
+       "Line",
+       "Utility | Livestock",
+       "head"
+      ],
+      [
+       "Average price",
+       "$9,200 | $16,400"
+      ],
+      [
+       "DM + DL per trailer",
+       "$6,800 | $8,600"
+      ],
+      [
+       "ABC overhead per trailer",
+       "$1,900 | $9,680"
+      ],
+      [
+       "Margin per trailer",
+       "$500 | \u2212$1,880"
+      ]
+     ],
+     "say": "With ABC costs, utility trailers sell for $9,200 and cost $8,700, a $500 margin. Livestock trailers sell for $16,400 but cost $18,280: each one loses $1,880. The old system showed them as Prairie Gate's most profitable line."
+    },
+    {
+     "type": "list",
+     "heading": "Options for the livestock line",
+     "items": [
+      "Raise prices or charge for custom design",
+      "Cut the cost of design and setups",
+      "Drop the line?"
+     ],
+     "say": "Karen has options: raise livestock prices or charge separately for custom design; cut the cost of the activities the line uses; or, at the extreme, drop it."
+    },
+    {
+     "type": "key",
+     "big": "Don't drop it too fast",
+     "sub": [
+      "Some allocated costs won't disappear",
+      "if the line goes: Cost II, Lecture 7"
+     ],
+     "say": "Dropping a line is rarely the first answer. Some of the overhead allocated to it, like facility costs, wouldn't disappear. Relevant cost analysis for such decisions is in Cost Accounting II."
+    },
+    {
+     "type": "quiz",
+     "q": "Under ABC, a product's margin turns negative. What's the best first step?",
+     "opts": [
+      "Drop it immediately",
+      "Check which activities drive its cost and whether they can be reduced or priced",
+      "Ignore ABC",
+      "Raise prices on all products"
+     ],
+     "answer": 1,
+     "say": "Quick check. Under ABC, a product's margin turns negative. What's the best first step? Pause and pick.",
+     "reveal": "It's B. Understand the activities driving the cost, then price them or reduce them."
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "title": "Value-added and non-value-added activities",
+   "lecture": "Lecture 7 \u00b7 Activity-based management",
+   "take": "Eliminate or reduce non-value-added activities that customers don't pay for",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Some activities create value customers will pay for. Others just cost money. ABM helps tell them apart."
+    },
+    {
+     "type": "compare",
+     "heading": "Two kinds of activity",
+     "cols": [
+      "Value-added",
+      "Non-value-added"
+     ],
+     "rows": [
+      [
+       "Customer view",
+       "Worth paying for",
+       "Not worth paying for"
+      ],
+      [
+       "Examples",
+       "Welding, custom design",
+       "Moving parts, rework, waiting"
+      ],
+      [
+       "Goal",
+       "Do efficiently",
+       "Reduce or eliminate"
+      ]
+     ],
+     "say": "A value-added activity is one customers see as worth paying for, like welding a frame or designing a custom layout. A non-value-added activity adds cost but no value, like moving parts around the plant, reworking defects or waiting for setups."
+    },
+    {
+     "type": "table",
+     "heading": "Cutting setup time",
+     "rows": [
+      [
+       "Setups a year",
+       "200"
+      ],
+      [
+       "Setup hours each: now 6, target 3",
+       ""
+      ],
+      [
+       "Setup pool now",
+       240000
+      ],
+      [
+       "If halving time halves resources",
+       120000,
+       "total"
+      ]
+     ],
+     "say": "Prairie Gate's two hundred setups take six hours each. With quick-change fixtures, the team thinks they can take three. If the crew and equipment devoted to setups can be cut in half, the setup pool falls from $240,000 to $120,000."
+    },
+    {
+     "type": "key",
+     "big": "Savings must be real",
+     "sub": [
+      "Freed-up time saves money only if",
+      "spending falls or capacity is reused"
+     ],
+     "say": "But the savings are real only if spending actually falls, for example by redeploying setup workers, or if the freed capacity is used to build more trailers. Otherwise you have unused capacity, not lower costs."
+    },
+    {
+     "type": "key",
+     "big": "Drivers point to causes",
+     "sub": [
+      "Fewer setups, fewer defects,",
+      "fewer design changes"
+     ],
+     "say": "Cost drivers point straight to the causes of cost, so managers know where to look: fewer setups, fewer defects, fewer engineering changes."
+    },
+    {
+     "type": "quiz",
+     "q": "Which activity is non-value-added for Prairie Gate's customers?",
+     "opts": [
+      "Welding the frame",
+      "Painting the trailer",
+      "Moving steel between storage areas twice",
+      "Installing axles"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which activity is non-value-added? Pause and pick.",
+     "reveal": "It's C. Moving steel around adds cost but no value the customer pays for."
+    }
+   ]
+  },
+  {
+   "id": "7.3",
+   "title": "Design decisions",
+   "lecture": "Lecture 7 \u00b7 Activity-based management",
+   "take": "Most costs are locked in at the design stage; ABC shows designers what complexity costs",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Most of a product's cost is decided before production starts, when it's designed. ABC tells designers what complexity costs."
+    },
+    {
+     "type": "define",
+     "big": "Locked-in costs",
+     "sub": [
+      "Costs not yet incurred but already",
+      "committed by design decisions"
+     ],
+     "say": "Locked-in, or designed-in, costs are costs that haven't been incurred yet but will be, because of decisions already made. Choose a frame with forty unique parts, and the cost of buying, storing and welding them is locked in."
+    },
+    {
+     "type": "table",
+     "heading": "Livestock trailers: standard designs?",
+     "rows": [
+      [
+       "Design hours per trailer now: 2,400 \u00f7 100",
+       "24"
+      ],
+      [
+       "With a menu of 3 standard designs",
+       "8"
+      ],
+      [
+       "Hours saved \u00d7 $120",
+       1920
+      ],
+      [
+       "Setups cut from 160 to 80: per trailer",
+       960
+      ],
+      [
+       "Possible saving per trailer",
+       2880,
+       "total"
+      ]
+     ],
+     "say": "Today each livestock trailer needs twenty-four design hours. Offering three standard designs with options could cut that to eight, saving sixteen hours at a hundred twenty dollars: $1,920. If setups halve too, that's another $960 a trailer, enough to make the line profitable."
+    },
+    {
+     "type": "key",
+     "big": "Fewer parts, lower cost",
+     "sub": [
+      "Common axles, lights and hitches",
+      "across all models"
+     ],
+     "say": "Common parts across models, like the same axles, lights and hitches, cut purchasing, storage and setup activity."
+    },
+    {
+     "type": "key",
+     "big": "But customers value choice",
+     "sub": [
+      "Keep the options customers pay for;",
+      "drop the ones they don't"
+     ],
+     "say": "The trade-off: some customers buy from Prairie Gate precisely because of custom design. The goal is to keep the variety customers value and pay for, and drop complexity they don't."
+    },
+    {
+     "type": "quiz",
+     "q": "Design hours fall by 10 per trailer at $120 an hour on 100 trailers. Potential saving?",
+     "opts": [
+      "$1,200",
+      "$12,000",
+      "$120,000",
+      "$1,000"
+     ],
+     "answer": 2,
+     "say": "Quick check. Design hours fall by ten per trailer, at a hundred twenty dollars an hour, on a hundred trailers. What's the potential saving? Pause and pick.",
+     "reveal": "It's C, $120,000, if the design resources are actually reduced."
+    }
+   ]
+  },
+  {
+   "id": "7.4",
+   "title": "ABC in merchandising and services",
+   "lecture": "Lecture 7 \u00b7 Activity-based management",
+   "take": "ABC reveals the cost of serving different customers and services, not just products",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "A farm supply distributor doesn't make anything. But ABC can still reveal which customers make money."
+    },
+    {
+     "type": "table",
+     "heading": "Marshall Farm Supply: activity rates",
+     "rows": [
+      [
+       "Order processing, per order",
+       40
+      ],
+      [
+       "Delivery, per delivery",
+       90
+      ],
+      [
+       "Rush order, per rush",
+       150
+      ]
+     ],
+     "say": "Marshall Farm Supply distributes feed, fencing and parts. Its activity rates: forty dollars to process an order, ninety per delivery, and a hundred fifty extra for each rush order."
+    },
+    {
+     "type": "table",
+     "heading": "Two customers, same $60,000 of sales a year",
+     "rows": [
+      [
+       "Customer",
+       "Hansen | Berg",
+       "head"
+      ],
+      [
+       "Gross margin at 20%",
+       "$12,000 | $12,000"
+      ],
+      [
+       "Orders and deliveries",
+       "12 | 150"
+      ],
+      [
+       "Rush orders",
+       "0 | 40"
+      ],
+      [
+       "Activity costs",
+       "$1,560 | $25,500"
+      ],
+      [
+       "Customer profit",
+       "$10,440 | \u2212$13,500"
+      ]
+     ],
+     "say": "Hansen Farms and Berg Dairy each buy $60,000 a year, with the same $12,000 gross margin. Hansen orders monthly: twelve orders and deliveries, no rushes, $1,560 of activity cost. Berg orders small amounts a hundred fifty times, forty of them rushed: $25,500. Berg loses Marshall Farm Supply $13,500 a year."
+    },
+    {
+     "type": "list",
+     "heading": "What to do about Berg",
+     "items": [
+      "Minimum order sizes or delivery fees",
+      "Rush-order surcharge",
+      "Online ordering to cut processing cost"
+     ],
+     "say": "The answer isn't necessarily to drop Berg. Marshall Farm Supply could set minimum order sizes, charge for deliveries and rush orders, or move Berg to cheaper online ordering."
+    },
+    {
+     "type": "key",
+     "big": "Banks, hospitals, airlines",
+     "sub": [
+      "Same method: cost the activities",
+      "each service or customer uses"
+     ],
+     "say": "The same method works in banks, which cost each type of account, hospitals, which cost procedures, and airlines, which cost each fare class."
+    },
+    {
+     "type": "quiz",
+     "q": "A customer places 50 orders with 50 deliveries and 10 rushes. Activity cost at $40, $90 and $150?",
+     "opts": [
+      "$6,500",
+      "$8,000",
+      "$6,000",
+      "$4,500"
+     ],
+     "answer": 1,
+     "say": "Quick check. A customer places fifty orders with fifty deliveries and ten rush orders. What's the activity cost? Pause and pick.",
+     "reveal": "It's B. $2,000 plus $4,500 plus $1,500 is $8,000."
+    }
+   ]
+  },
+  {
+   "id": "7.5",
+   "title": "Time-driven ABC",
+   "lecture": "Lecture 7 \u00b7 Activity-based management",
+   "take": "Time-driven ABC uses cost per minute of capacity and minutes per activity",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Traditional ABC asks staff how they spend their time. Time-driven ABC replaces the surveys with two simple estimates."
+    },
+    {
+     "type": "list",
+     "heading": "Two estimates",
+     "items": [
+      "Cost per minute of supplied capacity",
+      "Minutes each activity takes"
+     ],
+     "say": "Time-driven ABC needs two estimates: the cost per minute of the capacity a department supplies, and the number of minutes each activity takes."
+    },
+    {
+     "type": "table",
+     "heading": "Prairie Gate's customer service team",
+     "rows": [
+      [
+       "Annual cost: 8 staff, systems, space",
+       560000
+      ],
+      [
+       "Capacity: 8 \u00d7 1,750 hrs \u00d7 60",
+       "840,000 min"
+      ],
+      [
+       "Cost per minute",
+       "$0.667",
+       "total"
+      ]
+     ],
+     "say": "Prairie Gate's customer service team costs $560,000 a year. Eight staff each work about seventeen fifty productive hours: eight hundred forty thousand minutes of practical capacity. That's about sixty-seven cents a minute."
+    },
+    {
+     "type": "table",
+     "heading": "Activity costs",
+     "rows": [
+      [
+       "Warranty claim: 30 min",
+       20
+      ],
+      [
+       "Dealer order change: 15 min",
+       10
+      ],
+      [
+       "New dealer setup: 240 min",
+       160
+      ]
+     ],
+     "say": "A warranty claim takes thirty minutes: twenty dollars. An order change, fifteen minutes: ten dollars. Setting up a new dealer, four hours: a hundred sixty dollars."
+    },
+    {
+     "type": "key",
+     "big": "Unused capacity shows up",
+     "sub": [
+      "If activities use 700,000 minutes,",
+      "140,000 minutes ($93,333) is idle"
+     ],
+     "say": "If this year's claims, changes and setups use only seven hundred thousand minutes, a hundred forty thousand minutes, about $93,000 of capacity, is unused. Time-driven ABC makes that visible."
+    },
+    {
+     "type": "quiz",
+     "q": "Cost per minute $0.80. An activity takes 45 minutes. Cost?",
+     "opts": [
+      "$45",
+      "$36",
+      "$56",
+      "$80"
+     ],
+     "answer": 1,
+     "say": "Quick check. Cost per minute is eighty cents. An activity takes forty-five minutes. What does it cost? Pause and pick.",
+     "reveal": "It's B, $36."
+    }
+   ]
+  },
+  {
+   "id": "7.6",
+   "title": "Activity-based budgeting",
+   "lecture": "Lecture 7 \u00b7 Activity-based management",
+   "take": "Budget resources from the activities needed to meet planned output",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "ABC can also run in reverse: start from planned output, work out the activities needed, then budget the resources."
+    },
+    {
+     "type": "flow",
+     "heading": "Activity-based budgeting",
+     "items": [
+      "Forecast production and sales",
+      "Estimate activities needed",
+      "Estimate resources for those activities",
+      "Budget their cost"
+     ],
+     "say": "Activity-based budgeting starts with the production and sales forecast, estimates the activities needed to deliver it, then the resources those activities require, and finally their cost."
+    },
+    {
+     "type": "table",
+     "heading": "Prairie Gate, 2028 setups",
+     "rows": [
+      [
+       "Forecast setups: longer utility runs",
+       "150"
+      ],
+      [
+       "Hours per setup, new fixtures",
+       "3"
+      ],
+      [
+       "Setup crew hours needed",
+       "450"
+      ],
+      [
+       "Crew: from 2 people to 1",
+       "Saves about $60,000",
+       "total"
+      ]
+     ],
+     "say": "For 2028, Karen forecasts a hundred fifty setups, thanks to longer utility runs, each taking three hours with the new fixtures. That's four hundred fifty crew hours, so the setup crew can shrink from two people to one, a saving of about $60,000."
+    },
+    {
+     "type": "key",
+     "big": "Budgets tied to causes",
+     "sub": [
+      "Managers see why each cost",
+      "is in the budget"
+     ],
+     "say": "Because each budget line is tied to an activity and its driver, managers can see why a cost is there and what would change it."
+    },
+    {
+     "type": "key",
+     "big": "Coming next: process costing",
+     "sub": [
+      "Lecture 8: Redwood Valley Creamery"
+     ],
+     "say": "That ends our work on job costing and ABC. After the midterm, we move to process costing at Redwood Valley Creamery."
+    },
+    {
+     "type": "quiz",
+     "q": "Planned 300 inspections at 20 minutes each. How many inspector hours?",
+     "opts": [
+      "60",
+      "100",
+      "6,000",
+      "15"
+     ],
+     "answer": 1,
+     "say": "Quick check. Three hundred inspections are planned, at twenty minutes each. How many inspector hours? Pause and pick.",
+     "reveal": "It's B, a hundred hours."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "num": "ACCT 413",
+ "course": "ACCT 413 Cost Accounting I",
+ "desc": "cost accounting for manufacturing",
+ "lede": "Cost flows, job and process costing, overhead, allocation and standard costs: the foundations of cost accounting for management decision-making, in",
+ "intro": "A study of the basic development and application of accounting for management decision-making: cost flows in a manufacturing environment, with emphasis on job order and process cost systems, factory overhead analysis, activity-based costing, and cost allocation including joint products and byproducts. Prerequisite: ACCT 212 and ECON 201 or 202. Two fictional Marshall, Minnesota companies run through the course: Prairie Gate Trailers, which builds custom livestock and utility trailers one job at a time, and Redwood Valley Creamery, which makes cheddar in a continuous process with cream, skim and whey as joint products and byproducts. ACCT 341 Cost Accounting II uses the same textbook and carries on where this course stops.",
+ "book_note": "The standard cost accounting text in the US, built around the theme of different costs for different purposes. ACCT 413 and ACCT 341 share this one book and split its 24 chapters between them with no overlap, so students buy it once and use it for both courses.",
+ "book_split": "ACCT 413 reads Chapters 1, 2, 4, 5, 7, 8 and 16&ndash;19. ACCT 341 Cost Accounting II reads the other fourteen.",
+ "reading_note": "The whole semester's reading in one table. Lectures follow the course's logic (cost flows, then job costing, process costing, allocation and variances), so chapters are not read in book order.",
+ "parts": [
+  "Foundations",
+  "Job costing and ABC",
+  "Process costing",
+  "Allocation",
+  "Standard costs and variances"
+ ]
+}

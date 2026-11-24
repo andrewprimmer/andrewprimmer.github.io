@@ -1,0 +1,697 @@
+{
+ "meta": {
+  "n": 3,
+  "short": "Cost–volume–profit analysis",
+  "title": "Cost–volume–profit analysis",
+  "week": 3,
+  "ch": "Chapter 3",
+  "part": "Planning",
+  "summary": "Contribution margin, the breakeven point, target income before and after tax, using CVP for decisions and sensitivity analysis, cost structure and operating leverage, and multiple products with a sales mix."
+ },
+ "videos": [
+  {
+   "id": "3.1",
+   "title": "Contribution margin",
+   "lecture": "Lecture 3 · CVP analysis",
+   "take": "Contribution margin is revenue minus variable costs; it covers fixed costs, then produces profit",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "How many e-bikes must Tallgrass sell to make a profit? Cost–volume–profit analysis starts with one idea: contribution margin."
+    },
+    {
+     "type": "table",
+     "heading": "Tallgrass Trail e-bike",
+     "rows": [
+      [
+       "Selling price",
+       2400
+      ],
+      [
+       "Variable cost per bike",
+       -1500
+      ],
+      [
+       "Contribution margin per bike",
+       900,
+       "total"
+      ],
+      [
+       "Contribution margin ratio: 900 ÷ 2,400",
+       "37.5%"
+      ]
+     ],
+     "say": "The Trail e-bike sells for $2,400. Variable costs, frame, motor, battery, assembly labor and dealer commission, are $1,500. Each bike contributes $900 toward fixed costs and profit. That's a contribution margin ratio of thirty-seven and a half percent."
+    },
+    {
+     "type": "table",
+     "heading": "Contribution income statement, 900 bikes",
+     "rows": [
+      [
+       "Revenues",
+       2160000
+      ],
+      [
+       "Variable costs",
+       -1350000
+      ],
+      [
+       "Contribution margin",
+       810000,
+       "total"
+      ],
+      [
+       "Fixed costs",
+       -540000
+      ],
+      [
+       "Operating income",
+       270000,
+       "total"
+      ]
+     ],
+     "say": "At nine hundred bikes, revenue is $2,160,000, variable costs $1,350,000, and contribution margin $810,000. After $540,000 of fixed costs, operating income is $270,000."
+    },
+    {
+     "type": "list",
+     "heading": "CVP assumptions",
+     "items": [
+      "Costs split cleanly into fixed and variable",
+      "Behavior is linear within the relevant range",
+      "Price, unit costs and sales mix are known",
+      "Units produced equal units sold"
+     ],
+     "say": "CVP assumes costs split cleanly into fixed and variable parts, behave linearly within the relevant range, that selling price, unit costs and the mix of products are known, and that production equals sales."
+    },
+    {
+     "type": "key",
+     "big": "Each extra bike adds $900",
+     "sub": [
+      "Above breakeven, operating income",
+      "rises by the contribution margin"
+     ],
+     "say": "The power of contribution margin: every extra bike sold adds $900 to operating income, as long as fixed costs don't change."
+    },
+    {
+     "type": "quiz",
+     "q": "A cargo bike sells for $3,600 with variable costs of $2,100. What is its contribution margin ratio?",
+     "opts": [
+      "41.7%",
+      "58.3%",
+      "36.0%",
+      "1,500%"
+     ],
+     "answer": 0,
+     "say": "Quick check. A cargo bike sells for thirty-six hundred with variable costs of twenty-one hundred. What's the contribution margin ratio? Pause and pick.",
+     "reveal": "It's A. Fifteen hundred divided by thirty-six hundred is about forty-one point seven percent."
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "title": "The breakeven point",
+   "lecture": "Lecture 3 · CVP analysis",
+   "take": "Breakeven units = fixed costs ÷ unit contribution margin; breakeven revenue = fixed costs ÷ CM ratio",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Breakeven is where operating income is exactly zero. Below it Tallgrass loses money; above it, it makes money."
+    },
+    {
+     "type": "define",
+     "big": "Breakeven = Fixed ÷ CM",
+     "size": 82,
+     "sub": [
+      "Units: ÷ CM per unit",
+      "Revenue: ÷ CM ratio"
+     ],
+     "say": "Breakeven in units is fixed costs divided by contribution margin per unit. Breakeven in revenue is fixed costs divided by the contribution margin ratio."
+    },
+    {
+     "type": "table",
+     "heading": "Tallgrass breakeven",
+     "rows": [
+      [
+       "Units: 540,000 ÷ $900",
+       "600 bikes"
+      ],
+      [
+       "Revenue: 540,000 ÷ 37.5%",
+       1440000
+      ],
+      [
+       "Check: 600 × $2,400",
+       1440000
+      ]
+     ],
+     "say": "Fixed costs of $540,000 divided by $900 per bike: six hundred bikes to break even. In revenue, $540,000 divided by thirty-seven and a half percent: $1,440,000. Six hundred bikes at $2,400 confirms it."
+    },
+    {
+     "type": "define",
+     "big": "Equation method",
+     "sub": [
+      "Revenue − variable costs − fixed costs",
+      "= operating income"
+     ],
+     "say": "The equation method gives the same answer: set price times quantity, minus variable cost times quantity, minus fixed costs, equal to zero. Twenty-four hundred Q minus fifteen hundred Q minus five hundred forty thousand equals zero, so Q is six hundred."
+    },
+    {
+     "type": "key",
+     "big": "A planning tool, not a goal",
+     "sub": [
+      "Breakeven shows risk:",
+      "how far sales can fall"
+     ],
+     "say": "Breakeven isn't a target. It tells managers how risky a plan is: how far sales can fall before losses start."
+    },
+    {
+     "type": "quiz",
+     "q": "If fixed costs rise to $630,000, what is breakeven?",
+     "opts": [
+      "600 bikes",
+      "700 bikes",
+      "630 bikes",
+      "720 bikes"
+     ],
+     "answer": 1,
+     "say": "Quick check. If fixed costs rise to six hundred thirty thousand, what's breakeven? Pause and pick.",
+     "reveal": "It's B. 630,000 divided by 900 is seven hundred bikes."
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "title": "Target income and taxes",
+   "lecture": "Lecture 3 · CVP analysis",
+   "take": "Units for a target = (fixed costs + target operating income) ÷ unit CM; gross up net income for taxes",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Breaking even isn't the goal. How many bikes for a target profit, before or after tax?"
+    },
+    {
+     "type": "table",
+     "heading": "Target operating income $180,000",
+     "rows": [
+      [
+       "Fixed costs + target",
+       720000
+      ],
+      [
+       "÷ CM per bike",
+       "$900"
+      ],
+      [
+       "Bikes needed",
+       "800",
+       "total"
+      ]
+     ],
+     "say": "To earn $180,000 of operating income, Tallgrass must cover fixed costs plus the target: $720,000. Divided by $900 a bike, that's eight hundred bikes."
+    },
+    {
+     "type": "define",
+     "big": "Operating income = net income ÷ (1 − t)",
+     "size": 70,
+     "sub": [
+      "Gross up an after-tax target",
+      "before using CVP"
+     ],
+     "say": "If the target is net income after taxes, first convert it to operating income: divide by one minus the tax rate."
+    },
+    {
+     "type": "table",
+     "heading": "Target net income $150,000, tax 25%",
+     "rows": [
+      [
+       "Operating income: 150,000 ÷ 0.75",
+       200000
+      ],
+      [
+       "(540,000 + 200,000) ÷ 900",
+       "822.2 bikes"
+      ],
+      [
+       "Round up",
+       "823 bikes",
+       "total"
+      ]
+     ],
+     "say": "Ana's board wants $150,000 of net income, with a twenty-five percent tax rate. That needs $200,000 of operating income. Fixed costs plus $200,000, divided by $900, is eight hundred twenty-two point two, so Tallgrass must sell eight hundred twenty-three bikes."
+    },
+    {
+     "type": "key",
+     "big": "Taxes don't move breakeven",
+     "sub": [
+      "No income, no tax"
+     ],
+     "say": "Notice that taxes don't change the breakeven point. With zero operating income there's no tax to pay."
+    },
+    {
+     "type": "quiz",
+     "q": "Target operating income $90,000. Bikes needed at $900 CM and $540,000 fixed costs?",
+     "opts": [
+      "600",
+      "700",
+      "100",
+      "1,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Target operating income ninety thousand. How many bikes? Pause and pick.",
+     "reveal": "It's B. 630,000 divided by 900 is seven hundred."
+    }
+   ]
+  },
+  {
+   "id": "3.4",
+   "title": "Decisions and sensitivity",
+   "lecture": "Lecture 3 · CVP analysis",
+   "take": "Use CVP to test decisions; margin of safety shows how far sales can fall before losses",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "CVP really earns its keep when managers ask 'what if'. Here's how Ana tests decisions and risk."
+    },
+    {
+     "type": "table",
+     "heading": "Spend $30,000 more on advertising?",
+     "rows": [
+      [
+       "Extra bikes expected",
+       "40"
+      ],
+      [
+       "Extra contribution: 40 × $900",
+       36000
+      ],
+      [
+       "Extra advertising",
+       -30000
+      ],
+      [
+       "Change in operating income",
+       6000,
+       "total"
+      ]
+     ],
+     "say": "Marketing wants $30,000 more for advertising and expects forty more sales. Forty bikes times $900 is $36,000 of extra contribution. Less the $30,000, operating income rises by $6,000. Worth it, if the forty sales are realistic."
+    },
+    {
+     "type": "table",
+     "heading": "Cut price to $2,250 to sell 1,000?",
+     "rows": [
+      [
+       "New CM: 2,250 − 1,500",
+       750
+      ],
+      [
+       "CM: 1,000 × 750",
+       750000
+      ],
+      [
+       "Current CM: 900 × 900",
+       810000
+      ],
+      [
+       "Change",
+       -60000,
+       "total"
+      ]
+     ],
+     "say": "Sales also suggests cutting the price to $2,250 to sell a thousand bikes. Contribution margin falls to $750 a bike, and total contribution to $750,000, $60,000 less than now. Reject it."
+    },
+    {
+     "type": "define",
+     "big": "Margin of safety",
+     "sub": [
+      "Budgeted sales − breakeven sales"
+     ],
+     "say": "The margin of safety is how far sales can fall below budget before Tallgrass loses money: budgeted revenue minus breakeven revenue."
+    },
+    {
+     "type": "table",
+     "heading": "Margin of safety at 900 bikes",
+     "rows": [
+      [
+       "Budgeted revenue",
+       2160000
+      ],
+      [
+       "Breakeven revenue",
+       -1440000
+      ],
+      [
+       "Margin of safety",
+       720000,
+       "total"
+      ],
+      [
+       "As a percentage of budget",
+       "33.3%"
+      ]
+     ],
+     "say": "With nine hundred bikes budgeted, the margin of safety is $720,000, or a third of budgeted sales."
+    },
+    {
+     "type": "quiz",
+     "q": "Raising the price to $2,500 cuts volume from 900 to 820 bikes. Operating income change?",
+     "opts": [
+      "+$10,000",
+      "−$10,000",
+      "+$90,000",
+      "No change"
+     ],
+     "answer": 0,
+     "say": "Quick check. Raising the price to twenty-five hundred cuts volume from nine hundred to eight hundred twenty. What's the change in operating income? Pause and pick.",
+     "reveal": "It's A. Contribution becomes 820 times $1,000, or $820,000, against $810,000 now: up $10,000."
+    }
+   ]
+  },
+  {
+   "id": "3.5",
+   "title": "Cost structure and operating leverage",
+   "lecture": "Lecture 3 · CVP analysis",
+   "take": "More fixed costs mean higher operating leverage: bigger swings in income when sales change",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Two companies with the same profit can carry very different risk. The difference is cost structure."
+    },
+    {
+     "type": "define",
+     "big": "Degree of operating leverage",
+     "sub": [
+      "Contribution margin ÷ operating income"
+     ],
+     "say": "The degree of operating leverage is contribution margin divided by operating income. It tells you how much operating income changes for each percent change in sales."
+    },
+    {
+     "type": "table",
+     "heading": "Tallgrass at 900 bikes",
+     "rows": [
+      [
+       "Contribution margin",
+       810000
+      ],
+      [
+       "Operating income",
+       270000
+      ],
+      [
+       "Degree of operating leverage",
+       "3.0",
+       "total"
+      ]
+     ],
+     "say": "At nine hundred bikes, Tallgrass's contribution margin is $810,000 and operating income $270,000: a degree of operating leverage of three. A ten percent rise in sales raises operating income by thirty percent."
+    },
+    {
+     "type": "compare",
+     "heading": "Automate assembly?",
+     "cols": [
+      "Now",
+      "Robotic line"
+     ],
+     "rows": [
+      [
+       "Variable cost a bike",
+       "$1,500",
+       "$1,300"
+      ],
+      [
+       "Fixed costs",
+       "$540,000",
+       "$720,000"
+      ],
+      [
+       "Breakeven",
+       "600 bikes",
+       "655 bikes"
+      ],
+      [
+       "Income at 900 bikes",
+       "$270,000",
+       "$270,000"
+      ]
+     ],
+     "say": "Ana is considering a robotic assembly line. Variable cost would fall to $1,300 a bike, but fixed costs would rise to $720,000. At nine hundred bikes, income is the same, $270,000. But breakeven rises to about six hundred fifty-five bikes."
+    },
+    {
+     "type": "key",
+     "big": "Higher leverage, higher risk",
+     "sub": [
+      "Gains more in good years,",
+      "loses more in bad years"
+     ],
+     "say": "With more fixed costs, the robotic line earns more when sales beat nine hundred and loses more when they fall short. The choice depends on how confident Ana is about volume."
+    },
+    {
+     "type": "quiz",
+     "q": "With a DOL of 4, sales fall 5%. What happens to operating income?",
+     "opts": [
+      "Falls 5%",
+      "Falls 20%",
+      "Falls 4%",
+      "Rises 20%"
+     ],
+     "answer": 1,
+     "say": "Quick check. With a degree of operating leverage of four, sales fall five percent. What happens to operating income? Pause and pick.",
+     "reveal": "It's B. Four times five percent: a twenty percent fall."
+    }
+   ]
+  },
+  {
+   "id": "3.6",
+   "title": "Multiple products and sales mix",
+   "lecture": "Lecture 3 · CVP analysis",
+   "take": "With several products, compute breakeven for a bundle in the expected sales mix",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Tallgrass sells two bikes, not one. With several products, breakeven depends on the sales mix."
+    },
+    {
+     "type": "table",
+     "heading": "Two models, mix 3 Trail : 1 Cargo",
+     "rows": [
+      [
+       "Trail: CM $900 × 3",
+       2700
+      ],
+      [
+       "Cargo: CM $1,500 × 1",
+       1500
+      ],
+      [
+       "CM per bundle of 4 bikes",
+       4200,
+       "total"
+      ]
+     ],
+     "say": "Tallgrass sells three Trail bikes for every Cargo bike. A bundle of three Trails and one Cargo contributes three times $900 plus $1,500: $4,200."
+    },
+    {
+     "type": "table",
+     "heading": "Breakeven",
+     "rows": [
+      [
+       "Bundles: 540,000 ÷ 4,200",
+       "128.6"
+      ],
+      [
+       "Trail bikes: × 3",
+       "386"
+      ],
+      [
+       "Cargo bikes: × 1",
+       "129"
+      ]
+     ],
+     "say": "Fixed costs of $540,000 divided by $4,200 gives about a hundred twenty-nine bundles. That's about three hundred eighty-six Trail bikes and a hundred twenty-nine Cargo bikes."
+    },
+    {
+     "type": "key",
+     "big": "Mix shifts move breakeven",
+     "sub": [
+      "More Cargo sales: lower breakeven",
+      "More Trail sales: higher"
+     ],
+     "say": "If the mix shifts toward Cargo bikes, which contribute more, breakeven falls. If customers switch to Trail bikes, it rises, even if total units don't change."
+    },
+    {
+     "type": "key",
+     "big": "Constraints change the ranking",
+     "sub": [
+      "If assembly hours are scarce,",
+      "rank by CM per hour"
+     ],
+     "say": "And if a resource is scarce, like assembly hours, the best product is the one with the highest contribution per hour of that resource, not per bike. That's Lecture 7."
+    },
+    {
+     "type": "quiz",
+     "q": "If the mix were 1 Trail : 1 Cargo, what would the CM per bundle be?",
+     "opts": [
+      "$1,200",
+      "$2,400",
+      "$4,200",
+      "$2,700"
+     ],
+     "answer": 1,
+     "say": "Quick check. If the mix were one Trail to one Cargo, what's the contribution per bundle? Pause and pick.",
+     "reveal": "It's B. $900 plus $1,500 is $2,400 per two-bike bundle, so breakeven would be 225 of each."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "A food truck sells tacos at $4 with ingredients costing $1.50. Its permit and truck lease cost $2,500 a month. How many tacos to break even?",
+   "CM $2.50; 1,000 tacos. Introduces contribution margin and breakeven."
+  ],
+  "acts": [
+   [
+    "Tallgrass's variable cost rises to $1,600 per Trail bike. Recompute CM, CM ratio and breakeven.",
+    "CM 800; ratio 33.3%; breakeven 675 bikes, $1,620,000."
+   ],
+   [
+    "Using the equation method, find breakeven if price is $2,600, variable cost $1,500 and fixed costs $594,000.",
+    "1,100Q = 594,000; Q = 540."
+   ],
+   [
+    "Target net income $120,000 at a 21% tax rate. How many Trail bikes?",
+    "OI = 151,899; (540,000 + 151,899) ÷ 900 = 768.8 → 769."
+   ],
+   [
+    "Evaluate: a $40 per bike sales commission increase expected to add 60 bikes.",
+    "New CM 860; 960 × 860 = 825,600 vs 810,000: +$15,600. Accept."
+   ],
+   [
+    "Compute DOL and income at 1,000 bikes for the current and robotic structures.",
+    "Current: CM 900,000, OI 360,000. Robotic: CM 1,100 × 1,000 = 1,100,000, OI 380,000. At 900: DOL 3.0 vs 990,000 ÷ 270,000 = 3.67."
+   ],
+   [
+    "Mix 2 Trail : 1 Cargo. Compute breakeven units of each.",
+    "Bundle CM 3,300; 540,000 ÷ 3,300 = 163.6 bundles; about 327 Trail and 164 Cargo."
+   ]
+  ],
+  "case": [
+   "Tallgrass plans 2027",
+   "Ana's 2027 plan: Trail bikes at $2,400 (variable $1,500) and Cargo bikes at $3,600 (variable $2,100), in a 3:1 mix; fixed costs $540,000; expected sales 1,200 bikes. Options: (a) automate assembly, cutting variable cost $200 a bike but raising fixed costs $180,000; (b) launch a $60,000 ad campaign expected to shift the mix to 2:1.",
+   [
+    "Compute 2027 operating income under the current plan.",
+    "Evaluate option (a) at 1,200 bikes and its new breakeven.",
+    "Evaluate option (b).",
+    "Which would you recommend, considering risk?"
+   ],
+   "Current: 300 bundles × 4,200 = 1,260,000 − 540,000 = $720,000. (a): bundle CM 4,200 + 800 = 5,000; 300 × 5,000 = 1,500,000 − 720,000 = $780,000; breakeven 144 bundles (576 bikes) vs 129 (514). (b): 2:1 bundle CM 3,300 per 3 bikes; 400 bundles × 3,300 = 1,320,000 − 600,000 = $720,000: no gain. (a) adds $60,000 but more operating leverage; recommend if 1,200 bikes is reliable."
+  ],
+  "exam": [
+   [
+    "Define contribution margin and explain why it is useful for short-run decisions.",
+    4,
+    "Revenue minus variable costs; shows how operating income changes with volume when fixed costs don't change; used for breakeven, target income and what-if analysis."
+   ],
+   [
+    "Price $500, variable cost $300, fixed costs $400,000, tax rate 25%. Compute breakeven units, units for net income of $90,000, and the margin of safety at 2,600 units.",
+    6,
+    "BE 2,000 units. OI 120,000 → 520,000 ÷ 200 = 2,600 units. MOS 600 units, $300,000 (23%)."
+   ]
+  ],
+  "outcomes": [
+   "Compute contribution margin and the CM ratio",
+   "Compute breakeven in units and revenue",
+   "Compute units for target income before and after tax",
+   "Use CVP for what-if decisions and margin of safety",
+   "Explain cost structure and operating leverage",
+   "Compute breakeven with a sales mix"
+  ],
+  "take": [
+   "CM covers fixed costs, then profit",
+   "Breakeven = fixed costs ÷ CM",
+   "Gross up after-tax targets by 1 − t",
+   "Test decisions by their effect on total CM",
+   "More fixed costs mean more operating leverage and risk",
+   "Breakeven depends on the sales mix"
+  ]
+ },
+ "ex": [
+  {
+   "type": "num",
+   "q": "Price $1,800, variable cost $1,080. What is the contribution margin ratio, in percent?",
+   "a": 40,
+   "tol": 0.1,
+   "unit": "%",
+   "why": "720 ÷ 1,800 = 40%.",
+   "video": "3.1"
+  },
+  {
+   "type": "num",
+   "q": "Fixed costs $360,000, CM per unit $720. Breakeven units?",
+   "a": 500,
+   "unit": "units",
+   "why": "360,000 ÷ 720 = 500.",
+   "video": "3.2"
+  },
+  {
+   "type": "num",
+   "q": "Fixed costs $360,000, CM ratio 40%. Breakeven revenue?",
+   "a": 900000,
+   "unit": "$",
+   "why": "360,000 ÷ 0.40 = 900,000.",
+   "video": "3.2"
+  },
+  {
+   "type": "num",
+   "q": "Fixed costs $360,000, CM $720, target net income $108,000, tax rate 25%. Units needed?",
+   "a": 700,
+   "unit": "units",
+   "why": "OI 144,000; 504,000 ÷ 720 = 700.",
+   "video": "3.3"
+  },
+  {
+   "type": "num",
+   "q": "Budgeted revenue $1,200,000; breakeven revenue $900,000. Margin of safety as a percentage of budget?",
+   "a": 25,
+   "tol": 0.1,
+   "unit": "%",
+   "why": "300,000 ÷ 1,200,000 = 25%.",
+   "video": "3.4"
+  },
+  {
+   "type": "mcq",
+   "q": "A $20,000 promotion is expected to add 25 sales at a CM of $700. Should Tallgrass run it?",
+   "opts": [
+    "No: income falls $2,500",
+    "Yes: income rises $2,500",
+    "Yes: income rises $17,500",
+    "No: CM falls"
+   ],
+   "a": 0,
+   "why": "25 × 700 = 17,500 of extra contribution, less 20,000 of cost: income falls $2,500.",
+   "video": "3.4"
+  },
+  {
+   "type": "num",
+   "q": "CM $600,000 and operating income $150,000. What is the degree of operating leverage?",
+   "a": 4,
+   "tol": 0.01,
+   "unit": "",
+   "why": "600,000 ÷ 150,000 = 4.",
+   "video": "3.5"
+  },
+  {
+   "type": "num",
+   "q": "Mix 2 A : 1 B; CM A $100, B $250; fixed costs $90,000. How many bundles to break even?",
+   "a": 200,
+   "unit": "bundles",
+   "why": "Bundle CM 450; 90,000 ÷ 450 = 200.",
+   "video": "3.6"
+  }
+ ]
+}

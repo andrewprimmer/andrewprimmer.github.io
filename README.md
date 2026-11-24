@@ -17,6 +17,8 @@ Personal academic website of Dr Andrew Primmer, Teaching Fellow in Accounting at
 - `teaching/` — Teaching resources
   - `index.html` — Accounting from the Archive course and teaching index
   - `federal-taxation/` — ACCT 414 Federal Tax I: 14 lectures, 84 microteach videos, slide decks, exercises (`source/` holds the build pipeline)
+  - `cost-accounting-i/` — ACCT 413 Cost Accounting I: 14 lectures, 84 microteach videos, slide decks, exercises (Horngren 18e, Ch 1, 2, 4, 5, 7, 8, 16–19)
+  - `cost-accounting-ii/` — ACCT 341 Cost Accounting II: 14 lectures, 84 microteach videos, slide decks, exercises (Horngren 18e, the other 14 chapters)
   - `revenue-recognition/` — Revenue Recognition in Six Videos, with journal entry practice (`journal-entries.js`)
   - `halden-motors/` — Management Accounting with Claude for Excel: Halden Motors dataset (with mock year-end financial statements), 7 exercise prompts and worked solutions (`files/`)
 - `folioscribe/` — FolioScribe digital humanities project landing page

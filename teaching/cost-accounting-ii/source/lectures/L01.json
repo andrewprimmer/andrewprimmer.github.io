@@ -1,0 +1,103 @@
+{
+ "meta": {"n": 1, "short": "How costs behave", "title": "Determining how costs behave", "week": 1, "ch": "Chapter 10", "part": "Cost behavior and prediction",
+  "summary": "Linear cost functions and the relevant range, methods of estimating costs, the high-low method, regression analysis, choosing cost drivers, and nonlinear costs such as learning curves."},
+ "videos": [
+  {"id": "1.1", "title": "Cost functions and the relevant range", "lecture": "Lecture 1 · How costs behave",
+   "take": "A linear cost function, y = a + bX, splits a cost into fixed and variable parts within a relevant range", "read": "",
+   "scenes": [
+    {"type": "title", "say": "Planning starts with prediction. To predict a cost, you need to know how it behaves when activity changes."},
+    {"type": "key", "big": "Meet Tallgrass Cycles", "sub": ["Electric bikes built in Marshall, Minnesota;", "CFO Ana Vang"], "say": "This semester we'll follow Tallgrass Cycles, which builds electric bikes in Marshall, Minnesota. Its CFO, Ana Vang, uses cost accounting to plan, to evaluate performance and to make decisions."},
+    {"type": "define", "big": "y = a + bX", "sub": ["a: fixed cost   b: variable cost per unit", "X: the cost driver"], "say": "A linear cost function is written y equals a plus b X. Y is total cost. A is the fixed part, which doesn't change with activity. B is the variable cost per unit of the cost driver, X."},
+    {"type": "compare", "heading": "Three cost behaviors", "cols": ["Function", "Tallgrass example"], "rows": [["Variable", "y = bX", "Battery packs, $310 a bike"], ["Fixed", "y = a", "Factory lease, $18,000 a month"], ["Mixed", "y = a + bX", "Power: $2,000 + $4/hour"]], "say": "A variable cost, like battery packs at $310 a bike, rises in proportion to the driver. A fixed cost, like the $18,000 monthly factory lease, doesn't. A mixed cost, like power, has both: a $2,000 base plus four dollars per machine hour."},
+    {"type": "define", "big": "Relevant range", "sub": ["The band of activity where the", "cost relationship holds"], "say": "These relationships hold only within the relevant range. If Tallgrass doubled output, it would need a second lease and the fixed cost would jump. Predictions outside the range are risky."},
+    {"type": "quiz", "q": "Power cost is $2,000 + $4 per machine hour. What is the cost for 3,500 hours?", "opts": ["$14,000", "$16,000", "$15,500", "$7,500"], "answer": 1,
+     "say": "Quick check. Power cost is two thousand dollars plus four dollars per machine hour. What's the cost for thirty-five hundred hours? Pause and pick.", "reveal": "It's B. $2,000 plus $14,000 is $16,000."}
+   ]},
+  {"id": "1.2", "title": "Four ways to estimate a cost", "lecture": "Lecture 1 · How costs behave",
+   "take": "Costs can be estimated by engineering studies, conferences, account analysis or quantitative analysis of past data", "read": "",
+   "scenes": [
+    {"type": "title", "say": "How does Ana find the a and the b? There are four approaches, from expert judgment to statistics."},
+    {"type": "compare", "heading": "Four methods", "cols": ["How", "Weakness"], "rows": [["Industrial engineering", "Time-and-motion study", "Costly; hard for overhead"], ["Conference", "Ask experts across departments", "Subjective"], ["Account analysis", "Classify each account", "Judgment, no data test"], ["Quantitative", "Fit past cost data", "Needs good data"]], "say": "The industrial engineering method studies inputs physically, like timing assembly steps. The conference method pools experts' views. Account analysis classifies each ledger account as fixed, variable or mixed. Quantitative analysis fits a line to past cost and activity data."},
+    {"type": "flow", "heading": "Six steps for quantitative analysis", "items": ["Choose the dependent variable", "Identify the cost driver", "Collect data", "Plot the data", "Estimate the function", "Evaluate the driver"], "say": "Quantitative analysis follows six steps: choose the cost to explain; pick a likely driver; collect data on both; plot them; estimate the cost function; and evaluate whether the driver works."},
+    {"type": "key", "big": "Always plot first", "sub": ["Outliers, breaks and odd months", "jump out of a scatter plot"], "say": "Always plot the data first. A scatter plot shows outliers, like a month with a one-off repair, and whether the relationship really looks linear."},
+    {"type": "key", "big": "Match the periods", "sub": ["Costs and activity must come", "from the same months"], "say": "Watch the data. A repair recorded in the month after the work, or overtime paid in a later period, will weaken the relationship."},
+    {"type": "quiz", "q": "Ana goes through the ledger and labels each overhead account fixed or variable. Which method is this?", "opts": ["Industrial engineering", "Conference", "Account analysis", "Regression"], "answer": 2,
+     "say": "Quick check. Ana labels each overhead account in the ledger fixed or variable. Which method is this? Pause and pick.", "reveal": "It's C, account analysis."}
+   ]},
+  {"id": "1.3", "title": "The high-low method", "lecture": "Lecture 1 · How costs behave",
+   "take": "The high-low method draws a line through the highest and lowest activity points", "read": "",
+   "scenes": [
+    {"type": "title", "say": "The quickest way to split a mixed cost is the high-low method. It uses just two data points."},
+    {"type": "table", "heading": "Tallgrass maintenance, 12 months", "rows": [["Highest month: 5,000 machine hours", 30000], ["Lowest month: 2,000 machine hours", 18000], ["Difference: 3,000 hours", 12000, "total"]], "say": "Ana has twelve months of maintenance costs. The month with the most machine hours, five thousand, cost $30,000. The month with the fewest, two thousand hours, cost $18,000. The difference is three thousand hours and $12,000."},
+    {"type": "table", "heading": "Solve for b, then a", "rows": [["b = 12,000 ÷ 3,000 hours", "$4.00"], ["a = 30,000 − 4 × 5,000", 10000], ["Maintenance = $10,000 + $4 per hour", "", "total"]], "say": "The variable cost per hour is the change in cost divided by the change in hours: four dollars. Plug back into either point: $30,000 minus four times five thousand gives a fixed cost of $10,000."},
+    {"type": "key", "big": "Pick by activity, not cost", "sub": ["Use the highest and lowest", "values of the driver"], "say": "Note: you choose the points with the highest and lowest activity, not the highest and lowest cost."},
+    {"type": "key", "tag": "WATCH OUT", "big": "Two points, lots of risk", "sub": ["If either point is unusual,", "the line is wrong"], "say": "The weakness is obvious: the line depends on two points. If either was an unusual month, the estimate is distorted. Regression uses every point."},
+    {"type": "quiz", "q": "Using $10,000 + $4 per hour, predict maintenance for 4,200 hours.", "opts": ["$16,800", "$26,800", "$25,200", "$30,000"], "answer": 1,
+     "say": "Quick check. Using ten thousand dollars plus four dollars an hour, predict maintenance for forty-two hundred hours. Pause and pick.", "reveal": "It's B. $10,000 plus $16,800 is $26,800."}
+   ]},
+  {"id": "1.4", "title": "Regression analysis", "lecture": "Lecture 1 · How costs behave",
+   "take": "Regression fits the line that minimizes squared errors; r-squared measures how much variation it explains", "read": "",
+   "scenes": [
+    {"type": "title", "say": "Regression uses all the data, not two points. Spreadsheets do the math. You need to read the output."},
+    {"type": "define", "big": "Least squares", "sub": ["The line that minimizes the sum", "of squared vertical distances"], "say": "Simple regression finds the line that minimizes the sum of the squared vertical distances between the data points and the line."},
+    {"type": "table", "heading": "Regression output: maintenance on machine hours", "rows": [["Intercept (a)", 9200], ["Slope (b), per machine hour", "$4.25"], ["r-squared", "0.86"], ["t-value of slope", "7.8"]], "say": "Ana's spreadsheet gives an intercept of $9,200 and a slope of $4.25 per machine hour. R-squared is point eight six. And the t-value on the slope is seven point eight."},
+    {"type": "compare", "heading": "Reading it", "cols": ["Means", "Here"], "rows": [["r-squared", "Share of variation explained", "86%: a good fit"], ["t-value", "Is the slope real?", "Above 2: significant"]], "say": "R-squared means machine hours explain eighty-six percent of the month-to-month variation in maintenance. A t-value above about two means the slope is significantly different from zero. Machine hours are a good driver."},
+    {"type": "key", "big": "Correlation isn't causation", "sub": ["The driver must make economic sense"], "say": "But a strong fit isn't enough. The driver must plausibly cause the cost. Ice cream sales might correlate with maintenance in summer, but they don't cause it."},
+    {"type": "quiz", "q": "Using y = $9,200 + $4.25X, predict maintenance at 4,000 hours.", "opts": ["$17,000", "$26,200", "$25,200", "$9,200"], "answer": 1,
+     "say": "Quick check. Using nine thousand two hundred plus four twenty-five per hour, predict maintenance at four thousand hours. Pause and pick.", "reveal": "It's B. $9,200 plus $17,000 is $26,200."}
+   ]},
+  {"id": "1.5", "title": "Choosing a cost driver", "lecture": "Lecture 1 · How costs behave",
+   "take": "Choose drivers by economic plausibility, goodness of fit and the slope of the regression line", "read": "",
+   "scenes": [
+    {"type": "title", "say": "Machine hours or number of setups? Ana must pick the driver that best explains overhead. Here are the criteria."},
+    {"type": "list", "heading": "Three criteria", "items": ["Economic plausibility: does it cause the cost?", "Goodness of fit: high r-squared", "Slope: a steep, significant line"], "say": "Three criteria. Economic plausibility: is there a sensible cause-and-effect link? Goodness of fit: how much variation does it explain? And the slope: a relatively steep, significant slope means the driver matters."},
+    {"type": "compare", "heading": "Candidate drivers for indirect costs", "cols": ["r-squared", "Plausible?"], "rows": [["Machine hours", "0.86", "Yes: machines wear"], ["Direct labor hours", "0.41", "Weak link"], ["Units shipped", "0.12", "No"]], "say": "Ana compares three drivers for maintenance. Machine hours have an r-squared of point eight six and a clear causal link. Labor hours fit poorly, and units shipped hardly at all. Machine hours win."},
+    {"type": "define", "big": "Cost hierarchy", "sub": ["Unit, batch, product-sustaining,", "facility-sustaining"], "say": "Some costs aren't driven by volume at all. A cost hierarchy groups them: unit-level costs vary with each bike, batch-level with each production run, product-sustaining costs with each model, and facility-sustaining costs with the plant itself."},
+    {"type": "key", "big": "Better drivers, better decisions", "sub": ["Wrong drivers distort", "product costs and prices"], "say": "Getting drivers right matters. Use the wrong driver and some bikes look more profitable than they are."},
+    {"type": "quiz", "q": "Setup costs for each production run of a bike model are which level in the cost hierarchy?", "opts": ["Unit-level", "Batch-level", "Product-sustaining", "Facility-sustaining"], "answer": 1,
+     "say": "Quick check. Setup costs for each production run are which level in the hierarchy? Pause and pick.", "reveal": "It's B, batch-level. They vary with the number of runs, not the number of bikes."}
+   ]},
+  {"id": "1.6", "title": "Nonlinear costs and learning curves", "lecture": "Lecture 1 · How costs behave",
+   "take": "With an 80% learning curve, cumulative average time falls 20% each time output doubles", "read": "",
+   "scenes": [
+    {"type": "title", "say": "Not every cost is a straight line. Step costs jump, quantity discounts bend, and workers get faster with practice."},
+    {"type": "compare", "heading": "Nonlinear costs", "cols": ["Shape", "Example"], "rows": [["Step cost", "Jumps at intervals", "One supervisor per 40 workers"], ["Quantity discount", "Price falls with volume", "Cheaper frames above 1,000"], ["Learning curve", "Time falls with practice", "New cargo e-bike"]], "say": "A step cost jumps at intervals, like adding a supervisor for every forty workers. Quantity discounts bend the line downward. And learning curves make labor time per unit fall as workers gain experience."},
+    {"type": "define", "big": "Cumulative average-time model", "sub": ["Average time per unit falls by a constant %", "each time cumulative output doubles"], "say": "In the cumulative average-time learning model, the average time per unit falls by a fixed percentage each time cumulative output doubles. An eighty percent curve means it falls to eighty percent."},
+    {"type": "table", "heading": "New cargo e-bike, 80% curve", "rows": [["Units", "Avg hrs | Total", "head"], ["1", "100 | 100"], ["2", "80 | 160"], ["4", "64 | 256"], ["8", "51.2 | 410"]], "say": "The first cargo e-bike takes a hundred hours. With an eighty percent curve, the average for two is eighty hours, a hundred sixty total. For four, sixty-four hours average, two fifty-six total. For eight, about fifty-one hours average, four hundred ten total."},
+    {"type": "key", "big": "Price and plan with learning", "sub": ["Early units cost more;", "bid on the average"], "say": "Learning matters for pricing and budgeting. If Ana prices the first units at their full cost, Tallgrass will overprice the line. Bids should reflect the expected average."},
+    {"type": "quiz", "q": "On a 90% curve the first unit takes 50 hours. What is the cumulative average for 2 units?", "opts": ["50 hours", "45 hours", "40 hours", "90 hours"], "answer": 1,
+     "say": "Quick check. On a ninety percent curve, the first unit takes fifty hours. What's the cumulative average for two units? Pause and pick.", "reveal": "It's B. Ninety percent of fifty is forty-five hours."}
+   ]}
+ ],
+ "content": {
+  "warmup": ["Your phone bill is $30 a month plus $10 per GB over 5 GB. Sketch it. Fixed, variable or mixed?", "Mixed with a step: flat to 5 GB, then rising. Introduces cost functions and the relevant range."],
+  "acts": [
+   ["Classify for Tallgrass: (a) motors, (b) plant manager's salary, (c) electricity, (d) quality inspectors hired one per 200 bikes a week.", "(a) Variable. (b) Fixed. (c) Mixed. (d) Step-fixed."],
+   ["Which method would you use to estimate the labor time for a new wheel-truing step? Why?", "Industrial engineering: a new physical process with no history; time studies are feasible."],
+   ["Data: 1,500 hours $14,000; 4,500 hours $27,500 (high and low). Find the cost function.", "b = 13,500 ÷ 3,000 = $4.50; a = 27,500 − 20,250 = $7,250."],
+   ["A regression has r-squared 0.25 and t-value 1.2. Would you use it?", "No: weak fit and insignificant slope; look for a better driver."],
+   ["Classify: frame painting per batch, design engineer for the cargo model, property tax on the plant, battery per bike.", "Batch; product-sustaining; facility-sustaining; unit-level."],
+   ["On an 80% curve with 100 hours for unit 1 and $40 per hour, what labor cost should Ana budget for units 5–8?", "Total for 8 = 409.6 hours; for 4 = 256; units 5–8 = 153.6 hours × 40 = $6,144."]
+  ],
+  "case": ["Budgeting maintenance at Tallgrass",
+   "Ana must budget 2027 maintenance. She has 24 months of data. The high-low method gives $10,000 + $4.00 per machine hour; regression gives $9,200 + $4.25 per machine hour (r-squared 0.86). One month in the data included a $6,000 emergency repair after a flood. Next year Tallgrass plans 48,000 machine hours.",
+   ["Predict 2027 maintenance with each method.", "Which would you use, and why?", "How should the flood month be handled?", "What other driver might Ana test?"],
+   "High-low: 120,000 + 192,000 = $312,000. Regression: 110,400 + 204,000 = $314,400. Prefer regression (all data, fit measured), after removing or adjusting the flood outlier, which distorts both but high-low most if it's an extreme point. Test number of setups or bike-model changes."],
+  "exam": [
+   ["Explain the three criteria for choosing a cost driver.", 5, "Economic plausibility (causal link); goodness of fit (r-squared); slope of the regression line (steep, significant)."],
+   ["Using the high-low method: 3,000 hours $21,000; 7,000 hours $37,000. Find the cost function and predict cost at 5,500 hours.", 5, "b = 16,000 ÷ 4,000 = $4; a = 21,000 − 12,000 = 9,000; at 5,500: 9,000 + 22,000 = $31,000."]
+  ],
+  "outcomes": ["Describe linear cost functions and the relevant range", "Compare four cost estimation methods", "Apply the high-low method", "Interpret regression output", "Choose cost drivers and use the cost hierarchy", "Apply the cumulative average-time learning model"],
+  "take": ["y = a + bX within a relevant range", "Engineering, conference, account analysis, quantitative", "High-low uses two activity extremes", "Read slope, r-squared and t-value", "Plausibility, fit and slope pick drivers", "Learning curves: time falls as output doubles"]
+ },
+ "ex": [
+  {"type": "sort", "q": "Variable, fixed or mixed for Tallgrass?", "cats": ["Variable", "Fixed", "Mixed"], "items": [["Battery packs", 0], ["Factory lease", 1], ["Electricity with a base charge", 2], ["Tires", 0], ["Insurance", 1]], "why": "Variable costs move with output, fixed don't, mixed have both parts.", "video": "1.1"},
+  {"type": "num", "q": "Cost = $5,000 + $6 per hour. What is total cost at 2,500 hours?", "a": 20000, "unit": "$", "why": "5,000 + 15,000 = 20,000.", "video": "1.1"},
+  {"type": "match", "q": "Match each estimation method.", "pairs": [["Time-and-motion study", "Industrial engineering"], ["Pooling expert opinions", "Conference"], ["Classifying ledger accounts", "Account analysis"], ["Fitting past data", "Quantitative analysis"]], "why": "These are the four methods.", "video": "1.2"},
+  {"type": "num", "q": "High: 8,000 hours, $52,000. Low: 3,000 hours, $27,000. What is the variable cost per hour?", "a": 5, "tol": 0.01, "unit": "$", "why": "25,000 ÷ 5,000 = 5.", "video": "1.3"},
+  {"type": "num", "q": "Same data: what is the fixed cost?", "a": 12000, "unit": "$", "why": "52,000 − 5 × 8,000 = 12,000.", "video": "1.3"},
+  {"type": "mcq", "q": "A regression has r-squared 0.92. What does that mean?", "opts": ["The slope is 0.92", "92% of the variation in cost is explained by the driver", "Cost rises 92% with the driver", "The prediction is 92% accurate"], "a": 1, "why": "R-squared is the share of variation explained.", "video": "1.4"},
+  {"type": "sort", "q": "Place each cost in the cost hierarchy.", "cats": ["Unit", "Batch", "Product-sustaining", "Facility-sustaining"], "items": [["Motor for each bike", 0], ["Machine setup per run", 1], ["Design of the cargo model", 2], ["Plant security", 3]], "why": "The hierarchy groups costs by what drives them.", "video": "1.5"},
+  {"type": "num", "q": "80% cumulative average-time curve, first unit 200 hours. What is the total time for 4 units?", "a": 512, "unit": "hrs", "why": "Average for 4 = 200 × 0.8 × 0.8 = 128; × 4 = 512.", "video": "1.6"}
+ ]
+}

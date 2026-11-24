@@ -1,0 +1,16 @@
+{
+ "num": "ACCT 341",
+ "course": "ACCT 341 Cost Accounting II",
+ "desc": "cost and managerial accounting for planning, decisions and control",
+ "lede": "Designing and using cost and managerial accounting systems for planning, performance evaluation and decision-making, in",
+ "intro": "An advanced study of the design, development and use of cost and managerial accounting systems for planning, performance evaluation and analysis in management decision-making: cost behavior and prediction, data analytics, CVP, budgeting, relevant costs, pricing, capital budgeting, customer profitability, the balanced scorecard, quality and time, inventory management, transfer pricing and performance measurement. Prerequisite: MGMT 300 and ACCT 340 or ACCT 413. The course builds on <a href=\"../cost-accounting-i/\">ACCT 413 Cost Accounting I</a>. One fictional Marshall, Minnesota company runs through it: Tallgrass Cycles, an e-bike maker with a Trail bike and a Cargo bike, its CFO Ana Vang, and its dealers Prairie Pedals, Lakes Cycle and Big Sky Bikes.",
+ "book_note": "The standard cost accounting text in the US, built around the theme of different costs for different purposes. ACCT 341 and ACCT 413 share this one book and split its 24 chapters between them with no overlap: if you took ACCT 413, you already own it.",
+ "book_split": "ACCT 341 reads Chapters 3, 6, 9&ndash;15 and 20&ndash;24. ACCT 413 Cost Accounting I reads the other ten.",
+ "reading_note": "The whole semester's reading in one table. Lectures follow the course's logic (cost behavior, planning, decisions, then performance and control), so chapters are not read in book order.",
+ "parts": [
+  "Cost behavior and prediction",
+  "Planning",
+  "Decisions",
+  "Performance and control"
+ ]
+}
