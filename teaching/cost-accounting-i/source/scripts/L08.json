@@ -1,0 +1,587 @@
+{
+ "videos": [
+  {
+   "id": "8.1",
+   "title": "Process costing basics",
+   "lecture": "Lecture 8 \u00b7 Process costing: weighted average",
+   "take": "Process costing averages a department's costs over the identical units it produces",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "When every unit is identical, you don't need a job record for each one. You average. That's process costing."
+    },
+    {
+     "type": "key",
+     "big": "Meet Redwood Valley Creamery",
+     "sub": [
+      "Cheddar cheese blocks, made in Marshall:",
+      "Mixing, then Aging"
+     ],
+     "say": "Meet Redwood Valley Creamery, a Marshall cheese maker. Milk goes through two departments: Mixing, where it's cultured, curdled and pressed into blocks, and Aging, where blocks mature before sale. Every block is the same, so it uses process costing."
+    },
+    {
+     "type": "compare",
+     "heading": "Job vs process",
+     "cols": [
+      "Job costing",
+      "Process costing"
+     ],
+     "rows": [
+      [
+       "Costs collected by",
+       "Job",
+       "Department, per period"
+      ],
+      [
+       "Unit cost",
+       "Cost of each job",
+       "Department cost \u00f7 units"
+      ],
+      [
+       "WIP accounts",
+       "One, many jobs",
+       "One per department"
+      ]
+     ],
+     "say": "Job costing collects costs by job. Process costing collects them by department for a period, then divides by the units produced. Each department has its own work-in-process account."
+    },
+    {
+     "type": "table",
+     "heading": "February: no beginning or ending WIP",
+     "rows": [
+      [
+       "Direct materials: milk, cultures",
+       540000
+      ],
+      [
+       "Conversion costs: labor and overhead",
+       324000
+      ],
+      [
+       "Total costs",
+       864000,
+       "total"
+      ],
+      [
+       "Blocks started and finished",
+       "18,000"
+      ],
+      [
+       "Cost per block",
+       48,
+       "total"
+      ]
+     ],
+     "say": "In the simplest case, all work started in the month is finished. In February, Mixing spent $540,000 on milk and cultures and $324,000 on conversion costs, and finished eighteen thousand blocks: forty-eight dollars a block."
+    },
+    {
+     "type": "key",
+     "big": "Half-finished units complicate it",
+     "sub": [
+      "Partly done blocks need",
+      "equivalent units"
+     ],
+     "say": "The complication comes when some blocks are only partly finished at the end of the month. That's where equivalent units come in."
+    },
+    {
+     "type": "quiz",
+     "q": "Costs $250,000; 10,000 units started and completed; no WIP. Cost per unit?",
+     "opts": [
+      "$2.50",
+      "$25",
+      "$250",
+      "$40"
+     ],
+     "answer": 1,
+     "say": "Quick check. Costs two hundred fifty thousand; ten thousand units started and completed; no work in process. Cost per unit? Pause and pick.",
+     "reveal": "It's B, twenty-five dollars."
+    }
+   ]
+  },
+  {
+   "id": "8.2",
+   "title": "Equivalent units",
+   "lecture": "Lecture 8 \u00b7 Process costing: weighted average",
+   "take": "Equivalent units convert partly finished units into the number of whole units that work would make",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Four thousand blocks are only a quarter done. How many finished blocks is that worth? Equivalent units answer that."
+    },
+    {
+     "type": "define",
+     "big": "Equivalent units",
+     "sub": [
+      "Physical units \u00d7 percentage complete,",
+      "computed for each cost category"
+     ],
+     "say": "Equivalent units are the number of complete units that could have been made with the work actually done. Multiply physical units by their percentage of completion, separately for each cost category."
+    },
+    {
+     "type": "table",
+     "heading": "4,000 blocks in ending WIP",
+     "rows": [
+      [
+       "Materials: 100%, added at start",
+       "4,000 EU"
+      ],
+      [
+       "Conversion: 25% complete",
+       "1,000 EU"
+      ]
+     ],
+     "say": "In Mixing, all the milk is added at the start, so four thousand blocks in process are a hundred percent complete for materials: four thousand equivalent units. But they're only twenty-five percent through conversion: a thousand equivalent units."
+    },
+    {
+     "type": "key",
+     "big": "Materials and conversion differ",
+     "sub": [
+      "Materials often go in at a point;",
+      "conversion happens evenly"
+     ],
+     "say": "That's why we compute equivalent units separately. Materials are often added at a particular point, while conversion costs are incurred evenly through the process."
+    },
+    {
+     "type": "key",
+     "big": "Supervisors estimate completion",
+     "sub": [
+      "Judgment, sensors and",
+      "time-in-process data"
+     ],
+     "say": "Who decides a block is twenty-five percent complete? Supervisors estimate it, helped by process timings and sensors. The estimates matter, because they split costs between finished and unfinished units."
+    },
+    {
+     "type": "quiz",
+     "q": "2,000 units are 60% complete for conversion. Conversion equivalent units?",
+     "opts": [
+      "800",
+      "1,200",
+      "2,000",
+      "3,333"
+     ],
+     "answer": 1,
+     "say": "Quick check. Two thousand units are sixty percent complete for conversion. How many conversion equivalent units? Pause and pick.",
+     "reveal": "It's B, twelve hundred."
+    }
+   ]
+  },
+  {
+   "id": "8.3",
+   "title": "The five-step approach",
+   "lecture": "Lecture 8 \u00b7 Process costing: weighted average",
+   "take": "Summarize physical units, compute equivalent units, total the costs, compute cost per EU, assign costs",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Every process costing problem follows the same five steps. Learn them, and the method doesn't matter."
+    },
+    {
+     "type": "flow",
+     "heading": "Five steps",
+     "items": [
+      "Summarize physical units",
+      "Compute equivalent units",
+      "Summarize total costs to account for",
+      "Compute cost per equivalent unit",
+      "Assign costs to units out and in WIP"
+     ],
+     "say": "Step one: summarize the flow of physical units. Step two: compute equivalent units for each cost category. Step three: summarize the total costs to account for. Step four: compute the cost per equivalent unit. Step five: assign costs to units completed and to ending work in process."
+    },
+    {
+     "type": "table",
+     "heading": "Mixing, March: the data",
+     "rows": [
+      [
+       "Beginning WIP, 40% converted",
+       "2,000 blocks"
+      ],
+      [
+       "Started in March",
+       "18,000"
+      ],
+      [
+       "Completed",
+       "16,000"
+      ],
+      [
+       "Ending WIP, 25% converted",
+       "4,000"
+      ],
+      [
+       "Beginning costs: DM | CC",
+       "$56k | $16k"
+      ],
+      [
+       "Added in March: DM | CC",
+       "$540k | $324k"
+      ]
+     ],
+     "say": "Here's Mixing in March. It began with two thousand blocks, forty percent converted, carrying $56,000 of materials and $16,000 of conversion cost. It started eighteen thousand blocks, finished sixteen thousand and ended with four thousand, a quarter converted. March added $540,000 of materials and $324,000 of conversion cost."
+    },
+    {
+     "type": "compare",
+     "heading": "Two methods",
+     "cols": [
+      "Weighted average",
+      "FIFO"
+     ],
+     "rows": [
+      [
+       "Beginning WIP",
+       "Blended with current work",
+       "Kept separate"
+      ],
+      [
+       "Cost per EU",
+       "Average of all costs",
+       "This period's costs only"
+      ]
+     ],
+     "say": "There are two methods. Weighted average blends the work done last month on beginning inventory with this month's work. FIFO keeps them separate. This lecture covers weighted average; Lecture 9 covers FIFO."
+    },
+    {
+     "type": "key",
+     "big": "Materials added at the start",
+     "sub": [
+      "So every block in Mixing is 100%",
+      "complete for materials"
+     ],
+     "say": "One fact to remember for Mixing: all materials go in at the start, so every block in process is complete for materials."
+    },
+    {
+     "type": "quiz",
+     "q": "Which step comes after computing equivalent units?",
+     "opts": [
+      "Assign costs",
+      "Summarize total costs to account for",
+      "Summarize physical units",
+      "Compute cost per EU"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which step comes after computing equivalent units? Pause and pick.",
+     "reveal": "It's B: summarize the total costs to account for."
+    }
+   ]
+  },
+  {
+   "id": "8.4",
+   "title": "Weighted average: units",
+   "lecture": "Lecture 8 \u00b7 Process costing: weighted average",
+   "take": "Weighted-average equivalent units = units completed + equivalent units in ending WIP",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Steps one and two under weighted average. The rule is simple: completed units, plus the equivalent units still in process."
+    },
+    {
+     "type": "table",
+     "heading": "Step 1: physical units",
+     "rows": [
+      [
+       "Beginning WIP",
+       "2,000"
+      ],
+      [
+       "Started in March",
+       "18,000"
+      ],
+      [
+       "To account for",
+       "20,000",
+       "total"
+      ],
+      [
+       "Completed and transferred out",
+       "16,000"
+      ],
+      [
+       "Ending WIP",
+       "4,000"
+      ],
+      [
+       "Accounted for",
+       "20,000",
+       "total"
+      ]
+     ],
+     "say": "Step one. Two thousand blocks in beginning inventory plus eighteen thousand started gives twenty thousand to account for. Sixteen thousand were completed and four thousand remain in process: twenty thousand accounted for."
+    },
+    {
+     "type": "define",
+     "big": "WA equivalent units",
+     "sub": [
+      "Units completed (100%)",
+      "+ ending WIP \u00d7 % complete"
+     ],
+     "say": "Weighted-average equivalent units are units completed, which are a hundred percent done, plus the equivalent units in ending work in process. It doesn't matter whether the completed units started this month or last."
+    },
+    {
+     "type": "table",
+     "heading": "Step 2: equivalent units",
+     "rows": [
+      [
+       "Category",
+       "DM | Conversion",
+       "head"
+      ],
+      [
+       "Completed",
+       "16,000 | 16,000"
+      ],
+      [
+       "Ending WIP",
+       "4,000 | 1,000"
+      ],
+      [
+       "Equivalent units",
+       "20,000 | 17,000"
+      ]
+     ],
+     "say": "For materials: sixteen thousand completed plus four thousand in ending inventory, twenty thousand equivalent units. For conversion: sixteen thousand plus a quarter of four thousand, seventeen thousand."
+    },
+    {
+     "type": "key",
+     "big": "Beginning WIP's % doesn't matter",
+     "sub": [
+      "Under weighted average, its earlier work",
+      "is folded into this period"
+     ],
+     "say": "Notice that the forty percent completion of beginning inventory never entered the calculation. Weighted average treats last month's work as if it were done this month."
+    },
+    {
+     "type": "quiz",
+     "q": "Completed 9,000 units; ending WIP 1,500 units, 40% converted. WA conversion equivalent units?",
+     "opts": [
+      "9,000",
+      "9,600",
+      "10,500",
+      "600"
+     ],
+     "answer": 1,
+     "say": "Quick check. Nine thousand units completed; fifteen hundred in ending inventory, forty percent converted. Weighted-average conversion equivalent units? Pause and pick.",
+     "reveal": "It's B. Nine thousand plus six hundred is ninety-six hundred."
+    }
+   ]
+  },
+  {
+   "id": "8.5",
+   "title": "Weighted average: costs",
+   "lecture": "Lecture 8 \u00b7 Process costing: weighted average",
+   "take": "WA cost per EU = (beginning WIP cost + current cost) \u00f7 WA equivalent units",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Steps three to five. Add up the costs, divide by equivalent units, and assign."
+    },
+    {
+     "type": "table",
+     "heading": "Steps 3 and 4: cost per equivalent unit",
+     "rows": [
+      [
+       "Category",
+       "DM | Conversion",
+       "head"
+      ],
+      [
+       "Beginning WIP",
+       "$56,000 | $16,000"
+      ],
+      [
+       "Added in March",
+       "$540,000 | $324,000"
+      ],
+      [
+       "Total costs",
+       "$596,000 | $340,000"
+      ],
+      [
+       "\u00f7 equivalent units",
+       "20,000 | 17,000"
+      ],
+      [
+       "Cost per EU",
+       "$29.80 | $20.00"
+      ]
+     ],
+     "say": "Materials: $56,000 in beginning inventory plus $540,000 added, $596,000, divided by twenty thousand equivalent units: $29.80. Conversion: $16,000 plus $324,000, $340,000, divided by seventeen thousand: twenty dollars."
+    },
+    {
+     "type": "table",
+     "heading": "Step 5: assign costs",
+     "rows": [
+      [
+       "Completed: 16,000 \u00d7 $49.80",
+       796800
+      ],
+      [
+       "Ending WIP materials: 4,000 \u00d7 $29.80",
+       119200
+      ],
+      [
+       "Ending WIP conversion: 1,000 \u00d7 $20",
+       20000
+      ],
+      [
+       "Ending WIP",
+       139200,
+       "total"
+      ],
+      [
+       "Total accounted for",
+       936000,
+       "total"
+      ]
+     ],
+     "say": "Each completed block costs $49.80: sixteen thousand of them is $796,800, transferred to Aging. Ending inventory gets four thousand materials units at $29.80 and a thousand conversion units at twenty dollars: $139,200. Together, $936,000, exactly the costs to account for."
+    },
+    {
+     "type": "key",
+     "big": "Always check the total",
+     "sub": [
+      "Costs assigned must equal",
+      "costs to account for"
+     ],
+     "say": "Always check: the costs assigned must equal the total costs to account for, here $936,000."
+    },
+    {
+     "type": "key",
+     "big": "Simple, but blends periods",
+     "sub": [
+      "Last month's prices are averaged",
+      "with this month's"
+     ],
+     "say": "Weighted average is simple, but it blends last month's costs with this month's, which can blur changes in efficiency or prices."
+    },
+    {
+     "type": "quiz",
+     "q": "Total conversion costs $90,000; WA conversion EU 18,000. Cost per EU?",
+     "opts": [
+      "$5",
+      "$0.20",
+      "$50",
+      "$18"
+     ],
+     "answer": 0,
+     "say": "Quick check. Total conversion costs ninety thousand; weighted-average conversion equivalent units eighteen thousand. Cost per equivalent unit? Pause and pick.",
+     "reveal": "It's A, five dollars."
+    }
+   ]
+  },
+  {
+   "id": "8.6",
+   "title": "Journal entries in process costing",
+   "lecture": "Lecture 8 \u00b7 Process costing: weighted average",
+   "take": "Each department has its own WIP account; completed units transfer cost to the next department",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "In process costing, costs move from department to department, each with its own work-in-process account."
+    },
+    {
+     "type": "journal",
+     "heading": "Costs added in Mixing, March",
+     "rows": [
+      [
+       "Work in process: Mixing",
+       540000,
+       ""
+      ],
+      [
+       "Materials inventory",
+       "",
+       540000
+      ],
+      [
+       "Work in process: Mixing",
+       324000,
+       ""
+      ],
+      [
+       "Wages payable and MOH allocated",
+       "",
+       324000
+      ]
+     ],
+     "say": "Materials put into Mixing debit work in process Mixing and credit materials: $540,000. Conversion costs, labor and applied overhead, debit work in process Mixing for $324,000."
+    },
+    {
+     "type": "journal",
+     "heading": "Transfer to Aging",
+     "rows": [
+      [
+       "Work in process: Aging",
+       796800,
+       ""
+      ],
+      [
+       "Work in process: Mixing",
+       "",
+       796800
+      ]
+     ],
+     "say": "Completed blocks move to Aging. Debit work in process Aging, credit work in process Mixing: $796,800. In Aging, these become transferred-in costs."
+    },
+    {
+     "type": "taccount",
+     "heading": "WIP: Mixing, March",
+     "accounts": [
+      {
+       "name": "WIP: Mixing",
+       "entries": [
+        [
+         "dr",
+         72000
+        ],
+        [
+         "dr",
+         540000
+        ],
+        [
+         "dr",
+         324000
+        ],
+        [
+         "cr",
+         796800
+        ]
+       ],
+       "balance": [
+        "dr",
+        139200
+       ]
+      }
+     ],
+     "say": "The Mixing T-account: $72,000 beginning balance, plus $540,000 and $324,000 added, less $796,800 transferred out, leaves $139,200, the ending inventory we computed."
+    },
+    {
+     "type": "key",
+     "big": "Aging adds its own costs",
+     "sub": [
+      "Then transfers to finished goods",
+      "when blocks are ready to sell"
+     ],
+     "say": "Aging adds its own conversion costs, then transfers finished blocks to finished goods. That's Lecture 9."
+    },
+    {
+     "type": "quiz",
+     "q": "Which entry moves completed blocks from Mixing to Aging?",
+     "opts": [
+      "Dr WIP Mixing, Cr WIP Aging",
+      "Dr WIP Aging, Cr WIP Mixing",
+      "Dr Finished goods, Cr WIP Mixing",
+      "Dr COGS, Cr WIP Aging"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which entry moves completed blocks from Mixing to Aging? Pause and pick.",
+     "reveal": "It's B. Debit Aging, credit Mixing."
+    }
+   ]
+  }
+ ]
+}

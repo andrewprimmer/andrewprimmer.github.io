@@ -1,0 +1,517 @@
+{
+ "videos": [
+  {
+   "id": "4.1",
+   "title": "Job costing or process costing?",
+   "lecture": "Lecture 4 \u00b7 Job costing",
+   "take": "Job costing tracks costs for distinct units; process costing averages costs over identical units",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "A custom trailer and a gallon of milk need different costing systems. Here's why."
+    },
+    {
+     "type": "compare",
+     "heading": "Two costing systems",
+     "cols": [
+      "Job costing",
+      "Process costing"
+     ],
+     "rows": [
+      [
+       "Product",
+       "Distinct, custom units",
+       "Masses of identical units"
+      ],
+      [
+       "Cost object",
+       "Each job",
+       "Each process"
+      ],
+      [
+       "Unit cost",
+       "Cost of the job",
+       "Average over units"
+      ],
+      [
+       "Examples",
+       "Trailers, audits, repairs",
+       "Milk, cereal, paint"
+      ]
+     ],
+     "say": "Job costing is for distinct, custom products, like Prairie Gate's trailers, an audit or a car repair. Costs are collected for each job. Process costing is for masses of identical units, like milk or cereal, where cost is averaged over all units."
+    },
+    {
+     "type": "key",
+     "big": "Prairie Gate: job costing",
+     "sub": [
+      "Every trailer is built to order"
+     ],
+     "say": "Prairie Gate builds every trailer to a customer's specification, so it uses job costing. Each trailer is a job with its own number."
+    },
+    {
+     "type": "key",
+     "big": "Redwood Valley Creamery: process costing",
+     "sub": [
+      "Thousands of identical gallons"
+     ],
+     "say": "Later we'll meet Redwood Valley Creamery, which turns milk into identical gallons, so it uses process costing. That's Lecture 8."
+    },
+    {
+     "type": "key",
+     "big": "Many firms use both",
+     "sub": [
+      "Custom options on a standard base"
+     ],
+     "say": "In practice many firms blend the two. A company that builds standard trailers with custom options might process-cost the base and job-cost the options."
+    },
+    {
+     "type": "quiz",
+     "q": "Which business should use job costing?",
+     "opts": [
+      "An oil refinery",
+      "A soft-drink bottler",
+      "A custom home builder",
+      "A flour mill"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which business should use job costing? Pause and pick.",
+     "reveal": "It's C. Each house is distinct. The others make identical units."
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "title": "Seven steps to cost a job",
+   "lecture": "Lecture 4 \u00b7 Job costing",
+   "take": "Trace direct costs, then allocate indirect costs with a rate based on a cost-allocation base",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Costing a job follows seven steps. Learn them once and they work for trailers, audits and repairs."
+    },
+    {
+     "type": "flow",
+     "heading": "Seven steps",
+     "items": [
+      "Identify the job",
+      "Trace direct costs",
+      "Choose bases and cost pools",
+      "Compute the indirect cost rate",
+      "Allocate indirect costs",
+      "Total the job's costs"
+     ],
+     "say": "One, identify the job. Two, trace its direct costs. Three, choose the base for allocating indirect costs. Four, identify the indirect cost pools. Five, compute the rate per unit of the base. Six, allocate indirect costs to the job. Seven, add it all up."
+    },
+    {
+     "type": "define",
+     "big": "Cost-allocation base",
+     "sub": [
+      "A measure that links indirect",
+      "costs to jobs: labor hours, machine hours"
+     ],
+     "say": "The cost-allocation base links indirect costs to jobs. Prairie Gate's factory is labor-intensive, so it uses direct labor hours: jobs that take more hours use more supervision, power and equipment."
+    },
+    {
+     "type": "define",
+     "big": "Indirect cost rate",
+     "sub": [
+      "Indirect cost pool \u00f7",
+      "quantity of the allocation base"
+     ],
+     "say": "The indirect cost rate is the indirect cost pool divided by the total quantity of the allocation base."
+    },
+    {
+     "type": "key",
+     "big": "One pool or many",
+     "sub": [
+      "Simple systems: one plant-wide rate",
+      "Refined systems: a rate per department or activity"
+     ],
+     "say": "A simple system uses one plant-wide pool and rate. More refined systems use a pool for each department or activity, which you'll see in Lectures 6 and 7."
+    },
+    {
+     "type": "quiz",
+     "q": "Which step comes right after choosing the cost-allocation base and identifying the cost pool?",
+     "opts": [
+      "Trace direct costs",
+      "Compute the indirect cost rate",
+      "Identify the job",
+      "Total the costs"
+     ],
+     "answer": 1,
+     "say": "Quick check. After choosing the base and identifying the pool, what's next? Pause and pick.",
+     "reveal": "It's B: compute the rate, pool divided by base."
+    }
+   ]
+  },
+  {
+   "id": "4.3",
+   "title": "Normal costing and budgeted rates",
+   "lecture": "Lecture 4 \u00b7 Job costing",
+   "take": "Normal costing applies overhead with a budgeted annual rate so job costs are known as work is done",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Actual overhead isn't known until year-end. But Karen needs job costs now. The answer is normal costing."
+    },
+    {
+     "type": "compare",
+     "heading": "Actual vs normal costing",
+     "cols": [
+      "Actual costing",
+      "Normal costing"
+     ],
+     "rows": [
+      [
+       "Direct costs",
+       "Actual",
+       "Actual"
+      ],
+      [
+       "Indirect costs",
+       "Actual rate \u00d7 actual base",
+       "Budgeted rate \u00d7 actual base"
+      ]
+     ],
+     "say": "Both systems trace actual direct costs. Actual costing allocates indirect costs at the actual rate, known only after the year ends. Normal costing uses a budgeted rate set at the start of the year, times the actual quantity of the base."
+    },
+    {
+     "type": "table",
+     "heading": "Prairie Gate's 2027 budgeted rate",
+     "rows": [
+      [
+       "Budgeted manufacturing overhead",
+       1728000
+      ],
+      [
+       "Budgeted direct labor hours",
+       "48,000"
+      ],
+      [
+       "Budgeted overhead rate per hour",
+       "$36",
+       "total"
+      ]
+     ],
+     "say": "Prairie Gate budgets $1,728,000 of manufacturing overhead for 2027 and forty-eight thousand direct labor hours. Its budgeted overhead rate is thirty-six dollars per direct labor hour."
+    },
+    {
+     "type": "list",
+     "heading": "Why an annual rate?",
+     "items": [
+      "Overhead is seasonal: heating in winter",
+      "Volume swings month to month",
+      "Costs aren't known until bills arrive",
+      "A monthly rate would make identical jobs cost differently"
+     ],
+     "say": "Why annual? Overhead is seasonal, with heating bills in winter. Volume swings month to month. Some bills arrive late. And a monthly rate would make an identical trailer cost more in January than in June."
+    },
+    {
+     "type": "key",
+     "big": "Budgeted \u2260 actual",
+     "sub": [
+      "Differences are dealt with at year-end:",
+      "Lecture 5"
+     ],
+     "say": "Of course, budgets are rarely exact. The difference between overhead applied and overhead actually incurred is handled at year-end, in Lecture 5."
+    },
+    {
+     "type": "quiz",
+     "q": "Budgeted overhead $900,000; budgeted machine hours 30,000. A job uses 12 machine hours. Overhead applied?",
+     "opts": [
+      "$300",
+      "$360",
+      "$30",
+      "$3,600"
+     ],
+     "answer": 1,
+     "say": "Quick check. Budgeted overhead nine hundred thousand; budgeted machine hours thirty thousand. A job uses twelve machine hours. How much overhead is applied? Pause and pick.",
+     "reveal": "It's B. The rate is $30 an hour, times twelve: $360."
+    }
+   ]
+  },
+  {
+   "id": "4.4",
+   "title": "Source documents",
+   "lecture": "Lecture 4 \u00b7 Job costing",
+   "take": "Materials requisitions and labor time records feed each job cost record",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Where do the numbers on a job come from? Three documents, usually digital now."
+    },
+    {
+     "type": "compare",
+     "heading": "Three source documents",
+     "cols": [
+      "Records",
+      "Feeds"
+     ],
+     "rows": [
+      [
+       "Job cost record",
+       "All costs of one job",
+       "WIP subsidiary ledger"
+      ],
+      [
+       "Materials requisition",
+       "Materials issued to a job",
+       "Direct materials on the job"
+      ],
+      [
+       "Labor time record",
+       "Hours worked on each job",
+       "Direct labor on the job"
+      ]
+     ],
+     "say": "The job cost record collects every cost of one job. A materials requisition records materials issued to a specific job. A labor time record shows the hours each worker spent on each job."
+    },
+    {
+     "type": "table",
+     "heading": "Requisition #2291 \u00b7 Job 418",
+     "rows": [
+      [
+       "Steel frame tubing, 40 lengths \u00d7 $65",
+       2600
+      ],
+      [
+       "Axles, 2 \u00d7 $780",
+       1560
+      ],
+      [
+       "Tires and wheels, 4 \u00d7 $310",
+       1240
+      ],
+      [
+       "Total charged to job 418",
+       5400,
+       "total"
+      ]
+     ],
+     "say": "Requisition twenty-two ninety-one issues forty lengths of steel tubing, two axles and four wheels to job four-eighteen: $5,400. A second requisition adds the flooring and lights later."
+    },
+    {
+     "type": "key",
+     "big": "Digital now",
+     "sub": [
+      "Barcode scans and time apps",
+      "post costs to jobs in real time"
+     ],
+     "say": "Today these are mostly digital. Workers scan a job barcode at each station, and materials are scanned out of the storeroom, so job costs update in real time."
+    },
+    {
+     "type": "key",
+     "big": "The WIP control account",
+     "sub": [
+      "Sum of all open job cost records"
+     ],
+     "say": "Add up the job cost records for every unfinished job and you get the balance of the work-in-process control account."
+    },
+    {
+     "type": "quiz",
+     "q": "Which document shows how many hours a welder spent on job 418?",
+     "opts": [
+      "Materials requisition",
+      "Labor time record",
+      "Purchase order",
+      "Sales invoice"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which document shows a welder's hours on job four-eighteen? Pause and pick.",
+     "reveal": "It's B, the labor time record."
+    }
+   ]
+  },
+  {
+   "id": "4.5",
+   "title": "Costing trailer #418",
+   "lecture": "Lecture 4 \u00b7 Job costing",
+   "take": "Job cost = direct materials + direct labor + overhead applied at the budgeted rate",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Let's put the seven steps together and cost trailer four-eighteen, a twenty-four-foot livestock trailer."
+    },
+    {
+     "type": "table",
+     "heading": "Job cost record \u00b7 Trailer #418",
+     "rows": [
+      [
+       "Direct materials, two requisitions",
+       6200
+      ],
+      [
+       "Direct labor: 80 hours \u00d7 $30",
+       2400
+      ],
+      [
+       "Overhead: 80 hours \u00d7 $36",
+       2880
+      ],
+      [
+       "Total job cost",
+       11480,
+       "total"
+      ]
+     ],
+     "say": "Trailer four-eighteen used $6,200 of direct materials. Workers logged eighty hours at thirty dollars, $2,400. Overhead is applied at the budgeted rate of thirty-six dollars for each of those eighty hours, $2,880. Total job cost: $11,480."
+    },
+    {
+     "type": "table",
+     "heading": "Was it profitable?",
+     "rows": [
+      [
+       "Price to the customer",
+       14500
+      ],
+      [
+       "Job cost",
+       -11480
+      ],
+      [
+       "Gross margin",
+       3020,
+       "total"
+      ],
+      [
+       "Gross margin percentage",
+       "20.8%"
+      ]
+     ],
+     "say": "The customer paid $14,500, so the job's gross margin is $3,020, or about twenty-one percent."
+    },
+    {
+     "type": "key",
+     "big": "Use it to bid",
+     "sub": [
+      "Similar trailers: ~80 hours",
+      "Bid cost + markup for value chain costs"
+     ],
+     "say": "Karen uses job records like this to bid on future work. A similar trailer will take about eighty hours, and her price must also cover design, delivery and administration, which aren't in the job cost."
+    },
+    {
+     "type": "key",
+     "big": "Then check the estimate",
+     "sub": [
+      "Compare actual hours and materials",
+      "with the bid on every job"
+     ],
+     "say": "After each job, comparing actual hours and materials with the bid shows whether the estimates, or the welders, need attention."
+    },
+    {
+     "type": "quiz",
+     "q": "Job 419: DM $4,800, 60 labor hours at $30, overhead $36 an hour. Total cost?",
+     "opts": [
+      "$6,600",
+      "$8,760",
+      "$9,000",
+      "$4,800"
+     ],
+     "answer": 1,
+     "say": "Quick check. Job four-nineteen: direct materials forty-eight hundred, sixty labor hours at thirty dollars, overhead thirty-six an hour. Total cost? Pause and pick.",
+     "reveal": "It's B. 4,800 plus 1,800 plus 2,160 is $8,760."
+    }
+   ]
+  },
+  {
+   "id": "4.6",
+   "title": "Job costing in services",
+   "lecture": "Lecture 4 \u00b7 Job costing",
+   "take": "Service firms cost each engagement with direct professional labor plus allocated support costs",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Job costing isn't just for factories. Accounting firms, hospitals and repair shops cost every job too."
+    },
+    {
+     "type": "compare",
+     "heading": "Same steps, different words",
+     "cols": [
+      "Factory",
+      "Accounting firm"
+     ],
+     "rows": [
+      [
+       "Job",
+       "A trailer",
+       "An audit engagement"
+      ],
+      [
+       "Direct cost",
+       "Materials, welders",
+       "Professional hours"
+      ],
+      [
+       "Indirect cost",
+       "Factory overhead",
+       "Rent, admin, IT support"
+      ]
+     ],
+     "say": "In an accounting firm, the job is an engagement, the main direct cost is professional labor, and indirect costs are rent, administrative staff and technology."
+    },
+    {
+     "type": "table",
+     "heading": "Lyon & Co. CPAs: audit of Prairie Gate",
+     "rows": [
+      [
+       "Professional labor: 400 hours \u00d7 $60",
+       24000
+      ],
+      [
+       "Support costs: 110% of labor",
+       26400
+      ],
+      [
+       "Total engagement cost",
+       50400,
+       "total"
+      ],
+      [
+       "Fee bid at 25% markup",
+       63000
+      ]
+     ],
+     "say": "Lyon and Company, a Marshall accounting firm, estimates four hundred professional hours at sixty dollars for Prairie Gate's audit: $24,000. Support costs are allocated at one hundred ten percent of professional labor, $26,400. The engagement will cost $50,400, and a twenty-five percent markup gives a bid of $63,000."
+    },
+    {
+     "type": "key",
+     "big": "No inventory",
+     "sub": [
+      "Service job costs go to expense,",
+      "not finished goods"
+     ],
+     "say": "With no inventory, a service firm's job costs go straight to expense. But job costing still drives pricing, staffing and profitability analysis."
+    },
+    {
+     "type": "key",
+     "big": "Track budget vs actual hours",
+     "sub": [
+      "Overruns signal scope creep",
+      "or a bid that was too low"
+     ],
+     "say": "Firms track budgeted versus actual hours on every engagement. Overruns signal scope creep or a bid that was too low."
+    },
+    {
+     "type": "quiz",
+     "q": "An engagement uses 150 hours at $70, with support at 90% of labor. Total cost?",
+     "opts": [
+      "$10,500",
+      "$19,950",
+      "$9,450",
+      "$20,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. An engagement uses a hundred fifty hours at seventy dollars, with support at ninety percent of labor. Total cost? Pause and pick.",
+     "reveal": "It's B. Labor $10,500 plus support $9,450: $19,950."
+    }
+   ]
+  }
+ ]
+}

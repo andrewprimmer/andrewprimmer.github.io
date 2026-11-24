@@ -1,0 +1,741 @@
+{
+ "meta": {
+  "n": 7,
+  "short": "Relevant costs and decisions",
+  "title": "Decision making and relevant information",
+  "week": 7,
+  "ch": "Chapter 12",
+  "part": "Decisions",
+  "summary": "What makes information relevant, special orders, make-or-buy and opportunity costs, product mix under a constraint, keeping or dropping a product line, and equipment replacement with sunk costs."
+ },
+ "videos": [
+  {
+   "id": "7.1",
+   "title": "What is relevant?",
+   "lecture": "Lecture 7 · Relevant costs",
+   "take": "Relevant costs and revenues are expected future amounts that differ among the alternatives",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Every decision has a pile of numbers attached. Most of them don't matter. Here's how to find the ones that do."
+    },
+    {
+     "type": "define",
+     "big": "Relevant information",
+     "sub": [
+      "Expected future costs and revenues",
+      "that differ among alternatives"
+     ],
+     "say": "Relevant costs and revenues are expected future amounts that differ among the alternatives being considered. Both tests must be met: future, and different."
+    },
+    {
+     "type": "compare",
+     "heading": "Relevant or not?",
+     "cols": [
+      "Relevant?",
+      "Why"
+     ],
+     "rows": [
+      [
+       "Battery cost for extra bikes",
+       "Yes",
+       "Future and changes"
+      ],
+      [
+       "Last year's tooling spend",
+       "No",
+       "Sunk: already spent"
+      ],
+      [
+       "Factory lease, either way",
+       "No",
+       "Same in both options"
+      ]
+     ],
+     "say": "The cost of batteries for extra bikes is relevant: it's future and it changes. Money already spent on tooling is a sunk cost: irrelevant. The factory lease, if it's paid either way, doesn't differ: also irrelevant."
+    },
+    {
+     "type": "define",
+     "big": "Sunk cost",
+     "sub": [
+      "A past cost that no decision",
+      "can change"
+     ],
+     "say": "A sunk cost is a past cost that nothing you decide can change. It's the most common trap in decision making."
+    },
+    {
+     "type": "key",
+     "big": "And the qualitative factors",
+     "sub": [
+      "Quality, reliability, morale,",
+      "customer relationships"
+     ],
+     "say": "Numbers aren't everything. Qualitative factors, like supplier reliability, quality, employee morale and customer relationships, must be weighed too."
+    },
+    {
+     "type": "quiz",
+     "q": "Tallgrass paid $40,000 last year for a cargo-bike prototype. Is it relevant to deciding whether to launch the bike?",
+     "opts": [
+      "Yes, it must be recovered",
+      "No, it's sunk",
+      "Only if the bike launches",
+      "Only for taxes"
+     ],
+     "answer": 1,
+     "say": "Quick check. Tallgrass paid forty thousand dollars last year for a prototype. Is that relevant to deciding whether to launch? Pause and pick.",
+     "reveal": "It's B. It's sunk: spent whatever Tallgrass decides now."
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "title": "One-time special orders",
+   "lecture": "Lecture 7 · Relevant costs",
+   "take": "With idle capacity, accept a special order if its price exceeds the incremental costs",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "A Wisconsin bike chain offers to buy a hundred fifty bikes, at a price below Tallgrass's full cost. Should Ana say yes?"
+    },
+    {
+     "type": "table",
+     "heading": "The offer",
+     "rows": [
+      [
+       "Bikes",
+       "150"
+      ],
+      [
+       "Price offered",
+       1800
+      ],
+      [
+       "Full manufacturing cost per bike",
+       1600
+      ],
+      [
+       "Variable manufacturing cost per bike",
+       1300
+      ],
+      [
+       "Shipping per bike (no dealer commission)",
+       50
+      ]
+     ],
+     "say": "The chain offers $1,800 a bike for a hundred fifty bikes. Tallgrass's full absorption cost is $1,600 a bike, but that includes $300 of fixed overhead. Variable manufacturing cost is $1,300, and shipping adds fifty dollars, with no dealer commission."
+    },
+    {
+     "type": "table",
+     "heading": "Relevant analysis, with idle capacity",
+     "rows": [
+      [
+       "Revenue: 150 × $1,800",
+       270000
+      ],
+      [
+       "Variable costs: 150 × $1,350",
+       -202500
+      ],
+      [
+       "Increase in operating income",
+       67500,
+       "total"
+      ]
+     ],
+     "say": "Tallgrass has idle capacity, so fixed costs won't change. Relevant revenue is $270,000 and relevant costs $202,500. Accepting adds $67,500 to operating income."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "Full cost misleads here",
+     "sub": [
+      "Fixed overhead per bike won't change",
+      "in total if the order is accepted"
+     ],
+     "say": "Using the $1,600 full cost would have made the order look barely worthwhile. But the fixed overhead is paid whether or not Tallgrass accepts."
+    },
+    {
+     "type": "list",
+     "heading": "Before saying yes",
+     "items": [
+      "Is capacity really idle?",
+      "Will regular dealers find out and demand lower prices?",
+      "Is it legal? Price discrimination rules"
+     ],
+     "say": "Before accepting: make sure capacity really is idle; consider whether regular dealers will hear about the price and demand the same; and check that the pricing is lawful."
+    },
+    {
+     "type": "quiz",
+     "q": "Variable cost per bike $1,350, idle capacity. What is the lowest price that doesn't reduce income?",
+     "opts": [
+      "$1,600",
+      "$1,350",
+      "$2,400",
+      "$1,800"
+     ],
+     "answer": 1,
+     "say": "Quick check. With idle capacity and variable cost of thirteen fifty a bike, what's the lowest price that doesn't reduce income? Pause and pick.",
+     "reveal": "It's B, $1,350, in the short run."
+    }
+   ]
+  },
+  {
+   "id": "7.3",
+   "title": "Make or buy, and opportunity cost",
+   "lecture": "Lecture 7 · Relevant costs",
+   "take": "Compare avoidable costs of making with the purchase price, including the opportunity cost of the capacity",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Tallgrass makes its own bike frames. A supplier offers them for less. Should Tallgrass outsource?"
+    },
+    {
+     "type": "table",
+     "heading": "Making 1,220 frames",
+     "rows": [
+      [
+       "Variable cost per frame: DM, DL, overhead",
+       210
+      ],
+      [
+       "Allocated fixed overhead per frame",
+       70
+      ],
+      [
+       "Full cost per frame",
+       280,
+       "total"
+      ],
+      [
+       "Supplier's price",
+       240
+      ]
+     ],
+     "say": "Each frame costs $210 in variable costs, plus $70 of allocated fixed overhead: $280 in total. A supplier offers $240."
+    },
+    {
+     "type": "table",
+     "heading": "Relevant costs for 1,220 frames",
+     "rows": [
+      [
+       "Make: variable 1,220 × $210",
+       256200
+      ],
+      [
+       "Make: avoidable supervisor",
+       25000
+      ],
+      [
+       "Relevant cost to make",
+       281200,
+       "total"
+      ],
+      [
+       "Buy: 1,220 × $240",
+       292800,
+       "total"
+      ]
+     ],
+     "say": "Only some fixed overhead goes away if Tallgrass buys: the frame supervisor's $25,000 salary. Relevant cost to make is $281,200. Buying costs $292,800. Making is $11,600 cheaper."
+    },
+    {
+     "type": "define",
+     "big": "Opportunity cost",
+     "sub": [
+      "The contribution given up by not using",
+      "a resource in its next-best use"
+     ],
+     "say": "But what else could the frame shop do? Opportunity cost is the contribution given up by not using a resource in its next-best alternative."
+    },
+    {
+     "type": "table",
+     "heading": "If the shop could make battery cases instead",
+     "rows": [
+      [
+       "Make frames: relevant cost",
+       281200
+      ],
+      [
+       "+ opportunity cost",
+       40000
+      ],
+      [
+       "Total cost of making",
+       321200,
+       "total"
+      ],
+      [
+       "Buy frames",
+       292800,
+       "total"
+      ]
+     ],
+     "say": "If the frame shop could instead make battery cases, saving $40,000 a year on purchases, making frames costs that $40,000 too. Now buying frames is $28,400 better."
+    },
+    {
+     "type": "quiz",
+     "q": "Relevant cost to make $50,000; buy $56,000; the freed space could earn $10,000 in rent. Decision?",
+     "opts": [
+      "Make, saves $6,000",
+      "Buy, saves $4,000",
+      "Make, saves $16,000",
+      "No difference"
+     ],
+     "answer": 1,
+     "say": "Quick check. Relevant cost to make is fifty thousand, to buy fifty-six thousand, and the freed space could earn ten thousand in rent. What's the decision? Pause and pick.",
+     "reveal": "It's B. Making really costs $60,000 including the forgone rent, so buying saves $4,000."
+    }
+   ]
+  },
+  {
+   "id": "7.4",
+   "title": "Product mix under a constraint",
+   "lecture": "Lecture 7 · Relevant costs",
+   "take": "When a resource is scarce, rank products by contribution margin per unit of that resource",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Assembly hours are Tallgrass's bottleneck. With limited hours, which bike should it build first?"
+    },
+    {
+     "type": "table",
+     "heading": "Contribution per assembly hour",
+     "rows": [
+      [
+       "Bike",
+       "Trail | Cargo",
+       "head"
+      ],
+      [
+       "Contribution margin per bike",
+       "$900 | $1,500"
+      ],
+      [
+       "Assembly hours per bike",
+       "6 | 12"
+      ],
+      [
+       "Contribution per hour",
+       "$150 | $125"
+      ]
+     ],
+     "say": "A Cargo bike contributes $1,500, more than a Trail bike's $900. But it takes twelve assembly hours, twice as long. Per hour of the scarce resource, the Trail bike earns $150 and the Cargo $125."
+    },
+    {
+     "type": "key",
+     "big": "Rank by CM per constrained unit",
+     "sub": [
+      "Not by CM per product"
+     ],
+     "say": "When a resource is constrained, the rule is: maximize contribution margin per unit of the constrained resource, not per product."
+    },
+    {
+     "type": "table",
+     "heading": "9,000 assembly hours available",
+     "rows": [
+      [
+       "Trail demand: 1,000 bikes × 6 hours",
+       "6,000 hrs"
+      ],
+      [
+       "Cargo: 3,000 hours ÷ 12",
+       "250 bikes"
+      ],
+      [
+       "Total contribution",
+       1275000,
+       "total"
+      ]
+     ],
+     "say": "With nine thousand assembly hours, Tallgrass first meets all Trail demand, a thousand bikes using six thousand hours. The remaining three thousand hours build two hundred fifty Cargo bikes. Total contribution: $1,275,000."
+    },
+    {
+     "type": "key",
+     "big": "Then relieve the bottleneck",
+     "sub": [
+      "Overtime, a second shift or",
+      "outsourcing assembly"
+     ],
+     "say": "Longer term, managers should relieve the bottleneck: overtime, a second shift, or outsourcing some assembly, if the extra contribution exceeds the cost."
+    },
+    {
+     "type": "quiz",
+     "q": "Product X: CM $60, 2 machine hours. Product Y: CM $90, 4 machine hours. Machine hours are scarce. Which first?",
+     "opts": [
+      "X: $30 an hour",
+      "Y: $90 a unit",
+      "Y: $22.50 an hour",
+      "Either"
+     ],
+     "answer": 0,
+     "say": "Quick check. Product X contributes sixty dollars in two machine hours; Y ninety dollars in four. Machine hours are scarce. Which first? Pause and pick.",
+     "reveal": "It's A. X earns $30 per machine hour, Y only $22.50."
+    }
+   ]
+  },
+  {
+   "id": "7.5",
+   "title": "Keeping or dropping a product line",
+   "lecture": "Lecture 7 · Relevant costs",
+   "take": "Drop a line only if the avoidable costs exceed the contribution margin lost",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Tallgrass's kids' balance bikes show a loss every year. Should it drop the line? Not so fast."
+    },
+    {
+     "type": "table",
+     "heading": "Balance bikes: reported results",
+     "rows": [
+      [
+       "Revenue",
+       120000
+      ],
+      [
+       "Variable costs",
+       -84000
+      ],
+      [
+       "Contribution margin",
+       36000,
+       "total"
+      ],
+      [
+       "Avoidable fixed costs",
+       -20000
+      ],
+      [
+       "Allocated unavoidable fixed costs",
+       -30000
+      ],
+      [
+       "Reported operating loss",
+       -14000,
+       "total"
+      ]
+     ],
+     "say": "Balance bikes bring in $120,000 of revenue and $36,000 of contribution margin. Fixed costs charged to the line are $50,000: $20,000 that would disappear if the line were dropped, and $30,000 of allocated plant and admin costs that wouldn't. The line reports a $14,000 loss."
+    },
+    {
+     "type": "table",
+     "heading": "Effect of dropping it",
+     "rows": [
+      [
+       "Contribution margin lost",
+       -36000
+      ],
+      [
+       "Avoidable fixed costs saved",
+       20000
+      ],
+      [
+       "Change in operating income",
+       -16000,
+       "total"
+      ]
+     ],
+     "say": "If Tallgrass drops the line, it loses $36,000 of contribution and saves only $20,000 of avoidable costs. Operating income falls by $16,000. The $30,000 of allocated costs simply land on other products."
+    },
+    {
+     "type": "key",
+     "big": "Allocated costs mislead",
+     "sub": [
+      "Unavoidable costs stay whether",
+      "the line stays or goes"
+     ],
+     "say": "The lesson: allocated, unavoidable costs make segments look less profitable than they are. Decisions turn on avoidable costs."
+    },
+    {
+     "type": "key",
+     "big": "Other factors",
+     "sub": [
+      "Do balance bikes bring families",
+      "to Tallgrass dealers?"
+     ],
+     "say": "And consider spillovers. Do parents who buy a balance bike come back for an e-bike? Losing the line could cost more than its own contribution."
+    },
+    {
+     "type": "quiz",
+     "q": "A line has CM $50,000, avoidable fixed costs $60,000 and allocated costs $25,000. Drop it?",
+     "opts": [
+      "Yes: income rises $10,000",
+      "No: income falls $10,000",
+      "Yes: income rises $35,000",
+      "No change"
+     ],
+     "answer": 0,
+     "say": "Quick check. A line has fifty thousand of contribution, sixty thousand of avoidable fixed costs and twenty-five thousand allocated. Should it be dropped? Pause and pick.",
+     "reveal": "It's A. Dropping saves $60,000 and loses $50,000: income rises $10,000."
+    }
+   ]
+  },
+  {
+   "id": "7.6",
+   "title": "Replacing equipment",
+   "lecture": "Lecture 7 · Relevant costs",
+   "take": "Book value of old equipment is sunk; but performance measures can make managers act as if it isn't",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Replace a three-year-old painting machine with a better one? The book value of the old machine shouldn't matter. But it often does."
+    },
+    {
+     "type": "table",
+     "heading": "Paint machines, next 3 years",
+     "rows": [
+      [
+       "Old: book value (sunk)",
+       60000
+      ],
+      [
+       "Old: disposal value now",
+       10000
+      ],
+      [
+       "Old: operating costs, 3 years",
+       150000
+      ],
+      [
+       "New: cost",
+       80000
+      ],
+      [
+       "New: operating costs, 3 years",
+       60000
+      ]
+     ],
+     "say": "The old machine has a book value of $60,000 but could be sold for only $10,000. It costs $50,000 a year to run. A new machine costs $80,000 and $20,000 a year to run. Both would last three more years."
+    },
+    {
+     "type": "table",
+     "heading": "Relevant costs, 3 years",
+     "rows": [
+      [
+       "Keep: operating costs",
+       150000
+      ],
+      [
+       "Replace: 80,000 − 10,000 + 60,000",
+       130000
+      ],
+      [
+       "Saving from replacing",
+       20000,
+       "total"
+      ]
+     ],
+     "say": "Ignoring the time value of money, keeping costs $150,000. Replacing costs $80,000, less $10,000 from selling the old machine, plus $60,000 to run: $130,000. Replacing saves $20,000. The $60,000 book value is sunk and plays no part."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "The manager's dilemma",
+     "sub": [
+      "Replacing books a $50,000 loss",
+      "in year one, hurting this year's bonus"
+     ],
+     "say": "But if the plant manager replaces it, the books show a $50,000 loss on disposal this year, and year-one income falls. If her bonus depends on this year's income, she may keep the old machine."
+    },
+    {
+     "type": "key",
+     "big": "Align evaluation with decisions",
+     "sub": [
+      "Judge managers over the life",
+      "of the decision, not one year"
+     ],
+     "say": "This conflict between the decision model and the performance evaluation model is common. The fix is to evaluate managers over the life of their decisions, or on the decision itself, not just one year's accounting income."
+    },
+    {
+     "type": "quiz",
+     "q": "Which is relevant to the replacement decision?",
+     "opts": [
+      "Book value of the old machine",
+      "Original cost of the old machine",
+      "Disposal value of the old machine",
+      "Depreciation already taken"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which is relevant? Pause and pick.",
+     "reveal": "It's C. The disposal value is future cash that differs between the options. The others are sunk."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "You paid $60 for a concert ticket, but on the night you're sick and a friend offers you $20 for it. Does the $60 matter to your decision?",
+   "No: it's sunk. Compare $20 now with how much you'd value going sick. Leads to relevance."
+  ],
+  "acts": [
+   [
+    "Classify as relevant or irrelevant to a special order: (a) direct materials, (b) factory depreciation, (c) a one-time setup cost for the order, (d) the CEO's salary, (e) shipping.",
+    "(a) R. (b) I. (c) R. (d) I. (e) R."
+   ],
+   [
+    "Redo the special order if Tallgrass is at capacity and would lose regular Trail sales (CM $900) for each order bike.",
+    "Order CM 450 < lost CM 900 per bike: reject (income falls $67,500)."
+   ],
+   [
+    "Make or buy: variable cost $85 per unit, 5,000 units, avoidable fixed $40,000, allocated fixed $60,000; price $95. Decide.",
+    "Make: 425,000 + 40,000 = 465,000; buy 475,000: make, by $10,000."
+   ],
+   [
+    "Tallgrass has 7,200 assembly hours; demand 1,000 Trail and 300 Cargo. What mix maximizes contribution?",
+    "Trail 1,000 × 6 = 6,000 hrs; 1,200 hrs left → 100 Cargo. CM 900,000 + 150,000 = $1,050,000."
+   ],
+   [
+    "Balance bikes: if dropping them lets Tallgrass rent the space for $25,000 a year, should it drop the line?",
+    "Lose 36,000, save 20,000, gain 25,000: income rises $9,000. Drop (weigh spillovers)."
+   ],
+   [
+    "Propose a performance measure that would encourage the plant manager to replace the paint machine.",
+    "Multi-year cost or cash-based measure; exclude disposal losses on approved replacements; post-audit of decisions."
+   ]
+  ],
+  "case": [
+   "The Rochester dealer chain",
+   "A large Rochester dealer chain offers to buy 300 Trail bikes at $1,950, delivered over the next 6 months, with its own branding. Tallgrass has capacity for 280 more bikes; beyond that it would lose regular sales (CM $900) or pay overtime of $120 per bike. Rebranding costs $15,000 one-time. Shipping is $50 a bike and no dealer commission applies. Ana worries that existing Minnesota dealers will discover the price.",
+   [
+    "Compute the relevant gain using overtime for the last 20 bikes.",
+    "Compare with giving up 20 regular sales.",
+    "What is the minimum price for the order?",
+    "What qualitative factors should weigh in the decision?"
+   ],
+   "Contribution: 300 × (1,950 − 1,350) = 180,000 − 15,000 rebranding − 20 × 120 overtime = $162,600. Giving up 20 regular sales costs 18,000 instead of 2,400: gain $147,000; overtime is better. Minimum price: (300 × 1,350 + 15,000 + 2,400) ÷ 300 = $1,408. Qualitative: dealer reaction, brand dilution, channel conflict, future orders."
+  ],
+  "exam": [
+   [
+    "Define relevant costs and explain why sunk costs and allocated unavoidable costs are irrelevant.",
+    5,
+    "Expected future costs that differ among alternatives. Sunk costs are past and unchangeable; allocated unavoidable costs are the same whatever is decided."
+   ],
+   [
+    "A product line: revenue $300,000, variable costs $210,000, avoidable fixed $70,000, allocated unavoidable $40,000. Should it be dropped? What if its space could earn $25,000?",
+    5,
+    "Dropping loses 90,000 CM, saves 70,000: income falls 20,000, keep. With $25,000 rent: +5,000, drop (subject to qualitative factors)."
+   ]
+  ],
+  "outcomes": [
+   "Identify relevant and irrelevant costs",
+   "Evaluate special orders",
+   "Decide make or buy, including opportunity cost",
+   "Choose product mix under a constraint",
+   "Decide whether to keep or drop a line",
+   "Analyze equipment replacement and the evaluation conflict"
+  ],
+  "take": [
+   "Relevant = future and different",
+   "Accept special orders priced above incremental cost, if capacity is idle",
+   "Include opportunity costs in make-or-buy",
+   "Rank by CM per unit of the scarce resource",
+   "Drop a line only if avoidable costs exceed CM",
+   "Book value is sunk, but bonuses may not treat it so"
+  ]
+ },
+ "ex": [
+  {
+   "type": "sort",
+   "q": "Relevant or irrelevant to a decision about accepting an extra order (idle capacity)?",
+   "cats": [
+    "Relevant",
+    "Irrelevant"
+   ],
+   "items": [
+    [
+     "Direct materials for the order",
+     0
+    ],
+    [
+     "Factory lease",
+     1
+    ],
+    [
+     "Shipping for the order",
+     0
+    ],
+    [
+     "Last year's R&D",
+     1
+    ],
+    [
+     "Allocated head-office costs",
+     1
+    ]
+   ],
+   "why": "Relevant costs are future and differ between alternatives.",
+   "video": "7.1"
+  },
+  {
+   "type": "num",
+   "q": "Special order: 200 units at $70; variable cost $52 a unit; idle capacity. Change in operating income?",
+   "a": 3600,
+   "unit": "$",
+   "why": "200 × (70 − 52) = 3,600.",
+   "video": "7.2"
+  },
+  {
+   "type": "num",
+   "q": "Make: variable $30 a unit for 4,000 units, plus $20,000 of avoidable fixed cost. Buy: $34 a unit. How much does buying save compared with making?",
+   "a": 4000,
+   "unit": "$",
+   "why": "Make: 4,000 × 30 + 20,000 = 140,000. Buy: 4,000 × 34 = 136,000. Buying saves 4,000.",
+   "video": "7.3"
+  },
+  {
+   "type": "mcq",
+   "q": "In that make-or-buy, what should the company do?",
+   "opts": [
+    "Make",
+    "Buy",
+    "Indifferent",
+    "Need allocated costs"
+   ],
+   "a": 1,
+   "why": "Relevant cost to make 120,000 + 20,000 = 140,000; buying costs 136,000.",
+   "video": "7.3"
+  },
+  {
+   "type": "num",
+   "q": "Product A: CM $40, 2 machine hours. Product B: CM $75, 5 machine hours. CM per machine hour for the better product?",
+   "a": 20,
+   "unit": "$",
+   "why": "A: 20; B: 15. A is better.",
+   "video": "7.4"
+  },
+  {
+   "type": "num",
+   "q": "A line has CM $80,000, avoidable fixed $55,000, allocated fixed $40,000. Change in operating income if dropped (negative if it falls)?",
+   "a": -25000,
+   "unit": "$",
+   "why": "Lose 80,000, save 55,000: −25,000.",
+   "video": "7.5"
+  },
+  {
+   "type": "mcq",
+   "q": "Which is irrelevant to replacing a machine?",
+   "opts": [
+    "New machine cost",
+    "Old machine disposal value",
+    "Old machine book value",
+    "Future operating costs"
+   ],
+   "a": 2,
+   "why": "Book value is sunk.",
+   "video": "7.6"
+  },
+  {
+   "type": "num",
+   "q": "Keep old machine: operating costs $90,000 over its life. Replace: new cost $60,000, disposal of old $8,000, operating $35,000. Saving from replacing?",
+   "a": 3000,
+   "unit": "$",
+   "why": "Replace 60,000 − 8,000 + 35,000 = 87,000 vs 90,000.",
+   "video": "7.6"
+  }
+ ]
+}

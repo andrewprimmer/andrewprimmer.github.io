@@ -1,0 +1,103 @@
+{
+ "meta": {"n": 12, "short": "Joint products and byproducts", "title": "Joint products and byproducts", "week": 13, "ch": "Chapter 17", "part": "Allocation",
+  "summary": "Joint costs and the splitoff point, the sales value at splitoff and physical-measure methods, the NRV and constant gross-margin methods, sell-or-process-further decisions, and accounting for byproducts."},
+ "videos": [
+  {"id": "12.1", "title": "Joint costs and splitoff", "lecture": "Lecture 12 · Joint products and byproducts",
+   "take": "A joint process yields several products at once; joint costs must be allocated at the splitoff point", "read": "",
+   "scenes": [
+    {"type": "title", "say": "Some processes make several products at once. You can't make one without the others. Their shared cost is a joint cost."},
+    {"type": "define", "big": "Joint cost", "sub": ["Cost of a single process that yields", "two or more products"], "say": "A joint cost is the cost of a single production process that yields two or more products at the same time."},
+    {"type": "flow", "heading": "Redwood Valley's separator", "items": ["100,000 gallons raw milk: $400,000", "Splitoff point", "Cream: 25,000 gallons", "Skim milk: 75,000 gallons"], "say": "Redwood Valley's separator spins a hundred thousand gallons of raw milk, costing $400,000 including processing, into twenty-five thousand gallons of cream and seventy-five thousand gallons of skim milk. The point where they become separate is the splitoff point."},
+    {"type": "compare", "heading": "Kinds of output", "cols": ["Sales value", "Example"], "rows": [["Main or joint products", "High", "Cream, skim milk"], ["Byproducts", "Low", "Whey from cheese"], ["Scrap", "Minimal", "Separator residue"]], "say": "Outputs with high sales value are joint products, or a main product if there's only one. Outputs with low value are byproducts. Outputs with minimal value are scrap. The classification can change as markets change: whey used to be waste, and now it's protein powder."},
+    {"type": "key", "big": "Why allocate joint costs?", "sub": ["Inventory and COGS for reporting,", "cost-based contracts, insurance claims"], "say": "Joint costs must be allocated for inventory and cost of goods sold, cost-reimbursement contracts, insurance settlements and regulated pricing. But, as you'll see, never for deciding whether to process further."},
+    {"type": "quiz", "q": "What is the splitoff point?", "opts": ["Where products are sold", "Where joint products become separately identifiable", "Where byproducts are scrapped", "Where processing ends"], "answer": 1,
+     "say": "Quick check. What's the splitoff point? Pause and pick.", "reveal": "It's B: where the joint products become separately identifiable."}
+   ]},
+  {"id": "12.2", "title": "Sales value at splitoff", "lecture": "Lecture 12 · Joint products and byproducts",
+   "take": "Allocate joint costs in proportion to each product's sales value at the splitoff point", "read": "",
+   "scenes": [
+    {"type": "title", "say": "The most common method allocates joint costs by what each product could sell for at splitoff."},
+    {"type": "table", "heading": "Sales value at splitoff", "rows": [["Cream: 25,000 gallons × $8", 200000], ["Skim: 75,000 gallons × $2", 150000], ["Total", 350000, "total"]], "say": "At splitoff, cream sells for eight dollars a gallon to other dairies, so the cream is worth $200,000. Skim milk sells for two dollars a gallon: $150,000. Total sales value at splitoff: $350,000."},
+    {"type": "table", "heading": "Allocating $400,000", "rows": [["Cream: 200 ÷ 350", 228571], ["Skim: 150 ÷ 350", 171429], ["Total", 400000, "total"]], "say": "Cream gets two hundred over three hundred fifty of the joint cost: $228,571. Skim gets $171,429."},
+    {"type": "key", "big": "Benefits received", "sub": ["Products with more value", "bear more cost"], "say": "This method follows the benefits-received criterion: the product that generates more revenue bears more of the cost. And it uses values at splitoff, before any further processing affects them."},
+    {"type": "key", "big": "Needs a market at splitoff", "sub": ["If there's no price at splitoff,", "use NRV instead"], "say": "It needs market prices at the splitoff point. When products can't be sold until they're processed further, use the net realizable value method instead."},
+    {"type": "quiz", "q": "Joint cost $60,000; sales values at splitoff A $90,000, B $30,000. Allocation to A?", "opts": ["$30,000", "$45,000", "$60,000", "$15,000"], "answer": 1,
+     "say": "Quick check. Joint cost sixty thousand; sales values at splitoff ninety thousand for A and thirty thousand for B. What's A's allocation? Pause and pick.", "reveal": "It's B. Three-quarters of $60,000 is $45,000."}
+   ]},
+  {"id": "12.3", "title": "The physical-measure method", "lecture": "Lecture 12 · Joint products and byproducts",
+   "take": "Allocating by physical quantity is simple but ignores value and can make products look unprofitable", "read": "",
+   "scenes": [
+    {"type": "title", "say": "Another approach allocates joint costs by physical quantity: gallons, pounds or tons. Simple, but risky."},
+    {"type": "table", "heading": "Physical measure: gallons", "rows": [["Cream: 25,000 ÷ 100,000", 100000], ["Skim: 75,000 ÷ 100,000", 300000], ["Total", 400000, "total"]], "say": "By gallons, cream gets a quarter of the joint cost, $100,000, and skim gets three-quarters, $300,000."},
+    {"type": "table", "heading": "Gross margin at splitoff", "rows": [["Method", "Cream | Skim", "head"], ["Sales value", "$200,000 | $150,000"], ["Sales value margin", "$(28,571) | $(21,429)"], ["Physical margin", "$100,000 | $(150,000)"]], "say": "Look at the margins. Under the sales value method, both products show the same negative margin percentage. Under the physical method, cream looks very profitable and skim shows a $150,000 loss, because skim is bulky but cheap."},
+    {"type": "key", "tag": "WATCH OUT", "big": "Allocation can't make a product unprofitable", "sub": ["The products come together;", "you can't stop making skim"], "say": "But skim isn't really unprofitable: Redwood Valley can't make cream without making skim. A product's allocated margin depends on the method, not on its real contribution."},
+    {"type": "key", "big": "Use it when prices are unstable", "sub": ["Or when physical units", "drive the cost"], "say": "The physical method is used when market prices are volatile or unavailable, or when physical quantities clearly drive the joint costs. But it ignores revenue-generating power."},
+    {"type": "quiz", "q": "Joint cost $60,000; output A 1,000 kg, B 3,000 kg. Physical-measure allocation to A?", "opts": ["$15,000", "$45,000", "$20,000", "$30,000"], "answer": 0,
+     "say": "Quick check. Joint cost sixty thousand; output a thousand kilograms of A and three thousand of B. Physical-measure allocation to A? Pause and pick.", "reveal": "It's A. A quarter of $60,000: $15,000."}
+   ]},
+  {"id": "12.4", "title": "NRV and constant gross-margin methods", "lecture": "Lecture 12 · Joint products and byproducts",
+   "take": "NRV allocates by final value less separable costs; constant gross margin gives every product the same margin %", "read": "",
+   "scenes": [
+    {"type": "title", "say": "When products are processed further before sale, allocation can use their final values. There are two ways."},
+    {"type": "table", "heading": "Further processing", "rows": [["Product", "Cream → butter | Skim → bottled", "head"], ["Final sales value", "$350,000 | $240,000"], ["Separable costs", "$90,000 | $60,000"], ["Net realizable value", "$260,000 | $180,000"]], "say": "Redwood Valley churns its cream into butter worth $350,000, after $90,000 of separable costs, and bottles its skim, worth $240,000 after $60,000 of bottling. Net realizable value is final sales value minus separable costs: $260,000 and $180,000."},
+    {"type": "table", "heading": "NRV method", "rows": [["Butter (cream): 260 ÷ 440", 236364], ["Bottled skim: 180 ÷ 440", 163636], ["Total", 400000, "total"]], "say": "The NRV method allocates joint costs by NRV: butter's cream gets two-sixty over four-forty, $236,364, and skim $163,636."},
+    {"type": "table", "heading": "Constant gross-margin NRV method", "rows": [["Total revenue", 590000], ["Total costs", 550000], ["Gross margin: 40,000 ÷ 590,000", "6.78%"], ["Butter: 350,000 × 93.22% − 90,000", 236271], ["Skim: 240,000 × 93.22% − 60,000", 163729]], "say": "The constant gross-margin method gives every product the same gross margin percentage as the whole operation, here six point seven eight percent. Each product's total cost is ninety-three point two two percent of its revenue; subtract its separable costs to get its joint cost share."},
+    {"type": "key", "big": "Which is best?", "sub": ["Sales value at splitoff is preferred", "when splitoff prices exist"], "say": "When market prices at splitoff exist, the sales value at splitoff method is usually preferred: it's simple and isn't affected by later processing decisions. NRV is the fallback. Constant gross margin is the only method that can allocate negative joint costs."},
+    {"type": "quiz", "q": "Final value $80,000; separable costs $30,000. NRV?", "opts": ["$110,000", "$50,000", "$80,000", "$30,000"], "answer": 1,
+     "say": "Quick check. Final sales value eighty thousand; separable costs thirty thousand. What's the NRV? Pause and pick.", "reveal": "It's B, $50,000."}
+   ]},
+  {"id": "12.5", "title": "Sell or process further?", "lecture": "Lecture 12 · Joint products and byproducts",
+   "take": "Process further if incremental revenue exceeds incremental cost; joint costs are irrelevant", "read": "",
+   "scenes": [
+    {"type": "title", "say": "Should Redwood Valley sell its cream at splitoff or churn it into butter? Joint costs play no part in the answer."},
+    {"type": "table", "heading": "Cream: sell or churn?", "rows": [["Butter revenue", 350000], ["Cream revenue at splitoff", -200000], ["Incremental revenue", 150000, "total"], ["Incremental cost: churning", -90000], ["Gain from processing further", 60000, "total"]], "say": "Churning cream into butter raises revenue from $200,000 to $350,000, an extra $150,000, for an extra $90,000 of cost. Processing further adds $60,000."},
+    {"type": "table", "heading": "Skim: sell or bottle?", "rows": [["Extra revenue: 240,000 − 150,000", 90000], ["Incremental cost: bottling", -60000], ["Gain from processing further", 30000, "total"]], "say": "Bottling skim adds $90,000 of revenue for $60,000 of cost: a gain of $30,000. Process both further."},
+    {"type": "key", "tag": "WATCH OUT", "big": "Joint costs are irrelevant", "sub": ["The $400,000 is spent whichever", "choice is made after splitoff"], "say": "The $400,000 joint cost, and how it was allocated, is irrelevant. It's incurred whether the cream is sold at splitoff or churned. Using allocated joint costs here can lead to the wrong choice."},
+    {"type": "key", "big": "Check capacity and markets", "sub": ["Can the butter market absorb more?", "Is churning capacity available?"], "say": "Check the practical side too: can the market absorb more butter at that price, and is the churning capacity available?"},
+    {"type": "quiz", "q": "Sales value at splitoff $50,000; after processing $72,000; extra processing cost $25,000. Process further?", "opts": ["Yes, gain $22,000", "No, loss $3,000", "Yes, gain $47,000", "No, loss $25,000"], "answer": 1,
+     "say": "Quick check. Sales value at splitoff fifty thousand; after processing seventy-two thousand; extra cost twenty-five thousand. Process further? Pause and pick.", "reveal": "It's B. Incremental revenue $22,000 is less than the $25,000 cost: sell at splitoff."}
+   ]},
+  {"id": "12.6", "title": "Accounting for byproducts", "lecture": "Lecture 12 · Joint products and byproducts",
+   "take": "Byproducts can be recognized at production, reducing main product cost, or at sale, as revenue", "read": "",
+   "scenes": [
+    {"type": "title", "say": "Cheese making produces whey: lots of it, worth little. That makes it a byproduct. There are two ways to account for it."},
+    {"type": "table", "heading": "May: cheese and whey", "rows": [["Joint cost of the cheese batch", 120000], ["Whey produced: 20,000 gallons × $0.25", 5000], ["Whey sold in May", "16,000 gallons"]], "say": "In May, a cheese batch costing $120,000 also yields twenty thousand gallons of whey, which a local hog farmer buys at twenty-five cents a gallon: $5,000 of value. Sixteen thousand gallons are sold in May."},
+    {"type": "compare", "heading": "Two methods", "cols": ["Production method", "Sales method"], "rows": [["When recognized", "When produced", "When sold"], ["Effect on cheese cost", "Joint cost − $5,000", "Full $120,000"], ["Whey inventory", "Recorded at $1,000", "Not recorded"]], "say": "Under the production method, whey is recognized when produced: its $5,000 value reduces the joint cost assigned to cheese, to $115,000, and unsold whey is inventory at $1,000. Under the sales method, nothing happens until whey is sold; then the $4,000 of sales is reported as revenue or as a reduction of cost of goods sold."},
+    {"type": "key", "big": "Production method: matches value", "sub": ["Sales method: simpler, but allows", "income timing games"], "say": "The production method recognizes the byproduct's value when it's created, which is conceptually better. The sales method is simpler, but managers could time byproduct sales to manage income."},
+    {"type": "key", "big": "Byproducts can grow up", "sub": ["Whey protein now worth far more:", "it may become a joint product"], "say": "And byproducts can grow up. Whey protein is now valuable enough that some creameries treat whey as a joint product."},
+    {"type": "quiz", "q": "Under the production method, byproduct value of $8,000 does what to the main product's cost?", "opts": ["Raises it $8,000", "Lowers it $8,000", "No effect", "Lowers it only when sold"], "answer": 1,
+     "say": "Quick check. Under the production method, eight thousand dollars of byproduct value does what to the main product's cost? Pause and pick.", "reveal": "It's B: it lowers it by $8,000."}
+   ]}
+ ],
+ "content": {
+  "warmup": ["A butcher buys a whole hog for $300 and sells chops, bacon, ham and sausage. What did the bacon cost?", "There's no single answer: it depends on how the $300 joint cost is split. Introduces joint cost allocation."],
+  "acts": [
+   ["Classify for a soybean crusher: soybean meal, soybean oil, hulls sold as cattle feed, dust swept from the floor.", "Joint products: meal, oil; byproduct: hulls; scrap: dust."],
+   ["Joint cost $300,000; at splitoff A 4,000 units at $50, B 6,000 at $30. Allocate by sales value at splitoff.", "Values 200,000 and 180,000. A 157,895; B 142,105."],
+   ["Same data by physical units. Which product looks worse, and why?", "A 120,000; B 180,000. B looks worse because it's heavier but cheaper per unit."],
+   ["A's final value $280,000, separable $60,000; B's final $240,000, separable $40,000; joint $300,000. Allocate by NRV and by constant gross margin.", "NRV 220,000 and 200,000: A 157,143, B 142,857. CGM: revenue 520,000, cost 400,000, GM 23.08%; A cost 215,385 − 60,000 = 155,385; B 184,615 − 40,000 = 144,615."],
+   ["Should A and B be processed further if splitoff values are $200,000 and $180,000?", "A: +80,000 − 60,000 = +20,000 yes. B: +60,000 − 40,000 = +20,000 yes."],
+   ["Byproduct worth $6,000 produced; $4,500 sold. Show the effect under both methods.", "Production: main product joint cost reduced 6,000; byproduct inventory 1,500. Sales: revenue (or COGS reduction) 4,500 when sold."]
+  ],
+  "case": ["The skim milk loss",
+   "Redwood Valley's controller allocates joint separator costs by gallons. The skim line reports a large loss, and a board member proposes dumping skim instead of bottling it, 'to stop losing money'. Use the data from this lecture: joint cost $400,000; cream 25,000 gallons, skim 75,000; skim's sales value at splitoff $150,000, bottled $240,000, bottling cost $60,000. Dumping skim would cost $10,000 in disposal fees.",
+   ["Compute skim's reported margin under the physical method after bottling.", "Recompute under sales value at splitoff and NRV.", "What happens to total profit if skim is dumped?", "Advise the board."],
+   "Physical: 240,000 − 60,000 − 300,000 = −120,000. Sales value: 240,000 − 60,000 − 171,429 = +8,571; NRV: 240,000 − 60,000 − 163,636 = +16,364. Dumping loses 180,000 of NRV and adds 10,000 of fees, cutting profit by $190,000; joint costs don't fall. Keep bottling; consider changing the allocation method."],
+  "exam": [
+   ["Explain why joint cost allocation is irrelevant to sell-or-process-further decisions.", 4, "Joint costs are incurred regardless of what happens after splitoff; only incremental revenues and costs beyond splitoff differ between the alternatives."],
+   ["Joint cost $90,000; product X 2,000 units sold at splitoff for $40 each; Y 3,000 units processed further at $10 a unit, then sold at $30 (no splitoff market). Allocate by NRV and decide whether X should be processed into X+ (extra cost $25,000, final value $110,000).", 6, "NRV X 80,000; Y 60,000; total 140,000. X 51,429; Y 38,571. X+: incremental revenue 30,000 > 25,000: process further (+5,000)."]
+  ],
+  "outcomes": ["Identify joint products, byproducts and the splitoff point", "Allocate joint costs by sales value at splitoff", "Allocate by physical measure and explain its weakness", "Allocate by NRV and constant gross margin", "Decide whether to sell or process further", "Account for byproducts"],
+  "take": ["One process, several products", "Sales value at splitoff: the usual choice", "Physical measures ignore value", "NRV = final value − separable costs", "Joint costs are irrelevant after splitoff", "Byproducts: production or sales method"]
+ },
+ "ex": [
+  {"type": "sort", "q": "Joint product, byproduct or scrap?", "cats": ["Joint product", "Byproduct", "Scrap"], "items": [["Cream", 0], ["Skim milk", 0], ["Whey sold to a hog farmer", 1], ["Separator residue", 2]], "why": "Classify by relative sales value.", "video": "12.1"},
+  {"type": "num", "q": "Joint cost $400,000; sales values at splitoff: cream $200,000, skim $150,000. Allocation to skim?", "a": 171429, "tol": 2, "unit": "$", "why": "150 ÷ 350 × 400,000 = 171,429.", "video": "12.2"},
+  {"type": "num", "q": "Joint cost $80,000; output A 3,000 gallons, B 5,000 gallons. Physical-measure allocation to B?", "a": 50000, "unit": "$", "why": "5 ÷ 8 × 80,000 = 50,000.", "video": "12.3"},
+  {"type": "num", "q": "Final value $150,000; separable costs $45,000. NRV?", "a": 105000, "unit": "$", "why": "150,000 − 45,000 = 105,000.", "video": "12.4"},
+  {"type": "num", "q": "Total revenue $500,000; total costs $450,000. Constant gross-margin percentage?", "a": 10, "tol": 0.1, "unit": "%", "why": "50,000 ÷ 500,000 = 10%.", "video": "12.4"},
+  {"type": "num", "q": "Splitoff value $60,000; after processing $95,000; processing cost $28,000. Gain from processing further?", "a": 7000, "unit": "$", "why": "35,000 − 28,000 = 7,000.", "video": "12.5"},
+  {"type": "mcq", "q": "In a sell-or-process-further decision, joint costs are:", "opts": ["Relevant", "Irrelevant", "Relevant only under NRV", "Added to separable costs"], "a": 1, "why": "They're incurred whatever is decided after splitoff.", "video": "12.5"},
+  {"type": "num", "q": "Production method: joint cost $120,000; byproduct value $5,000. Joint cost assigned to the main product?", "a": 115000, "unit": "$", "why": "120,000 − 5,000 = 115,000.", "video": "12.6"}
+ ]
+}

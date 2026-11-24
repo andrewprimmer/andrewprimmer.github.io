@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACCT 341 Lecture 2: Data analytics and prediction &middot; Andrew Primmer</title>
+<meta name="description" content="ACCT 341 Cost Accounting II, Lecture 2: Data analytic thinking and prediction. Six two-minute videos with readings and exercises.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="acct341.css">
+</head>
+<body id="top">
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="../../index.html" class="site-wordmark">
+      Andrew Primmer
+      <span class="site-wordmark-sub">Accounting Historian</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../../index.html">Home</a>
+      <a href="../../research.html">Research</a>
+      <a href="../../publications.html">Publications</a>
+      <a href="../../cv.html">CV</a>
+      <a href="../../sources/">Primary Sources</a>
+      <a href="../../teaching/" aria-current="page">Teaching</a>
+      <a href="../../teaching/accounting-information-systems/railway/">Rails &amp; Ledgers</a>
+      <a href="../../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="site-main">
+  <div class="site-narrow">
+
+    <header class="page-header">
+      <div class="page-eyebrow"><a href="../">Teaching</a> &middot; <a href="./">ACCT 341 Cost Accounting II</a> &middot; Lecture 2</div>
+      <h1 class="page-title">Data analytic thinking and prediction</h1>
+      <p class="page-lede">A framework for data analytics, classification with decision trees, measuring purity, overfitting and validation, evaluating predictions with a confusion matrix, and turning predictions into decisions.</p>
+    </header>
+
+    <section class="page-section">
+      <div class="reading">
+        <span class="tb-badge">Read</span>
+        <p><cite>Horngren's Cost Accounting</cite>, Chapter 11. Week 2.</p>
+      </div>
+      <p>Watch the six microteaches in order, then try the <a href="#practice">exercises</a> at the end. Each video ends with a quick-check question: pause it and answer before the reveal.</p>
+      <p class="download"><a href="slides/ACCT341-Lecture-02.pptx" download>Download the lecture slides</a> <span>(PowerPoint, 140 KB)</span>. The slides have a QR code for each video, so you can follow along on your phone.</p>
+
+      <h2 class="section-heading">Contents</h2>
+      <ol class="lesson-index">
+        <li><a href="#video-2-1"><span class="li-num">2.1</span><span><span class="li-title">A framework for data analytics</span><span class="li-case">Data analytics starts with the business problem and ends with a deployed, monitored model</span></span><span class="li-done">1:13</span></a></li>
+        <li><a href="#video-2-2"><span class="li-num">2.2</span><span><span class="li-title">Classification with decision trees</span><span class="li-case">A decision tree splits data on features to sort cases into classes such as late or on-time</span></span><span class="li-done">1:11</span></a></li>
+        <li><a href="#video-2-3"><span class="li-num">2.3</span><span><span class="li-title">Choosing splits: purity</span><span class="li-case">Trees choose the split that makes the resulting groups purest, measured by Gini impurity or entropy</span></span><span class="li-done">1:11</span></a></li>
+        <li><a href="#video-2-4"><span class="li-num">2.4</span><span><span class="li-title">Overfitting and validation</span><span class="li-case">Test models on data they weren&#x27;t built on; prune trees that fit noise</span></span><span class="li-done">1:10</span></a></li>
+        <li><a href="#video-2-5"><span class="li-num">2.5</span><span><span class="li-title">Evaluating predictions</span><span class="li-case">A confusion matrix shows true and false positives and negatives; accuracy alone can mislead</span></span><span class="li-done">1:13</span></a></li>
+        <li><a href="#video-2-6"><span class="li-num">2.6</span><span><span class="li-title">From prediction to decision</span><span class="li-case">Weigh the benefits of correct predictions against the cost of errors to decide whether and how to use a model</span></span><span class="li-done">1:31</span></a></li>
+        <li><a href="#practice"><span class="li-num">Practice</span><span><span class="li-title">Lecture 2 exercises</span><span class="li-case">Interactive questions on everything in this lecture, checked as you go.</span></span><span class="li-done"></span></a></li>
+      </ol>
+    </section>
+
+    <section class="page-section micro" id="video-2-1">
+      <h2 class="section-heading"><span class="lesson-num">Microteach 2.1 &middot; 1:13</span>A framework for data analytics</h2>
+      <p class="lesson-case">Data analytics starts with the business problem and ends with a deployed, monitored model.</p>
+      <p class="micro-reading"><b>Reading:</b> Horngren&#x27;s Cost Accounting, Chapter 11.</p>
+      <div class="player">
+        <video controls playsinline preload="none" poster="posters/2-1.jpg" width="540" height="960">
+          <source src="videos/2-1.mp4" type="video/mp4">
+          Your browser cannot play this video. <a href="videos/2-1.mp4">Download it instead</a>.
+        </video>
+      </div>
+      <details class="script">
+        <summary>Read the script</summary>
+        <p>Management accountants now build prediction models, not just budgets. Here&#x27;s the framework that keeps a model useful.</p><p>Six steps. Understand the business problem. Understand the data you have. Prepare it, cleaning errors and creating useful variables. Build a model. Evaluate it on data it hasn&#x27;t seen. Then deploy it and keep monitoring.</p><p>Tallgrass sells through about two hundred bike dealers. Some pay months late, which costs Tallgrass about $3,000 per late account in financing, collection and write-offs. Ana wants to predict which dealers will pay late.</p><p>Descriptive analytics says what happened. Predictive analytics says what&#x27;s likely to happen. Prescriptive analytics recommends what to do. Ana needs all three.</p><p>The first step is the most important: a model is worth building only if its predictions will change a decision, here whether to demand prepayment.</p><p>Quick check. Cleaning addresses and filling missing values is which step? Pause and pick.</p><p>It&#x27;s B, data preparation, which often takes most of the time.</p>
+      </details>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+
+    <section class="page-section micro" id="video-2-2">
+      <h2 class="section-heading"><span class="lesson-num">Microteach 2.2 &middot; 1:11</span>Classification with decision trees</h2>
+      <p class="lesson-case">A decision tree splits data on features to sort cases into classes such as late or on-time.</p>
+      <p class="micro-reading"><b>Reading:</b> Horngren&#x27;s Cost Accounting, Chapter 11.</p>
+      <div class="player">
+        <video controls playsinline preload="none" poster="posters/2-2.jpg" width="540" height="960">
+          <source src="videos/2-2.mp4" type="video/mp4">
+          Your browser cannot play this video. <a href="videos/2-2.mp4">Download it instead</a>.
+        </video>
+      </div>
+      <details class="script">
+        <summary>Read the script</summary>
+        <p>Classification models sort cases into groups. The easiest to read is the decision tree.</p><p>A classification model predicts which category a case falls into. Here: will a dealer pay late, or on time? It learns from past dealers whose outcomes are known.</p><p>Ana&#x27;s tree first asks: was any payment more than sixty days late last year? If not, predict on time. If so, ask how long they&#x27;ve been a customer: under three years predicts late; three years or more predicts on time.</p><p>The variables the tree splits on are called features. Ana tried payment history, years as a customer, order size, region and a credit score. The tree picks the features that best separate late from on-time payers.</p><p>Trees are popular in accounting because managers can follow the logic and explain a decision to a dealer, unlike many black-box models.</p><p>Quick check. A dealer had no payments over sixty days late last year. What does the tree predict? Pause and pick.</p><p>It&#x27;s B, on time. The &#x27;no&#x27; branch ends there.</p>
+      </details>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+
+    <section class="page-section micro" id="video-2-3">
+      <h2 class="section-heading"><span class="lesson-num">Microteach 2.3 &middot; 1:11</span>Choosing splits: purity</h2>
+      <p class="lesson-case">Trees choose the split that makes the resulting groups purest, measured by Gini impurity or entropy.</p>
+      <p class="micro-reading"><b>Reading:</b> Horngren&#x27;s Cost Accounting, Chapter 11.</p>
+      <div class="player">
+        <video controls playsinline preload="none" poster="posters/2-3.jpg" width="540" height="960">
+          <source src="videos/2-3.mp4" type="video/mp4">
+          Your browser cannot play this video. <a href="videos/2-3.mp4">Download it instead</a>.
+        </video>
+      </div>
+      <details class="script">
+        <summary>Read the script</summary>
+        <p>How does a tree decide which question to ask first? It picks the split that makes the groups purest.</p><p>One measure is Gini impurity: one minus the sum of the squared shares of each class. A group that&#x27;s all late payers scores zero. A fifty-fifty mix scores point five, the worst for two classes.</p><p>Start with forty dealers, ten of them late. The share late is a quarter. Gini impurity is one minus point two five squared minus point seven five squared: point three seven five.</p><p>Split on payment history. Twelve dealers were late last year, and eight of them pay late again: Gini point four four. Of the other twenty-eight, only two pay late: Gini point one three. Weighted, that&#x27;s point two three, a big improvement on point three seven five.</p><p>The algorithm tests every feature, takes the split with the biggest improvement, then repeats inside each branch.</p><p>Quick check. Which group has the lowest impurity? Pause and pick.</p><p>It&#x27;s B. Nine to one is the purest mix, with a Gini of point one eight.</p>
+      </details>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+
+    <section class="page-section micro" id="video-2-4">
+      <h2 class="section-heading"><span class="lesson-num">Microteach 2.4 &middot; 1:10</span>Overfitting and validation</h2>
+      <p class="lesson-case">Test models on data they weren&#x27;t built on; prune trees that fit noise.</p>
+      <p class="micro-reading"><b>Reading:</b> Horngren&#x27;s Cost Accounting, Chapter 11.</p>
+      <div class="player">
+        <video controls playsinline preload="none" poster="posters/2-4.jpg" width="540" height="960">
+          <source src="videos/2-4.mp4" type="video/mp4">
+          Your browser cannot play this video. <a href="videos/2-4.mp4">Download it instead</a>.
+        </video>
+      </div>
+      <details class="script">
+        <summary>Read the script</summary>
+        <p>A model can be perfect on old data and useless on new data. That&#x27;s overfitting, and validation catches it.</p><p>Overfitting happens when a model learns the quirks of its training data rather than the real pattern. Keep splitting a tree and eventually every leaf holds one dealer: perfect on past data, poor at predicting.</p><p>So split the data. Build the model on a training set, say seventy percent of dealers. Measure its accuracy on the thirty percent it has never seen. Cross-validation repeats this with different splits.</p><p>Ana&#x27;s two-level tree is eighty-six percent accurate on training data and eighty-four on test data. A five-level tree is a little better on both. A twelve-level tree is perfect on training data but only seventy-one percent on test data: overfitted.</p><p>Pruning removes branches that don&#x27;t improve performance on new data. Simpler models usually generalize better.</p><p>Quick check. Which tree should Ana use? Pause and pick.</p><p>It&#x27;s B. Five levels has the best accuracy on test data.</p>
+      </details>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+
+    <section class="page-section micro" id="video-2-5">
+      <h2 class="section-heading"><span class="lesson-num">Microteach 2.5 &middot; 1:13</span>Evaluating predictions</h2>
+      <p class="lesson-case">A confusion matrix shows true and false positives and negatives; accuracy alone can mislead.</p>
+      <p class="micro-reading"><b>Reading:</b> Horngren&#x27;s Cost Accounting, Chapter 11.</p>
+      <div class="player">
+        <video controls playsinline preload="none" poster="posters/2-5.jpg" width="540" height="960">
+          <source src="videos/2-5.mp4" type="video/mp4">
+          Your browser cannot play this video. <a href="videos/2-5.mp4">Download it instead</a>.
+        </video>
+      </div>
+      <details class="script">
+        <summary>Read the script</summary>
+        <p>Ninety percent accurate sounds great. But accuracy alone can hide the mistakes that matter.</p><p>On two hundred test dealers, thirty actually paid late. The model flagged forty: twenty-four correctly and sixteen wrongly. It missed six late payers, and correctly cleared a hundred fifty-four.</p><p>Accuracy, the share of correct predictions, is eighty-nine percent. Precision, the share of flagged dealers who really were late, is sixty percent. Recall, the share of late dealers the model caught, is eighty percent.</p><p>Why not just use accuracy? Predicting that nobody pays late would be eighty-five percent accurate here, and completely useless.</p><p>And the two kinds of error cost different amounts. Missing a late payer costs about $3,000. Wrongly flagging a good dealer risks the relationship. That leads to the decision step.</p><p>Quick check. A model flags fifty dealers; thirty-five really are late, out of forty late in total. What&#x27;s recall? Pause and pick.</p><p>It&#x27;s B. Recall is thirty-five out of forty: eighty-seven and a half percent.</p>
+      </details>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+
+    <section class="page-section micro" id="video-2-6">
+      <h2 class="section-heading"><span class="lesson-num">Microteach 2.6 &middot; 1:31</span>From prediction to decision</h2>
+      <p class="lesson-case">Weigh the benefits of correct predictions against the cost of errors to decide whether and how to use a model.</p>
+      <p class="micro-reading"><b>Reading:</b> Horngren&#x27;s Cost Accounting, Chapter 11.</p>
+      <div class="player">
+        <video controls playsinline preload="none" poster="posters/2-6.jpg" width="540" height="960">
+          <source src="videos/2-6.mp4" type="video/mp4">
+          Your browser cannot play this video. <a href="videos/2-6.mp4">Download it instead</a>.
+        </video>
+      </div>
+      <details class="script">
+        <summary>Read the script</summary>
+        <p>A prediction is only useful if it improves a decision. Ana must decide what to do with the dealers her model flags.</p><p>The proposal: flagged dealers must prepay their orders. That avoids the $3,000 cost of each late payer caught. But a good dealer wrongly forced to prepay may buy less, costing about $800 of margin.</p><p>Per two hundred dealers, catching twenty-four late payers saves $72,000. Wrongly flagging sixteen good dealers costs $12,800. The net benefit is $59,200, so the policy is worth adopting.</p><p>Ana can tune the model&#x27;s threshold. Flagging more dealers catches more late payers but annoys more good ones. The best threshold maximizes net benefit, not accuracy.</p><p>And after deployment, keep watching. Economic conditions change, models drift, and features can treat groups of customers unfairly. Monitoring is part of the job.</p><p>Quick check. A new threshold flags sixty dealers: twenty-eight true positives and thirty-two false positives. What&#x27;s the net benefit? Pause and pick.</p><p>It&#x27;s A. $84,000 saved minus $25,600 lost is $58,400, slightly worse than before.</p>
+      </details>
+      <p class="back"><a href="#top">Back to the top</a></p>
+    </section>
+
+    <section class="page-section micro" id="practice">
+      <h2 class="section-heading"><span class="lesson-num">Practice</span>Lecture 2 exercises</h2>
+      <p class="lesson-case">Calculations, matching, sorting, ordering and multiple-choice questions on this lecture, using the course's running cases.</p>
+      <p>Answer each question and press <em>Check answer</em>. A wrong answer tells you which video to rewatch, and you can show the answer if you're stuck. Completed exercises turn green. Your progress is kept on this device. For more practice, work the end-of-chapter problems in Chapter 11 of the textbook.</p>
+      <div class="ex" id="acct-ex" data-lecture="2"><noscript>These exercises need JavaScript switched on.</noscript></div>
+    </section>
+
+    <nav class="page-section lecture-nav" aria-label="Lecture navigation">
+      <a href="lecture-01.html">&larr; Lecture 1</a>
+      <a href="lecture-03.html">Lecture 3 &rarr;</a>
+    </nav>
+
+    <section class="page-section">
+      <p style="color:var(--muted);font-size:.95rem">ACCT 341 is a distance-learning course. The companies in the examples are fictional. Corrections welcome at <a href="mailto:a.primmer@aston.ac.uk">a.primmer@aston.ac.uk</a>.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <span>&copy; Andrew Primmer. All rights reserved.</span>
+    <span>Aston Business School &middot; Aston University</span>
+  </div>
+</footer>
+<script src="exercises.js"></script>
+</body>
+</html>

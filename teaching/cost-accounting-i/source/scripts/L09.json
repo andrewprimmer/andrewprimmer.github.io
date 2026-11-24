@@ -1,0 +1,532 @@
+{
+ "videos": [
+  {
+   "id": "9.1",
+   "title": "The FIFO method",
+   "lecture": "Lecture 9 \u00b7 FIFO and transferred-in costs",
+   "take": "FIFO keeps beginning inventory separate and costs this period's work at this period's prices",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Weighted average blends last month with this month. FIFO keeps them apart. Here's the idea."
+    },
+    {
+     "type": "define",
+     "big": "FIFO process costing",
+     "sub": [
+      "Beginning WIP is finished first;",
+      "current costs cover current work only"
+     ],
+     "say": "Under FIFO, the first units in are the first out. Beginning work in process is assumed to be completed first. This period's costs are spread only over the work done this period."
+    },
+    {
+     "type": "list",
+     "heading": "Three groups of units in March",
+     "items": [
+      "Beginning WIP finished: 2,000 blocks",
+      "Started and completed: 14,000 blocks",
+      "Ending WIP started: 4,000 blocks"
+     ],
+     "say": "So Mixing's March output splits into three groups: two thousand beginning blocks that were finished, fourteen thousand started and completed in March, and four thousand started but not finished."
+    },
+    {
+     "type": "key",
+     "big": "Started and completed",
+     "sub": [
+      "16,000 completed \u2212 2,000 from",
+      "beginning WIP = 14,000"
+     ],
+     "say": "Started and completed is units completed minus beginning inventory: sixteen thousand minus two thousand, or fourteen thousand."
+    },
+    {
+     "type": "key",
+     "big": "Why bother?",
+     "sub": [
+      "Unit costs reflect this month's",
+      "prices and efficiency only"
+     ],
+     "say": "Why use FIFO? Because the cost per equivalent unit reflects only this month's prices and efficiency, which makes it better for evaluating performance."
+    },
+    {
+     "type": "quiz",
+     "q": "Beginning WIP 3,000; completed 20,000. Units started and completed?",
+     "opts": [
+      "23,000",
+      "17,000",
+      "20,000",
+      "3,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Beginning work in process three thousand; twenty thousand completed. How many started and completed? Pause and pick.",
+     "reveal": "It's B, seventeen thousand."
+    }
+   ]
+  },
+  {
+   "id": "9.2",
+   "title": "FIFO equivalent units",
+   "lecture": "Lecture 9 \u00b7 FIFO and transferred-in costs",
+   "take": "FIFO equivalent units = work to finish beginning WIP + started and completed + ending WIP work",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "FIFO equivalent units measure only the work done this period. Three pieces."
+    },
+    {
+     "type": "table",
+     "heading": "Mixing, March: FIFO equivalent units",
+     "rows": [
+      [
+       "Group",
+       "DM | Conversion",
+       "head"
+      ],
+      [
+       "Finish beginning WIP (CC 60%)",
+       "0 | 1,200"
+      ],
+      [
+       "Started and completed",
+       "14,000 | 14,000"
+      ],
+      [
+       "Ending WIP (DM 100%, CC 25%)",
+       "4,000 | 1,000"
+      ],
+      [
+       "Work done in March",
+       "18,000 | 16,200"
+      ]
+     ],
+     "say": "Beginning inventory already had all its materials, so finishing it needs no materials, but it was forty percent converted, so sixty percent of the work, twelve hundred units, was done in March. Fourteen thousand blocks were started and completed. Ending inventory got four thousand units of materials and a thousand of conversion. March work: eighteen thousand materials units and sixteen thousand two hundred conversion units."
+    },
+    {
+     "type": "define",
+     "big": "FIFO EU = WA EU \u2212 beginning WIP EU",
+     "size": 68,
+     "sub": [
+      "Remove last month's work"
+     ],
+     "say": "A shortcut: FIFO equivalent units equal weighted-average equivalent units minus the work already in beginning inventory. Materials: twenty thousand minus two thousand. Conversion: seventeen thousand minus eight hundred."
+    },
+    {
+     "type": "key",
+     "big": "Completion % of beginning WIP matters",
+     "sub": [
+      "Under FIFO you need it;",
+      "under WA you don't"
+     ],
+     "say": "Notice that under FIFO, the percentage of completion of beginning inventory matters: it tells you how much work was left to do this month."
+    },
+    {
+     "type": "key",
+     "big": "Check: started this month",
+     "sub": [
+      "DM EU = units started (18,000)",
+      "because materials go in at the start"
+     ],
+     "say": "A useful check: materials go in at the start, so FIFO materials equivalent units equal the eighteen thousand blocks started this month."
+    },
+    {
+     "type": "quiz",
+     "q": "Beginning WIP 1,000 units, 30% converted. How many conversion EU are needed to finish them?",
+     "opts": [
+      "300",
+      "700",
+      "1,000",
+      "0"
+     ],
+     "answer": 1,
+     "say": "Quick check. Beginning inventory is a thousand units, thirty percent converted. How many conversion equivalent units to finish them? Pause and pick.",
+     "reveal": "It's B, seven hundred."
+    }
+   ]
+  },
+  {
+   "id": "9.3",
+   "title": "FIFO costs and assignment",
+   "lecture": "Lecture 9 \u00b7 FIFO and transferred-in costs",
+   "take": "FIFO cost per EU uses current costs only; completed units carry beginning WIP cost plus the cost to finish",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Now the costs. Under FIFO, beginning inventory's cost stays separate."
+    },
+    {
+     "type": "table",
+     "heading": "Cost per equivalent unit: March costs only",
+     "rows": [
+      [
+       "Materials: $540,000 \u00f7 18,000",
+       "$30.00"
+      ],
+      [
+       "Conversion: $324,000 \u00f7 16,200",
+       "$20.00"
+      ]
+     ],
+     "say": "Divide only March's costs by March's work. Materials: $540,000 over eighteen thousand units, thirty dollars. Conversion: $324,000 over sixteen thousand two hundred, twenty dollars."
+    },
+    {
+     "type": "table",
+     "heading": "Costs of blocks transferred out",
+     "rows": [
+      [
+       "Beginning WIP: last month's cost",
+       72000
+      ],
+      [
+       "To finish it: 1,200 \u00d7 $20",
+       24000
+      ],
+      [
+       "Started and completed: 14,000 \u00d7 $50",
+       700000
+      ],
+      [
+       "Total transferred out",
+       796000,
+       "total"
+      ]
+     ],
+     "say": "Blocks transferred out carry three pieces: the $72,000 already in beginning inventory, $24,000 to finish them, and fourteen thousand started-and-completed blocks at fifty dollars each, $700,000. Total: $796,000."
+    },
+    {
+     "type": "table",
+     "heading": "Ending WIP and check",
+     "rows": [
+      [
+       "Materials: 4,000 \u00d7 $30",
+       120000
+      ],
+      [
+       "Conversion: 1,000 \u00d7 $20",
+       20000
+      ],
+      [
+       "Ending WIP",
+       140000,
+       "total"
+      ],
+      [
+       "Total accounted for",
+       936000,
+       "total"
+      ]
+     ],
+     "say": "Ending inventory gets four thousand materials units at thirty dollars and a thousand conversion units at twenty: $140,000. Together with $796,000 transferred out, that's $936,000, all the costs to account for."
+    },
+    {
+     "type": "key",
+     "big": "Two costs for finished blocks",
+     "sub": [
+      "Old batch and new batch",
+      "carry different unit costs"
+     ],
+     "say": "Under FIFO, finished blocks come in two batches with different unit costs: the beginning batch, and those started this month. In practice, transfers to the next department are usually recorded at their combined average."
+    },
+    {
+     "type": "quiz",
+     "q": "Current conversion costs $81,000; FIFO conversion EU 9,000. Cost per EU?",
+     "opts": [
+      "$9",
+      "$8.10",
+      "$0.11",
+      "$90"
+     ],
+     "answer": 0,
+     "say": "Quick check. Current conversion costs eighty-one thousand; FIFO conversion equivalent units nine thousand. Cost per equivalent unit? Pause and pick.",
+     "reveal": "It's A, nine dollars."
+    }
+   ]
+  },
+  {
+   "id": "9.4",
+   "title": "FIFO vs weighted average",
+   "lecture": "Lecture 9 \u00b7 FIFO and transferred-in costs",
+   "take": "The methods differ only in how beginning WIP is treated; FIFO is better for performance evaluation",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "We've costed March both ways. How different are the answers, and which should Redwood Valley use?"
+    },
+    {
+     "type": "table",
+     "heading": "Mixing, March",
+     "rows": [
+      [
+       "Method",
+       "WA | FIFO",
+       "head"
+      ],
+      [
+       "Transferred out",
+       "$796,800 | $796,000"
+      ],
+      [
+       "Ending WIP",
+       "$139,200 | $140,000"
+      ],
+      [
+       "Total",
+       "$936,000 | $936,000"
+      ]
+     ],
+     "say": "Weighted average transferred out $796,800 and left $139,200 in ending inventory. FIFO transferred out $796,000 and left $140,000. The totals are the same."
+    },
+    {
+     "type": "key",
+     "big": "Why the $800 difference?",
+     "sub": [
+      "Beginning WIP materials cost $28 a unit;",
+      "March materials cost $30"
+     ],
+     "say": "The difference comes from beginning inventory. Its materials cost twenty-eight dollars a block, while March's cost thirty. Weighted average blends the cheaper materials into all units; FIFO sends them out first."
+    },
+    {
+     "type": "compare",
+     "heading": "Choosing",
+     "cols": [
+      "Weighted average",
+      "FIFO"
+     ],
+     "rows": [
+      [
+       "Computation",
+       "Simpler",
+       "More steps"
+      ],
+      [
+       "Evaluating this month",
+       "Blurred by old costs",
+       "Clean: current only"
+      ],
+      [
+       "When prices are stable",
+       "Same result",
+       "Same result"
+      ]
+     ],
+     "say": "Weighted average is simpler. FIFO isolates this month's costs, making it better for judging current performance. When prices and efficiency are stable, or inventories small, the two give almost the same answer."
+    },
+    {
+     "type": "key",
+     "big": "Not the same as inventory FIFO",
+     "sub": [
+      "Process FIFO is about equivalent units",
+      "within one department"
+     ],
+     "say": "Don't confuse this with FIFO for finished goods inventory. Process-costing FIFO is about equivalent units within a department."
+    },
+    {
+     "type": "quiz",
+     "q": "Prices are rising. Compared with weighted average, FIFO's cost of units transferred out is usually:",
+     "opts": [
+      "Higher",
+      "Lower",
+      "The same",
+      "Zero"
+     ],
+     "answer": 1,
+     "say": "Quick check. When prices are rising, FIFO's cost of units transferred out is usually what, compared with weighted average? Pause and pick.",
+     "reveal": "It's B, lower: the older, cheaper beginning inventory goes out first."
+    }
+   ]
+  },
+  {
+   "id": "9.5",
+   "title": "Transferred-in costs",
+   "lecture": "Lecture 9 \u00b7 FIFO and transferred-in costs",
+   "take": "Costs from a prior department are treated as a separate cost category that is always 100% complete",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "When blocks arrive in Aging, their Mixing costs come with them. Those are transferred-in costs."
+    },
+    {
+     "type": "define",
+     "big": "Transferred-in costs",
+     "sub": [
+      "Prior department's costs, treated like",
+      "materials added at the start: 100% complete"
+     ],
+     "say": "Transferred-in costs are costs incurred in earlier departments, carried forward with the units. In the later department they're treated like materials added at the start: always one hundred percent complete."
+    },
+    {
+     "type": "table",
+     "heading": "Aging, March: weighted average units",
+     "rows": [
+      [
+       "Category",
+       "Transferred-in | Conversion",
+       "head"
+      ],
+      [
+       "Completed: 17,000",
+       "17,000 | 17,000"
+      ],
+      [
+       "Ending WIP: 2,000, 40% converted",
+       "2,000 | 800"
+      ],
+      [
+       "Equivalent units",
+       "19,000 | 17,800"
+      ]
+     ],
+     "say": "Aging began March with three thousand blocks, received sixteen thousand from Mixing, completed seventeen thousand, and ended with two thousand, forty percent through aging. Weighted-average equivalent units: nineteen thousand for transferred-in costs and seventeen thousand eight hundred for conversion."
+    },
+    {
+     "type": "table",
+     "heading": "Aging: costs",
+     "rows": [
+      [
+       "TI: (153,200 + 796,800) \u00f7 19,000",
+       "$50.00"
+      ],
+      [
+       "Conversion: (9,000 + 124,500) \u00f7 17,800",
+       "$7.50"
+      ],
+      [
+       "Completed: 17,000 \u00d7 $57.50",
+       977500
+      ],
+      [
+       "Ending WIP: 2,000 \u00d7 $50 + 800 \u00d7 $7.50",
+       106000
+      ]
+     ],
+     "say": "Transferred-in cost per unit is the beginning balance plus the $796,800 received, divided by nineteen thousand: fifty dollars. Conversion is $7.50. Completed blocks cost $57.50 each, $977,500 in total, moved to finished goods. Ending inventory is $106,000."
+    },
+    {
+     "type": "key",
+     "big": "Don't forget it",
+     "sub": [
+      "The commonest error: leaving out",
+      "transferred-in costs"
+     ],
+     "say": "The most common mistake in multi-department problems is forgetting transferred-in costs. They're usually the biggest cost category in later departments."
+    },
+    {
+     "type": "quiz",
+     "q": "In a second department, ending WIP is 30% converted. What is its completion for transferred-in costs?",
+     "opts": [
+      "0%",
+      "30%",
+      "70%",
+      "100%"
+     ],
+     "answer": 3,
+     "say": "Quick check. In a second department, ending inventory is thirty percent converted. How complete is it for transferred-in costs? Pause and pick.",
+     "reveal": "It's D, a hundred percent. Transferred-in costs arrive with the units."
+    }
+   ]
+  },
+  {
+   "id": "9.6",
+   "title": "Hybrid systems: operation costing",
+   "lecture": "Lecture 9 \u00b7 FIFO and transferred-in costs",
+   "take": "Operation costing traces materials to batches and applies conversion costs by operation",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Some products are partly identical and partly custom. They need a hybrid of job and process costing."
+    },
+    {
+     "type": "define",
+     "big": "Operation costing",
+     "sub": [
+      "Direct materials traced to each batch;",
+      "conversion costs averaged by operation"
+     ],
+     "say": "Operation costing is a hybrid. Each batch is a job for direct materials, because batches use different materials. But every batch goes through the same operations, so conversion costs are applied at an average rate per operation."
+    },
+    {
+     "type": "table",
+     "heading": "Redwood Valley's gift boxes",
+     "rows": [
+      [
+       "Batch",
+       "Holiday | Bulk",
+       "head"
+      ],
+      [
+       "Boxes",
+       "500 | 2,000"
+      ],
+      [
+       "Materials per box",
+       "$9 | $3"
+      ],
+      [
+       "Operations used",
+       "Cut, wrap, pack | Cut, pack"
+      ]
+     ],
+     "say": "Redwood Valley also packs cheese for retail. Holiday gift boxes use $9 of materials each, and go through cutting, wrapping and packing. Bulk packs use $3 and skip wrapping."
+    },
+    {
+     "type": "table",
+     "heading": "Holiday batch cost",
+     "rows": [
+      [
+       "Materials: 500 \u00d7 $9",
+       4500
+      ],
+      [
+       "Cutting: 500 \u00d7 $1.20",
+       600
+      ],
+      [
+       "Wrapping: 500 \u00d7 $2.00",
+       1000
+      ],
+      [
+       "Packing: 500 \u00d7 $0.80",
+       400
+      ],
+      [
+       "Batch cost",
+       6500,
+       "total"
+      ],
+      [
+       "Per box",
+       13
+      ]
+     ],
+     "say": "With conversion rates of $1.20 for cutting, two dollars for wrapping and eighty cents for packing, the holiday batch costs $6,500: thirteen dollars a box."
+    },
+    {
+     "type": "key",
+     "big": "Common in practice",
+     "sub": [
+      "Clothing, shoes, food, electronics:",
+      "same steps, different materials"
+     ],
+     "say": "Hybrid systems are common in clothing, shoes, food and electronics: the same steps, different materials. Real systems are rarely pure job or pure process costing."
+    },
+    {
+     "type": "quiz",
+     "q": "A bulk batch of 2,000 boxes: materials $3, cutting $1.20, packing $0.80 each. Batch cost?",
+     "opts": [
+      "$6,000",
+      "$10,000",
+      "$8,000",
+      "$14,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. A bulk batch of two thousand boxes: materials three dollars, cutting a dollar twenty, packing eighty cents each. Batch cost? Pause and pick.",
+     "reveal": "It's B. Five dollars a box: $10,000."
+    }
+   ]
+  }
+ ]
+}

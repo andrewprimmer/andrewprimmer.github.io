@@ -1,0 +1,518 @@
+{
+ "videos": [
+  {
+   "id": "4.1",
+   "title": "Why budget?",
+   "lecture": "Lecture 4 \u00b7 The master budget",
+   "take": "Budgets turn strategy into plans, coordinate departments and set benchmarks for performance",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "A budget is a plan expressed in numbers. Done well, it's the most useful document a company produces each year."
+    },
+    {
+     "type": "list",
+     "heading": "What budgets do",
+     "items": [
+      "Turn strategy into concrete plans",
+      "Coordinate sales, production and purchasing",
+      "Communicate goals across the company",
+      "Set benchmarks for judging performance",
+      "Motivate managers"
+     ],
+     "say": "Budgets turn strategy into concrete plans. They force sales, production and purchasing to coordinate. They communicate goals. They set benchmarks to judge performance against. And, set at the right level, they motivate."
+    },
+    {
+     "type": "define",
+     "big": "Master budget",
+     "sub": [
+      "Operating budgets + financial budgets",
+      "for one period, usually a year"
+     ],
+     "say": "The master budget pulls everything together: operating budgets, which lead to a budgeted income statement, and financial budgets, like the cash budget and budgeted balance sheet."
+    },
+    {
+     "type": "compare",
+     "heading": "Budget periods",
+     "cols": [
+      "How it works",
+      "Benefit"
+     ],
+     "rows": [
+      [
+       "Annual",
+       "Set once a year",
+       "Simple"
+      ],
+      [
+       "Rolling",
+       "Add a month as one ends",
+       "Always 12 months ahead"
+      ],
+      [
+       "Kaizen",
+       "Builds in steady cost cuts",
+       "Continuous improvement"
+      ]
+     ],
+     "say": "Most companies budget annually. A rolling budget adds a new month as each month ends, so it always looks twelve months ahead. Kaizen budgeting builds steady cost reductions into each period."
+    },
+    {
+     "type": "key",
+     "big": "Plans, not predictions",
+     "sub": [
+      "A budget says what managers",
+      "intend to make happen"
+     ],
+     "say": "A budget isn't just a forecast of what will happen. It's a plan for what managers intend to make happen, and the actions they'll take."
+    },
+    {
+     "type": "quiz",
+     "q": "Tallgrass adds January 2028 to its budget as soon as January 2027 ends. This is:",
+     "opts": [
+      "An annual budget",
+      "A rolling budget",
+      "A kaizen budget",
+      "A flexible budget"
+     ],
+     "answer": 1,
+     "say": "Quick check. Tallgrass adds January 2028 to its budget as soon as January 2027 ends. What kind of budget is that? Pause and pick.",
+     "reveal": "It's B, a rolling budget."
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "title": "The budget sequence",
+   "lecture": "Lecture 4 \u00b7 The master budget",
+   "take": "Budgeting starts with the revenue budget and flows through production and costs to the income statement and cash",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "The master budget is built in a fixed order. Almost everything starts with one number: expected sales."
+    },
+    {
+     "type": "flow",
+     "heading": "Operating budget order",
+     "items": [
+      "Revenues",
+      "Production",
+      "Materials, labor, overhead",
+      "Ending inventories and COGS",
+      "Nonmanufacturing costs",
+      "Budgeted income statement"
+     ],
+     "say": "Start with the revenue budget. That sets the production budget. Production drives the direct materials, direct labor and overhead budgets. Those give ending inventory and cost of goods sold. Add nonmanufacturing costs and you have the budgeted income statement."
+    },
+    {
+     "type": "flow",
+     "heading": "Then the financial budgets",
+     "items": [
+      "Capital expenditures budget",
+      "Cash budget",
+      "Budgeted balance sheet",
+      "Budgeted cash flows"
+     ],
+     "say": "The financial budgets follow: the capital expenditures budget, the cash budget, the budgeted balance sheet and the budgeted statement of cash flows."
+    },
+    {
+     "type": "key",
+     "big": "Sales forecast is the hardest part",
+     "sub": [
+      "Uses past sales, dealer surveys,",
+      "economic outlook, pricing plans"
+     ],
+     "say": "The sales forecast is the hardest and most important part. Ana combines past sales, dealer surveys, the economic outlook and planned prices and promotions. If it's wrong, everything else is wrong too."
+    },
+    {
+     "type": "key",
+     "big": "Software, not paper",
+     "sub": [
+      "Spreadsheets and planning systems",
+      "let managers test scenarios"
+     ],
+     "say": "Budgets are built in spreadsheets or planning software, which lets managers run scenarios: what if sales are ten percent lower, or battery prices rise?"
+    },
+    {
+     "type": "quiz",
+     "q": "Which budget is prepared first?",
+     "opts": [
+      "Cash budget",
+      "Production budget",
+      "Revenue budget",
+      "Direct materials budget"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which budget comes first? Pause and pick.",
+     "reveal": "It's C. Expected sales drive everything else."
+    }
+   ]
+  },
+  {
+   "id": "4.3",
+   "title": "Revenue and production budgets",
+   "lecture": "Lecture 4 \u00b7 The master budget",
+   "take": "Production = budgeted sales + target ending finished goods \u2212 beginning finished goods",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "With the sales forecast in hand, Ana budgets revenue, then works out how many bikes to build."
+    },
+    {
+     "type": "table",
+     "heading": "Revenue budget, 2027",
+     "rows": [
+      [
+       "Trail bikes",
+       "1,200"
+      ],
+      [
+       "\u00d7 price",
+       "$2,400"
+      ],
+      [
+       "Budgeted revenue",
+       2880000,
+       "total"
+      ]
+     ],
+     "say": "Tallgrass expects to sell twelve hundred Trail bikes at $2,400: budgeted revenue of $2,880,000."
+    },
+    {
+     "type": "table",
+     "heading": "Production budget, 2027 (bikes)",
+     "rows": [
+      [
+       "Budgeted sales",
+       "1,200"
+      ],
+      [
+       "+ target ending finished goods",
+       "60"
+      ],
+      [
+       "= total needed",
+       "1,260",
+       "total"
+      ],
+      [
+       "\u2212 beginning finished goods",
+       "40"
+      ],
+      [
+       "= bikes to produce",
+       "1,220",
+       "total"
+      ]
+     ],
+     "say": "Production equals budgeted sales plus the target ending inventory of finished bikes, minus what's already on hand. Twelve hundred plus sixty is twelve sixty. Less the forty in stock, Tallgrass must build twelve hundred twenty bikes."
+    },
+    {
+     "type": "key",
+     "big": "Why hold more inventory?",
+     "sub": [
+      "Spring demand: build stock in winter",
+      "to keep the line steady"
+     ],
+     "say": "Why plan to end with more bikes than it started with? E-bike demand peaks in spring. Building stock over the winter keeps production steady."
+    },
+    {
+     "type": "key",
+     "big": "Inventory has a cost",
+     "sub": [
+      "Storage, financing, obsolescence"
+     ],
+     "say": "But inventory ties up cash and space, and bike models go out of date. Lecture 12 looks at how much inventory is too much."
+    },
+    {
+     "type": "quiz",
+     "q": "Sales 900, target ending FG 50, beginning FG 70. Production?",
+     "opts": [
+      "920",
+      "880",
+      "900",
+      "1,020"
+     ],
+     "answer": 1,
+     "say": "Quick check. Sales nine hundred, target ending finished goods fifty, beginning seventy. How many to produce? Pause and pick.",
+     "reveal": "It's B. 900 plus 50 minus 70 is 880."
+    }
+   ]
+  },
+  {
+   "id": "4.4",
+   "title": "Materials usage and purchases",
+   "lecture": "Lecture 4 \u00b7 The master budget",
+   "take": "Purchases = usage + target ending materials \u2212 beginning materials",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Production tells purchasing how many parts to use. Inventory targets tell it how many to buy."
+    },
+    {
+     "type": "table",
+     "heading": "Battery packs: usage",
+     "rows": [
+      [
+       "Bikes to produce",
+       "1,220"
+      ],
+      [
+       "\u00d7 1 pack per bike \u00d7 $310",
+       "$310"
+      ],
+      [
+       "Budgeted usage",
+       378200,
+       "total"
+      ]
+     ],
+     "say": "Each bike needs one battery pack costing $310. Building twelve hundred twenty bikes uses $378,200 of batteries."
+    },
+    {
+     "type": "table",
+     "heading": "Battery packs: purchases (units)",
+     "rows": [
+      [
+       "Used in production",
+       "1,220"
+      ],
+      [
+       "+ target ending inventory",
+       "80"
+      ],
+      [
+       "\u2212 beginning inventory",
+       "50"
+      ],
+      [
+       "= packs to buy",
+       "1,250",
+       "total"
+      ],
+      [
+       "\u00d7 $310",
+       387500,
+       "total"
+      ]
+     ],
+     "say": "To end the year with eighty packs, after starting with fifty, Tallgrass must buy twelve hundred fifty packs: $387,500. The same calculation is done for frames, motors and every other material."
+    },
+    {
+     "type": "table",
+     "heading": "Direct labor budget",
+     "rows": [
+      [
+       "Bikes to produce",
+       "1,220"
+      ],
+      [
+       "\u00d7 6 assembly hours",
+       "7,320 hours"
+      ],
+      [
+       "\u00d7 $28 an hour",
+       204960,
+       "total"
+      ]
+     ],
+     "say": "Labor follows the same logic. Each bike takes six assembly hours at twenty-eight dollars: $204,960 of direct labor."
+    },
+    {
+     "type": "key",
+     "big": "Supplier lead times matter",
+     "sub": [
+      "Battery packs from overseas:",
+      "order a quarter ahead"
+     ],
+     "say": "In practice, lead times shape the purchases budget. If battery packs take three months to arrive, orders must be placed a quarter ahead of production."
+    },
+    {
+     "type": "quiz",
+     "q": "Usage 2,000 units, target ending 300, beginning 250. Units to purchase?",
+     "opts": [
+      "2,050",
+      "1,950",
+      "2,300",
+      "2,550"
+     ],
+     "answer": 0,
+     "say": "Quick check. Usage two thousand units, target ending three hundred, beginning two fifty. How many to buy? Pause and pick.",
+     "reveal": "It's A. 2,000 plus 300 minus 250 is 2,050."
+    }
+   ]
+  },
+  {
+   "id": "4.5",
+   "title": "The cash budget",
+   "lecture": "Lecture 4 \u00b7 The master budget",
+   "take": "The cash budget shows when cash comes in and goes out, and when the company must borrow",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Profitable companies still go bust when they run out of cash. The cash budget is the early warning."
+    },
+    {
+     "type": "list",
+     "heading": "Cash budget sections",
+     "items": [
+      "Beginning cash",
+      "+ cash collections from customers",
+      "\u2212 cash disbursements",
+      "Financing: borrowing and repayment",
+      "= ending cash"
+     ],
+     "say": "The cash budget starts with the beginning balance, adds collections from customers, subtracts disbursements for materials, wages, overhead, taxes and equipment, then shows any financing needed to keep a minimum balance."
+    },
+    {
+     "type": "table",
+     "heading": "Tallgrass, first quarter 2027",
+     "rows": [
+      [
+       "Beginning cash",
+       40000
+      ],
+      [
+       "Collections",
+       620000
+      ],
+      [
+       "Disbursements",
+       -690000
+      ],
+      [
+       "Cash before financing",
+       -30000,
+       "total"
+      ],
+      [
+       "Minimum balance required",
+       30000
+      ],
+      [
+       "Borrowing needed",
+       60000,
+       "total"
+      ]
+     ],
+     "say": "Tallgrass starts the first quarter with $40,000. It expects to collect $620,000 from dealers but pay out $690,000 while building spring stock. That leaves minus $30,000. With a $30,000 minimum balance, it must borrow $60,000."
+    },
+    {
+     "type": "key",
+     "big": "Collections lag sales",
+     "sub": [
+      "Dealers pay in 30 to 60 days,",
+      "so cash trails revenue"
+     ],
+     "say": "Collections lag sales, because dealers pay thirty to sixty days after delivery. A collection schedule spreads each month's sales over the months when cash actually arrives."
+    },
+    {
+     "type": "key",
+     "big": "Arrange credit before you need it",
+     "sub": [
+      "Show the bank the cash budget",
+      "in the fall, not in March"
+     ],
+     "say": "Knowing in the fall that Tallgrass will need $60,000 in the first quarter lets Ana arrange a line of credit calmly, instead of scrambling in March."
+    },
+    {
+     "type": "quiz",
+     "q": "Beginning cash $25,000; collections $300,000; disbursements $310,000; minimum balance $20,000. Borrowing?",
+     "opts": [
+      "$0",
+      "$5,000",
+      "$10,000",
+      "$15,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Beginning cash twenty-five thousand, collections three hundred thousand, disbursements three ten, minimum balance twenty thousand. How much to borrow? Pause and pick.",
+     "reveal": "It's B. Cash before financing is $15,000, so $5,000 is needed to reach $20,000."
+    }
+   ]
+  },
+  {
+   "id": "4.6",
+   "title": "The human side of budgeting",
+   "lecture": "Lecture 4 \u00b7 The master budget",
+   "take": "Participative budgeting improves buy-in but invites slack; stretch targets motivate if they're achievable",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Budgets are made by people, and people respond to how they're judged. That creates problems, and solutions."
+    },
+    {
+     "type": "define",
+     "big": "Budgetary slack",
+     "sub": [
+      "Underestimating revenue or overestimating",
+      "costs to make the budget easier"
+     ],
+     "say": "Budgetary slack is building in a cushion: underestimating revenues or overestimating costs so the budget is easier to beat. It's common when bonuses depend on beating the budget."
+    },
+    {
+     "type": "compare",
+     "heading": "Two approaches",
+     "cols": [
+      "Top-down",
+      "Participative"
+     ],
+     "rows": [
+      [
+       "Who sets it",
+       "Senior managers",
+       "Managers who must meet it"
+      ],
+      [
+       "Strength",
+       "Fast, ambitious",
+       "Better information, buy-in"
+      ],
+      [
+       "Risk",
+       "Little commitment",
+       "Slack"
+      ]
+     ],
+     "say": "Top-down budgets are fast and ambitious, but managers may not commit to them. Participative budgets use the knowledge of the people who must meet them and earn buy-in, but invite slack."
+    },
+    {
+     "type": "list",
+     "heading": "Reducing slack",
+     "items": [
+      "Compare with benchmarks and past results",
+      "Reward accurate forecasts, not just beating the budget",
+      "Use stretch targets that are hard but achievable"
+     ],
+     "say": "Ways to reduce slack: compare budgets with benchmarks and past results; reward accurate forecasts, not just beating the number; and set stretch targets that are challenging but achievable."
+    },
+    {
+     "type": "key",
+     "big": "Don't game the year-end",
+     "sub": [
+      "'Spend it or lose it' wastes money"
+     ],
+     "say": "Watch for year-end games too, like spending leftover budget in December so it isn't cut next year."
+    },
+    {
+     "type": "quiz",
+     "q": "The sales manager forecasts 1,000 bikes, though she expects 1,150, because her bonus rewards beating the budget. This is:",
+     "opts": [
+      "A stretch target",
+      "Budgetary slack",
+      "Kaizen budgeting",
+      "A rolling budget"
+     ],
+     "answer": 1,
+     "say": "Quick check. The sales manager forecasts a thousand bikes, though she expects eleven fifty, because her bonus rewards beating the budget. What's this? Pause and pick.",
+     "reveal": "It's B, budgetary slack."
+    }
+   ]
+  }
+ ]
+}

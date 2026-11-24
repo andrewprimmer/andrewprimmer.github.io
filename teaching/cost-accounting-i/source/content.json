@@ -1,0 +1,996 @@
+{
+ "1": {
+  "warmup": [
+   "Think of a business you've worked in. What cost number did your manager care about most, and was it in the annual report?",
+   "Common answers: labor cost per shift, food cost percentage, cost per delivery. Almost none appear in external reports. Leads to 1.1."
+  ],
+  "acts": [
+   [
+    "Classify each report as financial or management accounting: (a) cost per trailer by model, (b) 10-K, (c) monthly scrap report, (d) audited balance sheet.",
+    "(a) Management. (b) Financial. (c) Management. (d) Financial."
+   ],
+   [
+    "Place each Prairie Gate cost in the value chain: CAD software license, steel, trade-show booth, delivery truck fuel, warranty labor.",
+    "Design; production; marketing; distribution; customer service."
+   ],
+   [
+    "Apply the five steps to Prairie Gate's question: should it buy a robotic welder?",
+    "Identify (labor shortage, quality); obtain info (quotes, labor rates); predict (savings, volume); decide (compare with hiring); implement and evaluate (track weld defects and cost)."
+   ],
+   [
+    "Give three different 'costs' of trailer #418 for three different purposes.",
+    "Inventory cost (factory only); full value-chain cost for long-run pricing; incremental cost for a one-off decision."
+   ],
+   [
+    "Why did labor-hour overhead allocation make sense in 1920 but mislead in 1985?",
+    "In 1920 labor drove most overhead; by 1985 machines and complexity did, so labor bases distorted product costs."
+   ],
+   [
+    "The plant manager asks you to delay the scrap write-off. Walk through the IMA steps.",
+    "Refuse to misstate; follow policy; raise with supervisor (above the plant manager if needed); seek confidential advice; document; consult counsel if pressured."
+   ]
+  ],
+  "case": [
+   "The year-end pressure",
+   "Prairie Gate's plant manager, Dale Kirchner, earns a bonus if 2026 operating income exceeds $900,000. In mid-December, forecasts show $880,000. Dale asks the cost accountant, Priya, to (1) delay recording $25,000 of scrapped steel until January, and (2) record a trailer finished on January 3 as completed in December. Priya reports to Dale, who reports to Karen Olsen.",
+   [
+    "Which IMA standards are at stake?",
+    "What would the two changes do to 2026 income?",
+    "What steps should Priya take?",
+    "How could Karen redesign the bonus to reduce this pressure?"
+   ],
+   "Integrity and credibility. Both shift income into 2026, misstating it by about $25,000 plus the trailer's margin. Priya should refuse, follow policy, take it to Karen since Dale is involved, seek confidential advice, and document. Redesign: multi-year or non-financial measures, ranges instead of cliffs."
+  ],
+  "exam": [
+   [
+    "Distinguish financial accounting, management accounting and cost accounting.",
+    5,
+    "Financial: external users, GAAP, historical, aggregate. Management: internal, no required rules, future-oriented, detailed. Cost: measures and reports costs used by both."
+   ],
+   [
+    "Explain 'different costs for different purposes' with an example.",
+    5,
+    "No single correct cost: inventory valuation uses manufacturing costs; long-run pricing uses full value-chain costs; special orders use incremental costs."
+   ]
+  ],
+  "outcomes": [
+   "Distinguish financial, management and cost accounting",
+   "Link cost information to strategy and the value chain",
+   "Apply the five-step decision process",
+   "Apply the three guidelines and describe the controller's role",
+   "Outline the history of cost accounting",
+   "Apply the IMA ethical standards"
+  ],
+  "take": [
+   "Management accounting looks forward, inside the firm",
+   "Costs arise across the whole value chain",
+   "Plan with steps 1–4, control with step 5",
+   "Cost–benefit, behavior, different costs for different purposes",
+   "Costing systems reflect the businesses of their time",
+   "Competence, confidentiality, integrity, credibility"
+  ]
+ },
+ "2": {
+  "warmup": [
+   "What did your last cup of coffee 'cost' the café? List every cost you can, then decide which could be traced to your cup.",
+   "Beans, cup, milk are direct; rent, espresso machine, barista's time partly. Introduces cost objects and allocation."
+  ],
+  "acts": [
+   [
+    "Cost object: the welding department. Direct or indirect? (a) Welding supervisor, (b) plant security, (c) welding gas, (d) the CEO's salary.",
+    "(a) Direct. (b) Indirect. (c) Direct. (d) Indirect."
+   ],
+   [
+    "Fixed overhead is $90,000 a month. Compute fixed cost per trailer at 45, 60 and 75 trailers. Why is a bid using $2,000 per trailer at 45 risky?",
+    "$2,000, $1,500, $1,200. At higher volumes the unit fixed cost falls; and for an extra order, fixed costs may not change at all."
+   ],
+   [
+    "Classify: (a) unused axles, (b) trailer waiting for paint, (c) trailer on the lot awaiting pickup, (d) welding wire.",
+    "(a) DM. (b) WIP. (c) FG. (d) Indirect materials (overhead supplies, before use)."
+   ],
+   [
+    "Inventoriable or period: R&D on a new hitch, factory utilities, sales commissions, depreciation on the paint booth, CFO's salary.",
+    "Period; inventoriable; period; inventoriable; period."
+   ],
+   [
+    "Job: DM $8,000, DL $3,200, MOH applied at 120% of DL. Compute prime, conversion and total cost.",
+    "MOH 3,840. Prime 11,200; conversion 7,040; total 15,040."
+   ],
+   [
+    "A welder at $28 works 48 hours (8 overtime at time-and-a-half), 3 idle. Classify the pay.",
+    "Pay 40 × 28 + 8 × 42 = 1,456. DL 45 × 28 = 1,260; OT premium 8 × 14 = 112; idle 3 × 28 = 84. Total 1,456."
+   ]
+  ],
+  "case": [
+   "Pricing the show trailer",
+   "A breeder asks Prairie Gate to price a one-off show-cattle trailer. Karen's cost sheet shows: DM $9,400; DL 90 hours × $30 = $2,700 (including a 10-hour overtime premium of $150 because the welders were busy); overhead allocated at $32 per labor hour; and $1,200 'share of marketing and admin'. The plant has spare capacity this month.",
+   [
+    "Which costs are direct, which indirect?",
+    "Correct the labor and overhead classification.",
+    "Which costs are inventoriable if the trailer is still on the lot at year-end?",
+    "What minimum price covers the extra costs of this order?"
+   ],
+   "DM and DL direct; overhead and admin indirect. Overtime premium $150 belongs in overhead (not caused by this order) unless the breeder demanded a rush. Inventoriable: DM, DL, MOH; marketing/admin is a period cost. Short-run minimum: incremental costs only (DM, DL, any variable overhead), not allocated fixed costs."
+  ],
+  "exam": [
+   [
+    "Explain why fixed cost per unit can mislead managers and give an example.",
+    5,
+    "Fixed costs are constant in total, so unit fixed cost depends on volume; using it as if variable overstates incremental cost (e.g., $300 lease per trailer at 40 units, but the 41st adds nothing)."
+   ],
+   [
+    "Define and compute prime and conversion cost from DM $12,000, DL $4,500, MOH $6,300.",
+    4,
+    "Prime = DM + DL = 16,500; conversion = DL + MOH = 10,800."
+   ]
+  ],
+  "outcomes": [
+   "Distinguish direct and indirect costs for a cost object",
+   "Explain variable and fixed cost behavior",
+   "Identify the three manufacturing inventories",
+   "Separate inventoriable and period costs",
+   "Compute prime and conversion costs",
+   "Classify overtime premium and idle time"
+  ],
+  "take": [
+   "Direct costs are traced; indirect costs allocated",
+   "Fixed cost per unit changes with volume",
+   "DM, WIP and FG inventories",
+   "Manufacturing costs wait in inventory; others are expensed",
+   "Prime = DM + DL; conversion = DL + MOH",
+   "Overtime premium and idle time usually go to overhead"
+  ]
+ },
+ "3": {
+  "warmup": [
+   "Draw a box for each place a trailer's cost could be on a given day: in the storeroom, on the shop floor, on the lot, sold. Then label the accounts.",
+   "Materials, WIP, finished goods, COGS. This is the cost flow in 3.1."
+  ],
+  "acts": [
+   [
+    "Find the missing amount: beginning FG $40,000; COGM $310,000; ending FG $35,000; COGS ?",
+    "$315,000."
+   ],
+   [
+    "Beginning DM $22,000; ending DM $18,000; DM used $140,000. Purchases?",
+    "140,000 + 18,000 − 22,000 = $136,000."
+   ],
+   [
+    "Prepare a COGM schedule: DM used $250,000; DL $120,000; MOH $180,000; beginning WIP $60,000; ending WIP $75,000.",
+    "Costs incurred 550,000; total 610,000; COGM $535,000."
+   ],
+   [
+    "Continue: beginning FG $90,000; ending FG $70,000; revenue $780,000; period costs $140,000. Prepare the income statement.",
+    "COGS 555,000; gross margin 225,000; operating income $85,000."
+   ],
+   [
+    "Write journal entries for: materials used $50,000; DL $30,000; overhead $45,000 moved to WIP; completed $110,000; sold $100,000.",
+    "Dr WIP / Cr Materials 50,000; Dr WIP / Cr Wages payable 30,000; Dr WIP / Cr MOH control 45,000; Dr FG / Cr WIP 110,000; Dr COGS / Cr FG 100,000."
+   ],
+   [
+    "Give an example where using GAAP product cost leads to a bad pricing decision.",
+    "A model with heavy design and warranty costs looks profitable on manufacturing cost but loses money on full value-chain cost."
+   ]
+  ],
+  "case": [
+   "November at Prairie Gate",
+   "Prairie Gate's November data: beginning DM $84,000, purchases $190,000, ending DM $76,000; direct labor $92,000; manufacturing overhead $138,000; beginning WIP $126,000, ending WIP $98,000; beginning FG $58,000, ending FG $71,000; revenue $640,000; marketing and admin $101,000. Karen asks why operating income rose even though fewer trailers were finished than she expected.",
+   [
+    "Compute DM used, COGM and COGS.",
+    "Prepare the income statement.",
+    "Explain the movement in work in process.",
+    "What does Karen's question reveal about the timing of costs?"
+   ],
+   "DM used 198,000; costs incurred 428,000; COGM 456,000; COGS 443,000; gross margin 197,000; OI 96,000. WIP fell, so trailers started in October were finished in November. Costs reach income only when trailers are sold, so production and sales timing drive reported income."
+  ],
+  "exam": [
+   [
+    "Explain the flow of manufacturing costs through the accounts, from purchase to sale.",
+    5,
+    "Materials purchased (materials inventory) → used (WIP) with DL and MOH → completed (FG) → sold (COGS). Each move is a journal entry; balances follow beginning + in − out = ending."
+   ],
+   [
+    "Given DM used $180,000, DL $70,000, MOH $105,000, beginning WIP $45,000, ending WIP $60,000, beginning FG $30,000, ending FG $25,000, compute COGM and COGS.",
+    5,
+    "Incurred 355,000; COGM 340,000; COGS 345,000."
+   ]
+  ],
+  "outcomes": [
+   "Trace costs through the manufacturing accounts",
+   "Compute direct materials used",
+   "Prepare a schedule of cost of goods manufactured",
+   "Prepare a manufacturer's income statement",
+   "Record the journal entries for cost flows",
+   "Distinguish three definitions of product cost"
+  ],
+  "take": [
+   "Materials → WIP → FG → COGS",
+   "Used = beginning + purchases − ending",
+   "COGM = beginning WIP + costs incurred − ending WIP",
+   "COGS = beginning FG + COGM − ending FG",
+   "Each arrow in the flow is a journal entry",
+   "Product cost depends on the purpose"
+  ]
+ },
+ "4": {
+  "warmup": [
+   "Your car repair invoice lists parts, labor hours and 'shop supplies'. Which are direct and which are allocated?",
+   "Parts and labor are traced; shop supplies is an allocated overhead charge. Same structure as a job cost record."
+  ],
+  "acts": [
+   [
+    "Job or process costing? Wedding photography, ethanol plant, custom cabinets, bottled water, hospital surgery.",
+    "Job, process, job, process, job."
+   ],
+   [
+    "List the seven steps for costing a trailer and name Prairie Gate's choices for steps 3–5.",
+    "Base: direct labor hours; pool: manufacturing overhead; rate: $36 per DLH."
+   ],
+   [
+    "Budgeted MOH $2,100,000 and 60,000 DLH. A job uses 45 hours. Overhead applied? What if the base were machine hours (25,000 budgeted) and the job used 30?",
+    "$35/DLH × 45 = $1,575. $84/MH × 30 = $2,520."
+   ],
+   [
+    "Explain why normal costing is preferred to actual costing for pricing.",
+    "Costs are known as jobs are done; rates are stable across the year; seasonal and volume swings don't distort job costs."
+   ],
+   [
+    "Job 422: DM $7,900; DL 95 hours × $31; overhead at $36/DLH. Price $16,800. Compute cost and gross margin %.",
+    "DL 2,945; MOH 3,420; cost 14,265; GM 2,535 (15.1%)."
+   ],
+   [
+    "Lyon & Co. wants a 30% markup. What is the bid for an engagement of 250 hours at $65 with support at 110%?",
+    "Labor 16,250; support 17,875; cost 34,125; bid $44,363."
+   ]
+  ],
+  "case": [
+   "Bidding on the county order",
+   "Lyon County asks Prairie Gate to bid on 6 identical heavy-duty utility trailers. Karen estimates per trailer: DM $5,200 and 70 direct labor hours at $30. Overhead is applied at $36 per DLH. Value-chain costs outside manufacturing (design, delivery, admin) average 12% of manufacturing cost. A competitor is rumored to bid $11,500 each.",
+   [
+    "Compute the manufacturing cost per trailer.",
+    "Compute the full cost and a bid at a 10% markup on full cost.",
+    "Should Karen match $11,500? What else would you want to know?",
+    "What happens to unit cost if the welders learn and the 6th trailer takes 55 hours?"
+   ],
+   "Manufacturing: 5,200 + 2,100 + 2,520 = 9,820. Full: 9,820 × 1.12 = 10,998; bid ≈ $12,098. Matching $11,500 still covers full cost (margin ~4.6%); consider spare capacity, which costs are truly incremental, and future county work. Fewer hours lower DL and applied overhead: 55 hours → 5,200 + 1,650 + 1,980 = 8,830."
+  ],
+  "exam": [
+   [
+    "Distinguish actual costing from normal costing and explain why most firms use normal costing.",
+    5,
+    "Both trace actual direct costs; actual applies actual indirect rates (known at year-end), normal applies budgeted annual rates to actual quantities. Normal gives timely, stable job costs."
+   ],
+   [
+    "Budgeted MOH $1,500,000, budgeted DLH 50,000. Job 77: DM $3,400, DL 40 hours at $28. Compute the job's cost.",
+    4,
+    "Rate $30; DL 1,120; MOH 1,200; total $5,720."
+   ]
+  ],
+  "outcomes": [
+   "Choose between job and process costing",
+   "Apply the seven-step job costing approach",
+   "Compute and use a budgeted overhead rate",
+   "Use source documents and job cost records",
+   "Cost a job and compute its margin",
+   "Apply job costing in service firms"
+  ],
+  "take": [
+   "Job costing for distinct units; process costing for identical units",
+   "Trace direct costs; allocate indirect costs with a rate",
+   "Normal costing uses a budgeted annual rate",
+   "Requisitions and time records feed the job record",
+   "Job cost = DM + DL + applied overhead",
+   "Service firms cost engagements the same way"
+  ]
+ },
+ "5": {
+  "warmup": [
+   "You estimated your monthly phone data cost at the start of the year and charged each month the same. In December, the actual bill total is different. What do you do with the difference?",
+   "Spread it over the months or book it at year-end: the same choices as proration versus write-off."
+  ],
+  "acts": [
+   [
+    "Record: actual overhead $95,000 (utilities $20,000, depreciation $45,000, supervisor salary $30,000); applied overhead 2,600 DLH × $35.",
+    "Dr MOH control 95,000 / Cr Utilities payable 20,000, Accum. depr. 45,000, Wages payable 30,000. Dr WIP 91,000 / Cr MOH allocated 91,000."
+   ],
+   [
+    "Compute under/overallocation: budgeted rate $40/MH; actual MH 12,500; actual overhead $482,000.",
+    "Allocated 500,000; overallocated $18,000."
+   ],
+   [
+    "Compute the actual rate and restate a job with 35 MH from the previous question.",
+    "Actual rate 38.56; job overhead falls from 1,400 to 1,349.60 (−$50.40)."
+   ],
+   [
+    "Overallocated $18,000. Allocated overhead in WIP $50,000, FG $100,000, COGS $350,000. Prorate.",
+    "WIP −1,800; FG −3,600; COGS −12,600."
+   ],
+   [
+    "Would you write off or prorate $18,000 when total overhead is $482,000 and inventories are small? Why?",
+    "Write off: immaterial (3.7%) and most would go to COGS anyway."
+   ],
+   [
+    "Welding $60/MH and finishing $27/DLH. Job A: 40 MH, 20 DLH. Job B: 5 MH, 80 DLH. Compare with a plant-wide $36/DLH (labor hours across both: A 45, B 85).",
+    "A: 2,400 + 540 = 2,940 vs 1,620. B: 300 + 2,160 = 2,460 vs 3,060. Plant-wide undercosts welding-heavy jobs."
+   ]
+  ],
+  "case": [
+   "Year-end at Prairie Gate",
+   "At year-end 2027, Prairie Gate's MOH control shows $1,800,000 and MOH allocated $1,764,000. Allocated overhead is in: WIP $176,400, FG $264,600, COGS $1,323,000. Total ending balances (all costs) are WIP $420,000, FG $630,000, COGS $3,150,000. Karen also notes that big welding-heavy livestock trailers seem to win bids easily, while simple utility trailers rarely do.",
+   [
+    "Compute the under- or overallocation.",
+    "Prorate it on allocated overhead, and on total balances. Compare.",
+    "Which approach would you recommend for the financial statements, and why?",
+    "What does Karen's observation suggest about the plant-wide rate?"
+   ],
+   "Underallocated 36,000. On overhead: 3,600 / 5,400 / 27,000. On totals (420:630:3,150 of 4,200): 3,600 / 5,400 / 27,000 here too (same proportions in this example). Write-off of $36,000 is acceptable as immaterial, though proration is more accurate. The plant-wide labor rate undercosts welding-heavy livestock trailers (so their bids are too low and they win) and overcosts labor-heavy utility trailers: use department or activity rates."
+  ],
+  "exam": [
+   [
+    "Describe three approaches to disposing of under- or overallocated overhead and when each is appropriate.",
+    6,
+    "Adjusted allocation rate (recost all jobs at actual rate: most accurate); proration (spread over WIP, FG, COGS by allocated overhead: close to actual); write-off to COGS (simple, for immaterial amounts)."
+   ],
+   [
+    "Budgeted rate $25/DLH; actual DLH 30,000; actual overhead $780,000. Allocated overhead: WIP 20%, FG 10%, COGS 70%. Compute the difference and prorate it.",
+    5,
+    "Allocated 750,000; underallocated 30,000; WIP +6,000; FG +3,000; COGS +21,000."
+   ]
+  ],
+  "outcomes": [
+   "Record overhead entries under normal costing",
+   "Compute under- and overallocated overhead",
+   "Apply the adjusted allocation-rate approach",
+   "Prorate the difference across accounts",
+   "Decide when to write off to COGS",
+   "Use department overhead rates"
+  ],
+  "take": [
+   "Actual overhead to control; applied overhead to allocated",
+   "Under: actual > allocated; over: allocated > actual",
+   "Adjusted rate turns normal costing into actual costing",
+   "Prorate in proportion to overhead allocated",
+   "Write off when immaterial",
+   "Department rates beat a plant-wide rate when drivers differ"
+  ]
+ },
+ "6": {
+  "warmup": [
+   "Four friends split a restaurant bill equally. One ordered steak and wine; the others had salads. Who is subsidizing whom?",
+   "The salad eaters subsidize the steak eater: broad averaging. ABC charges each diner for what they ordered."
+  ],
+  "acts": [
+   [
+    "Explain how a single labor-hour rate could undercost the livestock line even though it uses fewer labor hours in total.",
+    "Livestock trailers use most of the design and setup activity, which labor hours don't capture, so those costs are spread onto utility trailers."
+   ],
+   [
+    "List three ways Prairie Gate could refine its costing system, with an example of each.",
+    "Direct tracing (meter welding power by job); more pools (design, setups, welding, finishing); causal drivers (setups, design hours)."
+   ],
+   [
+    "Classify: paint booth cleaning between colors, axle installation, CAD software for custom designs, property tax on the plant, quality inspection of every trailer.",
+    "Batch; unit; product-sustaining; facility-sustaining; unit."
+   ],
+   [
+    "Recompute ABC overhead per utility trailer if setups fall from 40 to 20 through longer runs.",
+    "Setups 24,000 instead of 48,000; total 736,000 ÷ 400 = $1,840 (the setup pool rate would also change if costs fall)."
+   ],
+   [
+    "A utility trailer's DM and DL total $6,800. Compare full manufacturing cost under both systems and a 20% markup bid.",
+    "Plant-wide: 9,320 → bid 11,184. ABC: 8,700 → bid 10,440."
+   ],
+   [
+    "Would ABC benefit Redwood Valley Creamery, which makes whole milk, 2% and skim in long runs? Why or why not?",
+    "Probably little: products are similar and high-volume, with few batch or product differences. A simpler system is adequate."
+   ]
+  ],
+  "case": [
+   "The custom-order surcharge",
+   "After ABC, Karen proposes charging livestock-trailer customers a $2,500 'custom design and setup' fee on top of the old price, and cutting utility trailer prices by $600. Sales staff worry that livestock customers, Prairie Gate's most loyal, will defect. A competitor offers livestock trailers from three standard designs at prices about $1,500 below Prairie Gate's new proposed price.",
+   [
+    "What does ABC tell Karen about each line's profitability?",
+    "Evaluate the proposed pricing changes.",
+    "What operational changes could reduce livestock costs instead?",
+    "What are the risks of acting on ABC numbers?"
+   ],
+   "Livestock was undercosted by $2,480 and utility overcosted by $620, so both price changes align price with cost. Alternatives: offer standard designs with options to cut design hours and setups (ABM, next lecture). Risks: ABC estimates may be imprecise; customer relationships and competitor response; facility costs still allocated."
+  ],
+  "exam": [
+   [
+    "Explain product-cost cross-subsidization and how broad averaging causes it.",
+    4,
+    "Uniform allocation of indirect costs to products that consume resources differently undercosts complex/low-volume products and overcosts simple/high-volume ones, because total cost is fixed."
+   ],
+   [
+    "Activity rates: setups $500 per setup; inspections $40 per inspection; machining $25 per MH. Product A: 1,000 units, 10 setups, 50 inspections, 2,000 MH. Compute ABC overhead per unit.",
+    4,
+    "5,000 + 2,000 + 50,000 = 57,000 ÷ 1,000 = $57."
+   ]
+  ],
+  "outcomes": [
+   "Explain broad averaging and cross-subsidization",
+   "Describe three ways to refine a costing system",
+   "Classify activities in the cost hierarchy",
+   "Compute activity rates and ABC product costs",
+   "Compare ABC and traditional costs and act on the results",
+   "Decide when ABC is worth implementing"
+  ],
+  "take": [
+   "Peanut-butter costing distorts diverse products",
+   "Trace more, pool more, use causal drivers",
+   "Unit, batch, product-sustaining, facility-sustaining",
+   "Activity rate × driver quantity",
+   "ABC shifts cost to complex, low-volume products",
+   "Worth it when overhead is large and products differ"
+  ]
+ },
+ "7": {
+  "warmup": [
+   "Think of a company that charges extra for things that used to be free: bags on flights, delivery, paper statements. Why?",
+   "Those are activity costs that some customers cause. Charging for them is activity-based pricing, an ABM decision."
+  ],
+  "acts": [
+   [
+    "Using ABC costs, compute each line's total profit at current volumes.",
+    "Utility 400 × 500 = $200,000; livestock 100 × −1,880 = −$188,000; total $12,000 before nonmanufacturing costs."
+   ],
+   [
+    "Classify as value-added or non-value-added: welding, rework of bad welds, storing finished trailers for 3 weeks, custom paint, expediting late parts.",
+    "VA, NVA, NVA (mostly), VA, NVA."
+   ],
+   [
+    "Estimate the effect on livestock margin of standard designs (8 design hours) and 80 setups a year, if resources fall proportionately.",
+    "Overhead falls by 1,920 + 960 = 2,880 to 6,800; margin −1,880 + 2,880 = +$1,000."
+   ],
+   [
+    "Compute customer profit for Olson Ranch: $40,000 sales, 20% margin, 30 orders and deliveries, 5 rushes.",
+    "Margin 8,000 − (1,200 + 2,700 + 750) = $3,350."
+   ],
+   [
+    "Time-driven ABC: a warehouse costs $300,000 for 500,000 practical minutes. Picking a pallet takes 6 minutes; 60,000 pallets picked. Cost per pallet and unused capacity?",
+    "$0.60/min; $3.60 a pallet; used 360,000 min; unused 140,000 min = $84,000."
+   ],
+   [
+    "Prepare an activity-based budget for design if Prairie Gate plans 110 livestock trailers at 8 hours each and 450 utility trailers at 1.5 hours.",
+    "880 + 675 = 1,555 hours × $120 = $186,600 (vs $360,000)."
+   ]
+  ],
+  "case": [
+   "Saving the livestock line",
+   "Karen must decide what to do with the livestock line, which loses $1,880 a trailer under ABC. Engineering proposes three standard designs with 20 options; sales fears losing customers who want fully custom trailers and suggests a $3,000 custom-design fee instead. A consultant suggests dropping the line, noting that $160,000 of the overhead allocated to it is facility-sustaining.",
+   [
+    "What would each proposal do to the line's margin per trailer?",
+    "Why is the consultant's suggestion risky?",
+    "Could the proposals be combined?",
+    "What nonfinancial factors matter?"
+   ],
+   "Standard designs: about +$2,880 per trailer if resources fall, margin +$1,000. Fee: +$3,000 if customers accept, margin +$1,120. Dropping the line wouldn't remove the $160,000 of facility costs, which would fall on utility trailers, and loses customers who also buy utility trailers. Combine: standard designs as default, fully custom at a fee. Nonfinancial: reputation, loyalty, skilled welders."
+  ],
+  "exam": [
+   [
+    "Explain activity-based management and give three types of decision it supports.",
+    4,
+    "Using activity cost information to manage: pricing and product mix, cost reduction and process improvement (value-added analysis), design decisions, customer management, budgeting."
+   ],
+   [
+    "Customer service costs $480,000 for 600,000 practical minutes. Activities: 8,000 claims × 25 min, 2,000 new accounts × 90 min. Compute the cost of each activity unit and unused capacity.",
+    5,
+    "$0.80/min; claim $20; new account $72. Used 200,000 + 180,000 = 380,000 min; unused 220,000 min = $176,000."
+   ]
+  ],
+  "outcomes": [
+   "Use ABC for pricing and product-mix decisions",
+   "Separate value-added from non-value-added activities",
+   "Show how design locks in costs",
+   "Apply ABC to customers in a distributor or service firm",
+   "Compute time-driven ABC rates",
+   "Prepare an activity-based budget"
+  ],
+  "take": [
+   "ABM puts ABC to work",
+   "Cut non-value-added activities, but make savings real",
+   "Design locks in most costs",
+   "Customers, not just products, drive costs",
+   "Cost per minute × minutes per activity",
+   "Budget from activities to resources"
+  ]
+ },
+ "8": {
+  "warmup": [
+   "A bakery mixes 1,000 loaves of dough, and at 5 p.m. 200 are still rising. How many 'loaves' of baking work did the bakers do?",
+   "Not 1,000 or 800: the 200 are part-done. Introduces equivalent units."
+  ],
+  "acts": [
+   [
+    "Job or process costing, and why: a cheese maker, a dairy that also makes custom cheese gift boxes for corporate orders.",
+    "Cheese: process. Gift boxes: job costing for the boxes (or a hybrid)."
+   ],
+   [
+    "Ending WIP 3,000 units: materials 100%, conversion 70%. Compute EU for each.",
+    "DM 3,000; conversion 2,100."
+   ],
+   [
+    "List the five steps and state what each produces for Mixing in March.",
+    "Physical units 20,000; EU 20,000 / 17,000; costs 936,000; cost per EU 29.80 / 20.00; assignment 796,800 / 139,200."
+   ],
+   [
+    "April: beginning WIP 4,000 (25% converted; DM $119,200, CC $20,000); started 17,000; completed 18,000; ending 3,000 (60% converted). DM added $516,000; CC $354,000. Compute WA EU.",
+    "DM 18,000 + 3,000 = 21,000; CC 18,000 + 1,800 = 19,800."
+   ],
+   [
+    "Continue April: costs per EU and assignment.",
+    "DM 635,200 ÷ 21,000 = $30.248; CC 374,000 ÷ 19,800 = $18.889. Completed 18,000 × 49.137 = $884,457; ending WIP 3,000 × 30.248 + 1,800 × 18.889 = 90,743 + 34,000 = $124,743. Total $1,009,200."
+   ],
+   [
+    "Write the journal entries for April's costs and transfer.",
+    "Dr WIP Mixing 516,000 / Cr Materials 516,000; Dr WIP Mixing 354,000 / Cr Wages payable and MOH allocated 354,000; Dr WIP Aging 884,457 / Cr WIP Mixing 884,457."
+   ]
+  ],
+  "case": [
+   "The completion estimate",
+   "Redwood Valley's Mixing supervisor estimates ending WIP is 25% converted. The plant manager, whose bonus depends on low cost per block transferred, suggests 'it's really more like 50%'. Use March data.",
+   [
+    "Recompute WA conversion EU and cost per EU at 50%.",
+    "What happens to the cost of blocks transferred out and to ending WIP?",
+    "Why might the plant manager prefer 50%?",
+    "How can the creamery make completion estimates more reliable?"
+   ],
+   "CC EU 16,000 + 2,000 = 18,000; CC per EU 340,000 ÷ 18,000 = $18.89. Transferred out 16,000 × 48.689 = $779,022 (down $17,778); ending WIP rises to $156,978. Lower unit cost flatters the manager's performance. Use process timers, sensors and audits, and separate the estimator from the bonus."
+  ],
+  "exam": [
+   [
+    "Explain equivalent units and why they're computed separately for materials and conversion costs.",
+    4,
+    "EU = physical units × % complete; materials are often added at specific points while conversion is incurred evenly, so completion differs by category."
+   ],
+   [
+    "Beginning WIP 1,000 units (DM $9,000, CC $3,000); started 9,000; completed 8,000; ending 2,000 units (DM 100%, CC 50%). Current costs DM $91,000, CC $60,000. Using weighted average, compute costs transferred out and ending WIP.",
+    7,
+    "EU DM 10,000, CC 9,000. Per EU: DM 10.00, CC 7.00. Out: 8,000 × 17 = 136,000. Ending: 20,000 + 7,000 = 27,000. Total 163,000."
+   ]
+  ],
+  "outcomes": [
+   "Explain when process costing applies",
+   "Compute equivalent units",
+   "Apply the five-step approach",
+   "Compute weighted-average equivalent units",
+   "Compute WA cost per EU and assign costs",
+   "Record process costing journal entries"
+  ],
+  "take": [
+   "Average department costs over identical units",
+   "EU = units × % complete, by cost category",
+   "Units, EU, costs, cost per EU, assign",
+   "WA EU = completed + ending WIP EU",
+   "WA blends beginning WIP with current costs",
+   "Each department has its own WIP account"
+  ]
+ },
+ "9": {
+  "warmup": [
+   "A gas station fills its tank at $3.00 a gallon on Monday and $3.30 on Thursday. If it's half full Thursday morning, what did Friday's gasoline cost?",
+   "Average vs first-in-first-out thinking. Leads to WA vs FIFO process costing."
+  ],
+  "acts": [
+   [
+    "April for Mixing: beginning WIP 4,000 (25% converted); started 17,000; completed 18,000; ending 3,000 (60% converted). Compute FIFO EU.",
+    "DM: 0 + 14,000 + 3,000 = 17,000. CC: 3,000 + 14,000 + 1,800 = 18,800."
+   ],
+   [
+    "April costs added: DM $516,000, CC $354,000; beginning WIP $140,000. Compute FIFO costs per EU and assign costs.",
+    "DM 516,000 ÷ 17,000 = $30.353; CC 354,000 ÷ 18,800 = $18.830. Out: 140,000 + 3,000 × 18.830 + 14,000 × 49.183 = 140,000 + 56,489 + 688,558 = $885,047. Ending: 3,000 × 30.353 + 1,800 × 18.830 = 91,059 + 33,894 = $124,953. Total $1,010,000 (rounded)."
+   ],
+   [
+    "Using the shortcut, check April's FIFO EU from the WA EU (21,000 and 19,800).",
+    "DM 21,000 − 4,000 = 17,000; CC 19,800 − 1,000 = 18,800."
+   ],
+   [
+    "Explain when FIFO and WA give the same answer.",
+    "When there is no beginning WIP, or unit costs are the same in both periods."
+   ],
+   [
+    "Aging, April (WA): beginning WIP 2,000 (TI $100,000, CC 40% $6,000); transferred in 18,000 at $885,047; completed 18,500; ending 1,500 (CC 50%); CC added $130,000. Compute EU and unit costs.",
+    "TI EU 20,000: (100,000 + 885,047) ÷ 20,000 = $49.25. CC EU 19,250: 136,000 ÷ 19,250 = $7.06."
+   ],
+   [
+    "Cost a holiday batch of 800 boxes with materials of $8.50 and the same operation rates.",
+    "6,800 + 960 + 1,600 + 640 = $10,000; $12.50 a box."
+   ]
+  ],
+  "case": [
+   "Which method for the bonus?",
+   "Redwood Valley's Mixing supervisor is evaluated on conversion cost per equivalent unit. In March, efficiency improved after new pressing equipment arrived, but February had been a poor month: beginning WIP's conversion cost was $25 per EU. The controller uses weighted average.",
+   [
+    "Explain how weighted average would blur March's improvement.",
+    "Compute March's conversion cost per EU under each method if beginning WIP conversion cost were $20,000 (800 EU at $25).",
+    "Which method would you use to evaluate the supervisor?",
+    "What other measures would you add?"
+   ],
+   "WA mixes February's higher cost into March. WA: (20,000 + 324,000) ÷ 17,000 = $20.24; FIFO: $20.00. Use FIFO (or standard costs) to evaluate current performance. Add yield, scrap, throughput time and quality measures."
+  ],
+  "exam": [
+   [
+    "Compare the weighted-average and FIFO methods of process costing.",
+    5,
+    "WA blends beginning WIP costs and work with current period; EU = completed + ending WIP EU. FIFO separates beginning WIP; EU = work done this period; cost per EU uses current costs only; better for performance evaluation; same when no beginning WIP or stable costs."
+   ],
+   [
+    "Beginning WIP 2,000 units (CC 60% done; cost $30,000 total); started 10,000; completed 9,000; ending 3,000 (DM 100%, CC 40%). Current DM $50,000, CC $46,000. Materials added at start. Using FIFO, compute EU, cost per EU, cost transferred out and ending WIP.",
+    8,
+    "EU DM 7,000 + 3,000 = 10,000; CC 800 + 7,000 + 1,200 = 9,000. Per EU DM 5.00, CC 5.111. Out: 30,000 + 800 × 5.111 + 7,000 × 10.111 = 30,000 + 4,089 + 70,778 = 104,867. Ending 15,000 + 6,133 = 21,133. Total 126,000."
+   ]
+  ],
+  "outcomes": [
+   "Explain the FIFO assumption",
+   "Compute FIFO equivalent units",
+   "Compute FIFO costs per EU and assign costs",
+   "Compare FIFO and weighted average",
+   "Account for transferred-in costs",
+   "Apply operation costing"
+  ],
+  "take": [
+   "FIFO finishes beginning WIP first",
+   "FIFO EU = work done this period",
+   "Current costs ÷ current work",
+   "Same totals; FIFO isolates this month",
+   "Transferred-in costs are always 100% complete",
+   "Hybrids trace materials by batch, convert by operation"
+  ]
+ },
+ "10": {
+  "warmup": [
+   "When you bake cookies, a few always burn. Should their cost be part of the cost of the good cookies?",
+   "If it always happens, yes: normal spoilage. If you forgot the timer, it's abnormal. Leads to 10.2."
+  ],
+  "acts": [
+   [
+    "Classify: (a) cheese blocks too soft to sell, (b) a trailer repainted after a run, (c) whey sold to a pig farmer, (d) milk spilled when a valve failed.",
+    "(a) Spoilage. (b) Rework. (c) Scrap (or byproduct, Lecture 12). (d) Abnormal spoilage."
+   ],
+   [
+    "Normal spoilage is 3% of good units; 12,000 good units; 500 spoiled. Normal and abnormal units?",
+    "Normal 360; abnormal 140."
+   ],
+   [
+    "Redo Mixing's May example if normal spoilage is 4% of good units.",
+    "Normal 368; abnormal 32. Transferred out 460,000 + 18,400 = 478,400 ($52); loss 1,600; ending WIP 16,000."
+   ],
+   [
+    "Job 440: spoiled parts cost $1,500, scrap value $200, caused by a routine machine error common to all jobs. Entry?",
+    "Dr Materials (scrap) 200; Dr MOH control 1,300; Cr WIP (job 440) 1,500."
+   ],
+   [
+    "Rework of $2,000 on job 450 was caused by the customer changing specs mid-build. Entry, and what should Karen do?",
+    "Dr WIP (job 450) 2,000 / Cr Materials, Wages, MOH allocated. Bill the customer for the change order."
+   ],
+   [
+    "Prairie Gate sells $4,500 of aluminum scrap from job 461 alone. Entry?",
+    "Dr Cash 4,500 / Cr WIP (job 461) 4,500."
+   ]
+  ],
+  "case": [
+   "A bad month at the creamery",
+   "In June, a refrigeration failure at Redwood Valley spoiled 900 blocks in Mixing on top of the usual 2%. The plant manager asks the accountant to report all spoilage as normal, 'since it's a cost of making cheese'. Good units were 9,000; ending WIP 300 (CC 50%); no beginning WIP; DM $327,000; CC $206,000. Spoiled units were inspected at the end.",
+   [
+    "Compute normal and abnormal spoiled units.",
+    "Compute the cost per equivalent unit and the cost of abnormal spoilage.",
+    "What happens to the cost per good block if all spoilage is called normal?",
+    "Respond to the plant manager."
+   ],
+   "Spoiled = 900 + 180 normal = 1,080; normal 180, abnormal 900. EU DM 9,000 + 1,080 + 300 = 10,380 → $31.50; CC 9,000 + 1,080 + 150 = 10,230 → $20.14. Per spoiled unit $51.64; abnormal loss ≈ $46,476. Calling it normal would raise the cost of good blocks by about $5.16 and hide the failure in inventory. Report it as abnormal; it's avoidable and needs attention."
+  ],
+  "exam": [
+   [
+    "Distinguish spoilage, rework and scrap, and explain the treatment of normal and abnormal spoilage.",
+    6,
+    "Spoilage: units discarded/sold at reduced price; rework: repaired and sold as good; scrap: leftover material of low value. Normal spoilage cost added to good units (or job, or overhead); abnormal is a loss."
+   ],
+   [
+    "Started 20,000 units, no beginning WIP; good units 18,000; spoiled 1,000 (inspected at end); ending WIP 1,000 (DM 100%, CC 40%). Normal spoilage 5% of good units. DM $400,000; CC $380,000. Compute costs transferred out, abnormal loss and ending WIP.",
+    8,
+    "EU DM 20,000 → $20; CC 19,400 → $19.588. Spoiled unit $39.588. Normal 900, abnormal 100. Out: 18,000 × 39.588 + 900 × 39.588 = 748,206. Loss 3,959. Ending 20,000 + 7,835 = 27,835. Total 780,000 (rounded)."
+   ]
+  ],
+  "outcomes": [
+   "Define spoilage, rework and scrap",
+   "Distinguish normal and abnormal spoilage",
+   "Account for spoilage in process costing",
+   "Account for spoilage in job costing",
+   "Account for rework",
+   "Account for scrap"
+  ],
+  "take": [
+   "Spoiled, reworked or leftover",
+   "Normal: part of product cost; abnormal: a loss",
+   "Spoiled units count in equivalent units; ending WIP bears no spoilage if not inspected",
+   "Job-specific, all-jobs or abnormal",
+   "Track rework by cause",
+   "Scrap reduces the job or overhead"
+  ]
+ },
+ "11": {
+  "warmup": [
+   "Your apartment shares one internet plan among three roommates; one streams all day. How should you split the bill?",
+   "Equal shares, by usage, or base plus usage: the same choices as single versus dual rates."
+  ],
+  "acts": [
+   [
+    "Recompute single- and dual-rate charges if Aging used 1,600 hours (its budget) and Mixing 2,400.",
+    "Single: Mixing 168,000, Aging 112,000. Dual: fixed 72,000 / 48,000; variable 96,000 / 64,000; totals 168,000 / 112,000. Same when actual = budget."
+   ],
+   [
+    "Maintenance spends $310,000 instead of $280,000 budgeted. Under budgeted rates, who bears the $30,000? Under actual rates?",
+    "Budgeted: Maintenance. Actual: Mixing and Aging in proportion to use."
+   ],
+   [
+    "Direct method: Maintenance $400,000 serves Lab 25%, Mixing 45%, Aging 30%. Allocate.",
+    "Mixing 45/75 = 240,000; Aging 160,000."
+   ],
+   [
+    "Redo the step-down method starting with the Quality Lab. Compare.",
+    "Lab: M 20,000, Mixing 120,000, Aging 60,000. M total 320,000: Mixing 50/80 = 200,000, Aging 120,000. Mixing 320,000; Aging 180,000."
+   ],
+   [
+    "Reciprocal: support A $100,000 gives 30% to B; B $50,000 gives 20% to A. Solve for A and B.",
+    "A = 100,000 + 0.2B; B = 50,000 + 0.3A → A = 110,000 + 0.06A → A = 117,021; B = 85,106."
+   ],
+   [
+    "Allocate a $45,000 shared consultant by stand-alone (A $40,000, B $20,000) and incremental (A primary).",
+    "Stand-alone: A 30,000, B 15,000. Incremental: A 40,000, B 5,000."
+   ]
+  ],
+  "case": [
+   "Which method for pricing?",
+   "Redwood Valley prices its cheese partly on full cost. Aging's manager complains that her department is charged too much maintenance, since Aging's caves need little maintenance in practice, and that she is charged for the Lab's inefficiency. Maintenance actually spent $330,000 against a $300,000 budget. Support costs are currently allocated by the direct method using actual costs.",
+   [
+    "Which methods would better reflect the services Aging actually uses?",
+    "How do budgeted rates address her second complaint?",
+    "What would change if fixed maintenance costs were charged on budgeted usage?",
+    "What incentive problems could arise?"
+   ],
+   "Reciprocal (or step-down) better captures support-to-support services, and dual rates separate fixed capacity from actual use. Budgeted rates leave the $30,000 overspend with Maintenance. Charging fixed costs on budgeted usage makes Aging pay for capacity it requested, so its budget estimate matters. Risks: lowball usage estimates; disputes over percentages; the cost of measuring services."
+  ],
+  "exam": [
+   [
+    "Compare the direct, step-down and reciprocal methods.",
+    6,
+    "Direct ignores support-to-support services; step-down recognizes some, sequentially, with order affecting results; reciprocal recognizes all with simultaneous equations, most accurate."
+   ],
+   [
+    "Support S1 ($80,000) serves S2 10%, P1 60%, P2 30%. S2 ($40,000) serves S1 20%, P1 40%, P2 40%. Allocate by the direct and reciprocal methods.",
+    8,
+    "Direct: S1 → P1 53,333, P2 26,667; S2 → P1 20,000, P2 20,000. P1 73,333; P2 46,667. Reciprocal: S1 = 80,000 + 0.2S2; S2 = 40,000 + 0.1S1 → S1 = 88,000 + 0.02S1 → 89,796; S2 = 48,980. P1 = 0.6 × 89,796 + 0.4 × 48,980 = 53,878 + 19,592 = 73,469; P2 = 26,939 + 19,592 = 46,531."
+   ]
+  ],
+  "outcomes": [
+   "Distinguish single-rate and dual-rate allocation",
+   "Choose budgeted versus actual rates and quantities",
+   "Apply the direct method",
+   "Apply the step-down method",
+   "Apply the reciprocal method",
+   "Allocate common costs by stand-alone and incremental methods"
+  ],
+  "take": [
+   "Dual rates: fixed by budget, variable by actual use",
+   "Budgeted rates keep inefficiency where it belongs",
+   "Direct ignores support-to-support services",
+   "Step-down goes in sequence; order matters",
+   "Reciprocal captures all services",
+   "Stand-alone shares savings; incremental favors the primary user"
+  ]
+ },
+ "12": {
+  "warmup": [
+   "A butcher buys a whole hog for $300 and sells chops, bacon, ham and sausage. What did the bacon cost?",
+   "There's no single answer: it depends on how the $300 joint cost is split. Introduces joint cost allocation."
+  ],
+  "acts": [
+   [
+    "Classify for a soybean crusher: soybean meal, soybean oil, hulls sold as cattle feed, dust swept from the floor.",
+    "Joint products: meal, oil; byproduct: hulls; scrap: dust."
+   ],
+   [
+    "Joint cost $300,000; at splitoff A 4,000 units at $50, B 6,000 at $30. Allocate by sales value at splitoff.",
+    "Values 200,000 and 180,000. A 157,895; B 142,105."
+   ],
+   [
+    "Same data by physical units. Which product looks worse, and why?",
+    "A 120,000; B 180,000. B looks worse because it's heavier but cheaper per unit."
+   ],
+   [
+    "A's final value $280,000, separable $60,000; B's final $240,000, separable $40,000; joint $300,000. Allocate by NRV and by constant gross margin.",
+    "NRV 220,000 and 200,000: A 157,143, B 142,857. CGM: revenue 520,000, cost 400,000, GM 23.08%; A cost 215,385 − 60,000 = 155,385; B 184,615 − 40,000 = 144,615."
+   ],
+   [
+    "Should A and B be processed further if splitoff values are $200,000 and $180,000?",
+    "A: +80,000 − 60,000 = +20,000 yes. B: +60,000 − 40,000 = +20,000 yes."
+   ],
+   [
+    "Byproduct worth $6,000 produced; $4,500 sold. Show the effect under both methods.",
+    "Production: main product joint cost reduced 6,000; byproduct inventory 1,500. Sales: revenue (or COGS reduction) 4,500 when sold."
+   ]
+  ],
+  "case": [
+   "The skim milk loss",
+   "Redwood Valley's controller allocates joint separator costs by gallons. The skim line reports a large loss, and a board member proposes dumping skim instead of bottling it, 'to stop losing money'. Use the data from this lecture: joint cost $400,000; cream 25,000 gallons, skim 75,000; skim's sales value at splitoff $150,000, bottled $240,000, bottling cost $60,000. Dumping skim would cost $10,000 in disposal fees.",
+   [
+    "Compute skim's reported margin under the physical method after bottling.",
+    "Recompute under sales value at splitoff and NRV.",
+    "What happens to total profit if skim is dumped?",
+    "Advise the board."
+   ],
+   "Physical: 240,000 − 60,000 − 300,000 = −120,000. Sales value: 240,000 − 60,000 − 171,429 = +8,571; NRV: 240,000 − 60,000 − 163,636 = +16,364. Dumping loses 180,000 of NRV and adds 10,000 of fees, cutting profit by $190,000; joint costs don't fall. Keep bottling; consider changing the allocation method."
+  ],
+  "exam": [
+   [
+    "Explain why joint cost allocation is irrelevant to sell-or-process-further decisions.",
+    4,
+    "Joint costs are incurred regardless of what happens after splitoff; only incremental revenues and costs beyond splitoff differ between the alternatives."
+   ],
+   [
+    "Joint cost $90,000; product X 2,000 units sold at splitoff for $40 each; Y 3,000 units processed further at $10 a unit, then sold at $30 (no splitoff market). Allocate by NRV and decide whether X should be processed into X+ (extra cost $25,000, final value $110,000).",
+    6,
+    "NRV X 80,000; Y 60,000; total 140,000. X 51,429; Y 38,571. X+: incremental revenue 30,000 > 25,000: process further (+5,000)."
+   ]
+  ],
+  "outcomes": [
+   "Identify joint products, byproducts and the splitoff point",
+   "Allocate joint costs by sales value at splitoff",
+   "Allocate by physical measure and explain its weakness",
+   "Allocate by NRV and constant gross margin",
+   "Decide whether to sell or process further",
+   "Account for byproducts"
+  ],
+  "take": [
+   "One process, several products",
+   "Sales value at splitoff: the usual choice",
+   "Physical measures ignore value",
+   "NRV = final value − separable costs",
+   "Joint costs are irrelevant after splitoff",
+   "Byproducts: production or sales method"
+  ]
+ },
+ "13": {
+  "warmup": [
+   "You budgeted $400 for groceries for a month and spent $440, but you had house guests for a week. Did you overspend?",
+   "Not necessarily: a fair comparison adjusts the budget for the actual number of people. That's a flexible budget."
+  ],
+  "acts": [
+   [
+    "April: 44 trailers sold at $4,950. Compute static (40 planned) and flexible budget operating income using the standard trailer data and $40,000 of fixed costs.",
+    "Static 21,600. Flexible: 44 × 1,540 − 40,000 = 27,760. Sales-volume variance 6,160 F."
+   ],
+   [
+    "Actual April revenue $217,800. Selling-price variance?",
+    "(4,950 − 5,000) × 44 = 2,200 U."
+   ],
+   [
+    "Explain why attainable standards are preferred to ideal standards.",
+    "Achievable with effort, so variances are informative and motivating; ideal standards guarantee unfavorable variances and discourage workers."
+   ],
+   [
+    "April steel: 22,600 lb purchased and used at $3.05. Standard 500 lb per trailer. Compute price and efficiency variances.",
+    "Price (3.05 − 3.00) × 22,600 = 1,130 U. Efficiency (22,600 − 22,000) × 3 = 1,800 U."
+   ],
+   [
+    "April labor: 1,030 hours at $29.50. Compute variances and record the journal entry.",
+    "Price (29.50 − 30) × 1,030 = 515 F. Efficiency (1,030 − 1,056) × 30 = 780 F. Dr WIP 31,680; Cr Labor price variance 515; Cr Labor efficiency variance 780; Cr Wages payable 30,385."
+   ],
+   [
+    "List three possible causes of an unfavorable labor efficiency variance and who would explain each.",
+    "Poor-quality steel (purchasing); new untrained welders (HR/production); machine breakdowns (maintenance); unrealistic standards (engineering/controller)."
+   ]
+  ],
+  "case": [
+   "The cheap steel",
+   "In March, purchasing switched to a new steel supplier offering $2.90 a pound, earning a $1,890 favorable price variance. Production complained that the steel had more mill scale, requiring extra grinding and causing more scrap. The purchasing manager's bonus is based on price variances; the plant manager's on efficiency variances.",
+   [
+    "Compute the combined effect on March costs of the steel switch, assuming all unfavorable steel and labor efficiency variances were caused by it.",
+    "Should Prairie Gate keep the new supplier?",
+    "What's wrong with the bonus system?",
+    "How would you redesign it?"
+   ],
+   "Price +1,890; steel efficiency −2,700; labor efficiency −1,080: net −1,890, about $52 a trailer worse. Return to the old supplier or demand quality improvements. Separate bonuses encourage each manager to win their own variance at the other's expense. Reward total cost per trailer, or joint purchasing–production targets including quality."
+  ],
+  "exam": [
+   [
+    "Explain the difference between the static-budget variance, the sales-volume variance and the flexible-budget variance.",
+    5,
+    "Static-budget variance = actual − static budget. It splits into sales-volume variance (flexible − static: effect of output differing from plan, at budgeted prices) and flexible-budget variance (actual − flexible: effect of prices and efficiency)."
+   ],
+   [
+    "Standard: 3 kg at $8 per unit; 2 hours at $25. Actual for 1,000 units: 3,150 kg bought and used at $7.80; 1,950 hours at $26. Compute price and efficiency variances for materials and labor.",
+    6,
+    "DM price 630 F; efficiency 1,200 U. DL price 1,950 U; efficiency 1,250 F."
+   ]
+  ],
+  "outcomes": [
+   "Compute the static-budget variance",
+   "Prepare a flexible budget and split the static-budget variance",
+   "Explain how standards are set",
+   "Compute direct materials price and efficiency variances",
+   "Compute direct labor variances and record them",
+   "Decide which variances to investigate and how to use them"
+  ],
+  "take": [
+   "Variance = actual − budget; F raises income",
+   "Flexible budget = budgeted prices at actual output",
+   "Attainable standards motivate",
+   "Price × actual quantity; efficiency × budgeted price",
+   "Same logic for labor hours and rates",
+   "Investigate big or recurring variances; learn, don't blame"
+  ]
+ },
+ "14": {
+  "warmup": [
+   "Prairie Gate built 36 trailers instead of 40 in March, yet its fixed costs didn't fall. What happens to the fixed cost 'per trailer'?",
+   "Rises from $1,000 to $1,111; sets up the production-volume variance."
+  ],
+  "acts": [
+   [
+    "May's budget keeps fixed MOH at $40,000 but uses a 50-trailer denominator. What is the fixed rate per trailer and per standard labor hour?",
+    "$800 per trailer; $800 ÷ 24 = $33.33 per standard hour."
+   ],
+   [
+    "April: 42 trailers, 1,000 actual hours, actual VMOH $10,400. Compute the VMOH spending and efficiency variances.",
+    "Standard hours 1,008. Spending 10,400 − 10,000 = $400 U. Efficiency (1,000 − 1,008) × 10 = $80 F."
+   ],
+   [
+    "April actual fixed MOH $39,500. Compute the fixed spending and production-volume variances.",
+    "Spending 39,500 − 40,000 = $500 F. Allocated 42 × 1,000 = 42,000; PVV $2,000 F."
+   ],
+   [
+    "Prove that April's four variances equal under- or overallocated overhead, and prepare the entry closing fixed overhead.",
+    "Actual 49,900; allocated 10,080 + 42,000 = 52,080; overallocated 2,180 = −400 + 80 + 500 + 2,000. Entry: Dr Fixed MOH allocated 42,000; Cr Fixed MOH spending var. 500; Cr Production-volume var. 2,000; Cr Fixed MOH control 39,500."
+   ],
+   [
+    "If Prairie Gate had used 960 hours as the denominator, what would the fixed rate per labor hour be, and would March's PVV change?",
+    "$41.67 per hour; allocated 864 × 41.67 = 36,000; PVV unchanged at $4,000 U."
+   ],
+   [
+    "Explain why a plant manager judged on the PVV might overproduce, and suggest a better measure.",
+    "Building inventory raises allocated fixed cost; use sales-volume variance, inventory targets, or capacity measures."
+   ]
+  ],
+  "case": [
+   "Dale's overhead report",
+   "For the quarter, Prairie Gate's standard costing system shows: VMOH spending $900 U, VMOH efficiency $1,200 F, fixed MOH spending $2,500 U, and production-volume $9,000 F. Dale argues the quarter was a success because total overhead was overallocated. Inventory of finished utility trailers rose from 6 to 24 units during the quarter, while dealer orders were flat.",
+   [
+    "Compute total under- or overallocated overhead.",
+    "What does the favorable PVV really indicate here?",
+    "Is Dale's claim justified?",
+    "What measures should Karen Olsen add?"
+   ],
+   "Overallocated 9,000 + 1,200 − 900 − 2,500 = $6,800. The favorable PVV reflects producing more than the denominator, much of it into unsold inventory. Not justified: profit under absorption costing rose by deferring fixed costs into inventory; cash and risk worsened. Add inventory targets, sales-volume variances, variable costing reports, and on-time delivery measures."
+  ],
+  "exam": [
+   [
+    "Explain the four overhead variances and what causes each.",
+    6,
+    "VMOH spending (prices/usage per hour), VMOH efficiency (hours used), fixed spending (actual vs budget), production-volume (output vs denominator; not economic)."
+   ],
+   [
+    "Budget: VMOH $12 per machine-hour, 2 MH per unit; fixed MOH $90,000 at a 15,000-unit denominator. Actual: 14,000 units, 29,000 MH, VMOH $351,000, fixed MOH $92,000. Compute all four variances.",
+    8,
+    "Std MH 28,000. VMOH spending 351,000 − 348,000 = $3,000 U; efficiency 1,000 × 12 = $12,000 U. Fixed spending $2,000 U. Rate $6/unit; allocated 84,000; PVV $6,000 U."
+   ]
+  ],
+  "outcomes": [
+   "Explain how variable and fixed overhead are planned",
+   "Compute budgeted variable and fixed overhead rates",
+   "Compute variable overhead spending and efficiency variances",
+   "Compute fixed overhead spending and production-volume variances",
+   "Reconcile the four variances to under- or overallocated overhead and record entries",
+   "Interpret overhead variances and avoid misuse of the PVV"
+  ],
+  "take": [
+   "Plan variable and fixed overhead differently",
+   "VMOH: spending and efficiency variances",
+   "Fixed: spending and production-volume variances",
+   "The four variances explain underallocation",
+   "PVV is an accounting effect, not lost profit",
+   "Read variances together, not in isolation"
+  ]
+ }
+}

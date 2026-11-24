@@ -1,0 +1,593 @@
+{
+ "videos": [
+  {
+   "id": "3.1",
+   "title": "How costs flow through a factory",
+   "lecture": "Lecture 3 \u00b7 Cost flows",
+   "take": "Manufacturing costs flow from materials to work in process, finished goods and cost of goods sold",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Manufacturing costs move through the accounts the same way trailers move through the factory. Follow the flow."
+    },
+    {
+     "type": "flow",
+     "heading": "The cost flow",
+     "items": [
+      "Materials inventory",
+      "Work in process: + labor + overhead",
+      "Finished goods",
+      "Cost of goods sold"
+     ],
+     "say": "Materials are bought into materials inventory. When they're used, their cost moves into work in process, joined by direct labor and manufacturing overhead. When trailers are finished, their cost moves to finished goods. When they're sold, it becomes cost of goods sold."
+    },
+    {
+     "type": "define",
+     "big": "Beginning + in \u2212 out = ending",
+     "size": 78,
+     "sub": [
+      "Every inventory account",
+      "follows the same equation"
+     ],
+     "say": "Every inventory account follows the same equation: beginning balance, plus what comes in, minus what goes out, equals the ending balance. Know three numbers and you can find the fourth."
+    },
+    {
+     "type": "taccount",
+     "heading": "Work-in-process, October",
+     "accounts": [
+      {
+       "name": "Work in process",
+       "entries": [
+        [
+         "dr",
+         110000
+        ],
+        [
+         "dr",
+         196000
+        ],
+        [
+         "dr",
+         88000
+        ],
+        [
+         "dr",
+         132000
+        ],
+        [
+         "cr",
+         400000
+        ]
+       ],
+       "balance": [
+        "dr",
+        126000
+       ]
+      }
+     ],
+     "say": "Prairie Gate's work in process started October with $110,000. It received $196,000 of materials, $88,000 of direct labor and $132,000 of overhead. $400,000 of trailers were finished and moved out, leaving $126,000."
+    },
+    {
+     "type": "key",
+     "big": "Costs follow the product",
+     "sub": [
+      "Inventoriable costs stay on the balance sheet",
+      "until the trailer is sold"
+     ],
+     "say": "The key idea: inventoriable costs follow the product. They only reach the income statement when the trailer is sold."
+    },
+    {
+     "type": "quiz",
+     "q": "Finished goods began at $64,000; $400,000 was completed; ending is $58,000. What is cost of goods sold?",
+     "opts": [
+      "$394,000",
+      "$406,000",
+      "$400,000",
+      "$522,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Finished goods began at sixty-four thousand, four hundred thousand was completed, and the ending balance is fifty-eight thousand. What's cost of goods sold? Pause and pick.",
+     "reveal": "It's B. 64,000 plus 400,000 minus 58,000 is $406,000."
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "title": "Direct materials used",
+   "lecture": "Lecture 3 \u00b7 Cost flows",
+   "take": "Direct materials used equals beginning materials plus purchases minus ending materials",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Purchases aren't the same as materials used. The difference sits in the storeroom."
+    },
+    {
+     "type": "table",
+     "heading": "Prairie Gate, October",
+     "rows": [
+      [
+       "Beginning direct materials",
+       70000
+      ],
+      [
+       "Purchases",
+       210000
+      ],
+      [
+       "Available for use",
+       280000,
+       "total"
+      ],
+      [
+       "Ending direct materials",
+       -84000
+      ],
+      [
+       "Direct materials used",
+       196000,
+       "total"
+      ]
+     ],
+     "say": "Prairie Gate began October with $70,000 of steel, axles and tires. It bought $210,000 more, so $280,000 was available. $84,000 was still in the storeroom at month-end, so $196,000 was used in production."
+    },
+    {
+     "type": "key",
+     "big": "Purchases \u2260 usage",
+     "sub": [
+      "Buying ahead raises inventory,",
+      "not this month's product cost"
+     ],
+     "say": "If Prairie Gate stocks up on steel before a price increase, purchases jump, but materials used, and product cost, don't."
+    },
+    {
+     "type": "define",
+     "big": "Indirect materials",
+     "sub": [
+      "Welding wire, grease, sandpaper:",
+      "charged to overhead"
+     ],
+     "say": "Some materials are too small to trace, like welding wire and grease. These indirect materials go to manufacturing overhead, not direct materials."
+    },
+    {
+     "type": "key",
+     "big": "Materials requisitions",
+     "sub": [
+      "The document that moves cost",
+      "from the storeroom to a job"
+     ],
+     "say": "In practice, a materials requisition records each issue from the storeroom to a specific trailer, which is how job costing will trace materials in Lecture 4."
+    },
+    {
+     "type": "quiz",
+     "q": "Beginning materials $30,000, purchases $95,000, ending $25,000. Materials used?",
+     "opts": [
+      "$90,000",
+      "$100,000",
+      "$95,000",
+      "$150,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Beginning materials thirty thousand, purchases ninety-five thousand, ending twenty-five thousand. What was used? Pause and pick.",
+     "reveal": "It's B. 30,000 plus 95,000 minus 25,000 is $100,000."
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "title": "Cost of goods manufactured",
+   "lecture": "Lecture 3 \u00b7 Cost flows",
+   "take": "COGM adds this period's manufacturing costs to beginning WIP and subtracts ending WIP",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "The schedule of cost of goods manufactured shows the cost of everything finished this period. Let's build it."
+    },
+    {
+     "type": "table",
+     "heading": "Manufacturing costs incurred, October",
+     "rows": [
+      [
+       "Direct materials used",
+       196000
+      ],
+      [
+       "Direct manufacturing labor",
+       88000
+      ],
+      [
+       "Manufacturing overhead",
+       132000
+      ],
+      [
+       "Total manufacturing costs incurred",
+       416000,
+       "total"
+      ]
+     ],
+     "say": "In October, Prairie Gate used $196,000 of direct materials and incurred $88,000 of direct labor and $132,000 of overhead: $416,000 of manufacturing costs."
+    },
+    {
+     "type": "table",
+     "heading": "Schedule of cost of goods manufactured",
+     "rows": [
+      [
+       "Beginning work in process",
+       110000
+      ],
+      [
+       "Total manufacturing costs incurred",
+       416000
+      ],
+      [
+       "Total to account for",
+       526000,
+       "total"
+      ],
+      [
+       "Ending work in process",
+       -126000
+      ],
+      [
+       "Cost of goods manufactured",
+       400000,
+       "total"
+      ]
+     ],
+     "say": "Add the $110,000 of trailers that were partly built at the start, for $526,000 to account for. Subtract the $126,000 still in process at month-end. Cost of goods manufactured, the cost of trailers finished in October, is $400,000."
+    },
+    {
+     "type": "key",
+     "big": "Incurred \u2260 manufactured",
+     "sub": [
+      "$416,000 spent this month;",
+      "$400,000 of trailers finished"
+     ],
+     "say": "Notice the difference. Prairie Gate spent $416,000 this month but finished $400,000 of trailers, because work in process grew."
+    },
+    {
+     "type": "key",
+     "big": "It's the WIP T-account",
+     "sub": [
+      "Beginning + costs in \u2212 COGM = ending"
+     ],
+     "say": "The schedule is just the work-in-process T-account, written out as a report."
+    },
+    {
+     "type": "quiz",
+     "q": "Costs incurred $300,000, beginning WIP $40,000, ending WIP $55,000. COGM?",
+     "opts": [
+      "$315,000",
+      "$285,000",
+      "$300,000",
+      "$395,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Costs incurred three hundred thousand, beginning work in process forty thousand, ending fifty-five thousand. What's cost of goods manufactured? Pause and pick.",
+     "reveal": "It's B. 40,000 plus 300,000 minus 55,000 is $285,000."
+    }
+   ]
+  },
+  {
+   "id": "3.4",
+   "title": "The manufacturer's income statement",
+   "lecture": "Lecture 3 \u00b7 Cost flows",
+   "take": "COGS equals beginning finished goods plus COGM minus ending finished goods",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Cost of goods manufactured feeds the income statement through finished goods. Here's the last step."
+    },
+    {
+     "type": "table",
+     "heading": "Cost of goods sold, October",
+     "rows": [
+      [
+       "Beginning finished goods",
+       64000
+      ],
+      [
+       "Cost of goods manufactured",
+       400000
+      ],
+      [
+       "Available for sale",
+       464000,
+       "total"
+      ],
+      [
+       "Ending finished goods",
+       -58000
+      ],
+      [
+       "Cost of goods sold",
+       406000,
+       "total"
+      ]
+     ],
+     "say": "Prairie Gate began with $64,000 of finished trailers on the lot. Add the $400,000 manufactured, for $464,000 available for sale. $58,000 of trailers remain unsold, so cost of goods sold is $406,000."
+    },
+    {
+     "type": "table",
+     "heading": "Income statement, October",
+     "rows": [
+      [
+       "Revenues",
+       560000
+      ],
+      [
+       "Cost of goods sold",
+       -406000
+      ],
+      [
+       "Gross margin",
+       154000,
+       "total"
+      ],
+      [
+       "Marketing, distribution, admin",
+       -96000
+      ],
+      [
+       "Operating income",
+       58000,
+       "total"
+      ]
+     ],
+     "say": "Revenues were $560,000. Less cost of goods sold, gross margin is $154,000. Less $96,000 of period costs for marketing, distribution and administration, operating income is $58,000."
+    },
+    {
+     "type": "compare",
+     "heading": "Merchandiser vs manufacturer",
+     "cols": [
+      "Merchandiser",
+      "Manufacturer"
+     ],
+     "rows": [
+      [
+       "Adds to inventory",
+       "Purchases",
+       "Cost of goods manufactured"
+      ],
+      [
+       "Inventories",
+       "One",
+       "Three"
+      ]
+     ],
+     "say": "A merchandiser's statement looks the same, except purchases take the place of cost of goods manufactured, and it has one inventory instead of three."
+    },
+    {
+     "type": "key",
+     "big": "Where period costs go",
+     "sub": [
+      "Straight to the income statement,",
+      "never through inventory"
+     ],
+     "say": "Period costs skip the inventory accounts entirely and go straight to the income statement."
+    },
+    {
+     "type": "quiz",
+     "q": "Revenue $800,000, COGS $520,000, period costs $190,000. Operating income?",
+     "opts": [
+      "$280,000",
+      "$90,000",
+      "$610,000",
+      "$330,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Revenue eight hundred thousand, cost of goods sold five twenty, period costs one ninety. Operating income? Pause and pick.",
+     "reveal": "It's B. Gross margin $280,000, less $190,000: $90,000."
+    }
+   ]
+  },
+  {
+   "id": "3.5",
+   "title": "Journal entries for cost flows",
+   "lecture": "Lecture 3 \u00b7 Cost flows",
+   "take": "Each step of the flow is a journal entry moving cost from one account to the next",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Every arrow in the cost flow is a journal entry. Here are the main ones for October."
+    },
+    {
+     "type": "journal",
+     "heading": "Use materials and labor",
+     "rows": [
+      [
+       "WIP control",
+       196000,
+       ""
+      ],
+      [
+       "Materials control",
+       "",
+       196000
+      ],
+      [
+       "WIP control",
+       88000,
+       ""
+      ],
+      [
+       "Wages payable control",
+       "",
+       88000
+      ]
+     ],
+     "say": "Issuing direct materials debits work in process and credits materials: $196,000. Direct labor debits work in process and credits wages payable: $88,000."
+    },
+    {
+     "type": "journal",
+     "heading": "Overhead",
+     "rows": [
+      [
+       "MOH control",
+       132000,
+       ""
+      ],
+      [
+       "Various accounts",
+       "",
+       132000
+      ],
+      [
+       "WIP control",
+       132000,
+       ""
+      ],
+      [
+       "MOH control",
+       "",
+       132000
+      ]
+     ],
+     "say": "Actual overhead costs, like utilities and depreciation, are first collected in manufacturing overhead control. Then they're moved into work in process. In Lecture 5 you'll see that companies usually apply overhead using a predetermined rate instead."
+    },
+    {
+     "type": "journal",
+     "heading": "Finish and sell",
+     "rows": [
+      [
+       "Finished goods",
+       400000,
+       ""
+      ],
+      [
+       "WIP control",
+       "",
+       400000
+      ],
+      [
+       "Cost of goods sold",
+       406000,
+       ""
+      ],
+      [
+       "Finished goods",
+       "",
+       406000
+      ]
+     ],
+     "say": "Completed trailers move from work in process to finished goods: $400,000. Trailers sold move from finished goods to cost of goods sold: $406,000. A separate entry records the revenue."
+    },
+    {
+     "type": "key",
+     "big": "Control accounts",
+     "sub": [
+      "The general ledger total, backed by",
+      "subsidiary ledgers by job or material"
+     ],
+     "say": "The word control means a general ledger account backed by a subsidiary ledger: individual job cost records behind work in process, for example."
+    },
+    {
+     "type": "quiz",
+     "q": "Which entry records trailers completed?",
+     "opts": [
+      "Dr COGS, Cr Finished goods",
+      "Dr Finished goods, Cr WIP",
+      "Dr WIP, Cr Materials",
+      "Dr WIP, Cr Finished goods"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which entry records trailers completed? Pause and pick.",
+     "reveal": "It's B. Cost moves out of work in process into finished goods."
+    }
+   ]
+  },
+  {
+   "id": "3.6",
+   "title": "Three meanings of product cost",
+   "lecture": "Lecture 3 \u00b7 Cost flows",
+   "take": "Product cost differs for pricing, government contracting and external reporting",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "What did a trailer cost? The answer depends on why you're asking. Here are three definitions of product cost."
+    },
+    {
+     "type": "compare",
+     "heading": "Three product costs",
+     "cols": [
+      "Purpose",
+      "Includes"
+     ],
+     "rows": [
+      [
+       "Pricing and mix",
+       "Long-run decisions",
+       "Whole value chain"
+      ],
+      [
+       "Contracting",
+       "Cost-plus contracts",
+       "Costs the contract allows"
+      ],
+      [
+       "Financial statements",
+       "Inventory under GAAP",
+       "Manufacturing costs only"
+      ]
+     ],
+     "say": "For pricing and product-mix decisions, product cost includes the whole value chain, from design to customer service. For a government cost-plus contract, it includes only the costs the contract allows. For the financial statements, it includes only manufacturing costs."
+    },
+    {
+     "type": "table",
+     "heading": "Trailer #418, three ways",
+     "rows": [
+      [
+       "Manufacturing cost (GAAP)",
+       11480
+      ],
+      [
+       "+ design, marketing, delivery, warranty",
+       2100
+      ],
+      [
+       "Full value-chain cost",
+       13580,
+       "total"
+      ]
+     ],
+     "say": "Trailer four-eighteen's GAAP inventory cost is $11,480. Add design, marketing, delivery and expected warranty costs, and its full value-chain cost is $13,580. Pricing it at $13,000 would look profitable on the GAAP number, but it isn't."
+    },
+    {
+     "type": "key",
+     "big": "Cost-plus contracts",
+     "sub": [
+      "A county buys 6 trailers at",
+      "allowable cost + 8%"
+     ],
+     "say": "Suppose Lyon County buys six utility trailers on a cost-plus-eight-percent contract. The contract decides which costs count, so the accounting must follow it, not GAAP."
+    },
+    {
+     "type": "recap",
+     "big": "Different costs, different purposes",
+     "sub": [
+      "Always ask: cost for what?"
+     ],
+     "say": "It's the theme of the course again: different costs for different purposes. Always ask what the cost is for."
+    },
+    {
+     "type": "quiz",
+     "q": "Which product cost should Karen use to set the long-run price of a trailer model?",
+     "opts": [
+      "Manufacturing cost only",
+      "Full value-chain cost",
+      "Direct materials only",
+      "Contract-allowable cost"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which product cost should Karen use for a long-run price? Pause and pick.",
+     "reveal": "It's B. In the long run, prices must cover every cost in the value chain."
+    }
+   ]
+  }
+ ]
+}

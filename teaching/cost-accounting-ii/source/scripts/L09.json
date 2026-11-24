@@ -1,0 +1,535 @@
+{
+ "videos": [
+  {
+   "id": "9.1",
+   "title": "Why allocate costs?",
+   "lecture": "Lecture 9 \u00b7 Customer profitability",
+   "take": "Allocation serves four purposes; cause-and-effect and benefits received are the best criteria",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Allocation can feel arbitrary. But every allocation should serve a purpose and follow a defensible criterion."
+    },
+    {
+     "type": "list",
+     "heading": "Four purposes",
+     "items": [
+      "Provide information for economic decisions",
+      "Motivate managers and employees",
+      "Justify costs or compute reimbursement",
+      "Measure income and assets for outsiders"
+     ],
+     "say": "Allocations serve four purposes: to inform economic decisions like pricing; to motivate managers, for example to use a support service carefully; to justify costs or compute reimbursements, as in government contracts; and to measure income and assets for external reporting."
+    },
+    {
+     "type": "compare",
+     "heading": "Criteria for choosing a base",
+     "cols": [
+      "Means",
+      "Rating"
+     ],
+     "rows": [
+      [
+       "Cause and effect",
+       "What drives the cost",
+       "Best"
+      ],
+      [
+       "Benefits received",
+       "Who benefits most",
+       "Good"
+      ],
+      [
+       "Fairness or equity",
+       "What seems reasonable",
+       "Vague"
+      ],
+      [
+       "Ability to bear",
+       "Who earns most profit",
+       "Weak"
+      ]
+     ],
+     "say": "The best criterion is cause and effect: allocate by what drives the cost. When that's not possible, benefits received: who gains most. Fairness is vague, and ability to bear, charging the most profitable units more, distorts decisions."
+    },
+    {
+     "type": "key",
+     "big": "Purpose decides the method",
+     "sub": [
+      "Decision-making needs causal costs;",
+      "reimbursement follows the contract"
+     ],
+     "say": "The purpose decides the method. For decisions, use causal allocations, or leave costs unallocated. For a government contract, follow the contract's rules."
+    },
+    {
+     "type": "key",
+     "big": "Some costs shouldn't be allocated",
+     "sub": [
+      "Corporate-sustaining costs have",
+      "no causal link to products"
+     ],
+     "say": "And some costs, like the CEO's salary, have no causal link to any product or customer. For decisions, they're better left unallocated."
+    },
+    {
+     "type": "quiz",
+     "q": "Tallgrass charges its most profitable division the largest share of head-office costs because 'it can afford it'. Which criterion is that?",
+     "opts": [
+      "Cause and effect",
+      "Benefits received",
+      "Ability to bear",
+      "Fairness"
+     ],
+     "answer": 2,
+     "say": "Quick check. Tallgrass charges its most profitable division the most head-office cost, because it can afford it. Which criterion is that? Pause and pick.",
+     "reveal": "It's C, ability to bear, the weakest criterion."
+    }
+   ]
+  },
+  {
+   "id": "9.2",
+   "title": "Allocating corporate costs",
+   "lecture": "Lecture 9 \u00b7 Customer profitability",
+   "take": "Allocate corporate cost pools with causal bases, and only as far as the purpose requires",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Tallgrass has two divisions and a head office. How should head-office costs be shared?"
+    },
+    {
+     "type": "table",
+     "heading": "Head-office cost pools, 2027",
+     "rows": [
+      [
+       "Human resources",
+       200000
+      ],
+      [
+       "Information technology",
+       150000
+      ],
+      [
+       "Executive and corporate admin",
+       250000
+      ],
+      [
+       "Total",
+       600000,
+       "total"
+      ]
+     ],
+     "say": "Tallgrass's head office costs $600,000: $200,000 for human resources, $150,000 for I.T., and $250,000 for executives and corporate administration."
+    },
+    {
+     "type": "table",
+     "heading": "Causal bases",
+     "rows": [
+      [
+       "Pool",
+       "Bikes | Parts",
+       "head"
+      ],
+      [
+       "HR: by employees, 60 | 15",
+       "$160,000 | $40,000"
+      ],
+      [
+       "IT: tickets, 1,200 | 800",
+       "$90,000 | $60,000"
+      ],
+      [
+       "Corporate admin",
+       "Not allocated"
+      ]
+     ],
+     "say": "Ana allocates human resources by headcount: sixty employees in Bikes, fifteen in Parts. I.T. by help tickets: twelve hundred and eight hundred. Executive and admin costs have no good causal base, so for decisions she leaves them unallocated."
+    },
+    {
+     "type": "key",
+     "big": "Full allocation for some purposes",
+     "sub": [
+      "Long-run pricing and reporting may",
+      "need all costs allocated"
+     ],
+     "say": "For other purposes, like long-run pricing or external segment reporting, she might allocate everything, for instance in proportion to revenue. Just be clear which purpose each number serves."
+    },
+    {
+     "type": "key",
+     "big": "Allocations change behavior",
+     "sub": [
+      "Charge IT by tickets, and divisions",
+      "think twice before calling"
+     ],
+     "say": "Allocations change behavior. Charging I.T. by help tickets encourages divisions to use the help desk sensibly, but too high a charge might stop them asking for help they need."
+    },
+    {
+     "type": "quiz",
+     "q": "HR costs $200,000; Bikes has 60 employees and Parts 15. Bikes' share?",
+     "opts": [
+      "$100,000",
+      "$150,000",
+      "$160,000",
+      "$133,333"
+     ],
+     "answer": 2,
+     "say": "Quick check. HR costs two hundred thousand; Bikes has sixty employees and Parts fifteen. What's Bikes' share? Pause and pick.",
+     "reveal": "It's C. Sixty of seventy-five is eighty percent: $160,000."
+    }
+   ]
+  },
+  {
+   "id": "9.3",
+   "title": "Customer revenues and price discounts",
+   "lecture": "Lecture 9 \u00b7 Customer profitability",
+   "take": "Track discounts by customer; list prices hide large differences in what customers actually pay",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Customer profitability starts with revenue. And customers rarely pay the list price."
+    },
+    {
+     "type": "table",
+     "heading": "Trail bike list price $2,400",
+     "rows": [
+      [
+       "Dealer",
+       "Discount | Net price",
+       "head"
+      ],
+      [
+       "Prairie Pedals, Sioux Falls",
+       "10% | $2,160"
+      ],
+      [
+       "Lakes Cycle, Brainerd",
+       "5% | $2,280"
+      ],
+      [
+       "Big Sky Bikes, Bismarck",
+       "0% | $2,400"
+      ]
+     ],
+     "say": "Three Tallgrass dealers. Prairie Pedals in Sioux Falls buys in volume and gets ten percent off: $2,160 a bike. Lakes Cycle in Brainerd gets five percent. Big Sky Bikes in Bismarck pays full list price."
+    },
+    {
+     "type": "define",
+     "big": "Price discount",
+     "sub": [
+      "Reduction from list price to",
+      "encourage purchases"
+     ],
+     "say": "A price discount is a reduction from list price. Discounts may be earned through volume, negotiated by powerful buyers, or given away by salespeople to close a deal."
+    },
+    {
+     "type": "key",
+     "big": "Track discounts by customer",
+     "sub": [
+      "Recording only net revenue",
+      "hides who gets what"
+     ],
+     "say": "If a company records only net revenue, it can't see which customers get which discounts, or whether salespeople are discounting too freely. Tallgrass records list price and discount separately."
+    },
+    {
+     "type": "key",
+     "big": "Revenue is half the story",
+     "sub": [
+      "Next: what each customer",
+      "costs to serve"
+     ],
+     "say": "But revenue is only half the story. The other half is what each dealer costs to serve."
+    },
+    {
+     "type": "quiz",
+     "q": "List price $2,400, discount 7.5%. Net price?",
+     "opts": [
+      "$2,220",
+      "$2,180",
+      "$2,392",
+      "$1,800"
+     ],
+     "answer": 0,
+     "say": "Quick check. List price twenty-four hundred, discount seven and a half percent. Net price? Pause and pick.",
+     "reveal": "It's A, $2,220."
+    }
+   ]
+  },
+  {
+   "id": "9.4",
+   "title": "The customer cost hierarchy",
+   "lecture": "Lecture 9 \u00b7 Customer profitability",
+   "take": "Customer costs occur at output-unit, batch, customer-sustaining, channel and corporate levels",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Just as products have a cost hierarchy, so do customers."
+    },
+    {
+     "type": "compare",
+     "heading": "Customer cost hierarchy",
+     "cols": [
+      "Varies with",
+      "Tallgrass example"
+     ],
+     "rows": [
+      [
+       "Output unit-level",
+       "Each bike sold",
+       "Handling, warranty"
+      ],
+      [
+       "Batch-level",
+       "Each order or delivery",
+       "Order processing, trucking"
+      ],
+      [
+       "Customer-sustaining",
+       "Each customer",
+       "Sales visits, co-op ads"
+      ],
+      [
+       "Distribution-channel",
+       "Each channel",
+       "Dealer network manager"
+      ],
+      [
+       "Corporate-sustaining",
+       "The company",
+       "CEO, head office"
+      ]
+     ],
+     "say": "Output unit-level costs vary with each bike sold. Batch-level costs vary with orders and deliveries. Customer-sustaining costs support a customer regardless of volume, like sales visits and co-op advertising. Channel costs support a whole channel, like dealers versus online. And corporate-sustaining costs support the whole company."
+    },
+    {
+     "type": "table",
+     "heading": "Tallgrass's customer activity rates",
+     "rows": [
+      [
+       "Order processing, per order",
+       40
+      ],
+      [
+       "Delivery, per truck load: Minnesota",
+       300
+      ],
+      [
+       "Delivery, per truck load: Dakotas",
+       450
+      ],
+      [
+       "Sales visit",
+       250
+      ],
+      [
+       "Rush delivery",
+       150
+      ]
+     ],
+     "say": "Ana's activity rates: forty dollars per order, three hundred dollars per truck delivery in Minnesota or four-fifty to the Dakotas, two-fifty per sales visit and a hundred fifty for a rush delivery."
+    },
+    {
+     "type": "key",
+     "big": "Only assign what's caused",
+     "sub": [
+      "Channel and corporate costs",
+      "stay unallocated to customers"
+     ],
+     "say": "Customer-level analysis assigns costs down to the customer-sustaining level. Channel and corporate costs stay at their own levels."
+    },
+    {
+     "type": "key",
+     "big": "Builds on ACCT 413",
+     "sub": [
+      "Same activity-based logic,",
+      "applied to customers"
+     ],
+     "say": "It's the activity-based logic from Cost Accounting I, applied to customers instead of products."
+    },
+    {
+     "type": "quiz",
+     "q": "Co-op advertising paid for one dealer, whatever it buys, is which level?",
+     "opts": [
+      "Output unit-level",
+      "Batch-level",
+      "Customer-sustaining",
+      "Corporate-sustaining"
+     ],
+     "answer": 2,
+     "say": "Quick check. Co-op advertising paid for one dealer, regardless of what it buys, is which level? Pause and pick.",
+     "reveal": "It's C, customer-sustaining."
+    }
+   ]
+  },
+  {
+   "id": "9.5",
+   "title": "Customer-profitability profiles",
+   "lecture": "Lecture 9 \u00b7 Customer profitability",
+   "take": "Ranking customers by profit often shows a few earn most of it and some lose money",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Put revenue and costs together for each dealer, and the results are often surprising."
+    },
+    {
+     "type": "table",
+     "heading": "Three dealers, 2027",
+     "rows": [
+      [
+       "Dealer",
+       "Prairie | Lakes | Big Sky",
+       "head"
+      ],
+      [
+       "Bikes",
+       "200 | 60 | 25"
+      ],
+      [
+       "Gross margin",
+       "$112,000 | $40,800 | $20,000"
+      ],
+      [
+       "Cost to serve",
+       "$10,300 | $16,700 | $20,750"
+      ],
+      [
+       "Income",
+       "$101,700 | $24,100 | \u2212$750"
+      ]
+     ],
+     "say": "Prairie Pedals buys two hundred bikes. Despite its discount, it earns $112,000 of gross margin and costs only $10,300 to serve: $101,700 of profit. Lakes Cycle earns $24,100. Big Sky pays full price but orders one bike at a time, far away, with lots of returns. It loses $750."
+    },
+    {
+     "type": "define",
+     "big": "The whale curve",
+     "sub": [
+      "Cumulative profit rises above 100%,",
+      "then falls as loss-makers are added"
+     ],
+     "say": "Plot cumulative profit with customers ranked from most to least profitable, and you often get a whale curve: the best twenty percent of customers may generate more than a hundred percent of profit, with the tail of loss-makers dragging it back down."
+    },
+    {
+     "type": "key",
+     "big": "Discounts aren't the problem",
+     "sub": [
+      "Big Sky pays full price",
+      "and still loses money"
+     ],
+     "say": "Notice the lesson: the discounted customer is the most profitable, and the full-price customer loses money. The cost to serve matters as much as the price."
+    },
+    {
+     "type": "key",
+     "big": "Show it visually",
+     "sub": [
+      "Bar charts by customer;",
+      "cumulative profit curves"
+     ],
+     "say": "Managers grasp this best visually: a bar chart of profit by customer, or a cumulative curve, makes the loss-makers obvious."
+    },
+    {
+     "type": "quiz",
+     "q": "A dealer: gross margin $30,000; customer-level costs $34,000. Customer-level income?",
+     "opts": [
+      "$64,000",
+      "\u2212$4,000",
+      "$4,000",
+      "$30,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. A dealer has thirty thousand of gross margin and thirty-four thousand of customer-level costs. Customer-level income? Pause and pick.",
+     "reveal": "It's B, a $4,000 loss."
+    }
+   ]
+  },
+  {
+   "id": "9.6",
+   "title": "Acting on customer profitability",
+   "lecture": "Lecture 9 \u00b7 Customer profitability",
+   "take": "Change prices, service levels or ordering behavior before dropping a customer; consider lifetime value",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Big Sky Bikes loses money. Should Tallgrass drop it? There are better first moves."
+    },
+    {
+     "type": "list",
+     "heading": "Options for Big Sky",
+     "items": [
+      "Minimum order of 4 bikes per delivery",
+      "Charge for rush deliveries",
+      "Ship with other Dakota orders",
+      "Reduce sales visits, use video calls"
+     ],
+     "say": "Ana could set a minimum order of four bikes, charge for rush deliveries, combine Big Sky's shipments with other Dakota dealers, and replace some sales visits with video calls."
+    },
+    {
+     "type": "table",
+     "heading": "Big Sky with changes",
+     "rows": [
+      [
+       "Gross margin, 25 bikes",
+       20000
+      ],
+      [
+       "Orders: 7 \u00d7 $40",
+       -280
+      ],
+      [
+       "Deliveries: 7 \u00d7 $450",
+       -3150
+      ],
+      [
+       "Visits: 4 \u00d7 $250",
+       -1000
+      ],
+      [
+       "Returns and co-op",
+       -6000
+      ],
+      [
+       "Customer-level income",
+       9570,
+       "total"
+      ]
+     ],
+     "say": "With seven orders instead of twenty-five, seven deliveries, four visits, and the same returns and co-op costs, Big Sky earns $9,570 instead of losing $750."
+    },
+    {
+     "type": "list",
+     "heading": "Before dropping any customer",
+     "items": [
+      "Which costs would really disappear?",
+      "Growth potential and lifetime value",
+      "Reference value: a new territory",
+      "Effect on other dealers"
+     ],
+     "say": "Before dropping anyone, ask which costs would really disappear, what the customer could become over its lifetime, whether it opens a new territory, and how other dealers would react."
+    },
+    {
+     "type": "key",
+     "big": "Profitability by channel too",
+     "sub": [
+      "Dealers vs online direct sales"
+     ],
+     "say": "The same analysis works by channel. Tallgrass might find that selling online directly costs less per bike than dealers in some regions, or more once returns and support are counted."
+    },
+    {
+     "type": "quiz",
+     "q": "Which is usually the best first step with an unprofitable customer?",
+     "opts": [
+      "Drop the customer",
+      "Change how the customer is served or priced",
+      "Ignore it",
+      "Raise all prices"
+     ],
+     "answer": 1,
+     "say": "Quick check. What's usually the best first step with an unprofitable customer? Pause and pick.",
+     "reveal": "It's B. Change the cost to serve or the price before dropping anyone."
+    }
+   ]
+  }
+ ]
+}

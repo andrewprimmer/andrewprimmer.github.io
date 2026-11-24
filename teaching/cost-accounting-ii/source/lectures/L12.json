@@ -1,0 +1,675 @@
+{
+ "meta": {
+  "n": 12,
+  "short": "Inventory management and JIT",
+  "title": "Inventory management, just-in-time and backflush costing",
+  "week": 13,
+  "ch": "Chapter 21",
+  "part": "Performance and control",
+  "summary": "The costs of holding inventory, the economic order quantity, reorder points and safety stock, the cost of prediction errors, just-in-time purchasing and production, and backflush costing."
+ },
+ "videos": [
+  {
+   "id": "12.1",
+   "title": "What inventory really costs",
+   "lecture": "Lecture 12 · Inventory and JIT",
+   "take": "Inventory costs include purchasing, ordering, carrying, stockout, quality and shrinkage costs",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Inventory looks like an asset on the balance sheet. But holding it costs money every day."
+    },
+    {
+     "type": "list",
+     "heading": "Six inventory costs",
+     "items": [
+      "Purchasing: the price paid",
+      "Ordering: paperwork, freight, receiving",
+      "Carrying: storage, insurance, capital tied up",
+      "Stockout: lost sales, rush orders",
+      "Quality: defects hidden in big batches",
+      "Shrinkage: theft, damage, obsolescence"
+     ],
+     "say": "Six costs. Purchasing costs, the price. Ordering costs: preparing orders, freight and receiving. Carrying costs: storage, insurance and the return on the capital tied up. Stockout costs: lost sales and rush orders. Quality costs: defects hidden in big batches. And shrinkage: theft, damage and obsolescence."
+    },
+    {
+     "type": "define",
+     "big": "Opportunity cost of capital",
+     "sub": [
+      "The return given up by tying",
+      "cash up in inventory"
+     ],
+     "say": "The biggest carrying cost is often invisible in the accounts: the opportunity cost of the capital tied up. Cash sitting in battery packs could be earning a return elsewhere."
+    },
+    {
+     "type": "table",
+     "heading": "Carrying one battery pack for a year",
+     "rows": [
+      [
+       "Pack cost",
+       310
+      ],
+      [
+       "Capital: 8% × $310",
+       "$24.80"
+      ],
+      [
+       "Storage and insurance",
+       "$2.20"
+      ],
+      [
+       "Annual carrying cost per pack",
+       "$27.00",
+       "total"
+      ]
+     ],
+     "say": "A battery pack costs $310. At Tallgrass's eight percent cost of capital, holding one for a year costs $24.80, plus $2.20 of climate-controlled storage and insurance: twenty-seven dollars a year."
+    },
+    {
+     "type": "key",
+     "big": "Trade-offs",
+     "sub": [
+      "Order often: low carrying, high ordering",
+      "Order rarely: the reverse"
+     ],
+     "say": "The core trade-off: ordering often keeps carrying costs low but multiplies ordering costs. Ordering rarely does the reverse. The economic order quantity balances them."
+    },
+    {
+     "type": "quiz",
+     "q": "Which is a carrying cost?",
+     "opts": [
+      "Freight on each order",
+      "Return forgone on cash tied up in stock",
+      "Lost sale from a stockout",
+      "Supplier's price"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which is a carrying cost? Pause and pick.",
+     "reveal": "It's B, the opportunity cost of capital tied up in inventory."
+    }
+   ]
+  },
+  {
+   "id": "12.2",
+   "title": "The economic order quantity",
+   "lecture": "Lecture 12 · Inventory and JIT",
+   "take": "EOQ = √(2DP ÷ C) balances ordering and carrying costs",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "How many battery packs should Tallgrass order at a time? The economic order quantity gives the answer."
+    },
+    {
+     "type": "define",
+     "big": "EOQ = √(2DP ÷ C)",
+     "size": 84,
+     "sub": [
+      "D: annual demand   P: cost per order",
+      "C: carrying cost per unit per year"
+     ],
+     "say": "The economic order quantity is the square root of two times annual demand times the cost per order, divided by the annual carrying cost per unit."
+    },
+    {
+     "type": "table",
+     "heading": "Battery packs",
+     "rows": [
+      [
+       "Annual demand, D",
+       "1,200 packs"
+      ],
+      [
+       "Cost per order, P",
+       180
+      ],
+      [
+       "Carrying cost per pack, C",
+       27
+      ],
+      [
+       "EOQ: √(2 × 1,200 × 180 ÷ 27)",
+       "126 packs",
+       "total"
+      ]
+     ],
+     "say": "Tallgrass uses twelve hundred packs a year. Each order costs a hundred eighty dollars to place and receive. Carrying a pack costs twenty-seven dollars a year. The EOQ is the square root of sixteen thousand: about a hundred twenty-six packs."
+    },
+    {
+     "type": "table",
+     "heading": "Relevant costs at EOQ",
+     "rows": [
+      [
+       "Ordering: 1,200 ÷ 126 × $180",
+       1714
+      ],
+      [
+       "Carrying: 126 ÷ 2 × $27",
+       1701
+      ],
+      [
+       "Total relevant cost",
+       3415,
+       "total"
+      ]
+     ],
+     "say": "At that quantity, Tallgrass places about nine and a half orders a year, costing about $1,700, and carries an average of sixty-three packs, also about $1,700. At the EOQ, ordering and carrying costs are equal."
+    },
+    {
+     "type": "key",
+     "big": "Purchase price isn't relevant",
+     "sub": [
+      "Unless quantity discounts apply"
+     ],
+     "say": "The purchase price doesn't affect the EOQ, unless bigger orders earn quantity discounts, which must then be weighed against extra carrying costs."
+    },
+    {
+     "type": "quiz",
+     "q": "D = 2,000, P = $100, C = $10. EOQ?",
+     "opts": [
+      "200",
+      "400",
+      "100",
+      "632"
+     ],
+     "answer": 0,
+     "say": "Quick check. Annual demand two thousand, cost per order a hundred dollars, carrying cost ten dollars. What's the EOQ? Pause and pick.",
+     "reveal": "It's A. The square root of forty thousand is two hundred."
+    }
+   ]
+  },
+  {
+   "id": "12.3",
+   "title": "Reorder point and safety stock",
+   "lecture": "Lecture 12 · Inventory and JIT",
+   "take": "Reorder point = usage during lead time + safety stock",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "EOQ says how much to order. The reorder point says when."
+    },
+    {
+     "type": "define",
+     "big": "Reorder point",
+     "sub": [
+      "Usage per week × lead time in weeks",
+      "+ safety stock"
+     ],
+     "say": "The reorder point is the inventory level at which to place a new order: expected usage during the lead time, plus any safety stock."
+    },
+    {
+     "type": "table",
+     "heading": "Battery packs from overseas",
+     "rows": [
+      [
+       "Usage per week: 1,200 ÷ 50 weeks",
+       "24"
+      ],
+      [
+       "Lead time",
+       "8 weeks"
+      ],
+      [
+       "Usage during lead time",
+       "192"
+      ],
+      [
+       "Safety stock: 2 weeks",
+       "48"
+      ],
+      [
+       "Reorder point",
+       "240 packs",
+       "total"
+      ]
+     ],
+     "say": "Tallgrass uses about twenty-four packs a week, and overseas orders take eight weeks to arrive. That's a hundred ninety-two packs used while waiting. Add two weeks of safety stock, forty-eight packs, and the reorder point is two hundred forty."
+    },
+    {
+     "type": "define",
+     "big": "Safety stock",
+     "sub": [
+      "A buffer for uncertain demand",
+      "or delivery delays"
+     ],
+     "say": "Safety stock is a buffer against uncertainty: demand spikes in spring, or shipping delays at the ports."
+    },
+    {
+     "type": "key",
+     "big": "Balance stockouts and carrying",
+     "sub": [
+      "More safety stock: fewer stockouts,",
+      "more carrying cost"
+     ],
+     "say": "How much safety stock? Enough that the expected cost of stockouts, lost sales and idle assembly lines, balances the extra carrying cost. For a key part like batteries, Tallgrass holds more."
+    },
+    {
+     "type": "quiz",
+     "q": "Usage 30 a week; lead time 4 weeks; safety stock 40. Reorder point?",
+     "opts": [
+      "120",
+      "160",
+      "70",
+      "34"
+     ],
+     "answer": 1,
+     "say": "Quick check. Usage thirty a week, lead time four weeks, safety stock forty. Reorder point? Pause and pick.",
+     "reveal": "It's B. A hundred twenty plus forty is a hundred sixty."
+    }
+   ]
+  },
+  {
+   "id": "12.4",
+   "title": "The cost of a prediction error",
+   "lecture": "Lecture 12 · Inventory and JIT",
+   "take": "EOQ is robust to estimation errors; evaluation systems must reward managers for the right inventory decisions",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Ana's estimates of ordering and carrying costs could be wrong. How much would a mistake cost?"
+    },
+    {
+     "type": "table",
+     "heading": "Actual ordering cost turns out to be $240",
+     "rows": [
+      [
+       "True EOQ: √(2 × 1,200 × 240 ÷ 27)",
+       "146 packs"
+      ],
+      [
+       "Cost of ordering 146",
+       3944
+      ],
+      [
+       "Cost of ordering 126 instead",
+       3987
+      ],
+      [
+       "Cost of the prediction error",
+       43,
+       "total"
+      ]
+     ],
+     "say": "Suppose the true cost per order is $240, not $180. The true EOQ is a hundred forty-six packs, with relevant costs of $3,944. Ordering a hundred twenty-six, as Ana did, costs $3,987. The prediction error costs only forty-three dollars."
+    },
+    {
+     "type": "key",
+     "big": "EOQ is robust",
+     "sub": [
+      "Total cost is flat near the optimum"
+     ],
+     "say": "The EOQ model is robust: total cost is flat near the optimum, so moderate errors in the inputs cost little."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "Evaluation can distort inventory",
+     "sub": [
+      "If managers aren't charged for capital,",
+      "they over-order to avoid stockouts"
+     ],
+     "say": "The bigger risk is behavioral. If the purchasing manager's performance ignores the cost of capital tied up in inventory, she has every reason to over-order and never run out."
+    },
+    {
+     "type": "key",
+     "big": "Charge for capital",
+     "sub": [
+      "Include carrying cost of inventory",
+      "in purchasing's performance report"
+     ],
+     "say": "The fix: charge managers for the capital their inventory ties up, so the decision model and the evaluation model agree."
+    },
+    {
+     "type": "quiz",
+     "q": "A purchasing manager is judged only on purchase price variances and stockouts. What's the likely behavior?",
+     "opts": [
+      "Order small amounts often",
+      "Order large batches to get discounts and avoid stockouts",
+      "Use JIT",
+      "Ignore stockouts"
+     ],
+     "answer": 1,
+     "say": "Quick check. A purchasing manager is judged only on price variances and stockouts. What's the likely behavior? Pause and pick.",
+     "reveal": "It's B: big batches, ignoring the carrying costs she isn't charged for."
+    }
+   ]
+  },
+  {
+   "id": "12.5",
+   "title": "Just-in-time purchasing and production",
+   "lecture": "Lecture 12 · Inventory and JIT",
+   "take": "JIT buys and makes only what's needed, when needed; it cuts carrying costs but demands reliable suppliers and quality",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Just-in-time aims to hold almost no inventory: buy and make only what's needed, when it's needed."
+    },
+    {
+     "type": "list",
+     "heading": "JIT production features",
+     "items": [
+      "Production pulled by actual demand",
+      "Cells that build a product start to finish",
+      "Multi-skilled workers",
+      "Total quality: defects stop the line",
+      "Fast setups, small batches"
+     ],
+     "say": "JIT production is pulled by actual demand rather than pushed by forecasts. Work is organized in cells that build a product from start to finish, with multi-skilled workers. Defects stop the line, because there's no inventory to hide behind. And fast setups make small batches economical."
+    },
+    {
+     "type": "table",
+     "heading": "JIT frames from a supplier in Worthington",
+     "rows": [
+      [
+       "Carrying saved: 150 × $30",
+       4500
+      ],
+      [
+       "Extra delivery charges",
+       -3200
+      ],
+      [
+       "Stockout risk: expected cost",
+       -600
+      ],
+      [
+       "Net annual benefit",
+       700,
+       "total"
+      ]
+     ],
+     "say": "Tallgrass is considering daily frame deliveries from a supplier in nearby Worthington. Lower inventory saves $4,500 of carrying cost. Extra deliveries cost $3,200, and the expected cost of occasional stockouts is $600. The net benefit is $700, small but positive, plus floor space freed."
+    },
+    {
+     "type": "key",
+     "big": "Not for every part",
+     "sub": [
+      "Overseas batteries with 8-week lead times",
+      "aren't JIT candidates"
+     ],
+     "say": "JIT suits local, reliable suppliers. Battery packs shipped from overseas with eight-week lead times aren't candidates, as supply-chain disruptions in recent years showed."
+    },
+    {
+     "type": "key",
+     "big": "JIT simplifies costing",
+     "sub": [
+      "Little inventory means",
+      "little need to track it"
+     ],
+     "say": "With little inventory, there's less need to track costs through work in process. That opens the door to simpler costing: backflush costing."
+    },
+    {
+     "type": "quiz",
+     "q": "Which supplier is the best JIT candidate?",
+     "opts": [
+      "Overseas battery maker, 8-week lead time",
+      "Local frame maker, daily deliveries, 99% on time",
+      "Any supplier with the lowest price",
+      "A supplier with frequent quality problems"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which supplier is the best JIT candidate? Pause and pick.",
+     "reveal": "It's B: local, frequent and reliable."
+    }
+   ]
+  },
+  {
+   "id": "12.6",
+   "title": "Backflush costing",
+   "lecture": "Lecture 12 · Inventory and JIT",
+   "take": "Backflush costing skips recording work in process and assigns standard costs at a later trigger point",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "In a JIT plant, tracking every cost through work in process isn't worth the effort. Backflush costing takes a shortcut."
+    },
+    {
+     "type": "define",
+     "big": "Backflush costing",
+     "sub": [
+      "Omits some journal entries;",
+      "costs assigned at trigger points using standards"
+     ],
+     "say": "Backflush costing omits some or all of the entries for the flow of costs through production. Costs are assigned to output using standard costs, at chosen trigger points, such as when materials are bought or when bikes are finished."
+    },
+    {
+     "type": "journal",
+     "heading": "Trigger: materials purchased",
+     "rows": [
+      [
+       "Materials and in-process",
+       112200,
+       ""
+      ],
+      [
+       "Accounts payable",
+       "",
+       112200
+      ]
+     ],
+     "say": "At Tallgrass's JIT assembly cell, the first trigger is buying materials: $112,200 for a hundred two bikes' worth of kits, debited to a combined materials and in-process inventory account."
+    },
+    {
+     "type": "journal",
+     "heading": "Trigger: 100 bikes finished",
+     "rows": [
+      [
+       "Finished goods",
+       130000,
+       ""
+      ],
+      [
+       "Materials and in-process",
+       "",
+       110000
+      ],
+      [
+       "Conversion costs allocated",
+       "",
+       20000
+      ]
+     ],
+     "say": "Conversion costs incurred are collected in a control account. When a hundred bikes are finished, the second trigger, their standard costs are backflushed: $1,100 of materials and $200 of conversion each. Debit finished goods $130,000."
+    },
+    {
+     "type": "key",
+     "big": "Simple, if inventory is low",
+     "sub": [
+      "Large or fluctuating WIP makes",
+      "backflush inaccurate"
+     ],
+     "say": "Backflush is simple and cheap, and accurate when inventories are small and stable. If work in process is large or changes a lot, it misstates inventory and income, and it leaves less of an audit trail."
+    },
+    {
+     "type": "quiz",
+     "q": "When is backflush costing least appropriate?",
+     "opts": [
+      "Low, stable WIP",
+      "Large, fluctuating WIP",
+      "JIT production",
+      "Standard costs available"
+     ],
+     "answer": 1,
+     "say": "Quick check. When is backflush costing least appropriate? Pause and pick.",
+     "reveal": "It's B: large, fluctuating work in process."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Do you buy groceries once a week or every day? What does each approach cost you?",
+   "Weekly: fewer trips (ordering cost) but more food in the fridge (carrying, spoilage). Daily: the reverse. That's the EOQ trade-off."
+  ],
+  "acts": [
+   [
+    "Classify: forklift operator's wages in the warehouse, customs paperwork per order, lost sale when tires run out, obsolete paint colors.",
+    "Carrying; ordering; stockout; shrinkage/obsolescence."
+   ],
+   [
+    "Compute EOQ for tires: D 2,500, P $50, C $4.",
+    "√(2 × 2,500 × 50 ÷ 4) = √62,500 = 250 tires."
+   ],
+   [
+    "Tires: usage 50 a week, lead time 3 weeks, safety stock 60. Reorder point?",
+    "150 + 60 = 210."
+   ],
+   [
+    "If C for battery packs were really $35, what would the true EOQ be, and the cost of using 126?",
+    "EOQ √(432,000 ÷ 35) = 111. Cost at 111: 1,946 + 1,943 ≈ 3,889; at 126: 1,714 + 2,205 = 3,919; error ≈ $30."
+   ],
+   [
+    "List three conditions for successful JIT purchasing.",
+    "Reliable, nearby suppliers; high quality (few inspections); stable demand and small, frequent deliveries; good information sharing."
+   ],
+   [
+    "Backflush with trigger at completion: 80 bikes finished, standard DM $1,100, conversion $200. Entry?",
+    "Dr FG 104,000 / Cr Materials and in-process 88,000, Cr Conversion costs allocated 16,000."
+   ]
+  ],
+  "case": [
+   "Batteries in a crisis",
+   "In 2027, port delays stretched battery lead times from 8 to 14 weeks. Tallgrass ran out of packs for 3 weeks in April, losing 60 bike sales (CM $900 each). The purchasing manager, evaluated on purchase price variance, had been ordering 400 packs at a time for a 5% quantity discount. The CFO now proposes holding 6 weeks of safety stock.",
+   [
+    "Compute the stockout cost in April.",
+    "Compute the new reorder point with 14-week lead times and 6 weeks of safety stock.",
+    "What does the extra safety stock cost to carry each year?",
+    "How would you change the purchasing manager's evaluation?"
+   ],
+   "Stockout: 60 × 900 = $54,000. Reorder point: 24 × 14 + 144 = 480 packs. Extra 4 weeks of safety stock (96 packs) × $27 = $2,592 a year: worth it. Evaluate purchasing on total inventory costs, including carrying and stockouts, not just price variances."
+  ],
+  "exam": [
+   [
+    "Describe the costs associated with inventory and explain the EOQ trade-off.",
+    5,
+    "Purchasing, ordering, carrying (including opportunity cost of capital), stockout, quality, shrinkage. EOQ balances ordering (falls with larger orders) and carrying (rises with larger orders)."
+   ],
+   [
+    "D = 9,000 units, P = $250 an order, C = $5 a unit per year. Compute EOQ, orders per year and total relevant cost. Usage 180 a week, lead time 2 weeks, safety stock 100: reorder point?",
+    6,
+    "EOQ √(900,000) = 949; orders 9.5; TRC 2,371 + 2,372 ≈ 4,743. Reorder point 460."
+   ]
+  ],
+  "outcomes": [
+   "Identify the costs of holding inventory",
+   "Compute the economic order quantity",
+   "Compute reorder points with safety stock",
+   "Assess the cost of prediction errors and evaluation conflicts",
+   "Evaluate just-in-time purchasing and production",
+   "Record backflush costing entries"
+  ],
+  "take": [
+   "Carrying costs include capital tied up",
+   "EOQ balances ordering and carrying",
+   "Reorder at lead-time usage plus safety stock",
+   "EOQ is robust; incentives may not be",
+   "JIT needs reliable suppliers and quality",
+   "Backflush skips WIP when inventory is low"
+  ]
+ },
+ "ex": [
+  {
+   "type": "sort",
+   "q": "Which kind of inventory cost?",
+   "cats": [
+    "Ordering",
+    "Carrying",
+    "Stockout"
+   ],
+   "items": [
+    [
+     "Freight on each shipment",
+     0
+    ],
+    [
+     "Warehouse insurance",
+     1
+    ],
+    [
+     "Return forgone on cash in stock",
+     1
+    ],
+    [
+     "Lost sale when out of batteries",
+     2
+    ],
+    [
+     "Receiving and inspection per order",
+     0
+    ]
+   ],
+   "why": "Ordering costs per order; carrying costs per unit held; stockout costs when you run out.",
+   "video": "12.1"
+  },
+  {
+   "type": "num",
+   "q": "D = 3,200, P = $50, C = $8. EOQ?",
+   "a": 200,
+   "unit": "units",
+   "why": "√(2 × 3,200 × 50 ÷ 8) = √40,000 = 200.",
+   "video": "12.2"
+  },
+  {
+   "type": "num",
+   "q": "At an EOQ of 200 with D = 3,200 and P = $50, what is annual ordering cost?",
+   "a": 800,
+   "unit": "$",
+   "why": "16 orders × 50 = 800.",
+   "video": "12.2"
+  },
+  {
+   "type": "num",
+   "q": "Weekly usage 40; lead time 5 weeks; safety stock 60. Reorder point?",
+   "a": 260,
+   "unit": "units",
+   "why": "200 + 60 = 260.",
+   "video": "12.3"
+  },
+  {
+   "type": "mcq",
+   "q": "Why is the EOQ model described as robust?",
+   "opts": [
+    "It never needs inputs",
+    "Total cost is flat near the optimum, so input errors cost little",
+    "It includes all qualitative factors",
+    "It eliminates safety stock"
+   ],
+   "a": 1,
+   "why": "Moderate errors in P or C change total cost very little.",
+   "video": "12.4"
+  },
+  {
+   "type": "mcq",
+   "q": "Which feature belongs to JIT production?",
+   "opts": [
+    "Large batches pushed by forecasts",
+    "Production pulled by demand",
+    "Big safety stocks",
+    "Specialized single-skill workers"
+   ],
+   "a": 1,
+   "why": "JIT is a pull system.",
+   "video": "12.5"
+  },
+  {
+   "type": "num",
+   "q": "JIT saves $6,000 of carrying cost, adds $3,500 of delivery cost and $1,000 of expected stockout cost. Net benefit?",
+   "a": 1500,
+   "unit": "$",
+   "why": "6,000 − 3,500 − 1,000 = 1,500.",
+   "video": "12.5"
+  },
+  {
+   "type": "num",
+   "q": "Backflush at completion: 50 bikes; standard materials $1,100 and conversion $200 per bike. Debit to finished goods?",
+   "a": 65000,
+   "unit": "$",
+   "why": "50 × 1,300 = 65,000.",
+   "video": "12.6"
+  }
+ ]
+}

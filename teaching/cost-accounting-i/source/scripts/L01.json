@@ -1,0 +1,522 @@
+{
+ "videos": [
+  {
+   "id": "1.1",
+   "title": "Financial, management and cost accounting",
+   "lecture": "Lecture 1 \u00b7 Management accounting",
+   "take": "Management accounting serves managers inside the firm; cost accounting measures the costs they need",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Financial accounting tells outsiders how a company did. Management accounting helps the people inside run it. Here's the difference."
+    },
+    {
+     "type": "compare",
+     "heading": "Two kinds of accounting",
+     "cols": [
+      "Financial",
+      "Management"
+     ],
+     "rows": [
+      [
+       "Users",
+       "Investors, lenders",
+       "Managers inside"
+      ],
+      [
+       "Rules",
+       "GAAP",
+       "Whatever helps decisions"
+      ],
+      [
+       "Focus",
+       "Past results",
+       "Future plans and actions"
+      ],
+      [
+       "Detail",
+       "Whole company",
+       "Products, jobs, departments"
+      ]
+     ],
+     "say": "Financial accounting reports to investors and lenders, follows GAAP and looks back at the whole company. Management accounting serves managers, follows no required rules, looks forward, and drills down into products, jobs and departments."
+    },
+    {
+     "type": "define",
+     "big": "Cost accounting",
+     "sub": [
+      "Measures, analyzes and reports",
+      "costs, for both kinds of accounting"
+     ],
+     "say": "Cost accounting sits between the two. It measures, analyzes and reports the costs of acquiring and using resources. Inventory and cost of goods sold for the financial statements come from it, and so do the product costs managers use to price and plan."
+    },
+    {
+     "type": "key",
+     "big": "Meet Prairie Gate Trailers",
+     "sub": [
+      "Custom livestock and utility trailers,",
+      "built to order in Marshall, Minnesota"
+     ],
+     "say": "Meet the company we'll follow this semester: Prairie Gate Trailers, which builds custom livestock and utility trailers to order in Marshall, Minnesota. Its owner, Karen Olsen, needs to know what each trailer really costs."
+    },
+    {
+     "type": "list",
+     "heading": "Questions Karen asks",
+     "items": [
+      "What did trailer #418 cost to build?",
+      "Should we bid $14,000 on a new order?",
+      "Why was welding over budget last month?"
+     ],
+     "say": "Karen's questions are management accounting questions. What did a particular trailer cost? What price should she bid? Why was a department over budget? None of these appear in the annual report."
+    },
+    {
+     "type": "quiz",
+     "q": "Which question is a management accounting question?",
+     "opts": [
+      "What was net income under GAAP?",
+      "Which trailer model is most profitable?",
+      "What must the 10-K disclose?",
+      "How should the bank loan be classified?"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which is a management accounting question? Pause and pick.",
+     "reveal": "It's B. Product profitability is an internal decision question. The others are financial reporting."
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "title": "Strategy and the value chain",
+   "lecture": "Lecture 1 \u00b7 Management accounting",
+   "take": "Cost information supports strategy across every business function in the value chain",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "A company competes either by being cheaper or by being different. Cost accounting supports both strategies. Here's how."
+    },
+    {
+     "type": "compare",
+     "heading": "Two broad strategies",
+     "cols": [
+      "Cost leadership",
+      "Differentiation"
+     ],
+     "rows": [
+      [
+       "Goal",
+       "Lowest cost",
+       "Unique products"
+      ],
+      [
+       "Example",
+       "Standard utility trailers",
+       "Custom show-cattle trailers"
+      ],
+      [
+       "Key data",
+       "Cost per unit",
+       "What customers will pay"
+      ]
+     ],
+     "say": "A cost leader wins by having the lowest costs, like a maker of standard utility trailers. A differentiator wins by offering something customers value and will pay more for, like a custom trailer for show cattle. Prairie Gate does a bit of both."
+    },
+    {
+     "type": "flow",
+     "heading": "The value chain",
+     "items": [
+      "Research and development",
+      "Design",
+      "Production",
+      "Marketing",
+      "Distribution",
+      "Customer service"
+     ],
+     "say": "The value chain is the sequence of business functions that make a product valuable to customers: research and development, design, production, marketing, distribution and customer service. Costs arise in every one of them, not only in the factory."
+    },
+    {
+     "type": "list",
+     "heading": "Key success factors",
+     "items": [
+      "Cost and efficiency",
+      "Quality",
+      "Time",
+      "Innovation",
+      "Sustainability"
+     ],
+     "say": "Customers judge a company on a handful of key success factors: cost, quality, time, innovation and, increasingly, sustainability. Management accountants track all five."
+    },
+    {
+     "type": "key",
+     "big": "Supply chain",
+     "sub": [
+      "Suppliers \u2192 Prairie Gate \u2192 dealers \u2192 farmers"
+     ],
+     "say": "The supply chain stretches outside the company: from steel and axle suppliers, through Prairie Gate, to dealers and the farmers who buy the trailers. Cutting costs often means working with partners along it."
+    },
+    {
+     "type": "quiz",
+     "q": "Prairie Gate's warranty repairs fall in which value chain function?",
+     "opts": [
+      "Design",
+      "Production",
+      "Distribution",
+      "Customer service"
+     ],
+     "answer": 3,
+     "say": "Quick check. Prairie Gate's warranty repairs belong to which value chain function? Pause and pick.",
+     "reveal": "It's D, customer service. Costs after the sale are part of the value chain too."
+    }
+   ]
+  },
+  {
+   "id": "1.3",
+   "title": "The five-step decision process",
+   "lecture": "Lecture 1 \u00b7 Management accounting",
+   "take": "Managers identify, gather, predict, decide, then implement and evaluate; planning and control link them",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Good decisions follow a pattern. Management accountants help at every step. Here's the five-step process."
+    },
+    {
+     "type": "flow",
+     "heading": "Five steps",
+     "items": [
+      "Identify the problem",
+      "Obtain information",
+      "Predict the future",
+      "Decide among options",
+      "Implement, evaluate, learn"
+     ],
+     "say": "First, identify the problem and the uncertainties. Second, obtain information. Third, make predictions about the future. Fourth, choose among alternatives. Fifth, implement the decision, evaluate performance and learn."
+    },
+    {
+     "type": "table",
+     "heading": "Should Prairie Gate add a stock-trailer line?",
+     "rows": [
+      [
+       "Expected units a year",
+       "120"
+      ],
+      [
+       "Price per trailer",
+       9500
+      ],
+      [
+       "Predicted cost per trailer",
+       7800
+      ],
+      [
+       "Predicted margin a year",
+       204000,
+       "total"
+      ]
+     ],
+     "say": "Karen wonders whether to add a line of standard stock trailers. Sales expects a hundred and twenty a year at $9,500 each. Cost accounting predicts $7,800 of cost per trailer. That's $204,000 of margin a year, before any new fixed costs."
+    },
+    {
+     "type": "compare",
+     "heading": "Planning and control",
+     "cols": [
+      "Planning",
+      "Control"
+     ],
+     "rows": [
+      [
+       "Steps",
+       "1 to 4",
+       "5"
+      ],
+      [
+       "Tool",
+       "Budget",
+       "Performance report"
+      ],
+      [
+       "Question",
+       "What should we do?",
+       "Did it work?"
+      ]
+     ],
+     "say": "Steps one to four are planning: choosing goals and how to reach them, summed up in a budget. Step five is control: comparing what happened with the plan in performance reports, then learning."
+    },
+    {
+     "type": "key",
+     "big": "Feedback closes the loop",
+     "sub": [
+      "Today's results improve",
+      "tomorrow's predictions"
+     ],
+     "say": "Feedback closes the loop. If actual costs come in higher than predicted, next year's predictions improve."
+    },
+    {
+     "type": "quiz",
+     "q": "Comparing June's actual welding costs with the budget is part of which step?",
+     "opts": [
+      "Identify the problem",
+      "Obtain information",
+      "Decide among options",
+      "Implement, evaluate and learn"
+     ],
+     "answer": 3,
+     "say": "Quick check. Comparing June's actual welding costs with the budget is part of which step? Pause and pick.",
+     "reveal": "It's D. Evaluating performance against the plan is control, step five."
+    }
+   ]
+  },
+  {
+   "id": "1.4",
+   "title": "Guidelines and the controller",
+   "lecture": "Lecture 1 \u00b7 Management accounting",
+   "take": "Use cost\u2013benefit thinking, consider behavior, and remember different costs for different purposes",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Three guidelines run through this whole course. And the person who usually applies them is the controller."
+    },
+    {
+     "type": "list",
+     "heading": "Three guidelines",
+     "items": [
+      "Cost\u2013benefit: is the information worth what it costs?",
+      "Behavior matters: systems change how people act",
+      "Different costs for different purposes"
+     ],
+     "say": "First, cost\u2013benefit: better information is worth having only if its benefits exceed its cost. Second, systems shape behavior: how you measure people changes what they do. Third, different costs for different purposes: there's no single right cost for a product."
+    },
+    {
+     "type": "compare",
+     "heading": "Trailer #418: different costs, different purposes",
+     "cols": [
+      "Purpose",
+      "Cost used"
+     ],
+     "rows": [
+      [
+       "Inventory on the balance sheet",
+       "GAAP",
+       "Factory costs only"
+      ],
+      [
+       "Pricing a repeat order",
+       "Decision",
+       "All value chain costs"
+      ],
+      [
+       "Accept a one-off order?",
+       "Short run",
+       "Only extra costs"
+      ]
+     ],
+     "say": "For the balance sheet, trailer four-eighteen's cost includes only factory costs. To price a repeat order, Karen needs all value chain costs, including design and delivery. To decide on a one-off special order, only the extra costs matter."
+    },
+    {
+     "type": "compare",
+     "heading": "Who does what",
+     "cols": [
+      "Role",
+      "Main job"
+     ],
+     "rows": [
+      [
+       "Controller",
+       "Chief accountant",
+       "Reporting, costing, budgets"
+      ],
+      [
+       "Treasurer",
+       "Finance",
+       "Cash, banking, investors"
+      ],
+      [
+       "CFO",
+       "Finance head",
+       "Oversees both"
+      ]
+     ],
+     "say": "In most companies, the controller is the chief management accountant, responsible for cost systems, budgets and reporting. The treasurer handles cash and financing. Both report to the chief financial officer."
+    },
+    {
+     "type": "key",
+     "big": "Line and staff",
+     "sub": [
+      "Line managers decide;",
+      "accountants advise"
+     ],
+     "say": "Accountants are usually staff, not line managers. Production managers make the decisions; accountants supply the analysis that helps them decide well."
+    },
+    {
+     "type": "quiz",
+     "q": "Karen considers buying a $40,000 costing system that will save $10,000 a year for 2 years. Which guideline does she apply?",
+     "opts": [
+      "Different costs for different purposes",
+      "Cost\u2013benefit",
+      "Behavioral considerations",
+      "Line and staff"
+     ],
+     "answer": 1,
+     "say": "Quick check. Karen considers a forty thousand dollar costing system that saves ten thousand a year for two years. Which guideline applies? Pause and pick.",
+     "reveal": "It's B. Benefits of $20,000 don't justify $40,000 of cost."
+    }
+   ]
+  },
+  {
+   "id": "1.5",
+   "title": "Where cost accounting came from",
+   "lecture": "Lecture 1 \u00b7 Management accounting",
+   "take": "Cost accounting grew from factory owners, railroads and engineers, and was reinvented in the 1980s",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Cost accounting wasn't invented by a standard-setter. It grew out of factories, railroads and arguments about profit. Here's the short history."
+    },
+    {
+     "type": "flow",
+     "heading": "Milestones",
+     "items": [
+      "1770s: Wedgwood costs his pottery",
+      "1850s: railroads track cost per ton-mile",
+      "1900s\u20131910s: engineers create standard costs",
+      "1914: DuPont's return on investment",
+      "1987: Relevance Lost"
+     ],
+     "say": "In the 1770s, the potter Josiah Wedgwood analyzed his costs to survive a slump. In the 1850s, American railroads tracked cost per ton-mile. Engineers inspired by Frederick Taylor developed standard costs in the early twentieth century. DuPont formalized return on investment around 1914."
+    },
+    {
+     "type": "key",
+     "big": "Wedgwood, 1772",
+     "sub": [
+      "Costing showed which wares lost money",
+      "and how volume cut unit cost"
+     ],
+     "say": "Wedgwood's costing in 1772 showed him which wares lost money and that unit costs fell as volume rose. Those are still core ideas: product costing and fixed costs spread over output."
+    },
+    {
+     "type": "define",
+     "big": "Relevance Lost",
+     "sub": [
+      "Johnson and Kaplan, 1987:",
+      "costing had fallen behind the factory"
+     ],
+     "say": "By the 1980s, critics said cost systems were built for financial reporting, not decisions. Johnson and Kaplan's 1987 book, Relevance Lost, argued management accounting had stalled. Its answer, activity-based costing, is Lecture 6."
+    },
+    {
+     "type": "key",
+     "tag": "WHY IT MATTERS",
+     "big": "Systems reflect their time",
+     "sub": [
+      "Labor-heavy factories built labor-based costing;",
+      "automation needed new bases"
+     ],
+     "say": "The lesson: costing systems reflect the businesses of their time. Labor-heavy factories allocated overhead by labor hours. Automated factories needed something better."
+    },
+    {
+     "type": "quiz",
+     "q": "What problem did Relevance Lost (1987) highlight?",
+     "opts": [
+      "Too few GAAP rules",
+      "Cost systems driven by financial reporting, poor for decisions",
+      "Railroads overcharging",
+      "Lack of computers"
+     ],
+     "answer": 1,
+     "say": "Quick check. What problem did Relevance Lost highlight? Pause and pick.",
+     "reveal": "It's B. Product costs built for external reporting misled managers making decisions."
+    }
+   ]
+  },
+  {
+   "id": "1.6",
+   "title": "Professional ethics",
+   "lecture": "Lecture 1 \u00b7 Management accounting",
+   "take": "The IMA's standards are competence, confidentiality, integrity and credibility",
+   "read": "IMA Statement of Ethical Professional Practice",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Management accountants are often under pressure to make the numbers look better. Professional ethics tells them what to do."
+    },
+    {
+     "type": "list",
+     "heading": "IMA overarching principles",
+     "items": [
+      "Honesty",
+      "Fairness",
+      "Objectivity",
+      "Responsibility"
+     ],
+     "say": "The Institute of Management Accountants, which awards the C-M-A credential, sets out four overarching principles: honesty, fairness, objectivity and responsibility."
+    },
+    {
+     "type": "compare",
+     "heading": "Four standards",
+     "cols": [
+      "Means",
+      "Example"
+     ],
+     "rows": [
+      [
+       "Competence",
+       "Keep skills current",
+       "Learn the new ERP system"
+      ],
+      [
+       "Confidentiality",
+       "Protect information",
+       "Don't share bid prices"
+      ],
+      [
+       "Integrity",
+       "Avoid conflicts",
+       "Refuse supplier gifts"
+      ],
+      [
+       "Credibility",
+       "Report fully, fairly",
+       "Disclose bad news too"
+      ]
+     ],
+     "say": "And four standards: competence, keeping your skills up; confidentiality, protecting information; integrity, avoiding conflicts of interest; and credibility, reporting information fairly and completely, including bad news."
+    },
+    {
+     "type": "key",
+     "big": "The bonus pressure",
+     "sub": [
+      "Plant manager: 'Delay the scrap write-off",
+      "until after year-end'"
+     ],
+     "say": "Suppose Prairie Gate's plant manager, whose bonus depends on profit, asks the accountant to delay writing off scrapped steel until next year. That would misstate results: a credibility and integrity problem."
+    },
+    {
+     "type": "flow",
+     "heading": "Resolving an ethical conflict",
+     "items": [
+      "Follow company policy",
+      "Discuss with your supervisor, or higher",
+      "Seek confidential advice",
+      "Consult an attorney if needed"
+     ],
+     "say": "The IMA's advice: follow the organization's policies; discuss the issue with your supervisor, or the next level up if the supervisor is involved; get confidential advice, for example from an IMA ethics counselor; and consult a lawyer about your rights and obligations."
+    },
+    {
+     "type": "quiz",
+     "q": "An accountant shares Prairie Gate's bid prices with a friend at a rival firm. Which standard is broken?",
+     "opts": [
+      "Competence",
+      "Confidentiality",
+      "Credibility",
+      "Objectivity"
+     ],
+     "answer": 1,
+     "say": "Quick check. An accountant shares Prairie Gate's bid prices with a friend at a rival. Which standard is broken? Pause and pick.",
+     "reveal": "It's B, confidentiality."
+    }
+   ]
+  }
+ ]
+}

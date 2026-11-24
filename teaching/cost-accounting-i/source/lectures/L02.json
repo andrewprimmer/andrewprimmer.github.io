@@ -1,0 +1,734 @@
+{
+ "meta": {
+  "n": 2,
+  "short": "Cost terms",
+  "title": "An introduction to cost terms and purposes",
+  "week": 2,
+  "ch": "Chapter 2",
+  "part": "Foundations",
+  "summary": "Cost objects, direct and indirect costs, variable and fixed costs, the three sectors and three inventories, inventoriable and period costs, prime and conversion costs, and how to treat overtime and idle time."
+ },
+ "videos": [
+  {
+   "id": "2.1",
+   "title": "Cost objects: direct and indirect",
+   "lecture": "Lecture 2 · Cost terms",
+   "take": "Direct costs are traced to a cost object; indirect costs must be allocated",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Every cost question starts with: the cost of what? That 'what' is the cost object."
+    },
+    {
+     "type": "define",
+     "big": "Cost object",
+     "sub": [
+      "Anything for which a cost",
+      "is measured"
+     ],
+     "say": "A cost object is anything you want to measure the cost of: a trailer, a product line, a customer, a department, even a project like a new paint booth."
+    },
+    {
+     "type": "compare",
+     "heading": "Cost object: trailer #418",
+     "cols": [
+      "How assigned",
+      "Example"
+     ],
+     "rows": [
+      [
+       "Direct cost",
+       "Traced, economically",
+       "Steel, axles, welder's hours"
+      ],
+      [
+       "Indirect cost",
+       "Allocated",
+       "Plant rent, supervisor, glue"
+      ]
+     ],
+     "say": "Direct costs can be traced to the cost object in an economically feasible way, like the steel and axles in trailer four-eighteen. Indirect costs can't be traced, so they're allocated, like plant rent and the floor supervisor's salary."
+    },
+    {
+     "type": "list",
+     "heading": "What decides direct or indirect?",
+     "items": [
+      "Materiality: is it worth tracing?",
+      "Technology: barcodes and sensors make tracing cheap",
+      "Operations design: one product per machine is easy"
+     ],
+     "say": "Whether a cost is direct depends on materiality, since tracing a few cents of welding wire isn't worth it; on technology, since barcodes make tracing cheaper; and on how operations are designed."
+    },
+    {
+     "type": "key",
+     "big": "Same cost, different object",
+     "sub": [
+      "The supervisor is indirect to a trailer,",
+      "direct to the welding department"
+     ],
+     "say": "And it depends on the cost object. The welding supervisor's salary is indirect to any trailer, but direct to the welding department."
+    },
+    {
+     "type": "quiz",
+     "q": "Cost object: one trailer. Which cost is direct?",
+     "opts": [
+      "Factory insurance",
+      "Custom aluminum side panels for that trailer",
+      "Maintenance of the paint booth",
+      "The plant manager's salary"
+     ],
+     "answer": 1,
+     "say": "Quick check. The cost object is one trailer. Which cost is direct? Pause and pick.",
+     "reveal": "It's B. The panels can be traced to that trailer. The others are shared and must be allocated."
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "title": "Variable and fixed costs",
+   "lecture": "Lecture 2 · Cost terms",
+   "take": "Variable costs change in total with activity; fixed costs don't, so fixed cost per unit changes",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Costs can also be classified by how they behave when activity changes. And unit costs can mislead."
+    },
+    {
+     "type": "compare",
+     "heading": "Behavior",
+     "cols": [
+      "Total cost",
+      "Cost per unit"
+     ],
+     "rows": [
+      [
+       "Variable",
+       "Changes with volume",
+       "Constant"
+      ],
+      [
+       "Fixed",
+       "Constant",
+       "Changes with volume"
+      ]
+     ],
+     "say": "A variable cost changes in total in proportion to activity, but stays constant per unit. A fixed cost stays constant in total over a period, so its cost per unit falls as volume rises."
+    },
+    {
+     "type": "table",
+     "heading": "Robotic welder lease: $12,000 a month",
+     "rows": [
+      [
+       "40 trailers: per trailer",
+       300
+      ],
+      [
+       "60 trailers: per trailer",
+       200
+      ],
+      [
+       "80 trailers: per trailer",
+       150
+      ]
+     ],
+     "say": "Prairie Gate leases a robotic welder for $12,000 a month. At forty trailers, that's $300 each. At sixty, $200. At eighty, $150. The total never changes."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "Don't treat fixed unit costs as variable",
+     "sub": [
+      "$300 a trailer at 40 doesn't mean",
+      "$300 more for the 41st"
+     ],
+     "say": "The trap: treating a fixed unit cost as if it were variable. Building a forty-first trailer adds no lease cost at all. Use totals, not unit averages, for decisions."
+    },
+    {
+     "type": "define",
+     "big": "Cost driver",
+     "sub": [
+      "A variable that causally",
+      "affects total cost"
+     ],
+     "say": "A cost driver is what causes a cost to change: trailers built for steel, labor hours for wages, number of setups for setup costs. Fixed costs have drivers too, but only over the long run."
+    },
+    {
+     "type": "quiz",
+     "q": "Steel costs $3,000 per trailer. Production rises from 50 to 60 trailers. What happens?",
+     "opts": [
+      "Total steel cost stays the same",
+      "Steel per trailer falls",
+      "Total steel rises by $30,000",
+      "Steel per trailer rises"
+     ],
+     "answer": 2,
+     "say": "Quick check. Steel costs three thousand dollars per trailer, and production rises from fifty to sixty. What happens? Pause and pick.",
+     "reveal": "It's C. Steel is variable: ten more trailers add $30,000. The cost per trailer stays the same."
+    }
+   ]
+  },
+  {
+   "id": "2.3",
+   "title": "Three sectors, three inventories",
+   "lecture": "Lecture 2 · Cost terms",
+   "take": "Manufacturers hold direct materials, work-in-process and finished goods inventories",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "A bank, a hardware store and a trailer factory account for costs differently. The difference is inventory."
+    },
+    {
+     "type": "compare",
+     "heading": "Three sectors",
+     "cols": [
+      "What they do",
+      "Inventory"
+     ],
+     "rows": [
+      [
+       "Manufacturing",
+       "Turn materials into products",
+       "Three kinds"
+      ],
+      [
+       "Merchandising",
+       "Buy and resell goods",
+       "Merchandise"
+      ],
+      [
+       "Service",
+       "Provide services",
+       "None"
+      ]
+     ],
+     "say": "Manufacturers turn materials into products. Merchandisers, like a hardware store, buy and resell goods. Service firms, like banks and law firms, provide services and hold no inventory of products."
+    },
+    {
+     "type": "flow",
+     "heading": "A manufacturer's three inventories",
+     "items": [
+      "Direct materials: steel, axles, tires",
+      "Work in process: trailers being built",
+      "Finished goods: trailers ready to ship"
+     ],
+     "say": "A manufacturer has three inventories. Direct materials waiting to be used: steel, axles and tires. Work-in-process: trailers that are partly built. And finished goods: completed trailers not yet sold."
+    },
+    {
+     "type": "table",
+     "heading": "Prairie Gate inventories, December 31",
+     "rows": [
+      [
+       "Direct materials",
+       84000
+      ],
+      [
+       "Work in process",
+       126000
+      ],
+      [
+       "Finished goods",
+       58000
+      ],
+      [
+       "Total inventories",
+       268000,
+       "total"
+      ]
+     ],
+     "say": "At the end of December, Prairie Gate has $84,000 of materials, $126,000 of work in process and $58,000 of finished trailers: $268,000 of inventory on its balance sheet."
+    },
+    {
+     "type": "key",
+     "big": "Services cost too",
+     "sub": [
+      "A bank still costs its",
+      "loans and accounts"
+     ],
+     "say": "Service firms still need cost accounting: a bank costs each type of account, and a hospital each procedure. They just have no product inventory."
+    },
+    {
+     "type": "quiz",
+     "q": "A trailer with a welded frame but no flooring or wiring is in which inventory?",
+     "opts": [
+      "Direct materials",
+      "Work in process",
+      "Finished goods",
+      "Merchandise"
+     ],
+     "answer": 1,
+     "say": "Quick check. A trailer with a welded frame but no floor or wiring sits in which inventory? Pause and pick.",
+     "reveal": "It's B, work in process."
+    }
+   ]
+  },
+  {
+   "id": "2.4",
+   "title": "Inventoriable and period costs",
+   "lecture": "Lecture 2 · Cost terms",
+   "take": "Manufacturing costs are inventoriable and expensed when sold; other costs are period costs, expensed when incurred",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "When does a cost hit the income statement? It depends on whether it's an inventoriable cost or a period cost."
+    },
+    {
+     "type": "define",
+     "big": "Inventoriable costs",
+     "sub": [
+      "All manufacturing costs: an asset",
+      "until sold, then cost of goods sold"
+     ],
+     "say": "Inventoriable costs are all the costs of making a product: materials, labor and factory overhead. They sit on the balance sheet as inventory until the product is sold, then become cost of goods sold."
+    },
+    {
+     "type": "define",
+     "big": "Period costs",
+     "sub": [
+      "All non-manufacturing costs:",
+      "expensed when incurred"
+     ],
+     "say": "Period costs are all the other costs: research, design, marketing, distribution, customer service and administration. Under GAAP they're expensed in the period incurred."
+    },
+    {
+     "type": "compare",
+     "heading": "Prairie Gate's costs",
+     "cols": [
+      "Type",
+      "Expensed"
+     ],
+     "rows": [
+      [
+       "Steel in trailers",
+       "Inventoriable",
+       "When trailer is sold"
+      ],
+      [
+       "Factory supervisor",
+       "Inventoriable",
+       "When trailer is sold"
+      ],
+      [
+       "Dealer commissions",
+       "Period",
+       "When incurred"
+      ],
+      [
+       "Office salaries",
+       "Period",
+       "When incurred"
+      ]
+     ],
+     "say": "Steel and the factory supervisor's salary are inventoriable: they're expensed as cost of goods sold when the trailer is sold. Dealer commissions and office salaries are period costs, expensed right away."
+    },
+    {
+     "type": "key",
+     "big": "Same factory, same rule",
+     "sub": [
+      "Factory rent: inventoriable",
+      "Head office rent: period"
+     ],
+     "say": "So factory rent is inventoriable, while rent for the sales office is a period cost. If a trailer built in December is still unsold, its share of factory rent waits in finished goods."
+    },
+    {
+     "type": "quiz",
+     "q": "Which cost is inventoriable at Prairie Gate?",
+     "opts": [
+      "Dealer commissions",
+      "Depreciation on the welding robot",
+      "The accountant's salary",
+      "Delivery fuel"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which cost is inventoriable at Prairie Gate? Pause and pick.",
+     "reveal": "It's B. The welding robot is used to manufacture trailers, so its depreciation is factory overhead."
+    }
+   ]
+  },
+  {
+   "id": "2.5",
+   "title": "Prime and conversion costs",
+   "lecture": "Lecture 2 · Cost terms",
+   "take": "Prime cost is direct materials plus direct labor; conversion cost is direct labor plus overhead",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Manufacturing costs come in three pieces, and two useful combinations."
+    },
+    {
+     "type": "list",
+     "heading": "Three manufacturing costs",
+     "items": [
+      "Direct materials: traceable materials",
+      "Direct manufacturing labor: traceable labor",
+      "Manufacturing overhead: everything else in the factory"
+     ],
+     "say": "Direct materials are materials traced to the product. Direct manufacturing labor is the pay of workers traced to the product, like welders. Manufacturing overhead is every other factory cost: supervisors, utilities, depreciation, supplies."
+    },
+    {
+     "type": "table",
+     "heading": "Trailer #418",
+     "rows": [
+      [
+       "Direct materials",
+       6200
+      ],
+      [
+       "Direct manufacturing labor",
+       2400
+      ],
+      [
+       "Manufacturing overhead",
+       2880
+      ],
+      [
+       "Total manufacturing cost",
+       11480,
+       "total"
+      ]
+     ],
+     "say": "Trailer four-eighteen used $6,200 of direct materials, $2,400 of direct labor and $2,880 of overhead: $11,480 in total."
+    },
+    {
+     "type": "table",
+     "heading": "Two combinations",
+     "rows": [
+      [
+       "Prime cost: 6,200 + 2,400",
+       8600
+      ],
+      [
+       "Conversion cost: 2,400 + 2,880",
+       5280
+      ]
+     ],
+     "say": "Prime cost is direct materials plus direct labor: $8,600. Conversion cost is direct labor plus overhead, the cost of converting materials into a product: $5,280."
+    },
+    {
+     "type": "key",
+     "big": "Conversion costs matter more now",
+     "sub": [
+      "Automation shrinks direct labor;",
+      "some firms combine labor and overhead"
+     ],
+     "say": "As factories automate, direct labor shrinks and overhead grows, so many companies now track just two categories: direct materials and conversion costs. That's how process costing works in Lecture 8."
+    },
+    {
+     "type": "quiz",
+     "q": "DM $5,000, DL $1,800, overhead $2,200. Conversion cost?",
+     "opts": [
+      "$6,800",
+      "$4,000",
+      "$7,200",
+      "$9,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Direct materials five thousand, direct labor eighteen hundred, overhead twenty-two hundred. What's conversion cost? Pause and pick.",
+     "reveal": "It's B. Labor plus overhead: $4,000."
+    }
+   ]
+  },
+  {
+   "id": "2.6",
+   "title": "Overtime premium and idle time",
+   "lecture": "Lecture 2 · Cost terms",
+   "take": "Overtime premium and idle time are usually overhead, not direct labor",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "A welder works overtime and waits for a broken machine. Which part of the paycheck is direct labor?"
+    },
+    {
+     "type": "table",
+     "heading": "Tom's week: $30 an hour",
+     "rows": [
+      [
+       "40 regular hours × $30",
+       1200
+      ],
+      [
+       "4 overtime hours × $45",
+       180
+      ],
+      [
+       "Gross pay",
+       1380,
+       "total"
+      ],
+      [
+       "Of which idle (robot down): 2 hours",
+       ""
+      ]
+     ],
+     "say": "Tom, a welder, earns thirty dollars an hour, time-and-a-half for overtime. He works forty-four hours, four of them overtime, so he's paid $1,380. Two of his hours were idle while the welding robot was down."
+    },
+    {
+     "type": "table",
+     "heading": "How it's classified",
+     "rows": [
+      [
+       "Direct labor: 42 productive hours × $30",
+       1260
+      ],
+      [
+       "Overtime premium: 4 × $15",
+       60
+      ],
+      [
+       "Idle time: 2 × $30",
+       60
+      ],
+      [
+       "Total",
+       1380,
+       "total"
+      ]
+     ],
+     "say": "Direct labor is the forty-two productive hours at the regular rate: $1,260. The overtime premium, four hours at fifteen dollars, is $60 of overhead. The idle time, two hours at thirty, is another $60 of overhead."
+    },
+    {
+     "type": "key",
+     "big": "Why overtime goes to overhead",
+     "sub": [
+      "The job that happened to run late",
+      "shouldn't bear the whole premium"
+     ],
+     "say": "Why? Overtime usually results from the overall workload, not the trailer that happened to be on the line late in the week. Spreading the premium through overhead keeps job costs fair."
+    },
+    {
+     "type": "key",
+     "big": "The exception",
+     "sub": [
+      "A rush order that causes overtime",
+      "is charged the premium directly"
+     ],
+     "say": "The exception: if a customer's rush order caused the overtime, the premium is charged directly to that job."
+    },
+    {
+     "type": "quiz",
+     "q": "A worker paid $20 an hour works 45 hours (5 overtime at time-and-a-half), none idle. How much is overtime premium?",
+     "opts": [
+      "$50",
+      "$100",
+      "$150",
+      "$900"
+     ],
+     "answer": 0,
+     "say": "Quick check. A worker paid twenty dollars an hour works forty-five hours, five of them overtime at time-and-a-half. How much is overtime premium? Pause and pick.",
+     "reveal": "It's A. The premium is half the rate, ten dollars, times five hours: $50."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "What did your last cup of coffee 'cost' the café? List every cost you can, then decide which could be traced to your cup.",
+   "Beans, cup, milk are direct; rent, espresso machine, barista's time partly. Introduces cost objects and allocation."
+  ],
+  "acts": [
+   [
+    "Cost object: the welding department. Direct or indirect? (a) Welding supervisor, (b) plant security, (c) welding gas, (d) the CEO's salary.",
+    "(a) Direct. (b) Indirect. (c) Direct. (d) Indirect."
+   ],
+   [
+    "Fixed overhead is $90,000 a month. Compute fixed cost per trailer at 45, 60 and 75 trailers. Why is a bid using $2,000 per trailer at 45 risky?",
+    "$2,000, $1,500, $1,200. At higher volumes the unit fixed cost falls; and for an extra order, fixed costs may not change at all."
+   ],
+   [
+    "Classify: (a) unused axles, (b) trailer waiting for paint, (c) trailer on the lot awaiting pickup, (d) welding wire.",
+    "(a) DM. (b) WIP. (c) FG. (d) Indirect materials (overhead supplies, before use)."
+   ],
+   [
+    "Inventoriable or period: R&D on a new hitch, factory utilities, sales commissions, depreciation on the paint booth, CFO's salary.",
+    "Period; inventoriable; period; inventoriable; period."
+   ],
+   [
+    "Job: DM $8,000, DL $3,200, MOH applied at 120% of DL. Compute prime, conversion and total cost.",
+    "MOH 3,840. Prime 11,200; conversion 7,040; total 15,040."
+   ],
+   [
+    "A welder at $28 works 48 hours (8 overtime at time-and-a-half), 3 idle. Classify the pay.",
+    "Pay 40 × 28 + 8 × 42 = 1,456. DL 45 × 28 = 1,260; OT premium 8 × 14 = 112; idle 3 × 28 = 84. Total 1,456."
+   ]
+  ],
+  "case": [
+   "Pricing the show trailer",
+   "A breeder asks Prairie Gate to price a one-off show-cattle trailer. Karen's cost sheet shows: DM $9,400; DL 90 hours × $30 = $2,700 (including a 10-hour overtime premium of $150 because the welders were busy); overhead allocated at $32 per labor hour; and $1,200 'share of marketing and admin'. The plant has spare capacity this month.",
+   [
+    "Which costs are direct, which indirect?",
+    "Correct the labor and overhead classification.",
+    "Which costs are inventoriable if the trailer is still on the lot at year-end?",
+    "What minimum price covers the extra costs of this order?"
+   ],
+   "DM and DL direct; overhead and admin indirect. Overtime premium $150 belongs in overhead (not caused by this order) unless the breeder demanded a rush. Inventoriable: DM, DL, MOH; marketing/admin is a period cost. Short-run minimum: incremental costs only (DM, DL, any variable overhead), not allocated fixed costs."
+  ],
+  "exam": [
+   [
+    "Explain why fixed cost per unit can mislead managers and give an example.",
+    5,
+    "Fixed costs are constant in total, so unit fixed cost depends on volume; using it as if variable overstates incremental cost (e.g., $300 lease per trailer at 40 units, but the 41st adds nothing)."
+   ],
+   [
+    "Define and compute prime and conversion cost from DM $12,000, DL $4,500, MOH $6,300.",
+    4,
+    "Prime = DM + DL = 16,500; conversion = DL + MOH = 10,800."
+   ]
+  ],
+  "outcomes": [
+   "Distinguish direct and indirect costs for a cost object",
+   "Explain variable and fixed cost behavior",
+   "Identify the three manufacturing inventories",
+   "Separate inventoriable and period costs",
+   "Compute prime and conversion costs",
+   "Classify overtime premium and idle time"
+  ],
+  "take": [
+   "Direct costs are traced; indirect costs allocated",
+   "Fixed cost per unit changes with volume",
+   "DM, WIP and FG inventories",
+   "Manufacturing costs wait in inventory; others are expensed",
+   "Prime = DM + DL; conversion = DL + MOH",
+   "Overtime premium and idle time usually go to overhead"
+  ]
+ },
+ "ex": [
+  {
+   "type": "sort",
+   "q": "Cost object: one trailer. Direct or indirect?",
+   "cats": [
+    "Direct",
+    "Indirect"
+   ],
+   "items": [
+    [
+     "Axles",
+     0
+    ],
+    [
+     "Factory rent",
+     1
+    ],
+    [
+     "Welder's hours on it",
+     0
+    ],
+    [
+     "Supervisor's salary",
+     1
+    ],
+    [
+     "Custom paint",
+     0
+    ]
+   ],
+   "why": "Direct costs can be traced economically to the trailer.",
+   "video": "2.1"
+  },
+  {
+   "type": "num",
+   "q": "Fixed lease $15,000 a month; 75 trailers built. What is lease cost per trailer?",
+   "a": 200,
+   "unit": "$",
+   "why": "15,000 ÷ 75 = 200.",
+   "video": "2.2"
+  },
+  {
+   "type": "mcq",
+   "q": "When output rises, what happens to variable cost per unit?",
+   "opts": [
+    "Rises",
+    "Falls",
+    "Stays constant",
+    "Becomes fixed"
+   ],
+   "a": 2,
+   "why": "Variable costs are constant per unit and change in total.",
+   "video": "2.2"
+  },
+  {
+   "type": "match",
+   "q": "Match each item to its inventory.",
+   "pairs": [
+    [
+     "Coil of steel",
+     "Direct materials"
+    ],
+    [
+     "Trailer frame being welded",
+     "Work in process"
+    ],
+    [
+     "Completed trailer awaiting pickup",
+     "Finished goods"
+    ]
+   ],
+   "why": "Manufacturers have three inventories.",
+   "video": "2.3"
+  },
+  {
+   "type": "sort",
+   "q": "Inventoriable or period cost?",
+   "cats": [
+    "Inventoriable",
+    "Period"
+   ],
+   "items": [
+    [
+     "Factory utilities",
+     0
+    ],
+    [
+     "Sales commissions",
+     1
+    ],
+    [
+     "Paint booth depreciation",
+     0
+    ],
+    [
+     "Advertising",
+     1
+    ],
+    [
+     "Direct labor",
+     0
+    ],
+    [
+     "Head office rent",
+     1
+    ]
+   ],
+   "why": "Only manufacturing costs are inventoriable.",
+   "video": "2.4"
+  },
+  {
+   "type": "num",
+   "q": "DM $7,000, DL $2,600, overhead $3,100. What is prime cost?",
+   "a": 9600,
+   "unit": "$",
+   "why": "7,000 + 2,600 = 9,600.",
+   "video": "2.5"
+  },
+  {
+   "type": "num",
+   "q": "Same job: what is conversion cost?",
+   "a": 5700,
+   "unit": "$",
+   "why": "2,600 + 3,100 = 5,700.",
+   "video": "2.5"
+  },
+  {
+   "type": "num",
+   "q": "A worker at $24 an hour works 46 hours (6 overtime at time-and-a-half), 2 of them idle. How much is direct labor?",
+   "a": 1056,
+   "unit": "$",
+   "why": "44 productive hours × $24 = 1,056; the premium (72) and idle time (48) are overhead.",
+   "video": "2.6"
+  }
+ ]
+}

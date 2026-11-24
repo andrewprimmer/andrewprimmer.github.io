@@ -1,0 +1,501 @@
+{
+ "videos": [
+  {
+   "id": "14.1",
+   "title": "Management control and transfer prices",
+   "lecture": "Lecture 14 \u00b7 Transfer pricing & performance",
+   "take": "Transfer prices should promote goal congruence, effort and autonomy; methods are market, cost or negotiated",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Tallgrass has grown into two divisions. Motors makes the electric drive units. Assembly builds the bikes. What should Assembly pay Motors?"
+    },
+    {
+     "type": "define",
+     "big": "Transfer price",
+     "sub": [
+      "The price one subunit charges",
+      "another for a product or service"
+     ],
+     "say": "A transfer price is the price one subunit of an organization charges another for a product or service. It's revenue for Motors and a cost for Assembly, so it drives both divisions' profits."
+    },
+    {
+     "type": "list",
+     "heading": "What a good control system promotes",
+     "items": [
+      "Goal congruence: managers act in the company's interest",
+      "Management effort",
+      "Subunit autonomy",
+      "Fair performance evaluation"
+     ],
+     "say": "A good management control system, including transfer prices, promotes goal congruence, so managers acting in their own interest also act in the company's; management effort; subunit autonomy; and fair performance evaluation."
+    },
+    {
+     "type": "compare",
+     "heading": "Three methods",
+     "cols": [
+      "Basis",
+      "Best when"
+     ],
+     "rows": [
+      [
+       "Market-based",
+       "Outside price",
+       "A competitive market exists"
+      ],
+      [
+       "Cost-based",
+       "Variable or full cost",
+       "No market price"
+      ],
+      [
+       "Negotiated",
+       "Bargaining",
+       "Divisions have autonomy"
+      ]
+     ],
+     "say": "There are three methods. Market-based prices use the outside price, best when there's a competitive market. Cost-based prices use variable or full cost, sometimes plus a markup, when no market price exists. Negotiated prices come from bargaining between the divisions."
+    },
+    {
+     "type": "table",
+     "heading": "Motors division, per drive unit",
+     "rows": [
+      [
+       "Variable cost",
+       180
+      ],
+      [
+       "Full cost (incl. fixed)",
+       260
+      ],
+      [
+       "Outside market price",
+       320
+      ],
+      [
+       "Selling cost saved on internal sale",
+       20
+      ]
+     ],
+     "say": "Motors' variable cost is $180 per drive unit, full cost $260. Outside buyers pay $320. Selling internally saves $20 of selling cost."
+    },
+    {
+     "type": "quiz",
+     "q": "When managers acting in their own interest also act in the company's interest, that's:",
+     "opts": [
+      "Autonomy",
+      "Goal congruence",
+      "Effort",
+      "Suboptimization"
+     ],
+     "answer": 1,
+     "say": "Quick check. When managers acting in their own interest also act in the company's interest, what's that called? Pause and pick.",
+     "reveal": "It's B, goal congruence."
+    }
+   ]
+  },
+  {
+   "id": "14.2",
+   "title": "The minimum transfer price",
+   "lecture": "Lecture 14 \u00b7 Transfer pricing & performance",
+   "take": "Minimum transfer price = incremental cost per unit + opportunity cost per unit",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "One rule tells you the lowest price the selling division should accept."
+    },
+    {
+     "type": "define",
+     "big": "Minimum transfer price",
+     "sub": [
+      "Incremental cost per unit",
+      "+ opportunity cost per unit"
+     ],
+     "say": "The minimum transfer price equals the incremental cost per unit up to the point of transfer, plus the opportunity cost per unit to the selling division."
+    },
+    {
+     "type": "compare",
+     "heading": "Does Motors have spare capacity?",
+     "cols": [
+      "Idle capacity",
+      "Full capacity"
+     ],
+     "rows": [
+      [
+       "Incremental cost",
+       "$180",
+       "$160 ($180 \u2212 $20 saved)"
+      ],
+      [
+       "Opportunity cost",
+       "$0",
+       "$140 lost outside margin"
+      ],
+      [
+       "Minimum price",
+       "$180",
+       "$300"
+      ]
+     ],
+     "say": "With idle capacity, Motors gives up nothing, so the minimum is the $180 variable cost. At full capacity, every internal unit displaces an outside sale. Incremental cost is $160 after the $20 saving, plus $140 of lost margin, so the minimum is $300: the market price less the selling cost saved."
+    },
+    {
+     "type": "key",
+     "big": "Range: $180 to $320",
+     "sub": [
+      "Assembly won't pay more than",
+      "the $320 outside price"
+     ],
+     "say": "Assembly won't pay more than the $320 it would pay outside. With idle capacity, any price from $180 to $320 benefits the company. Where in that range it lands just divides the profit."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "Full cost can mislead",
+     "sub": [
+      "At $260, Assembly might buy outside",
+      "even when Motors has idle capacity"
+     ],
+     "say": "Full-cost transfer prices can mislead. Fixed costs make units look more costly than they are, and divisions may make choices that hurt the company. Dual pricing, where the seller is credited at one price and the buyer charged another, is one fix."
+    },
+    {
+     "type": "quiz",
+     "q": "Motors is at full capacity. The market price is $320 and $20 of selling cost is saved internally. Minimum transfer price?",
+     "opts": [
+      "$180",
+      "$260",
+      "$300",
+      "$320"
+     ],
+     "answer": 2,
+     "say": "Quick check. Motors is at full capacity. Market price three twenty; twenty dollars saved internally. Minimum transfer price? Pause and pick.",
+     "reveal": "It's C, $300."
+    }
+   ]
+  },
+  {
+   "id": "14.3",
+   "title": "Multinational transfer pricing and taxes",
+   "lecture": "Lecture 14 \u00b7 Transfer pricing & performance",
+   "take": "Across borders, transfer prices shift taxable income; the arm's-length standard limits them",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "When divisions sit in different countries, the transfer price also decides where profit is taxed."
+    },
+    {
+     "type": "table",
+     "heading": "Per 1,000 units, foreign tax rate 15%",
+     "rows": [
+      [
+       "Profit shifted: $40 higher price",
+       40000
+      ],
+      [
+       "US tax saved at 21%",
+       8400
+      ],
+      [
+       "Foreign tax at 15%",
+       -6000
+      ],
+      [
+       "Net tax saved",
+       2400,
+       "total"
+      ]
+     ],
+     "say": "Suppose Motors were in a country with a fifteen percent tax rate, and Assembly stayed in the US at twenty-one percent. Raising the transfer price by forty dollars on a thousand units shifts $40,000 of profit abroad. That saves $8,400 of US tax but costs $6,000 abroad. Net saving: $2,400."
+    },
+    {
+     "type": "define",
+     "big": "Arm's-length standard",
+     "sub": [
+      "Price what unrelated parties",
+      "would charge each other"
+     ],
+     "say": "Tax authorities don't let companies pick any price. Under the arm's-length standard, in the US Internal Revenue Code Section 482 and in OECD guidelines, related parties must price as unrelated parties would."
+    },
+    {
+     "type": "list",
+     "heading": "Other factors",
+     "items": [
+      "Customs duties on imported value",
+      "Limits on moving cash out of a country",
+      "Global minimum taxes on large groups",
+      "Local managers' evaluation and motivation"
+     ],
+     "say": "Other factors matter too: customs duties based on the import value, restrictions on moving cash out of some countries, global minimum tax rules for large groups, and how the local managers are evaluated and motivated."
+    },
+    {
+     "type": "key",
+     "big": "One price, many purposes",
+     "sub": [
+      "Some firms keep separate books",
+      "for tax and for management"
+     ],
+     "say": "One transfer price can't serve every purpose perfectly, so many multinationals keep one price for tax and a different measure internally for evaluating managers."
+    },
+    {
+     "type": "quiz",
+     "q": "The rule that related parties must price as unrelated parties would is called:",
+     "opts": [
+      "Dual pricing",
+      "Arm's-length standard",
+      "Goal congruence",
+      "Full-cost pricing"
+     ],
+     "answer": 1,
+     "say": "Quick check. The rule that related parties must price as unrelated parties would is called what? Pause and pick.",
+     "reveal": "It's B, the arm's-length standard."
+    }
+   ]
+  },
+  {
+   "id": "14.4",
+   "title": "ROI, residual income and EVA",
+   "lecture": "Lecture 14 \u00b7 Transfer pricing & performance",
+   "take": "ROI = income \u00f7 investment; RI = income \u2212 required return \u00d7 investment; EVA uses after-tax income and WACC",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "How do you compare a division's profit with the money tied up in it? Three measures."
+    },
+    {
+     "type": "table",
+     "heading": "Division results",
+     "rows": [
+      [
+       "Motors operating income",
+       600000
+      ],
+      [
+       "Motors investment (total assets)",
+       4000000
+      ],
+      [
+       "Motors ROI",
+       "15%",
+       "total"
+      ],
+      [
+       "Assembly operating income",
+       900000
+      ],
+      [
+       "Assembly investment",
+       7500000
+      ],
+      [
+       "Assembly ROI",
+       "12%",
+       "total"
+      ]
+     ],
+     "say": "Return on investment is operating income divided by investment. Motors earns $600,000 on $4 million of assets: fifteen percent. Assembly earns $900,000 on $7.5 million: twelve percent."
+    },
+    {
+     "type": "define",
+     "big": "DuPont: margin \u00d7 turnover",
+     "sub": [
+      "Motors: revenue $5 million",
+      "12% margin \u00d7 1.25 turnover = 15%"
+     ],
+     "say": "The DuPont method splits ROI into return on sales times investment turnover. Motors has $5 million of revenue: a twelve percent margin times a turnover of one point two five gives fifteen percent. Improve either to raise ROI."
+    },
+    {
+     "type": "table",
+     "heading": "Residual income at 10% required return",
+     "rows": [
+      [
+       "Motors: 600,000 \u2212 10% \u00d7 4,000,000",
+       200000
+      ],
+      [
+       "Assembly: 900,000 \u2212 10% \u00d7 7,500,000",
+       150000
+      ]
+     ],
+     "say": "Residual income is operating income minus the required rate of return times investment. Motors: $200,000. Assembly: $150,000. Both earn more than the ten percent required."
+    },
+    {
+     "type": "define",
+     "big": "Economic value added",
+     "sub": [
+      "After-tax operating income",
+      "\u2212 WACC \u00d7 (assets \u2212 current liabilities)"
+     ],
+     "say": "Economic value added is a version of residual income: after-tax operating income minus the weighted-average cost of capital times total assets less current liabilities. For Motors, $450,000 after tax, less nine percent of $3.5 million, gives $135,000."
+    },
+    {
+     "type": "quiz",
+     "q": "Operating income $300,000; investment $2,000,000; required return 10%. Residual income?",
+     "opts": [
+      "$100,000",
+      "$200,000",
+      "15%",
+      "$300,000"
+     ],
+     "answer": 0,
+     "say": "Quick check. Operating income three hundred thousand; investment two million; required return ten percent. Residual income? Pause and pick.",
+     "reveal": "It's A, $100,000."
+    }
+   ]
+  },
+  {
+   "id": "14.5",
+   "title": "Choosing measures and the ROI trap",
+   "lecture": "Lecture 14 \u00b7 Transfer pricing & performance",
+   "take": "ROI can make managers reject projects that beat the required return; RI and EVA don't",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "The measure you choose changes the decisions managers make."
+    },
+    {
+     "type": "table",
+     "heading": "Motors considers a new project",
+     "rows": [
+      [
+       "Project investment",
+       1000000
+      ],
+      [
+       "Project operating income",
+       130000
+      ],
+      [
+       "Project ROI",
+       "13%"
+      ],
+      [
+       "Motors ROI after: 730 \u00f7 5,000",
+       "14.6%",
+       "total"
+      ],
+      [
+       "Change in residual income",
+       30000,
+       "total"
+      ]
+     ],
+     "say": "Motors can invest $1 million in a project earning $130,000: thirteen percent, well above the ten percent required. But it would pull Motors' ROI down from fifteen to fourteen point six percent. A manager judged on ROI says no. Residual income rises by $30,000, so a manager judged on RI says yes."
+    },
+    {
+     "type": "key",
+     "big": "RI and EVA promote goal congruence",
+     "sub": [
+      "Any project beating the required",
+      "return raises them"
+     ],
+     "say": "That's why many firms prefer residual income or EVA: any project that beats the required return raises them."
+    },
+    {
+     "type": "list",
+     "heading": "Other measurement choices",
+     "items": [
+      "Time horizon: one year or several",
+      "Investment: total assets or net of liabilities",
+      "Asset value: net book, gross book or current cost",
+      "Target levels and timing of feedback"
+     ],
+     "say": "Other choices matter too: the time horizon; whether investment is total assets or net of current liabilities; whether assets are at net book value, which makes old plants look good, gross book value, or current cost; and the targets and timing of feedback."
+    },
+    {
+     "type": "key",
+     "big": "Pay for what managers control",
+     "sub": [
+      "Balance incentives with risk;",
+      "add nonfinancial measures"
+     ],
+     "say": "Finally, reward managers for what they can control, balance incentive pay against the risk they bear, and use nonfinancial measures, like the balanced scorecard from Lecture 10, alongside the financial ones."
+    },
+    {
+     "type": "quiz",
+     "q": "A division's ROI is 18%; required return is 12%. A project offers 15%. Who accepts it?",
+     "opts": [
+      "Manager judged on ROI only",
+      "Manager judged on RI only",
+      "Both",
+      "Neither"
+     ],
+     "answer": 1,
+     "say": "Quick check. A division's ROI is eighteen percent; required return twelve. A project offers fifteen percent. Who accepts it? Pause and pick.",
+     "reveal": "It's B. ROI would fall, but RI rises."
+    }
+   ]
+  },
+  {
+   "id": "14.6",
+   "title": "Course recap: Cost Accounting II",
+   "lecture": "Lecture 14 \u00b7 Transfer pricing & performance",
+   "take": "Predict costs, plan, decide, then measure and control: the cost accountant's toolkit for management",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Fourteen lectures in two minutes: how cost information helps managers plan, decide and control."
+    },
+    {
+     "type": "list",
+     "heading": "Cost behavior and planning",
+     "items": [
+      "Cost functions, regression and learning curves",
+      "Data analytics and prediction",
+      "CVP: break-even and target profit",
+      "Master budgets and responsibility accounting"
+     ],
+     "say": "First, cost behavior and planning: estimating cost functions with regression and learning curves, using data analytics to predict, cost-volume-profit analysis, and the master budget with responsibility accounting."
+    },
+    {
+     "type": "list",
+     "heading": "Decisions",
+     "items": [
+      "Variable vs absorption costing; capacity",
+      "Relevant costs: make or buy, special orders",
+      "Pricing and target costing",
+      "Capital budgeting: NPV and IRR"
+     ],
+     "say": "Then decisions: variable versus absorption costing and capacity, relevant costs for make-or-buy and special orders, pricing and target costing, and capital budgeting with NPV and IRR."
+    },
+    {
+     "type": "list",
+     "heading": "Performance and control",
+     "items": [
+      "Allocation and customer profitability",
+      "Strategy and the balanced scorecard",
+      "Quality, time, inventory and JIT",
+      "Transfer prices, ROI, RI and EVA"
+     ],
+     "say": "And performance and control: cost allocation and customer profitability, strategy and the balanced scorecard, quality, time, inventory management and just-in-time, and transfer prices with ROI, residual income and EVA."
+    },
+    {
+     "type": "key",
+     "big": "Different costs for different purposes",
+     "sub": [
+      "Ask: what decision is this for?"
+     ],
+     "say": "The one idea tying it all together: different costs for different purposes. Before using any cost number, ask what decision it's for."
+    },
+    {
+     "type": "quiz",
+     "q": "Which measure is best for ranking long-term investments?",
+     "opts": [
+      "Payback",
+      "AARR",
+      "NPV",
+      "Year-one ROI"
+     ],
+     "answer": 2,
+     "say": "Last quick check. Which measure is best for ranking long-term investments? Pause and pick.",
+     "reveal": "It's C, net present value. Good luck on the final, and thanks for riding with Tallgrass."
+    }
+   ]
+  }
+ ]
+}

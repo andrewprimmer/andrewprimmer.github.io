@@ -1,0 +1,541 @@
+{
+ "videos": [
+  {
+   "id": "14.1",
+   "title": "Planning overhead and standard rates",
+   "lecture": "Lecture 14 \u00b7 Overhead variances",
+   "take": "Budgeted overhead rates turn planned overhead into a standard cost per unit",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Last time we analyzed steel and labor. Today: overhead, the cost that's hardest to control, at Prairie Gate's standard utility trailer."
+    },
+    {
+     "type": "compare",
+     "heading": "Plan overhead differently",
+     "cols": [
+      "Variable overhead",
+      "Fixed overhead"
+     ],
+     "rows": [
+      [
+       "Goal",
+       "Use only what adds value",
+       "Decide capacity in advance"
+      ],
+      [
+       "Behavior",
+       "Changes with labor hours",
+       "Same total each month"
+      ],
+      [
+       "Control",
+       "Day to day",
+       "At budgeting time"
+      ]
+     ],
+     "say": "Variable and fixed overhead are planned differently. Variable overhead, like welding gas and power, changes with labor hours and is controlled day to day. Fixed overhead, like the plant lease and supervision, is decided when capacity is planned."
+    },
+    {
+     "type": "table",
+     "heading": "March budget, 40 trailers",
+     "rows": [
+      [
+       "Standard labor hours per trailer",
+       "24"
+      ],
+      [
+       "Variable MOH rate per labor hour",
+       10
+      ],
+      [
+       "Variable MOH per trailer",
+       240,
+       "total"
+      ],
+      [
+       "Budgeted fixed MOH",
+       40000
+      ],
+      [
+       "Fixed MOH rate: 40,000 \u00f7 40 trailers",
+       1000,
+       "total"
+      ]
+     ],
+     "say": "Each utility trailer takes twenty-four standard labor hours. Variable overhead is ten dollars a labor hour, so $240 a trailer. Fixed overhead is budgeted at $40,000 for March, based on forty trailers, so the fixed rate is a thousand dollars a trailer."
+    },
+    {
+     "type": "key",
+     "big": "Denominator level",
+     "sub": [
+      "The output used to set the fixed rate:",
+      "here, 40 trailers"
+     ],
+     "say": "The output used to compute the fixed rate is called the denominator level. Here it's forty trailers, or nine hundred sixty labor hours. It's a choice, and it matters."
+    },
+    {
+     "type": "table",
+     "heading": "March actual: 36 trailers",
+     "rows": [
+      [
+       "Actual labor hours",
+       "900"
+      ],
+      [
+       "Actual variable MOH",
+       9300
+      ],
+      [
+       "Actual fixed MOH",
+       41000
+      ]
+     ],
+     "say": "In March, Prairie Gate built thirty-six trailers using nine hundred labor hours. Actual variable overhead was $9,300 and actual fixed overhead $41,000."
+    },
+    {
+     "type": "quiz",
+     "q": "Fixed MOH budget $60,000; denominator level 50 trailers. Fixed MOH rate per trailer?",
+     "opts": [
+      "$1,000",
+      "$1,200",
+      "$1,250",
+      "$600"
+     ],
+     "answer": 1,
+     "say": "Quick check. Fixed overhead budget sixty thousand dollars, denominator level fifty trailers. Fixed rate per trailer? Pause and pick.",
+     "reveal": "It's B, $1,200."
+    }
+   ]
+  },
+  {
+   "id": "14.2",
+   "title": "Variable overhead variances",
+   "lecture": "Lecture 14 \u00b7 Overhead variances",
+   "take": "VMOH spending = (actual rate \u2212 budgeted rate) \u00d7 actual hours; efficiency = (actual \u2212 standard hours) \u00d7 rate",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Variable overhead splits into two variances, just like labor."
+    },
+    {
+     "type": "table",
+     "heading": "Flexible budget for 36 trailers",
+     "rows": [
+      [
+       "Standard hours allowed: 36 \u00d7 24",
+       "864"
+      ],
+      [
+       "Flexible-budget variable MOH: 864 \u00d7 $10",
+       8640
+      ],
+      [
+       "Actual variable MOH",
+       9300
+      ],
+      [
+       "Flexible-budget variance",
+       "660 U",
+       "total"
+      ]
+     ],
+     "say": "The flexible budget allows eight hundred sixty-four hours for thirty-six trailers, so variable overhead should have been $8,640. Actual was $9,300: a flexible-budget variance of $660 unfavorable."
+    },
+    {
+     "type": "define",
+     "big": "Efficiency variance",
+     "sub": [
+      "(900 \u2212 864 hours) \u00d7 $10",
+      "= $360 U"
+     ],
+     "say": "The efficiency variance asks how many hours were used. Prairie Gate used thirty-six hours more than standard, at ten dollars each: $360 unfavorable. It's caused by whatever caused the labor efficiency variance."
+    },
+    {
+     "type": "define",
+     "big": "Spending variance",
+     "sub": [
+      "$9,300 \u2212 (900 \u00d7 $10)",
+      "= $300 U"
+     ],
+     "say": "The spending variance compares actual variable overhead with what nine hundred hours should have cost: $9,300 versus $9,000, so $300 unfavorable. Maybe gas prices rose, or more power was used per hour."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "Efficiency isn't about overhead",
+     "sub": [
+      "It measures the hours used,",
+      "not overhead items"
+     ],
+     "say": "Watch out: the variable overhead efficiency variance doesn't measure overhead use directly. It measures the efficiency of the hours used as the cost driver."
+    },
+    {
+     "type": "quiz",
+     "q": "Actual hours 500; standard hours allowed 520; VMOH rate $8. Efficiency variance?",
+     "opts": [
+      "$160 F",
+      "$160 U",
+      "$80 F",
+      "$0"
+     ],
+     "answer": 0,
+     "say": "Quick check. Actual hours five hundred; standard hours allowed five twenty; variable overhead rate eight dollars. Efficiency variance? Pause and pick.",
+     "reveal": "It's A, $160 favorable."
+    }
+   ]
+  },
+  {
+   "id": "14.3",
+   "title": "Fixed overhead variances",
+   "lecture": "Lecture 14 \u00b7 Overhead variances",
+   "take": "Fixed MOH spending = actual \u2212 budget; production-volume = budget \u2212 allocated",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Fixed overhead doesn't change with output, so its variances work differently."
+    },
+    {
+     "type": "define",
+     "big": "Fixed overhead spending variance",
+     "sub": [
+      "$41,000 actual \u2212 $40,000 budget",
+      "= $1,000 U"
+     ],
+     "say": "The fixed overhead spending variance, also called the flexible-budget variance, is actual fixed overhead minus the budget: $41,000 minus $40,000, or $1,000 unfavorable. Perhaps the supervisor's salary rose. There's no efficiency variance for fixed overhead."
+    },
+    {
+     "type": "table",
+     "heading": "Production-volume variance",
+     "rows": [
+      [
+       "Budgeted fixed MOH",
+       40000
+      ],
+      [
+       "Allocated: 36 trailers \u00d7 $1,000",
+       36000
+      ],
+      [
+       "Production-volume variance",
+       "4,000 U",
+       "total"
+      ]
+     ],
+     "say": "Fixed overhead allocated to the trailers is thirty-six times a thousand dollars, $36,000. The budget was $40,000. The $4,000 gap is the production-volume variance: unfavorable, because output fell short of the forty-trailer denominator."
+    },
+    {
+     "type": "key",
+     "big": "PVV isn't a spending problem",
+     "sub": [
+      "It arises because fixed cost",
+      "is treated as if it were variable"
+     ],
+     "say": "The production-volume variance doesn't mean anyone spent too much. It exists only because a fixed cost is allocated per unit, as if it were variable. It measures unused capacity, valued at the allocation rate."
+    },
+    {
+     "type": "key",
+     "big": "Look for the cause",
+     "sub": [
+      "Lower demand? Lost orders?",
+      "Or a capacity plan that's too big?"
+     ],
+     "say": "Managers should ask why output was low: weaker demand, a lost dealer, a supply delay, or capacity that was too large to begin with."
+    },
+    {
+     "type": "quiz",
+     "q": "Fixed MOH budget $60,000, $1,200 per trailer; 55 trailers built. Production-volume variance?",
+     "opts": [
+      "$6,000 U",
+      "$6,000 F",
+      "$0",
+      "$1,200 F"
+     ],
+     "answer": 1,
+     "say": "Quick check. Fixed overhead budget sixty thousand, twelve hundred dollars a trailer; fifty-five trailers built. Production-volume variance? Pause and pick.",
+     "reveal": "It's B. Allocated $66,000 exceeds the budget: $6,000 favorable."
+    }
+   ]
+  },
+  {
+   "id": "14.4",
+   "title": "The four variances and journal entries",
+   "lecture": "Lecture 14 \u00b7 Overhead variances",
+   "take": "Underallocated overhead equals the sum of the four overhead variances",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Put the four overhead variances together, and they explain all of March's underallocated overhead."
+    },
+    {
+     "type": "table",
+     "heading": "Four-variance analysis, March",
+     "rows": [
+      [
+       "Variable MOH spending",
+       "300 U"
+      ],
+      [
+       "Variable MOH efficiency",
+       "360 U"
+      ],
+      [
+       "Fixed MOH spending",
+       "1,000 U"
+      ],
+      [
+       "Fixed MOH production-volume",
+       "4,000 U"
+      ],
+      [
+       "Total underallocated MOH",
+       "5,660 U",
+       "total"
+      ]
+     ],
+     "say": "Variable spending, $300 unfavorable. Variable efficiency, $360 unfavorable. Fixed spending, $1,000 unfavorable. Production volume, $4,000 unfavorable. Total: $5,660."
+    },
+    {
+     "type": "table",
+     "heading": "Check: actual vs allocated",
+     "rows": [
+      [
+       "Actual MOH: 9,300 + 41,000",
+       50300
+      ],
+      [
+       "Allocated: 8,640 + 36,000",
+       44640
+      ],
+      [
+       "Underallocated",
+       5660,
+       "total"
+      ]
+     ],
+     "say": "Check it: actual overhead was $50,300 and allocated overhead $44,640. Underallocated: $5,660. The variances explain all of it."
+    },
+    {
+     "type": "journal",
+     "heading": "Closing variable overhead",
+     "rows": [
+      [
+       "VMOH allocated",
+       8640,
+       ""
+      ],
+      [
+       "VMOH spending var.",
+       300,
+       ""
+      ],
+      [
+       "VMOH efficiency var.",
+       360,
+       ""
+      ],
+      [
+       "VMOH control",
+       "",
+       9300
+      ]
+     ],
+     "say": "To close variable overhead, debit the allocated account for $8,640 and the two unfavorable variances, and credit the control account for the actual $9,300."
+    },
+    {
+     "type": "journal",
+     "heading": "Closing fixed overhead",
+     "rows": [
+      [
+       "Fixed MOH allocated",
+       36000,
+       ""
+      ],
+      [
+       "Fixed MOH spending var.",
+       1000,
+       ""
+      ],
+      [
+       "Production-volume var.",
+       4000,
+       ""
+      ],
+      [
+       "Fixed MOH control",
+       "",
+       41000
+      ]
+     ],
+     "say": "Fixed overhead closes the same way: debit allocated for $36,000 and the two variances, and credit control for $41,000. At year-end, variances are written off to cost of goods sold or prorated, as in Lecture 5."
+    },
+    {
+     "type": "quiz",
+     "q": "Actual MOH $80,000; allocated $76,000. The four variances must total:",
+     "opts": [
+      "$4,000 F",
+      "$4,000 U",
+      "$156,000",
+      "$0"
+     ],
+     "answer": 1,
+     "say": "Quick check. Actual overhead eighty thousand; allocated seventy-six thousand. The four variances must total what? Pause and pick.",
+     "reveal": "It's B, $4,000 unfavorable: underallocated."
+    }
+   ]
+  },
+  {
+   "id": "14.5",
+   "title": "Interpreting overhead variances",
+   "lecture": "Lecture 14 \u00b7 Overhead variances",
+   "take": "Read the variances together, and remember the sales-volume variance measures lost profit, not the PVV",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Numbers alone don't manage a plant. How should Dale Kirchner read March?"
+    },
+    {
+     "type": "list",
+     "heading": "What March tells Dale",
+     "items": [
+      "Extra hours drove both labor and VMOH efficiency",
+      "VMOH spending: check gas and power prices",
+      "Fixed spending: a supervisor raise, $1,000",
+      "Volume: 4 fewer trailers than planned"
+     ],
+     "say": "The extra thirty-six hours drove both the labor and variable overhead efficiency variances, so they share one cause. Variable spending needs a look at gas and power prices. Fixed spending came from a supervisor's raise. And the big one, volume, came from building four fewer trailers."
+    },
+    {
+     "type": "compare",
+     "heading": "Two volume measures",
+     "cols": [
+      "Production-volume",
+      "Sales-volume"
+     ],
+     "rows": [
+      [
+       "Measures",
+       "Fixed cost not allocated",
+       "Contribution margin lost"
+      ],
+      [
+       "March",
+       "$4,000 U",
+       "$6,160 U"
+      ],
+      [
+       "Economic?",
+       "No: accounting effect",
+       "Yes: lost profit"
+      ]
+     ],
+     "say": "Don't confuse the production-volume variance with the sales-volume variance from Lecture 13. The sales-volume variance, $6,160, is the contribution margin lost on four fewer trailers: real lost profit. The production-volume variance is an accounting effect of allocating fixed cost."
+    },
+    {
+     "type": "key",
+     "big": "Not just manufacturing",
+     "sub": [
+      "The same analysis works for",
+      "setups, design or service costs"
+     ],
+     "say": "The same analysis works beyond manufacturing overhead and with activity-based cost pools: setups, design hours or shipping, using each activity's own cost driver."
+    },
+    {
+     "type": "key",
+     "big": "Favorable isn't always good",
+     "sub": [
+      "Building for inventory makes",
+      "the PVV favorable"
+     ],
+     "say": "And favorable isn't always good. A manager could make the production-volume variance favorable just by building trailers for inventory nobody ordered."
+    },
+    {
+     "type": "quiz",
+     "q": "Which variance measures real profit lost because fewer units were sold?",
+     "opts": [
+      "Production-volume",
+      "Sales-volume",
+      "Fixed spending",
+      "VMOH efficiency"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which variance measures real profit lost because fewer units were sold? Pause and pick.",
+     "reveal": "It's B, the sales-volume variance."
+    }
+   ]
+  },
+  {
+   "id": "14.6",
+   "title": "Course recap: Cost Accounting I",
+   "lecture": "Lecture 14 \u00b7 Overhead variances",
+   "take": "Accumulate costs, assign them to products, and compare against standards: the foundations of cost accounting",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Fourteen lectures in two minutes: how Prairie Gate and Redwood Valley know what their products cost."
+    },
+    {
+     "type": "list",
+     "heading": "Foundations and job costing",
+     "items": [
+      "Cost terms, behavior and cost flows",
+      "Job costing with normal costing",
+      "Over- and underallocated overhead",
+      "Activity-based costing and management"
+     ],
+     "say": "First, foundations: cost terms and behavior, and how costs flow from materials to work in process to finished goods. Then job costing at Prairie Gate, with a budgeted overhead rate and year-end adjustments, and activity-based costing to sharpen product costs."
+    },
+    {
+     "type": "list",
+     "heading": "Process costing and allocation",
+     "items": [
+      "Equivalent units: weighted average and FIFO",
+      "Spoilage, rework and scrap",
+      "Support department allocation",
+      "Joint products and byproducts"
+     ],
+     "say": "Next, process costing at Redwood Valley Creamery, with equivalent units under weighted average and FIFO, then spoilage, rework and scrap. Then allocation: support departments, and joint costs split between cream and skim, with whey as a byproduct."
+    },
+    {
+     "type": "list",
+     "heading": "Standards and variances",
+     "items": [
+      "Static and flexible budgets",
+      "Materials and labor variances",
+      "Overhead spending and efficiency",
+      "Production-volume variance"
+     ],
+     "say": "Finally, standards and variances: static and flexible budgets, materials and labor variances, and today's overhead variances."
+    },
+    {
+     "type": "key",
+     "big": "Next: Cost Accounting II",
+     "sub": [
+      "Using cost information to plan,",
+      "decide and evaluate performance"
+     ],
+     "say": "In ACCT 341, Cost Accounting II, you'll use these costs to plan, decide and evaluate performance: CVP, budgets, relevant costs, pricing, capital budgeting and transfer pricing."
+    },
+    {
+     "type": "quiz",
+     "q": "Which system suits Redwood Valley's cheddar, made in continuous batches?",
+     "opts": [
+      "Job costing",
+      "Process costing",
+      "Backflush only",
+      "None"
+     ],
+     "answer": 1,
+     "say": "Last quick check. Which costing system suits cheddar made in continuous batches? Pause and pick.",
+     "reveal": "It's B, process costing. Good luck on the final, and thanks for building with Prairie Gate."
+    }
+   ]
+  }
+ ]
+}
