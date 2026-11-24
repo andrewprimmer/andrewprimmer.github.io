@@ -1,0 +1,713 @@
+{
+ "meta": {
+  "n": 3,
+  "short": "Bonds payable",
+  "title": "Bonds payable",
+  "week": 3,
+  "ch": "Chapter 14",
+  "part": "Intangibles and liabilities",
+  "summary": "Types of bonds, pricing bonds at the market rate, issuing at par and between interest dates, the effective-interest method for discounts and premiums, debt issuance costs, and year-end accruals."
+ },
+ "videos": [
+  {
+   "id": "3.1",
+   "title": "Bonds: the basics",
+   "lecture": "Lecture 3 · Bonds payable",
+   "take": "A bond is a promise to pay principal at maturity plus periodic interest; terms are set in the indenture",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "To pay for Northwind and a new plant, Bluestem needs $2 million for five years. A bank loan is one option. Bonds are another."
+    },
+    {
+     "type": "define",
+     "big": "Bond",
+     "sub": [
+      "A promise to pay a sum at maturity,",
+      "plus interest at a stated rate"
+     ],
+     "say": "A bond is a long-term debt arising from a promise to pay a sum at maturity, plus periodic interest at a stated rate on the face value. The terms are set out in a bond indenture."
+    },
+    {
+     "type": "list",
+     "heading": "Types of bonds",
+     "items": [
+      "Secured vs unsecured (debentures)",
+      "Term vs serial",
+      "Convertible",
+      "Callable",
+      "Zero-coupon"
+     ],
+     "say": "Bonds can be secured by assets or unsecured debentures; term bonds mature on one date, serial bonds in installments; convertible bonds can become shares; callable bonds can be redeemed early; zero-coupon bonds pay no interest until maturity."
+    },
+    {
+     "type": "table",
+     "heading": "Bluestem's bond issue",
+     "rows": [
+      [
+       "Face value",
+       2000000
+      ],
+      [
+       "Stated rate, paid semiannually",
+       "6%"
+      ],
+      [
+       "Term",
+       "5 years"
+      ],
+      [
+       "Issue date",
+       "January 1, 2028"
+      ],
+      [
+       "Market rate for similar bonds",
+       "8%"
+      ]
+     ],
+     "say": "Bluestem issues $2 million of five-year bonds on January 1, 2028, paying six percent interest semiannually, on June 30 and December 31. Investors want eight percent for bonds of this risk."
+    },
+    {
+     "type": "key",
+     "big": "Stated rate vs market rate",
+     "sub": [
+      "Stated fixes the cash;",
+      "market sets the price"
+     ],
+     "say": "The stated, or coupon, rate fixes the cash interest: three percent of $2 million, $60,000, every six months. The market, or effective, rate determines the price investors will pay."
+    },
+    {
+     "type": "quiz",
+     "q": "Unsecured bonds are called:",
+     "opts": [
+      "Serial bonds",
+      "Debentures",
+      "Mortgage bonds",
+      "Callable bonds"
+     ],
+     "answer": 1,
+     "say": "Quick check. What are unsecured bonds called? Pause and pick.",
+     "reveal": "It's B, debentures."
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "title": "Pricing the bonds",
+   "lecture": "Lecture 3 · Bonds payable",
+   "take": "Price = PV of principal + PV of interest at the market rate; market above stated means a discount",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "You priced a bond as an investor in Intermediate Accounting One. Now Bluestem is the issuer. Same math."
+    },
+    {
+     "type": "table",
+     "heading": "10 periods at 4%",
+     "rows": [
+      [
+       "PV of principal: 2,000,000 × 0.67556",
+       1351120
+      ],
+      [
+       "PV of interest: 60,000 × 8.11090",
+       486654
+      ],
+      [
+       "Issue price",
+       1837774,
+       "total"
+      ],
+      [
+       "Discount: 2,000,000 − 1,837,774",
+       162226,
+       "total"
+      ]
+     ],
+     "say": "Semiannual: ten periods at four percent. The principal is worth $1,351,120 today and the ten interest payments $486,654. Investors pay $1,837,774, a discount of $162,226."
+    },
+    {
+     "type": "journal",
+     "heading": "Issuing the bonds",
+     "rows": [
+      [
+       "Cash",
+       1837774,
+       ""
+      ],
+      [
+       "Bonds payable",
+       "",
+       1837774
+      ]
+     ],
+     "say": "Bluestem records the bonds at their issue price: debit Cash and credit Bonds Payable for $1,837,774. Many companies use a separate Discount on Bonds Payable account; the carrying amount is the same."
+    },
+    {
+     "type": "key",
+     "big": "The discount is extra interest",
+     "sub": [
+      "Bluestem repays $2,000,000",
+      "after borrowing $1,837,774"
+     ],
+     "say": "The discount isn't a loss. It's additional interest: Bluestem borrows $1,837,774 and repays $2 million, on top of the $60,000 coupons. It's spread over the five years."
+    },
+    {
+     "type": "key",
+     "big": "Price quoted per 100",
+     "sub": [
+      "91.89 means 91.89% of face"
+     ],
+     "say": "Bond prices are quoted as a percentage of face: these bonds sold at about ninety-one point eight nine."
+    },
+    {
+     "type": "quiz",
+     "q": "Stated rate 7%; market rate 7%. The bonds sell at:",
+     "opts": [
+      "A discount",
+      "A premium",
+      "Par",
+      "Zero"
+     ],
+     "answer": 2,
+     "say": "Quick check. Stated rate seven percent; market rate seven percent. The bonds sell at what? Pause and pick.",
+     "reveal": "It's C, par."
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "title": "Issuing at par and between interest dates",
+   "lecture": "Lecture 3 · Bonds payable",
+   "take": "Bonds sold between interest dates include accrued interest, returned at the next payment",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Suppose instead Bluestem sold $1 million of six percent bonds at par, but two months late, on March 1."
+    },
+    {
+     "type": "key",
+     "big": "Full coupon on June 30",
+     "sub": [
+      "Investors get 6 months' interest",
+      "but held the bonds 4 months"
+     ],
+     "say": "On June 30, every bondholder receives a full six months' interest, $30,000, even though they've held the bonds only four months. So buyers pay the accrued interest up front."
+    },
+    {
+     "type": "journal",
+     "heading": "March 1: issue at par plus accrued interest",
+     "rows": [
+      [
+       "Cash",
+       1010000,
+       ""
+      ],
+      [
+       "Bonds payable",
+       "",
+       1000000
+      ],
+      [
+       "Interest expense",
+       "",
+       10000
+      ]
+     ],
+     "say": "Two months of interest is $10,000. Bluestem receives $1,010,000 and credits Bonds Payable for $1 million and Interest Expense, or Interest Payable, for $10,000."
+    },
+    {
+     "type": "journal",
+     "heading": "June 30: first payment",
+     "rows": [
+      [
+       "Interest expense",
+       30000,
+       ""
+      ],
+      [
+       "Cash",
+       "",
+       30000
+      ]
+     ],
+     "say": "On June 30, Bluestem pays $30,000. Interest expense nets to $20,000: exactly four months of interest, the time the bonds were outstanding."
+    },
+    {
+     "type": "key",
+     "big": "At par: interest = cash",
+     "sub": [
+      "No discount or premium",
+      "to amortize"
+     ],
+     "say": "When bonds sell at par, interest expense equals cash interest each period. There's nothing to amortize."
+    },
+    {
+     "type": "quiz",
+     "q": "$500,000 of 8% bonds (semiannual Jan 1 and Jul 1) are sold at par on April 1. Accrued interest received?",
+     "opts": [
+      "$20,000",
+      "$10,000",
+      "$40,000",
+      "$5,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Five hundred thousand of eight percent bonds, interest January 1 and July 1, are sold at par on April 1. Accrued interest received? Pause and pick.",
+     "reveal": "It's B, $10,000: three months."
+    }
+   ]
+  },
+  {
+   "id": "3.4",
+   "title": "Amortizing a discount",
+   "lecture": "Lecture 3 · Bonds payable",
+   "take": "Interest expense = carrying amount × market rate; the excess over cash increases the carrying amount",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Back to Bluestem's discounted bonds. What's the interest expense on June 30?"
+    },
+    {
+     "type": "table",
+     "heading": "June 30, 2028",
+     "rows": [
+      [
+       "Interest expense: 1,837,774 × 4%",
+       73511
+      ],
+      [
+       "Cash paid: 2,000,000 × 3%",
+       60000
+      ],
+      [
+       "Discount amortized",
+       13511,
+       "total"
+      ],
+      [
+       "New carrying amount",
+       1851285,
+       "total"
+      ]
+     ],
+     "say": "Interest expense is the carrying amount times the market rate: $1,837,774 times four percent, $73,511. Cash paid is $60,000. The $13,511 difference is discount amortization, which raises the carrying amount to $1,851,285."
+    },
+    {
+     "type": "journal",
+     "heading": "The entry",
+     "rows": [
+      [
+       "Interest expense",
+       73511,
+       ""
+      ],
+      [
+       "Bonds payable",
+       "",
+       13511
+      ],
+      [
+       "Cash",
+       "",
+       60000
+      ]
+     ],
+     "say": "Debit Interest Expense $73,511; credit Cash $60,000 and Bonds Payable $13,511."
+    },
+    {
+     "type": "table",
+     "heading": "December 31, 2028",
+     "rows": [
+      [
+       "Interest expense: 1,851,285 × 4%",
+       74051
+      ],
+      [
+       "Cash paid",
+       60000
+      ],
+      [
+       "Discount amortized",
+       14051,
+       "total"
+      ],
+      [
+       "New carrying amount",
+       1865336,
+       "total"
+      ]
+     ],
+     "say": "Six months later, interest is four percent of the higher carrying amount, $74,051. Amortization grows to $14,051. Each period, expense rises, and after ten periods the carrying amount reaches $2 million."
+    },
+    {
+     "type": "key",
+     "big": "Straight-line alternative",
+     "sub": [
+      "162,226 ÷ 10 = $16,223 a period;",
+      "only if not materially different"
+     ],
+     "say": "Straight-line would amortize $16,223 every period. It's allowed only when results aren't materially different from the effective-interest method."
+    },
+    {
+     "type": "quiz",
+     "q": "Carrying amount $950,000; market rate 5% per period; cash interest $40,000. Discount amortized?",
+     "opts": [
+      "$47,500",
+      "$7,500",
+      "$10,000",
+      "$2,500"
+     ],
+     "answer": 1,
+     "say": "Quick check. Carrying amount nine fifty thousand; market rate five percent per period; cash interest forty thousand. Discount amortized? Pause and pick.",
+     "reveal": "It's B, $7,500."
+    }
+   ]
+  },
+  {
+   "id": "3.5",
+   "title": "Bonds issued at a premium",
+   "lecture": "Lecture 3 · Bonds payable",
+   "take": "When the market rate is below the stated rate, the premium reduces interest expense over the term",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "What if rates had fallen, and investors wanted only five percent?"
+    },
+    {
+     "type": "table",
+     "heading": "10 periods at 2.5%",
+     "rows": [
+      [
+       "PV of principal: 2,000,000 × 0.78120",
+       1562400
+      ],
+      [
+       "PV of interest: 60,000 × 8.75206",
+       525124
+      ],
+      [
+       "Issue price",
+       2087524,
+       "total"
+      ],
+      [
+       "Premium",
+       87524,
+       "total"
+      ]
+     ],
+     "say": "At a five percent market rate, ten periods at two and a half percent: the principal is worth $1,562,400 and the interest $525,124. The bonds sell for $2,087,524, a premium of $87,524."
+    },
+    {
+     "type": "table",
+     "heading": "First interest payment",
+     "rows": [
+      [
+       "Interest expense: 2,087,524 × 2.5%",
+       52188
+      ],
+      [
+       "Cash paid",
+       60000
+      ],
+      [
+       "Premium amortized",
+       7812,
+       "total"
+      ],
+      [
+       "New carrying amount",
+       2079712,
+       "total"
+      ]
+     ],
+     "say": "On June 30, interest expense is two and a half percent of $2,087,524, $52,188. Cash paid is $60,000. The $7,812 of premium amortized reduces the carrying amount to $2,079,712."
+    },
+    {
+     "type": "journal",
+     "heading": "The entry",
+     "rows": [
+      [
+       "Interest expense",
+       52188,
+       ""
+      ],
+      [
+       "Bonds payable",
+       7812,
+       ""
+      ],
+      [
+       "Cash",
+       "",
+       60000
+      ]
+     ],
+     "say": "Debit Interest Expense $52,188 and Bonds Payable $7,812, and credit Cash $60,000. Interest expense is less than the cash paid, because investors paid extra up front."
+    },
+    {
+     "type": "key",
+     "big": "Carrying amount moves to face",
+     "sub": [
+      "Discount: up to face;",
+      "premium: down to face"
+     ],
+     "say": "Either way, the carrying amount moves to face value by maturity: up from a discount, down from a premium."
+    },
+    {
+     "type": "quiz",
+     "q": "With a premium, interest expense each period is:",
+     "opts": [
+      "More than cash paid",
+      "Less than cash paid",
+      "Equal to cash paid",
+      "Zero"
+     ],
+     "answer": 1,
+     "say": "Quick check. With a premium, interest expense each period is what compared with cash paid? Pause and pick.",
+     "reveal": "It's B, less than cash paid."
+    }
+   ]
+  },
+  {
+   "id": "3.6",
+   "title": "Issuance costs and year-end accruals",
+   "lecture": "Lecture 3 · Bonds payable",
+   "take": "Debt issuance costs reduce the carrying amount; accrue interest when year-end falls between payment dates",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Two practical wrinkles: the bankers' fees, and a fiscal year that doesn't match the interest dates."
+    },
+    {
+     "type": "journal",
+     "heading": "Paying $40,000 of issuance costs",
+     "rows": [
+      [
+       "Cash",
+       1797774,
+       ""
+      ],
+      [
+       "Bonds payable",
+       "",
+       1797774
+      ]
+     ],
+     "say": "Underwriting, legal and printing costs of $40,000 are deducted from the carrying amount of the debt. Bluestem receives $1,797,774 net, and that's the bonds' initial carrying amount. The costs are effectively amortized as extra interest."
+    },
+    {
+     "type": "key",
+     "big": "Not an asset",
+     "sub": [
+      "Issuance costs reduce the debt,",
+      "like a discount"
+     ],
+     "say": "Debt issuance costs aren't an asset. They're presented as a reduction of the liability, like a discount, which raises the effective interest rate slightly."
+    },
+    {
+     "type": "table",
+     "heading": "Fiscal year ends March 31",
+     "rows": [
+      [
+       "Interest dates",
+       "June 30, December 31"
+      ],
+      [
+       "Months accrued at March 31",
+       "3"
+      ],
+      [
+       "Accrued interest: 3/6 of 73,511",
+       36756,
+       "total"
+      ]
+     ],
+     "say": "If Bluestem's fiscal year ended March 31, it would accrue three months of interest at year-end: half of the first period's $73,511, or $36,756, with half the amortization too."
+    },
+    {
+     "type": "key",
+     "big": "Report on the balance sheet",
+     "sub": [
+      "Long-term, at carrying amount;",
+      "current if due within a year"
+     ],
+     "say": "Bonds are reported as long-term liabilities at their carrying amount, and moved to current in the year they mature, unless they'll be refinanced. Notes disclose rates, maturities and covenants."
+    },
+    {
+     "type": "quiz",
+     "q": "Bonds of $1,000,000 issued at 98 with $15,000 of issuance costs. Initial carrying amount?",
+     "opts": [
+      "$1,000,000",
+      "$965,000",
+      "$980,000",
+      "$985,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. One million of bonds issued at ninety-eight, with fifteen thousand of issuance costs. Initial carrying amount? Pause and pick.",
+     "reveal": "It's B, $965,000."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Bluestem promises 6% interest, but investors want 8%. How can the bonds still be sold?",
+   "They sell at a discount so the effective yield is 8%."
+  ],
+  "acts": [
+   [
+    "Price $1,500,000 of 4-year, 7% bonds paying interest semiannually when the market rate is 6% (8 periods at 3%: PV of 1 0.78941; PVA 7.01969).",
+    "Principal 1,184,115 + interest 52,500 × 7.01969 = 368,534; price 1,552,649 (premium 52,649)."
+   ],
+   [
+    "Record $800,000 of 6% bonds (interest Jan 1 and Jul 1) issued at par on May 1, and the July 1 payment.",
+    "Cash 816,000 (accrued 16,000); July 1 Dr Interest expense 24,000 / Cr Cash 24,000; net expense 8,000."
+   ],
+   [
+    "Prepare the first two interest entries for Bluestem's discount bonds.",
+    "June 30: Dr Interest 73,511 / Cr Bonds 13,511, Cash 60,000. Dec 31: Dr Interest 74,051 / Cr Bonds 14,051, Cash 60,000."
+   ],
+   [
+    "Prepare the first interest entry for the premium bonds in activity 1.",
+    "Interest 1,552,649 × 3% = 46,579; cash 52,500; premium amortized 5,921; carrying 1,546,728."
+   ],
+   [
+    "Compare total interest expense over the life of Bluestem's 8%-market bonds with the cash paid.",
+    "Cash interest 600,000; interest expense 600,000 + 162,226 = 762,226."
+   ],
+   [
+    "Bonds of $2,000,000 issued at 101 with $30,000 issuance costs. Initial carrying amount and effect on interest?",
+    "2,020,000 − 30,000 = 1,990,000; effectively a small discount; effective rate slightly above stated."
+   ]
+  ],
+  "case": [
+   "Bank loan or bonds?",
+   "Bluestem can borrow $1,800,000 for five years from its bank at 7.5% annual interest, or issue $2,000,000 of 6% bonds at 91.89 (yield 8%) with $40,000 of issuance costs. Bank covenants are tighter; bond covenants are looser but the bonds are public.",
+   [
+    "Compute net proceeds from each.",
+    "Compare total interest cost over five years.",
+    "Which reports higher interest expense?",
+    "What non-financial factors matter?"
+   ],
+   "Bank: 1,800,000; interest 135,000/year = 675,000. Bonds: proceeds 1,797,774; cash interest 600,000 plus 202,226 discount and costs = 802,226 total cost. Bonds cost more (yield 8%+ vs 7.5%) but give flexibility and looser covenants; disclosure requirements and market access; bank relationship."
+  ],
+  "exam": [
+   [
+    "Explain why bonds are issued at a discount or premium and how the effective-interest method allocates it.",
+    6,
+    "Stated vs market rate; price = PV at market rate; interest = carrying × market rate; difference from cash amortizes the discount/premium; constant effective rate."
+   ],
+   [
+    "Price $2,000,000 of 5-year, 6% semiannual bonds at an 8% market rate and prepare the first two interest entries.",
+    8,
+    "Price 1,837,774; amortization 13,511 then 14,051; carrying 1,865,336 after one year."
+   ]
+  ],
+  "outcomes": [
+   "Describe types of bonds and indenture terms",
+   "Price bonds from their cash flows",
+   "Record bonds issued at par and between interest dates",
+   "Amortize a discount with the effective-interest method",
+   "Amortize a premium",
+   "Account for issuance costs and year-end accruals"
+  ],
+  "take": [
+   "Stated rate fixes cash; market rate sets price",
+   "Price = PV principal + PV interest",
+   "Accrued interest is returned on the next coupon",
+   "Interest = carrying × market rate",
+   "Premiums reduce interest expense",
+   "Issuance costs reduce the liability"
+  ]
+ },
+ "ex": [
+  {
+   "type": "mcq",
+   "q": "Bonds that mature in installments are:",
+   "opts": [
+    "Term bonds",
+    "Serial bonds",
+    "Debentures",
+    "Callable bonds"
+   ],
+   "a": 1,
+   "why": "Serial maturities.",
+   "video": "3.1"
+  },
+  {
+   "type": "num",
+   "q": "$1,000,000 of 10-year, 5% bonds paying semiannually; market 6% (20 periods at 3%: PV of 1 0.55368; PVA 14.87747). Price?",
+   "a": 925617,
+   "tol": 3,
+   "unit": "$",
+   "why": "553,680 + 25,000 × 14.87747.",
+   "video": "3.2"
+  },
+  {
+   "type": "num",
+   "q": "$600,000 of 8% bonds (interest Jan 1, Jul 1) sold at par on March 1. Accrued interest collected?",
+   "a": 8000,
+   "unit": "$",
+   "why": "600,000 × 8% × 2/12.",
+   "video": "3.3"
+  },
+  {
+   "type": "num",
+   "q": "Carrying amount $1,837,774; market rate 4% per period; cash $60,000. Discount amortized?",
+   "a": 13511,
+   "tol": 1,
+   "unit": "$",
+   "why": "73,511 − 60,000.",
+   "video": "3.4"
+  },
+  {
+   "type": "num",
+   "q": "Carrying amount $2,087,524; market rate 2.5% per period; cash $60,000. Interest expense?",
+   "a": 52188,
+   "tol": 1,
+   "unit": "$",
+   "why": "2,087,524 × 2.5%.",
+   "video": "3.5"
+  },
+  {
+   "type": "mcq",
+   "q": "Over the life of a bond issued at a discount, total interest expense equals:",
+   "opts": [
+    "Cash interest",
+    "Cash interest plus the discount",
+    "Cash interest minus the discount",
+    "Face value"
+   ],
+   "a": 1,
+   "why": "The discount is extra interest.",
+   "video": "3.4"
+  },
+  {
+   "type": "num",
+   "q": "Bonds with face $500,000 issued at 97 with $6,000 of issuance costs. Initial carrying amount?",
+   "a": 479000,
+   "unit": "$",
+   "why": "485,000 − 6,000.",
+   "video": "3.6"
+  },
+  {
+   "type": "order",
+   "q": "Put the steps for recording a bond interest payment in order.",
+   "items": [
+    "Multiply carrying amount by market rate",
+    "Compute cash: face × stated rate",
+    "Take the difference as amortization",
+    "Adjust the carrying amount"
+   ],
+   "why": "Effective-interest method.",
+   "video": "3.4"
+  }
+ ]
+}

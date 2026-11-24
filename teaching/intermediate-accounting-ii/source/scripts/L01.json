@@ -1,0 +1,533 @@
+{
+ "videos": [
+  {
+   "id": "1.1",
+   "title": "What intangible assets are",
+   "lecture": "Lecture 1 \u00b7 Intangible assets",
+   "take": "Purchased intangibles are capitalized; internally created ones are mostly expensed; limited lives are amortized",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Welcome to Intermediate Accounting Two. Bluestem Outdoor is growing up: new brands, new debt, and soon, public shareholders. We start with assets you can't touch."
+    },
+    {
+     "type": "define",
+     "big": "Intangible assets",
+     "sub": [
+      "Lack physical substance;",
+      "not financial instruments"
+     ],
+     "say": "Intangible assets lack physical substance and aren't financial instruments. Patents, trademarks, customer lists, licenses and goodwill are examples. Their value comes from rights and advantages."
+    },
+    {
+     "type": "compare",
+     "heading": "How they're recorded",
+     "cols": [
+      "Purchased",
+      "Internally created"
+     ],
+     "rows": [
+      [
+       "Cost",
+       "Capitalized at cost",
+       "Mostly expensed"
+      ],
+      [
+       "Examples",
+       "Bought patent, brand",
+       "Own research, advertising"
+      ]
+     ],
+     "say": "Purchased intangibles are recorded at cost, including legal fees and other costs to acquire them. Internally created ones are mostly expensed as incurred: only direct costs like legal and registration fees are capitalized."
+    },
+    {
+     "type": "compare",
+     "heading": "Amortization",
+     "cols": [
+      "Limited life",
+      "Indefinite life"
+     ],
+     "rows": [
+      [
+       "Amortize?",
+       "Yes, over useful life",
+       "No"
+      ],
+      [
+       "Impairment test",
+       "When indicated",
+       "At least annually"
+      ]
+     ],
+     "say": "Intangibles with a limited life are amortized over their useful life, usually straight-line, and tested for impairment when events suggest it. Those with an indefinite life, like a renewable trademark, aren't amortized but are tested at least annually."
+    },
+    {
+     "type": "key",
+     "big": "Useful life \u2264 legal life",
+     "sub": [
+      "The shorter of legal and",
+      "economic life"
+     ],
+     "say": "Use the shorter of legal life and economic life. A patent may last twenty years legally but be obsolete in six."
+    },
+    {
+     "type": "quiz",
+     "q": "Which intangible is NOT amortized?",
+     "opts": [
+      "A 17-year patent",
+      "A 5-year franchise",
+      "An indefinitely renewable trademark",
+      "A 3-year customer list"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which intangible is not amortized? Pause and pick.",
+     "reveal": "It's C, the indefinitely renewable trademark. It's tested for impairment instead."
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "title": "Types of intangibles: the patent",
+   "lecture": "Lecture 1 \u00b7 Intangible assets",
+   "take": "Six categories of intangibles; a patent's cost and successful defense costs are amortized over its useful life",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem buys a patent on a folding-kayak hinge from an inventor in Duluth."
+    },
+    {
+     "type": "list",
+     "heading": "Six types",
+     "items": [
+      "Marketing-related: trademarks, domain names",
+      "Customer-related: customer lists",
+      "Artistic-related: copyrights",
+      "Contract-related: franchises, licenses",
+      "Technology-related: patents, software",
+      "Goodwill"
+     ],
+     "say": "Intangibles fall into six groups: marketing-related, like trademarks; customer-related, like customer lists; artistic-related, like copyrights; contract-related, like franchises and licenses; technology-related, like patents; and goodwill."
+    },
+    {
+     "type": "table",
+     "heading": "The hinge patent",
+     "rows": [
+      [
+       "Purchase price plus legal fees",
+       180000
+      ],
+      [
+       "Remaining legal life",
+       "15 years"
+      ],
+      [
+       "Expected useful life",
+       "6 years"
+      ],
+      [
+       "Annual amortization",
+       30000,
+       "total"
+      ]
+     ],
+     "say": "Bluestem pays $180,000 including legal fees. The patent has fifteen years of legal life left, but Bluestem expects the design to stay useful for six. Amortization is $30,000 a year."
+    },
+    {
+     "type": "journal",
+     "heading": "Year-end amortization",
+     "rows": [
+      [
+       "Amortization expense",
+       30000,
+       ""
+      ],
+      [
+       "Patents",
+       "",
+       30000
+      ]
+     ],
+     "say": "Amortization is often credited directly to the asset account, though an accumulated amortization account is also used."
+    },
+    {
+     "type": "key",
+     "big": "Defending the patent",
+     "sub": [
+      "Successful defense: capitalize;",
+      "unsuccessful: expense and write off"
+     ],
+     "say": "If Bluestem successfully defends the patent in court, the $24,000 of legal costs are added to the patent and amortized over its remaining life. If it loses, the costs are expensed and the patent written off."
+    },
+    {
+     "type": "quiz",
+     "q": "Patent cost $90,000; legal life 12 years; useful life 5 years. Annual amortization?",
+     "opts": [
+      "$7,500",
+      "$18,000",
+      "$9,000",
+      "$4,500"
+     ],
+     "answer": 1,
+     "say": "Quick check. Patent cost ninety thousand; legal life twelve years; useful life five. Annual amortization? Pause and pick.",
+     "reveal": "It's B, $18,000."
+    }
+   ]
+  },
+  {
+   "id": "1.3",
+   "title": "Research and development costs",
+   "lecture": "Lecture 1 \u00b7 Intangible assets",
+   "take": "US GAAP expenses R&D as incurred; IFRS capitalizes development costs that meet criteria",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem spends $350,000 designing an electric-assist kayak. Is that an asset?"
+    },
+    {
+     "type": "define",
+     "big": "R&D is expensed",
+     "sub": [
+      "Future benefits too uncertain",
+      "to measure reliably"
+     ],
+     "say": "Under US GAAP, research and development costs are expensed as incurred, because their future benefits are too uncertain. That includes the salaries, materials, prototypes and testing."
+    },
+    {
+     "type": "table",
+     "heading": "Bluestem's e-kayak project",
+     "rows": [
+      [
+       "Engineers' salaries",
+       210000
+      ],
+      [
+       "Materials and prototypes",
+       80000
+      ],
+      [
+       "Depreciation on test tank",
+       15000
+      ],
+      [
+       "Outside design consultants",
+       45000
+      ],
+      [
+       "R&D expense",
+       350000,
+       "total"
+      ]
+     ],
+     "say": "Engineers' salaries of $210,000, prototypes of $80,000, outside consultants of $45,000, and depreciation of $15,000 on a test tank are all R&D expense: $350,000."
+    },
+    {
+     "type": "key",
+     "big": "Equipment with other uses",
+     "sub": [
+      "Capitalize and depreciate;",
+      "only depreciation is R&D"
+     ],
+     "say": "Notice the test tank. Because it has alternative future uses, Bluestem capitalized it and charges only the year's depreciation to R&D. Equipment built for one project only is expensed immediately."
+    },
+    {
+     "type": "compare",
+     "heading": "GAAP vs IFRS",
+     "cols": [
+      "US GAAP",
+      "IFRS"
+     ],
+     "rows": [
+      [
+       "Research",
+       "Expense",
+       "Expense"
+      ],
+      [
+       "Development",
+       "Expense (most)",
+       "Capitalize if criteria met"
+      ]
+     ],
+     "say": "IFRS expenses research but capitalizes development costs once technical feasibility and other criteria are met. US GAAP has similar rules only for software. Not R&D at all: routine product improvements and quality control."
+    },
+    {
+     "type": "quiz",
+     "q": "Under US GAAP, prototype testing costs for a new kayak are:",
+     "opts": [
+      "Capitalized",
+      "Expensed as R&D",
+      "Amortized over 5 years",
+      "Added to inventory"
+     ],
+     "answer": 1,
+     "say": "Quick check. Under US GAAP, prototype testing costs for a new kayak are what? Pause and pick.",
+     "reveal": "It's B, expensed as R&D."
+    }
+   ]
+  },
+  {
+   "id": "1.4",
+   "title": "Goodwill",
+   "lecture": "Lecture 1 \u00b7 Intangible assets",
+   "take": "Goodwill = purchase price \u2212 fair value of identifiable net assets; it's recorded only in a business combination",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem buys Northwind Canoe Company, a respected canoe maker, for $2.4 million cash."
+    },
+    {
+     "type": "table",
+     "heading": "Fair values of Northwind's net assets",
+     "rows": [
+      [
+       "Identifiable assets",
+       2600000
+      ],
+      [
+       "Liabilities assumed",
+       -700000
+      ],
+      [
+       "Identifiable net assets",
+       1900000,
+       "total"
+      ],
+      [
+       "Purchase price",
+       2400000
+      ],
+      [
+       "Goodwill",
+       500000,
+       "total"
+      ]
+     ],
+     "say": "Bluestem identifies and values every asset it acquires at fair value, including the Northwind trademark and customer list that weren't on Northwind's books. Identifiable assets total $2.6 million, less $700,000 of liabilities: $1.9 million. It paid $2.4 million, so goodwill is $500,000."
+    },
+    {
+     "type": "define",
+     "big": "Goodwill",
+     "sub": [
+      "The excess paid over fair value",
+      "of identifiable net assets"
+     ],
+     "say": "Goodwill is the excess of the purchase price over the fair value of identifiable net assets: reputation, workforce, synergies. It's recorded only when a business is acquired. Internally generated goodwill is never recorded."
+    },
+    {
+     "type": "key",
+     "big": "Not amortized",
+     "sub": [
+      "Public companies: test for impairment;",
+      "private companies may amortize \u2264 10 years"
+     ],
+     "say": "Public companies don't amortize goodwill; they test it for impairment. Private companies like Bluestem today can elect to amortize it over ten years or less."
+    },
+    {
+     "type": "key",
+     "big": "Bargain purchase",
+     "sub": [
+      "Price < fair value of net assets:",
+      "recognize a gain"
+     ],
+     "say": "If the price were less than the fair value of net assets, after rechecking the values, Bluestem would record a gain on bargain purchase."
+    },
+    {
+     "type": "quiz",
+     "q": "Price $5 million; fair value of identifiable assets $6 million; liabilities $2 million. Goodwill?",
+     "opts": [
+      "$1 million",
+      "$3 million",
+      "$5 million",
+      "$0"
+     ],
+     "answer": 0,
+     "say": "Quick check. Price five million; fair value of identifiable assets six million; liabilities two million. Goodwill? Pause and pick.",
+     "reveal": "It's A, $1 million."
+    }
+   ]
+  },
+  {
+   "id": "1.5",
+   "title": "Impairment of intangibles and goodwill",
+   "lecture": "Lecture 1 \u00b7 Intangible assets",
+   "take": "Limited-life intangibles use the recoverability test; indefinite-life and goodwill compare carrying amount with fair value",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Two years after the purchase, canoe sales slump. Are the Northwind intangibles impaired?"
+    },
+    {
+     "type": "compare",
+     "heading": "Three impairment models",
+     "cols": [
+      "Test",
+      "Loss"
+     ],
+     "rows": [
+      [
+       "Limited-life",
+       "Recoverability first",
+       "Carrying \u2212 fair value"
+      ],
+      [
+       "Indefinite-life",
+       "Carrying > fair value?",
+       "The excess"
+      ],
+      [
+       "Goodwill",
+       "Unit carrying > fair value?",
+       "Excess, up to goodwill"
+      ]
+     ],
+     "say": "Limited-life intangibles use the same two-step test as PP&E. Indefinite-life intangibles skip recoverability: if carrying amount exceeds fair value, the excess is the loss. Goodwill is tested at the reporting unit level."
+    },
+    {
+     "type": "table",
+     "heading": "Northwind reporting unit",
+     "rows": [
+      [
+       "Carrying amount (incl. goodwill)",
+       2350000
+      ],
+      [
+       "Fair value of the unit",
+       2100000
+      ],
+      [
+       "Goodwill impairment",
+       250000,
+       "total"
+      ]
+     ],
+     "say": "The Northwind reporting unit's carrying amount, including $500,000 of goodwill, is $2.35 million. Its fair value is $2.1 million. The $250,000 excess is the goodwill impairment loss, limited to the goodwill balance."
+    },
+    {
+     "type": "journal",
+     "heading": "Recording",
+     "rows": [
+      [
+       "Loss on impairment",
+       250000,
+       ""
+      ],
+      [
+       "Goodwill",
+       "",
+       250000
+      ]
+     ],
+     "say": "Bluestem records a $250,000 loss in continuing operations. Goodwill impairments can never be reversed."
+    },
+    {
+     "type": "key",
+     "big": "Qualitative screen",
+     "sub": [
+      "If impairment isn't more likely than not,",
+      "skip the quantitative test"
+     ],
+     "say": "Companies may first do a qualitative assessment: if it's not more likely than not that the unit's fair value is below carrying amount, no further test is needed that year."
+    },
+    {
+     "type": "quiz",
+     "q": "Reporting unit carrying amount $8m including goodwill $1m; fair value $6.5m. Goodwill impairment?",
+     "opts": [
+      "$1.5m",
+      "$1m",
+      "$0.5m",
+      "$0"
+     ],
+     "answer": 1,
+     "say": "Quick check. Reporting unit carrying amount eight million, including one million of goodwill; fair value six point five million. Goodwill impairment? Pause and pick.",
+     "reveal": "It's B, $1 million: limited to the goodwill balance."
+    }
+   ]
+  },
+  {
+   "id": "1.6",
+   "title": "Other costs and presentation",
+   "lecture": "Lecture 1 \u00b7 Intangible assets",
+   "take": "Start-up, organization, advertising and initial operating losses are expensed; intangibles are shown separately",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem opens a new store in Minneapolis. Can the opening costs be an asset?"
+    },
+    {
+     "type": "list",
+     "heading": "Always expensed",
+     "items": [
+      "Start-up and pre-opening costs",
+      "Organization costs",
+      "Advertising",
+      "Initial operating losses"
+     ],
+     "say": "No. Start-up and pre-opening costs, organization costs, advertising and initial operating losses are expensed as incurred, however much future benefit management expects."
+    },
+    {
+     "type": "table",
+     "heading": "Minneapolis store opening",
+     "rows": [
+      [
+       "Staff training",
+       18000
+      ],
+      [
+       "Grand-opening advertising",
+       25000
+      ],
+      [
+       "Store fixtures (PP&E)",
+       140000
+      ],
+      [
+       "Expensed now",
+       43000,
+       "total"
+      ]
+     ],
+     "say": "Training of $18,000 and $25,000 of opening advertising are expenses. Only the $140,000 of store fixtures, which are property, plant and equipment, are capitalized."
+    },
+    {
+     "type": "list",
+     "heading": "Presentation",
+     "items": [
+      "Goodwill as a separate line",
+      "Other intangibles, net of amortization",
+      "Amortization and impairment in operations",
+      "Notes: classes, lives, expected amortization"
+     ],
+     "say": "On the balance sheet, goodwill appears on its own line, and other intangibles net of amortization. Amortization and impairment losses go in continuing operations. Notes show classes, useful lives and the next five years' expected amortization."
+    },
+    {
+     "type": "key",
+     "big": "Valuable but unrecorded",
+     "sub": [
+      "Bluestem's own brand",
+      "isn't on its balance sheet"
+     ],
+     "say": "The irony: Bluestem's own brand, perhaps its most valuable asset, isn't on its balance sheet. Northwind's brand is, because Bluestem bought it."
+    },
+    {
+     "type": "quiz",
+     "q": "Which is capitalized?",
+     "opts": [
+      "Grand-opening advertising",
+      "Organization costs",
+      "A purchased customer list",
+      "Staff training"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which of these is capitalized? Pause and pick.",
+     "reveal": "It's C, the purchased customer list."
+    }
+   ]
+  }
+ ]
+}

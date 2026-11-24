@@ -1,0 +1,20 @@
+{
+ "num": "ACCT 312",
+ "course": "ACCT 312 Intermediate Accounting II",
+ "desc": "intermediate financial accounting and reporting",
+ "book": "Intermediate Accounting, 19th edition",
+ "book_short": "Kieso, Weygandt, Warfield and Wiley, Intermediate Accounting (19th edition)",
+ "book_url": "https://www.wileyplus.com/intermediate-accounting-19th-edition-eprof23641/",
+ "book_meta": "Donald E. Kieso, Jerry J. Weygandt, Terry D. Warfield and Laura D. Wiley. Wiley, 2025. WileyPLUS optional.",
+ "lede": "Intangible assets, liabilities, stockholders' equity, earnings per share, investments, revenue recognition, accounting changes and the statement of cash flows, in",
+ "intro": "A continuation of <a href=\"../intermediate-accounting-i/\">ACCT 416 Intermediate Accounting I</a> (ACCT 311 at some institutions). Topics: intangible assets, current liabilities, long-term liabilities, stockholders' equity, earnings per share, revenue recognition, investments, accounting changes and the statement of cash flows. Prerequisite: C- or better in ECON 201, ECON 202 and ACCT 311 or ACCT 416. The running case continues with Bluestem Outdoor of Marshall, Minnesota as it buys a competitor, issues bonds, goes public, rewards employees with stock and builds a long-term contract business, with CFO Maria Okafor and controller Sam Nygaard.",
+ "book_note": "The standard US intermediate accounting text, closely aligned with the CPA exam. ACCT 312 and ACCT 416 share this one book and split its chapters between them with no overlap: if you took ACCT 416, you already own it.",
+ "book_split": "ACCT 312 reads Chapters 12&ndash;18, 22 and 23. ACCT 416 Intermediate Accounting I reads Chapters 1&ndash;11. Chapters 19&ndash;21 and 24 (income taxes, pensions, leases, full disclosure) aren't part of either course.",
+ "reading_note": "The whole semester's reading in one table. Chapters follow the textbook's order, with Chapters 14 to 18 each spread over two lectures.",
+ "parts": [
+  "Intangibles and liabilities",
+  "Stockholders' equity",
+  "Investments and revenue",
+  "Changes and cash flows"
+ ]
+}

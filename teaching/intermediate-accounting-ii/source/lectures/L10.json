@@ -1,0 +1,685 @@
+{
+ "meta": {
+  "n": 10,
+  "short": "Equity investments",
+  "title": "Investments in equity securities",
+  "week": 11,
+  "ch": "Chapter 17",
+  "part": "Investments and revenue",
+  "summary": "Levels of influence, equity securities at fair value through net income, the measurement alternative, the equity method, excess of cost over book value, consolidation and control, and presentation."
+ },
+ "videos": [
+  {
+   "id": "10.1",
+   "title": "Influence decides the method",
+   "lecture": "Lecture 10 · Equity investments",
+   "take": "Under 20%: fair value; 20–50% with significant influence: equity method; over 50%: consolidate",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem buys shares in two companies: a small stake in its aluminum supplier, and a big one in a paddle maker. Different stakes, different accounting."
+    },
+    {
+     "type": "compare",
+     "heading": "Levels of influence",
+     "cols": [
+      "Ownership (guide)",
+      "Method"
+     ],
+     "rows": [
+      [
+       "Little or none",
+       "Under 20%",
+       "Fair value through net income"
+      ],
+      [
+       "Significant influence",
+       "20% to 50%",
+       "Equity method"
+      ],
+      [
+       "Control",
+       "Over 50%",
+       "Consolidation"
+      ]
+     ],
+     "say": "The method depends on influence. With little or no influence, usually under twenty percent, use fair value with changes in net income. With significant influence, usually twenty to fifty percent, use the equity method. With control, usually over fifty percent, consolidate."
+    },
+    {
+     "type": "key",
+     "big": "Percentages are guides",
+     "sub": [
+      "Board seats, transactions, shared",
+      "managers show influence"
+     ],
+     "say": "The percentages are guides. A board seat, major transactions between the companies, or shared management can give significant influence at fifteen percent. A forty percent stake may give none if another owner controls everything."
+    },
+    {
+     "type": "key",
+     "big": "No AFS for equity",
+     "sub": [
+      "Equity securities: changes in fair",
+      "value always in net income"
+     ],
+     "say": "Unlike debt, equity securities don't have an available-for-sale category with OCI. Since 2018, changes in the fair value of equity investments go through net income."
+    },
+    {
+     "type": "key",
+     "big": "Why the difference?",
+     "sub": [
+      "With influence, the investor helps",
+      "create the investee's earnings"
+     ],
+     "say": "Why switch methods at significant influence? Because an investor that helps steer the investee shares responsibility for its earnings, so it should report its share of them."
+    },
+    {
+     "type": "quiz",
+     "q": "Bluestem owns 35% of a company and has two of seven board seats. Method?",
+     "opts": [
+      "Fair value",
+      "Equity method",
+      "Consolidation",
+      "Cost"
+     ],
+     "answer": 1,
+     "say": "Quick check. Bluestem owns thirty-five percent of a company and has two of seven board seats. Which method? Pause and pick.",
+     "reveal": "It's B, the equity method."
+    }
+   ]
+  },
+  {
+   "id": "10.2",
+   "title": "Fair value through net income",
+   "lecture": "Lecture 10 · Equity investments",
+   "take": "Record dividends as revenue and remeasure to fair value each period, with changes in net income",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem buys 5,000 shares of its aluminum supplier, a listed company, at $40 a share: a tiny stake."
+    },
+    {
+     "type": "journal",
+     "heading": "Purchase",
+     "rows": [
+      [
+       "Equity investments",
+       200000,
+       ""
+      ],
+      [
+       "Cash",
+       "",
+       200000
+      ]
+     ],
+     "say": "Bluestem records the investment at cost, $200,000."
+    },
+    {
+     "type": "table",
+     "heading": "During the year",
+     "rows": [
+      [
+       "Dividends received: 5,000 × $1",
+       5000
+      ],
+      [
+       "Fair value at year-end: 5,000 × $43",
+       215000
+      ],
+      [
+       "Unrealized holding gain",
+       15000,
+       "total"
+      ]
+     ],
+     "say": "The supplier pays a $1 dividend: $5,000 of dividend revenue. At year-end the shares trade at $43, worth $215,000: an unrealized holding gain of $15,000."
+    },
+    {
+     "type": "journal",
+     "heading": "Year-end adjustment",
+     "rows": [
+      [
+       "Fair value adjustment",
+       15000,
+       ""
+      ],
+      [
+       "Unrealized holding gain, income",
+       "",
+       15000
+      ]
+     ],
+     "say": "The $15,000 gain is recognized in net income. Equity investments are volatile, so this can swing earnings, which some companies dislike."
+    },
+    {
+     "type": "key",
+     "big": "No readily determinable fair value?",
+     "sub": [
+      "Measurement alternative: cost, less impairment,",
+      "adjusted for observable prices"
+     ],
+     "say": "For shares without a readily determinable fair value, like a stake in a private startup, companies can use a measurement alternative: cost less impairment, adjusted when an orderly transaction in similar shares reveals a price."
+    },
+    {
+     "type": "quiz",
+     "q": "Equity securities: cost $90,000; fair value $84,000. Effect on net income?",
+     "opts": [
+      "None",
+      "$6,000 loss",
+      "$6,000 loss in OCI",
+      "$6,000 gain"
+     ],
+     "answer": 1,
+     "say": "Quick check. Equity securities: cost ninety thousand; fair value eighty-four thousand. Effect on net income? Pause and pick.",
+     "reveal": "It's B, a $6,000 loss."
+    }
+   ]
+  },
+  {
+   "id": "10.3",
+   "title": "The equity method",
+   "lecture": "Lecture 10 · Equity investments",
+   "take": "Investment grows with the investor's share of income and shrinks with dividends received",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem buys thirty percent of Northshore Paddle Company for $600,000, and gets two seats on its board."
+    },
+    {
+     "type": "define",
+     "big": "Equity method",
+     "sub": [
+      "Record cost, then adjust for the",
+      "investor's share of income and dividends"
+     ],
+     "say": "Under the equity method, the investment is recorded at cost, then increased by the investor's share of the investee's income and decreased by dividends received."
+    },
+    {
+     "type": "table",
+     "heading": "Northshore, 2031",
+     "rows": [
+      [
+       "Investment, January 1",
+       600000
+      ],
+      [
+       "Share of net income: 30% × 250,000",
+       75000
+      ],
+      [
+       "Dividends received: 30% × 80,000",
+       -24000
+      ],
+      [
+       "Investment, December 31",
+       651000,
+       "total"
+      ]
+     ],
+     "say": "Northshore earns $250,000 and pays $80,000 of dividends. Bluestem records thirty percent of the income, $75,000, as investment income, and its $24,000 share of dividends as a reduction of the investment. The investment ends at $651,000."
+    },
+    {
+     "type": "journal",
+     "heading": "The entries",
+     "rows": [
+      [
+       "Equity investments",
+       75000,
+       ""
+      ],
+      [
+       "Investment income",
+       "",
+       75000
+      ],
+      [
+       "Cash",
+       24000,
+       ""
+      ],
+      [
+       "Equity investments",
+       "",
+       24000
+      ]
+     ],
+     "say": "Income increases the investment. Dividends are a return of part of the investment, not income: counting them as income would let Bluestem's share of earnings be counted twice."
+    },
+    {
+     "type": "key",
+     "big": "Losses",
+     "sub": [
+      "Share of losses reduces the investment,",
+      "usually not below zero"
+     ],
+     "say": "If Northshore loses money, Bluestem's share reduces the investment, but usually not below zero unless Bluestem has guaranteed Northshore's debts."
+    },
+    {
+     "type": "quiz",
+     "q": "40% investee earns $100,000 and pays $30,000 dividends. Change in the investment account?",
+     "opts": [
+      "+$40,000",
+      "+$28,000",
+      "+$12,000",
+      "+$70,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. A forty percent investee earns a hundred thousand and pays thirty thousand of dividends. Change in the investment account? Pause and pick.",
+     "reveal": "It's B, $28,000: forty thousand less twelve thousand."
+    }
+   ]
+  },
+  {
+   "id": "10.4",
+   "title": "Paying more than book value",
+   "lecture": "Lecture 10 · Equity investments",
+   "take": "Excess cost is assigned to undervalued assets, which are depreciated, and to goodwill, which isn't",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Suppose Bluestem had paid $700,000 for its thirty percent of Northshore, whose book net assets were $2 million."
+    },
+    {
+     "type": "table",
+     "heading": "Assigning the excess",
+     "rows": [
+      [
+       "Price paid",
+       700000
+      ],
+      [
+       "Share of book value: 30% × 2,000,000",
+       600000
+      ],
+      [
+       "Excess",
+       100000,
+       "total"
+      ],
+      [
+       "Equipment: 30% × 200,000",
+       60000
+      ],
+      [
+       "Remainder: goodwill",
+       40000,
+       "total"
+      ]
+     ],
+     "say": "Bluestem's share of book value is $600,000, so it paid $100,000 extra. Northshore's equipment is undervalued by $200,000; Bluestem's thirty percent share is $60,000. The remaining $40,000 is goodwill."
+    },
+    {
+     "type": "table",
+     "heading": "Investment income, 2031",
+     "rows": [
+      [
+       "Share of Northshore income",
+       75000
+      ],
+      [
+       "Extra depreciation: 60,000 ÷ 10 years",
+       -6000
+      ],
+      [
+       "Investment income",
+       69000,
+       "total"
+      ]
+     ],
+     "say": "The $60,000 assigned to equipment is depreciated over its ten-year remaining life, $6,000 a year, reducing investment income to $69,000. The goodwill isn't amortized."
+    },
+    {
+     "type": "key",
+     "big": "No separate accounts",
+     "sub": [
+      "The excess sits inside the",
+      "investment account"
+     ],
+     "say": "None of this appears as separate equipment or goodwill on Bluestem's balance sheet. It's all inside the one-line investment account. That's why the equity method is called one-line consolidation."
+    },
+    {
+     "type": "key",
+     "big": "Impairment",
+     "sub": [
+      "Test the whole investment if fair value",
+      "falls below carrying, other than temporarily"
+     ],
+     "say": "If the investment's fair value falls below its carrying amount and the decline is other than temporary, Bluestem writes it down. The write-down isn't reversed."
+    },
+    {
+     "type": "quiz",
+     "q": "Share of investee income $50,000; excess cost assigned to equipment $30,000 over 5 years. Investment income?",
+     "opts": [
+      "$50,000",
+      "$44,000",
+      "$20,000",
+      "$56,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Share of investee income fifty thousand; excess cost assigned to equipment thirty thousand over five years. Investment income? Pause and pick.",
+     "reveal": "It's B, $44,000."
+    }
+   ]
+  },
+  {
+   "id": "10.5",
+   "title": "Control and consolidation",
+   "lecture": "Lecture 10 · Equity investments",
+   "take": "With control, combine the subsidiary's statements line by line and show the noncontrolling interest",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem owns all of Northwind Canoe. That's control, and Northwind's books are consolidated with Bluestem's."
+    },
+    {
+     "type": "define",
+     "big": "Consolidation",
+     "sub": [
+      "Parent and subsidiary reported as",
+      "one economic entity"
+     ],
+     "say": "When an investor controls another company, usually by owning more than half the voting shares, it prepares consolidated statements: the parent and subsidiary combined line by line as one economic entity."
+    },
+    {
+     "type": "key",
+     "big": "Noncontrolling interest",
+     "sub": [
+      "Others' share of a subsidiary,",
+      "shown within equity"
+     ],
+     "say": "If Bluestem owned eighty percent, the other twenty percent would be a noncontrolling interest, shown within equity, with its share of income shown separately."
+    },
+    {
+     "type": "define",
+     "big": "Variable interest entity",
+     "sub": [
+      "Control through contracts,",
+      "not voting shares"
+     ],
+     "say": "Control can also come through contracts rather than votes. A variable interest entity is consolidated by the party that directs its key activities and absorbs its losses or benefits. This closed a big off-balance-sheet route."
+    },
+    {
+     "type": "key",
+     "big": "Advanced Accounting",
+     "sub": [
+      "The mechanics come later"
+     ],
+     "say": "Consolidation mechanics, eliminating intercompany sales and balances, are covered in advanced accounting. Here, know when it applies."
+    },
+    {
+     "type": "quiz",
+     "q": "Bluestem owns 80% of a subsidiary. The other 20% is reported as:",
+     "opts": [
+      "A liability",
+      "Noncontrolling interest in equity",
+      "An investment",
+      "Treasury stock"
+     ],
+     "answer": 1,
+     "say": "Quick check. Bluestem owns eighty percent of a subsidiary. How is the other twenty percent reported? Pause and pick.",
+     "reveal": "It's B, noncontrolling interest, within equity."
+    }
+   ]
+  },
+  {
+   "id": "10.6",
+   "title": "Comparing the methods",
+   "lecture": "Lecture 10 · Equity investments",
+   "take": "The same investee can produce very different investor income depending on the method",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Same investee, same year, three methods. What would Bluestem report?"
+    },
+    {
+     "type": "table",
+     "heading": "Northshore: 30% share",
+     "rows": [
+      [
+       "Fair value: dividends",
+       "24,000 + FV change"
+      ],
+      [
+       "Equity method",
+       75000
+      ],
+      [
+       "Consolidation",
+       "All lines"
+      ]
+     ],
+     "say": "Under fair value, Bluestem would report $24,000 of dividend revenue plus any change in the shares' fair value. Under the equity method, $75,000 of investment income. Under consolidation, all of Northshore's revenues and expenses, less a noncontrolling interest."
+    },
+    {
+     "type": "key",
+     "big": "Fair value option",
+     "sub": [
+      "Equity method investments may",
+      "elect fair value instead"
+     ],
+     "say": "Companies can elect the fair value option for equity-method investments, reporting changes in fair value in income instead."
+    },
+    {
+     "type": "list",
+     "heading": "Disclosures for equity-method investees",
+     "items": [
+      "Name and percentage owned",
+      "Difference between cost and underlying equity",
+      "Fair value if quoted",
+      "Summarized financial information"
+     ],
+     "say": "For significant equity-method investees, disclose the name and ownership percentage, the difference between carrying amount and underlying equity, quoted fair value if available, and summarized financial information."
+    },
+    {
+     "type": "key",
+     "big": "Watch the threshold",
+     "sub": [
+      "Moving from 19% to 21% changes",
+      "income recognition"
+     ],
+     "say": "Because methods produce different income, managers sometimes structure stakes around the thresholds. Analysts focus on influence, not just the percentage."
+    },
+    {
+     "type": "quiz",
+     "q": "Under the equity method, dividends received are:",
+     "opts": [
+      "Dividend revenue",
+      "A reduction of the investment",
+      "Recorded in OCI",
+      "Ignored"
+     ],
+     "answer": 1,
+     "say": "Quick check. Under the equity method, dividends received are treated how? Pause and pick.",
+     "reveal": "It's B, a reduction of the investment."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Bluestem owns 30% of Northshore Paddle, which earns $250,000 but pays only $80,000 in dividends. How much income should Bluestem report from it?",
+   "Dividends vs share of income; sets up the equity method."
+  ],
+  "acts": [
+   [
+    "Choose the method: 8% of a listed supplier; 25% of a dealer with a board seat; 60% of a canoe maker; 15% of a startup with no market price and no influence.",
+    "FV-NI; equity method; consolidate; measurement alternative (or FV if determinable)."
+   ],
+   [
+    "Bluestem buys 2,000 shares at $50; receives $1.50 dividends per share; year-end price $46. Record.",
+    "Investment 100,000; dividend revenue 3,000; unrealized loss 8,000 in NI."
+   ],
+   [
+    "Equity method: 25% of an investee bought for $400,000; investee income $180,000; dividends $60,000. Ending investment and income?",
+    "Income 45,000; dividends 15,000; ending 430,000."
+   ],
+   [
+    "Bluestem pays $900,000 for 40% of a company with book value $1,800,000; buildings undervalued $300,000 (20 years remaining). Assign the excess; investee income $200,000. Compute investment income.",
+    "Book share 720,000; excess 180,000: buildings 120,000 (6,000/yr), goodwill 60,000. Income 80,000 − 6,000 = 74,000."
+   ],
+   [
+    "Explain how a 70% subsidiary appears on Bluestem's balance sheet and income statement.",
+    "All assets and liabilities combined; NCI in equity for 30%; NCI's share of income shown separately."
+   ],
+   [
+    "Compare Bluestem's income from Northshore under fair value (price rose $20,000 on the stake) and the equity method.",
+    "FV: 24,000 + 20,000 = 44,000; equity method: 75,000."
+   ]
+  ],
+  "case": [
+   "Crossing 20%",
+   "Bluestem owns 18% of Lakes Paddle Co. (cost $360,000, fair value now $390,000) with no board seat. It can buy another 7% for $150,000 and get a board seat. Lakes Paddle earns about $400,000 a year, pays $100,000 in dividends, and its share price swings widely. The founder wants to buy 'so we can report a share of their profit instead of the swings'.",
+   [
+    "Income under the current method if fair value rises $30,000 and dividends are $18,000.",
+    "Income under the equity method after the purchase (25% share).",
+    "Is the founder's reasoning a valid basis for the decision?",
+    "What determines the method after the purchase?"
+   ],
+   "Current: 18,000 + 30,000 = 48,000 (volatile). Equity method: 25% × 400,000 = 100,000 (less amortization of any excess). The decision should rest on strategy and value, not reporting; the method follows significant influence (board seat, 25%), not preference."
+  ],
+  "exam": [
+   [
+    "Explain how the level of influence determines the accounting for equity investments, and describe each method.",
+    6,
+    "Little influence: FV-NI (or measurement alternative); significant: equity method (share of income, dividends reduce, excess amortized); control: consolidation with NCI."
+   ],
+   [
+    "Record Bluestem's 30% investment in Northshore: cost $700,000; book value $2,000,000; equipment undervalued $200,000 (10 years); income $250,000; dividends $80,000.",
+    8,
+    "Excess 100,000: equipment 60,000, goodwill 40,000. Income 75,000 − 6,000 = 69,000; dividends 24,000; ending investment 745,000."
+   ]
+  ],
+  "outcomes": [
+   "Determine the method from the level of influence",
+   "Account for equity securities at fair value through net income",
+   "Apply the measurement alternative",
+   "Apply the equity method",
+   "Assign and amortize excess cost under the equity method",
+   "Explain consolidation and compare methods"
+  ],
+  "take": [
+   "Influence decides the method",
+   "Equity securities: FV changes in income",
+   "Equity method: share of income, dividends reduce",
+   "Depreciate excess on assets; not goodwill",
+   "Control: consolidate, show NCI",
+   "Same investee, different income"
+  ]
+ },
+ "ex": [
+  {
+   "type": "sort",
+   "q": "Sort each investment by method.",
+   "cats": [
+    "Fair value through net income",
+    "Equity method",
+    "Consolidation"
+   ],
+   "items": [
+    [
+     "5% of a listed company",
+     0
+    ],
+    [
+     "30% with board seats",
+     1
+    ],
+    [
+     "100% of a subsidiary",
+     2
+    ],
+    [
+     "12% held for trading",
+     0
+    ],
+    [
+     "45% joint venture with influence",
+     1
+    ],
+    [
+     "65% of a dealer network",
+     2
+    ]
+   ],
+   "why": "Influence levels.",
+   "video": "10.1"
+  },
+  {
+   "type": "num",
+   "q": "Equity securities bought for $120,000; dividends $4,000; fair value at year-end $131,000. Total effect on net income?",
+   "a": 15000,
+   "unit": "$",
+   "why": "4,000 + 11,000.",
+   "video": "10.2"
+  },
+  {
+   "type": "num",
+   "q": "Equity method, 30%: cost $450,000; investee income $200,000; dividends $50,000. Ending investment?",
+   "a": 495000,
+   "unit": "$",
+   "why": "450 + 60 − 15.",
+   "video": "10.3"
+  },
+  {
+   "type": "mcq",
+   "q": "Under the equity method, the investor's share of investee income is:",
+   "opts": [
+    "Ignored until received",
+    "Recorded as investment income and increases the investment",
+    "Recorded in OCI",
+    "Recorded only if dividends are paid"
+   ],
+   "a": 1,
+   "why": "Accrual of share of income.",
+   "video": "10.3"
+  },
+  {
+   "type": "num",
+   "q": "Paid $500,000 for 25% of net assets with book value $1,600,000. Excess of cost over book value?",
+   "a": 100000,
+   "unit": "$",
+   "why": "500 − 400.",
+   "video": "10.4"
+  },
+  {
+   "type": "num",
+   "q": "Share of investee income $60,000; excess assigned to equipment $40,000 over 8 years. Investment income?",
+   "a": 55000,
+   "unit": "$",
+   "why": "60,000 − 5,000.",
+   "video": "10.4"
+  },
+  {
+   "type": "mcq",
+   "q": "A noncontrolling interest is reported:",
+   "opts": [
+    "As a liability",
+    "Within equity",
+    "As an investment",
+    "In OCI"
+   ],
+   "a": 1,
+   "why": "It's ownership by others.",
+   "video": "10.5"
+  },
+  {
+   "type": "mcq",
+   "q": "Since 2018, changes in fair value of equity securities without significant influence are reported in:",
+   "opts": [
+    "OCI",
+    "Net income",
+    "Retained earnings",
+    "Not reported"
+   ],
+   "a": 1,
+   "why": "No AFS category for equity.",
+   "video": "10.2"
+  }
+ ]
+}

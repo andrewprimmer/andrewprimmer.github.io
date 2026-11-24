@@ -1,0 +1,660 @@
+{
+ "meta": {
+  "n": 8,
+  "short": "Earnings per share",
+  "title": "Earnings per share: basic and diluted",
+  "week": 9,
+  "ch": "Chapter 16",
+  "part": "Stockholders' equity",
+  "summary": "Simple and complex capital structures, weighted-average shares with issuances, buybacks, stock dividends and splits, basic EPS with preferred dividends, diluted EPS using the if-converted and treasury stock methods, antidilution and presentation."
+ },
+ "videos": [
+  {
+   "id": "8.1",
+   "title": "Why EPS, and which EPS",
+   "lecture": "Lecture 8 · Earnings per share",
+   "take": "Public companies report basic EPS, and diluted EPS when they have potentially dilutive securities",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem now has public shareholders, convertible bonds and employee options. Its EPS just got complicated."
+    },
+    {
+     "type": "define",
+     "big": "Earnings per share",
+     "sub": [
+      "Income available to common shareholders",
+      "÷ weighted-average common shares"
+     ],
+     "say": "Earnings per share is income available to common shareholders divided by the weighted-average number of common shares outstanding. Public companies must report it on the face of the income statement."
+    },
+    {
+     "type": "compare",
+     "heading": "Two kinds of capital structure",
+     "cols": [
+      "Simple",
+      "Complex"
+     ],
+     "rows": [
+      [
+       "Securities",
+       "Common, nonconvertible preferred",
+       "Plus convertibles and options"
+      ],
+      [
+       "Report",
+       "Basic EPS only",
+       "Basic and diluted EPS"
+      ]
+     ],
+     "say": "A simple capital structure has only common and nonconvertible preferred stock: report basic EPS. A complex structure has securities that could become common shares, like convertibles, options and warrants: report basic and diluted EPS."
+    },
+    {
+     "type": "define",
+     "big": "Diluted EPS",
+     "sub": [
+      "EPS as if all dilutive securities",
+      "had become common shares"
+     ],
+     "say": "Diluted EPS shows what EPS would be if every dilutive security had been converted or exercised. It's a worst-case view for current shareholders."
+    },
+    {
+     "type": "key",
+     "big": "Bluestem 2030",
+     "sub": [
+      "Net income $1,200,000;",
+      "6% preferred, $500,000 par"
+     ],
+     "say": "Bluestem's 2030 net income is $1.2 million. It has $500,000 of six percent cumulative preferred, $1 million of convertible bonds, and 30,000 employee options. We'll build both EPS figures."
+    },
+    {
+     "type": "quiz",
+     "q": "A company with only common stock and nonconvertible preferred reports:",
+     "opts": [
+      "Diluted EPS only",
+      "Basic EPS only",
+      "Both",
+      "Neither"
+     ],
+     "answer": 1,
+     "say": "Quick check. A company with only common stock and nonconvertible preferred reports what? Pause and pick.",
+     "reveal": "It's B, basic EPS only."
+    }
+   ]
+  },
+  {
+   "id": "8.2",
+   "title": "Weighted-average shares",
+   "lecture": "Lecture 8 · Earnings per share",
+   "take": "Weight shares by time outstanding; restate retroactively for stock dividends and splits",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "The share count changed during 2030. EPS uses a weighted average."
+    },
+    {
+     "type": "table",
+     "heading": "Bluestem's shares, 2030",
+     "rows": [
+      [
+       "Jan 1: 500,000 × 12/12",
+       500000
+      ],
+      [
+       "Apr 1: issued 60,000 × 9/12",
+       45000
+      ],
+      [
+       "Oct 1: bought back 20,000 × 3/12",
+       -5000
+      ],
+      [
+       "Weighted-average shares",
+       540000,
+       "total"
+      ]
+     ],
+     "say": "Bluestem began the year with 500,000 shares. It issued 60,000 on April 1, outstanding for nine months: 45,000 weighted shares. It bought back 20,000 on October 1, out for three months: minus 5,000. The weighted average is 540,000."
+    },
+    {
+     "type": "key",
+     "big": "Stock dividends and splits",
+     "sub": [
+      "Restate as if they happened",
+      "at the start of the year"
+     ],
+     "say": "Stock dividends and splits are different. They don't bring in resources, so they're treated as if they'd happened at the beginning of the year, and at the start of every prior period presented."
+    },
+    {
+     "type": "table",
+     "heading": "If a 2-for-1 split occurred Nov 1",
+     "rows": [
+      [
+       "Jan 1: 500,000 × 2 × 12/12",
+       1000000
+      ],
+      [
+       "Apr 1: 60,000 × 2 × 9/12",
+       90000
+      ],
+      [
+       "Oct 1: −20,000 × 2 × 3/12",
+       -10000
+      ],
+      [
+       "Weighted-average shares",
+       1080000,
+       "total"
+      ]
+     ],
+     "say": "If Bluestem had split its shares two for one on November 1, every share outstanding before the split would be doubled, back to January 1. The weighted average would be 1,080,000, and prior years' EPS would be restated too."
+    },
+    {
+     "type": "key",
+     "big": "Even after year-end",
+     "sub": [
+      "Splits before the statements are",
+      "issued are also applied"
+     ],
+     "say": "Even a split after year-end but before the statements are issued is applied retroactively, so readers see EPS on the new share basis."
+    },
+    {
+     "type": "quiz",
+     "q": "Jan 1: 100,000 shares; July 1: issued 40,000. Weighted average?",
+     "opts": [
+      "140,000",
+      "120,000",
+      "110,000",
+      "100,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. January 1, a hundred thousand shares; July 1, forty thousand issued. Weighted average? Pause and pick.",
+     "reveal": "It's B, 120,000."
+    }
+   ]
+  },
+  {
+   "id": "8.3",
+   "title": "Basic EPS",
+   "lecture": "Lecture 8 · Earnings per share",
+   "take": "Subtract the current year's preferred dividend: declared, or cumulative even if not declared",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Now the numerator. Common shareholders only get what's left after preferred."
+    },
+    {
+     "type": "list",
+     "heading": "Preferred dividends to subtract",
+     "items": [
+      "Cumulative: current year's dividend, declared or not",
+      "Noncumulative: only if declared",
+      "Never arrears from prior years"
+     ],
+     "say": "Subtract the current year's preferred dividend. For cumulative preferred, subtract it whether or not it's declared. For noncumulative, only if declared. Arrears from earlier years were already counted in those years."
+    },
+    {
+     "type": "table",
+     "heading": "Bluestem basic EPS, 2030",
+     "rows": [
+      [
+       "Net income",
+       1200000
+      ],
+      [
+       "Less preferred dividends",
+       -30000
+      ],
+      [
+       "Income available to common",
+       1170000,
+       "total"
+      ],
+      [
+       "Weighted-average shares",
+       "540,000"
+      ],
+      [
+       "Basic EPS",
+       2.17,
+       "total"
+      ]
+     ],
+     "say": "Bluestem subtracts $30,000 of preferred dividends from $1.2 million, leaving $1,170,000 for common. Divided by 540,000 weighted shares, basic EPS is $2.17."
+    },
+    {
+     "type": "key",
+     "big": "With discontinued operations",
+     "sub": [
+      "Show EPS for continuing, discontinued,",
+      "and net income"
+     ],
+     "say": "If Bluestem had discontinued operations, it would report per-share amounts for income from continuing operations, the discontinued operations, and net income, as you saw in Intermediate One."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "Use income available to common",
+     "sub": [
+      "Not net income"
+     ],
+     "say": "The most common error: dividing net income, not income available to common, by the shares."
+    },
+    {
+     "type": "quiz",
+     "q": "Net income $800,000; 5% cumulative preferred $1,000,000 par, no dividends declared; 300,000 weighted shares. Basic EPS?",
+     "opts": [
+      "$2.67",
+      "$2.50",
+      "$2.83",
+      "$2.33"
+     ],
+     "answer": 1,
+     "say": "Quick check. Net income eight hundred thousand; five percent cumulative preferred, one million par, no dividends declared; three hundred thousand weighted shares. Basic EPS? Pause and pick.",
+     "reveal": "It's B, $2.50. Cumulative dividends are deducted even if not declared."
+    }
+   ]
+  },
+  {
+   "id": "8.4",
+   "title": "Diluted EPS: convertible securities",
+   "lecture": "Lecture 8 · Earnings per share",
+   "take": "If-converted method: add back after-tax interest and add the shares as if converted at the start of the year",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "What if all Bluestem's convertible bondholders had converted on January 1?"
+    },
+    {
+     "type": "define",
+     "big": "If-converted method",
+     "sub": [
+      "Assume conversion at the start of the year",
+      "(or issue date, if later)"
+     ],
+     "say": "The if-converted method assumes convertible securities were converted at the beginning of the year, or when issued if later. Two things change: the interest wouldn't have been paid, and there'd be more shares."
+    },
+    {
+     "type": "table",
+     "heading": "The convertible bonds",
+     "rows": [
+      [
+       "Interest: 1,000,000 × 4%",
+       40000
+      ],
+      [
+       "Less tax at 25%",
+       -10000
+      ],
+      [
+       "After-tax interest saved: numerator +",
+       30000,
+       "total"
+      ],
+      [
+       "Shares if converted: denominator +",
+       "50,000",
+       "total"
+      ],
+      [
+       "Per-share effect: 30,000 ÷ 50,000",
+       0.6
+      ]
+     ],
+     "say": "Interest of $40,000 would be saved, but taxes would rise by $10,000, so income rises by $30,000. Shares rise by 50,000. The per-share effect is sixty cents, below basic EPS, so the bonds are dilutive."
+    },
+    {
+     "type": "key",
+     "big": "Convertible preferred",
+     "sub": [
+      "Don't subtract its dividends;",
+      "add its shares"
+     ],
+     "say": "For convertible preferred stock, assume conversion: don't subtract its dividends from the numerator, and add the common shares to the denominator. No tax effect, since dividends aren't deductible."
+    },
+    {
+     "type": "key",
+     "big": "Dilutive only if it lowers EPS",
+     "sub": [
+      "Per-share effect below EPS:",
+      "include it"
+     ],
+     "say": "A convertible is included only if it lowers EPS. If its per-share effect is above EPS, it's antidilutive and left out."
+    },
+    {
+     "type": "quiz",
+     "q": "Convertible bonds: interest $60,000; tax 25%; convertible into 30,000 shares. Per-share effect?",
+     "opts": [
+      "$2.00",
+      "$1.50",
+      "$0.50",
+      "$3.00"
+     ],
+     "answer": 1,
+     "say": "Quick check. Convertible bonds: interest sixty thousand; tax twenty-five percent; convertible into thirty thousand shares. Per-share effect? Pause and pick.",
+     "reveal": "It's B, $1.50: forty-five thousand over thirty thousand."
+    }
+   ]
+  },
+  {
+   "id": "8.5",
+   "title": "Diluted EPS: options and warrants",
+   "lecture": "Lecture 8 · Earnings per share",
+   "take": "Treasury stock method: assume exercise, and assume proceeds buy back shares at the average price",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem's designers hold 30,000 options at $16. The share price averaged $24 this year."
+    },
+    {
+     "type": "define",
+     "big": "Treasury stock method",
+     "sub": [
+      "Assume exercise; use proceeds to buy",
+      "shares at the average market price"
+     ],
+     "say": "The treasury stock method assumes options are exercised and the cash received is used to buy back shares at the average market price. Only the net new shares are added."
+    },
+    {
+     "type": "table",
+     "heading": "Bluestem's options",
+     "rows": [
+      [
+       "Shares issued on exercise",
+       "30,000"
+      ],
+      [
+       "Proceeds: 30,000 × $16",
+       480000
+      ],
+      [
+       "Shares repurchased: 480,000 ÷ $24",
+       "20,000"
+      ],
+      [
+       "Incremental shares",
+       "10,000",
+       "total"
+      ]
+     ],
+     "say": "Exercising 30,000 options brings in $480,000. At an average price of $24, that buys back 20,000 shares. The net increase is 10,000 shares, with no change to income."
+    },
+    {
+     "type": "key",
+     "big": "Only in the money",
+     "sub": [
+      "Exercise price below average",
+      "market price: dilutive"
+     ],
+     "say": "Options and warrants are dilutive only when they're in the money, with an exercise price below the average market price. Otherwise the method would reduce shares, which is antidilutive."
+    },
+    {
+     "type": "table",
+     "heading": "Bluestem diluted EPS, 2030",
+     "rows": [
+      [
+       "Income available to common",
+       1170000
+      ],
+      [
+       "Add: after-tax interest on convertibles",
+       30000
+      ],
+      [
+       "Adjusted income",
+       1200000,
+       "total"
+      ],
+      [
+       "Shares: 540,000 + 10,000 + 50,000",
+       "600,000"
+      ],
+      [
+       "Diluted EPS",
+       "2.00",
+       "total"
+      ]
+     ],
+     "say": "Putting it together: income of $1,170,000 plus the $30,000 of after-tax interest gives $1.2 million. Shares are 540,000 plus 10,000 from the options and 50,000 from the bonds: 600,000. Diluted EPS is $2.00, against basic EPS of $2.17."
+    },
+    {
+     "type": "quiz",
+     "q": "10,000 warrants at $30; average market price $40. Incremental shares?",
+     "opts": [
+      "10,000",
+      "2,500",
+      "7,500",
+      "0"
+     ],
+     "answer": 1,
+     "say": "Quick check. Ten thousand warrants at thirty dollars; average market price forty. Incremental shares? Pause and pick.",
+     "reveal": "It's B, 2,500: 300,000 buys back 7,500."
+    }
+   ]
+  },
+  {
+   "id": "8.6",
+   "title": "Antidilution and presentation",
+   "lecture": "Lecture 8 · Earnings per share",
+   "take": "Exclude antidilutive securities; include securities from most to least dilutive; present basic and diluted EPS",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Diluted EPS should never be higher than basic. Antidilution rules make sure of it."
+    },
+    {
+     "type": "define",
+     "big": "Antidilutive",
+     "sub": [
+      "A security that would increase EPS",
+      "or reduce a loss per share"
+     ],
+     "say": "A security is antidilutive if including it would increase EPS or reduce loss per share. Antidilutive securities are excluded from diluted EPS."
+    },
+    {
+     "type": "list",
+     "heading": "Sequencing",
+     "items": [
+      "Compute each security's per-share effect",
+      "Options and warrants: usually zero, first",
+      "Then convertibles from lowest effect up",
+      "Stop when the next would raise EPS"
+     ],
+     "say": "With several securities, rank them by per-share effect. Options and warrants, with no income effect, go first. Then convertibles from the lowest effect upward. Stop when the next one would raise EPS."
+    },
+    {
+     "type": "key",
+     "big": "Losses",
+     "sub": [
+      "With a loss from continuing operations,",
+      "everything is antidilutive"
+     ],
+     "say": "If a company has a loss from continuing operations, any additional shares would reduce the loss per share, so all potential shares are antidilutive and diluted EPS equals basic."
+    },
+    {
+     "type": "table",
+     "heading": "On Bluestem's income statement",
+     "rows": [
+      [
+       "Basic earnings per share",
+       2.17
+      ],
+      [
+       "Diluted earnings per share",
+       "2.00"
+      ]
+     ],
+     "say": "Bluestem reports basic EPS of $2.17 and diluted EPS of $2.00 on the face of the income statement, with a note reconciling numerators and denominators, and listing securities excluded as antidilutive."
+    },
+    {
+     "type": "quiz",
+     "q": "Basic EPS $1.80. A convertible's per-share effect is $2.10. Include it in diluted EPS?",
+     "opts": [
+      "Yes",
+      "No, it's antidilutive",
+      "Only if declared",
+      "Only for preferred"
+     ],
+     "answer": 1,
+     "say": "Quick check. Basic EPS one eighty. A convertible's per-share effect is two ten. Include it in diluted EPS? Pause and pick.",
+     "reveal": "It's B, no. It would raise EPS."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Two companies each earn $1 million. One has 500,000 shares; the other has 500,000 shares plus bonds convertible into 200,000 more. Which shareholders should worry?",
+   "Dilution; sets up diluted EPS."
+  ],
+  "acts": [
+   [
+    "Shares: Jan 1 300,000; Mar 1 issued 60,000; Aug 1 bought 30,000 treasury shares; Dec 1 issued 12,000. Weighted average?",
+    "300,000 + 50,000 − 12,500 + 1,000 = 338,500."
+   ],
+   [
+    "Same data, plus a 10% stock dividend on June 1. Weighted average?",
+    "Restate shares before June 1 by 1.1: 300,000 × 1.1 + 60,000 × 1.1 × 10/12 − 30,000 × 5/12 + 12,000 × 1/12 = 330,000 + 55,000 − 12,500 + 1,000 = 373,500."
+   ],
+   [
+    "Net income $900,000; 7% noncumulative preferred $400,000 par, no dividends declared; 360,000 weighted shares. Basic EPS? If cumulative?",
+    "Noncumulative: $2.50. Cumulative: (900,000 − 28,000) ÷ 360,000 = $2.42."
+   ],
+   [
+    "8% convertible bonds $2,000,000, convertible into 80,000 shares; tax 25%. Per-share effect?",
+    "160,000 × 75% = 120,000 ÷ 80,000 = $1.50."
+   ],
+   [
+    "40,000 options at $25; average price $40; year-end price $45. Incremental shares?",
+    "Proceeds 1,000,000 ÷ 40 = 25,000; incremental 15,000 (use average price)."
+   ],
+   [
+    "Basic EPS $2.40 (income $1,200,000; 500,000 shares). Securities: options adding 20,000 shares; bonds with effect $1.80 (adds 100,000 shares, $180,000); preferred with effect $3.00. Compute diluted EPS.",
+    "Options: 1,200,000/520,000 = 2.31. Bonds: 1,380,000/620,000 = 2.23 (dilutive). Preferred $3.00 > 2.23: antidilutive. Diluted EPS $2.23."
+   ]
+  ],
+  "case": [
+   "The EPS target",
+   "Analysts expect Bluestem's diluted EPS to be at least $2.05. The draft shows $2.00. The founder suggests (1) treating the convertible bonds as antidilutive; (2) using the year-end share price of $20 rather than the $24 average for the options; and (3) buying back 30,000 shares on December 30.",
+   [
+    "Is idea 1 allowed?",
+    "Compute incremental option shares at $20 and explain why it's not allowed.",
+    "Compute the effect of idea 3 on weighted shares.",
+    "What's the ethical issue?"
+   ],
+   "(1) No: the bonds' effect ($0.60) is below EPS: dilutive. (2) At $20: 480,000 ÷ 20 = 24,000 repurchased, 6,000 incremental; GAAP requires the average price. (3) 30,000 × 2/365 ≈ 164 weighted shares: negligible; and cash leaves. Ethics: managing EPS to meet expectations; misleading investors."
+  ],
+  "exam": [
+   [
+    "Explain the if-converted method and the treasury stock method, and why antidilutive securities are excluded.",
+    6,
+    "If-converted: assume conversion at start of year; add back after-tax interest or don't deduct preferred dividends; add shares. TSM: proceeds repurchase at average price; incremental shares. Antidilutive excluded because diluted EPS is conservative."
+   ],
+   [
+    "Compute Bluestem's basic and diluted EPS: net income $1,200,000; 6% cumulative preferred $500,000; weighted shares 540,000; 4% convertible bonds $1,000,000 convertible into 50,000 shares; 30,000 options at $16 with average price $24; tax 25%.",
+    8,
+    "Basic 2.17; diluted 1,200,000 ÷ 600,000 = 2.00."
+   ]
+  ],
+  "outcomes": [
+   "Distinguish simple and complex capital structures",
+   "Compute weighted-average shares, including stock dividends and splits",
+   "Compute basic EPS with preferred dividends",
+   "Apply the if-converted method",
+   "Apply the treasury stock method",
+   "Identify antidilutive securities and present EPS"
+  ],
+  "take": [
+   "Basic and diluted EPS on the face",
+   "Weight by time; restate splits",
+   "Subtract current cumulative preferred dividends",
+   "If-converted: add back after-tax interest",
+   "Treasury stock method uses average price",
+   "Exclude antidilutive securities"
+  ]
+ },
+ "ex": [
+  {
+   "type": "num",
+   "q": "Jan 1: 200,000 shares; May 1: issued 30,000; Nov 1: bought back 12,000. Weighted average shares?",
+   "a": 218000,
+   "unit": "shares",
+   "why": "200,000 + 20,000 − 2,000.",
+   "video": "8.2"
+  },
+  {
+   "type": "num",
+   "q": "Jan 1: 100,000 shares; Jul 1: issued 20,000; Oct 1: 3-for-1 split. Weighted average?",
+   "a": 330000,
+   "unit": "shares",
+   "why": "(100,000 + 10,000) × 3.",
+   "video": "8.2"
+  },
+  {
+   "type": "num",
+   "q": "Net income $500,000; 6% cumulative preferred $200,000 par (not declared); 160,000 weighted shares. Basic EPS?",
+   "a": 3.05,
+   "tol": 0.005,
+   "unit": "$",
+   "why": "488,000 ÷ 160,000.",
+   "video": "8.3"
+  },
+  {
+   "type": "num",
+   "q": "5% convertible bonds of $800,000 convert into 40,000 shares; tax 25%. After-tax interest added back?",
+   "a": 30000,
+   "unit": "$",
+   "why": "40,000 × 75%.",
+   "video": "8.4"
+  },
+  {
+   "type": "num",
+   "q": "20,000 options at $15; average market price $25. Incremental shares?",
+   "a": 8000,
+   "unit": "shares",
+   "why": "300,000 ÷ 25 = 12,000 repurchased.",
+   "video": "8.5"
+  },
+  {
+   "type": "mcq",
+   "q": "Options with an exercise price above the average market price are:",
+   "opts": [
+    "Dilutive",
+    "Antidilutive and excluded",
+    "Included at full shares",
+    "Subtracted from basic EPS"
+   ],
+   "a": 1,
+   "why": "Out of the money.",
+   "video": "8.5"
+  },
+  {
+   "type": "num",
+   "q": "Income available to common $1,000,000; weighted shares 400,000; options add 10,000 shares; bonds add $50,000 of after-tax income and 40,000 shares. Diluted EPS?",
+   "a": 2.33,
+   "tol": 0.005,
+   "unit": "$",
+   "why": "1,050,000 ÷ 450,000.",
+   "video": "8.5"
+  },
+  {
+   "type": "mcq",
+   "q": "With a loss from continuing operations, diluted EPS:",
+   "opts": [
+    "Includes all potential shares",
+    "Equals basic EPS",
+    "Is always higher",
+    "Isn't reported"
+   ],
+   "a": 1,
+   "why": "All potential shares are antidilutive.",
+   "video": "8.6"
+  }
+ ]
+}

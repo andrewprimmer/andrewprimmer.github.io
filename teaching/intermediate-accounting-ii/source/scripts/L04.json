@@ -1,0 +1,509 @@
+{
+ "videos": [
+  {
+   "id": "4.1",
+   "title": "Notes payable at present value",
+   "lecture": "Lecture 4 \u00b7 Long-term debt issues",
+   "take": "A note with no or unreasonable interest is recorded at present value; the discount becomes interest expense",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem buys a lot for its new plant. The seller accepts a $300,000 note due in three years, with no interest."
+    },
+    {
+     "type": "key",
+     "big": "No free money",
+     "sub": [
+      "A zero-interest note has interest",
+      "built into its face value"
+     ],
+     "say": "Nobody lends for free. A note with no stated interest has interest hidden in its face. Recording the land at $300,000 would overstate the land and understate interest expense."
+    },
+    {
+     "type": "table",
+     "heading": "Imputing interest at 8%",
+     "rows": [
+      [
+       "Face of note, due in 3 years",
+       300000
+      ],
+      [
+       "PV factor, 3 periods, 8%",
+       "0.79383"
+      ],
+      [
+       "Present value: cost of the land",
+       238149,
+       "total"
+      ],
+      [
+       "Discount: total interest",
+       61851
+      ]
+     ],
+     "say": "Bluestem's borrowing rate for similar notes is eight percent. The present value, $238,149, is the land's cost. The $61,851 discount will be recognized as interest over three years."
+    },
+    {
+     "type": "journal",
+     "heading": "Year 1 interest",
+     "rows": [
+      [
+       "Interest expense",
+       19052,
+       ""
+      ],
+      [
+       "Notes payable",
+       "",
+       19052
+      ]
+     ],
+     "say": "Year-one interest is eight percent of $238,149, $19,052, added to the note's carrying amount. Year two's interest is eight percent of the new balance, and so on to $300,000."
+    },
+    {
+     "type": "key",
+     "big": "Use fair value if clearer",
+     "sub": [
+      "If the land's fair value is known,",
+      "it sets the imputed rate"
+     ],
+     "say": "If the land's fair value were reliably known, say from a recent appraisal, Bluestem would use it, and the implied rate would follow. When neither is clear, impute a rate the company would pay on similar debt."
+    },
+    {
+     "type": "quiz",
+     "q": "Equipment bought for a $100,000 zero-interest note due in 2 years; imputed rate 10%. Equipment cost?",
+     "opts": [
+      "$100,000",
+      "$82,645",
+      "$90,909",
+      "$80,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Equipment is bought for a one hundred thousand dollar zero-interest note due in two years; imputed rate ten percent. Equipment cost? Pause and pick.",
+     "reveal": "It's B, $82,645."
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "title": "Extinguishing debt early",
+   "lecture": "Lecture 4 \u00b7 Long-term debt issues",
+   "take": "Gain or loss = carrying amount \u2212 reacquisition price, reported in income",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Two years after issuing its discount bonds, rates have dropped. Bluestem calls the bonds at 102."
+    },
+    {
+     "type": "table",
+     "heading": "Carrying amount after 4 periods",
+     "rows": [
+      [
+       "Issue price",
+       1837774
+      ],
+      [
+       "Amortization, periods 1\u20134",
+       57373
+      ],
+      [
+       "Carrying amount, Jan 1, 2030",
+       1895147,
+       "total"
+      ]
+     ],
+     "say": "After four semiannual periods of effective-interest amortization, the bonds' carrying amount has grown from $1,837,774 to $1,895,147."
+    },
+    {
+     "type": "table",
+     "heading": "Calling the bonds",
+     "rows": [
+      [
+       "Call price: 2,000,000 \u00d7 102%",
+       2040000
+      ],
+      [
+       "Carrying amount",
+       1895147
+      ],
+      [
+       "Loss on extinguishment",
+       144853,
+       "total"
+      ]
+     ],
+     "say": "Calling at a hundred and two costs $2,040,000. The difference from the carrying amount, $144,853, is a loss on extinguishment of debt."
+    },
+    {
+     "type": "journal",
+     "heading": "The entry",
+     "rows": [
+      [
+       "Bonds payable",
+       1895147,
+       ""
+      ],
+      [
+       "Loss on extinguishment",
+       144853,
+       ""
+      ],
+      [
+       "Cash",
+       "",
+       2040000
+      ]
+     ],
+     "say": "Bluestem removes the bonds at carrying amount, pays $2,040,000, and records the loss in income from continuing operations. Any unamortized issuance costs would also be written off as part of the loss."
+    },
+    {
+     "type": "key",
+     "big": "Why pay a loss?",
+     "sub": [
+      "Refinancing at a lower rate can",
+      "still save money over time"
+     ],
+     "say": "Why take a loss? Because refinancing at a much lower rate can save more in future interest than the call premium costs. The loss is the price of that saving."
+    },
+    {
+     "type": "quiz",
+     "q": "Bonds with carrying amount $990,000 are retired for $975,000. Result?",
+     "opts": [
+      "$15,000 loss",
+      "$15,000 gain",
+      "$25,000 gain",
+      "No gain or loss"
+     ],
+     "answer": 1,
+     "say": "Quick check. Bonds with carrying amount nine ninety thousand are retired for nine seventy-five thousand. Result? Pause and pick.",
+     "reveal": "It's B, a $15,000 gain."
+    }
+   ]
+  },
+  {
+   "id": "4.3",
+   "title": "The fair value option",
+   "lecture": "Lecture 4 \u00b7 Long-term debt issues",
+   "take": "Companies may measure debt at fair value; changes due to own credit risk go to OCI",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "GAAP lets companies choose to measure some financial liabilities at fair value instead of amortized cost."
+    },
+    {
+     "type": "define",
+     "big": "Fair value option",
+     "sub": [
+      "Irrevocable, instrument-by-instrument",
+      "election at inception"
+     ],
+     "say": "The fair value option is an election, made instrument by instrument when the debt is issued, and it's irrevocable. Changes in fair value are then recognized each period."
+    },
+    {
+     "type": "table",
+     "heading": "If Bluestem had elected it",
+     "rows": [
+      [
+       "Amortized cost, Dec 31, 2028",
+       1865336
+      ],
+      [
+       "Fair value, Dec 31, 2028",
+       1820000
+      ],
+      [
+       "Decrease in liability",
+       45336,
+       "total"
+      ]
+     ],
+     "say": "Suppose Bluestem elected the fair value option. At the end of 2028, the bonds' amortized cost is $1,865,336, but market rates have risen and their fair value is $1,820,000. The liability falls by $45,336."
+    },
+    {
+     "type": "compare",
+     "heading": "Where the change goes",
+     "cols": [
+      "Cause",
+      "Reported in"
+     ],
+     "rows": [
+      [
+       "Market interest rates",
+       "Rates rose",
+       "Net income"
+      ],
+      [
+       "Own credit risk",
+       "Bluestem riskier",
+       "Other comprehensive income"
+      ]
+     ],
+     "say": "The part of the change caused by general interest rates goes to net income. The part caused by Bluestem's own credit getting worse goes to other comprehensive income, so a company doesn't report profit just because it became riskier."
+    },
+    {
+     "type": "key",
+     "big": "Why elect it?",
+     "sub": [
+      "Matches debt with assets",
+      "measured at fair value"
+     ],
+     "say": "Companies elect it mainly to reduce volatility caused by measuring related assets at fair value and liabilities at cost. Most companies don't use it for their own bonds."
+    },
+    {
+     "type": "quiz",
+     "q": "Under the fair value option, a decline in a liability's fair value caused by the company's worsening credit is reported in:",
+     "opts": [
+      "Net income",
+      "Other comprehensive income",
+      "Retained earnings directly",
+      "Not reported"
+     ],
+     "answer": 1,
+     "say": "Quick check. Under the fair value option, a decline in a liability's fair value caused by the company's worsening credit goes where? Pause and pick.",
+     "reveal": "It's B, other comprehensive income."
+    }
+   ]
+  },
+  {
+   "id": "4.4",
+   "title": "Troubled debt settlements",
+   "lecture": "Lecture 4 \u00b7 Long-term debt issues",
+   "take": "A debtor settling debt with assets recognizes a gain on disposal and a gain on settlement",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "One of Bluestem's dealers, Lakes Paddle Co., is in trouble. It owes its bank $500,000 and can't pay."
+    },
+    {
+     "type": "define",
+     "big": "Troubled debt restructuring",
+     "sub": [
+      "Creditor grants a concession to a",
+      "debtor in financial difficulty"
+     ],
+     "say": "A troubled debt restructuring happens when a creditor, for economic or legal reasons related to the debtor's financial difficulties, grants a concession it wouldn't otherwise consider."
+    },
+    {
+     "type": "table",
+     "heading": "Settlement with land",
+     "rows": [
+      [
+       "Debt settled",
+       500000
+      ],
+      [
+       "Fair value of land transferred",
+       380000
+      ],
+      [
+       "Gain on settlement of debt",
+       120000,
+       "total"
+      ],
+      [
+       "Land's book value",
+       300000
+      ],
+      [
+       "Gain on disposal of land",
+       80000,
+       "total"
+      ]
+     ],
+     "say": "Lakes settles its $500,000 loan by giving the bank land worth $380,000, with a book value of $300,000. It records two gains: $80,000 on disposing of the land, and $120,000 on settling the debt for less than owed."
+    },
+    {
+     "type": "key",
+     "big": "Modification of terms",
+     "sub": [
+      "Lower rate, longer term, reduced principal:",
+      "gain only if future cash < carrying amount"
+     ],
+     "say": "If instead the bank modifies the terms, lowering the rate or extending the term, the debtor recognizes a gain only if total future cash payments, undiscounted, are less than the carrying amount."
+    },
+    {
+     "type": "key",
+     "big": "Bluestem's angle",
+     "sub": [
+      "As a creditor, it would test its",
+      "receivable for credit losses"
+     ],
+     "say": "If Lakes owed Bluestem instead, Bluestem would treat it as a creditor and measure expected credit losses under CECL, from Intermediate One."
+    },
+    {
+     "type": "quiz",
+     "q": "Debt $200,000 settled with equipment: fair value $150,000, book value $170,000. Gain on settlement?",
+     "opts": [
+      "$30,000",
+      "$50,000",
+      "$20,000",
+      "$0"
+     ],
+     "answer": 1,
+     "say": "Quick check. Debt of two hundred thousand is settled with equipment worth one fifty thousand, book value one seventy thousand. Gain on settlement? Pause and pick.",
+     "reveal": "It's B, $50,000. There's also a $20,000 loss on disposal."
+    }
+   ]
+  },
+  {
+   "id": "4.5",
+   "title": "Off-balance-sheet financing",
+   "lecture": "Lecture 4 \u00b7 Long-term debt issues",
+   "take": "Companies try to keep debt off the balance sheet; standards have closed many routes, so read the notes",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem's founder asks: can we borrow without the debt showing up?"
+    },
+    {
+     "type": "define",
+     "big": "Off-balance-sheet financing",
+     "sub": [
+      "Borrowing arranged so the obligation",
+      "isn't recorded as a liability"
+     ],
+     "say": "Off-balance-sheet financing is an attempt to borrow money without recording the obligation, keeping debt ratios and covenants looking better."
+    },
+    {
+     "type": "list",
+     "heading": "Common forms",
+     "items": [
+      "Non-consolidated entities and joint ventures",
+      "Take-or-pay and through-put contracts",
+      "Receivables sold with recourse",
+      "Formerly: operating leases"
+     ],
+     "say": "Common forms include non-consolidated entities and joint ventures; take-or-pay contracts that commit the company to buy output; and receivables sold with recourse. Operating leases were the biggest until the lease standard put them on the balance sheet."
+    },
+    {
+     "type": "key",
+     "big": "Rules have tightened",
+     "sub": [
+      "Consolidation rules, lease standard,",
+      "commitment disclosures"
+     ],
+     "say": "Standards have closed many routes: variable interest entities must be consolidated, leases are recognized, and commitments must be disclosed. So the answer to the founder is mostly no, and trying would worry lenders."
+    },
+    {
+     "type": "key",
+     "big": "Read the notes",
+     "sub": [
+      "Commitments, guarantees and",
+      "unconsolidated entities"
+     ],
+     "say": "Analysts read the notes on commitments, guarantees and unconsolidated entities to find obligations that aren't in the liability totals."
+    },
+    {
+     "type": "quiz",
+     "q": "Which change brought most leases onto the balance sheet?",
+     "opts": [
+      "The fair value option",
+      "The lease standard, Topic 842",
+      "CECL",
+      "Sarbanes-Oxley"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which change brought most leases onto the balance sheet? Pause and pick.",
+     "reveal": "It's B, the lease standard."
+    }
+   ]
+  },
+  {
+   "id": "4.6",
+   "title": "Presenting and analyzing long-term debt",
+   "lecture": "Lecture 4 \u00b7 Long-term debt issues",
+   "take": "Disclose maturities, rates, covenants and fair values; debt to assets and times interest earned measure risk",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem's lenders and new bondholders watch two numbers closely."
+    },
+    {
+     "type": "list",
+     "heading": "Required disclosures",
+     "items": [
+      "Maturities for each of the next 5 years",
+      "Interest rates and terms",
+      "Assets pledged as collateral",
+      "Covenants and any violations",
+      "Fair value of the debt"
+     ],
+     "say": "Notes disclose aggregate maturities for each of the next five years, interest rates and terms, assets pledged as collateral, covenants and any violations, and the fair value of the debt."
+    },
+    {
+     "type": "table",
+     "heading": "Bluestem, 2028",
+     "rows": [
+      [
+       "Total liabilities",
+       3600000
+      ],
+      [
+       "Total assets",
+       7200000
+      ],
+      [
+       "Debt to assets",
+       "50%",
+       "total"
+      ]
+     ],
+     "say": "After the bonds and the Northwind purchase, Bluestem's total liabilities are $3.6 million and total assets $7.2 million: debt to assets of fifty percent, up from about thirty-nine percent."
+    },
+    {
+     "type": "table",
+     "heading": "Times interest earned",
+     "rows": [
+      [
+       "Income before income tax",
+       1100000
+      ],
+      [
+       "Add back interest expense",
+       180000
+      ],
+      [
+       "Earnings before interest and taxes",
+       1280000,
+       "total"
+      ],
+      [
+       "Times interest earned",
+       "7.1 times",
+       "total"
+      ]
+     ],
+     "say": "Times interest earned is earnings before interest and taxes over interest expense: $1.28 million over $180,000, seven point one times. Bluestem earns its interest seven times over, a comfortable cushion."
+    },
+    {
+     "type": "key",
+     "big": "Covenants use these ratios",
+     "sub": [
+      "Breaches can make debt",
+      "due immediately"
+     ],
+     "say": "Covenants are often written in these terms. A breach can make the debt callable at once, which would also make it a current liability."
+    },
+    {
+     "type": "quiz",
+     "q": "Income before tax $600,000; interest expense $150,000. Times interest earned?",
+     "opts": [
+      "4.0",
+      "5.0",
+      "3.0",
+      "6.0"
+     ],
+     "answer": 1,
+     "say": "Quick check. Income before tax six hundred thousand; interest expense one fifty thousand. Times interest earned? Pause and pick.",
+     "reveal": "It's B, five times: seven fifty over one fifty."
+    }
+   ]
+  }
+ ]
+}

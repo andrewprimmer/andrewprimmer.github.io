@@ -1,0 +1,447 @@
+{
+ "videos": [
+  {
+   "id": "2.1",
+   "title": "Why a conceptual framework",
+   "lecture": "Lecture 2 \u00b7 Conceptual framework",
+   "take": "The framework is the constitution behind GAAP: it guides new standards and unusual transactions",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem has just signed a deal no standard covers exactly. How does Sam decide how to account for it? He goes back to first principles."
+    },
+    {
+     "type": "define",
+     "big": "Conceptual framework",
+     "sub": [
+      "A coherent system of concepts",
+      "that underlies the standards"
+     ],
+     "say": "The conceptual framework is a coherent system of interrelated objectives and fundamentals. Think of it as accounting's constitution: the standards are the laws written under it."
+    },
+    {
+     "type": "list",
+     "heading": "What it does",
+     "items": [
+      "Guides the FASB in writing standards",
+      "Helps solve new problems quickly",
+      "Increases users' understanding",
+      "Limits judgment to a common ground"
+     ],
+     "say": "It guides the FASB when it writes standards, helps preparers handle new problems no standard covers, helps users understand the statements, and keeps judgment on common ground."
+    },
+    {
+     "type": "flow",
+     "heading": "Three levels",
+     "items": [
+      "Objective: why",
+      "Characteristics and elements: what",
+      "Assumptions, principles: how"
+     ],
+     "say": "It has three levels. First, the objective: why we report. Second, the qualitative characteristics and elements: what makes information useful and what we report. Third, the assumptions, principles and constraint: how we recognize and measure."
+    },
+    {
+     "type": "define",
+     "big": "The objective",
+     "sub": [
+      "Information useful to investors and",
+      "creditors in providing capital"
+     ],
+     "say": "The objective: provide financial information about the reporting entity that is useful to present and potential investors, lenders and other creditors in making decisions about providing capital. Everything else follows from that."
+    },
+    {
+     "type": "quiz",
+     "q": "The conceptual framework is best compared to:",
+     "opts": [
+      "A tax code",
+      "A constitution",
+      "An audit report",
+      "A budget"
+     ],
+     "answer": 1,
+     "say": "Quick check. The conceptual framework is best compared to what? Pause and pick.",
+     "reveal": "It's B, a constitution: the foundation for the standards."
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "title": "Qualitative characteristics",
+   "lecture": "Lecture 2 \u00b7 Conceptual framework",
+   "take": "Useful information is relevant and faithfully represented; comparability, verifiability, timeliness and understandability enhance it",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "What makes accounting information useful? The framework gives two fundamental qualities and four enhancing ones."
+    },
+    {
+     "type": "compare",
+     "heading": "Fundamental characteristics",
+     "cols": [
+      "Relevance",
+      "Faithful representation"
+     ],
+     "rows": [
+      [
+       "Ingredient",
+       "Predictive value",
+       "Completeness"
+      ],
+      [
+       "Ingredient",
+       "Confirmatory value",
+       "Neutrality"
+      ],
+      [
+       "Ingredient",
+       "Materiality",
+       "Free from error"
+      ]
+     ],
+     "say": "Relevance means information can make a difference to a decision: it has predictive value, confirmatory value, or both, and it's material. Faithful representation means the numbers depict what really happened: complete, neutral and free from error."
+    },
+    {
+     "type": "list",
+     "heading": "Enhancing characteristics",
+     "items": [
+      "Comparability, including consistency",
+      "Verifiability",
+      "Timeliness",
+      "Understandability"
+     ],
+     "say": "Four enhancing characteristics make useful information more useful: comparability across companies and consistency over time; verifiability, so independent observers would agree; timeliness; and understandability to users with reasonable knowledge."
+    },
+    {
+     "type": "define",
+     "big": "Materiality",
+     "sub": [
+      "Would omitting or misstating it",
+      "influence a user's decision?"
+     ],
+     "say": "Materiality is entity-specific. An item is material if omitting or misstating it could influence users' decisions. Size matters, but so does nature: a small bribe is material."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "Neutral, not conservative",
+     "sub": [
+      "The framework doesn't ask",
+      "for deliberate understatement"
+     ],
+     "say": "Watch out: neutrality means no bias in either direction. The framework doesn't call for conservatism, even though some specific rules, like writing inventory down but not up, are conservative."
+    },
+    {
+     "type": "quiz",
+     "q": "Which is an ingredient of faithful representation?",
+     "opts": [
+      "Predictive value",
+      "Timeliness",
+      "Neutrality",
+      "Materiality"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which is an ingredient of faithful representation? Pause and pick.",
+     "reveal": "It's C, neutrality. Predictive value and materiality belong to relevance; timeliness is enhancing."
+    }
+   ]
+  },
+  {
+   "id": "2.3",
+   "title": "The elements",
+   "lecture": "Lecture 2 \u00b7 Conceptual framework",
+   "take": "Ten elements define what goes in the statements; assets and liabilities come first",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "The framework defines the building blocks of the statements. Get the definitions right and most classification questions answer themselves."
+    },
+    {
+     "type": "define",
+     "big": "Asset",
+     "sub": [
+      "A present right of an entity",
+      "to an economic benefit"
+     ],
+     "say": "An asset is a present right of an entity to an economic benefit. Bluestem's kayak molds are assets: it controls them and they'll help generate cash."
+    },
+    {
+     "type": "define",
+     "big": "Liability",
+     "sub": [
+      "A present obligation of an entity",
+      "to transfer an economic benefit"
+     ],
+     "say": "A liability is a present obligation of an entity to transfer an economic benefit. Equity is what's left: assets minus liabilities."
+    },
+    {
+     "type": "list",
+     "heading": "The other elements",
+     "say": "Revenues and expenses come from the company's ongoing major operations. Gains and losses come from peripheral transactions, like selling an old truck. Investments by and distributions to owners change equity directly. Comprehensive income is every change in equity except owner transactions.",
+     "items": [
+      "Revenues, expenses: major operations",
+      "Gains, losses: peripheral activities",
+      "Investments by owners",
+      "Distributions to owners",
+      "Comprehensive income: non-owner changes"
+     ]
+    },
+    {
+     "type": "key",
+     "big": "Assets and liabilities first",
+     "sub": [
+      "Income elements are defined",
+      "as changes in them"
+     ],
+     "say": "Notice the order: revenues and expenses are defined as changes in assets and liabilities. That asset-liability view drives modern standards like revenue and leases."
+    },
+    {
+     "type": "quiz",
+     "q": "Bluestem sells an old delivery truck for more than book value. The excess is a:",
+     "opts": [
+      "Revenue",
+      "Gain",
+      "Investment by owners",
+      "Liability"
+     ],
+     "answer": 1,
+     "say": "Quick check. Bluestem sells an old delivery truck for more than its book value. The excess is what? Pause and pick.",
+     "reveal": "It's B, a gain: a peripheral transaction."
+    }
+   ]
+  },
+  {
+   "id": "2.4",
+   "title": "Basic assumptions",
+   "lecture": "Lecture 2 \u00b7 Conceptual framework",
+   "take": "Economic entity, going concern, monetary unit, periodicity and accrual basis underlie the statements",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Five assumptions sit beneath every set of financial statements. They're so basic you rarely see them, until one fails."
+    },
+    {
+     "type": "list",
+     "heading": "Five assumptions",
+     "items": [
+      "Economic entity: the business is separate",
+      "Going concern: it will continue",
+      "Monetary unit: dollars, unadjusted",
+      "Periodicity: life split into periods",
+      "Accrual basis: when it happens, not cash"
+     ],
+     "say": "Economic entity: the business is separate from its owners. Going concern: it will keep operating. Monetary unit: we measure in dollars and ignore inflation. Periodicity: we split its life into periods. And accrual basis: we record events when they happen, not when cash moves."
+    },
+    {
+     "type": "key",
+     "big": "Economic entity",
+     "sub": [
+      "The founder's lake cabin",
+      "isn't Bluestem's asset"
+     ],
+     "say": "Economic entity: the founder's lake cabin isn't Bluestem's asset, even if he sometimes hosts dealers there."
+    },
+    {
+     "type": "key",
+     "big": "Going concern",
+     "sub": [
+      "Justifies historical cost",
+      "and depreciation"
+     ],
+     "say": "Going concern justifies recording equipment at cost and depreciating it over many years. If liquidation were likely, liquidation values would be more relevant, and auditors must consider substantial doubt."
+    },
+    {
+     "type": "key",
+     "big": "Accrual basis",
+     "sub": [
+      "December wages earned, paid in January:",
+      "December expense"
+     ],
+     "say": "Accrual basis: wages earned in December but paid in January are December expenses. Cash-basis numbers would be simpler, and less useful."
+    },
+    {
+     "type": "quiz",
+     "q": "Which assumption justifies depreciating equipment over its useful life?",
+     "opts": [
+      "Monetary unit",
+      "Going concern",
+      "Periodicity",
+      "Economic entity"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which assumption justifies depreciating equipment over its useful life? Pause and pick.",
+     "reveal": "It's B, going concern."
+    }
+   ]
+  },
+  {
+   "id": "2.5",
+   "title": "Measurement and recognition principles",
+   "lecture": "Lecture 2 \u00b7 Conceptual framework",
+   "take": "Measure at historical cost or fair value; recognize revenue when performance obligations are satisfied; match expenses; disclose fully",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Four principles tell us how much to record, when to record it, and what to tell users."
+    },
+    {
+     "type": "compare",
+     "heading": "Measurement",
+     "cols": [
+      "Historical cost",
+      "Fair value"
+     ],
+     "rows": [
+      [
+       "Basis",
+       "Price paid",
+       "Exit price today"
+      ],
+      [
+       "Strength",
+       "Verifiable",
+       "Relevant"
+      ],
+      [
+       "Used for",
+       "Most PP&E, inventory",
+       "Many investments"
+      ]
+     ],
+     "say": "Measurement uses historical cost, the price paid, which is verifiable; or fair value, the price to sell an asset or transfer a liability today, which is often more relevant. GAAP is a mixed model."
+    },
+    {
+     "type": "table",
+     "heading": "Fair value hierarchy",
+     "rows": [
+      [
+       "Level 1",
+       "Quoted prices, identical items"
+      ],
+      [
+       "Level 2",
+       "Other observable inputs"
+      ],
+      [
+       "Level 3",
+       "Unobservable inputs, models"
+      ]
+     ],
+     "say": "Fair values are ranked by their inputs. Level 1 uses quoted prices for identical items in active markets. Level 2 uses other observable inputs. Level 3 relies on unobservable inputs and models, the least reliable."
+    },
+    {
+     "type": "list",
+     "heading": "Recognition and disclosure",
+     "items": [
+      "Revenue: when a performance obligation is satisfied",
+      "Expenses: when they help create revenue",
+      "Full disclosure: notes and supplementary information"
+     ],
+     "say": "Revenue is recognized when the company satisfies a performance obligation. Expenses are recognized when they help create revenue, the matching idea, or systematically over time. And full disclosure says report anything significant enough to affect users' judgment."
+    },
+    {
+     "type": "key",
+     "big": "Bluestem example",
+     "sub": [
+      "Kayaks shipped Dec 30: revenue in December;",
+      "sales commissions: December too"
+     ],
+     "say": "Kayaks delivered to a dealer on December 30th are December revenue, even if the dealer pays in February. The commissions on those sales are December expenses too."
+    },
+    {
+     "type": "quiz",
+     "q": "A Level 3 fair value measurement uses:",
+     "opts": [
+      "Quoted prices for identical items",
+      "Similar items' prices",
+      "Unobservable inputs",
+      "Historical cost"
+     ],
+     "answer": 2,
+     "say": "Quick check. A Level 3 fair value measurement uses what? Pause and pick.",
+     "reveal": "It's C, unobservable inputs."
+    }
+   ]
+  },
+  {
+   "id": "2.6",
+   "title": "The cost constraint and materiality in practice",
+   "lecture": "Lecture 2 \u00b7 Conceptual framework",
+   "take": "Information is worth providing only if its benefits exceed its costs",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Perfect information is expensive. The framework has one pervasive constraint: cost."
+    },
+    {
+     "type": "define",
+     "big": "Cost constraint",
+     "sub": [
+      "Report information only if benefits",
+      "justify the costs"
+     ],
+     "say": "The cost constraint says information should be provided only when its benefits justify the cost of preparing and using it. Benefits are hard to measure, so judgment is involved."
+    },
+    {
+     "type": "key",
+     "big": "Capitalization threshold",
+     "sub": [
+      "Bluestem expenses items",
+      "under $2,500"
+     ],
+     "say": "In practice, Bluestem expenses tools and equipment costing less than $2,500, even if they last several years. Tracking and depreciating every drill isn't worth it, and the effect is immaterial."
+    },
+    {
+     "type": "table",
+     "heading": "Is this error material?",
+     "rows": [
+      [
+       "Net income",
+       500000
+      ],
+      [
+       "Unrecorded repair bill",
+       8000
+      ],
+      [
+       "Percent of income",
+       "1.6%"
+      ],
+      [
+       "Below the covenant?",
+       "Material"
+      ]
+     ],
+     "say": "An unrecorded $8,000 repair bill is one point six percent of $500,000 income: usually immaterial. But if it's what keeps Bluestem above its loan covenant, it's material. Size isn't the only test."
+    },
+    {
+     "type": "key",
+     "big": "Judgment everywhere",
+     "sub": [
+      "Framework concepts guide,",
+      "professionals decide"
+     ],
+     "say": "The framework won't give you a formula. It gives you the right questions, and professional judgment fills the gap."
+    },
+    {
+     "type": "quiz",
+     "q": "Why does Bluestem expense a $900 drill that lasts 5 years?",
+     "opts": [
+      "Going concern",
+      "Cost constraint and materiality",
+      "Neutrality",
+      "Periodicity"
+     ],
+     "answer": 1,
+     "say": "Quick check. Why does Bluestem expense a nine hundred dollar drill that lasts five years? Pause and pick.",
+     "reveal": "It's B: the cost constraint and materiality."
+    }
+   ]
+  }
+ ]
+}

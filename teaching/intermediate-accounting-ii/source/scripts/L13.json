@@ -1,0 +1,526 @@
+{
+ "videos": [
+  {
+   "id": "13.1",
+   "title": "Types of accounting changes",
+   "lecture": "Lecture 13 \u00b7 Accounting changes and errors",
+   "take": "Principle changes are retrospective; estimate changes are prospective; errors are restated",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem has been public for three years. It's changing an inventory method, revising estimates, and it just found a mistake. Each is handled differently."
+    },
+    {
+     "type": "compare",
+     "heading": "Three types, three treatments",
+     "cols": [
+      "Example",
+      "Treatment"
+     ],
+     "rows": [
+      [
+       "Change in principle",
+       "LIFO to FIFO",
+       "Retrospective"
+      ],
+      [
+       "Change in estimate",
+       "New useful life",
+       "Prospective"
+      ],
+      [
+       "Error correction",
+       "Missed depreciation",
+       "Restate: prior period adj."
+      ]
+     ],
+     "say": "A change in accounting principle, like LIFO to FIFO, is applied retrospectively. A change in estimate, like a new useful life, is applied prospectively. Correcting an error restates prior statements through a prior period adjustment."
+    },
+    {
+     "type": "key",
+     "big": "Change in reporting entity",
+     "sub": [
+      "E.g. consolidating a subsidiary:",
+      "retrospective"
+     ],
+     "say": "A fourth type, a change in reporting entity, such as presenting consolidated statements instead of individual ones, is also applied retrospectively."
+    },
+    {
+     "type": "key",
+     "big": "Why the different treatments?",
+     "sub": [
+      "Comparability vs not second-guessing",
+      "good-faith estimates"
+     ],
+     "say": "Why the difference? Principle changes are restated so years are comparable on one method. Estimates aren't restated because they were the best information at the time. Errors are restated because the old statements were wrong."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "Not a change in principle",
+     "sub": [
+      "A new method for new events,",
+      "or for immaterial items"
+     ],
+     "say": "Adopting a method for transactions that are new or different in substance, or that were previously immaterial, isn't a change in principle."
+    },
+    {
+     "type": "quiz",
+     "q": "Bluestem revises a machine's salvage value. This is:",
+     "opts": [
+      "A change in principle",
+      "A change in estimate",
+      "An error",
+      "A change in entity"
+     ],
+     "answer": 1,
+     "say": "Quick check. Bluestem revises a machine's salvage value. What kind of change is it? Pause and pick.",
+     "reveal": "It's B, a change in estimate."
+    }
+   ]
+  },
+  {
+   "id": "13.2",
+   "title": "Changes in principle: retrospective application",
+   "lecture": "Lecture 13 \u00b7 Accounting changes and errors",
+   "take": "Restate prior periods presented; adjust the opening retained earnings of the earliest period for earlier effects",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Northwind Canoe used LIFO before Bluestem bought it. In 2031, Bluestem switches Northwind to FIFO to match the rest of the company."
+    },
+    {
+     "type": "define",
+     "big": "Retrospective application",
+     "sub": [
+      "Apply the new principle as if it",
+      "had always been used"
+     ],
+     "say": "Retrospective application means applying the new method to prior periods as if it had always been used. The change must be preferable, and justified in the notes."
+    },
+    {
+     "type": "table",
+     "heading": "Pretax income, FIFO minus LIFO",
+     "rows": [
+      [
+       "Before 2029",
+       40000
+      ],
+      [
+       "2029",
+       20000
+      ],
+      [
+       "2030",
+       30000
+      ],
+      [
+       "Tax rate",
+       "25%"
+      ]
+     ],
+     "say": "FIFO would have given higher pretax income: $40,000 more in total before 2029, $20,000 more in 2029, and $30,000 more in 2030. The tax rate is twenty-five percent."
+    },
+    {
+     "type": "table",
+     "heading": "Presenting 2031 with 2030 comparatives",
+     "rows": [
+      [
+       "2030 income restated, after tax",
+       22500
+      ],
+      [
+       "Effect before 2030, after tax",
+       45000
+      ],
+      [
+       "To Jan 1, 2030 retained earnings",
+       45000,
+       "total"
+      ]
+     ],
+     "say": "Bluestem presents 2031 and 2030. It restates 2030 income upward by $22,500 after tax. Effects before 2030, $60,000 pretax or $45,000 after tax, adjust the January 1, 2030 retained earnings balance."
+    },
+    {
+     "type": "journal",
+     "heading": "Entry in 2031: cumulative to Jan 1, 2031",
+     "rows": [
+      [
+       "Inventory",
+       90000,
+       ""
+      ],
+      [
+       "Deferred tax liability",
+       "",
+       22500
+      ],
+      [
+       "Retained earnings",
+       "",
+       67500
+      ]
+     ],
+     "say": "The 2031 entry records the full cumulative difference to January 1, 2031: $90,000 more inventory, $22,500 of deferred tax, and $67,500 to retained earnings."
+    },
+    {
+     "type": "quiz",
+     "q": "A change in principle increases prior years' pretax income by $100,000 in total; tax rate 25%. Adjustment to beginning retained earnings?",
+     "opts": [
+      "$100,000",
+      "$75,000",
+      "$25,000",
+      "$0"
+     ],
+     "answer": 1,
+     "say": "Quick check. A change in principle increases prior years' pretax income by a hundred thousand in total; tax rate twenty-five percent. Adjustment to beginning retained earnings? Pause and pick.",
+     "reveal": "It's B, $75,000."
+    }
+   ]
+  },
+  {
+   "id": "13.3",
+   "title": "Direct effects, indirect effects and impracticability",
+   "lecture": "Lecture 13 \u00b7 Accounting changes and errors",
+   "take": "Restate direct effects only; if retrospective application is impracticable, apply from the earliest practicable date",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Restating past years raises two practical questions."
+    },
+    {
+     "type": "compare",
+     "heading": "Direct vs indirect effects",
+     "cols": [
+      "Direct",
+      "Indirect"
+     ],
+     "rows": [
+      [
+       "Example",
+       "Inventory, COGS, tax",
+       "Profit-sharing bonuses"
+      ],
+      [
+       "Restated?",
+       "Yes",
+       "No: current period"
+      ]
+     ],
+     "say": "Direct effects, like the change in inventory, cost of goods sold and taxes, are restated. Indirect effects, like employee bonuses that would have been higher under FIFO, aren't restated. They're recognized in the period of the change, if contractually owed."
+    },
+    {
+     "type": "define",
+     "big": "Impracticable",
+     "sub": [
+      "Effects can't be determined after",
+      "every reasonable effort"
+     ],
+     "say": "Retrospective application is impracticable if, after every reasonable effort, the effects can't be determined: the records don't exist, management's past intent would have to be assumed, or estimates can't be objectively made."
+    },
+    {
+     "type": "key",
+     "big": "Then apply prospectively",
+     "sub": [
+      "From the earliest date practicable"
+     ],
+     "say": "Then the new principle is applied from the earliest date practicable, often prospectively. Changing to LIFO is the classic case: past LIFO layers usually can't be reconstructed, so the opening inventory becomes the first layer."
+    },
+    {
+     "type": "list",
+     "heading": "Disclose",
+     "items": [
+      "Nature of and reason for the change",
+      "Why it's preferable",
+      "Effects on each line and on EPS",
+      "Cumulative effect on retained earnings"
+     ],
+     "say": "The notes explain the nature of and reason for the change, why the new method is preferable, the effect on each line item and on EPS, and the cumulative effect on opening retained earnings."
+    },
+    {
+     "type": "quiz",
+     "q": "Under a retrospective change, prior-year bonuses that depended on income are:",
+     "opts": [
+      "Restated",
+      "Not restated: indirect effects",
+      "Recorded in OCI",
+      "Ignored forever"
+     ],
+     "answer": 1,
+     "say": "Quick check. Under a retrospective change, prior-year bonuses that depended on income are treated how? Pause and pick.",
+     "reveal": "It's B, not restated: they're indirect effects."
+    }
+   ]
+  },
+  {
+   "id": "13.4",
+   "title": "Changes in estimate",
+   "lecture": "Lecture 13 \u00b7 Accounting changes and errors",
+   "take": "Account for estimates prospectively; a change in depreciation method is a change in estimate effected by a change in principle",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem's new thermoforming machine was depreciated double-declining-balance. After two years, the pattern of use looks steady, so it switches to straight-line."
+    },
+    {
+     "type": "define",
+     "big": "Change in estimate effected by a change in principle",
+     "sub": [
+      "Depreciation method changes:",
+      "treated prospectively"
+     ],
+     "say": "A change in depreciation method is a change in estimate effected by a change in accounting principle. It's inseparable from new information about how the asset's benefits are used, so it's accounted for prospectively."
+    },
+    {
+     "type": "table",
+     "heading": "Thermoforming machine",
+     "rows": [
+      [
+       "Cost (5-year life, no salvage)",
+       400000
+      ],
+      [
+       "DDB year 1: 40%",
+       -160000
+      ],
+      [
+       "DDB year 2: 40% \u00d7 240,000",
+       -96000
+      ],
+      [
+       "Book value after 2 years",
+       144000,
+       "total"
+      ],
+      [
+       "Straight-line over 3 years left",
+       48000,
+       "total"
+      ]
+     ],
+     "say": "The machine cost $400,000, with a five-year life and no salvage. Double-declining-balance took $160,000 and then $96,000, leaving a book value of $144,000. Straight-line over the remaining three years: $48,000 a year from now on."
+    },
+    {
+     "type": "key",
+     "big": "No catch-up",
+     "sub": [
+      "Prior years stay as reported;",
+      "no cumulative effect"
+     ],
+     "say": "No catch-up adjustment, no restatement. The remaining book value is simply spread over the remaining life using the new method."
+    },
+    {
+     "type": "key",
+     "big": "Other estimates",
+     "sub": [
+      "Bad debts, warranties, useful lives,",
+      "inventory obsolescence"
+     ],
+     "say": "The same prospective treatment applies to all estimates: credit losses, warranty costs, useful lives and salvage, obsolescence. Material changes are disclosed with their effect on income and EPS."
+    },
+    {
+     "type": "quiz",
+     "q": "Book value $90,000 after 3 years; switch to straight-line; 6 years remain; salvage $6,000. New annual depreciation?",
+     "opts": [
+      "$15,000",
+      "$14,000",
+      "$10,000",
+      "$9,333"
+     ],
+     "answer": 1,
+     "say": "Quick check. Book value ninety thousand after three years; switch to straight-line; six years remain; salvage six thousand. New annual depreciation? Pause and pick.",
+     "reveal": "It's B, $14,000."
+    }
+   ]
+  },
+  {
+   "id": "13.5",
+   "title": "Correcting errors",
+   "lecture": "Lecture 13 \u00b7 Accounting changes and errors",
+   "take": "Correct prior-period errors as prior period adjustments to opening retained earnings, net of tax, and restate",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "During 2031, Sam discovers that 2030 depreciation of $50,000 on the Redwood Falls plant was never recorded."
+    },
+    {
+     "type": "list",
+     "heading": "What counts as an error",
+     "items": [
+      "Mathematical mistakes",
+      "Misapplied GAAP",
+      "Oversight or misuse of facts",
+      "Changing from non-GAAP to GAAP"
+     ],
+     "say": "Errors include mathematical mistakes, mistakes in applying GAAP, oversight or misuse of facts that existed when the statements were prepared, and changing from an unacceptable method to GAAP. Better information later isn't an error."
+    },
+    {
+     "type": "table",
+     "heading": "The missed depreciation",
+     "rows": [
+      [
+       "2030 depreciation omitted",
+       50000
+      ],
+      [
+       "Tax effect at 25%",
+       -12500
+      ],
+      [
+       "Net effect on 2030 income",
+       37500,
+       "total"
+      ]
+     ],
+     "say": "2030 depreciation was understated by $50,000, so 2030 income was overstated by $37,500 after tax."
+    },
+    {
+     "type": "journal",
+     "heading": "Prior period adjustment, 2031",
+     "rows": [
+      [
+       "Retained earnings",
+       37500,
+       ""
+      ],
+      [
+       "Deferred tax liability",
+       12500,
+       ""
+      ],
+      [
+       "Accumulated depreciation",
+       "",
+       50000
+      ]
+     ],
+     "say": "Bluestem records a prior period adjustment: debit retained earnings for $37,500, adjust taxes for $12,500, and credit Accumulated Depreciation for $50,000. Nothing goes through 2031 income."
+    },
+    {
+     "type": "key",
+     "big": "Restate and disclose",
+     "sub": [
+      "Comparative 2030 statements restated;",
+      "big errors: a restatement"
+     ],
+     "say": "The 2030 comparative statements are restated, and the notes describe the error and its effects. A material error in issued statements is a restatement, often called a Big R, which damages credibility."
+    },
+    {
+     "type": "quiz",
+     "q": "A prior-year expense of $80,000 was omitted; tax 25%. Prior period adjustment to retained earnings?",
+     "opts": [
+      "$80,000 debit",
+      "$60,000 debit",
+      "$20,000 debit",
+      "$60,000 credit"
+     ],
+     "answer": 1,
+     "say": "Quick check. A prior-year expense of eighty thousand was omitted; tax twenty-five percent. Prior period adjustment to retained earnings? Pause and pick.",
+     "reveal": "It's B, a $60,000 debit."
+    }
+   ]
+  },
+  {
+   "id": "13.6",
+   "title": "Counterbalancing and noncounterbalancing errors",
+   "lecture": "Lecture 13 \u00b7 Accounting changes and errors",
+   "take": "Counterbalancing errors correct themselves after two years; noncounterbalancing errors persist until fixed",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Some errors fix themselves. Others never do."
+    },
+    {
+     "type": "compare",
+     "heading": "Two kinds of error",
+     "cols": [
+      "Counterbalancing",
+      "Noncounterbalancing"
+     ],
+     "rows": [
+      [
+       "Examples",
+       "Inventory, accruals",
+       "Depreciation, capitalizing"
+      ],
+      [
+       "Self-corrects?",
+       "Over two periods",
+       "No, until corrected"
+      ]
+     ],
+     "say": "Counterbalancing errors, like a misstated ending inventory or a missed accrual, reverse themselves over two periods. Noncounterbalancing errors, like missed depreciation, don't."
+    },
+    {
+     "type": "table",
+     "heading": "2030 ending inventory understated $20,000",
+     "rows": [
+      [
+       "2030 income (pretax)",
+       "Understated 20,000"
+      ],
+      [
+       "2031 income (pretax)",
+       "Overstated 20,000"
+      ],
+      [
+       "Retained earnings, end of 2031",
+       "Correct"
+      ]
+     ],
+     "say": "Suppose 2030's ending inventory was understated by $20,000. 2030 income was understated, 2031 income will be overstated, and by the end of 2031, retained earnings is correct."
+    },
+    {
+     "type": "journal",
+     "heading": "Found in 2031, books still open",
+     "rows": [
+      [
+       "Inventory (beginning)",
+       20000,
+       ""
+      ],
+      [
+       "Retained earnings",
+       "",
+       15000
+      ],
+      [
+       "Income tax payable",
+       "",
+       5000
+      ]
+     ],
+     "say": "If Bluestem finds the error in 2031 before closing the books, it corrects beginning inventory and retained earnings, net of tax. If the books for 2031 are already closed, no entry is needed, but the 2030 comparatives are still restated."
+    },
+    {
+     "type": "key",
+     "big": "Work systematically",
+     "sub": [
+      "Year by year: income effect,",
+      "then balance sheet"
+     ],
+     "say": "When several errors are found, analyze them year by year: the effect on each year's income, then on the balance sheet at each date. A worksheet helps keep the counterbalancing ones straight."
+    },
+    {
+     "type": "quiz",
+     "q": "An accrued wage of $8,000 was missed at the end of 2030. If found after 2031's books are closed, the correcting entry is:",
+     "opts": [
+      "Debit retained earnings $8,000",
+      "None: it has counterbalanced",
+      "Credit wages payable $8,000",
+      "Debit wage expense $8,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. An accrued wage of eight thousand was missed at the end of 2030. If it's found after 2031's books are closed, what's the correcting entry? Pause and pick.",
+     "reveal": "It's B, none: it has counterbalanced. Comparatives are still restated."
+    }
+   ]
+  }
+ ]
+}

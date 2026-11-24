@@ -1,0 +1,450 @@
+{
+ "videos": [
+  {
+   "id": "1.1",
+   "title": "Why financial reporting matters",
+   "lecture": "Lecture 1 \u00b7 Financial reporting and standards",
+   "take": "Financial reports help investors and creditors allocate capital to the businesses that use it best",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Meet Bluestem Outdoor, a Marshall, Minnesota company that makes kayaks, tents and camping gear. It wants a bank loan this year and plans to sell shares to the public in three years. Everyone lending or investing will read its financial statements."
+    },
+    {
+     "type": "define",
+     "big": "Financial accounting",
+     "sub": [
+      "Reporting to people outside the company:",
+      "investors, lenders, regulators"
+     ],
+     "say": "Financial accounting is the process of producing reports for people outside the company: investors, lenders, suppliers and regulators. Managerial accounting, which you met in cost accounting, serves people inside."
+    },
+    {
+     "type": "list",
+     "heading": "The financial statements",
+     "items": [
+      "Balance sheet",
+      "Income statement",
+      "Statement of cash flows",
+      "Statement of stockholders' equity",
+      "Plus the notes"
+     ],
+     "say": "The core statements are the balance sheet, the income statement, the statement of cash flows and the statement of stockholders' equity. The notes are part of the statements, not an extra."
+    },
+    {
+     "type": "key",
+     "big": "Capital allocation",
+     "sub": [
+      "Good information moves money",
+      "to the most productive companies"
+     ],
+     "say": "Why does it matter? Capital allocation. Investors and lenders have limited money. Reliable, comparable reports help them send it to the companies that will use it best, and lower the cost of capital for honest reporters."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "Not every user gets what they want",
+     "sub": [
+      "Reports are general purpose:",
+      "built for investors and creditors"
+     ],
+     "say": "Financial statements are general-purpose reports. They're built for the needs of investors and creditors as a group, so no single user, like Bluestem's bank, gets exactly what it would design for itself."
+    },
+    {
+     "type": "quiz",
+     "q": "Who are the primary users of general-purpose financial reports?",
+     "opts": [
+      "Managers",
+      "Investors and creditors",
+      "The IRS",
+      "Employees"
+     ],
+     "answer": 1,
+     "say": "Quick check. Who are the primary users of general-purpose financial reports? Pause and pick.",
+     "reveal": "It's B, investors and creditors."
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "title": "Who sets the rules",
+   "lecture": "Lecture 1 \u00b7 Financial reporting and standards",
+   "take": "The SEC has legal authority; the FASB writes US GAAP; the PCAOB oversees audits of public companies",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "US accounting rules come from a partnership between a government agency and a private standard setter."
+    },
+    {
+     "type": "compare",
+     "heading": "The main bodies",
+     "cols": [
+      "Role",
+      "Created"
+     ],
+     "rows": [
+      [
+       "SEC",
+       "Legal authority over public filers",
+       "1934"
+      ],
+      [
+       "FASB",
+       "Writes US GAAP",
+       "1973"
+      ],
+      [
+       "PCAOB",
+       "Sets audit standards, inspects",
+       "2002"
+      ],
+      [
+       "AICPA",
+       "CPA profession; private audits",
+       "1887"
+      ]
+     ],
+     "say": "The SEC, created in 1934, has legal authority over financial reporting by public companies. It lets the private FASB, created in 1973, write the standards. The PCAOB, set up by the Sarbanes-Oxley Act in 2002, oversees audits of public companies. The AICPA represents the CPA profession."
+    },
+    {
+     "type": "define",
+     "big": "GAAP",
+     "sub": [
+      "Generally accepted accounting principles:",
+      "the rules for US financial reporting"
+     ],
+     "say": "Together they produce GAAP, generally accepted accounting principles: the standards, rules and practices US companies follow when they report."
+    },
+    {
+     "type": "key",
+     "big": "Enforcement",
+     "sub": [
+      "SEC reviews filings, can sue;",
+      "auditors give an opinion"
+     ],
+     "say": "The SEC enforces GAAP by reviewing filings and taking action against companies that break the rules. Independent auditors, like Bluestem's auditor Redwood and Hart, give an opinion on whether the statements are fairly presented."
+    },
+    {
+     "type": "key",
+     "big": "Private companies too",
+     "sub": [
+      "Banks often require",
+      "audited GAAP statements"
+     ],
+     "say": "Bluestem isn't public yet, but its bank requires audited GAAP statements anyway. A Private Company Council advises the FASB on simpler alternatives for companies like it."
+    },
+    {
+     "type": "quiz",
+     "q": "Which body writes US GAAP standards?",
+     "opts": [
+      "SEC",
+      "PCAOB",
+      "FASB",
+      "AICPA"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which body writes US GAAP standards? Pause and pick.",
+     "reveal": "It's C, the FASB. The SEC has the legal authority but lets the FASB set standards."
+    }
+   ]
+  },
+  {
+   "id": "1.3",
+   "title": "How standards are made",
+   "lecture": "Lecture 1 \u00b7 Financial reporting and standards",
+   "take": "The FASB follows due process, and all authoritative GAAP sits in the Codification",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Before a standard becomes GAAP, everyone affected gets a chance to argue about it."
+    },
+    {
+     "type": "flow",
+     "heading": "FASB due process",
+     "items": [
+      "Topic added to agenda",
+      "Research and analysis",
+      "Discussion paper",
+      "Exposure draft",
+      "Comments and roundtables",
+      "Accounting Standards Update"
+     ],
+     "say": "That's due process. The FASB adds a topic to its agenda, researches it, may issue a discussion paper, then publishes an exposure draft. Companies, auditors and investors comment and attend roundtables. Finally, the board issues an Accounting Standards Update."
+    },
+    {
+     "type": "define",
+     "big": "The Codification",
+     "sub": [
+      "The single source of",
+      "authoritative US GAAP"
+     ],
+     "say": "Every update goes into the FASB Accounting Standards Codification, the single source of authoritative US GAAP. If it isn't in the Codification, or SEC rules for public companies, it isn't authoritative."
+    },
+    {
+     "type": "table",
+     "heading": "Codification structure",
+     "rows": [
+      [
+       "Topic 606",
+       "Revenue from contracts"
+      ],
+      [
+       "Topic 330",
+       "Inventory"
+      ],
+      [
+       "Topic 360",
+       "Property, plant and equipment"
+      ],
+      [
+       "Topic 842",
+       "Leases"
+      ]
+     ],
+     "say": "It's organized by topic. Topic 606 is revenue, 330 is inventory, 360 is property, plant and equipment, and 842 is leases. Topics break down into subtopics, sections and paragraphs."
+    },
+    {
+     "type": "key",
+     "big": "Learn to search it",
+     "sub": [
+      "Professional exams and jobs",
+      "expect it"
+     ],
+     "say": "Learning to search the Codification is a professional skill. The CPA exam's research questions expect it."
+    },
+    {
+     "type": "quiz",
+     "q": "What does the FASB issue at the end of due process?",
+     "opts": [
+      "Exposure draft",
+      "Accounting Standards Update",
+      "Audit opinion",
+      "Discussion paper"
+     ],
+     "answer": 1,
+     "say": "Quick check. What does the FASB issue at the end of due process? Pause and pick.",
+     "reveal": "It's B, an Accounting Standards Update, which amends the Codification."
+    }
+   ]
+  },
+  {
+   "id": "1.4",
+   "title": "Issues in financial reporting",
+   "lecture": "Lecture 1 \u00b7 Financial reporting and standards",
+   "take": "Standard setting is political; non-GAAP measures and the expectations gap are live issues",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Accounting rules change behavior, so setting them is never purely technical."
+    },
+    {
+     "type": "key",
+     "big": "Economic consequences",
+     "sub": [
+      "Rules change reported profit,",
+      "so companies lobby"
+     ],
+     "say": "Standards have economic consequences. A rule that puts leases on the balance sheet or expenses stock options changes reported profit and debt, so affected companies lobby hard. The FASB tries to stay neutral: report what happened, not what someone wants to happen."
+    },
+    {
+     "type": "define",
+     "big": "Expectations gap",
+     "sub": [
+      "What the public thinks auditors do",
+      "vs what they can do"
+     ],
+     "say": "The expectations gap is the difference between what the public thinks accountants and auditors should catch and what they can reasonably do. It widens after every scandal."
+    },
+    {
+     "type": "list",
+     "heading": "Current issues",
+     "items": [
+      "Non-GAAP earnings measures",
+      "Fair value vs historical cost",
+      "Timeliness and digital reporting",
+      "Sustainability disclosures"
+     ],
+     "say": "Current issues include companies reporting adjusted, non-GAAP earnings; how much to use fair value instead of historical cost; faster, digital reporting; and sustainability disclosures."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "Adjusted EBITDA",
+     "sub": [
+      "Non-GAAP measures must be",
+      "reconciled to GAAP"
+     ],
+     "say": "When Bluestem's founder talks about adjusted EBITDA, remember: public companies must reconcile any non-GAAP measure to the closest GAAP number and not give it more prominence."
+    },
+    {
+     "type": "quiz",
+     "q": "The difference between what the public expects auditors to catch and what they can do is the:",
+     "opts": [
+      "GAAP gap",
+      "Expectations gap",
+      "Reporting gap",
+      "Convergence gap"
+     ],
+     "answer": 1,
+     "say": "Quick check. What's the difference between what the public expects auditors to catch and what they can do called? Pause and pick.",
+     "reveal": "It's B, the expectations gap."
+    }
+   ]
+  },
+  {
+   "id": "1.5",
+   "title": "IFRS and the IASB",
+   "lecture": "Lecture 1 \u00b7 Financial reporting and standards",
+   "take": "Most of the world uses IFRS; US GAAP and IFRS are similar but differ in important places",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem sells kayaks in Canada and Europe. Its competitors there use a different rulebook."
+    },
+    {
+     "type": "define",
+     "big": "IFRS",
+     "sub": [
+      "International Financial Reporting Standards,",
+      "written by the IASB in London"
+     ],
+     "say": "IFRS, International Financial Reporting Standards, are written by the IASB in London and required or permitted in well over a hundred countries."
+    },
+    {
+     "type": "compare",
+     "heading": "A few differences",
+     "cols": [
+      "US GAAP",
+      "IFRS"
+     ],
+     "rows": [
+      [
+       "LIFO inventory",
+       "Allowed",
+       "Not allowed"
+      ],
+      [
+       "Asset revaluation",
+       "Not allowed",
+       "Allowed"
+      ],
+      [
+       "Impairment reversal",
+       "Not allowed",
+       "Allowed"
+      ],
+      [
+       "Development costs",
+       "Expensed",
+       "Capitalized if criteria met"
+      ]
+     ],
+     "say": "They differ in places. US GAAP allows LIFO inventory; IFRS doesn't. IFRS lets companies revalue property upward and reverse impairments; US GAAP doesn't. IFRS capitalizes some development costs that US GAAP expenses. We'll flag differences throughout the course."
+    },
+    {
+     "type": "key",
+     "big": "Convergence slowed",
+     "sub": [
+      "Joint projects on revenue and leases;",
+      "the SEC hasn't adopted IFRS"
+     ],
+     "say": "The FASB and IASB worked together on revenue and leases, but convergence has slowed. The SEC accepts IFRS from foreign companies listed in the US, but US companies still use GAAP."
+    },
+    {
+     "type": "key",
+     "big": "Principles vs rules",
+     "sub": [
+      "IFRS: broader principles;",
+      "GAAP: more detailed guidance"
+     ],
+     "say": "A common generalization: IFRS relies more on broad principles and judgment; US GAAP has more detailed rules. In practice both have plenty of each."
+    },
+    {
+     "type": "quiz",
+     "q": "Which inventory method does IFRS prohibit?",
+     "opts": [
+      "FIFO",
+      "Average cost",
+      "LIFO",
+      "Specific identification"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which inventory method does IFRS prohibit? Pause and pick.",
+     "reveal": "It's C, LIFO."
+    }
+   ]
+  },
+  {
+   "id": "1.6",
+   "title": "Ethics in financial reporting",
+   "lecture": "Lecture 1 \u00b7 Financial reporting and standards",
+   "take": "Pressure to hit targets creates ethical dilemmas; identify the stakeholders and the consequences",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "It's December 28th. Bluestem is $40,000 short of the profit its bank covenant requires. The founder has an idea."
+    },
+    {
+     "type": "key",
+     "big": "The request",
+     "sub": [
+      "Hold December's repair invoices",
+      "until January"
+     ],
+     "say": "He asks controller Sam Nygaard to hold $40,000 of December repair invoices and record them in January. Profit would just clear the covenant."
+    },
+    {
+     "type": "flow",
+     "heading": "Working through a dilemma",
+     "items": [
+      "Recognize the ethical issue",
+      "Identify the stakeholders",
+      "List the alternatives",
+      "Weigh the consequences",
+      "Decide and act"
+     ],
+     "say": "Work through it in steps: recognize the ethical issue, identify the stakeholders, list the alternatives, weigh the consequences for each stakeholder, then decide and act."
+    },
+    {
+     "type": "list",
+     "heading": "Stakeholders here",
+     "items": [
+      "The bank, relying on the covenant",
+      "Future investors",
+      "Employees and the auditor",
+      "Sam's own career and license"
+     ],
+     "say": "The stakeholders include the bank, which relies on honest covenant reporting; future investors; employees and the auditor; and Sam, whose career and future CPA license are at stake."
+    },
+    {
+     "type": "key",
+     "big": "Record December costs in December",
+     "sub": [
+      "Talk to the bank early;",
+      "a waiver beats a misstatement"
+     ],
+     "say": "Recording December's expenses in January misstates both years. Sam should record them, and Bluestem should talk to the bank now. Lenders often grant waivers. They rarely forgive being misled."
+    },
+    {
+     "type": "quiz",
+     "q": "What's the first step in resolving an ethical dilemma?",
+     "opts": [
+      "Decide",
+      "Recognize the ethical issue",
+      "Weigh consequences",
+      "Ask the auditor"
+     ],
+     "answer": 1,
+     "say": "Quick check. What's the first step in resolving an ethical dilemma? Pause and pick.",
+     "reveal": "It's B: recognize that there's an ethical issue at all."
+    }
+   ]
+  }
+ ]
+}

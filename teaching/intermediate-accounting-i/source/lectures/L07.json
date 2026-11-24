@@ -1,0 +1,699 @@
+{
+ "meta": {
+  "n": 7,
+  "short": "Time value of money II",
+  "title": "Time value of money: deferred annuities, bonds and measurement",
+  "week": 7,
+  "ch": "Chapter 6",
+  "part": "Time value of money",
+  "summary": "Deferred annuities, valuing long-term bonds, the effective-interest method, solving for loan payments and amortization schedules, and present value measurement with expected cash flows."
+ },
+ "videos": [
+  {
+   "id": "7.1",
+   "title": "Deferred annuities",
+   "lecture": "Lecture 7 · Time value of money II",
+   "take": "Value the annuity at the start of its payments, then discount that amount back to today",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem licenses its kayak design to a Canadian maker. The licensee will pay $30,000 a year for four years, but the first payment isn't until the end of year three."
+    },
+    {
+     "type": "define",
+     "big": "Deferred annuity",
+     "sub": [
+      "An annuity whose payments begin",
+      "after more than one period"
+     ],
+     "say": "That's a deferred annuity: the payments start after more than one period has passed. Here, two years go by with no payments, then four payments arrive at the ends of years three through six."
+    },
+    {
+     "type": "table",
+     "heading": "Two-step method at 8%",
+     "rows": [
+      [
+       "30,000 × PVA 4 periods, 3.31213",
+       ""
+      ],
+      [
+       "Value at end of year 2",
+       99364
+      ],
+      [
+       "Discount 2 years at 8%",
+       "× 0.85734"
+      ],
+      [
+       "Present value today",
+       85189,
+       "total"
+      ]
+     ],
+     "say": "Step one: value the four payments as an ordinary annuity as of the end of year two. The factor is three point three one two one three, so $99,364. Step two: discount that back two years, times point eight five seven three four. The license is worth $85,189 today."
+    },
+    {
+     "type": "table",
+     "heading": "Check: subtraction method",
+     "rows": [
+      [
+       "PVA 6 periods",
+       "4.62288"
+      ],
+      [
+       "Less PVA 2 periods",
+       "-1.78326"
+      ],
+      [
+       "Deferred factor",
+       "2.83962",
+       "total"
+      ],
+      [
+       "30,000 × 2.83962",
+       85189,
+       "total"
+      ]
+     ],
+     "say": "Another way: take the six-period annuity factor and subtract the two-period factor, for the years with no payments. Two point eight three nine six two times $30,000 gives the same $85,189."
+    },
+    {
+     "type": "key",
+     "big": "Draw the timeline",
+     "sub": [
+      "Count the empty periods",
+      "before the first payment"
+     ],
+     "say": "The timeline matters: count the periods with no payment. A common error is to discount for three years here instead of two."
+    },
+    {
+     "type": "quiz",
+     "q": "An ordinary annuity starting at the end of year 4 is deferred how many periods?",
+     "opts": [
+      "4",
+      "3",
+      "2",
+      "1"
+     ],
+     "answer": 1,
+     "say": "Quick check. An ordinary annuity whose first payment comes at the end of year four is deferred how many periods? Pause and pick.",
+     "reveal": "It's B, three."
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "title": "Valuing a bond",
+   "lecture": "Lecture 7 · Time value of money II",
+   "take": "Bond price = PV of principal + PV of interest, both at the market rate",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem has spare cash and is looking at a five-year, $100,000 corporate bond paying six percent interest, semiannually. Similar bonds yield eight percent. What should it pay?"
+    },
+    {
+     "type": "list",
+     "heading": "Two cash flow streams",
+     "items": [
+      "Principal: $100,000 at maturity",
+      "Interest: $3,000 every six months",
+      "Discount both at the market rate"
+     ],
+     "say": "A bond is two cash flow streams: the principal of $100,000 at maturity, and interest of three thousand dollars every six months. Value both at the market rate, not the stated rate."
+    },
+    {
+     "type": "table",
+     "heading": "10 periods at 4%",
+     "rows": [
+      [
+       "PV of principal: 100,000 × 0.67556",
+       67556
+      ],
+      [
+       "PV of interest: 3,000 × 8.11090",
+       24333
+      ],
+      [
+       "Bond price",
+       91889,
+       "total"
+      ]
+     ],
+     "say": "Semiannual means ten periods at four percent. The principal is worth $67,556 today and the interest annuity $24,333. The bond's price is $91,889."
+    },
+    {
+     "type": "compare",
+     "heading": "Stated vs market rate",
+     "cols": [
+      "Price",
+      "Why"
+     ],
+     "rows": [
+      [
+       "Market > stated",
+       "Discount: below face",
+       "Buyer needs a higher yield"
+      ],
+      [
+       "Market = stated",
+       "Par: at face",
+       "Rates match"
+      ],
+      [
+       "Market < stated",
+       "Premium: above face",
+       "Coupon beats the market"
+      ]
+     ],
+     "say": "When the market rate is above the stated rate, the bond sells at a discount. When they're equal, it sells at par. When the market rate is lower, it sells at a premium."
+    },
+    {
+     "type": "key",
+     "big": "Same math for the issuer",
+     "sub": [
+      "Bonds payable: Intermediate II"
+     ],
+     "say": "The same math prices bonds Bluestem issues, which you'll account for in Intermediate Accounting Two."
+    },
+    {
+     "type": "quiz",
+     "q": "A bond's stated rate is 7% and the market rate is 6%. It sells at:",
+     "opts": [
+      "A discount",
+      "A premium",
+      "Par",
+      "Face minus interest"
+     ],
+     "answer": 1,
+     "say": "Quick check. A bond's stated rate is seven percent and the market rate six percent. It sells at what? Pause and pick.",
+     "reveal": "It's B, a premium."
+    }
+   ]
+  },
+  {
+   "id": "7.3",
+   "title": "The effective-interest method",
+   "lecture": "Lecture 7 · Time value of money II",
+   "take": "Interest = carrying amount × market rate; the difference from cash amortizes the discount or premium",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem bought the bond for $91,889. Over five years it will receive $100,000 at maturity. The $8,111 difference is extra interest. How is it recognized?"
+    },
+    {
+     "type": "define",
+     "big": "Effective-interest method",
+     "sub": [
+      "Interest = carrying amount",
+      "× market rate per period"
+     ],
+     "say": "The effective-interest method computes interest each period as the bond's carrying amount times the market rate. That gives a constant rate of return."
+    },
+    {
+     "type": "table",
+     "heading": "First six months",
+     "rows": [
+      [
+       "Interest revenue: 91,889 × 4%",
+       3676
+      ],
+      [
+       "Cash received: 100,000 × 3%",
+       3000
+      ],
+      [
+       "Discount amortized",
+       676,
+       "total"
+      ],
+      [
+       "New carrying amount",
+       92565,
+       "total"
+      ]
+     ],
+     "say": "In the first six months, interest revenue is $91,889 times four percent, $3,676. Cash received is $3,000. The $676 difference raises the carrying amount to $92,565."
+    },
+    {
+     "type": "journal",
+     "heading": "Bluestem's entry",
+     "rows": [
+      [
+       "Cash",
+       3000,
+       ""
+      ],
+      [
+       "Debt investments",
+       676,
+       ""
+      ],
+      [
+       "Interest revenue",
+       "",
+       3676
+      ]
+     ],
+     "say": "Bluestem debits Cash $3,000 and Debt Investments $676, and credits Interest Revenue for $3,676. Each period the carrying amount grows, so interest grows, until it reaches $100,000 at maturity."
+    },
+    {
+     "type": "key",
+     "big": "Straight-line is only an approximation",
+     "sub": [
+      "Allowed only if not materially",
+      "different"
+     ],
+     "say": "Straight-line amortization, $811 a period, is simpler but gives a changing rate of return. GAAP allows it only if the results aren't materially different."
+    },
+    {
+     "type": "quiz",
+     "q": "Carrying amount $95,000; market rate 5% per period; cash interest $4,000. Discount amortized?",
+     "opts": [
+      "$4,750",
+      "$750",
+      "$1,000",
+      "$250"
+     ],
+     "answer": 1,
+     "say": "Quick check. Carrying amount ninety-five thousand; market rate five percent per period; cash interest four thousand. Discount amortized? Pause and pick.",
+     "reveal": "It's B, $750: forty-seven fifty less four thousand."
+    }
+   ]
+  },
+  {
+   "id": "7.4",
+   "title": "Solving for loan payments",
+   "lecture": "Lecture 7 · Time value of money II",
+   "take": "Payment = loan ÷ PV annuity factor; each payment splits into interest and principal",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem borrows $300,000 for five years at seven percent, repaid in equal annual payments. What's the payment?"
+    },
+    {
+     "type": "table",
+     "heading": "Find the payment",
+     "rows": [
+      [
+       "Loan amount",
+       300000
+      ],
+      [
+       "PVA factor, 5 periods, 7%",
+       "4.10020"
+      ],
+      [
+       "Annual payment: 300,000 ÷ 4.10020",
+       73167,
+       "total"
+      ]
+     ],
+     "say": "The loan is the present value of the payments. Divide $300,000 by the five-period, seven percent annuity factor, four point one zero zero two: the payment is $73,167."
+    },
+    {
+     "type": "table",
+     "heading": "Year 1 of the amortization schedule",
+     "rows": [
+      [
+       "Interest: 300,000 × 7%",
+       21000
+      ],
+      [
+       "Principal: 73,167 − 21,000",
+       52167
+      ],
+      [
+       "Balance after payment",
+       247833,
+       "total"
+      ]
+     ],
+     "say": "In year one, interest is seven percent of $300,000, $21,000. The rest of the payment, $52,167, reduces principal, leaving $247,833."
+    },
+    {
+     "type": "journal",
+     "heading": "Recording the first payment",
+     "rows": [
+      [
+       "Interest expense",
+       21000,
+       ""
+      ],
+      [
+       "Notes payable",
+       52167,
+       ""
+      ],
+      [
+       "Cash",
+       "",
+       73167
+      ]
+     ],
+     "say": "Debit Interest Expense $21,000 and Notes Payable $52,167, and credit Cash for the payment. Each year, interest shrinks and principal grows."
+    },
+    {
+     "type": "key",
+     "big": "In Excel",
+     "sub": [
+      "=PMT(7%, 5, -300000)"
+     ],
+     "say": "In a spreadsheet, the PMT function gives the payment, and a simple table builds the full schedule."
+    },
+    {
+     "type": "quiz",
+     "q": "Year 2 interest on Bluestem's loan (balance $247,833 at 7%)?",
+     "opts": [
+      "$21,000",
+      "$17,348",
+      "$14,700",
+      "$52,167"
+     ],
+     "answer": 1,
+     "say": "Quick check. What's year two interest on Bluestem's loan, with a balance of two hundred forty-seven thousand eight hundred thirty-three at seven percent? Pause and pick.",
+     "reveal": "It's B, $17,348."
+    }
+   ]
+  },
+  {
+   "id": "7.5",
+   "title": "Present value measurement and expected cash flows",
+   "lecture": "Lecture 7 · Time value of money II",
+   "take": "When cash flows are uncertain, use probability-weighted expected cash flows discounted at a risk-free rate",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "So far, cash flows were certain. What if Bluestem doesn't know how much it will pay?"
+    },
+    {
+     "type": "define",
+     "big": "Expected cash flow approach",
+     "sub": [
+      "Weight possible outcomes by probability,",
+      "discount at the risk-free rate"
+     ],
+     "say": "GAAP's expected cash flow approach weights each possible outcome by its probability, then discounts the result. Because the risk is already in the probabilities, the discount rate is a risk-free rate."
+    },
+    {
+     "type": "table",
+     "heading": "Cleanup of a leaking storage tank, payable in 1 year",
+     "rows": [
+      [
+       "30% chance: $40,000",
+       12000
+      ],
+      [
+       "50% chance: $60,000",
+       30000
+      ],
+      [
+       "20% chance: $90,000",
+       18000
+      ],
+      [
+       "Expected cash flow",
+       60000,
+       "total"
+      ],
+      [
+       "PV at 5% risk-free: 60,000 ÷ 1.05",
+       57143,
+       "total"
+      ]
+     ],
+     "say": "Bluestem must clean up a leaking tank next year. There's a thirty percent chance it costs $40,000, fifty percent $60,000, and twenty percent $90,000. The expected cash flow is $60,000. Discounted at a five percent risk-free rate, the present value is $57,143."
+    },
+    {
+     "type": "compare",
+     "heading": "Two approaches",
+     "cols": [
+      "Traditional",
+      "Expected cash flow"
+     ],
+     "rows": [
+      [
+       "Cash flows",
+       "Single most likely amount",
+       "Probability-weighted"
+      ],
+      [
+       "Rate",
+       "Risk-adjusted",
+       "Risk-free"
+      ]
+     ],
+     "say": "The traditional approach uses one most-likely cash flow and a risk-adjusted rate. The expected cash flow approach handles uncertainty more transparently, and is used for things like asset retirement obligations."
+    },
+    {
+     "type": "key",
+     "big": "Choosing the rate",
+     "sub": [
+      "Risk-free for expected flows;",
+      "credit-adjusted for some liabilities"
+     ],
+     "say": "Picking the rate is a judgment. Specific standards sometimes say which rate to use, like a credit-adjusted risk-free rate for asset retirement obligations."
+    },
+    {
+     "type": "quiz",
+     "q": "Outcomes: 60% chance of $10,000, 40% chance of $20,000. Expected cash flow?",
+     "opts": [
+      "$15,000",
+      "$14,000",
+      "$12,000",
+      "$16,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Sixty percent chance of ten thousand, forty percent chance of twenty thousand. Expected cash flow? Pause and pick.",
+     "reveal": "It's B, $14,000."
+    }
+   ]
+  },
+  {
+   "id": "7.6",
+   "title": "Midterm review: Lectures 1 to 7",
+   "lecture": "Lecture 7 · Time value of money II",
+   "take": "Framework, statements and present value: the foundations for the rest of the course",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Next week is the midterm. Here's the first half in two minutes."
+    },
+    {
+     "type": "list",
+     "heading": "Foundations",
+     "items": [
+      "SEC, FASB and the Codification",
+      "Conceptual framework: relevance, faithful representation",
+      "Adjusting entries and closing",
+      "Five assumptions; recognition principles"
+     ],
+     "say": "We started with who sets the rules: the SEC, the FASB and the Codification. Then the conceptual framework, with relevance and faithful representation, the five assumptions and the recognition principles. And we reviewed adjusting and closing entries."
+    },
+    {
+     "type": "list",
+     "heading": "The statements",
+     "items": [
+      "Multiple-step income statement",
+      "Discontinued operations, net of tax",
+      "EPS and comprehensive income",
+      "Classified balance sheet and ratios",
+      "Cash flow classifications"
+     ],
+     "say": "Next, the statements: the multiple-step income statement, discontinued operations net of tax, EPS and comprehensive income, the classified balance sheet with liquidity and solvency ratios, and cash flow classifications."
+    },
+    {
+     "type": "list",
+     "heading": "Time value of money",
+     "items": [
+      "FV and PV of single sums",
+      "Annuities: ordinary and due",
+      "Deferred annuities, bonds, loans",
+      "Expected cash flows"
+     ],
+     "say": "Finally, time value of money: single sums, ordinary annuities and annuities due, deferred annuities, bond prices, loan payments and expected cash flows."
+    },
+    {
+     "type": "key",
+     "big": "Practice the timelines",
+     "sub": [
+      "Most midterm errors are",
+      "timing errors"
+     ],
+     "say": "Advice for the exam: draw timelines. Most TVM mistakes are timing mistakes, not arithmetic."
+    },
+    {
+     "type": "quiz",
+     "q": "Where is a loss from discontinued operations reported?",
+     "opts": [
+      "Operating expenses",
+      "Below continuing operations, net of tax",
+      "OCI",
+      "Retained earnings"
+     ],
+     "answer": 1,
+     "say": "Last quick check. Where is a loss from discontinued operations reported? Pause and pick.",
+     "reveal": "It's B, below income from continuing operations, net of tax. Good luck on the midterm."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "A lottery winner can take $1 million today or $80,000 a year for 20 years. Which would you choose, and what would you need to know?",
+   "Discount rate, timing, taxes, risk; previews annuities and comparing streams."
+  ],
+  "acts": [
+   [
+    "A note pays $20,000 a year for 5 years, first payment at the end of year 4. Value at 6% (PVA 5 = 4.21236; PV of 1, 3 periods = 0.83962).",
+    "84,247 × 0.83962 = $70,735."
+   ],
+   [
+    "Price a 4-year, $200,000 bond with a 5% stated rate paid semiannually when the market rate is 6% (8 periods at 3%: PV of 1 = 0.78941; PVA = 7.01969).",
+    "Principal 157,882 + interest 5,000 × 7.01969 = 35,098; price $192,980."
+   ],
+   [
+    "Prepare the first two interest entries for the bond in activity 2 (investor).",
+    "Period 1: interest 5,789 (192,980 × 3%); cash 5,000; amortization 789; carrying 193,769. Period 2: interest 5,813; amortization 813; carrying 194,582."
+   ],
+   [
+    "Bluestem borrows $150,000 for 4 years at 6% with equal annual payments (PVA factor 3.46511). Compute the payment and the year-1 interest and principal.",
+    "Payment $43,288; interest $9,000; principal $34,288; balance $115,712."
+   ],
+   [
+    "Expected cash flow: a warranty obligation payable in 2 years: 40% $50,000, 40% $70,000, 20% $100,000. PV at 4% risk-free (factor 0.92456).",
+    "Expected 68,000; PV $62,870."
+   ],
+   [
+    "Midterm warm-up: name the timing error in each: (a) annuity due treated as ordinary; (b) semiannual bond discounted annually.",
+    "(a) Understates PV/FV by one period of interest; (b) wrong rate and periods (use half rate, double periods)."
+   ]
+  ],
+  "case": [
+   "The design license",
+   "Bluestem is offered two deals for its kayak design license. Deal 1: $85,000 cash today. Deal 2: $30,000 a year for 4 years, starting at the end of year 3, plus a $20,000 signing payment at the end of year 1. Bluestem's discount rate is 8%. (PV of 1 at 8%, 1 period: 0.92593.)",
+   [
+    "Value deal 2.",
+    "Which deal is better?",
+    "What non-financial factors matter?",
+    "How would Bluestem record deal 2 at signing?"
+   ],
+   "Deal 2: 85,189 + 18,519 = $103,708 > $85,000. Deal 2 is better financially, but carries credit risk of the licensee over 6 years; consider currency and enforcement. Record a receivable at present value $103,708 (if revenue recognized at signing) and accrue interest over time."
+  ],
+  "exam": [
+   [
+    "A $500,000, 10-year bond pays 8% interest semiannually. The market rate is 10%. Compute the price (20 periods at 5%: PV of 1 = 0.37689; PVA = 12.46221) and the first period's interest using the effective-interest method.",
+    6,
+    "Principal 188,445 + interest 20,000 × 12.46221 = 249,244; price $437,689. Interest 21,884; amortization 1,884."
+   ],
+   [
+    "Explain the expected cash flow approach and when it is preferable to the traditional approach.",
+    6,
+    "Probability-weighted cash flows discounted at risk-free rate; preferable when cash flows are uncertain in amount or timing (AROs, contingencies, impairment)."
+   ]
+  ],
+  "outcomes": [
+   "Value deferred annuities",
+   "Price bonds from their cash flows",
+   "Apply the effective-interest method",
+   "Compute loan payments and amortization",
+   "Apply the expected cash flow approach",
+   "Integrate the first half of the course"
+  ],
+  "take": [
+   "Deferred: value, then discount back",
+   "Bond = PV principal + PV interest",
+   "Interest = carrying amount × market rate",
+   "Payment = loan ÷ annuity factor",
+   "Expected flows use a risk-free rate",
+   "Draw the timeline"
+  ]
+ },
+ "ex": [
+  {
+   "type": "num",
+   "q": "Four payments of $10,000, first at the end of year 3, at 8% (PVA 4 = 3.31213; PV of 1, 2 periods = 0.85734). Present value?",
+   "a": 28396,
+   "tol": 3,
+   "unit": "$",
+   "why": "33,121 × 0.85734.",
+   "video": "7.1"
+  },
+  {
+   "type": "num",
+   "q": "A $50,000 bond pays 4% semiannually (2% per period) for 3 years; market rate 3% per period (PV of 1, 6 periods = 0.83748; PVA = 5.41719). Price?",
+   "a": 47292,
+   "tol": 3,
+   "unit": "$",
+   "why": "41,874 + 1,000 × 5.41719 = 47,291.",
+   "video": "7.2"
+  },
+  {
+   "type": "mcq",
+   "q": "When the market rate exceeds the stated rate, a bond sells at:",
+   "opts": [
+    "Premium",
+    "Par",
+    "Discount",
+    "Face plus interest"
+   ],
+   "a": 2,
+   "why": "Buyers pay less to earn the higher market yield.",
+   "video": "7.2"
+  },
+  {
+   "type": "num",
+   "q": "Carrying amount $91,889; market rate 4% per period; cash interest $3,000. Discount amortized this period?",
+   "a": 676,
+   "tol": 1,
+   "unit": "$",
+   "why": "3,676 − 3,000.",
+   "video": "7.3"
+  },
+  {
+   "type": "num",
+   "q": "Loan $300,000 for 5 years at 7% (PVA factor 4.10020). Annual payment?",
+   "a": 73167,
+   "tol": 2,
+   "unit": "$",
+   "why": "300,000 ÷ 4.10020.",
+   "video": "7.4"
+  },
+  {
+   "type": "num",
+   "q": "That loan's year-1 principal reduction?",
+   "a": 52167,
+   "tol": 2,
+   "unit": "$",
+   "why": "73,167 − 21,000.",
+   "video": "7.4"
+  },
+  {
+   "type": "num",
+   "q": "Outcomes: 25% $20,000; 50% $30,000; 25% $50,000, payable in one year. PV at 5% risk-free?",
+   "a": 30952,
+   "tol": 2,
+   "unit": "$",
+   "why": "Expected 32,500 ÷ 1.05.",
+   "video": "7.5"
+  },
+  {
+   "type": "mcq",
+   "q": "Under the expected cash flow approach, the discount rate is:",
+   "opts": [
+    "The company's borrowing rate",
+    "A risk-free rate",
+    "The stated rate",
+    "Zero"
+   ],
+   "a": 1,
+   "why": "Risk is captured in the probabilities.",
+   "video": "7.5"
+  }
+ ]
+}

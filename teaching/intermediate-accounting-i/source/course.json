@@ -1,0 +1,20 @@
+{
+ "num": "ACCT 416",
+ "course": "ACCT 416 Intermediate Accounting I",
+ "desc": "intermediate financial accounting and reporting",
+ "book": "Intermediate Accounting, 19th edition",
+ "book_short": "Kieso, Weygandt, Warfield and Wiley, Intermediate Accounting (19th edition)",
+ "book_url": "https://www.wileyplus.com/intermediate-accounting-19th-edition-eprof23641/",
+ "book_meta": "Donald E. Kieso, Jerry J. Weygandt, Terry D. Warfield and Laura D. Wiley. Wiley, 2025. WileyPLUS optional.",
+ "lede": "Accounting standards, the conceptual framework, the financial statements, time value of money, cash and receivables, inventories and property, plant and equipment, in",
+ "intro": "An intensive study of financial accounting and reporting: accounting standards and the conceptual framework, the income statement and balance sheet, time value of money, cash and receivables, inventories, and the acquisition, depreciation and disposition of property, plant and equipment. Prerequisite: ACCT 212 and ECON 201 or 202. One fictional Marshall, Minnesota company runs through the course: Bluestem Outdoor, a maker of kayaks, tents and camping gear, with its controller Sam Nygaard, as it prepares for a bank loan and, eventually, a public listing. <a href=\"../intermediate-accounting-ii/\">ACCT 312 Intermediate Accounting II</a> uses the same textbook and follows Bluestem after it goes public.",
+ "book_note": "The standard US intermediate accounting text, used in more programs than any other and closely aligned with the CPA exam. ACCT 416 and ACCT 312 share this one book and split its chapters between them with no overlap, so students buy it once for both courses.",
+ "book_split": "ACCT 416 reads Chapters 1&ndash;11. ACCT 312 Intermediate Accounting II reads Chapters 12&ndash;18, 22 and 23.",
+ "reading_note": "The whole semester's reading in one table. Chapters follow the textbook's order; Chapters 6, 8, 10 and 11 each span more than one lecture.",
+ "parts": [
+  "Foundations",
+  "Time value of money",
+  "Cash, receivables and inventory",
+  "Property, plant and equipment"
+ ]
+}

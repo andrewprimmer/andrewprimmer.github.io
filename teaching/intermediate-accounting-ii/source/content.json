@@ -1,0 +1,996 @@
+{
+ "1": {
+  "warmup": [
+   "Name three of Bluestem's most valuable assets that don't appear on its balance sheet. Why aren't they there?",
+   "Brand, workforce, designs, dealer relationships: internally generated intangibles are expensed."
+  ],
+  "acts": [
+   [
+    "Classify each intangible by type: trademark 'Bluestem'; dealer list bought from a competitor; kayak design patent; license to use a hull shape; photo library.",
+    "Marketing; customer; technology; contract; artistic."
+   ],
+   [
+    "Bluestem buys a patent for $240,000 (legal life 12 years, useful life 8) on January 1; successfully defends it for $36,000 at the start of year 3. Compute amortization in years 1 and 3.",
+    "Years 1–2: 30,000. Year 3: (180,000 + 36,000) ÷ 6 = 36,000."
+   ],
+   [
+    "Classify as R&D or not: prototype testing; quality control on production line; lab equipment with alternative uses (cost $60,000, 5 years); seasonal design changes; market research.",
+    "R&D; not; capitalize, $12,000 depreciation is R&D; not R&D; not R&D (expense)."
+   ],
+   [
+    "Bluestem pays $3,200,000 for a company with identifiable assets at fair value $3,500,000 and liabilities $800,000. Compute goodwill. What if the price were $2,500,000?",
+    "Goodwill 500,000. At 2.5m: bargain purchase gain 200,000."
+   ],
+   [
+    "Indefinite-life trademark: carrying $300,000, fair value $260,000. Goodwill unit: carrying $4m (incl. goodwill $600,000), fair value $4.2m. Impairment?",
+    "Trademark loss 40,000; goodwill none."
+   ],
+   [
+    "Classify: pre-opening rent of new store; legal fees to incorporate; TV ads; store fixtures; employee training.",
+    "Expense; expense; expense; capitalize (PP&E); expense."
+   ]
+  ],
+  "case": [
+   "The Northwind purchase",
+   "Bluestem paid $2,400,000 for Northwind. Its book net assets were $1,200,000, but fair values include: trademark $300,000 (indefinite life), customer list $150,000 (5 years), patents $90,000 (3 years) and other net assets $1,360,000. The founder wants to put the entire $1.2 million excess into goodwill 'to avoid amortization'.",
+   [
+    "Compute identifiable net assets and goodwill.",
+    "What's wrong with the founder's suggestion?",
+    "Compute annual amortization.",
+    "How does Bluestem's private status affect goodwill?"
+   ],
+   "Identifiable net assets 1,900,000; goodwill 500,000. Identifiable intangibles must be recognized separately at fair value; pushing them into goodwill misstates assets and income. Amortization: customer list 30,000 + patents 30,000 = 60,000; trademark not amortized. Private company alternative: may amortize goodwill (≤10 years) and simplify impairment testing; lost once public."
+  ],
+  "exam": [
+   [
+    "Explain the accounting for R&D under US GAAP and IFRS, and why GAAP expenses most R&D.",
+    6,
+    "GAAP expenses R&D (uncertain benefits; equipment with alternative uses capitalized). IFRS capitalizes development when criteria met. Comparability and reliability trade-offs."
+   ],
+   [
+    "Compute goodwill and record a later impairment: price $2.4m; identifiable net assets $1.9m; two years later unit carrying $2.35m, fair value $2.1m.",
+    6,
+    "Goodwill 500,000; impairment 250,000; Dr Loss / Cr Goodwill."
+   ]
+  ],
+  "outcomes": [
+   "Describe and classify intangible assets",
+   "Record and amortize limited-life intangibles",
+   "Account for research and development",
+   "Measure goodwill in a business combination",
+   "Test intangibles and goodwill for impairment",
+   "Identify costs that are always expensed and present intangibles"
+  ],
+  "take": [
+   "Bought: capitalize; built: mostly expense",
+   "Amortize limited lives only",
+   "R&D is expensed under GAAP",
+   "Goodwill = price − identifiable net assets",
+   "Goodwill impairment never reverses",
+   "Start-up and advertising are expensed"
+  ]
+ },
+ "2": {
+  "warmup": [
+   "Bluestem's lawyers think the capsize lawsuit will probably cost $200,000 to $500,000. Should anything appear on the balance sheet before a court decides?",
+   "Introduces probable/estimable accrual and the minimum of a range."
+  ],
+  "acts": [
+   [
+    "Bluestem signs a $150,000, 9%, 6-month note on October 1. Record the December 31 accrual and payment at maturity.",
+    "Accrue 3,375; at maturity Dr Notes 150,000, Interest payable 3,375, Interest expense 3,375 / Cr Cash 156,750."
+   ],
+   [
+    "A $400,000 note due February 15 is refinanced with a 4-year loan signed March 5; statements issued March 10. Classify at December 31. What if the statements were issued March 1?",
+    "Long-term (refinanced before issuance). If issued March 1 without a firm agreement: current."
+   ],
+   [
+    "Weekly gross pay $60,000; FICA 7.65%; federal income tax withheld $9,000; state unemployment 1.5%. Record the payroll and employer taxes.",
+    "Net pay 46,410; employer FICA 4,590; SUTA 900; payroll tax expense 5,490."
+   ],
+   [
+    "Classify: (a) probable, estimate $90,000; (b) probable, range $50,000–$150,000, no best estimate; (c) reasonably possible $300,000; (d) remote; (e) probable gain $40,000.",
+    "(a) accrue 90,000; (b) accrue 50,000, disclose range; (c) disclose; (d) nothing; (e) don't recognize."
+   ],
+   [
+    "Bluestem sells 6,000 kayaks with a 2-year warranty at $20 expected cost each; repairs this year $45,000; beginning liability $50,000. Ending liability?",
+    "50,000 + 120,000 − 45,000 = 125,000."
+   ],
+   [
+    "ARO: $120,000 in 8 years at 7% (PV factor 0.58201). Record the ARO and year-1 accretion and depreciation.",
+    "ARO 69,841; accretion 4,889; depreciation 8,730."
+   ]
+  ],
+  "case": [
+   "The capsize lawsuit and the covenant",
+   "Bluestem's loan covenant limits total liabilities to 60% of total assets. Before year-end entries: liabilities $2,700,000; assets $4,600,000. Pending items: the capsize lawsuit (probable, $200,000–$500,000, no best estimate); a reasonably possible $300,000 environmental fine; and an expected $120,000 refund from a customs dispute Bluestem is likely to win. The founder suggests disclosing the lawsuit only, and recording the customs refund.",
+   [
+    "Compute the ratio before and after correct accounting.",
+    "Evaluate the founder's suggestions.",
+    "What disclosures are required?",
+    "What ethical issues arise?"
+   ],
+   "Before 58.7%. After accrual of 200,000 (loss reduces equity, assets unchanged): 2,900,000 ÷ 4,600,000 = 63.0%: covenant breached. Lawsuit must be accrued at the minimum; customs refund is a gain contingency, not recognized. Disclose range for lawsuit, fine (reasonably possible), possibly the refund. Ethics: pressure to misstate; talk to lender for waiver."
+  ],
+  "exam": [
+   [
+    "Explain the criteria for accruing a loss contingency and how ranges are handled.",
+    6,
+    "Probable and reasonably estimable; best estimate in range, else minimum; disclose nature and range; reasonably possible disclose; remote none; gains not recognized."
+   ],
+   [
+    "Bluestem must remove tanks in 10 years at an expected cost of $80,000; credit-adjusted rate 6% (factor 0.55839). Record the ARO and year-1 entries.",
+    6,
+    "Dr Asset / Cr ARO 44,671; accretion 2,680; depreciation 4,467."
+   ]
+  ],
+  "outcomes": [
+   "Identify and measure current liabilities and notes",
+   "Classify debt expected to be refinanced and account for unearned revenue",
+   "Record sales taxes, payroll and compensated absences",
+   "Account for loss and gain contingencies",
+   "Account for assurance-type warranties",
+   "Measure asset retirement obligations"
+  ],
+  "take": [
+   "Accrue interest on notes",
+   "Refinance before issuance to classify long-term",
+   "Sales tax and withholdings aren't yours",
+   "Probable + estimable = accrue",
+   "Warranty cost accrued at sale",
+   "ARO at present value, then accretion"
+  ]
+ },
+ "3": {
+  "warmup": [
+   "Bluestem promises 6% interest, but investors want 8%. How can the bonds still be sold?",
+   "They sell at a discount so the effective yield is 8%."
+  ],
+  "acts": [
+   [
+    "Price $1,500,000 of 4-year, 7% bonds paying interest semiannually when the market rate is 6% (8 periods at 3%: PV of 1 0.78941; PVA 7.01969).",
+    "Principal 1,184,115 + interest 52,500 × 7.01969 = 368,534; price 1,552,649 (premium 52,649)."
+   ],
+   [
+    "Record $800,000 of 6% bonds (interest Jan 1 and Jul 1) issued at par on May 1, and the July 1 payment.",
+    "Cash 816,000 (accrued 16,000); July 1 Dr Interest expense 24,000 / Cr Cash 24,000; net expense 8,000."
+   ],
+   [
+    "Prepare the first two interest entries for Bluestem's discount bonds.",
+    "June 30: Dr Interest 73,511 / Cr Bonds 13,511, Cash 60,000. Dec 31: Dr Interest 74,051 / Cr Bonds 14,051, Cash 60,000."
+   ],
+   [
+    "Prepare the first interest entry for the premium bonds in activity 1.",
+    "Interest 1,552,649 × 3% = 46,579; cash 52,500; premium amortized 5,921; carrying 1,546,728."
+   ],
+   [
+    "Compare total interest expense over the life of Bluestem's 8%-market bonds with the cash paid.",
+    "Cash interest 600,000; interest expense 600,000 + 162,226 = 762,226."
+   ],
+   [
+    "Bonds of $2,000,000 issued at 101 with $30,000 issuance costs. Initial carrying amount and effect on interest?",
+    "2,020,000 − 30,000 = 1,990,000; effectively a small discount; effective rate slightly above stated."
+   ]
+  ],
+  "case": [
+   "Bank loan or bonds?",
+   "Bluestem can borrow $1,800,000 for five years from its bank at 7.5% annual interest, or issue $2,000,000 of 6% bonds at 91.89 (yield 8%) with $40,000 of issuance costs. Bank covenants are tighter; bond covenants are looser but the bonds are public.",
+   [
+    "Compute net proceeds from each.",
+    "Compare total interest cost over five years.",
+    "Which reports higher interest expense?",
+    "What non-financial factors matter?"
+   ],
+   "Bank: 1,800,000; interest 135,000/year = 675,000. Bonds: proceeds 1,797,774; cash interest 600,000 plus 202,226 discount and costs = 802,226 total cost. Bonds cost more (yield 8%+ vs 7.5%) but give flexibility and looser covenants; disclosure requirements and market access; bank relationship."
+  ],
+  "exam": [
+   [
+    "Explain why bonds are issued at a discount or premium and how the effective-interest method allocates it.",
+    6,
+    "Stated vs market rate; price = PV at market rate; interest = carrying × market rate; difference from cash amortizes the discount/premium; constant effective rate."
+   ],
+   [
+    "Price $2,000,000 of 5-year, 6% semiannual bonds at an 8% market rate and prepare the first two interest entries.",
+    8,
+    "Price 1,837,774; amortization 13,511 then 14,051; carrying 1,865,336 after one year."
+   ]
+  ],
+  "outcomes": [
+   "Describe types of bonds and indenture terms",
+   "Price bonds from their cash flows",
+   "Record bonds issued at par and between interest dates",
+   "Amortize a discount with the effective-interest method",
+   "Amortize a premium",
+   "Account for issuance costs and year-end accruals"
+  ],
+  "take": [
+   "Stated rate fixes cash; market rate sets price",
+   "Price = PV principal + PV interest",
+   "Accrued interest is returned on the next coupon",
+   "Interest = carrying × market rate",
+   "Premiums reduce interest expense",
+   "Issuance costs reduce the liability"
+  ]
+ },
+ "4": {
+  "warmup": [
+   "A seller offers Bluestem land for $300,000 'interest-free, pay in three years'. Is the land really worth $300,000?",
+   "Interest is embedded in the face; record at present value."
+  ],
+  "acts": [
+   [
+    "Record equipment bought for a $150,000 zero-interest note due in 2 years when Bluestem's borrowing rate is 9% (factor 0.84168), and year-1 interest.",
+    "Cost 126,252; year-1 interest 11,363."
+   ],
+   [
+    "Bonds with face $1,000,000 and carrying amount $970,000 are called at 103. Record.",
+    "Loss 60,000; Dr Bonds 970,000, Loss 60,000 / Cr Cash 1,030,000."
+   ],
+   [
+    "Under the fair value option, a liability's fair value fell $80,000: $50,000 from higher market rates and $30,000 from the company's weaker credit. Where is each part reported?",
+    "50,000 gain in net income; 30,000 in OCI."
+   ],
+   [
+    "A debtor owes $400,000 and settles by transferring equipment (cost $500,000, AD $260,000, fair value $300,000). Record.",
+    "Gain on disposal 60,000; gain on settlement 100,000."
+   ],
+   [
+    "Name three ways companies have kept debt off the balance sheet and the rule that now limits each.",
+    "Unconsolidated entities (VIE consolidation); operating leases (Topic 842); take-or-pay (disclosure of commitments)."
+   ],
+   [
+    "Compute debt to assets and times interest earned: liabilities $2.4m; assets $5m; income before tax $900,000; interest $120,000.",
+    "48%; 8.5 times."
+   ]
+  ],
+  "case": [
+   "To call or not to call",
+   "Two years after issue, rates on similar bonds have fallen to 5%. Bluestem's 6% bonds ($2,000,000 face, carrying amount $1,895,147, three years left) can be called at 102. Bluestem could issue new 3-year bonds at 5% at par, with $30,000 of issuance costs. The founder worries about 'booking a big loss'.",
+   [
+    "Compute the loss on calling the bonds.",
+    "Compare annual cash interest before and after.",
+    "Is calling worthwhile on a cash basis (ignore discounting)?",
+    "How should the loss be presented?"
+   ],
+   "Loss 144,853 (unamortized discount 104,853 + call premium 40,000). New borrowing 2,070,000 at 5% = 103,500 a year vs 120,000: saving 16,500 × 3 = 49,500, but 70,000 more principal at maturity, so not worthwhile on undiscounted cash. Most of the accounting loss is the unamortized discount, not a new economic loss. Present it in continuing operations."
+  ],
+  "exam": [
+   [
+    "Explain how a zero-interest-bearing note issued for property is recorded and why.",
+    6,
+    "Record at fair value of property or PV of note at imputed rate; discount amortized as interest; avoids overstating asset and understating interest."
+   ],
+   [
+    "Record the early retirement of bonds (face $2,000,000; carrying amount $1,895,147; call price 102) and explain the reporting of the loss.",
+    6,
+    "Loss 144,853 in continuing operations (not extraordinary); include unamortized issuance costs."
+   ]
+  ],
+  "outcomes": [
+   "Record notes payable at present value with imputed interest",
+   "Account for extinguishment of debt",
+   "Apply the fair value option to liabilities",
+   "Account for troubled debt settlements by the debtor",
+   "Identify off-balance-sheet financing",
+   "Present and analyze long-term debt"
+  ],
+  "take": [
+   "No free money: impute interest",
+   "Gain or loss = carrying − price",
+   "Own-credit changes go to OCI",
+   "Settlements: two gains for the debtor",
+   "Read the notes for hidden debt",
+   "Debt to assets and times interest earned"
+  ]
+ },
+ "5": {
+  "warmup": [
+   "Bluestem sells shares at $16 that have a $1 par value. What does the $1 mean, and where does the other $15 go?",
+   "Par is a legal amount; excess to APIC."
+  ],
+  "acts": [
+   [
+    "Charter: 1,000,000 authorized; 600,000 issued; 40,000 in treasury. Compute outstanding shares and explain the difference between each count.",
+    "560,000 outstanding."
+   ],
+   [
+    "Record 100,000 shares, $0.50 par, issued at $22 with $90,000 of issuance costs.",
+    "Cash 2,110,000; CS 50,000; APIC 2,060,000."
+   ],
+   [
+    "Record 3,000 shares ($1 par, market $25) issued for land; then a lump sum of $150,000 for 2,000 common (market $30) and 500 preferred (market $200).",
+    "Land 75,000 (CS 3,000; APIC 72,000). Allocate: common 150,000 × 60/160 = 56,250; preferred 93,750."
+   ],
+   [
+    "Treasury stock: buy 10,000 at $40; reissue 4,000 at $45; reissue 3,000 at $36. Record.",
+    "TS 400,000; reissue: PIC-TS +20,000; second: PIC-TS −12,000."
+   ],
+   [
+    "Retire the remaining 3,000 treasury shares (cost $40; originally issued at $25, par $1).",
+    "CS 3,000; APIC 72,000; RE 45,000; TS 120,000."
+   ],
+   [
+    "Equity $9,000,000; 600,000 shares outstanding; net income $1,080,000; average equity $8,000,000. Compute book value per share and ROE.",
+    "$15.00; 13.5%."
+   ]
+  ],
+  "case": [
+   "The buyback debate",
+   "Bluestem's share price fell from $16 to $13 after a warm winter. The founder proposes spending $650,000 of the $900,000 cash balance to buy back 50,000 shares, arguing it will 'raise EPS and show confidence'. Net income is expected to be $990,000; shares outstanding 500,000. The bond indenture requires a current ratio above 1.8 (currently 2.1, with current liabilities $1.2 million).",
+   [
+    "Compute EPS before and after the buyback (ignore timing).",
+    "Compute the current ratio after the buyback.",
+    "Record the buyback.",
+    "Evaluate the proposal."
+   ],
+   "EPS 1.98 → 2.20 (450,000 shares). Current assets 2,520,000 − 650,000 = 1,870,000; ratio 1.56: covenant breached. Dr Treasury stock 650,000 / Cr Cash 650,000. EPS rise is mechanical, not value creation; covenant breach and liquidity risk; consider a smaller program."
+  ],
+  "exam": [
+   [
+    "Explain the cost method for treasury stock, including reissuance above and below cost, and why no gains or losses are recognized.",
+    6,
+    "Debit TS at cost; reissue above cost credit PIC-TS; below cost debit PIC-TS then RE; transactions with owners don't create income."
+   ],
+   [
+    "Record: (a) IPO of 250,000 shares, $1 par, at $16, costs $280,000; (b) purchase of 20,000 treasury shares at $18; (c) reissue of 8,000 at $21.",
+    6,
+    "(a) Cash 3,720,000; CS 250,000; APIC 3,470,000. (b) TS 360,000. (c) Cash 168,000; TS 144,000; PIC-TS 24,000."
+   ]
+  ],
+  "outcomes": [
+   "Describe the corporate form and components of equity",
+   "Record stock issued for cash, including issuance costs",
+   "Record noncash and lump-sum issuances",
+   "Account for treasury stock under the cost method",
+   "Record retirement of shares",
+   "Present equity and compute ROE and book value per share"
+  ],
+  "take": [
+   "Contributed vs earned capital",
+   "Par to stock; excess to paid-in capital",
+   "Use the clearer fair value",
+   "Treasury stock is contra equity",
+   "No gains or losses with owners",
+   "ROE and book value per share"
+  ]
+ },
+ "6": {
+  "warmup": [
+   "Why would an investor buy preferred stock that can't vote and won't share in Bluestem's growth?",
+   "Priority, steady dividends, lower risk; sets up preferred features."
+  ],
+  "acts": [
+   [
+    "Classify as equity or liability: (a) 5% cumulative preferred; (b) preferred redeemable in 2032 for cash; (c) preferred convertible into common.",
+    "(a) Equity; (b) liability; (c) equity."
+   ],
+   [
+    "Record the declaration and payment of a $0.25 dividend on 800,000 shares, and state what happens on the record date.",
+    "Dr RE 200,000 / Cr Dividends payable 200,000; record date no entry; pay: Dr DP / Cr Cash."
+   ],
+   [
+    "Preferred: 10,000 shares, $50 par, 8% cumulative, one year in arrears. Dividends declared $150,000. Allocate. Repeat if noncumulative.",
+    "Cumulative: 80,000 preferred, 70,000 common. Noncumulative: 40,000 preferred, 110,000 common."
+   ],
+   [
+    "Record a property dividend of investments carried at $120,000 with fair value $100,000.",
+    "Loss 20,000; Dr RE 100,000 / Cr Property dividends payable 100,000."
+   ],
+   [
+    "600,000 shares, $1 par, market $20. Record (a) a 5% stock dividend; (b) a 50% stock dividend; (c) a 3-for-1 split.",
+    "(a) RE 600,000; CS 30,000; APIC 570,000. (b) RE 300,000; CS 300,000. (c) No entry; par becomes $0.333."
+   ],
+   [
+    "Net income $1,200,000; preferred dividends $60,000; common dividends $342,000. Payout ratio?",
+    "342,000 ÷ 1,140,000 = 30%."
+   ]
+  ],
+  "case": [
+   "The dividend decision",
+   "Bluestem has 503,000 common shares trading at $15 and 5,000 shares of 6% cumulative preferred ($100 par) with one year in arrears. Net income is $990,000; cash is $700,000; the bond covenant limits dividends to 40% of net income. The founder wants to pay $0.60 per common share in cash, or alternatively a 10% stock dividend 'which costs nothing'.",
+   [
+    "Compute total cash needed for the $0.60 common dividend plus preferred.",
+    "Does it meet the covenant?",
+    "Record the 10% stock dividend.",
+    "Is a stock dividend really costless?"
+   ],
+   "Preferred 60,000 (arrears + current); common 301,800; total 361,800 = 36.5% of NI: within 40% covenant, but uses half the cash. Stock dividend: RE 754,500; CS 50,300; APIC 704,200. Costless in cash, but no value transferred: each shareholder's proportion is unchanged; price adjusts; admin costs; may signal."
+  ],
+  "exam": [
+   [
+    "Compare small and large stock dividends and stock splits: entries and effects on equity components and total equity.",
+    6,
+    "Small at FV from RE; large at par; split none; total equity unchanged in all; RE reduced by dividends only."
+   ],
+   [
+    "Allocate $120,000 of dividends between 6% cumulative preferred ($500,000 par, one year in arrears) and common; then redo it as noncumulative.",
+    6,
+    "Cumulative 60,000/60,000; noncumulative 30,000/90,000."
+   ]
+  ],
+  "outcomes": [
+   "Describe preferred stock features and classification",
+   "Record cash dividends",
+   "Allocate dividends with cumulative preferred",
+   "Record property and liquidating dividends",
+   "Account for stock dividends and stock splits",
+   "Disclose restrictions and compute the payout ratio"
+  ],
+  "take": [
+   "Mandatorily redeemable preferred is debt",
+   "Liability at declaration",
+   "Arrears first, then current, then common",
+   "Property dividends at fair value",
+   "Small stock dividend at FV; split no entry",
+   "Payout = common dividends ÷ income to common"
+  ]
+ },
+ "7": {
+  "warmup": [
+   "Why would investors accept 4% interest on Bluestem's convertible bonds when straight bonds pay 6%?",
+   "The conversion option has value: upside if shares rise."
+  ],
+  "acts": [
+   [
+    "Record the conversion of $800,000 of convertible bonds (carrying amount $780,000) into 32,000 shares of $1 par common.",
+    "Dr Bonds 780,000 / Cr CS 32,000, APIC 748,000."
+   ],
+   [
+    "Bluestem issues $1,000,000 of bonds with detachable warrants for $1,030,000. FV of bonds alone $950,000; FV of warrants $80,000. Allocate.",
+    "Total FV 1,030,000: bonds 950,000; warrants 80,000 (discount 50,000)."
+   ],
+   [
+    "Options: 50,000 granted January 1, fair value $3 each, 3-year service. Record each year and exercise at $18 (par $1).",
+    "Expense 50,000/year; exercise: Cash 900,000, PIC-SO 150,000 / CS 50,000, APIC 1,000,000."
+   ],
+   [
+    "10,000 vested options (PIC-SO $40,000) expire unexercised. Record.",
+    "Dr PIC-SO 40,000 / Cr PIC-expired options 40,000."
+   ],
+   [
+    "Restricted stock: 8,000 shares at $25 fair value, 4-year vesting. Annual expense and the effect if half are forfeited in year 3 (forfeitures recognized as they occur).",
+    "Annual expense 50,000 (200,000 ÷ 4). In year 3, reverse the 50,000 recognized on the forfeited half in years 1–2 and recognize 25,000 on the remaining half: net year-3 credit of 25,000."
+   ],
+   [
+    "Which are dilutive securities? Convertible bonds; nonconvertible preferred; warrants; stock options; treasury stock.",
+    "Convertible bonds, warrants, stock options."
+   ]
+  ],
+  "case": [
+   "Paying the designers",
+   "Bluestem must choose how to reward six key designers: (A) 30,000 stock options, exercise price $16, fair value $5 each, 3-year vesting; (B) 10,000 restricted stock units at $15, 3-year vesting; (C) a cash bonus of $50,000 a year. The founder prefers options because 'they don't cost anything unless the stock rises'.",
+   [
+    "Compute annual expense under each option.",
+    "Evaluate the founder's claim.",
+    "Which plan keeps value for designers if the share price falls?",
+    "Effect of each on dilution and cash."
+   ],
+   "A: 150,000 ÷ 3 = 50,000; B: 150,000 ÷ 3 = 50,000; C: 50,000. Options are expensed at grant-date fair value regardless; the claim is wrong for accounting and for shareholders (dilution). RSUs keep value if price falls. A and B dilute and use no cash (A brings in cash at exercise); C uses cash and doesn't dilute."
+  ],
+  "exam": [
+   [
+    "Explain the accounting for employee stock options from grant to exercise or expiration.",
+    6,
+    "Grant-date fair value; expense over service period with credit to PIC-SO; forfeitures policy; exercise: cash + PIC-SO to CS and APIC; expiration: PIC-expired; no remeasurement."
+   ],
+   [
+    "Record the issuance at par of $500,000 of bonds with detachable warrants (bond FV $480,000, warrant FV $20,000) and later exercise of all warrants for 10,000 shares at $20 ($1 par).",
+    6,
+    "Issue: Cash 500,000 / Bonds 480,000, PIC-warrants 20,000. Exercise: Cash 200,000, PIC-warrants 20,000 / CS 10,000, APIC 210,000."
+   ]
+  ],
+  "outcomes": [
+   "Account for convertible bonds and induced conversions",
+   "Account for convertible preferred and stock warrants",
+   "Measure stock options at grant-date fair value",
+   "Record stock option expense, exercise and expiration",
+   "Account for restricted stock, ESPPs and SARs",
+   "Integrate the first half of the course"
+  ],
+  "take": [
+   "Convertible debt is debt",
+   "Warrants by relative fair value",
+   "Options at grant-date fair value",
+   "Expense over the service period",
+   "RSUs keep value if price falls",
+   "Owners don't create income; employees do create expense"
+  ]
+ },
+ "8": {
+  "warmup": [
+   "Two companies each earn $1 million. One has 500,000 shares; the other has 500,000 shares plus bonds convertible into 200,000 more. Which shareholders should worry?",
+   "Dilution; sets up diluted EPS."
+  ],
+  "acts": [
+   [
+    "Shares: Jan 1 300,000; Mar 1 issued 60,000; Aug 1 bought 30,000 treasury shares; Dec 1 issued 12,000. Weighted average?",
+    "300,000 + 50,000 − 12,500 + 1,000 = 338,500."
+   ],
+   [
+    "Same data, plus a 10% stock dividend on June 1. Weighted average?",
+    "Restate shares before June 1 by 1.1: 300,000 × 1.1 + 60,000 × 1.1 × 10/12 − 30,000 × 5/12 + 12,000 × 1/12 = 330,000 + 55,000 − 12,500 + 1,000 = 373,500."
+   ],
+   [
+    "Net income $900,000; 7% noncumulative preferred $400,000 par, no dividends declared; 360,000 weighted shares. Basic EPS? If cumulative?",
+    "Noncumulative: $2.50. Cumulative: (900,000 − 28,000) ÷ 360,000 = $2.42."
+   ],
+   [
+    "8% convertible bonds $2,000,000, convertible into 80,000 shares; tax 25%. Per-share effect?",
+    "160,000 × 75% = 120,000 ÷ 80,000 = $1.50."
+   ],
+   [
+    "40,000 options at $25; average price $40; year-end price $45. Incremental shares?",
+    "Proceeds 1,000,000 ÷ 40 = 25,000; incremental 15,000 (use average price)."
+   ],
+   [
+    "Basic EPS $2.40 (income $1,200,000; 500,000 shares). Securities: options adding 20,000 shares; bonds with effect $1.80 (adds 100,000 shares, $180,000); preferred with effect $3.00. Compute diluted EPS.",
+    "Options: 1,200,000/520,000 = 2.31. Bonds: 1,380,000/620,000 = 2.23 (dilutive). Preferred $3.00 > 2.23: antidilutive. Diluted EPS $2.23."
+   ]
+  ],
+  "case": [
+   "The EPS target",
+   "Analysts expect Bluestem's diluted EPS to be at least $2.05. The draft shows $2.00. The founder suggests (1) treating the convertible bonds as antidilutive; (2) using the year-end share price of $20 rather than the $24 average for the options; and (3) buying back 30,000 shares on December 30.",
+   [
+    "Is idea 1 allowed?",
+    "Compute incremental option shares at $20 and explain why it's not allowed.",
+    "Compute the effect of idea 3 on weighted shares.",
+    "What's the ethical issue?"
+   ],
+   "(1) No: the bonds' effect ($0.60) is below EPS: dilutive. (2) At $20: 480,000 ÷ 20 = 24,000 repurchased, 6,000 incremental; GAAP requires the average price. (3) 30,000 × 2/365 ≈ 164 weighted shares: negligible; and cash leaves. Ethics: managing EPS to meet expectations; misleading investors."
+  ],
+  "exam": [
+   [
+    "Explain the if-converted method and the treasury stock method, and why antidilutive securities are excluded.",
+    6,
+    "If-converted: assume conversion at start of year; add back after-tax interest or don't deduct preferred dividends; add shares. TSM: proceeds repurchase at average price; incremental shares. Antidilutive excluded because diluted EPS is conservative."
+   ],
+   [
+    "Compute Bluestem's basic and diluted EPS: net income $1,200,000; 6% cumulative preferred $500,000; weighted shares 540,000; 4% convertible bonds $1,000,000 convertible into 50,000 shares; 30,000 options at $16 with average price $24; tax 25%.",
+    8,
+    "Basic 2.17; diluted 1,200,000 ÷ 600,000 = 2.00."
+   ]
+  ],
+  "outcomes": [
+   "Distinguish simple and complex capital structures",
+   "Compute weighted-average shares, including stock dividends and splits",
+   "Compute basic EPS with preferred dividends",
+   "Apply the if-converted method",
+   "Apply the treasury stock method",
+   "Identify antidilutive securities and present EPS"
+  ],
+  "take": [
+   "Basic and diluted EPS on the face",
+   "Weight by time; restate splits",
+   "Subtract current cumulative preferred dividends",
+   "If-converted: add back after-tax interest",
+   "Treasury stock method uses average price",
+   "Exclude antidilutive securities"
+  ]
+ },
+ "9": {
+  "warmup": [
+   "Bluestem buys a utility bond and its price drops 3% because interest rates rose. Has Bluestem lost money? What if it holds the bond to maturity?",
+   "Depends on intent: HTM collects contractual cash; sets up classification."
+  ],
+  "acts": [
+   [
+    "Classify: (a) bonds bought to fund a plant in 4 years, may sell if needed; (b) bonds the treasury desk trades weekly; (c) bonds Bluestem will hold to maturity and can afford to.",
+    "(a) AFS; (b) trading; (c) HTM."
+   ],
+   [
+    "Bluestem buys $200,000 of 4-year, 5% bonds (semiannual) to yield 6% (8 periods at 3%: PV of 1 0.78941; PVA 7.01969). Price and first interest entry (HTM).",
+    "Price 157,882 + 5,000 × 7.01969 = 35,098 → 192,980; interest 5,789; amortization 789."
+   ],
+   [
+    "AFS: amortized cost $194,582; fair value $191,000. Record the adjustment. Next year, amortized cost $196,250 and fair value $199,000: record.",
+    "Year 1: unrealized loss 3,582 in OCI (FVA credit 3,582). Year 2: required FVA debit 2,750; adjust by 6,332."
+   ],
+   [
+    "Trading portfolio: cost $120,000; fair value $126,500. Record. Next year it's sold for $124,000.",
+    "Gain 6,500 in NI; on sale, loss 2,500 vs fair value carrying amount."
+   ],
+   [
+    "AFS bonds: amortized cost $300,000; AOCI unrealized loss $8,000; sold for $295,000. Record the realized loss and reclassification.",
+    "Realized loss 5,000 in NI; reclassify 8,000 out of OCI (fair value adjustment eliminated)."
+   ],
+   [
+    "An AFS bond's fair value fell $20,000 below amortized cost: $12,000 due to rising rates and $8,000 due to expected credit loss. Report each part.",
+    "Credit loss 8,000 to NI via allowance; 12,000 to OCI."
+   ]
+  ],
+  "case": [
+   "The treasury portfolio",
+   "Bluestem holds three bond portfolios at December 31, 2030: (A) $459,444 cost utility bonds, amortized cost $466,335, fair value $470,000; (B) a trading portfolio, cost $200,000, fair value $194,000; (C) Treasury notes held to maturity, amortized cost $150,000, fair value $146,000. The founder wants to classify everything as HTM 'to keep income stable', but Bluestem expects to sell A to fund the plant.",
+   [
+    "Report each portfolio and its income and OCI effects.",
+    "Can A be HTM?",
+    "What happens to income if B were reclassified as AFS?",
+    "Evaluate the founder's proposal."
+   ],
+   "A (AFS): 470,000; OCI gain 3,665. B (trading): 194,000; loss 6,000 in NI. C (HTM): 150,000; FV disclosed. A can't be HTM: Bluestem expects to sell it. B to AFS would move the 6,000 to OCI, but transfers out of trading must be rare and justified; trading intent drives classification. Proposal misrepresents intent; auditors would challenge."
+  ],
+  "exam": [
+   [
+    "Compare the accounting for held-to-maturity, available-for-sale and trading debt securities.",
+    6,
+    "HTM amortized cost; AFS FV through OCI with recycling; trading FV through NI; credit losses through NI; classification by intent and ability."
+   ],
+   [
+    "Bluestem buys $500,000 of 6% bonds at $459,444 to yield 8% (semiannual). Prepare the first two interest entries and the year-end AFS adjustment if fair value is $470,000.",
+    8,
+    "Interest 18,378 (amort 3,378) and 18,513 (amort 3,513); amortized cost 466,335; FVA debit 3,665, OCI credit 3,665."
+   ]
+  ],
+  "outcomes": [
+   "Classify debt securities",
+   "Account for held-to-maturity securities at amortized cost",
+   "Account for available-for-sale securities through OCI",
+   "Account for trading securities through net income",
+   "Record sales, reclassification adjustments and credit losses",
+   "Account for transfers and disclosures"
+  ],
+  "take": [
+   "HTM, AFS, trading",
+   "HTM: amortized cost",
+   "AFS: fair value, gains in OCI",
+   "Trading: fair value, gains in income",
+   "Recycle OCI on sale",
+   "Credit losses always hit income"
+  ]
+ },
+ "10": {
+  "warmup": [
+   "Bluestem owns 30% of Northshore Paddle, which earns $250,000 but pays only $80,000 in dividends. How much income should Bluestem report from it?",
+   "Dividends vs share of income; sets up the equity method."
+  ],
+  "acts": [
+   [
+    "Choose the method: 8% of a listed supplier; 25% of a dealer with a board seat; 60% of a canoe maker; 15% of a startup with no market price and no influence.",
+    "FV-NI; equity method; consolidate; measurement alternative (or FV if determinable)."
+   ],
+   [
+    "Bluestem buys 2,000 shares at $50; receives $1.50 dividends per share; year-end price $46. Record.",
+    "Investment 100,000; dividend revenue 3,000; unrealized loss 8,000 in NI."
+   ],
+   [
+    "Equity method: 25% of an investee bought for $400,000; investee income $180,000; dividends $60,000. Ending investment and income?",
+    "Income 45,000; dividends 15,000; ending 430,000."
+   ],
+   [
+    "Bluestem pays $900,000 for 40% of a company with book value $1,800,000; buildings undervalued $300,000 (20 years remaining). Assign the excess; investee income $200,000. Compute investment income.",
+    "Book share 720,000; excess 180,000: buildings 120,000 (6,000/yr), goodwill 60,000. Income 80,000 − 6,000 = 74,000."
+   ],
+   [
+    "Explain how a 70% subsidiary appears on Bluestem's balance sheet and income statement.",
+    "All assets and liabilities combined; NCI in equity for 30%; NCI's share of income shown separately."
+   ],
+   [
+    "Compare Bluestem's income from Northshore under fair value (price rose $20,000 on the stake) and the equity method.",
+    "FV: 24,000 + 20,000 = 44,000; equity method: 75,000."
+   ]
+  ],
+  "case": [
+   "Crossing 20%",
+   "Bluestem owns 18% of Lakes Paddle Co. (cost $360,000, fair value now $390,000) with no board seat. It can buy another 7% for $150,000 and get a board seat. Lakes Paddle earns about $400,000 a year, pays $100,000 in dividends, and its share price swings widely. The founder wants to buy 'so we can report a share of their profit instead of the swings'.",
+   [
+    "Income under the current method if fair value rises $30,000 and dividends are $18,000.",
+    "Income under the equity method after the purchase (25% share).",
+    "Is the founder's reasoning a valid basis for the decision?",
+    "What determines the method after the purchase?"
+   ],
+   "Current: 18,000 + 30,000 = 48,000 (volatile). Equity method: 25% × 400,000 = 100,000 (less amortization of any excess). The decision should rest on strategy and value, not reporting; the method follows significant influence (board seat, 25%), not preference."
+  ],
+  "exam": [
+   [
+    "Explain how the level of influence determines the accounting for equity investments, and describe each method.",
+    6,
+    "Little influence: FV-NI (or measurement alternative); significant: equity method (share of income, dividends reduce, excess amortized); control: consolidation with NCI."
+   ],
+   [
+    "Record Bluestem's 30% investment in Northshore: cost $700,000; book value $2,000,000; equipment undervalued $200,000 (10 years); income $250,000; dividends $80,000.",
+    8,
+    "Excess 100,000: equipment 60,000, goodwill 40,000. Income 75,000 − 6,000 = 69,000; dividends 24,000; ending investment 745,000."
+   ]
+  ],
+  "outcomes": [
+   "Determine the method from the level of influence",
+   "Account for equity securities at fair value through net income",
+   "Apply the measurement alternative",
+   "Apply the equity method",
+   "Assign and amortize excess cost under the equity method",
+   "Explain consolidation and compare methods"
+  ],
+  "take": [
+   "Influence decides the method",
+   "Equity securities: FV changes in income",
+   "Equity method: share of income, dividends reduce",
+   "Depreciate excess on assets; not goodwill",
+   "Control: consolidate, show NCI",
+   "Same investee, different income"
+  ]
+ },
+ "11": {
+  "warmup": [
+   "A customer pays $1,800 on March 1 for a kayak, lessons in May, and a year of winter storage. How much revenue has Bluestem earned on March 1?",
+   "Previews performance obligations and allocation."
+  ],
+  "acts": [
+   [
+    "Does a contract exist? (a) a verbal order from a long-time dealer; (b) a signed order from a dealer in bankruptcy, collection doubtful; (c) a swap of kayaks for an identical kayak shipment with no commercial purpose.",
+    "(a) Yes if customary; (b) no, collection not probable; (c) no commercial substance."
+   ],
+   [
+    "Identify performance obligations: kayak + paddle + 2-year assurance warranty + 3-year extended warranty sold optionally.",
+    "Kayak and paddle (distinct, possibly combined if a set); assurance warranty is not separate; extended warranty is separate."
+   ],
+   [
+    "Expected value: a dealer rebate of $0 (30%), $20,000 (50%) or $40,000 (20%). Estimate.",
+    "Expected rebate 18,000; reduce revenue accordingly (subject to constraint)."
+   ],
+   [
+    "Allocate $5,000 to equipment (SSP $4,500), installation (SSP $700), and 1-year support (SSP $800).",
+    "Ratio 5,000/6,000: 3,750; 583; 667."
+   ],
+   [
+    "Over time or point in time: kayak delivery; annual storage; custom canoe built on the customer's land; software subscription.",
+    "Point; over time; over time (customer controls); over time."
+   ],
+   [
+    "Bluestem pays a sales agent a $6,000 commission for a 3-year storage contract. Account for it.",
+    "Capitalize 6,000; amortize 2,000 a year."
+   ]
+  ],
+  "case": [
+   "The dealer deal",
+   "On January 1, Lakes Paddle Co. signs a contract to buy 400 kayaks at $500 each in 2031, with an 8% rebate on all units if it buys more than 350. Bluestem also includes free dealer training (SSP $10,000) and a display rack (SSP $4,000). Kayak SSP is $500. Bluestem expects Lakes to buy 400 and has strong history with similar rebates. In Q1 Bluestem delivers 100 kayaks and the rack; training is in April.",
+   [
+    "Identify the performance obligations.",
+    "Determine the transaction price.",
+    "Allocate it (SSPs: kayaks $200,000, training $10,000, rack $4,000).",
+    "Compute Q1 revenue."
+   ],
+   "Obligations: kayaks (each), training, rack. Price: 400 × 460 = 184,000. Allocation ratio 184,000/214,000 = 85.98%: kayaks 171,963; training 8,598; rack 3,439. Q1: 100/400 × 171,963 = 42,991 + rack 3,439 = 46,430."
+  ],
+  "exam": [
+   [
+    "Describe the five steps of revenue recognition and apply them to the Paddle Package ($1,800; SSPs kayak $1,500, lessons $300, storage $200).",
+    8,
+    "Contract; three obligations; price 1,800; allocation 1,350/270/180; kayak at delivery, lessons when taught, storage over time."
+   ],
+   [
+    "Explain variable consideration and the constraint, with an example.",
+    6,
+    "Rebates, bonuses, returns; expected value or most likely; include only if significant reversal not probable; reassess each period."
+   ]
+  ],
+  "outcomes": [
+   "State the core principle and the five steps",
+   "Identify contracts and distinct performance obligations",
+   "Determine the transaction price including variable consideration",
+   "Allocate the price by standalone selling prices",
+   "Recognize revenue at a point in time or over time",
+   "Account for contract balances and contract costs"
+  ],
+  "take": [
+   "Control transfer drives revenue",
+   "Distinct = separate obligation",
+   "Variable consideration, constrained",
+   "Allocate by standalone prices",
+   "Point in time vs over time",
+   "Contract liabilities, assets and costs"
+  ]
+ },
+ "12": {
+  "warmup": [
+   "Bluestem's website sells $200 camping stoves it never touches. Should its revenue go up by $200 per stove?",
+   "Principal vs agent; gross vs net."
+  ],
+  "acts": [
+   [
+    "Sales of 2,000 paddles at $80 (cost $30) with 4% expected returns. Record the sale.",
+    "Revenue 153,600; refund liability 6,400; COGS 57,600; return asset 2,400."
+   ],
+   [
+    "Bluestem sells a kayak with an optional 3-year extended warranty for $1,650 total; SSP kayak $1,500, warranty $150 (coverage years 3–5). Allocate and schedule revenue.",
+    "Ratio 1,650/1,650 = 100%: kayak 1,500 at delivery; warranty 150 over years 3–5 (50 a year)."
+   ],
+   [
+    "Principal or agent: (a) Bluestem buys stoves, holds inventory, sets prices; (b) Bluestem lists stoves, maker ships and sets prices; (c) a ride-hailing app.",
+    "(a) Principal, gross; (b) agent, net; (c) agent (driver provides service), net."
+   ],
+   [
+    "Consignment: 80 kayaks shipped; 30 sold at $520; commission 12%; freight to consignee $800. Record Bluestem's revenue and expenses.",
+    "Revenue 15,600; commission 1,872; freight capitalized to consigned inventory and expensed proportionally (300)."
+   ],
+   [
+    "Contract price $1,500,000; estimated costs $1,200,000; year-1 costs $480,000; billings $500,000. Compute revenue, gross profit and the contract balance.",
+    "40%; revenue 600,000; GP 120,000; contract asset 100,000."
+   ],
+   [
+    "Same contract: year-2 costs to date $1,050,000; revised total costs $1,560,000. Year-2 result?",
+    "Loss expected 60,000; year-2 loss 180,000 (60,000 + 120,000)."
+   ]
+  ],
+  "case": [
+   "The park contract",
+   "Bluestem's park contract ($900,000; estimated costs $720,000) incurred $288,000 in year 1, with $300,000 billed. In year 2, costs to date are $612,000, the revised estimate is $765,000, and billings to date are $700,000. The founder suggests leaving the year-1 profit alone and 'catching up next year when we finish'.",
+   [
+    "Compute year-1 revenue and profit.",
+    "Compute year-2 percent complete, revenue and gross profit.",
+    "Compute the contract balance at the end of year 2.",
+    "Evaluate the founder's suggestion."
+   ],
+   "Year 1: 360,000; GP 72,000. Year 2: 612/765 = 80%; cumulative revenue 720,000; year-2 revenue 360,000; cumulative GP 720,000 − 612,000 = 108,000; year-2 GP 36,000. Contract asset 720,000 − 700,000 = 20,000. Founder: changes in estimate must be recognized currently with cumulative catch-up; deferring misstates income."
+  ],
+  "exam": [
+   [
+    "Explain principal vs agent and right-of-return accounting with an example of each.",
+    6,
+    "Control before transfer; indicators; gross vs net. Returns: variable consideration, refund liability, return asset."
+   ],
+   [
+    "A $900,000 contract with estimated costs $720,000 incurs $288,000 in year 1 (billings $300,000). In year 2 total costs are revised to $950,000. Compute year-1 revenue and profit, the contract balance, and the year-2 loss.",
+    8,
+    "Revenue 360,000; GP 72,000; contract asset 60,000; year-2 loss 122,000."
+   ]
+  ],
+  "outcomes": [
+   "Account for sales with a right of return",
+   "Distinguish assurance-type and service-type warranties",
+   "Determine whether the company is a principal or an agent",
+   "Account for consignments, bill-and-hold and repurchase arrangements",
+   "Recognize revenue over time on long-term contracts",
+   "Account for changes in estimates and losses on contracts"
+  ],
+  "take": [
+   "Expected returns reduce revenue",
+   "Service warranties defer revenue",
+   "Principal gross, agent net",
+   "Consignment: revenue when the consignee sells",
+   "Cost-to-cost measures progress",
+   "Recognize contract losses at once"
+  ]
+ },
+ "13": {
+  "warmup": [
+   "Bluestem changes from LIFO to FIFO, extends a machine's life, and finds an old error. Should any of these change last year's numbers?",
+   "Sets up retrospective, prospective and restatement treatments."
+  ],
+  "acts": [
+   [
+    "Classify: (a) LIFO to FIFO; (b) warranty cost rate from 3% to 2%; (c) SYD to straight-line; (d) last year's sale recorded twice; (e) consolidating a newly controlled subsidiary.",
+    "(a) Principle; (b) estimate; (c) estimate effected by principle; (d) error; (e) reporting entity."
+   ],
+   [
+    "Change from average cost to FIFO: pretax differences before 2030 $25,000; 2030 $15,000; 2031 $10,000 (current year). Tax 25%. Compute the adjustment to beginning 2030 RE (2031 and 2030 presented) and restated 2030 income.",
+    "Beginning 2030 RE +18,750; 2030 income +11,250."
+   ],
+   [
+    "List two direct and two indirect effects of a change in inventory method.",
+    "Direct: inventory, COGS, income taxes. Indirect: profit-sharing, royalties based on income."
+   ],
+   [
+    "Equipment cost $240,000, salvage $20,000, 8-year life, SYD for 2 years; then straight-line. Compute book value and new depreciation.",
+    "SYD 8/36 + 7/36 × 220,000 = 48,889 + 42,778 = 91,667; BV 148,333; SL (148,333 − 20,000) ÷ 6 = 21,389."
+   ],
+   [
+    "In 2031, Bluestem finds that a $30,000 2030 equipment purchase was expensed (5-year life, no salvage, full-year depreciation). Tax 25%. Prepare the correction.",
+    "2030 income understated 24,000 pretax (30,000 − 6,000) → 18,000 after tax. Dr Equipment 30,000 / Cr Accum. depr 6,000, Deferred tax liability 6,000, RE 18,000."
+   ],
+   [
+    "Errors found in 2031 (books open): 2030 ending inventory overstated $12,000; 2030 accrued interest missed $4,000. Effect on 2030 income and the correcting entries (ignore tax).",
+    "2030 income overstated 12,000 and overstated 4,000 → 16,000. Dr RE 12,000 / Cr Inventory 12,000; Dr RE 4,000 / Cr Interest expense 4,000."
+   ]
+  ],
+  "case": [
+   "The restatement",
+   "Bluestem's 2031 audit finds: (1) 2030 depreciation of $50,000 omitted; (2) 2030 ending inventory understated $20,000; (3) the change of Northwind from LIFO to FIFO (cumulative pretax effect to January 1, 2031 of $90,000). Tax rate 25%. 2030 reported net income was $1,250,000. The founder wants to record everything in 2031 income 'to avoid a restatement'.",
+   [
+    "Compute corrected 2030 net income.",
+    "How is each item reported?",
+    "Compute the total adjustment to January 1, 2031 retained earnings.",
+    "Evaluate the founder's suggestion."
+   ],
+   "Corrected 2030 NI: 1,250,000 − 37,500 + 15,000 + 22,500 (LIFO→FIFO 2030 effect) = 1,250,000. Items: (1) prior period adjustment; (2) prior period adjustment (counterbalances in 2031); (3) retrospective. Jan 1 2031 RE: −37,500 + 15,000 + 67,500 = +45,000. Recording in 2031 income violates GAAP and misstates trends; restatement and disclosure required."
+  ],
+  "exam": [
+   [
+    "Compare the accounting for changes in principle, changes in estimate and error corrections, explaining the reasoning for each.",
+    6,
+    "Retrospective (comparability), prospective (good-faith estimates), restatement via prior period adjustment (prior statements wrong); disclosures."
+   ],
+   [
+    "An asset costing $400,000 (5 years, no salvage) was depreciated by DDB for 2 years and switched to straight-line. Compute year-3 depreciation and explain the treatment.",
+    6,
+    "BV 144,000; 48,000 a year; prospective (change in estimate effected by change in principle)."
+   ]
+  ],
+  "outcomes": [
+   "Classify accounting changes and errors",
+   "Apply a change in principle retrospectively",
+   "Handle indirect effects and impracticability",
+   "Account for changes in estimate, including depreciation methods",
+   "Correct errors with prior period adjustments",
+   "Analyze counterbalancing and noncounterbalancing errors"
+  ],
+  "take": [
+   "Principle retrospective; estimate prospective",
+   "Adjust opening RE of the earliest year",
+   "Direct effects only; else earliest practicable",
+   "Depreciation method change is prospective",
+   "Errors: prior period adjustment, net of tax",
+   "Some errors reverse; others persist"
+  ]
+ },
+ "14": {
+  "warmup": [
+   "Bluestem earned $1.3 million but its cash rose only $140,000. Where could the rest have gone?",
+   "Working capital, capex, dividends, debt repayment: sets up the statement."
+  ],
+  "acts": [
+   [
+    "Classify: interest received; purchase of AFS securities; proceeds from bonds; income taxes paid; loan to a dealer; buying treasury stock.",
+    "Operating; investing; financing; operating; investing; financing."
+   ],
+   [
+    "Direct method: sales $2,000,000, AR up $50,000; COGS $1,200,000, inventory down $30,000, AP down $20,000. Cash from customers and paid to suppliers?",
+    "Customers 1,950,000; purchases 1,170,000; paid 1,190,000."
+   ],
+   [
+    "Indirect: net income $700,000; depreciation $150,000; gain on sale of land $40,000; bond discount amortization $5,000; equity-method income $60,000 with dividends $20,000. Subtotal?",
+    "700 + 150 − 40 + 5 − 40 = 775,000."
+   ],
+   [
+    "Working capital: AR down $30,000; inventory up $70,000; prepaid up $5,000; AP up $45,000; wages payable down $8,000. Net adjustment?",
+    "+30 − 70 − 5 + 45 − 8 = −8,000."
+   ],
+   [
+    "Equipment account: beginning $2,000,000, purchases $600,000, ending $2,300,000; equipment sold cost $300,000 with AD $220,000; gain $15,000. Investing cash flows?",
+    "Purchase −600,000; sale +95,000."
+   ],
+   [
+    "Retained earnings rose from $3,000,000 to $3,500,000; net income $800,000; a 5% stock dividend transferred $120,000. Cash dividends paid (no dividends payable)?",
+    "800,000 − 500,000 − 120,000 = 180,000."
+   ]
+  ],
+  "case": [
+   "Profit but no cash",
+   "A newer competitor, River Run Kayaks, reports net income of $900,000 and asks Bluestem about a merger. Its cash flow statement shows: depreciation $100,000; increase in receivables $600,000; increase in inventory $500,000; increase in payables $150,000; capital expenditures $300,000; new bank borrowing $700,000; dividends $100,000.",
+   [
+    "Compute River Run's operating cash flow.",
+    "Compute free cash flow.",
+    "How has it funded itself?",
+    "What concerns would you raise?"
+   ],
+   "CFO 900 + 100 − 600 − 500 + 150 = 50,000. FCF 50 − 300 − 100 = −350,000. Funded by 700,000 of new borrowing. Concerns: receivables and inventory growing far faster than cash; possible aggressive revenue recognition or obsolete inventory; paying dividends with borrowed money; quality of earnings."
+  ],
+  "exam": [
+   [
+    "Explain the difference between the direct and indirect methods and the rules for adjusting net income under the indirect method.",
+    6,
+    "Direct: classes of receipts and payments; indirect: NI adjusted for noncash items, gains/losses, and working capital changes (asset increases subtract, liability increases add); same total."
+   ],
+   [
+    "Prepare Bluestem's 2031 statement of cash flows (indirect) from the data in this lecture.",
+    8,
+    "Operating 1,510,000; investing −1,690,000; financing 320,000; increase 140,000; noncash conversion of bonds disclosed."
+   ]
+  ],
+  "outcomes": [
+   "Explain the purpose of the statement and classify cash flows",
+   "Compare the direct and indirect methods",
+   "Adjust net income for noncash items and gains and losses",
+   "Adjust for changes in working capital",
+   "Determine investing and financing cash flows and noncash disclosures",
+   "Integrate the course"
+  ],
+  "take": [
+   "Operating, investing, financing",
+   "Both methods give the same total",
+   "Add back noncash; remove gains",
+   "Asset up: subtract; liability up: add",
+   "Sale proceeds, not gains, in investing",
+   "Disclose noncash transactions"
+  ]
+ }
+}

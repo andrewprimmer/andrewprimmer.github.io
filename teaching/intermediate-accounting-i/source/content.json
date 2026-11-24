@@ -1,0 +1,996 @@
+{
+ "1": {
+  "warmup": [
+   "Bluestem's bank asks for audited financial statements. Why would a bank pay attention to statements the company prepares itself?",
+   "Introduces the role of standards and independent audit in making reports credible."
+  ],
+  "acts": [
+   [
+    "List three decisions that investors or creditors make using Bluestem's financial statements.",
+    "Whether to lend and at what rate; whether to buy, hold or sell shares; covenant monitoring; supplier credit terms."
+   ],
+   [
+    "Match each body to its role: SEC, FASB, PCAOB, AICPA.",
+    "SEC: legal authority over public company reporting. FASB: writes GAAP. PCAOB: audit standards and inspections for public company audits. AICPA: CPA profession, private company audit standards, CPA exam."
+   ],
+   [
+    "Use the Codification topic list to find where guidance on inventory, leases and revenue lives.",
+    "Topic 330 inventory; Topic 842 leases; Topic 606 revenue."
+   ],
+   [
+    "Bluestem reports 'adjusted EBITDA' that excludes a lawsuit settlement. What must a public company do when it presents this measure?",
+    "Reconcile it to the most comparable GAAP measure (net income) and give the GAAP measure equal or greater prominence."
+   ],
+   [
+    "Bluestem considers listing in Toronto. Name two numbers that might change if it reported under IFRS.",
+    "Inventory if it uses LIFO; property if revalued; development costs capitalized; impairment reversals."
+   ],
+   [
+    "Role-play: Sam responds to the founder's request to delay invoices. Draft his two-sentence reply.",
+    "Records the invoices in December; suggests approaching the bank for a waiver, offering to prepare a forecast."
+   ]
+  ],
+  "case": [
+   "The covenant squeeze",
+   "Bluestem's loan covenant requires net income of at least $500,000. Draft results show $460,000. The founder suggests three ideas: delay $40,000 of December repair invoices; record a $60,000 order shipped January 3 as December revenue; and change depreciation from 10 to 15 years for existing equipment, cutting expense by $30,000.",
+   [
+    "Which ideas violate GAAP?",
+    "Which, if any, could be acceptable, and under what conditions?",
+    "Who are the stakeholders?",
+    "What should Sam do?"
+   ],
+   "Delaying invoices and recording January revenue in December violate GAAP (expenses and revenue belong to the period incurred/earned). A change in useful life is a change in estimate and acceptable only if supported by evidence about the assets, not to hit a covenant; it applies prospectively. Stakeholders: bank, owners, employees, auditor, Sam. Sam should record correctly and help the company seek a waiver."
+  ],
+  "exam": [
+   [
+    "Explain the roles of the SEC, the FASB and the PCAOB in US financial reporting.",
+    6,
+    "SEC: statutory authority, delegates standard setting, reviews filings, enforces. FASB: private, due process, issues ASUs into the Codification. PCAOB: created by SOX, audit standards and inspections for public company auditors."
+   ],
+   [
+    "Describe the FASB's due process and explain why it matters.",
+    6,
+    "Agenda, research, discussion paper, exposure draft, comment letters and roundtables, ASU. Gives affected parties a voice, improves quality and legitimacy, despite political pressure."
+   ]
+  ],
+  "outcomes": [
+   "Explain the role of financial reporting in capital allocation",
+   "Identify the primary users and objective of financial reports",
+   "Describe the roles of the SEC, FASB, PCAOB and AICPA",
+   "Explain due process and use the Codification",
+   "Compare US GAAP and IFRS at a high level",
+   "Apply an ethical decision process to a reporting dilemma"
+  ],
+  "take": [
+   "Reports help allocate capital",
+   "Investors and creditors are the primary users",
+   "SEC authority, FASB standards, PCAOB audits",
+   "The Codification is authoritative GAAP",
+   "IFRS differs in places like LIFO",
+   "Recognize the dilemma, then weigh stakeholders"
+  ]
+ },
+ "2": {
+  "warmup": [
+   "A friend says, 'Accounting is just rules.' Where would you look for an answer if no rule covers a new type of transaction?",
+   "Leads into the conceptual framework as the basis for judgment."
+  ],
+  "acts": [
+   [
+    "State the objective of financial reporting in your own words and explain who it serves.",
+    "Provide information useful to investors, lenders and creditors in making capital decisions."
+   ],
+   [
+    "Classify each: (a) prior forecasts compared with actual; (b) no bias in estimates; (c) all needed information included; (d) a $3 error in $10 million of sales.",
+    "(a) Confirmatory value (relevance); (b) neutrality; (c) completeness; (d) immaterial."
+   ],
+   [
+    "Classify: kayak sales; a loss on selling an old forklift; dividends paid; the owner contributes land; wages owed at year-end.",
+    "Revenue; loss; distribution to owners; investment by owners; liability (and expense)."
+   ],
+   [
+    "Name the assumption violated: (a) the founder's personal car on Bluestem's balance sheet; (b) adjusting PP&E for inflation; (c) recording wages when paid.",
+    "(a) Economic entity; (b) monetary unit; (c) accrual basis."
+   ],
+   [
+    "Assign a fair value level: (a) Apple shares; (b) corporate bonds priced from similar bonds; (c) a private startup investment valued by a model.",
+    "Level 1; Level 2; Level 3."
+   ],
+   [
+    "Bluestem's controller finds a $15,000 error. Income is $1.2 million. Is it material? What else would you consider?",
+    "1.25% of income: likely immaterial quantitatively; consider nature (fraud?), covenants, trends, segment effects."
+   ]
+  ],
+  "case": [
+   "The dealer incentive",
+   "Bluestem offers dealers a free kayak rack with every 10 kayaks bought in December. Sam must decide (1) whether the racks are a separate cost to record now, (2) whether to disclose a lawsuit by a customer injured in a capsized kayak (lawyers think Bluestem is unlikely to lose), and (3) whether to keep valuing a 5% stake in a local startup at cost or at a model-based fair value.",
+   [
+    "Which framework concepts apply to each issue?",
+    "How does the cost constraint affect the rack decision?",
+    "What disclosure does full disclosure require for the lawsuit?",
+    "Discuss relevance vs faithful representation for the startup stake."
+   ],
+   "Racks: expense recognition/matching (and later, revenue allocation); immaterial items may be expensed. Lawsuit: full disclosure; if loss only reasonably possible, disclose; if remote, no disclosure required (Lecture on contingencies in 312). Startup: fair value more relevant but Level 3, less verifiable; GAAP rules for equity investments decide (ACCT 312)."
+  ],
+  "exam": [
+   [
+    "Explain the two fundamental qualitative characteristics and their ingredients, with an example of each.",
+    6,
+    "Relevance: predictive, confirmatory, materiality. Faithful representation: complete, neutral, free from error. Examples from Bluestem."
+   ],
+   [
+    "Identify and explain the five basic assumptions and give a consequence of each.",
+    6,
+    "Entity (separate records), going concern (cost and depreciation), monetary unit (no inflation adjustment), periodicity (estimates and accruals), accrual basis (revenue and expense timing)."
+   ]
+  ],
+  "outcomes": [
+   "Explain the purpose and levels of the conceptual framework",
+   "Describe the qualitative characteristics of useful information",
+   "Define the elements of financial statements",
+   "Explain the five basic assumptions",
+   "Apply the measurement, recognition and disclosure principles",
+   "Apply the cost constraint and materiality"
+  ],
+  "take": [
+   "The framework is accounting's constitution",
+   "Relevance and faithful representation",
+   "Assets and liabilities define the rest",
+   "Entity, going concern, monetary unit, periods, accruals",
+   "Mixed model: cost and fair value",
+   "Benefits must justify the costs"
+  ]
+ },
+ "3": {
+  "warmup": [
+   "Bluestem paid a full year of insurance in October. If no one makes an entry at December 31, which statements are wrong, and in which direction?",
+   "Assets overstated, expenses understated, income and equity overstated: motivates adjusting entries."
+  ],
+  "acts": [
+   [
+    "Record: Bluestem buys $40,000 of aluminum on account; pays $15,000 of it; sells kayaks for $90,000 cash.",
+    "Dr Inventory 40,000 / Cr AP 40,000; Dr AP 15,000 / Cr Cash 15,000; Dr Cash 90,000 / Cr Sales 90,000 (plus COGS entry under perpetual)."
+   ],
+   [
+    "Bluestem pays $36,000 on August 1 for 12 months of software subscriptions. Prepare the December 31 adjustment.",
+    "5 months × 3,000 = 15,000. Dr Software expense 15,000 / Cr Prepaid 15,000."
+   ],
+   [
+    "A $80,000, 9% note payable was signed October 1. Prepare the December 31 accrual.",
+    "80,000 × 9% × 3/12 = 1,800. Dr Interest expense 1,800 / Cr Interest payable 1,800."
+   ],
+   [
+    "A truck costs $64,000, salvage $4,000, life 5 years, bought July 1. Year-1 depreciation?",
+    "60,000 ÷ 5 × 6/12 = 6,000."
+   ],
+   [
+    "Revenues $1,500,000; expenses $1,320,000; dividends $50,000. Prepare closing entries and the change in retained earnings.",
+    "Close revenue and expenses to Income Summary (180,000 net income), Income Summary to RE, dividends to RE; RE +130,000."
+   ],
+   [
+    "Cash paid for wages $410,000; wages payable rose from $6,000 to $9,000. Accrual wage expense?",
+    "413,000."
+   ]
+  ],
+  "case": [
+   "The shoebox bookkeeping",
+   "Bluestem's new retail shop kept cash-basis records for its first year: cash sales and collections $260,000; cash paid to suppliers $140,000; cash paid for rent $30,000 (covering 15 months, starting January 1); wages paid $48,000. At year-end, customers owe $12,000, suppliers are owed $9,000, $2,000 of wages are unpaid, and inventory on hand cost $15,000.",
+   [
+    "Compute accrual-basis revenue.",
+    "Compute cost of goods sold.",
+    "Compute rent and wage expense.",
+    "Compute accrual net income and compare with cash profit."
+   ],
+   "Revenue 260,000 + 12,000 = 272,000. Purchases 140,000 + 9,000 = 149,000; COGS 149,000 − 15,000 = 134,000. Rent 30,000 × 12/15 = 24,000. Wages 50,000. Net income 272,000 − 134,000 − 24,000 − 50,000 = 64,000. Cash profit 260,000 − 140,000 − 30,000 − 48,000 = 42,000."
+  ],
+  "exam": [
+   [
+    "Explain why adjusting entries are needed and classify the four types, with an example of each.",
+    6,
+    "Accrual basis and periodicity. Prepaid expenses, unearned revenues, accrued revenues, accrued expenses (plus estimates like depreciation)."
+   ],
+   [
+    "Bluestem's unadjusted trial balance shows Prepaid insurance $24,000 (paid Oct 1, one year) and Unearned revenue $30,000 (40% earned). Wages of $12,000 are accrued. Prepare the adjusting entries and their effect on net income.",
+    6,
+    "Insurance −6,000; revenue +12,000; wages −12,000; net effect −6,000."
+   ]
+  ],
+  "outcomes": [
+   "Describe the steps in the accounting cycle",
+   "Prepare adjusting entries for prepaid expenses and unearned revenues",
+   "Prepare adjusting entries for accrued revenues and expenses",
+   "Record depreciation and use the adjusted trial balance",
+   "Prepare closing entries",
+   "Use reversing entries and convert cash to accrual"
+  ],
+  "take": [
+   "The cycle hasn't changed",
+   "Prepayments expire or get earned",
+   "Accruals record what's happened before cash",
+   "Depreciation allocates cost",
+   "Closing resets temporary accounts",
+   "Cash ± changes in balances = accrual"
+  ]
+ },
+ "4": {
+  "warmup": [
+   "Two kayak makers each report $1 million of net income. One sold its headquarters at a $600,000 gain. Which would you rather invest in, and why?",
+   "Introduces quality of earnings and the need to separate recurring and nonrecurring items."
+  ],
+  "acts": [
+   [
+    "Bluestem's profit jumped 30%, but cash from operations fell. Give two possible explanations that raise quality-of-earnings concerns.",
+    "Receivables growing faster than sales; reduced reserves or bad-debt estimates; capitalizing costs; one-time gains."
+   ],
+   [
+    "Prepare a multiple-step statement: sales $2,000,000; returns $50,000; COGS $1,170,000; selling $260,000; admin $190,000; interest expense $30,000; dividend revenue $5,000; tax 25%.",
+    "Net sales 1,950,000; GP 780,000; operating income 330,000; pretax 305,000; tax 76,250; income from continuing 228,750."
+   ],
+   [
+    "Bluestem's camping-furniture line (a strategic shift) had an operating loss of $60,000 and a $20,000 gain on sale. Tax 25%. Compute the discontinued operations amount.",
+    "Pretax loss 40,000; net loss 30,000."
+   ],
+   [
+    "Classify where each goes: storm loss; loss on discontinued segment; unrealized gain on AFS debt securities; correction of a prior-year error.",
+    "Continuing ops (pretax, separate line); discontinued ops net of tax; OCI net of tax; beginning retained earnings net of tax."
+   ],
+   [
+    "Compute EPS for Bluestem: continuing $472,500; discontinued −$90,000; 250,000 shares.",
+    "Continuing $1.89; discontinued $(0.36); net income $1.53."
+   ],
+   [
+    "Prepare a retained earnings statement: beginning $900,000; prior period adjustment (error) −$40,000 net of tax; net income $210,000; dividends $75,000.",
+    "Adjusted beginning 860,000; ending 995,000."
+   ]
+  ],
+  "case": [
+   "The analyst's question",
+   "An analyst reviewing Bluestem's draft 2027 statements notes: income from operations of $680,000 includes a $45,000 uninsured storm loss and $30,000 restructuring charges; net income of $382,500 includes a $90,000 loss from the fishing-boat division; and the founder wants to present 'core earnings' excluding all three items in the press release.",
+   [
+    "Recompute operating income excluding the storm and restructuring.",
+    "Is the fishing-boat division correctly reported?",
+    "Should the storm loss be reported net of tax as a separate category?",
+    "What rules govern 'core earnings' if Bluestem is public?"
+   ],
+   "755,000 excluding them. Yes, as discontinued operations, net of tax, if a strategic shift. No: no extraordinary items; it stays pretax in continuing operations, separately disclosed. Non-GAAP measures must be reconciled to GAAP and not given more prominence (SEC rules)."
+  ],
+  "exam": [
+   [
+    "Explain the criteria and presentation of discontinued operations, and why they are reported separately.",
+    6,
+    "Component disposed or held for sale; strategic shift with major effect; report operating results and gain/loss on disposal net of tax below continuing operations; EPS separately; improves predictive value."
+   ],
+   [
+    "From the following, prepare the bottom of Bluestem's income statement and EPS (300,000 shares): pretax income from continuing operations $800,000; tax 25%; discontinued operations pretax loss $100,000.",
+    6,
+    "Continuing 600,000 ($2.00); discontinued (75,000) ($(0.25)); net income 525,000 ($1.75)."
+   ]
+  ],
+  "outcomes": [
+   "Explain the uses and limitations of the income statement",
+   "Evaluate quality of earnings",
+   "Prepare a multiple-step income statement",
+   "Report discontinued operations and unusual items",
+   "Apply intraperiod tax allocation and compute EPS",
+   "Prepare retained earnings and comprehensive income statements"
+  ],
+  "take": [
+   "Income predicts cash flows, with limits",
+   "Multiple-step shows gross profit and operations",
+   "Discontinued ops: net of tax, below continuing",
+   "No extraordinary items in US GAAP",
+   "EPS on the face for public companies",
+   "Comprehensive income = net income + OCI"
+  ]
+ },
+ "5": {
+  "warmup": [
+   "Bluestem has $4 million of assets on its balance sheet. Would you pay $4 million for the company? Why or why not?",
+   "Book vs market value; omitted intangibles; historical cost."
+  ],
+  "acts": [
+   [
+    "Explain liquidity, solvency and financial flexibility, and name one balance sheet item that bears on each.",
+    "Liquidity: cash, receivables. Solvency: long-term debt vs assets. Flexibility: unused credit, low leverage."
+   ],
+   [
+    "Classify: prepaid insurance (12 months); land held for speculation; patents; bond sinking fund; inventory; equipment.",
+    "Current; long-term investment; intangible; long-term investment (restricted); current; PP&E."
+   ],
+   [
+    "Classify: accounts payable; current portion of mortgage; unearned revenue; bonds due in 8 years; dividends declared; treasury stock.",
+    "Current; current; current; long-term; current; contra equity."
+   ],
+   [
+    "Compute the current, quick and debt-to-assets ratios for a company with cash $50,000, receivables $150,000, inventory $300,000, current liabilities $250,000, total liabilities $600,000, total assets $1,500,000.",
+    "Current 2.0; quick 0.8; debt to assets 40%."
+   ],
+   [
+    "Classify each cash flow: interest paid; sale of old truck; issuing common stock; purchase of equipment; collections from customers; repayment of loan principal.",
+    "Operating; investing; financing; investing; operating; financing."
+   ],
+   [
+    "Decide whether to adjust or disclose: (a) customer with a December receivable declares bankruptcy in January; (b) Bluestem issues bonds in February; (c) lawsuit from a November accident settled in January.",
+    "(a) Adjust; (b) disclose; (c) adjust (condition existed at year-end)."
+   ]
+  ],
+  "case": [
+   "The covenant ratio",
+   "Bluestem's loan requires a current ratio of at least 2.0. On December 31, current assets are $1,400,000 and current liabilities $650,000. The founder suggests (1) using $150,000 of cash to pay down accounts payable on December 30; (2) reclassifying $200,000 of inventory as a long-term asset; (3) delaying a large aluminum purchase on account from December 29 to January 3.",
+   [
+    "Compute the current ratio after idea 1.",
+    "Is idea 2 acceptable?",
+    "Is idea 3 acceptable?",
+    "What ethical issues arise?"
+   ],
+   "Idea 1: 1,250,000 ÷ 500,000 = 2.5 (legitimate; it raises the ratio when it's above 1). Idea 2: not acceptable; inventory held for sale is current. Idea 3: a genuine change in purchase timing is legal but window dressing; if goods arrived in December they must be recorded. Ethical issues: misleading the lender; disclosure of window dressing."
+  ],
+  "exam": [
+   [
+    "Explain how current assets and current liabilities are defined, and give three examples of each.",
+    6,
+    "One year or operating cycle, whichever longer; cash/receivables/inventory/prepaids; payables/accrued/unearned/current portion of LTD."
+   ],
+   [
+    "Using Bluestem's numbers (CFO $520,000, capex $380,000, dividends $120,000, current assets $1.4m, current liabilities $650,000), compute free cash flow and the current ratio and comment.",
+    6,
+    "FCF $20,000; current ratio 2.15; adequate liquidity but limited discretionary cash; inventory-heavy."
+   ]
+  ],
+  "outcomes": [
+   "Explain the uses and limits of the balance sheet",
+   "Classify assets",
+   "Classify liabilities and equity",
+   "Prepare a classified balance sheet and compute liquidity and solvency ratios",
+   "Classify cash flows and compute free cash flow",
+   "Apply disclosure requirements, including subsequent events"
+  ],
+  "take": [
+   "Liquidity, solvency, flexibility",
+   "Current = one year or operating cycle",
+   "Current portion of debt is current",
+   "Current, quick and debt ratios",
+   "Operating, investing, financing",
+   "Notes are part of the statements"
+  ]
+ },
+ "6": {
+  "warmup": [
+   "Would you rather receive $100,000 today or $130,000 in five years? What does your answer depend on?",
+   "The interest rate (opportunity cost) and risk; sets up present value."
+  ],
+  "acts": [
+   [
+    "Identify the rate per period and number of periods: (a) 10% compounded semiannually for 4 years; (b) 9% compounded quarterly for 3 years.",
+    "(a) 5%, 8 periods; (b) 2.25%, 12 periods."
+   ],
+   [
+    "Bluestem deposits $75,000 today at 8% compounded annually. How much in 6 years? (factor 1.58687)",
+    "$119,015."
+   ],
+   [
+    "A dealer gives Bluestem a $90,000 non-interest-bearing note due in 3 years. Market rate 6% (factor 0.83962). How much revenue does Bluestem record now?",
+    "$75,566 revenue; $14,434 interest over 3 years."
+   ],
+   [
+    "What rate makes $40,000 grow to $59,200 in 5 years? (FV factors, 5 periods: 7% 1.40255; 8% 1.46933)",
+    "Required factor 1.48: about 8.2%, just above 8%."
+   ],
+   [
+    "Bluestem will deposit $20,000 at the end of each year for 10 years at 7% (FVA factor 13.81645). Fund balance? If deposits are at the start of each year?",
+    "$276,329; annuity due $295,672."
+   ],
+   [
+    "A lease requires $25,000 at the start of each year for 4 years at 6% (PVA ordinary factor 3.46511). Present value?",
+    "3.46511 × 1.06 = 3.67302 × 25,000 = $91,825."
+   ]
+  ],
+  "case": [
+   "Buy or lease the paint line",
+   "Bluestem can (A) pay $165,000 cash for the paint line today; (B) pay $40,000 at the end of each year for 5 years; or (C) pay $38,000 at the start of each year for 5 years. Bluestem can borrow at 8%. (PVA ordinary, 5 periods, 8% = 3.99271.)",
+   [
+    "Compute the present value of B.",
+    "Compute the present value of C.",
+    "Which option is cheapest?",
+    "How would Bluestem record option B on the balance sheet?"
+   ],
+   "B: $159,708. C: 38,000 × 4.31213 = $163,861. A: $165,000. B is cheapest. Record equipment and a note payable at $159,708; interest expense recognized over 5 years."
+  ],
+  "exam": [
+   [
+    "Explain the difference between an ordinary annuity and an annuity due, and show how to convert an ordinary annuity factor into an annuity due factor.",
+    6,
+    "Payment timing at end vs beginning; multiply ordinary factor by (1 + i) for both FV and PV."
+   ],
+   [
+    "Bluestem must accumulate $600,000 in 8 years. It can earn 5% (FV of 1 factor 1.47746; FVA ordinary factor 9.54911). (a) Single deposit today? (b) Equal end-of-year deposits?",
+    6,
+    "(a) 600,000 ÷ 1.47746 = $406,102; (b) 600,000 ÷ 9.54911 = $62,833."
+   ]
+  ],
+  "outcomes": [
+   "Identify accounting uses of present value",
+   "Distinguish simple and compound interest",
+   "Compute future and present values of single sums",
+   "Solve for unknown rates and periods",
+   "Compute future values of ordinary annuities and annuities due",
+   "Compute present values of annuities"
+  ],
+  "take": [
+   "Present values are everywhere in GAAP",
+   "Match the rate to the period",
+   "FV = PV × (1 + i)ⁿ",
+   "Factor = FV ÷ PV to find rate or time",
+   "Annuity due = ordinary × (1 + i)",
+   "Record assets at PV; the rest is interest"
+  ]
+ },
+ "7": {
+  "warmup": [
+   "A lottery winner can take $1 million today or $80,000 a year for 20 years. Which would you choose, and what would you need to know?",
+   "Discount rate, timing, taxes, risk; previews annuities and comparing streams."
+  ],
+  "acts": [
+   [
+    "A note pays $20,000 a year for 5 years, first payment at the end of year 4. Value at 6% (PVA 5 = 4.21236; PV of 1, 3 periods = 0.83962).",
+    "84,247 × 0.83962 = $70,735."
+   ],
+   [
+    "Price a 4-year, $200,000 bond with a 5% stated rate paid semiannually when the market rate is 6% (8 periods at 3%: PV of 1 = 0.78941; PVA = 7.01969).",
+    "Principal 157,882 + interest 5,000 × 7.01969 = 35,098; price $192,980."
+   ],
+   [
+    "Prepare the first two interest entries for the bond in activity 2 (investor).",
+    "Period 1: interest 5,789 (192,980 × 3%); cash 5,000; amortization 789; carrying 193,769. Period 2: interest 5,813; amortization 813; carrying 194,582."
+   ],
+   [
+    "Bluestem borrows $150,000 for 4 years at 6% with equal annual payments (PVA factor 3.46511). Compute the payment and the year-1 interest and principal.",
+    "Payment $43,288; interest $9,000; principal $34,288; balance $115,712."
+   ],
+   [
+    "Expected cash flow: a warranty obligation payable in 2 years: 40% $50,000, 40% $70,000, 20% $100,000. PV at 4% risk-free (factor 0.92456).",
+    "Expected 68,000; PV $62,870."
+   ],
+   [
+    "Midterm warm-up: name the timing error in each: (a) annuity due treated as ordinary; (b) semiannual bond discounted annually.",
+    "(a) Understates PV/FV by one period of interest; (b) wrong rate and periods (use half rate, double periods)."
+   ]
+  ],
+  "case": [
+   "The design license",
+   "Bluestem is offered two deals for its kayak design license. Deal 1: $85,000 cash today. Deal 2: $30,000 a year for 4 years, starting at the end of year 3, plus a $20,000 signing payment at the end of year 1. Bluestem's discount rate is 8%. (PV of 1 at 8%, 1 period: 0.92593.)",
+   [
+    "Value deal 2.",
+    "Which deal is better?",
+    "What non-financial factors matter?",
+    "How would Bluestem record deal 2 at signing?"
+   ],
+   "Deal 2: 85,189 + 18,519 = $103,708 > $85,000. Deal 2 is better financially, but carries credit risk of the licensee over 6 years; consider currency and enforcement. Record a receivable at present value $103,708 (if revenue recognized at signing) and accrue interest over time."
+  ],
+  "exam": [
+   [
+    "A $500,000, 10-year bond pays 8% interest semiannually. The market rate is 10%. Compute the price (20 periods at 5%: PV of 1 = 0.37689; PVA = 12.46221) and the first period's interest using the effective-interest method.",
+    6,
+    "Principal 188,445 + interest 20,000 × 12.46221 = 249,244; price $437,689. Interest 21,884; amortization 1,884."
+   ],
+   [
+    "Explain the expected cash flow approach and when it is preferable to the traditional approach.",
+    6,
+    "Probability-weighted cash flows discounted at risk-free rate; preferable when cash flows are uncertain in amount or timing (AROs, contingencies, impairment)."
+   ]
+  ],
+  "outcomes": [
+   "Value deferred annuities",
+   "Price bonds from their cash flows",
+   "Apply the effective-interest method",
+   "Compute loan payments and amortization",
+   "Apply the expected cash flow approach",
+   "Integrate the first half of the course"
+  ],
+  "take": [
+   "Deferred: value, then discount back",
+   "Bond = PV principal + PV interest",
+   "Interest = carrying amount × market rate",
+   "Payment = loan ÷ annuity factor",
+   "Expected flows use a risk-free rate",
+   "Draw the timeline"
+  ]
+ },
+ "8": {
+  "warmup": [
+   "Bluestem's sales rose 20% but cash collections rose only 5%. What might be happening with receivables?",
+   "Slower collections, looser credit, possible aggressive revenue; sets up valuation and turnover."
+  ],
+  "acts": [
+   [
+    "Which are cash or cash equivalents: currency; 2-month Treasury bill; 6-month CD; postdated check; money market fund; travel advance to an employee?",
+    "Cash/equivalents: currency, T-bill, money market fund. Not: CD (ST investment), postdated check (receivable), travel advance (receivable)."
+   ],
+   [
+    "Record a $40,000 sale on 2/10, n/30 expected to be paid early, then collection after 20 days.",
+    "Dr AR 39,200 / Cr Sales 39,200; Dr Cash 40,000 / Cr AR 39,200, Cr Sales discounts forfeited 800."
+   ],
+   [
+    "Aging: current $200,000 (1%), 1–60 days $50,000 (10%), over 60 days $20,000 (40%). Allowance has a $4,000 debit balance. Required allowance and expense?",
+    "Required 15,000; expense 19,000."
+   ],
+   [
+    "Record a $6,000 write-off, and its later recovery. What happens to net receivables at each step?",
+    "Dr Allowance / Cr AR (no change); reinstate then collect (no change to net AR, cash up and AR down)."
+   ],
+   [
+    "Bluestem accepts a $240,000 zero-interest note due in 3 years; market rate 6% (factor 0.83962). Record the sale and year-1 interest.",
+    "Revenue 201,509; interest 12,091."
+   ],
+   [
+    "Factor $150,000 without recourse: 2% fee, 4% holdback. Compute cash, the loss and the entry.",
+    "Cash 141,000; due from factor 6,000; loss 3,000."
+   ]
+  ],
+  "case": [
+   "The spring cash crunch",
+   "Bluestem has $450,000 of receivables and needs $300,000 by March. Option A: a bank loan secured by receivables at 9%. Option B: factor $320,000 of receivables without recourse (4% fee, 5% holdback). The founder prefers B because 'it keeps debt off the balance sheet and improves our current ratio.' Bluestem's current ratio is 2.15 (current assets $1.4m, current liabilities $650,000).",
+   [
+    "Compute cash, loss and holdback under B.",
+    "Compute the current ratio under A (borrow $300,000 short-term) and under B (receivables removed; cash and the holdback receivable added).",
+    "Is the founder's reasoning sound?",
+    "What must be true for B to be a sale?"
+   ],
+   "B: fee 12,800, holdback 16,000, cash 291,200. A: CA 1,700,000 / CL 950,000 = 1.79. B: CA 1,400,000 − 320,000 + 291,200 + 16,000 = 1,387,200 / 650,000 = 2.13. B does avoid the liability, but costs a 4% fee on short-term money; sale treatment requires surrendering control (isolation, transferee can pledge/sell, no effective control)."
+  ],
+  "exam": [
+   [
+    "Explain the CECL model and prepare the adjusting entry from an aging schedule requiring $30,000 when the allowance has an $8,000 credit balance.",
+    6,
+    "Lifetime expected credit losses using history, current conditions, forecasts; expense 22,000; net receivables at amount expected to be collected."
+   ],
+   [
+    "Bluestem sells equipment for a $300,000 zero-interest note due in 3 years when the market rate is 8% (factor 0.79383). Record the sale and interest for years 1 and 2.",
+    6,
+    "Revenue 238,149; year-1 interest 19,052; carrying 257,201; year-2 interest 20,576."
+   ]
+  ],
+  "outcomes": [
+   "Identify what is reported as cash and cash equivalents",
+   "Record receivables with cash discounts",
+   "Estimate credit losses with an aging schedule under CECL",
+   "Record write-offs and recoveries",
+   "Record notes receivable at present value",
+   "Account for transfers of receivables and compute turnover"
+  ],
+  "take": [
+   "Cash equivalents: 3 months or less",
+   "Discounts are variable consideration",
+   "CECL: lifetime expected losses",
+   "Write-offs don't change net receivables",
+   "Zero-interest notes at present value",
+   "Sale only if control is surrendered"
+  ]
+ },
+ "9": {
+  "warmup": [
+   "A kayak is sitting at a dealer's showroom in Duluth. Whose inventory is it? What would you need to know?",
+   "Consignment vs sale; control; sets up which goods to include."
+  ],
+  "acts": [
+   [
+    "Classify: aluminum sheets; fully assembled kayaks; kayaks awaiting painting; cleaning supplies for the factory; kayaks held by a dealer on consignment.",
+    "Raw materials; finished goods; WIP; supplies (or overhead); finished goods (Bluestem's)."
+   ],
+   [
+    "Periodic: beginning inventory $90,000; purchases $410,000; freight-in $6,000; purchase returns $8,000; ending inventory $110,000. COGS?",
+    "Net purchases 408,000; available 498,000; COGS 388,000."
+   ],
+   [
+    "Adjust a count of $300,000: goods sold FOB destination still in transit to a customer $12,000 (not counted); goods bought FOB destination in transit $8,000 (not counted); Bluestem goods at a consignee $5,000.",
+    "300,000 + 12,000 + 5,000 = 317,000 (exclude 8,000)."
+   ],
+   [
+    "Record a $20,000 purchase on 2/10, n/30 under the net method, then payment after 15 days.",
+    "Dr Inventory 19,600 / Cr AP 19,600; Dr AP 19,600, Dr Purchase discounts lost 400 / Cr Cash 20,000."
+   ],
+   [
+    "Ending inventory 2027 was overstated $15,000. Show the effects on 2027 and 2028 COGS, income and retained earnings (ignore tax).",
+    "2027: COGS −15,000, NI +15,000, RE +15,000. 2028: COGS +15,000, NI −15,000, RE end correct."
+   ],
+   [
+    "Inventory grew 35% while sales grew 8%. List three questions you'd ask management.",
+    "Obsolete stock? Count/cutoff problems? Production for an expected order? Changes in costing method? Channel stuffing reversals?"
+   ]
+  ],
+  "case": [
+   "The year-end count",
+   "Bluestem's count team reports $732,000. Sam's cutoff review finds: aluminum costing $15,000 shipped by a supplier FOB shipping point on December 29, arriving January 3; kayaks costing $22,000 at three dealers on consignment; paddles costing $9,000 held for a supplier on consignment; and kayaks costing $18,000 sold FOB shipping point on December 31, shipped that day, that were (correctly) not counted, but the sale was recorded on January 2.",
+   [
+    "Compute correct inventory.",
+    "What's wrong with the December 31 shipment, and its effect on income?",
+    "Record the correction (sales price $28,800).",
+    "Recommend a control."
+   ],
+   "Inventory 760,000. The sale should be recorded in December: revenue and receivable understated by 28,800; COGS understated by 18,000 if perpetual not updated; income understated by 10,800. Dr AR 28,800 / Cr Sales 28,800; Dr COGS 18,000 / Cr Inventory 18,000 (if perpetual still shows it). Control: match shipping documents to invoices around year-end."
+  ],
+  "exam": [
+   [
+    "Explain how goods in transit and consigned goods are treated, with examples.",
+    6,
+    "FOB shipping point: buyer's when shipped; FOB destination: seller's until delivered; consigned goods stay with consignor until sold."
+   ],
+   [
+    "Explain the effect of an understated 2027 ending inventory of $22,000 on 2027 and 2028 financial statements.",
+    6,
+    "2027: COGS over, NI under, RE under, current assets under. 2028: COGS under, NI over; RE correct by end of 2028."
+   ]
+  ],
+  "outcomes": [
+   "Classify inventories for manufacturers and merchandisers",
+   "Compare perpetual and periodic systems",
+   "Determine which goods belong in inventory",
+   "Determine which costs are inventoried",
+   "Analyze the effects of inventory errors",
+   "Recognize inventory fraud risks and controls"
+  ],
+  "take": [
+   "Raw materials, WIP, finished goods",
+   "COGS = available − ending inventory",
+   "Control decides ownership",
+   "Freight-in in; freight-out out",
+   "Ending inventory errors reverse next year",
+   "Watch cutoff and channel stuffing"
+  ]
+ },
+ "10": {
+  "warmup": [
+   "A gas station's tanks mix every delivery together. Which cost flow assumption best describes what physically happens?",
+   "Average cost; physical flow needn't match the assumption."
+  ],
+  "acts": [
+   [
+    "Using Bluestem's touring kayak data, compute COGS and ending inventory under weighted average.",
+    "Average $428; ending 128,400; COGS 299,600."
+   ],
+   [
+    "Compute FIFO ending inventory and COGS for: beginning 50 at $20; purchases 100 at $22, 150 at $25; 180 units sold.",
+    "Ending 120 at $25 = 3,000; available 6,950; COGS 3,950."
+   ],
+   [
+    "Compute periodic LIFO ending inventory and COGS for the same data.",
+    "Ending 50 at $20 + 70 at $22 = 2,540; COGS 4,410."
+   ],
+   [
+    "Moving average (perpetual): beginning 100 at $10; sell 60; buy 100 at $13; sell 80. Ending inventory?",
+    "After first sale 40 at $10 = 400; purchase → 140 units, 1,700, avg 12.143; sell 80 → 60 units ≈ $729."
+   ],
+   [
+    "FIFO inventory $900,000; LIFO $760,000 at year-end; reserve was $110,000 last year. Compute the reserve and the year's LIFO effect.",
+    "Reserve 140,000; LIFO effect +30,000 to COGS."
+   ],
+   [
+    "A LIFO competitor reports COGS of $3,000,000; its LIFO reserve rose from $300,000 to $500,000 during the year. Restate its COGS to FIFO for comparison.",
+    "FIFO COGS = 3,000,000 − 200,000 = $2,800,000."
+   ]
+  ],
+  "case": [
+   "The method decision",
+   "Bluestem's paddle division has steadily rising costs (about 6% a year) and no plans to list outside the US. FIFO COGS this year would be $1,100,000; LIFO COGS $1,160,000. The tax rate is 25%. The bank's covenant requires net income of at least $500,000; projected income before the method choice is $540,000 under FIFO.",
+   [
+    "Compute income under each method.",
+    "Compute the cash tax saving from LIFO.",
+    "Does LIFO breach the covenant?",
+    "Recommend a method."
+   ],
+   "Pretax difference 60,000; after-tax 45,000. LIFO income 495,000 (if 540,000 is after-tax FIFO income): below covenant. Tax saving 15,000 a year. Options: negotiate covenant on a FIFO basis (many lenders allow LIFO reserve add-back) and use LIFO for the tax saving; or stay FIFO. Conformity rule requires LIFO in books if used for tax."
+  ],
+  "exam": [
+   [
+    "Compare FIFO and LIFO in a period of rising prices: effects on COGS, net income, ending inventory, taxes and cash flow.",
+    6,
+    "LIFO: higher COGS, lower income, lower inventory, lower taxes, higher cash; FIFO the reverse. LIFO conformity; IFRS prohibits LIFO."
+   ],
+   [
+    "Given beginning inventory 200 at $400 and purchases 300 at $420, 400 at $440, 100 at $460, with 700 sold, compute ending inventory and COGS under FIFO, LIFO (periodic) and weighted average.",
+    8,
+    "FIFO 134,000/294,000; LIFO 122,000/306,000; average 128,400/299,600."
+   ]
+  ],
+  "outcomes": [
+   "Explain why cost flow assumptions are needed",
+   "Apply specific identification and average cost",
+   "Apply FIFO",
+   "Apply LIFO and explain its tax effects",
+   "Interpret the LIFO reserve and LIFO liquidations",
+   "Evaluate the choice of method"
+  ],
+  "take": [
+   "Assumed cost flow need not match physical flow",
+   "Average smooths prices",
+   "FIFO: current balance sheet",
+   "LIFO: current costs in COGS, tax savings",
+   "LIFO reserve = FIFO − LIFO",
+   "Choose, disclose, be consistent"
+  ]
+ },
+ "11": {
+  "warmup": [
+   "Bluestem paid $400 to make a kayak that now sells for $350. What should the balance sheet show, and when should the loss be recognized?",
+   "Lower of cost and NRV; recognize when value falls, not when sold."
+  ],
+  "acts": [
+   [
+    "Apply LCNRV item by item: A cost $20,000, NRV $18,000; B cost $35,000, NRV $41,000; C cost $12,000, NRV $9,000.",
+    "A 18,000; B 35,000; C 9,000; total 62,000; write-down 5,000."
+   ],
+   [
+    "Apply LCM: cost $90; replacement $70; NRV $85; normal profit $10. Then: cost $90; replacement $95; NRV $88; normal profit $10.",
+    "Market = middle of 70, 85, 75 → 75; LCM 75. Second: middle of 95, 88, 78 → 88; LCM 88."
+   ],
+   [
+    "Record a $9,000 write-down under the loss method. Then record a purchase commitment loss of $6,000.",
+    "Dr Loss due to decline in NRV 9,000 / Cr Allowance 9,000. Dr Unrealized holding loss 6,000 / Cr Estimated liability 6,000."
+   ],
+   [
+    "Fire loss: beginning inventory $300,000; purchases $520,000; sales $900,000; markup 25% on cost; salvage $40,000.",
+    "GP rate 20%; COGS 720,000; estimated inventory 100,000; loss 60,000."
+   ],
+   [
+    "Retail: beginning cost $40,000/retail $70,000; purchases $250,000/$410,000; markups $20,000; markdowns $30,000; sales $390,000. Conventional retail ending inventory at cost?",
+    "Ratio 290,000/500,000 = 58%; ending retail 80,000; cost 46,400."
+   ],
+   [
+    "COGS $900,000; beginning inventory $160,000; ending $200,000. Turnover and days.",
+    "Average 180,000; turnover 5.0; 73 days."
+   ]
+  ],
+  "case": [
+   "The fishing kayak problem",
+   "Bluestem holds 600 fishing kayaks in discontinued colors costing $100 each ($60,000 in total). A dealer offers $85 each, and Bluestem would pay $10 a unit to ship them. A paint shop could repaint them for $20 each and then sell at $120 with $10 shipping. Year-end is in two weeks.",
+   [
+    "Compute NRV without repainting.",
+    "Compute NRV with repainting.",
+    "What value should appear at year-end?",
+    "Record the write-down under the loss method."
+   ],
+   "Cost $100/unit. NRV as is: 85 − 10 = 75. NRV after repaint: 120 − 20 − 10 = 90. Use the best expected course in ordinary business: if repainting is planned, NRV 90 → value 54,000, write-down 6,000; if selling as is, 45,000, write-down 15,000. Dr Loss due to decline in NRV / Cr Allowance."
+  ],
+  "exam": [
+   [
+    "Explain the difference between lower of cost and NRV and lower of cost or market, including when each applies.",
+    6,
+    "LCNRV for FIFO/average; LCM for LIFO/retail with ceiling NRV and floor NRV − normal profit; no write-ups under GAAP."
+   ],
+   [
+    "Use the conventional retail method: beginning cost $60,000/retail $100,000; purchases $340,000/$500,000; net markups $20,000; net markdowns $40,000; sales $480,000.",
+    6,
+    "Ratio 64.52%; ending retail 100,000; ending cost 64,516."
+   ]
+  ],
+  "outcomes": [
+   "Apply lower of cost and net realizable value",
+   "Apply lower of cost or market",
+   "Record inventory write-downs and purchase commitment losses",
+   "Estimate inventory with the gross profit method",
+   "Apply the conventional retail inventory method",
+   "Compute and interpret inventory turnover"
+  ],
+  "take": [
+   "NRV = price − costs to complete and sell",
+   "LCM: replacement cost within the bounds",
+   "Loss method shows write-downs clearly",
+   "Gross profit method for estimates only",
+   "Retail ratio excludes markdowns",
+   "Turnover = COGS ÷ average inventory"
+  ]
+ },
+ "12": {
+  "warmup": [
+   "Bluestem pays $250,000 for a machine and $25,000 more to ship, install and test it. Should the $25,000 be expensed this year? Why or why not?",
+   "Costs to get the asset ready are part of its cost and benefit future periods."
+  ],
+  "acts": [
+   [
+    "Compute the cost: price $180,000; 2% cash discount taken; freight $4,000; installation $9,000; repair of damage in transit (Bluestem's fault) $2,500; training $3,000.",
+    "176,400 + 4,000 + 9,000 = 189,400; repair and training expensed."
+   ],
+   [
+    "Classify as land, land improvements or building: purchase price of lot; driveway; demolition of old shed; architect fees; fencing; excavation for foundation.",
+    "Land; land improvement; land; building; land improvement; building."
+   ],
+   [
+    "Expenditures: Mar 1 $240,000; Jul 1 $360,000; Dec 31 $120,000. Construction loan $300,000 at 9%; other debt rate 11%; actual total interest $160,000. Compute capitalized interest.",
+    "WAAE 200,000 + 180,000 + 0 = 380,000; avoidable 27,000 + 8,800 = 35,800; capitalize 35,800."
+   ],
+   [
+    "Allocate $2,000,000 to land (FV $600,000), building (FV $1,500,000) and equipment (FV $400,000).",
+    "Ratio 80%: 480,000; 1,200,000; 320,000."
+   ],
+   [
+    "Exchange: old equipment cost $60,000, AD $45,000, FV $10,000, plus $40,000 cash. Record with and without commercial substance.",
+    "Loss 5,000 recognized either way; new asset 50,000 in both cases."
+   ],
+   [
+    "Classify: repainting the warehouse; new roof extending life 10 years; replacing a motor; oil changes; adding a loading dock.",
+    "Expense; capitalize; capitalize (remove old); expense; capitalize."
+   ]
+  ],
+  "case": [
+   "The Redwood Falls plant",
+   "Bluestem paid $1,200,000 for a competitor's plant (land FV $400,000, building FV $800,000, equipment FV $300,000), paid $20,000 legal fees for the whole purchase, $45,000 to rewire the building before use, and $8,000 to repair machines damaged when movers dropped them. The founder wants to allocate more of the price to land 'because it holds value'.",
+   [
+    "Allocate the price and legal fees.",
+    "Treat the rewiring and the repair.",
+    "What's wrong with the founder's suggestion, and how does it affect income?",
+    "List the PP&E amounts."
+   ],
+   "Total cost 1,220,000 allocated by relative fair value: land 325,333, building 650,667, equipment 244,000 (by relative FV). Rewiring capitalized to building (+45,000 = 695,667); repair expensed. Allocating more to land reduces depreciation and overstates income: not allowed; must use relative fair values."
+  ],
+  "exam": [
+   [
+    "Explain how capitalized interest is computed and the conditions for capitalizing it.",
+    6,
+    "Qualifying assets, during construction, while expenditures and interest are incurred; WAAE × specific rate then weighted-average rate on other debt; limit to actual interest."
+   ],
+   [
+    "Bluestem exchanges a van (cost $40,000, AD $28,000, FV $15,000) and $30,000 cash for a new van. Record the exchange with and without commercial substance.",
+    6,
+    "With: new van 45,000, gain 3,000. Without: new van 42,000, no gain."
+   ]
+  ],
+  "outcomes": [
+   "Determine the cost of equipment",
+   "Determine the cost of land, land improvements and buildings",
+   "Compute capitalized interest on self-constructed assets",
+   "Allocate lump-sum purchases and record other acquisitions",
+   "Account for nonmonetary exchanges",
+   "Distinguish capital and revenue expenditures after acquisition"
+  ],
+  "take": [
+   "Capitalize costs to get ready for use",
+   "Land isn't depreciated; improvements are",
+   "Capitalize the lower of avoidable and actual interest",
+   "Allocate by relative fair value",
+   "Commercial substance decides gains",
+   "Capitalize improvements; expense repairs"
+  ]
+ },
+ "13": {
+  "warmup": [
+   "Bluestem's machine cost $275,000 and could be sold today for $210,000. Should the balance sheet show $210,000? Why not?",
+   "Depreciation is cost allocation, not valuation; going concern."
+  ],
+  "acts": [
+   [
+    "Machine: cost $90,000; salvage $6,000; 5-year life; 21,000 units estimated. Year-1 output 5,250 units. Compute activity-method depreciation.",
+    "$4 per unit; 21,000."
+   ],
+   [
+    "Same machine: compute straight-line and SYD for years 1 and 2.",
+    "SL 16,800 each. SYD 28,000; 22,400."
+   ],
+   [
+    "Same machine: compute DDB for all five years.",
+    "36,000; 21,600; 12,960; 7,776; year 5 plug 5,664 (to salvage 6,000)."
+   ],
+   [
+    "A $60,000 van (salvage $6,000, 4 years) is bought May 1. Compute SL depreciation for the first two calendar years.",
+    "Year 1: 13,500 × 8/12 = 9,000; year 2: 13,500."
+   ],
+   [
+    "After 3 years of SL on a $200,000 asset (salvage $20,000, 10-year life), the total life is revised to 8 years and salvage to $10,000. New annual depreciation?",
+    "AD 54,000; BV 146,000; (146,000 − 10,000) ÷ 5 = 27,200."
+   ],
+   [
+    "Explain why Bluestem's book depreciation differs from its tax depreciation, and what that creates.",
+    "Different methods/lives (MACRS, bonus); temporary differences → deferred tax liability."
+   ]
+  ],
+  "case": [
+   "Choosing a method for the new line",
+   "Bluestem's new kayak-thermoforming line costs $600,000, salvage $60,000, life 6 years or 54,000 hours. Expected use: heavy in years 1–3 (12,000 hours each), then 6,000 hours a year. The founder wants straight-line because 'it gives the best income in year 1'. The bank covenant uses EBITDA.",
+   [
+    "Compute year-1 depreciation under SL, SYD, DDB and activity.",
+    "Which method best reflects the pattern of use?",
+    "Does the method matter for the covenant?",
+    "Recommend a method."
+   ],
+   "SL 90,000; SYD 6/21 × 540,000 = 154,286; DDB 1/3 × 600,000 = 200,000; activity $10/hour × 12,000 = 120,000. Activity best reflects use (heavy early). EBITDA excludes depreciation, so the covenant is unaffected. Recommend activity (or accelerated) for matching; SL acceptable but less representative."
+  ],
+  "exam": [
+   [
+    "Compute depreciation for each of five years for an asset costing $275,000, salvage $25,000, under SL, SYD and DDB.",
+    8,
+    "SL 50,000 each; SYD 83,333, 66,667, 50,000, 33,333, 16,667; DDB 110,000, 66,000, 39,600, 23,760, 10,640."
+   ],
+   [
+    "Explain how a change in useful life is accounted for and why prior periods are not restated.",
+    6,
+    "Change in estimate; prospective; remaining BV less salvage over remaining life; prior estimates were made in good faith with available information; disclose material effects."
+   ]
+  ],
+  "outcomes": [
+   "Explain depreciation as cost allocation",
+   "Apply the activity method",
+   "Apply straight-line and SYD",
+   "Apply declining-balance methods",
+   "Handle partial periods, group methods and tax differences",
+   "Account for revisions of estimates"
+  ],
+  "take": [
+   "Allocation, not valuation",
+   "Activity: rate per unit of use",
+   "SL even; SYD declining fractions",
+   "DDB: rate × book value, stop at salvage",
+   "Prorate partial years",
+   "Estimate changes are prospective"
+  ]
+ },
+ "14": {
+  "warmup": [
+   "Bluestem's fishing-boat molds cost $500,000 and are now worth $180,000. Why doesn't depreciation alone fix the balance sheet?",
+   "Depreciation allocates cost systematically; sudden declines in value need an impairment test."
+  ],
+  "acts": [
+   [
+    "Carrying amount $800,000; undiscounted cash flows $760,000; fair value $640,000. Test for impairment and record any loss.",
+    "Fails recoverability; loss 160,000. Dr Loss on impairment / Cr Accumulated depreciation."
+   ],
+   [
+    "Equipment held for sale: carrying amount $90,000; fair value $95,000; costs to sell $12,000. Next year fair value less costs rises to $88,000. Record both years.",
+    "Write down to 83,000 (loss 7,000); recovery of 5,000 allowed (up to 7,000)."
+   ],
+   [
+    "A gravel pit costs $1,500,000; restoration $100,000; land residual $200,000; 700,000 tons estimated; 90,000 tons extracted. Depletion?",
+    "Base 1,400,000; $2/ton; 180,000."
+   ],
+   [
+    "A truck cost $48,000, AD at January 1 $30,000, annual depreciation $8,000. Sold October 1 for $14,000. Record.",
+    "Depreciation 6,000; AD 36,000; BV 12,000; gain 2,000."
+   ],
+   [
+    "A storage shed (cost $70,000, AD $40,000) is destroyed by fire; insurance pays $26,000. Record.",
+    "Loss 4,000 in continuing operations."
+   ],
+   [
+    "Net income $450,000; sales $5,000,000; average assets $4,500,000. Compute profit margin, turnover and ROA.",
+    "9%; 1.11; 10%."
+   ]
+  ],
+  "case": [
+   "The fishing-boat molds",
+   "At December 31, 2027, Bluestem's fishing-boat molds (cost $500,000, accumulated depreciation $200,000) are used for one dealer whose orders fell 70%. Projected undiscounted cash flows are $240,000; fair value is $180,000. In 2028, Bluestem decides to sell them; carrying amount is then $150,000, fair value $140,000, costs to sell $8,000. The founder argues that the 2027 loss should be avoided 'because the dealer may recover'.",
+   [
+    "Test for impairment at December 31, 2027 and record any loss.",
+    "What is depreciation in 2028 if the remaining life is 6 years and salvage is zero?",
+    "Record the 2028 reclassification to held for sale.",
+    "Evaluate the founder's argument."
+   ],
+   "Loss 120,000; new basis 180,000; 2028 depreciation 30,000 (carrying 150,000). Held for sale: 132,000; loss 18,000; stop depreciating. The founder's hope isn't evidence; GAAP requires the test using best estimates; no reversal later."
+  ],
+  "exam": [
+   [
+    "Explain the US GAAP impairment model for assets held for use and compare it with assets held for sale and with IFRS.",
+    8,
+    "Two-step: recoverability (undiscounted) then FV; no reversal. Held for sale: lower of CA or FV − costs to sell, no depreciation, recoveries allowed. IFRS: one-step recoverable amount, reversals allowed."
+   ],
+   [
+    "Record the sale on July 1 of equipment costing $30,000 with $21,000 accumulated depreciation at January 1 and $4,000 annual depreciation, for $8,000 cash.",
+    6,
+    "Depreciation 2,000; Dr Cash 8,000, AD 23,000 / Cr Equipment 30,000, Gain 1,000."
+   ]
+  ],
+  "outcomes": [
+   "Test and measure impairment of assets held for use",
+   "Account for assets held for sale",
+   "Compute depletion",
+   "Record disposals and involuntary conversions",
+   "Analyze PP&E with turnover and ROA",
+   "Integrate the course"
+  ],
+  "take": [
+   "Recoverability, then fair value",
+   "Held for sale: no depreciation",
+   "Depletion by units extracted",
+   "Depreciate to the disposal date",
+   "ROA = margin × turnover",
+   "Next: Intermediate Accounting II"
+  ]
+ }
+}

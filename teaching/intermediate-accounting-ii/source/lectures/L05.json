@@ -1,0 +1,734 @@
+{
+ "meta": {
+  "n": 5,
+  "short": "Stock issuance and treasury stock",
+  "title": "Stockholders' equity: issuing and reacquiring shares",
+  "week": 5,
+  "ch": "Chapter 15",
+  "part": "Stockholders' equity",
+  "summary": "The corporate form and components of equity, par value and share counts, issuing stock for cash and noncash consideration, issuance costs, treasury stock under the cost method, retiring shares, and presentation and ratios."
+ },
+ "videos": [
+  {
+   "id": "5.1",
+   "title": "The corporate form and equity",
+   "lecture": "Lecture 5 · Stock issuance and treasury stock",
+   "take": "Equity separates contributed capital from earned capital; par value is a legal amount, not a market value",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "In 2028, Bluestem Outdoor goes public. Its equity section is about to get a lot more interesting."
+    },
+    {
+     "type": "list",
+     "heading": "Shareholders' basic rights",
+     "items": [
+      "Share in profits and losses",
+      "Vote, including for directors",
+      "Share in assets at liquidation",
+      "Preemptive right, if granted"
+     ],
+     "say": "Common shareholders have the right to share proportionately in profits and losses, to vote, including for directors, to share in assets if the company liquidates, and sometimes a preemptive right to buy new shares to keep their percentage."
+    },
+    {
+     "type": "compare",
+     "heading": "Two sources of equity",
+     "cols": [
+      "Contributed capital",
+      "Earned capital"
+     ],
+     "rows": [
+      [
+       "Source",
+       "Shareholders invest",
+       "Profits kept"
+      ],
+      [
+       "Accounts",
+       "Stock, paid-in capital",
+       "Retained earnings"
+      ]
+     ],
+     "say": "Equity has two main sources. Contributed capital is what shareholders paid in: capital stock and additional paid-in capital. Earned capital is retained earnings. Accumulated OCI and treasury stock also appear."
+    },
+    {
+     "type": "define",
+     "big": "Par value",
+     "sub": [
+      "A legal amount per share,",
+      "usually tiny, e.g. $1"
+     ],
+     "say": "Par value is an arbitrary legal amount per share, often a dollar or less. It has nothing to do with market value. Amounts received above par go to additional paid-in capital."
+    },
+    {
+     "type": "table",
+     "heading": "Share counts",
+     "rows": [
+      [
+       "Authorized by the charter",
+       "2,000,000"
+      ],
+      [
+       "Issued",
+       "500,000"
+      ],
+      [
+       "Less: held in treasury",
+       "0"
+      ],
+      [
+       "Outstanding",
+       "500,000",
+       "total"
+      ]
+     ],
+     "say": "Bluestem's new charter authorizes two million shares. Shares issued are those ever sold; outstanding shares are issued shares less any bought back and held in treasury. After the IPO, 500,000 are issued and outstanding."
+    },
+    {
+     "type": "quiz",
+     "q": "Issued 800,000; treasury 50,000. Outstanding shares?",
+     "opts": [
+      "850,000",
+      "750,000",
+      "800,000",
+      "50,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Issued eight hundred thousand; treasury fifty thousand. Outstanding shares? Pause and pick.",
+     "reveal": "It's B, 750,000."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "title": "Issuing shares for cash",
+   "lecture": "Lecture 5 · Stock issuance and treasury stock",
+   "take": "Credit common stock at par and paid-in capital for the excess; issuance costs reduce paid-in capital",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem sells 250,000 new shares, $1 par, to the public at $16 each."
+    },
+    {
+     "type": "table",
+     "heading": "The IPO",
+     "rows": [
+      [
+       "Gross proceeds: 250,000 × $16",
+       4000000
+      ],
+      [
+       "Issuance costs",
+       -280000
+      ],
+      [
+       "Net cash received",
+       3720000,
+       "total"
+      ]
+     ],
+     "say": "Gross proceeds are $4 million. Underwriting fees, legal and accounting costs total $280,000, so Bluestem receives $3,720,000."
+    },
+    {
+     "type": "journal",
+     "heading": "Recording the IPO",
+     "rows": [
+      [
+       "Cash",
+       3720000,
+       ""
+      ],
+      [
+       "Common stock (250,000 × $1)",
+       "",
+       250000
+      ],
+      [
+       "Paid-in capital in excess of par",
+       "",
+       3470000
+      ]
+     ],
+     "say": "Common stock is credited at par, $250,000. Paid-in capital in excess of par is the $3.75 million above par, less the $280,000 of issuance costs: $3,470,000. Issuance costs reduce paid-in capital; they're not an expense."
+    },
+    {
+     "type": "key",
+     "big": "No-par stock",
+     "sub": [
+      "Whole amount to common stock,",
+      "or a stated value acts like par"
+     ],
+     "say": "With no-par stock, the whole amount goes to common stock, unless the board sets a stated value, which works just like par."
+    },
+    {
+     "type": "key",
+     "big": "Never a gain or loss",
+     "sub": [
+      "Transactions with owners",
+      "don't touch income"
+     ],
+     "say": "A key principle: transactions in a company's own shares never create income or expense. They're transactions with owners."
+    },
+    {
+     "type": "quiz",
+     "q": "10,000 shares, $5 par, issued at $12. Paid-in capital in excess of par?",
+     "opts": [
+      "$50,000",
+      "$70,000",
+      "$120,000",
+      "$7"
+     ],
+     "answer": 1,
+     "say": "Quick check. Ten thousand shares, five dollar par, issued at twelve dollars. Paid-in capital in excess of par? Pause and pick.",
+     "reveal": "It's B, $70,000."
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "title": "Noncash and lump-sum issuances",
+   "lecture": "Lecture 5 · Stock issuance and treasury stock",
+   "take": "Use the fair value of the stock or of what's received, whichever is more clearly determinable",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Not every share is sold for cash."
+    },
+    {
+     "type": "journal",
+     "heading": "Shares for a patent",
+     "rows": [
+      [
+       "Patents",
+       160000,
+       ""
+      ],
+      [
+       "Common stock (10,000 × $1)",
+       "",
+       10000
+      ],
+      [
+       "Paid-in capital in excess of par",
+       "",
+       150000
+      ]
+     ],
+     "say": "Bluestem issues 10,000 shares to an inventor for a paddle-blade patent. The shares trade at $16, so the patent is recorded at $160,000, the more clearly determinable fair value."
+    },
+    {
+     "type": "key",
+     "big": "Services too",
+     "sub": [
+      "Shares to the IPO lawyers:",
+      "fair value of services or shares"
+     ],
+     "say": "Shares issued for services, like legal work, are recorded at the fair value of the services or the shares, whichever is clearer. Watering stock, by overvaluing what's received, inflates assets and equity."
+    },
+    {
+     "type": "table",
+     "heading": "Lump-sum: common and preferred together",
+     "rows": [
+      [
+       "Package price",
+       220000
+      ],
+      [
+       "FV common: 5,000 × $16",
+       80000
+      ],
+      [
+       "FV preferred: 1,000 × $160",
+       160000
+      ],
+      [
+       "To common: × 80/240",
+       73333
+      ],
+      [
+       "To preferred: × 160/240",
+       146667
+      ]
+     ],
+     "say": "If common and preferred shares are sold together for one price, allocate it by relative fair values. A $220,000 package of shares worth $240,000 in total: a third to common, $73,333, and two thirds to preferred, $146,667."
+    },
+    {
+     "type": "key",
+     "big": "If only one fair value is known",
+     "sub": [
+      "Use it; the other gets",
+      "the remainder"
+     ],
+     "say": "If only one class has a known market value, it gets that amount and the other class gets the remainder: the incremental method."
+    },
+    {
+     "type": "quiz",
+     "q": "5,000 shares ($1 par, market $20) issued for land appraised at $95,000. Land is recorded at:",
+     "opts": [
+      "$95,000",
+      "$100,000",
+      "$5,000",
+      "$97,500"
+     ],
+     "answer": 1,
+     "say": "Quick check. Five thousand shares, one dollar par, trading at twenty dollars, are issued for land appraised at ninety-five thousand. Land is recorded at what? Pause and pick.",
+     "reveal": "It's B, $100,000. The active market price is usually more reliable than an appraisal."
+    }
+   ]
+  },
+  {
+   "id": "5.4",
+   "title": "Treasury stock",
+   "lecture": "Lecture 5 · Stock issuance and treasury stock",
+   "take": "Cost method: debit treasury stock at cost; reissue differences go to paid-in capital, never income",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "A year after the IPO, Bluestem's shares slump. The board buys some back."
+    },
+    {
+     "type": "list",
+     "heading": "Why buy back shares?",
+     "items": [
+      "Return cash to shareholders",
+      "Shares for employee stock plans",
+      "Signal the shares are undervalued",
+      "Raise EPS and return on equity"
+     ],
+     "say": "Companies buy back shares to return cash to shareholders, to have shares for employee plans, to signal that they think the stock is cheap, and, less admirably, to boost EPS."
+    },
+    {
+     "type": "journal",
+     "heading": "Buying 20,000 shares at $18",
+     "rows": [
+      [
+       "Treasury stock",
+       360000,
+       ""
+      ],
+      [
+       "Cash",
+       "",
+       360000
+      ]
+     ],
+     "say": "Under the cost method, Bluestem debits Treasury Stock for the $360,000 cost. Treasury stock is a contra equity account, not an asset. Those shares get no dividends and no votes."
+    },
+    {
+     "type": "journal",
+     "heading": "Reissuing 8,000 at $21",
+     "rows": [
+      [
+       "Cash",
+       168000,
+       ""
+      ],
+      [
+       "Treasury stock (8,000 × $18)",
+       "",
+       144000
+      ],
+      [
+       "Paid-in capital, treasury",
+       "",
+       24000
+      ]
+     ],
+     "say": "Later, Bluestem reissues 8,000 shares at $21. Treasury stock is credited at cost, $144,000, and the $24,000 excess goes to Paid-in Capital from Treasury Stock. Not a gain."
+    },
+    {
+     "type": "journal",
+     "heading": "Reissuing 5,000 at $15",
+     "rows": [
+      [
+       "Cash",
+       75000,
+       ""
+      ],
+      [
+       "Paid-in capital, treasury",
+       15000,
+       ""
+      ],
+      [
+       "Treasury stock (5,000 × $18)",
+       "",
+       90000
+      ]
+     ],
+     "say": "Then it reissues 5,000 at $15, below cost. The $15,000 shortfall is debited to Paid-in Capital from Treasury Stock, which has a $24,000 balance. If that account ran out, the rest would reduce retained earnings."
+    },
+    {
+     "type": "quiz",
+     "q": "Treasury shares bought at $30 are reissued at $26. The $4 difference per share is:",
+     "opts": [
+      "A loss on the income statement",
+      "Charged to paid-in capital from treasury stock, then retained earnings",
+      "Ignored",
+      "An expense"
+     ],
+     "answer": 1,
+     "say": "Quick check. Treasury shares bought at thirty dollars are reissued at twenty-six. Where does the four dollar difference go? Pause and pick.",
+     "reveal": "It's B. Never the income statement."
+    }
+   ]
+  },
+  {
+   "id": "5.5",
+   "title": "Retiring treasury shares",
+   "lecture": "Lecture 5 · Stock issuance and treasury stock",
+   "take": "Retiring shares removes their par and original paid-in capital; any excess cost reduces retained earnings",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem decides to retire the 7,000 treasury shares it still holds."
+    },
+    {
+     "type": "table",
+     "heading": "The 7,000 shares",
+     "rows": [
+      [
+       "Cost: 7,000 × $18",
+       126000
+      ],
+      [
+       "Originally issued at $16: par $1, paid-in $15",
+       ""
+      ],
+      [
+       "Common stock removed",
+       7000
+      ],
+      [
+       "Paid-in capital removed",
+       105000
+      ],
+      [
+       "Excess cost to retained earnings",
+       14000,
+       "total"
+      ]
+     ],
+     "say": "They cost $18 each, $126,000. They were originally issued at $16: $1 of par and $15 of paid-in capital. Retiring them removes $7,000 of common stock and $105,000 of paid-in capital. The remaining $14,000 reduces retained earnings."
+    },
+    {
+     "type": "journal",
+     "heading": "Retirement",
+     "rows": [
+      [
+       "Common stock",
+       7000,
+       ""
+      ],
+      [
+       "Paid-in capital",
+       105000,
+       ""
+      ],
+      [
+       "Retained earnings",
+       14000,
+       ""
+      ],
+      [
+       "Treasury stock",
+       "",
+       126000
+      ]
+     ],
+     "say": "The entry debits common stock, paid-in capital and retained earnings, and credits Treasury Stock at cost. Issued shares fall by 7,000."
+    },
+    {
+     "type": "key",
+     "big": "Retired below original price?",
+     "sub": [
+      "Credit paid-in capital",
+      "from retirement"
+     ],
+     "say": "If shares are retired for less than their original issue price, the difference is credited to paid-in capital from retirement. Again, no income statement effect."
+    },
+    {
+     "type": "key",
+     "big": "Some states",
+     "sub": [
+      "Limit buybacks to protect",
+      "creditors"
+     ],
+     "say": "State laws often limit buybacks and dividends to protect creditors, sometimes by restricting retained earnings equal to the cost of treasury stock held."
+    },
+    {
+     "type": "quiz",
+     "q": "Retiring shares that cost more than their original issue price reduces:",
+     "opts": [
+      "Net income",
+      "Retained earnings",
+      "Cash only",
+      "Liabilities"
+     ],
+     "answer": 1,
+     "say": "Quick check. Retiring shares that cost more than their original issue price reduces what? Pause and pick.",
+     "reveal": "It's B, retained earnings, after paid-in capital from those shares."
+    }
+   ]
+  },
+  {
+   "id": "5.6",
+   "title": "Presenting and analyzing equity",
+   "lecture": "Lecture 5 · Stock issuance and treasury stock",
+   "take": "The statement of stockholders' equity reconciles every component; ROE and book value per share summarize it",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Here's Bluestem's equity section after a busy year."
+    },
+    {
+     "type": "table",
+     "heading": "Stockholders' equity, December 31, 2029",
+     "rows": [
+      [
+       "Common stock, $1 par",
+       503000
+      ],
+      [
+       "Paid-in capital in excess of par",
+       3632500
+      ],
+      [
+       "Paid-in capital from treasury stock",
+       9000
+      ],
+      [
+       "Retained earnings",
+       3260000
+      ],
+      [
+       "Accumulated OCI",
+       25500
+      ],
+      [
+       "Total stockholders' equity",
+       7430000,
+       "total"
+      ]
+     ],
+     "say": "Common stock at par, paid-in capital in excess of par, paid-in capital from treasury stock, retained earnings and accumulated OCI total $7.43 million."
+    },
+    {
+     "type": "define",
+     "big": "Statement of stockholders' equity",
+     "sub": [
+      "Reconciles each equity account",
+      "from beginning to end of year"
+     ],
+     "say": "Public companies present a statement of stockholders' equity, reconciling each component: shares issued and repurchased, net income, dividends and other comprehensive income."
+    },
+    {
+     "type": "table",
+     "heading": "Two ratios",
+     "rows": [
+      [
+       "Return on common equity",
+       "15%"
+      ],
+      [
+       "Book value per share",
+       14.77
+      ]
+     ],
+     "say": "Return on common stockholders' equity is net income over average common equity: fifteen percent. Book value per share is equity over shares outstanding, $14.77, below the share price, as is usual."
+    },
+    {
+     "type": "key",
+     "big": "Book value ≠ market value",
+     "sub": [
+      "Shares trade on expected future",
+      "earnings, not book value"
+     ],
+     "say": "Investors price shares on expected future earnings and cash flows. Book value per share is a floor-ish reference, not a valuation."
+    },
+    {
+     "type": "quiz",
+     "q": "Net income $600,000; average common equity $4,000,000. Return on common equity?",
+     "opts": [
+      "12%",
+      "15%",
+      "6.7%",
+      "60%"
+     ],
+     "answer": 1,
+     "say": "Quick check. Net income six hundred thousand; average common equity four million. Return on common equity? Pause and pick.",
+     "reveal": "It's B, fifteen percent."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Bluestem sells shares at $16 that have a $1 par value. What does the $1 mean, and where does the other $15 go?",
+   "Par is a legal amount; excess to APIC."
+  ],
+  "acts": [
+   [
+    "Charter: 1,000,000 authorized; 600,000 issued; 40,000 in treasury. Compute outstanding shares and explain the difference between each count.",
+    "560,000 outstanding."
+   ],
+   [
+    "Record 100,000 shares, $0.50 par, issued at $22 with $90,000 of issuance costs.",
+    "Cash 2,110,000; CS 50,000; APIC 2,060,000."
+   ],
+   [
+    "Record 3,000 shares ($1 par, market $25) issued for land; then a lump sum of $150,000 for 2,000 common (market $30) and 500 preferred (market $200).",
+    "Land 75,000 (CS 3,000; APIC 72,000). Allocate: common 150,000 × 60/160 = 56,250; preferred 93,750."
+   ],
+   [
+    "Treasury stock: buy 10,000 at $40; reissue 4,000 at $45; reissue 3,000 at $36. Record.",
+    "TS 400,000; reissue: PIC-TS +20,000; second: PIC-TS −12,000."
+   ],
+   [
+    "Retire the remaining 3,000 treasury shares (cost $40; originally issued at $25, par $1).",
+    "CS 3,000; APIC 72,000; RE 45,000; TS 120,000."
+   ],
+   [
+    "Equity $9,000,000; 600,000 shares outstanding; net income $1,080,000; average equity $8,000,000. Compute book value per share and ROE.",
+    "$15.00; 13.5%."
+   ]
+  ],
+  "case": [
+   "The buyback debate",
+   "Bluestem's share price fell from $16 to $13 after a warm winter. The founder proposes spending $650,000 of the $900,000 cash balance to buy back 50,000 shares, arguing it will 'raise EPS and show confidence'. Net income is expected to be $990,000; shares outstanding 500,000. The bond indenture requires a current ratio above 1.8 (currently 2.1, with current liabilities $1.2 million).",
+   [
+    "Compute EPS before and after the buyback (ignore timing).",
+    "Compute the current ratio after the buyback.",
+    "Record the buyback.",
+    "Evaluate the proposal."
+   ],
+   "EPS 1.98 → 2.20 (450,000 shares). Current assets 2,520,000 − 650,000 = 1,870,000; ratio 1.56: covenant breached. Dr Treasury stock 650,000 / Cr Cash 650,000. EPS rise is mechanical, not value creation; covenant breach and liquidity risk; consider a smaller program."
+  ],
+  "exam": [
+   [
+    "Explain the cost method for treasury stock, including reissuance above and below cost, and why no gains or losses are recognized.",
+    6,
+    "Debit TS at cost; reissue above cost credit PIC-TS; below cost debit PIC-TS then RE; transactions with owners don't create income."
+   ],
+   [
+    "Record: (a) IPO of 250,000 shares, $1 par, at $16, costs $280,000; (b) purchase of 20,000 treasury shares at $18; (c) reissue of 8,000 at $21.",
+    6,
+    "(a) Cash 3,720,000; CS 250,000; APIC 3,470,000. (b) TS 360,000. (c) Cash 168,000; TS 144,000; PIC-TS 24,000."
+   ]
+  ],
+  "outcomes": [
+   "Describe the corporate form and components of equity",
+   "Record stock issued for cash, including issuance costs",
+   "Record noncash and lump-sum issuances",
+   "Account for treasury stock under the cost method",
+   "Record retirement of shares",
+   "Present equity and compute ROE and book value per share"
+  ],
+  "take": [
+   "Contributed vs earned capital",
+   "Par to stock; excess to paid-in capital",
+   "Use the clearer fair value",
+   "Treasury stock is contra equity",
+   "No gains or losses with owners",
+   "ROE and book value per share"
+  ]
+ },
+ "ex": [
+  {
+   "type": "num",
+   "q": "Issued 700,000; treasury 25,000. Outstanding?",
+   "a": 675000,
+   "unit": "shares",
+   "why": "Issued − treasury.",
+   "video": "5.1"
+  },
+  {
+   "type": "num",
+   "q": "50,000 shares, $2 par, issued at $18, with $40,000 of issuance costs. Paid-in capital in excess of par?",
+   "a": 760000,
+   "unit": "$",
+   "why": "50,000 × 16 − 40,000.",
+   "video": "5.2"
+  },
+  {
+   "type": "num",
+   "q": "Lump sum $90,000 for common (FV $60,000) and preferred (FV $40,000). Amount allocated to preferred?",
+   "a": 36000,
+   "unit": "$",
+   "why": "90,000 × 40%.",
+   "video": "5.3"
+  },
+  {
+   "type": "num",
+   "q": "Treasury shares bought at $25; 2,000 reissued at $29. Credit to paid-in capital from treasury stock?",
+   "a": 8000,
+   "unit": "$",
+   "why": "2,000 × $4.",
+   "video": "5.4"
+  },
+  {
+   "type": "mcq",
+   "q": "Treasury stock is reported as:",
+   "opts": [
+    "A current asset",
+    "A long-term investment",
+    "A deduction from stockholders' equity",
+    "A liability"
+   ],
+   "a": 2,
+   "why": "Contra equity.",
+   "video": "5.4"
+  },
+  {
+   "type": "num",
+   "q": "Retire 1,000 treasury shares costing $30 each, originally issued at $22 ($1 par). Debit to retained earnings?",
+   "a": 8000,
+   "unit": "$",
+   "why": "(30 − 22) × 1,000.",
+   "video": "5.5"
+  },
+  {
+   "type": "num",
+   "q": "Net income $720,000; average common equity $6,000,000. ROE in percent?",
+   "a": 12,
+   "tol": 0.05,
+   "unit": "%",
+   "why": "720 ÷ 6,000.",
+   "video": "5.6"
+  },
+  {
+   "type": "sort",
+   "q": "Sort each account: contributed capital or earned capital?",
+   "cats": [
+    "Contributed capital",
+    "Earned capital"
+   ],
+   "items": [
+    [
+     "Common stock",
+     0
+    ],
+    [
+     "Paid-in capital in excess of par",
+     0
+    ],
+    [
+     "Retained earnings",
+     1
+    ],
+    [
+     "Paid-in capital from treasury stock",
+     0
+    ]
+   ],
+   "why": "Sources of equity.",
+   "video": "5.1"
+  }
+ ]
+}

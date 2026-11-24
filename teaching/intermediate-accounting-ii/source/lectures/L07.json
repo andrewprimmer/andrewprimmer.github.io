@@ -1,0 +1,652 @@
+{
+ "meta": {
+  "n": 7,
+  "short": "Dilutive securities and stock compensation",
+  "title": "Dilutive securities and stock-based compensation",
+  "week": 7,
+  "ch": "Chapter 16",
+  "part": "Stockholders' equity",
+  "summary": "Convertible bonds and preferred stock, induced conversions, stock warrants issued with bonds, stock options measured at fair value over the service period, restricted stock, employee stock purchase plans and stock appreciation rights."
+ },
+ "videos": [
+  {
+   "id": "7.1",
+   "title": "Convertible bonds",
+   "lecture": "Lecture 7 · Dilutive securities",
+   "take": "Convertible debt is recorded as debt; on conversion, the carrying amount moves to equity with no gain or loss",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem wants to borrow cheaply. Investors will accept a lower rate if they can swap their bonds for shares later."
+    },
+    {
+     "type": "define",
+     "big": "Convertible bond",
+     "sub": [
+      "Bond the holder can exchange",
+      "for a set number of shares"
+     ],
+     "say": "A convertible bond lets the holder exchange it for a fixed number of common shares. The conversion feature is worth something, so the interest rate is lower: Bluestem pays four percent instead of six."
+    },
+    {
+     "type": "journal",
+     "heading": "Issuing $1,000,000 at par",
+     "rows": [
+      [
+       "Cash",
+       1000000,
+       ""
+      ],
+      [
+       "Convertible bonds",
+       "",
+       1000000
+      ]
+     ],
+     "say": "Under current US GAAP, most convertible debt is recorded entirely as a liability. The conversion option isn't separated, unless special features require it."
+    },
+    {
+     "type": "journal",
+     "heading": "Conversion: each $1,000 bond into 50 shares",
+     "rows": [
+      [
+       "Convertible bonds",
+       1000000,
+       ""
+      ],
+      [
+       "Common stock (50,000 × $1)",
+       "",
+       50000
+      ],
+      [
+       "Paid-in capital in excess of par",
+       "",
+       950000
+      ]
+     ],
+     "say": "When all bonds convert, holders receive 50,000 shares. Under the book value method, the bonds' carrying amount moves to equity: $50,000 at par and $950,000 to paid-in capital. No gain or loss, whatever the share price."
+    },
+    {
+     "type": "key",
+     "big": "Induced conversion",
+     "sub": [
+      "A sweetener to encourage conversion",
+      "is an expense"
+     ],
+     "say": "If Bluestem offers holders extra cash or shares to convert early, that sweetener is an expense, measured at the fair value of the extra consideration."
+    },
+    {
+     "type": "quiz",
+     "q": "Convertible bonds with carrying amount $500,000 convert into 20,000 shares of $1 par stock worth $30. Gain or loss?",
+     "opts": [
+      "$100,000 loss",
+      "None",
+      "$100,000 gain",
+      "$480,000 gain"
+     ],
+     "answer": 1,
+     "say": "Quick check. Convertible bonds carried at five hundred thousand convert into twenty thousand one-dollar par shares worth thirty dollars. Gain or loss? Pause and pick.",
+     "reveal": "It's B, none. The book value method records no gain or loss."
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "title": "Convertible preferred and stock warrants",
+   "lecture": "Lecture 7 · Dilutive securities",
+   "take": "Warrants issued with bonds are allocated by relative fair value; the warrant portion is equity",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Two more ways to attract investors: convertible preferred stock, and warrants."
+    },
+    {
+     "type": "key",
+     "big": "Convertible preferred",
+     "sub": [
+      "Conversion moves preferred equity",
+      "to common: no gain or loss"
+     ],
+     "say": "Convertible preferred stock is equity. On conversion, the preferred stock and its paid-in capital are moved to common stock and paid-in capital. Any excess of par issued over the preferred balance reduces retained earnings."
+    },
+    {
+     "type": "define",
+     "big": "Stock warrant",
+     "sub": [
+      "The right to buy shares at a set",
+      "price for a period of time"
+     ],
+     "say": "A warrant gives the holder the right to buy shares at a set price for a period of time. Bluestem attaches detachable warrants to a bond issue as a sweetener."
+    },
+    {
+     "type": "table",
+     "heading": "$500,000 bonds with detachable warrants, issued at par",
+     "rows": [
+      [
+       "Fair value of bonds without warrants",
+       480000
+      ],
+      [
+       "Fair value of warrants",
+       20000
+      ],
+      [
+       "Allocated to bonds",
+       480000,
+       "total"
+      ],
+      [
+       "Allocated to warrants: equity",
+       20000,
+       "total"
+      ]
+     ],
+     "say": "Bluestem receives $500,000. Without warrants, the bonds would be worth $480,000; the warrants trade for $20,000. The proceeds are allocated by relative fair value: $480,000 to the bonds, $20,000 to paid-in capital, stock warrants."
+    },
+    {
+     "type": "journal",
+     "heading": "The entry",
+     "rows": [
+      [
+       "Cash",
+       500000,
+       ""
+      ],
+      [
+       "Bonds payable",
+       "",
+       480000
+      ],
+      [
+       "Paid-in capital, stock warrants",
+       "",
+       20000
+      ]
+     ],
+     "say": "The bonds start at $480,000, a $20,000 discount amortized as interest. If the warrants are exercised, their $20,000 joins the cash paid as paid-in capital. Nondetachable warrants aren't separated."
+    },
+    {
+     "type": "quiz",
+     "q": "Bonds with detachable warrants sell for $1,020,000. FV of bonds alone $900,000; FV of warrants $120,000. Amount to warrants?",
+     "opts": [
+      "$120,000",
+      "$102,000",
+      "$100,000",
+      "$20,000"
+     ],
+     "answer": 0,
+     "say": "Quick check. Bonds with detachable warrants sell for one million twenty thousand. Fair value of the bonds alone nine hundred thousand; warrants one twenty thousand. Amount allocated to warrants? Pause and pick.",
+     "reveal": "It's A, $120,000: total fair value equals the price here."
+    }
+   ]
+  },
+  {
+   "id": "7.3",
+   "title": "Stock options: measurement",
+   "lecture": "Lecture 7 · Dilutive securities",
+   "take": "Measure options at grant-date fair value and expense it over the service period",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "To keep its designers after the IPO, Bluestem grants them stock options."
+    },
+    {
+     "type": "define",
+     "big": "Employee stock option",
+     "sub": [
+      "The right to buy shares at a fixed",
+      "exercise price after vesting"
+     ],
+     "say": "An employee stock option gives the right to buy shares at a fixed exercise price, usually after a vesting period of continued service."
+    },
+    {
+     "type": "table",
+     "heading": "The grant, January 1, 2029",
+     "rows": [
+      [
+       "Options granted",
+       "20,000"
+      ],
+      [
+       "Exercise price = market price",
+       16
+      ],
+      [
+       "Fair value per option (option-pricing model)",
+       5
+      ],
+      [
+       "Total compensation cost",
+       100000,
+       "total"
+      ],
+      [
+       "Service period",
+       "2 years"
+      ]
+     ],
+     "say": "On January 1, 2029, Bluestem grants 20,000 options at an exercise price of $16, equal to the market price. An option-pricing model values each option at $5. Total compensation cost is $100,000, recognized over the two-year service period."
+    },
+    {
+     "type": "key",
+     "big": "Fair value at grant date",
+     "sub": [
+      "Even if the options are 'at the money',",
+      "they're worth something"
+     ],
+     "say": "Even with no intrinsic value at grant, an option is worth something: the chance the price rises. GAAP requires measuring that fair value at the grant date. It isn't remeasured later."
+    },
+    {
+     "type": "key",
+     "big": "Forfeitures",
+     "sub": [
+      "Estimate them, or account for them",
+      "as they occur: a policy choice"
+     ],
+     "say": "Companies either estimate expected forfeitures from employees who'll leave before vesting, or account for forfeitures as they occur. It's an accounting policy choice."
+    },
+    {
+     "type": "quiz",
+     "q": "30,000 options, fair value $4 each, 3-year service period. Annual compensation expense?",
+     "opts": [
+      "$120,000",
+      "$40,000",
+      "$30,000",
+      "$10,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Thirty thousand options, fair value four dollars each, three-year service period. Annual compensation expense? Pause and pick.",
+     "reveal": "It's B, $40,000."
+    }
+   ]
+  },
+  {
+   "id": "7.4",
+   "title": "Stock options: recording",
+   "lecture": "Lecture 7 · Dilutive securities",
+   "take": "Expense builds paid-in capital, stock options; at exercise it moves to common stock with the cash",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Here's how the designers' options move through the books."
+    },
+    {
+     "type": "journal",
+     "heading": "December 31, 2029 and 2030",
+     "rows": [
+      [
+       "Compensation expense",
+       50000,
+       ""
+      ],
+      [
+       "Paid-in capital, stock options",
+       "",
+       50000
+      ]
+     ],
+     "say": "Each year of the service period, Bluestem records $50,000 of compensation expense and credits Paid-in Capital, Stock Options. No cash changes hands: employees are paid in equity."
+    },
+    {
+     "type": "journal",
+     "heading": "Exercise of all 20,000 options",
+     "rows": [
+      [
+       "Cash (20,000 × $16)",
+       320000,
+       ""
+      ],
+      [
+       "Paid-in capital, stock options",
+       100000,
+       ""
+      ],
+      [
+       "Common stock (20,000 × $1)",
+       "",
+       20000
+      ],
+      [
+       "Paid-in capital in excess of par",
+       "",
+       400000
+      ]
+     ],
+     "say": "When the designers exercise, they pay $16 a share, $320,000. That cash, plus the $100,000 already in Paid-in Capital, Stock Options, is credited to common stock at par and paid-in capital: $420,000 in total."
+    },
+    {
+     "type": "key",
+     "big": "If options expire unexercised",
+     "sub": [
+      "Move the balance to paid-in capital",
+      "from expired options; no reversal"
+     ],
+     "say": "If the share price stays below $16 and the vested options expire, the expense isn't reversed. The balance moves to Paid-in Capital from Expired Stock Options."
+    },
+    {
+     "type": "key",
+     "big": "Why expense it?",
+     "sub": [
+      "Options are compensation:",
+      "faithful representation"
+     ],
+     "say": "Companies long fought expensing options. But options are pay, and leaving them out made profits look higher. Expensing them gives a faithful representation of the cost of employees."
+    },
+    {
+     "type": "quiz",
+     "q": "Options with $60,000 in paid-in capital, stock options, are exercised for $240,000 cash. Total credited to common stock and paid-in capital?",
+     "opts": [
+      "$240,000",
+      "$300,000",
+      "$180,000",
+      "$60,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Options with sixty thousand in paid-in capital, stock options, are exercised for two forty thousand cash. Total credited to common stock and paid-in capital? Pause and pick.",
+     "reveal": "It's B, $300,000."
+    }
+   ]
+  },
+  {
+   "id": "7.5",
+   "title": "Restricted stock and purchase plans",
+   "lecture": "Lecture 7 · Dilutive securities",
+   "take": "Restricted stock is expensed at grant-date fair value over vesting; discounted employee purchase plans may be compensatory",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem's new CFO, Maria Okafor, prefers restricted stock to options."
+    },
+    {
+     "type": "define",
+     "big": "Restricted stock",
+     "sub": [
+      "Shares transferred to employees,",
+      "forfeited if they leave before vesting"
+     ],
+     "say": "Restricted stock, or restricted stock units, transfer shares to employees that vest over time and are forfeited if the employee leaves early. Unlike options, they keep value even if the price falls."
+    },
+    {
+     "type": "table",
+     "heading": "Maria's grant",
+     "rows": [
+      [
+       "Restricted stock units",
+       "4,000"
+      ],
+      [
+       "Fair value per share at grant",
+       15
+      ],
+      [
+       "Total compensation",
+       60000,
+       "total"
+      ],
+      [
+       "Vesting period",
+       "4 years"
+      ],
+      [
+       "Annual expense",
+       15000,
+       "total"
+      ]
+     ],
+     "say": "Maria receives 4,000 restricted stock units when the share price is $15: $60,000 of compensation, recognized over four years of vesting, $15,000 a year."
+    },
+    {
+     "type": "key",
+     "big": "Employee stock purchase plans",
+     "sub": [
+      "Discount above 5% or other features:",
+      "compensatory"
+     ],
+     "say": "Employee stock purchase plans let all employees buy shares, often at a discount. If the discount is small, around five percent or less, and the plan is broad-based, it's not compensatory. Bigger discounts are compensation expense."
+    },
+    {
+     "type": "key",
+     "big": "Stock appreciation rights",
+     "sub": [
+      "Paid in cash: a liability,",
+      "remeasured each period"
+     ],
+     "say": "Stock appreciation rights pay the increase in share price. If they're settled in cash, they're a liability remeasured to fair value every period, so expense moves with the share price."
+    },
+    {
+     "type": "quiz",
+     "q": "6,000 restricted shares, fair value $20 at grant, vesting over 3 years. Annual expense?",
+     "opts": [
+      "$120,000",
+      "$40,000",
+      "$20,000",
+      "$6,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Six thousand restricted shares, fair value twenty dollars at grant, vesting over three years. Annual expense? Pause and pick.",
+     "reveal": "It's B, $40,000."
+    }
+   ]
+  },
+  {
+   "id": "7.6",
+   "title": "Midterm review: Lectures 1 to 7",
+   "lecture": "Lecture 7 · Dilutive securities",
+   "take": "Intangibles, liabilities and equity: what Bluestem owns, owes, and owes its owners",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "The midterm is next week. Here's the first half of Intermediate Accounting Two in two minutes."
+    },
+    {
+     "type": "list",
+     "heading": "Intangibles and liabilities",
+     "items": [
+      "Intangibles, R&D and goodwill impairment",
+      "Current liabilities and contingencies",
+      "Warranties and AROs",
+      "Bonds: pricing and effective interest",
+      "Notes, extinguishment, fair value option"
+     ],
+     "say": "We covered intangibles, R&D and goodwill impairment; current liabilities, contingencies, warranties and asset retirement obligations; bond pricing and the effective-interest method; and notes, early extinguishment and the fair value option."
+    },
+    {
+     "type": "list",
+     "heading": "Equity",
+     "items": [
+      "Issuing shares and treasury stock",
+      "Preferred stock and dividends",
+      "Stock dividends and splits",
+      "Convertibles, warrants, options, RSUs"
+     ],
+     "say": "Then equity: issuing shares and treasury stock; preferred stock and dividend preferences; stock dividends and splits; and dilutive securities and stock-based pay."
+    },
+    {
+     "type": "key",
+     "big": "One principle to remember",
+     "sub": [
+      "Transactions with owners never",
+      "create income or expense"
+     ],
+     "say": "One principle ties the equity lectures together: transactions with owners, like buying back shares or converting bonds, never create gains or losses. Paying employees in shares does create an expense."
+    },
+    {
+     "type": "key",
+     "big": "Practice the entries",
+     "sub": [
+      "Bond amortization and treasury stock",
+      "are midterm favorites"
+     ],
+     "say": "For the exam, practice bond amortization tables and treasury stock entries. They're perennial favorites."
+    },
+    {
+     "type": "quiz",
+     "q": "Which creates an expense?",
+     "opts": [
+      "Buying treasury stock",
+      "Converting bonds to shares",
+      "Granting employee stock options",
+      "A stock split"
+     ],
+     "answer": 2,
+     "say": "Last quick check. Which of these creates an expense? Pause and pick.",
+     "reveal": "It's C, employee stock options. Good luck on the midterm."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Why would investors accept 4% interest on Bluestem's convertible bonds when straight bonds pay 6%?",
+   "The conversion option has value: upside if shares rise."
+  ],
+  "acts": [
+   [
+    "Record the conversion of $800,000 of convertible bonds (carrying amount $780,000) into 32,000 shares of $1 par common.",
+    "Dr Bonds 780,000 / Cr CS 32,000, APIC 748,000."
+   ],
+   [
+    "Bluestem issues $1,000,000 of bonds with detachable warrants for $1,030,000. FV of bonds alone $950,000; FV of warrants $80,000. Allocate.",
+    "Total FV 1,030,000: bonds 950,000; warrants 80,000 (discount 50,000)."
+   ],
+   [
+    "Options: 50,000 granted January 1, fair value $3 each, 3-year service. Record each year and exercise at $18 (par $1).",
+    "Expense 50,000/year; exercise: Cash 900,000, PIC-SO 150,000 / CS 50,000, APIC 1,000,000."
+   ],
+   [
+    "10,000 vested options (PIC-SO $40,000) expire unexercised. Record.",
+    "Dr PIC-SO 40,000 / Cr PIC-expired options 40,000."
+   ],
+   [
+    "Restricted stock: 8,000 shares at $25 fair value, 4-year vesting. Annual expense and the effect if half are forfeited in year 3 (forfeitures recognized as they occur).",
+    "Annual expense 50,000 (200,000 ÷ 4). In year 3, reverse the 50,000 recognized on the forfeited half in years 1–2 and recognize 25,000 on the remaining half: net year-3 credit of 25,000."
+   ],
+   [
+    "Which are dilutive securities? Convertible bonds; nonconvertible preferred; warrants; stock options; treasury stock.",
+    "Convertible bonds, warrants, stock options."
+   ]
+  ],
+  "case": [
+   "Paying the designers",
+   "Bluestem must choose how to reward six key designers: (A) 30,000 stock options, exercise price $16, fair value $5 each, 3-year vesting; (B) 10,000 restricted stock units at $15, 3-year vesting; (C) a cash bonus of $50,000 a year. The founder prefers options because 'they don't cost anything unless the stock rises'.",
+   [
+    "Compute annual expense under each option.",
+    "Evaluate the founder's claim.",
+    "Which plan keeps value for designers if the share price falls?",
+    "Effect of each on dilution and cash."
+   ],
+   "A: 150,000 ÷ 3 = 50,000; B: 150,000 ÷ 3 = 50,000; C: 50,000. Options are expensed at grant-date fair value regardless; the claim is wrong for accounting and for shareholders (dilution). RSUs keep value if price falls. A and B dilute and use no cash (A brings in cash at exercise); C uses cash and doesn't dilute."
+  ],
+  "exam": [
+   [
+    "Explain the accounting for employee stock options from grant to exercise or expiration.",
+    6,
+    "Grant-date fair value; expense over service period with credit to PIC-SO; forfeitures policy; exercise: cash + PIC-SO to CS and APIC; expiration: PIC-expired; no remeasurement."
+   ],
+   [
+    "Record the issuance at par of $500,000 of bonds with detachable warrants (bond FV $480,000, warrant FV $20,000) and later exercise of all warrants for 10,000 shares at $20 ($1 par).",
+    6,
+    "Issue: Cash 500,000 / Bonds 480,000, PIC-warrants 20,000. Exercise: Cash 200,000, PIC-warrants 20,000 / CS 10,000, APIC 210,000."
+   ]
+  ],
+  "outcomes": [
+   "Account for convertible bonds and induced conversions",
+   "Account for convertible preferred and stock warrants",
+   "Measure stock options at grant-date fair value",
+   "Record stock option expense, exercise and expiration",
+   "Account for restricted stock, ESPPs and SARs",
+   "Integrate the first half of the course"
+  ],
+  "take": [
+   "Convertible debt is debt",
+   "Warrants by relative fair value",
+   "Options at grant-date fair value",
+   "Expense over the service period",
+   "RSUs keep value if price falls",
+   "Owners don't create income; employees do create expense"
+  ]
+ },
+ "ex": [
+  {
+   "type": "num",
+   "q": "Convertible bonds carried at $600,000 convert into 25,000 shares of $2 par. Credit to paid-in capital in excess of par?",
+   "a": 550000,
+   "unit": "$",
+   "why": "600,000 − 50,000.",
+   "video": "7.1"
+  },
+  {
+   "type": "num",
+   "q": "Bonds with detachable warrants issued for $1,000,000; FV of bonds alone $940,000; FV of warrants $60,000. Amount allocated to warrants?",
+   "a": 60000,
+   "unit": "$",
+   "why": "Relative fair value (totals equal).",
+   "video": "7.2"
+  },
+  {
+   "type": "num",
+   "q": "Bonds with warrants issued for $990,000; FV bonds $900,000; FV warrants $200,000. Amount allocated to warrants?",
+   "a": 180000,
+   "unit": "$",
+   "why": "990,000 × 200/1,100.",
+   "video": "7.2"
+  },
+  {
+   "type": "num",
+   "q": "40,000 options with fair value $6 each, 4-year service. Annual compensation expense?",
+   "a": 60000,
+   "unit": "$",
+   "why": "240,000 ÷ 4.",
+   "video": "7.3"
+  },
+  {
+   "type": "mcq",
+   "q": "Employee stock options are measured at:",
+   "opts": [
+    "Intrinsic value at exercise",
+    "Fair value at grant date",
+    "Fair value each year-end",
+    "Zero if at the money"
+   ],
+   "a": 1,
+   "why": "Grant-date fair value.",
+   "video": "7.3"
+  },
+  {
+   "type": "num",
+   "q": "Exercise of 10,000 options at $20 (par $1); PIC-stock options balance $50,000. Credit to paid-in capital in excess of par?",
+   "a": 240000,
+   "unit": "$",
+   "why": "200,000 + 50,000 − 10,000.",
+   "video": "7.4"
+  },
+  {
+   "type": "num",
+   "q": "5,000 restricted stock units at $30, vesting over 5 years. Annual expense?",
+   "a": 30000,
+   "unit": "$",
+   "why": "150,000 ÷ 5.",
+   "video": "7.5"
+  },
+  {
+   "type": "mcq",
+   "q": "Cash-settled stock appreciation rights are reported as:",
+   "opts": [
+    "Equity, not remeasured",
+    "A liability remeasured each period",
+    "Treasury stock",
+    "Not recorded"
+   ],
+   "a": 1,
+   "why": "Cash settlement creates a liability.",
+   "video": "7.5"
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "meta": {"n": 13, "short": "Depreciation", "title": "Depreciation methods and revisions", "week": 14, "ch": "Chapter 11", "part": "Property, plant and equipment",
+  "summary": "Depreciation as cost allocation, the activity, straight-line, sum-of-the-years'-digits and declining-balance methods, partial periods, group and composite methods, tax depreciation, and revisions of estimates."},
+ "videos": [
+  {"id": "13.1", "title": "What depreciation is", "lecture": "Lecture 13 · Depreciation",
+   "take": "Depreciation allocates cost less salvage over useful life; it isn't a valuation", "read": "",
+   "scenes": [
+    {"type": "title", "say": "The paddle-molding machine cost $275,000. It will help make paddles for five years. How should its cost reach the income statement?"},
+    {"type": "define", "big": "Depreciation", "sub": ["Allocating an asset's cost, less salvage,", "systematically over its useful life"], "say": "Depreciation is the process of allocating the cost of a tangible asset, less its salvage value, to expense in a systematic and rational way over the periods that benefit. It's cost allocation, not valuation."},
+    {"type": "table", "heading": "The machine", "rows": [["Cost", 275000], ["Salvage value", 25000], ["Depreciable base", 250000, "total"], ["Useful life", "5 years or 100,000 hours"]], "say": "The machine cost $275,000 and Bluestem expects to sell it for $25,000 at the end, so the depreciable base is $250,000. Its useful life is five years, or 100,000 machine hours."},
+    {"type": "list", "heading": "Three decisions", "items": ["Depreciable base: cost less salvage", "Useful life: physical and economic", "Method: activity, straight-line, accelerated"], "say": "Every depreciation plan needs three decisions: the base, the useful life, which reflects both physical wear and economic factors like obsolescence, and the method."},
+    {"type": "key", "big": "Service life vs physical life", "sub": ["Technology can end an asset's", "usefulness before it wears out"], "say": "Useful life is often shorter than physical life. A molding machine may still run after ten years but be obsolete after five."},
+    {"type": "quiz", "q": "Cost $80,000; salvage $8,000. Depreciable base?", "opts": ["$80,000", "$72,000", "$88,000", "$8,000"], "answer": 1,
+     "say": "Quick check. Cost eighty thousand; salvage eight thousand. Depreciable base? Pause and pick.", "reveal": "It's B, $72,000."}
+   ]},
+  {"id": "13.2", "title": "The activity method", "lecture": "Lecture 13 · Depreciation",
+   "take": "Depreciation per unit of use × units used: best when wear depends on use", "read": "",
+   "scenes": [
+    {"type": "title", "say": "A machine that sits idle wears out slowly. The activity method charges depreciation by use."},
+    {"type": "table", "heading": "Rate per machine hour", "rows": [["Depreciable base", 250000], ["Estimated hours", "100,000"], ["Rate per hour", 2.5, "total"]], "say": "The depreciable base of $250,000 divided by 100,000 estimated hours gives two dollars fifty per machine hour."},
+    {"type": "table", "heading": "Year 1", "rows": [["Hours used", "24,000"], ["Depreciation: 24,000 × $2.50", 60000, "total"]], "say": "In year one, the machine runs 24,000 hours. Depreciation is $60,000. A slow year would mean lower depreciation."},
+    {"type": "key", "big": "Strength: matches use", "sub": ["Costs follow production"], "say": "The activity method matches cost to use, so cost per paddle stays steady. Its weakness: it ignores obsolescence that happens with time, whatever the hours."},
+    {"type": "key", "big": "Also: units of output", "sub": ["Rate per paddle produced"], "say": "The activity base can be output, like paddles produced, instead of hours. Choose the measure that best reflects how the asset is consumed."},
+    {"type": "quiz", "q": "Base $120,000; 60,000 hours estimated; 9,000 hours used. Depreciation?", "opts": ["$9,000", "$18,000", "$24,000", "$12,000"], "answer": 1,
+     "say": "Quick check. Base a hundred twenty thousand; sixty thousand hours estimated; nine thousand used. Depreciation? Pause and pick.", "reveal": "It's B, $18,000: two dollars an hour."}
+   ]},
+  {"id": "13.3", "title": "Straight-line and sum-of-the-years'-digits", "lecture": "Lecture 13 · Depreciation",
+   "take": "Straight-line spreads cost evenly; SYD accelerates it using a declining fraction", "read": "",
+   "scenes": [
+    {"type": "title", "say": "The most common method is the simplest. The second one front-loads the expense."},
+    {"type": "table", "heading": "Straight-line", "rows": [["250,000 ÷ 5 years", 50000, "total"]], "say": "Straight-line divides the base by the life: $50,000 every year. It's used by most US companies for financial reporting."},
+    {"type": "table", "heading": "Sum-of-the-years'-digits: 1+2+3+4+5 = 15", "rows": [["Year 1: 5/15 × 250,000", 83333], ["Year 2: 4/15", 66667], ["Year 3: 3/15", 50000], ["Year 4: 2/15", 33333], ["Year 5: 1/15", 16667], ["Total", 250000, "total"]], "say": "Sum-of-the-years'-digits adds the years: one through five sum to fifteen. Year one's fraction is five fifteenths, then four, three, two and one. Depreciation falls from $83,333 to $16,667, totaling $250,000."},
+    {"type": "key", "big": "Why accelerate?", "sub": ["More productive early;", "repairs rise later"], "say": "Accelerated methods make sense when an asset is more productive early in its life, or when repairs rise as it ages, keeping total cost per year steadier."},
+    {"type": "key", "big": "Formula", "sub": ["n(n + 1) ÷ 2 = 5 × 6 ÷ 2 = 15"], "say": "For long lives, use the formula: n times n plus one, over two. For five years, five times six over two is fifteen."},
+    {"type": "quiz", "q": "SYD, 4-year life, base $100,000. Year 1 depreciation?", "opts": ["$25,000", "$40,000", "$50,000", "$30,000"], "answer": 1,
+     "say": "Quick check. Sum-of-the-years'-digits, four-year life, base one hundred thousand. Year one depreciation? Pause and pick.", "reveal": "It's B, $40,000: four tenths."}
+   ]},
+  {"id": "13.4", "title": "Declining-balance methods", "lecture": "Lecture 13 · Depreciation",
+   "take": "Apply a constant rate to book value, ignoring salvage, but stop at salvage", "read": "",
+   "scenes": [
+    {"type": "title", "say": "Double-declining-balance applies twice the straight-line rate to the asset's falling book value."},
+    {"type": "define", "big": "Rate = 2 × (1 ÷ life)", "sub": ["5 years: 2 × 20% = 40%,", "applied to book value"], "say": "The straight-line rate for five years is twenty percent; double it to forty percent. Apply it to the book value at the start of each year, without subtracting salvage."},
+    {"type": "table", "heading": "Double-declining-balance", "rows": [["Year 1: 275,000 × 40%", 110000], ["Year 2: 165,000 × 40%", 66000], ["Year 3: 99,000 × 40%", 39600], ["Year 4: 59,400 × 40%", 23760], ["Year 5: plug to salvage", 10640], ["Book value at end", 25000, "total"]], "say": "Year one: forty percent of $275,000, $110,000. Year two: forty percent of $165,000, $66,000. Then $39,600 and $23,760. In year five, forty percent would take book value below the $25,000 salvage, so depreciation is limited to $10,640."},
+    {"type": "key", "tag": "WATCH OUT", "big": "Never below salvage", "sub": ["Salvage isn't in the base,", "but it's the floor"], "say": "Watch out: salvage isn't subtracted when computing the rate's base, but book value can never go below salvage. Many companies switch to straight-line when it gives more depreciation."},
+    {"type": "key", "big": "150% declining balance", "sub": ["1.5 × 20% = 30%"], "say": "Other versions use one hundred fifty percent of the straight-line rate: thirty percent for a five-year asset."},
+    {"type": "quiz", "q": "Cost $40,000; 4-year life; DDB. Year 2 depreciation?", "opts": ["$20,000", "$10,000", "$5,000", "$15,000"], "answer": 1,
+     "say": "Quick check. Cost forty thousand; four-year life; double-declining-balance. Year two depreciation? Pause and pick.", "reveal": "It's B, $10,000: fifty percent of $20,000."}
+   ]},
+  {"id": "13.5", "title": "Partial periods, group methods and tax", "lecture": "Lecture 13 · Depreciation",
+   "take": "Prorate for partial years; group and composite methods average many assets; tax depreciation differs from book", "read": "",
+   "scenes": [
+    {"type": "title", "say": "Real assets aren't bought on January 1. And companies own thousands of them."},
+    {"type": "table", "heading": "Bought April 1: straight-line", "rows": [["Year 1: 50,000 × 9/12", 37500], ["Years 2–5", "50,000 each"], ["Year 6: 50,000 × 3/12", 12500]], "say": "If the machine were bought April 1, year-one straight-line depreciation is nine twelfths of $50,000, $37,500. The last three months fall in a sixth calendar year. Some companies use simpler conventions, like a half year in the year of purchase."},
+    {"type": "compare", "heading": "Group and composite", "cols": ["Group", "Composite"], "rows": [["Assets", "Similar: e.g. delivery vans", "Dissimilar: e.g. a whole plant"], ["Rate", "Average for the group", "Weighted average"], ["Retirements", "No gain or loss", "No gain or loss"]], "say": "Group and composite methods depreciate many assets with one average rate: group for similar assets, composite for mixed ones. When an asset is retired, no gain or loss is recorded; the difference goes to accumulated depreciation."},
+    {"type": "key", "big": "Tax depreciation: MACRS", "sub": ["Prescribed lives, accelerated;", "often bonus depreciation"], "say": "For taxes, Bluestem uses MACRS, with prescribed lives and accelerated rates, plus bonus depreciation when available. Book and tax depreciation differ, creating deferred taxes, covered in later courses."},
+    {"type": "key", "big": "Disclose", "sub": ["Methods, lives, and accumulated", "depreciation by class"], "say": "Companies disclose depreciation methods, useful lives, depreciation expense, and major classes of assets with accumulated depreciation."},
+    {"type": "quiz", "q": "Annual straight-line depreciation $24,000; asset bought October 1. First-year depreciation (calendar year)?", "opts": ["$24,000", "$6,000", "$18,000", "$12,000"], "answer": 1,
+     "say": "Quick check. Annual straight-line depreciation twenty-four thousand; asset bought October 1. First-year depreciation? Pause and pick.", "reveal": "It's B, $6,000: three months."}
+   ]},
+  {"id": "13.6", "title": "Revising estimates", "lecture": "Lecture 13 · Depreciation",
+   "take": "A change in life or salvage is a change in estimate: spread the remaining book value over the remaining life", "read": "",
+   "scenes": [
+    {"type": "title", "say": "After two years of straight-line, Bluestem's engineers say the machine will last seven years in total, with only $15,000 of salvage."},
+    {"type": "table", "heading": "Book value after 2 years", "rows": [["Cost", 275000], ["Accumulated depreciation", -100000], ["Book value", 175000, "total"]], "say": "After two years at $50,000, book value is $175,000."},
+    {"type": "table", "heading": "Revised depreciation", "rows": [["Book value", 175000], ["Less new salvage", -15000], ["Remaining depreciable amount", 160000, "total"], ["Remaining life: 7 − 2 years", "5 years"], ["New annual depreciation", 32000, "total"]], "say": "Subtract the new salvage of $15,000: $160,000 remains to depreciate over the five remaining years, $32,000 a year from now on."},
+    {"type": "key", "big": "Prospective, not retroactive", "sub": ["No change to prior years;", "no catch-up adjustment"], "say": "A change in estimate is accounted for prospectively: current and future years only. Prior years aren't restated, because they used the best information available at the time."},
+    {"type": "key", "big": "Disclose material changes", "sub": ["Effect on income and EPS"], "say": "If the effect is material, Bluestem discloses it, including the effect on income. Changing estimates just to hit a target, like the covenant case in Lecture 1, is an ethical problem."},
+    {"type": "quiz", "q": "Book value $90,000 after 3 years; new salvage $10,000; 4 years remain. New annual depreciation?", "opts": ["$22,500", "$20,000", "$30,000", "$12,857"], "answer": 1,
+     "say": "Quick check. Book value ninety thousand after three years; new salvage ten thousand; four years remain. New annual depreciation? Pause and pick.", "reveal": "It's B, $20,000."}
+   ]}
+ ],
+ "content": {
+  "warmup": ["Bluestem's machine cost $275,000 and could be sold today for $210,000. Should the balance sheet show $210,000? Why not?", "Depreciation is cost allocation, not valuation; going concern."],
+  "acts": [
+   ["Machine: cost $90,000; salvage $6,000; 5-year life; 21,000 units estimated. Year-1 output 5,250 units. Compute activity-method depreciation.", "$4 per unit; 21,000."],
+   ["Same machine: compute straight-line and SYD for years 1 and 2.", "SL 16,800 each. SYD 28,000; 22,400."],
+   ["Same machine: compute DDB for all five years.", "36,000; 21,600; 12,960; 7,776; year 5 plug 5,664 (to salvage 6,000)."],
+   ["A $60,000 van (salvage $6,000, 4 years) is bought May 1. Compute SL depreciation for the first two calendar years.", "Year 1: 13,500 × 8/12 = 9,000; year 2: 13,500."],
+   ["After 3 years of SL on a $200,000 asset (salvage $20,000, 10-year life), the total life is revised to 8 years and salvage to $10,000. New annual depreciation?", "AD 54,000; BV 146,000; (146,000 − 10,000) ÷ 5 = 27,200."],
+   ["Explain why Bluestem's book depreciation differs from its tax depreciation, and what that creates.", "Different methods/lives (MACRS, bonus); temporary differences → deferred tax liability."]
+  ],
+  "case": ["Choosing a method for the new line",
+   "Bluestem's new kayak-thermoforming line costs $600,000, salvage $60,000, life 6 years or 54,000 hours. Expected use: heavy in years 1–3 (12,000 hours each), then 6,000 hours a year. The founder wants straight-line because 'it gives the best income in year 1'. The bank covenant uses EBITDA.",
+   ["Compute year-1 depreciation under SL, SYD, DDB and activity.", "Which method best reflects the pattern of use?", "Does the method matter for the covenant?", "Recommend a method."],
+   "SL 90,000; SYD 6/21 × 540,000 = 154,286; DDB 1/3 × 600,000 = 200,000; activity $10/hour × 12,000 = 120,000. Activity best reflects use (heavy early). EBITDA excludes depreciation, so the covenant is unaffected. Recommend activity (or accelerated) for matching; SL acceptable but less representative."],
+  "exam": [
+   ["Compute depreciation for each of five years for an asset costing $275,000, salvage $25,000, under SL, SYD and DDB.", 8, "SL 50,000 each; SYD 83,333, 66,667, 50,000, 33,333, 16,667; DDB 110,000, 66,000, 39,600, 23,760, 10,640."],
+   ["Explain how a change in useful life is accounted for and why prior periods are not restated.", 6, "Change in estimate; prospective; remaining BV less salvage over remaining life; prior estimates were made in good faith with available information; disclose material effects."]
+  ],
+  "outcomes": ["Explain depreciation as cost allocation", "Apply the activity method", "Apply straight-line and SYD", "Apply declining-balance methods", "Handle partial periods, group methods and tax differences", "Account for revisions of estimates"],
+  "take": ["Allocation, not valuation", "Activity: rate per unit of use", "SL even; SYD declining fractions", "DDB: rate × book value, stop at salvage", "Prorate partial years", "Estimate changes are prospective"]
+ },
+ "ex": [
+  {"type": "num", "q": "Cost $150,000; salvage $10,000; 70,000 hours estimated; 12,000 hours used. Activity depreciation?", "a": 24000, "unit": "$", "why": "$2 × 12,000.", "video": "13.2"},
+  {"type": "num", "q": "Cost $150,000; salvage $10,000; 7-year life. Straight-line depreciation?", "a": 20000, "unit": "$", "why": "140,000 ÷ 7.", "video": "13.3"},
+  {"type": "num", "q": "Cost $150,000; salvage $10,000; 4-year life. SYD depreciation in year 2?", "a": 42000, "unit": "$", "why": "3/10 × 140,000.", "video": "13.3"},
+  {"type": "num", "q": "Cost $150,000; 5-year life; DDB. Year 2 depreciation?", "a": 36000, "unit": "$", "why": "40% × 90,000.", "video": "13.4"},
+  {"type": "mcq", "q": "Under declining-balance methods, salvage value:", "opts": ["Is subtracted before applying the rate", "Is ignored entirely", "Isn't subtracted, but book value can't fall below it", "Is depreciated first"], "a": 2, "why": "Salvage is a floor.", "video": "13.4"},
+  {"type": "num", "q": "Annual SL depreciation $36,000; asset bought March 1 (calendar year). First-year depreciation?", "a": 30000, "unit": "$", "why": "10 months.", "video": "13.5"},
+  {"type": "num", "q": "Book value $175,000; new salvage $15,000; 5 years remaining. New annual depreciation?", "a": 32000, "unit": "$", "why": "160,000 ÷ 5.", "video": "13.6"},
+  {"type": "mcq", "q": "A change in an asset's useful life is accounted for:", "opts": ["Retrospectively", "Prospectively", "As a prior period adjustment", "In OCI"], "a": 1, "why": "Change in estimate.", "video": "13.6"}
+ ]
+}

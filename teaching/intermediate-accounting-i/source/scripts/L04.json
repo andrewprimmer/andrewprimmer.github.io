@@ -1,0 +1,515 @@
+{
+ "videos": [
+  {
+   "id": "4.1",
+   "title": "What the income statement tells you",
+   "lecture": "Lecture 4 \u00b7 Income statement",
+   "take": "The income statement helps predict future cash flows, but it rests on estimates; quality of earnings matters",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Investors read the income statement first. What can it tell them, and where can it mislead?"
+    },
+    {
+     "type": "list",
+     "heading": "Uses",
+     "items": [
+      "Evaluate past performance",
+      "Predict future performance",
+      "Assess the risk of not achieving it"
+     ],
+     "say": "It helps users evaluate past performance, predict future cash flows, and judge how uncertain those cash flows are."
+    },
+    {
+     "type": "list",
+     "heading": "Limitations",
+     "items": [
+      "Some items can't be measured reliably",
+      "Numbers depend on accounting methods",
+      "Measurements involve judgment"
+     ],
+     "say": "But it has limits. Some value, like brand strength, never appears. Methods differ between companies. And many numbers, like bad debts and useful lives, are estimates."
+    },
+    {
+     "type": "define",
+     "big": "Quality of earnings",
+     "sub": [
+      "How well reported earnings reflect",
+      "sustainable, cash-backed performance"
+     ],
+     "say": "Quality of earnings asks whether reported income is sustainable and backed by cash. Earnings boosted by one-time gains, aggressive estimates or cookie-jar reserves are lower quality."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "Earnings management",
+     "sub": [
+      "Smoothing with reserves,",
+      "big baths, timing tricks"
+     ],
+     "say": "Watch for earnings management: building reserves in good years to release in bad ones, taking a big bath in a bad year, or timing discretionary spending to hit a target."
+    },
+    {
+     "type": "quiz",
+     "q": "Which suggests lower quality of earnings?",
+     "opts": [
+      "Steady cash from operations",
+      "A large one-time gain driving the increase",
+      "Conservative estimates",
+      "Recurring revenue"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which suggests lower quality of earnings? Pause and pick.",
+     "reveal": "It's B. A one-time gain isn't sustainable."
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "title": "The multiple-step income statement",
+   "lecture": "Lecture 4 \u00b7 Income statement",
+   "take": "Multiple-step format separates operating from nonoperating results and shows gross profit",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Here's Bluestem's income statement for 2027, in multiple-step format."
+    },
+    {
+     "type": "table",
+     "heading": "Bluestem Outdoor, 2027",
+     "rows": [
+      [
+       "Net sales",
+       4200000
+      ],
+      [
+       "Cost of goods sold",
+       -2520000
+      ],
+      [
+       "Gross profit",
+       1680000,
+       "total"
+      ],
+      [
+       "Selling expenses",
+       -620000
+      ],
+      [
+       "Administrative expenses",
+       -380000
+      ],
+      [
+       "Income from operations",
+       680000,
+       "total"
+      ]
+     ],
+     "say": "Net sales of $4.2 million, less cost of goods sold of $2.52 million, gives gross profit of $1.68 million, a forty percent margin. Subtract selling and administrative expenses: income from operations is $680,000."
+    },
+    {
+     "type": "table",
+     "heading": "Below operating income",
+     "rows": [
+      [
+       "Income from operations",
+       680000
+      ],
+      [
+       "Interest expense",
+       -60000
+      ],
+      [
+       "Gain on sale of truck",
+       10000
+      ],
+      [
+       "Income before income tax",
+       630000,
+       "total"
+      ],
+      [
+       "Income tax at 25%",
+       -157500
+      ],
+      [
+       "Income from continuing operations",
+       472500,
+       "total"
+      ]
+     ],
+     "say": "Other income and expense comes next: $60,000 of interest expense and a $10,000 gain on a truck. Income before tax is $630,000. Tax at twenty-five percent is $157,500, leaving income from continuing operations of $472,500."
+    },
+    {
+     "type": "compare",
+     "heading": "Two formats",
+     "cols": [
+      "Single-step",
+      "Multiple-step"
+     ],
+     "rows": [
+      [
+       "Shows",
+       "Revenues less expenses",
+       "Subtotals by type"
+      ],
+      [
+       "Strength",
+       "Simple, no classification",
+       "Shows gross profit, operations"
+      ]
+     ],
+     "say": "A single-step statement just totals revenues and expenses. Multiple-step adds subtotals: gross profit and income from operations, which help users see where profit comes from."
+    },
+    {
+     "type": "key",
+     "big": "Gross margin: 40%",
+     "sub": [
+      "1,680,000 \u00f7 4,200,000"
+     ],
+     "say": "Analysts watch the gross margin closely: forty percent tells them how much of each sales dollar is left for operating costs and profit."
+    },
+    {
+     "type": "quiz",
+     "q": "Sales $800,000; COGS $500,000; operating expenses $200,000. Income from operations?",
+     "opts": [
+      "$300,000",
+      "$100,000",
+      "$600,000",
+      "$200,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Sales eight hundred thousand; cost of goods sold five hundred thousand; operating expenses two hundred thousand. Income from operations? Pause and pick.",
+     "reveal": "It's B, $100,000."
+    }
+   ]
+  },
+  {
+   "id": "4.3",
+   "title": "Discontinued operations",
+   "lecture": "Lecture 4 \u00b7 Income statement",
+   "take": "Disposals that are a strategic shift are reported separately, net of tax, below continuing operations",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "In October, Bluestem sold its fishing-boat division to focus on paddle sports. How should that appear?"
+    },
+    {
+     "type": "define",
+     "big": "Discontinued operation",
+     "sub": [
+      "A disposed component that is a",
+      "strategic shift with a major effect"
+     ],
+     "say": "A discontinued operation is a component of the company that has been disposed of, or is held for sale, and represents a strategic shift with a major effect on operations and results. Leaving a whole product line qualifies."
+    },
+    {
+     "type": "table",
+     "heading": "Fishing-boat division",
+     "rows": [
+      [
+       "Operating loss, January\u2013October",
+       -80000
+      ],
+      [
+       "Loss on sale of division",
+       -40000
+      ],
+      [
+       "Pretax loss",
+       -120000,
+       "total"
+      ],
+      [
+       "Tax benefit at 25%",
+       30000
+      ],
+      [
+       "Loss from discontinued operations",
+       -90000,
+       "total"
+      ]
+     ],
+     "say": "The division lost $80,000 before it was sold, and the sale produced a $40,000 loss. That's $120,000 before tax. The tax benefit at twenty-five percent is $30,000, so the loss from discontinued operations, net of tax, is $90,000."
+    },
+    {
+     "type": "table",
+     "heading": "Bottom of the statement",
+     "rows": [
+      [
+       "Income from continuing operations",
+       472500
+      ],
+      [
+       "Discontinued operations, net of tax",
+       -90000
+      ],
+      [
+       "Net income",
+       382500,
+       "total"
+      ]
+     ],
+     "say": "It's reported below income from continuing operations: $472,500 less $90,000 gives net income of $382,500."
+    },
+    {
+     "type": "key",
+     "big": "Why separate it?",
+     "sub": [
+      "Continuing income predicts",
+      "the future better"
+     ],
+     "say": "Why separate it? Because users predicting next year need to know which results will continue. The fishing-boat losses won't."
+    },
+    {
+     "type": "quiz",
+     "q": "A discontinued segment had a pretax loss of $200,000; tax rate 25%. Amount reported?",
+     "opts": [
+      "$200,000 loss",
+      "$150,000 loss",
+      "$50,000 loss",
+      "$250,000 loss"
+     ],
+     "answer": 1,
+     "say": "Quick check. A discontinued segment had a pretax loss of two hundred thousand; tax rate twenty-five percent. Amount reported? Pause and pick.",
+     "reveal": "It's B, a $150,000 loss, net of tax."
+    }
+   ]
+  },
+  {
+   "id": "4.4",
+   "title": "Unusual items and intraperiod tax allocation",
+   "lecture": "Lecture 4 \u00b7 Income statement",
+   "take": "Unusual or infrequent items stay in continuing operations; tax follows each item it relates to",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "A storm wrecked Bluestem's warehouse roof. Is that a special line on the income statement?"
+    },
+    {
+     "type": "key",
+     "big": "No extraordinary items",
+     "sub": [
+      "Eliminated from US GAAP in 2015"
+     ],
+     "say": "Until 2015, rare and unusual events could be reported as extraordinary items, net of tax. The FASB eliminated that category. Today, unusual or infrequent items are reported within continuing operations, before tax."
+    },
+    {
+     "type": "table",
+     "heading": "Unusual items: shown separately, pretax",
+     "rows": [
+      [
+       "Storm damage, uninsured",
+       -45000
+      ],
+      [
+       "Restructuring charges",
+       -30000
+      ],
+      [
+       "Gains on asset sales",
+       10000
+      ]
+     ],
+     "say": "Bluestem can show the $45,000 storm loss as a separate line, or disclose it in the notes, but it stays above income tax. Restructuring charges and gains on sale are treated the same way."
+    },
+    {
+     "type": "define",
+     "big": "Intraperiod tax allocation",
+     "sub": [
+      "Tax goes with the items",
+      "that cause it"
+     ],
+     "say": "Intraperiod tax allocation means tax is assigned to the items that cause it. Continuing operations carries its own tax; discontinued operations are shown net of their own tax effect; other comprehensive income items are net of tax too."
+    },
+    {
+     "type": "key",
+     "big": "Changes in estimate",
+     "sub": [
+      "Not a special item: affect",
+      "current and future periods"
+     ],
+     "say": "And changes in estimates, like a new useful life for the kayak mold, aren't special items either. They're part of normal operations, recorded now and going forward. More in Intermediate Accounting Two."
+    },
+    {
+     "type": "quiz",
+     "q": "Where does an uninsured flood loss appear today under US GAAP?",
+     "opts": [
+      "Extraordinary item, net of tax",
+      "Within continuing operations, pretax",
+      "Discontinued operations",
+      "Retained earnings directly"
+     ],
+     "answer": 1,
+     "say": "Quick check. Where does an uninsured flood loss appear today under US GAAP? Pause and pick.",
+     "reveal": "It's B, within continuing operations, before tax."
+    }
+   ]
+  },
+  {
+   "id": "4.5",
+   "title": "Earnings per share",
+   "lecture": "Lecture 4 \u00b7 Income statement",
+   "take": "EPS is required on the face of the income statement for public companies, including per-share amounts for discontinued operations",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "When Bluestem goes public, investors will ask one number first: earnings per share."
+    },
+    {
+     "type": "define",
+     "big": "Basic EPS",
+     "sub": [
+      "(Net income \u2212 preferred dividends)",
+      "\u00f7 weighted-average common shares"
+     ],
+     "say": "Basic earnings per share is net income less preferred dividends, divided by the weighted-average number of common shares outstanding."
+    },
+    {
+     "type": "table",
+     "heading": "Bluestem, 250,000 shares",
+     "rows": [
+      [
+       "Income from continuing operations",
+       1.89
+      ],
+      [
+       "Discontinued operations",
+       -0.36
+      ],
+      [
+       "Net income",
+       1.53,
+       "total"
+      ]
+     ],
+     "say": "Bluestem has 250,000 shares and no preferred stock. Income from continuing operations of $472,500 is $1.89 a share. The $90,000 discontinued loss is 36 cents a share. Net income of $382,500 is $1.53 a share."
+    },
+    {
+     "type": "key",
+     "big": "Show each part",
+     "sub": [
+      "Continuing, discontinued,",
+      "and net income per share"
+     ],
+     "say": "Public companies show EPS on the face of the income statement, with separate per-share amounts for continuing and discontinued operations. Diluted EPS, covered in Intermediate Two, comes alongside."
+    },
+    {
+     "type": "key",
+     "big": "Private companies",
+     "sub": [
+      "EPS isn't required",
+      "until shares are public"
+     ],
+     "say": "As a private company today, Bluestem doesn't have to report EPS at all. It becomes required once its shares trade publicly."
+    },
+    {
+     "type": "quiz",
+     "q": "Net income $600,000; preferred dividends $50,000; 220,000 weighted shares. Basic EPS?",
+     "opts": [
+      "$2.73",
+      "$2.50",
+      "$2.95",
+      "$2.27"
+     ],
+     "answer": 1,
+     "say": "Quick check. Net income six hundred thousand; preferred dividends fifty thousand; two hundred twenty thousand weighted shares. Basic EPS? Pause and pick.",
+     "reveal": "It's B, $2.50: five fifty thousand divided by two twenty thousand."
+    }
+   ]
+  },
+  {
+   "id": "4.6",
+   "title": "Retained earnings and comprehensive income",
+   "lecture": "Lecture 4 \u00b7 Income statement",
+   "take": "Comprehensive income adds OCI to net income; retained earnings reconciles income, dividends and prior period adjustments",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Net income isn't the only change in equity. Two more pieces complete the picture."
+    },
+    {
+     "type": "table",
+     "heading": "Statement of comprehensive income",
+     "rows": [
+      [
+       "Net income",
+       382500
+      ],
+      [
+       "Unrealized gain, net of tax",
+       20000
+      ],
+      [
+       "Comprehensive income",
+       402500,
+       "total"
+      ]
+     ],
+     "say": "Some gains and losses skip net income and go to other comprehensive income, like unrealized gains on certain debt investments. Bluestem's $20,000 unrealized gain, net of tax, brings comprehensive income to $402,500."
+    },
+    {
+     "type": "define",
+     "big": "Other comprehensive income",
+     "sub": [
+      "Accumulates in equity as",
+      "accumulated OCI"
+     ],
+     "say": "Other comprehensive income accumulates in a separate equity account, accumulated other comprehensive income. It can be shown in one continuous statement or a separate statement right after the income statement."
+    },
+    {
+     "type": "table",
+     "heading": "Retained earnings, 2027",
+     "rows": [
+      [
+       "Beginning balance",
+       1800000
+      ],
+      [
+       "Net income",
+       382500
+      ],
+      [
+       "Dividends",
+       -120000
+      ],
+      [
+       "Ending balance",
+       2062500,
+       "total"
+      ]
+     ],
+     "say": "Retained earnings starts at $1.8 million, adds net income of $382,500 and subtracts $120,000 of dividends, ending at $2,062,500."
+    },
+    {
+     "type": "key",
+     "big": "Prior period adjustments",
+     "sub": [
+      "Error corrections adjust",
+      "beginning retained earnings"
+     ],
+     "say": "If Bluestem found an error in a prior year's statements, the correction would adjust beginning retained earnings, net of tax, not this year's income. Intermediate Two covers it."
+    },
+    {
+     "type": "quiz",
+     "q": "Beginning RE $500,000; net income $90,000; dividends $30,000. Ending RE?",
+     "opts": [
+      "$620,000",
+      "$560,000",
+      "$590,000",
+      "$470,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Beginning retained earnings five hundred thousand; net income ninety thousand; dividends thirty thousand. Ending retained earnings? Pause and pick.",
+     "reveal": "It's B, $560,000."
+    }
+   ]
+  }
+ ]
+}

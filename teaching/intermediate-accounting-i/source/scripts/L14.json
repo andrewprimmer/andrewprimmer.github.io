@@ -1,0 +1,529 @@
+{
+ "videos": [
+  {
+   "id": "14.1",
+   "title": "Impairment of assets held for use",
+   "lecture": "Lecture 14 \u00b7 Impairment, depletion, disposal",
+   "take": "Test recoverability with undiscounted cash flows; if impaired, write down to fair value",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Remember the fishing-boat molds? Bluestem kept them to make boats for a single dealer. Sales have collapsed."
+    },
+    {
+     "type": "flow",
+     "heading": "Two-step impairment test",
+     "items": [
+      "Indicator: events suggest a problem",
+      "Recoverability: cash flows < carrying?",
+      "Loss: carrying amount \u2212 fair value"
+     ],
+     "say": "First, an indicator, like a big drop in demand, triggers a review. Second, the recoverability test: are the expected undiscounted future cash flows less than the carrying amount? If so, the asset is impaired, and the loss is the carrying amount minus fair value."
+    },
+    {
+     "type": "table",
+     "heading": "Fishing-boat molds",
+     "rows": [
+      [
+       "Cost",
+       500000
+      ],
+      [
+       "Accumulated depreciation",
+       -200000
+      ],
+      [
+       "Carrying amount",
+       300000,
+       "total"
+      ],
+      [
+       "Undiscounted future cash flows",
+       240000
+      ],
+      [
+       "Fair value",
+       180000
+      ],
+      [
+       "Impairment loss",
+       120000,
+       "total"
+      ]
+     ],
+     "say": "The molds' carrying amount is $300,000. Expected undiscounted cash flows are only $240,000, so they fail the recoverability test. Fair value is $180,000, so the impairment loss is $120,000."
+    },
+    {
+     "type": "journal",
+     "heading": "Recording the impairment",
+     "rows": [
+      [
+       "Loss on impairment",
+       120000,
+       ""
+      ],
+      [
+       "Accumulated depreciation",
+       "",
+       120000
+      ]
+     ],
+     "say": "Bluestem debits Loss on Impairment, reported in income from operations, and credits Accumulated Depreciation. The $180,000 fair value becomes the new cost basis for depreciation."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "No reversal under GAAP",
+     "sub": [
+      "IFRS allows reversal;",
+      "US GAAP doesn't for assets held for use"
+     ],
+     "say": "Watch out: under US GAAP, an impairment loss on assets held for use can't be reversed, even if values recover. IFRS uses a one-step test and allows reversals."
+    },
+    {
+     "type": "quiz",
+     "q": "Carrying amount $500,000; undiscounted cash flows $520,000; fair value $450,000. Impairment loss?",
+     "opts": [
+      "$50,000",
+      "$0",
+      "$70,000",
+      "$20,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Carrying amount five hundred thousand; undiscounted cash flows five twenty; fair value four fifty. Impairment loss? Pause and pick.",
+     "reveal": "It's B, zero. It passes the recoverability test."
+    }
+   ]
+  },
+  {
+   "id": "14.2",
+   "title": "Assets held for disposal",
+   "lecture": "Lecture 14 \u00b7 Impairment, depletion, disposal",
+   "take": "Assets held for sale are carried at the lower of carrying amount or fair value less costs to sell, and not depreciated",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "A year later, Bluestem decides to sell the molds. Different rules apply."
+    },
+    {
+     "type": "define",
+     "big": "Held for sale",
+     "sub": [
+      "Lower of carrying amount or",
+      "fair value less costs to sell"
+     ],
+     "say": "Once management commits to a plan to sell, the asset is reported at the lower of its carrying amount or fair value less costs to sell."
+    },
+    {
+     "type": "table",
+     "heading": "Molds held for sale",
+     "rows": [
+      [
+       "Carrying amount",
+       150000
+      ],
+      [
+       "Fair value",
+       140000
+      ],
+      [
+       "Costs to sell",
+       -8000
+      ],
+      [
+       "Fair value less costs to sell",
+       132000,
+       "total"
+      ],
+      [
+       "Loss",
+       18000,
+       "total"
+      ]
+     ],
+     "say": "After another year of depreciation, the molds are carried at $150,000. Fair value is $140,000 and selling costs $8,000, so they're written down to $132,000: an $18,000 loss."
+    },
+    {
+     "type": "key",
+     "big": "No depreciation",
+     "sub": [
+      "The asset will be sold,",
+      "not used"
+     ],
+     "say": "Assets held for sale aren't depreciated, because they're no longer being used. They're shown separately on the balance sheet."
+    },
+    {
+     "type": "key",
+     "big": "Recoveries allowed",
+     "sub": [
+      "Up to the loss previously",
+      "recognized"
+     ],
+     "say": "Unlike assets held for use, later increases in fair value less costs to sell can be recognized, but only up to the losses previously recorded."
+    },
+    {
+     "type": "quiz",
+     "q": "Carrying amount $80,000; fair value $85,000; costs to sell $10,000. Value of asset held for sale?",
+     "opts": [
+      "$80,000",
+      "$75,000",
+      "$85,000",
+      "$70,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Carrying amount eighty thousand; fair value eighty-five; costs to sell ten thousand. Value of the asset held for sale? Pause and pick.",
+     "reveal": "It's B, $75,000."
+    }
+   ]
+  },
+  {
+   "id": "14.3",
+   "title": "Depletion of natural resources",
+   "lecture": "Lecture 14 \u00b7 Impairment, depletion, disposal",
+   "take": "Depletion = (cost + development + restoration \u2212 residual) \u00f7 estimated units \u00d7 units extracted",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem's new wooden-paddle line needs ash and maple. It buys a hardwood timber tract in northern Minnesota."
+    },
+    {
+     "type": "table",
+     "heading": "Depletion base",
+     "rows": [
+      [
+       "Purchase price",
+       600000
+      ],
+      [
+       "Development: access roads",
+       120000
+      ],
+      [
+       "Less: residual value of land",
+       -120000
+      ],
+      [
+       "Depletion base",
+       600000,
+       "total"
+      ]
+     ],
+     "say": "The tract cost $600,000, plus $120,000 to build access roads. The land will be worth $120,000 after harvesting, so the depletion base is $600,000. Restoration costs, if required, would be added."
+    },
+    {
+     "type": "table",
+     "heading": "Depletion, year 1",
+     "rows": [
+      [
+       "Estimated harvest: board feet",
+       "200,000"
+      ],
+      [
+       "Rate: 600,000 \u00f7 200,000",
+       3
+      ],
+      [
+       "Harvested this year: 30,000 \u00d7 $3",
+       90000,
+       "total"
+      ]
+     ],
+     "say": "The tract should yield 200,000 board feet, so depletion is three dollars a board foot. Harvesting 30,000 board feet this year gives depletion of $90,000."
+    },
+    {
+     "type": "key",
+     "big": "Depletion becomes inventory",
+     "sub": [
+      "Part of the cost of the wood,",
+      "then COGS when paddles sell"
+     ],
+     "say": "Depletion is a product cost: it becomes part of the cost of the lumber inventory, and reaches cost of goods sold when the paddles are sold."
+    },
+    {
+     "type": "key",
+     "big": "Estimates change",
+     "sub": [
+      "Revise the rate prospectively"
+     ],
+     "say": "If foresters revise the estimated harvest, Bluestem revises the rate for future years, just like a change in useful life."
+    },
+    {
+     "type": "quiz",
+     "q": "Depletion base $900,000; 300,000 tons estimated; 40,000 tons extracted. Depletion?",
+     "opts": [
+      "$90,000",
+      "$120,000",
+      "$300,000",
+      "$40,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Depletion base nine hundred thousand; three hundred thousand tons estimated; forty thousand extracted. Depletion? Pause and pick.",
+     "reveal": "It's B, $120,000: three dollars a ton."
+    }
+   ]
+  },
+  {
+   "id": "14.4",
+   "title": "Disposals",
+   "lecture": "Lecture 14 \u00b7 Impairment, depletion, disposal",
+   "take": "Depreciate to the disposal date, remove cost and accumulated depreciation, recognize the gain or loss",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem sells an old forklift on July 1."
+    },
+    {
+     "type": "table",
+     "heading": "Before the sale",
+     "rows": [
+      [
+       "Cost",
+       30000
+      ],
+      [
+       "Accumulated depreciation, January 1",
+       21000
+      ],
+      [
+       "Depreciation Jan\u2013Jun: 4,000 \u00d7 6/12",
+       2000
+      ],
+      [
+       "Book value at July 1",
+       7000,
+       "total"
+      ],
+      [
+       "Sale price",
+       8000
+      ],
+      [
+       "Gain",
+       1000,
+       "total"
+      ]
+     ],
+     "say": "The forklift cost $30,000 and had $21,000 of accumulated depreciation at January 1. First, record six months of depreciation, $2,000. Book value is then $7,000. Selling it for $8,000 produces a $1,000 gain."
+    },
+    {
+     "type": "journal",
+     "heading": "Recording the sale",
+     "rows": [
+      [
+       "Cash",
+       8000,
+       ""
+      ],
+      [
+       "Accumulated depreciation",
+       23000,
+       ""
+      ],
+      [
+       "Equipment",
+       "",
+       30000
+      ],
+      [
+       "Gain on disposal",
+       "",
+       1000
+      ]
+     ],
+     "say": "Debit Cash $8,000 and Accumulated Depreciation $23,000; credit Equipment for its $30,000 cost and Gain on Disposal for $1,000."
+    },
+    {
+     "type": "define",
+     "big": "Involuntary conversion",
+     "sub": [
+      "Fire, flood, condemnation: gain or loss",
+      "= proceeds \u2212 book value"
+     ],
+     "say": "Involuntary conversions, like a fire or a government taking land, are treated the same way: the gain or loss is the insurance or condemnation proceeds minus book value. It's reported in continuing operations, not as an extraordinary item."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "Update depreciation first",
+     "sub": [
+      "Skipping it misstates",
+      "the gain and the expense"
+     ],
+     "say": "A common error is forgetting to record depreciation up to the disposal date. That understates depreciation expense and overstates the loss, or understates the gain, by the same amount."
+    },
+    {
+     "type": "quiz",
+     "q": "Cost $50,000; accumulated depreciation $38,000; sold for $9,000. Gain or loss?",
+     "opts": [
+      "$3,000 gain",
+      "$3,000 loss",
+      "$9,000 gain",
+      "$12,000 loss"
+     ],
+     "answer": 1,
+     "say": "Quick check. Cost fifty thousand; accumulated depreciation thirty-eight thousand; sold for nine thousand. Gain or loss? Pause and pick.",
+     "reveal": "It's B, a $3,000 loss: book value $12,000."
+    }
+   ]
+  },
+  {
+   "id": "14.5",
+   "title": "Presentation and analysis",
+   "lecture": "Lecture 14 \u00b7 Impairment, depletion, disposal",
+   "take": "Asset turnover and return on assets show how well PP&E and other assets generate sales and profit",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem has invested heavily in molds, machines and a warehouse. Is it getting enough out of them?"
+    },
+    {
+     "type": "table",
+     "heading": "Asset turnover",
+     "rows": [
+      [
+       "Net sales",
+       4200000
+      ],
+      [
+       "Average total assets",
+       3800000
+      ],
+      [
+       "Asset turnover",
+       "1.11 times",
+       "total"
+      ]
+     ],
+     "say": "Asset turnover is net sales over average total assets: $4.2 million over $3.8 million, one point one one. Each dollar of assets generated a dollar eleven of sales."
+    },
+    {
+     "type": "table",
+     "heading": "Return on assets",
+     "rows": [
+      [
+       "Net income",
+       382500
+      ],
+      [
+       "Average total assets",
+       3800000
+      ],
+      [
+       "Return on assets",
+       "10.1%",
+       "total"
+      ],
+      [
+       "= Profit margin 9.1% \u00d7 turnover 1.11",
+       ""
+      ]
+     ],
+     "say": "Return on assets is net income over average total assets: ten point one percent. It's profit margin, nine point one percent, times asset turnover."
+    },
+    {
+     "type": "list",
+     "heading": "Required disclosures",
+     "items": [
+      "Major classes of PP&E and accumulated depreciation",
+      "Depreciation methods and expense",
+      "Impairments: facts, amount, method",
+      "Pledged assets and commitments"
+     ],
+     "say": "Disclosures include major classes of property and accumulated depreciation, depreciation methods and expense, impairment details, assets pledged as collateral, and purchase commitments."
+    },
+    {
+     "type": "key",
+     "big": "Capital intensity",
+     "sub": [
+      "Compare turnover with",
+      "similar manufacturers"
+     ],
+     "say": "Turnover depends on the industry. A manufacturer like Bluestem will turn assets more slowly than its dealers. Compare with peers."
+    },
+    {
+     "type": "quiz",
+     "q": "Net sales $2,000,000; average total assets $1,600,000. Asset turnover?",
+     "opts": [
+      "0.8",
+      "1.25",
+      "1.6",
+      "2.0"
+     ],
+     "answer": 1,
+     "say": "Quick check. Net sales two million; average total assets one point six million. Asset turnover? Pause and pick.",
+     "reveal": "It's B, one point two five."
+    }
+   ]
+  },
+  {
+   "id": "14.6",
+   "title": "Course recap: Intermediate Accounting I",
+   "lecture": "Lecture 14 \u00b7 Impairment, depletion, disposal",
+   "take": "Standards, statements, present value, receivables, inventory and PP&E: the core of the balance sheet",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Fourteen lectures in two minutes: how Bluestem's financial statements are built."
+    },
+    {
+     "type": "list",
+     "heading": "Foundations",
+     "items": [
+      "Standard setting and the Codification",
+      "Conceptual framework",
+      "Adjusting entries",
+      "Income statement and balance sheet"
+     ],
+     "say": "We began with who sets the rules and the Codification, then the conceptual framework, adjusting entries, and the income statement, balance sheet and cash flow classifications."
+    },
+    {
+     "type": "list",
+     "heading": "Measurement tools",
+     "items": [
+      "Time value of money",
+      "Bonds, loans, expected cash flows"
+     ],
+     "say": "Then the tool that runs through intermediate accounting: time value of money, from single sums to annuities, bonds, loans and expected cash flows."
+    },
+    {
+     "type": "list",
+     "heading": "Assets",
+     "items": [
+      "Cash, receivables and CECL",
+      "Inventory: cost, flow assumptions, LCNRV",
+      "PP&E: acquisition, depreciation, impairment"
+     ],
+     "say": "And the major operating assets: cash and receivables with expected credit losses; inventory, from what to count to FIFO, LIFO and lower of cost and net realizable value; and property, plant and equipment, from acquisition through depreciation, impairment and disposal."
+    },
+    {
+     "type": "key",
+     "big": "Next: Intermediate Accounting II",
+     "sub": [
+      "Intangibles, liabilities, equity, EPS,",
+      "investments, revenue, cash flows"
+     ],
+     "say": "In ACCT 312, Intermediate Accounting Two, Bluestem grows up: intangible assets, liabilities and bonds, stockholders' equity, EPS, investments, revenue recognition, accounting changes and the statement of cash flows."
+    },
+    {
+     "type": "quiz",
+     "q": "Which test comes first in a US GAAP impairment review of assets held for use?",
+     "opts": [
+      "Fair value",
+      "Recoverability with undiscounted cash flows",
+      "Present value",
+      "Book value vs cost"
+     ],
+     "answer": 1,
+     "say": "Last quick check. Which test comes first in a US GAAP impairment review of assets held for use? Pause and pick.",
+     "reveal": "It's B, recoverability using undiscounted cash flows. Good luck on the final, and thanks for paddling along with Bluestem."
+    }
+   ]
+  }
+ ]
+}

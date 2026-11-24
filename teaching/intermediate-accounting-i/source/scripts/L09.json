@@ -1,0 +1,559 @@
+{
+ "videos": [
+  {
+   "id": "9.1",
+   "title": "Classifying inventory",
+   "lecture": "Lecture 9 \u00b7 Inventory basics",
+   "take": "Manufacturers report raw materials, work in process and finished goods; merchandisers report one inventory",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Inventory is Bluestem's largest current asset: $760,000 of aluminum, half-built kayaks and finished boats."
+    },
+    {
+     "type": "define",
+     "big": "Inventory",
+     "sub": [
+      "Assets held for sale in the ordinary course,",
+      "or being produced or used to produce them"
+     ],
+     "say": "Inventories are assets held for sale in the ordinary course of business, in production for sale, or to be used in producing goods for sale."
+    },
+    {
+     "type": "compare",
+     "heading": "Two kinds of business",
+     "cols": [
+      "Merchandiser",
+      "Manufacturer"
+     ],
+     "rows": [
+      [
+       "Buys",
+       "Finished goods to resell",
+       "Raw materials to convert"
+      ],
+      [
+       "Accounts",
+       "Merchandise inventory",
+       "Raw materials, WIP, finished"
+      ]
+     ],
+     "say": "A merchandiser, like Bluestem's dealers, buys finished goods to resell and has one inventory account. A manufacturer like Bluestem has three: raw materials, work in process and finished goods."
+    },
+    {
+     "type": "table",
+     "heading": "Bluestem, December 31",
+     "rows": [
+      [
+       "Raw materials",
+       210000
+      ],
+      [
+       "Work in process",
+       95000
+      ],
+      [
+       "Finished goods",
+       455000
+      ],
+      [
+       "Total inventories",
+       760000,
+       "total"
+      ]
+     ],
+     "say": "Bluestem reports raw materials of $210,000, work in process of $95,000, and finished goods of $455,000: $760,000 in total, with the breakdown in the notes."
+    },
+    {
+     "type": "key",
+     "big": "Why it matters",
+     "sub": [
+      "Inventory drives cost of goods sold,",
+      "gross profit and current assets"
+     ],
+     "say": "Inventory errors flow straight into cost of goods sold, gross profit, net income and current assets. Getting it right matters more for Bluestem than for almost any other asset."
+    },
+    {
+     "type": "quiz",
+     "q": "Half-built kayaks on the factory floor are reported as:",
+     "opts": [
+      "Raw materials",
+      "Work in process",
+      "Finished goods",
+      "PP&E"
+     ],
+     "answer": 1,
+     "say": "Quick check. Half-built kayaks on the factory floor are reported as what? Pause and pick.",
+     "reveal": "It's B, work in process."
+    }
+   ]
+  },
+  {
+   "id": "9.2",
+   "title": "Perpetual and periodic systems",
+   "lecture": "Lecture 9 \u00b7 Inventory basics",
+   "take": "Perpetual systems update inventory with every transaction; periodic systems compute COGS at period end",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Two systems keep track of inventory. Bluestem's factory uses one; its small retail shop used to use the other."
+    },
+    {
+     "type": "compare",
+     "heading": "Perpetual vs periodic",
+     "cols": [
+      "Perpetual",
+      "Periodic"
+     ],
+     "rows": [
+      [
+       "Purchases",
+       "Debit Inventory",
+       "Debit Purchases"
+      ],
+      [
+       "Each sale",
+       "Record COGS",
+       "No COGS entry"
+      ],
+      [
+       "COGS known",
+       "Continuously",
+       "At period end"
+      ]
+     ],
+     "say": "In a perpetual system, purchases go straight to Inventory and every sale records cost of goods sold. In a periodic system, purchases go to a Purchases account, and cost of goods sold is computed only at the end of the period."
+    },
+    {
+     "type": "table",
+     "heading": "Periodic: computing COGS",
+     "rows": [
+      [
+       "Beginning inventory",
+       680000
+      ],
+      [
+       "Plus goods purchased or made",
+       2600000
+      ],
+      [
+       "Goods available for sale",
+       3280000,
+       "total"
+      ],
+      [
+       "Less ending inventory (count)",
+       -760000
+      ],
+      [
+       "Cost of goods sold",
+       2520000,
+       "total"
+      ]
+     ],
+     "say": "Under periodic, cost of goods sold is beginning inventory plus purchases, which gives goods available for sale, less ending inventory from a physical count. For Bluestem: $680,000 plus $2.6 million, less $760,000, gives $2.52 million."
+    },
+    {
+     "type": "journal",
+     "heading": "Perpetual: a sale",
+     "rows": [
+      [
+       "Accounts receivable",
+       9600,
+       ""
+      ],
+      [
+       "Sales revenue",
+       "",
+       9600
+      ],
+      [
+       "Cost of goods sold",
+       6000,
+       ""
+      ],
+      [
+       "Inventory",
+       "",
+       6000
+      ]
+     ],
+     "say": "Under perpetual, a sale of kayaks for $9,600 that cost $6,000 records both the revenue and the cost of goods sold at once."
+    },
+    {
+     "type": "key",
+     "big": "Count anyway",
+     "sub": [
+      "Perpetual records still need a physical",
+      "count to find shrinkage"
+     ],
+     "say": "Even with perpetual records, companies count inventory at least once a year. Differences reveal theft, damage and errors, recorded as inventory over and short."
+    },
+    {
+     "type": "quiz",
+     "q": "Beginning inventory $50,000; purchases $200,000; ending inventory $70,000. COGS?",
+     "opts": [
+      "$180,000",
+      "$220,000",
+      "$250,000",
+      "$130,000"
+     ],
+     "answer": 0,
+     "say": "Quick check. Beginning inventory fifty thousand; purchases two hundred thousand; ending inventory seventy thousand. Cost of goods sold? Pause and pick.",
+     "reveal": "It's A, $180,000."
+    }
+   ]
+  },
+  {
+   "id": "9.3",
+   "title": "Which goods to include",
+   "lecture": "Lecture 9 \u00b7 Inventory basics",
+   "take": "Inventory belongs to whoever has control: check shipping terms and consignment arrangements",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "The count on December 31 says $732,000. But not everything Bluestem owns was in the warehouse, and not everything in the warehouse is Bluestem's."
+    },
+    {
+     "type": "compare",
+     "heading": "Goods in transit",
+     "cols": [
+      "FOB shipping point",
+      "FOB destination"
+     ],
+     "rows": [
+      [
+       "Title passes",
+       "When shipped",
+       "When delivered"
+      ],
+      [
+       "In transit belongs to",
+       "Buyer",
+       "Seller"
+      ]
+     ],
+     "say": "Goods in transit belong to whoever has control. Under FOB shipping point, control passes when the goods leave the seller, so they're the buyer's. Under FOB destination, they stay the seller's until delivered."
+    },
+    {
+     "type": "define",
+     "big": "Consignment",
+     "sub": [
+      "The consignor owns the goods",
+      "the consignee holds and sells"
+     ],
+     "say": "On consignment, the owner, the consignor, ships goods to a dealer, the consignee, who sells them for a commission. The goods stay in the consignor's inventory until sold."
+    },
+    {
+     "type": "table",
+     "heading": "Adjusting the count",
+     "rows": [
+      [
+       "Physical count",
+       732000
+      ],
+      [
+       "In transit, FOB shipping point",
+       15000
+      ],
+      [
+       "On consignment at dealers",
+       22000
+      ],
+      [
+       "Held for a supplier",
+       -9000
+      ],
+      [
+       "Correct inventory",
+       760000,
+       "total"
+      ]
+     ],
+     "say": "Bluestem adds $15,000 of aluminum shipped to it FOB shipping point, and $22,000 of its kayaks sitting at dealers on consignment. It subtracts $9,000 of paddles it holds for a supplier on consignment. Correct inventory: $760,000."
+    },
+    {
+     "type": "key",
+     "big": "Other special cases",
+     "sub": [
+      "Sales with buyback agreements;",
+      "sales with high rates of return"
+     ],
+     "say": "Other special cases include sales with buyback agreements, which may really be financing, and sales with high rates of return. Control, not location, decides."
+    },
+    {
+     "type": "quiz",
+     "q": "Goods shipped to Bluestem FOB destination, still in transit at year-end, belong to:",
+     "opts": [
+      "Bluestem",
+      "The seller",
+      "The carrier",
+      "Split 50/50"
+     ],
+     "answer": 1,
+     "say": "Quick check. Goods shipped to Bluestem FOB destination, still in transit at year-end, belong to whom? Pause and pick.",
+     "reveal": "It's B, the seller."
+    }
+   ]
+  },
+  {
+   "id": "9.4",
+   "title": "Which costs to include",
+   "lecture": "Lecture 9 \u00b7 Inventory basics",
+   "take": "Product costs, including freight-in, go into inventory; selling and administrative costs are period costs",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "What goes into the cost of a kayak? More than the price on the supplier's invoice."
+    },
+    {
+     "type": "compare",
+     "heading": "Product vs period costs",
+     "cols": [
+      "Product costs",
+      "Period costs"
+     ],
+     "rows": [
+      [
+       "Examples",
+       "Materials, freight-in, labor",
+       "Selling, admin, freight-out"
+      ],
+      [
+       "Expensed",
+       "When the goods are sold",
+       "When incurred"
+      ]
+     ],
+     "say": "Product costs attach to inventory: materials, freight-in, direct labor and manufacturing overhead. Period costs, like selling expenses, administration and freight-out, are expensed when incurred."
+    },
+    {
+     "type": "table",
+     "heading": "Cost of an aluminum shipment",
+     "rows": [
+      [
+       "Invoice price",
+       50000
+      ],
+      [
+       "Freight-in",
+       1800
+      ],
+      [
+       "Purchase discount taken: 2%",
+       -1000
+      ],
+      [
+       "Inventory cost",
+       50800,
+       "total"
+      ]
+     ],
+     "say": "Bluestem buys aluminum for $50,000, pays $1,800 to have it shipped in, and takes a two percent discount for paying early. Inventory cost is $50,800."
+    },
+    {
+     "type": "compare",
+     "heading": "Recording purchase discounts",
+     "cols": [
+      "Gross method",
+      "Net method"
+     ],
+     "rows": [
+      [
+       "Record purchase at",
+       "$50,000",
+       "$49,000"
+      ],
+      [
+       "Discount missed",
+       "No entry",
+       "Purchase discounts lost"
+      ]
+     ],
+     "say": "Under the gross method, purchases are recorded at the invoice price and discounts taken reduce cost. Under the net method, purchases are recorded net of the discount, and any discount missed is recorded as purchase discounts lost, a financing expense. The net method shows management's missed savings."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "Abnormal costs",
+     "sub": [
+      "Wasted materials and idle capacity",
+      "are expensed, not inventoried"
+     ],
+     "say": "Abnormal costs, like spoiled materials or idle plant capacity, are expensed as incurred, not added to inventory. And interest is generally not capitalized on routinely produced inventory."
+    },
+    {
+     "type": "quiz",
+     "q": "Which cost is added to inventory?",
+     "opts": [
+      "Freight-out to dealers",
+      "Sales commissions",
+      "Freight-in on aluminum",
+      "Advertising"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which cost is added to inventory? Pause and pick.",
+     "reveal": "It's C, freight-in."
+    }
+   ]
+  },
+  {
+   "id": "9.5",
+   "title": "Inventory errors",
+   "lecture": "Lecture 9 \u00b7 Inventory basics",
+   "take": "An ending inventory error misstates COGS and income this year and reverses next year",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Suppose Bluestem's count had missed the $22,000 of kayaks at dealers. What goes wrong?"
+    },
+    {
+     "type": "table",
+     "heading": "2027: ending inventory understated $22,000",
+     "rows": [
+      [
+       "Ending inventory",
+       "Understated 22,000"
+      ],
+      [
+       "Cost of goods sold",
+       "Overstated 22,000"
+      ],
+      [
+       "Net income (before tax)",
+       "Understated 22,000"
+      ],
+      [
+       "Retained earnings",
+       "Understated 22,000"
+      ]
+     ],
+     "say": "Understated ending inventory means overstated cost of goods sold, so 2027 income and retained earnings are understated by $22,000, before tax."
+    },
+    {
+     "type": "table",
+     "heading": "2028: the error reverses",
+     "rows": [
+      [
+       "Beginning inventory",
+       "Understated 22,000"
+      ],
+      [
+       "Cost of goods sold",
+       "Understated 22,000"
+      ],
+      [
+       "Net income (before tax)",
+       "Overstated 22,000"
+      ],
+      [
+       "Retained earnings, end of 2028",
+       "Correct"
+      ]
+     ],
+     "say": "In 2028, beginning inventory is understated, so cost of goods sold is understated and income overstated by the same amount. By the end of 2028, retained earnings is correct. The error counterbalances."
+    },
+    {
+     "type": "key",
+     "big": "Counterbalancing isn't harmless",
+     "sub": [
+      "Both years' income and trends",
+      "are wrong"
+     ],
+     "say": "Counterbalancing doesn't make the error harmless. Both years' income, ratios and trends are wrong, and a covenant could be breached in either year."
+    },
+    {
+     "type": "key",
+     "big": "Purchases errors",
+     "sub": [
+      "Unrecorded purchase and uncounted goods:",
+      "income unaffected, assets and liabilities understated"
+     ],
+     "say": "If a purchase is both unrecorded and left out of the count, cost of goods sold and income are right, but inventory and accounts payable are both understated."
+    },
+    {
+     "type": "quiz",
+     "q": "Ending inventory is overstated by $10,000. Net income before tax is:",
+     "opts": [
+      "Understated $10,000",
+      "Overstated $10,000",
+      "Unaffected",
+      "Overstated $20,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Ending inventory is overstated by ten thousand dollars. Net income before tax is what? Pause and pick.",
+     "reveal": "It's B, overstated by $10,000."
+    }
+   ]
+  },
+  {
+   "id": "9.6",
+   "title": "Inventory and ethics",
+   "lecture": "Lecture 9 \u00b7 Inventory basics",
+   "take": "Inventory is a common place for fraud: cutoff, fake counts and channel stuffing",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Because inventory errors move income dollar for dollar, inventory is a favorite target for fraud."
+    },
+    {
+     "type": "list",
+     "heading": "Classic schemes",
+     "items": [
+      "Inflating the physical count",
+      "Recording next year's sales early",
+      "Counting goods already sold",
+      "Shipping unordered goods to dealers"
+     ],
+     "say": "Classic schemes include inflating the count, recording January sales in December, counting goods already shipped, and channel stuffing: pushing unordered goods onto dealers to book revenue."
+    },
+    {
+     "type": "define",
+     "big": "Cutoff",
+     "sub": [
+      "Recording each transaction",
+      "in the right period"
+     ],
+     "say": "Good cutoff means each purchase and sale lands in the right period. Auditors test shipments and receipts around year-end and observe the physical count."
+    },
+    {
+     "type": "key",
+     "big": "Red flags",
+     "sub": [
+      "Inventory growing faster than sales;",
+      "falling inventory turnover"
+     ],
+     "say": "Red flags for analysts: inventory growing much faster than sales, falling turnover, and gross margins that look too good."
+    },
+    {
+     "type": "key",
+     "big": "Bluestem's controls",
+     "sub": [
+      "Count teams independent of the",
+      "warehouse; tagged counts; cutoff testing"
+     ],
+     "say": "Bluestem uses count teams independent of the warehouse staff, numbered count tags, and a cutoff review of the last ten shipping documents each year."
+    },
+    {
+     "type": "quiz",
+     "q": "Pushing extra unordered goods onto dealers at year-end to boost sales is called:",
+     "opts": [
+      "Window dressing",
+      "Channel stuffing",
+      "Cutoff",
+      "Consignment"
+     ],
+     "answer": 1,
+     "say": "Quick check. Pushing extra unordered goods onto dealers at year-end to boost sales is called what? Pause and pick.",
+     "reveal": "It's B, channel stuffing."
+    }
+   ]
+  }
+ ]
+}
