@@ -1,0 +1,103 @@
+{
+ "meta": {"n": 5, "short": "Balance sheet", "title": "The balance sheet, cash flows and disclosure", "week": 5, "ch": "Chapter 5", "part": "Foundations",
+  "summary": "Usefulness and limits of the balance sheet, classification of assets, liabilities and equity, liquidity and solvency ratios, the purpose and sections of the statement of cash flows, free cash flow, and disclosure techniques."},
+ "videos": [
+  {"id": "5.1", "title": "What the balance sheet tells you", "lecture": "Lecture 5 · Balance sheet",
+   "take": "The balance sheet shows liquidity, solvency and financial flexibility, but omits much of a company's value", "read": "",
+   "scenes": [
+    {"type": "title", "say": "Bluestem's bank reads the balance sheet first. It wants to know: can this company pay us back?"},
+    {"type": "list", "heading": "What it helps assess", "items": ["Liquidity: cash available soon", "Solvency: paying debts as they mature", "Financial flexibility: adapting to surprises"], "say": "The balance sheet helps assess liquidity, how soon assets turn into cash; solvency, the ability to pay debts as they come due; and financial flexibility, the ability to raise cash and adapt to surprises."},
+    {"type": "list", "heading": "Limitations", "items": ["Most assets at historical cost", "Estimates: bad debts, useful lives", "Omits brand, people, know-how"], "say": "But it has limits. Most assets are at historical cost, not current value. Many amounts are estimates. And some of the most valuable things, like Bluestem's brand and its designers' know-how, don't appear at all."},
+    {"type": "key", "big": "Book value ≠ market value", "sub": ["Investors may pay far more", "than equity on the balance sheet"], "say": "That's why companies often sell for much more than their book equity. When Bluestem goes public, its market value will likely be several times its book value."},
+    {"type": "key", "big": "A snapshot", "sub": ["At one date, unlike the", "income statement's period"], "say": "And remember, it's a snapshot at one date. The income statement and cash flow statement cover a period."},
+    {"type": "quiz", "q": "The ability to pay debts as they mature over the long term is:", "opts": ["Liquidity", "Solvency", "Profitability", "Comparability"], "answer": 1,
+     "say": "Quick check. The ability to pay debts as they mature over the long term is called what? Pause and pick.", "reveal": "It's B, solvency."}
+   ]},
+  {"id": "5.2", "title": "Classifying assets", "lecture": "Lecture 5 · Balance sheet",
+   "take": "Current assets will be used or turned into cash within a year or the operating cycle, whichever is longer", "read": "",
+   "scenes": [
+    {"type": "title", "say": "A classified balance sheet groups similar items so users can see liquidity at a glance."},
+    {"type": "define", "big": "Current assets", "sub": ["Expected to be converted to cash, sold or used", "within one year or the operating cycle"], "say": "Current assets are cash and other assets expected to be converted to cash, sold or consumed within one year or the operating cycle, whichever is longer. They're listed in order of liquidity."},
+    {"type": "list", "heading": "Current assets", "items": ["Cash and cash equivalents", "Short-term investments", "Receivables, net of allowance", "Inventories", "Prepaid expenses"], "say": "Typical current assets: cash and cash equivalents; short-term investments; receivables, net of the allowance for doubtful accounts; inventories; and prepaid expenses."},
+    {"type": "list", "heading": "Noncurrent assets", "items": ["Long-term investments", "Property, plant and equipment", "Intangible assets, including goodwill", "Other assets"], "say": "Noncurrent assets include long-term investments, like bonds held to maturity or land held for a future plant; property, plant and equipment, net of accumulated depreciation; intangible assets; and other assets."},
+    {"type": "key", "tag": "WATCH OUT", "big": "Restricted cash", "sub": ["Cash set aside to repay long-term", "debt isn't a current asset"], "say": "Watch out: cash restricted for a long-term purpose, like a sinking fund to repay bonds in five years, isn't a current asset. Classification follows the expected use."},
+    {"type": "quiz", "q": "Land held for a future plant site is classified as:", "opts": ["PP&E", "Long-term investment", "Current asset", "Intangible"], "answer": 1,
+     "say": "Quick check. Land held for a future plant site is classified as what? Pause and pick.", "reveal": "It's B, a long-term investment. It isn't used in operations yet."}
+   ]},
+  {"id": "5.3", "title": "Classifying liabilities and equity", "lecture": "Lecture 5 · Balance sheet",
+   "take": "Current liabilities are paid from current assets within a year; equity shows contributed capital, retained earnings and AOCI", "read": "",
+   "scenes": [
+    {"type": "title", "say": "The right side of the balance sheet: who has claims on the assets?"},
+    {"type": "list", "heading": "Current liabilities", "items": ["Accounts payable", "Accrued liabilities", "Unearned revenue", "Current portion of long-term debt"], "say": "Current liabilities are obligations expected to be paid from current assets, or by creating other current liabilities, within a year or the operating cycle: accounts payable, accrued liabilities, unearned revenue, and the current portion of long-term debt."},
+    {"type": "key", "big": "Current portion", "sub": ["$100,000 of the term loan due next year", "moves to current liabilities"], "say": "Bluestem's term loan is repaid $100,000 a year. Next year's $100,000 is reported as current; the rest stays long-term."},
+    {"type": "list", "heading": "Stockholders' equity", "items": ["Common and preferred stock (par)", "Additional paid-in capital", "Retained earnings", "Accumulated other comprehensive income", "Less: treasury stock"], "say": "Stockholders' equity includes capital stock at par value; additional paid-in capital above par; retained earnings; accumulated other comprehensive income; less treasury stock the company has bought back. Noncontrolling interests in subsidiaries also appear within equity."},
+    {"type": "key", "big": "Debt or equity?", "sub": ["Some instruments are hard to", "classify: Intermediate II"], "say": "Some instruments, like mandatorily redeemable preferred stock, look like equity but are liabilities. You'll sort those out in Intermediate Accounting Two."},
+    {"type": "quiz", "q": "A 5-year note has $40,000 due next year. On the balance sheet, $40,000 is:", "opts": ["Long-term liability", "Current liability", "Equity", "Not reported"], "answer": 1,
+     "say": "Quick check. A five-year note has forty thousand dollars due next year. How is that forty thousand reported? Pause and pick.", "reveal": "It's B, a current liability."}
+   ]},
+  {"id": "5.4", "title": "Bluestem's balance sheet and ratios", "lecture": "Lecture 5 · Balance sheet",
+   "take": "Current ratio and debt to assets turn the balance sheet into liquidity and solvency measures", "read": "",
+   "scenes": [
+    {"type": "title", "say": "Here's Bluestem's balance sheet at December 31, 2027, condensed."},
+    {"type": "table", "heading": "Assets", "rows": [["Cash", 180000], ["Accounts receivable, net", 420000], ["Inventories", 760000], ["Prepaid expenses", 40000], ["Total current assets", 1400000, "total"], ["Investments, PP&E, intangibles", 2600000], ["Total assets", 4000000, "total"]], "say": "Current assets total $1.4 million: cash, receivables, inventories and prepaids. Long-term investments, property and intangibles add $2.6 million. Total assets: $4 million."},
+    {"type": "table", "heading": "Liabilities and equity", "rows": [["Current liabilities", 650000], ["Long-term debt", 900000], ["Total liabilities", 1550000, "total"], ["Common stock and APIC", 367500], ["Retained earnings", 2062500], ["Accumulated OCI", 20000], ["Total liabilities and equity", 4000000, "total"]], "say": "Current liabilities are $650,000 and long-term debt $900,000: total liabilities $1.55 million. Equity is common stock and paid-in capital of $367,500, retained earnings of $2,062,500, and accumulated OCI of $20,000. It balances at $4 million."},
+    {"type": "table", "heading": "Two key ratios", "rows": [["Current ratio: 1,400,000 ÷ 650,000", "2.15"], ["Debt to assets: 1,550,000 ÷ 4,000,000", "38.8%"]], "say": "The current ratio is current assets over current liabilities: two point one five, comfortable. Debt to assets is total liabilities over total assets: thirty-eight point eight percent."},
+    {"type": "key", "big": "Inventory-heavy liquidity", "sub": ["Quick ratio excludes inventory:", "(180,000 + 420,000) ÷ 650,000 = 0.92"], "say": "But more than half of current assets is inventory. The quick ratio, cash plus receivables over current liabilities, is only point nine two. Kayaks aren't cash until they're sold."},
+    {"type": "quiz", "q": "Current assets $900,000; current liabilities $600,000. Current ratio?", "opts": ["0.67", "1.5", "3.0", "$300,000"], "answer": 1,
+     "say": "Quick check. Current assets nine hundred thousand; current liabilities six hundred thousand. Current ratio? Pause and pick.", "reveal": "It's B, one point five."}
+   ]},
+  {"id": "5.5", "title": "The statement of cash flows: an overview", "lecture": "Lecture 5 · Balance sheet",
+   "take": "Cash flows are classified as operating, investing or financing; free cash flow shows discretionary cash", "read": "",
+   "scenes": [
+    {"type": "title", "say": "Profit isn't cash. The statement of cash flows shows where Bluestem's cash actually came from and went."},
+    {"type": "compare", "heading": "Three activities", "cols": ["Examples in", "Examples out"], "rows": [["Operating", "Customers", "Suppliers, employees, tax"], ["Investing", "Sale of equipment", "Buying PP&E, investments"], ["Financing", "Borrowing, issuing stock", "Repaying debt, dividends"]], "say": "Operating activities are the cash effects of earning income: collections from customers and payments to suppliers, employees and the government. Investing covers buying and selling long-term assets and investments. Financing covers borrowing, repaying, issuing stock and paying dividends."},
+    {"type": "table", "heading": "Bluestem, 2027", "rows": [["Net cash from operating activities", 520000], ["Net cash used in investing", -410000], ["Net cash used in financing", -60000], ["Increase in cash", 50000, "total"]], "say": "Bluestem generated $520,000 from operations, used $410,000 in investing, mostly new molds, and $60,000 in financing: borrowing less dividends and loan repayments. Cash rose $50,000."},
+    {"type": "table", "heading": "Free cash flow", "rows": [["Cash from operations", 520000], ["Capital expenditures", -380000], ["Dividends", -120000], ["Free cash flow", 20000, "total"]], "say": "Free cash flow is cash from operations less capital expenditures and dividends: just $20,000. Bluestem has little cash left for new projects without borrowing."},
+    {"type": "key", "big": "Preparing it comes later", "sub": ["Intermediate II builds the full", "statement from balance sheet changes"], "say": "Here we're reading the statement. Building it from scratch is a big topic in Intermediate Accounting Two."},
+    {"type": "quiz", "q": "Paying dividends is a cash outflow from:", "opts": ["Operating activities", "Investing activities", "Financing activities", "Not reported"], "answer": 2,
+     "say": "Quick check. Paying dividends is a cash outflow from which activity? Pause and pick.", "reveal": "It's C, financing activities."}
+   ]},
+  {"id": "5.6", "title": "Notes and disclosure", "lecture": "Lecture 5 · Balance sheet",
+   "take": "Notes explain policies, contingencies, commitments and subsequent events; they're part of the statements", "read": "",
+   "scenes": [
+    {"type": "title", "say": "The numbers are only half of Bluestem's annual report. The notes often matter more."},
+    {"type": "list", "heading": "Common notes", "items": ["Significant accounting policies", "Contingencies and commitments", "Debt terms and covenants", "Subsequent events"], "say": "Common notes include the summary of significant accounting policies, like Bluestem's inventory method and depreciation lives; contingencies, like lawsuits; commitments and debt terms; and events after the balance sheet date."},
+    {"type": "define", "big": "Subsequent events", "sub": ["Events after year-end but", "before the statements are issued"], "say": "Subsequent events happen after the balance sheet date but before the statements are issued. If they give evidence about conditions at year-end, like a customer's bankruptcy that confirms a bad receivable, adjust the numbers. If they're new conditions, like a fire in February, disclose them."},
+    {"type": "list", "heading": "Disclosure techniques", "items": ["Parenthetical explanations", "Notes", "Cross-reference and contra items", "Supporting schedules"], "say": "Information can be disclosed through parenthetical explanations on the face of the statements, notes, cross-references and contra accounts, and supporting schedules."},
+    {"type": "key", "tag": "WATCH OUT", "big": "Disclosure doesn't fix", "sub": ["Wrong numbers can't be", "corrected by a note"], "say": "Disclosure is not a substitute for proper recognition. If an item meets the recognition criteria, a note explaining it doesn't make the omission acceptable."},
+    {"type": "quiz", "q": "In February, a fire destroys Bluestem's warehouse before the statements are issued. Treatment?", "opts": ["Adjust December statements", "Disclose in the notes", "Ignore it", "Prior period adjustment"], "answer": 1,
+     "say": "Quick check. In February, a fire destroys Bluestem's warehouse before the statements are issued. Treatment? Pause and pick.", "reveal": "It's B: disclose it. The fire is a new condition after year-end."}
+   ]}
+ ],
+ "content": {
+  "warmup": ["Bluestem has $4 million of assets on its balance sheet. Would you pay $4 million for the company? Why or why not?", "Book vs market value; omitted intangibles; historical cost."],
+  "acts": [
+   ["Explain liquidity, solvency and financial flexibility, and name one balance sheet item that bears on each.", "Liquidity: cash, receivables. Solvency: long-term debt vs assets. Flexibility: unused credit, low leverage."],
+   ["Classify: prepaid insurance (12 months); land held for speculation; patents; bond sinking fund; inventory; equipment.", "Current; long-term investment; intangible; long-term investment (restricted); current; PP&E."],
+   ["Classify: accounts payable; current portion of mortgage; unearned revenue; bonds due in 8 years; dividends declared; treasury stock.", "Current; current; current; long-term; current; contra equity."],
+   ["Compute the current, quick and debt-to-assets ratios for a company with cash $50,000, receivables $150,000, inventory $300,000, current liabilities $250,000, total liabilities $600,000, total assets $1,500,000.", "Current 2.0; quick 0.8; debt to assets 40%."],
+   ["Classify each cash flow: interest paid; sale of old truck; issuing common stock; purchase of equipment; collections from customers; repayment of loan principal.", "Operating; investing; financing; investing; operating; financing."],
+   ["Decide whether to adjust or disclose: (a) customer with a December receivable declares bankruptcy in January; (b) Bluestem issues bonds in February; (c) lawsuit from a November accident settled in January.", "(a) Adjust; (b) disclose; (c) adjust (condition existed at year-end)."]
+  ],
+  "case": ["The covenant ratio",
+   "Bluestem's loan requires a current ratio of at least 2.0. On December 31, current assets are $1,400,000 and current liabilities $650,000. The founder suggests (1) using $150,000 of cash to pay down accounts payable on December 30; (2) reclassifying $200,000 of inventory as a long-term asset; (3) delaying a large aluminum purchase on account from December 29 to January 3.",
+   ["Compute the current ratio after idea 1.", "Is idea 2 acceptable?", "Is idea 3 acceptable?", "What ethical issues arise?"],
+   "Idea 1: 1,250,000 ÷ 500,000 = 2.5 (legitimate; it raises the ratio when it's above 1). Idea 2: not acceptable; inventory held for sale is current. Idea 3: a genuine change in purchase timing is legal but window dressing; if goods arrived in December they must be recorded. Ethical issues: misleading the lender; disclosure of window dressing."],
+  "exam": [
+   ["Explain how current assets and current liabilities are defined, and give three examples of each.", 6, "One year or operating cycle, whichever longer; cash/receivables/inventory/prepaids; payables/accrued/unearned/current portion of LTD."],
+   ["Using Bluestem's numbers (CFO $520,000, capex $380,000, dividends $120,000, current assets $1.4m, current liabilities $650,000), compute free cash flow and the current ratio and comment.", 6, "FCF $20,000; current ratio 2.15; adequate liquidity but limited discretionary cash; inventory-heavy."]
+  ],
+  "outcomes": ["Explain the uses and limits of the balance sheet", "Classify assets", "Classify liabilities and equity", "Prepare a classified balance sheet and compute liquidity and solvency ratios", "Classify cash flows and compute free cash flow", "Apply disclosure requirements, including subsequent events"],
+  "take": ["Liquidity, solvency, flexibility", "Current = one year or operating cycle", "Current portion of debt is current", "Current, quick and debt ratios", "Operating, investing, financing", "Notes are part of the statements"]
+ },
+ "ex": [
+  {"type": "sort", "q": "Sort each item: current or noncurrent asset?", "cats": ["Current", "Noncurrent"], "items": [["Prepaid rent for 6 months", 0], ["Land held for a future plant", 1], ["Patent", 1], ["Inventory", 0], ["Bond sinking fund", 1], ["Accounts receivable", 0]], "why": "Expected use within a year or operating cycle.", "video": "5.2"},
+  {"type": "mcq", "q": "Accumulated other comprehensive income is reported in:", "opts": ["Current liabilities", "Stockholders' equity", "The income statement", "Long-term investments"], "a": 1, "why": "AOCI is an equity component.", "video": "5.3"},
+  {"type": "num", "q": "Current assets $1,050,000; current liabilities $700,000. Current ratio?", "a": 1.5, "tol": 0.01, "unit": "", "why": "1,050 ÷ 700.", "video": "5.4"},
+  {"type": "num", "q": "Total liabilities $1,200,000; total assets $3,000,000. Debt to assets, in percent?", "a": 40, "tol": 0.1, "unit": "%", "why": "1.2 ÷ 3.0.", "video": "5.4"},
+  {"type": "sort", "q": "Classify each cash flow.", "cats": ["Operating", "Investing", "Financing"], "items": [["Collections from customers", 0], ["Purchase of equipment", 1], ["Payment of dividends", 2], ["Wages paid", 0], ["Sale of land", 1], ["Issuing bonds", 2]], "why": "Three activities.", "video": "5.5"},
+  {"type": "num", "q": "Cash from operations $800,000; capital expenditures $500,000; dividends $100,000. Free cash flow?", "a": 200000, "unit": "$", "why": "800 − 500 − 100.", "video": "5.5"},
+  {"type": "mcq", "q": "A customer's January bankruptcy reveals that a December 31 receivable was uncollectible. The company should:", "opts": ["Only disclose it", "Adjust the December statements", "Ignore it", "Record it in January"], "a": 1, "why": "Evidence about conditions existing at year-end.", "video": "5.6"},
+  {"type": "match", "q": "Match each disclosure technique to an example.", "pairs": [["Parenthetical explanation", "Inventory (FIFO) on the face"], ["Note", "Summary of significant accounting policies"], ["Contra account", "Allowance for doubtful accounts"], ["Supporting schedule", "Detail of property by class"]], "why": "Four techniques.", "video": "5.6"}
+ ]
+}

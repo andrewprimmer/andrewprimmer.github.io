@@ -1,0 +1,692 @@
+{
+ "meta": {
+  "n": 9,
+  "short": "Debt investments",
+  "title": "Investments in debt securities",
+  "week": 10,
+  "ch": "Chapter 17",
+  "part": "Investments and revenue",
+  "summary": "Why companies invest, classifying debt securities as held-to-maturity, available-for-sale or trading, amortized cost and the effective-interest method, fair value adjustments through OCI or net income, sales and reclassification, credit losses and transfers."
+ },
+ "videos": [
+  {
+   "id": "9.1",
+   "title": "Classifying debt investments",
+   "lecture": "Lecture 9 · Debt investments",
+   "take": "Debt securities are held-to-maturity, available-for-sale or trading, depending on intent and ability",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "After the IPO, Bluestem has more cash than it needs for the winter. It invests some in bonds."
+    },
+    {
+     "type": "list",
+     "heading": "Why companies invest",
+     "items": [
+      "Earn a return on idle cash",
+      "Match future cash needs",
+      "Strategic: influence or control"
+     ],
+     "say": "Companies invest to earn a return on idle cash, to line up cash for future needs like a plant expansion, or strategically, to influence or control another company. Strategic stakes are equity investments, next lecture."
+    },
+    {
+     "type": "compare",
+     "heading": "Three categories for debt securities",
+     "cols": [
+      "Measured at",
+      "Unrealized gains/losses"
+     ],
+     "rows": [
+      [
+       "Held-to-maturity",
+       "Amortized cost",
+       "Not recognized"
+      ],
+      [
+       "Available-for-sale",
+       "Fair value",
+       "Other comprehensive income"
+      ],
+      [
+       "Trading",
+       "Fair value",
+       "Net income"
+      ]
+     ],
+     "say": "Debt securities fall into three categories. Held-to-maturity securities are carried at amortized cost. Available-for-sale securities are carried at fair value, with unrealized gains and losses in OCI. Trading securities are at fair value, with gains and losses in net income."
+    },
+    {
+     "type": "define",
+     "big": "Held-to-maturity",
+     "sub": [
+      "Positive intent and ability",
+      "to hold until maturity"
+     ],
+     "say": "Held-to-maturity requires both the positive intent and the ability to hold the bonds until they mature. Selling them early can taint the whole category."
+    },
+    {
+     "type": "key",
+     "big": "Business model matters",
+     "sub": [
+      "Trading: active buying and selling",
+      "for short-term profit"
+     ],
+     "say": "Trading securities are bought and held mainly to sell in the near term, as a bank's trading desk does. Available-for-sale is the residual: neither held-to-maturity nor trading."
+    },
+    {
+     "type": "quiz",
+     "q": "Unrealized gains on available-for-sale debt securities are reported in:",
+     "opts": [
+      "Net income",
+      "Other comprehensive income",
+      "Not reported",
+      "Retained earnings directly"
+     ],
+     "answer": 1,
+     "say": "Quick check. Unrealized gains on available-for-sale debt securities are reported where? Pause and pick.",
+     "reveal": "It's B, other comprehensive income."
+    }
+   ]
+  },
+  {
+   "id": "9.2",
+   "title": "Held-to-maturity: amortized cost",
+   "lecture": "Lecture 9 · Debt investments",
+   "take": "Record at cost; interest revenue = carrying amount × market rate; fair value changes are ignored",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "On January 1, 2030, Bluestem buys $500,000 of five-year, six percent bonds issued by a utility, paying interest semiannually. Similar bonds yield eight percent."
+    },
+    {
+     "type": "table",
+     "heading": "Purchase price: 10 periods at 4%",
+     "rows": [
+      [
+       "PV of principal: 500,000 × 0.67556",
+       337780
+      ],
+      [
+       "PV of interest: 15,000 × 8.11090",
+       121664
+      ],
+      [
+       "Price paid",
+       459444,
+       "total"
+      ]
+     ],
+     "say": "Ten periods at four percent: the principal is worth $337,780 and the interest $121,664. Bluestem pays $459,444, a discount from face."
+    },
+    {
+     "type": "journal",
+     "heading": "Purchase",
+     "rows": [
+      [
+       "Debt investments",
+       459444,
+       ""
+      ],
+      [
+       "Cash",
+       "",
+       459444
+      ]
+     ],
+     "say": "It records Debt Investments at cost, $459,444. Bluestem intends and is able to hold the bonds to maturity."
+    },
+    {
+     "type": "table",
+     "heading": "June 30: first interest",
+     "rows": [
+      [
+       "Interest revenue: 459,444 × 4%",
+       18378
+      ],
+      [
+       "Cash received: 500,000 × 3%",
+       15000
+      ],
+      [
+       "Discount amortized",
+       3378,
+       "total"
+      ],
+      [
+       "Amortized cost",
+       462822,
+       "total"
+      ]
+     ],
+     "say": "On June 30, interest revenue is four percent of the carrying amount, $18,378. Cash received is $15,000. The $3,378 difference increases the investment to $462,822. It's the mirror of what an issuer does."
+    },
+    {
+     "type": "key",
+     "big": "Fair value changes ignored",
+     "sub": [
+      "Disclosed, not recognized"
+     ],
+     "say": "For held-to-maturity securities, changes in fair value aren't recognized, because Bluestem will collect the contractual cash flows. Fair value is disclosed in the notes."
+    },
+    {
+     "type": "quiz",
+     "q": "HTM bond carrying amount $96,000; market rate 5% per period; cash interest $4,000. Interest revenue?",
+     "opts": [
+      "$4,000",
+      "$4,800",
+      "$5,000",
+      "$800"
+     ],
+     "answer": 1,
+     "say": "Quick check. A held-to-maturity bond's carrying amount is ninety-six thousand; market rate five percent per period; cash interest four thousand. Interest revenue? Pause and pick.",
+     "reveal": "It's B, $4,800."
+    }
+   ]
+  },
+  {
+   "id": "9.3",
+   "title": "Available-for-sale: fair value through OCI",
+   "lecture": "Lecture 9 · Debt investments",
+   "take": "Amortize as usual, then adjust to fair value at year-end with the change in OCI",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Suppose Bluestem might sell the utility bonds if it needs cash for the second plant. Then they're available-for-sale."
+    },
+    {
+     "type": "table",
+     "heading": "December 31, 2030",
+     "rows": [
+      [
+       "Amortized cost after 2 periods",
+       466335
+      ],
+      [
+       "Fair value",
+       470000
+      ],
+      [
+       "Unrealized holding gain",
+       3665,
+       "total"
+      ]
+     ],
+     "say": "Interest revenue and amortization are recorded exactly as before. After two periods, amortized cost is $466,335. At December 31, the bonds' fair value is $470,000: an unrealized holding gain of $3,665."
+    },
+    {
+     "type": "journal",
+     "heading": "Fair value adjustment",
+     "rows": [
+      [
+       "Fair value adjustment (AFS)",
+       3665,
+       ""
+      ],
+      [
+       "Unrealized holding gain or loss, equity",
+       "",
+       3665
+      ]
+     ],
+     "say": "Bluestem debits a Fair Value Adjustment account, which sits alongside the investment at amortized cost, and credits Unrealized Holding Gain or Loss, Equity: other comprehensive income."
+    },
+    {
+     "type": "table",
+     "heading": "On the statements",
+     "rows": [
+      [
+       "Balance sheet: at fair value",
+       470000
+      ],
+      [
+       "Income statement: interest revenue",
+       36891
+      ],
+      [
+       "OCI: unrealized holding gain",
+       3665
+      ]
+     ],
+     "say": "The balance sheet shows the investment at fair value, $470,000. Net income includes interest revenue of $36,891 for the year. The $3,665 gain goes to other comprehensive income and accumulates in equity."
+    },
+    {
+     "type": "key",
+     "big": "Why OCI?",
+     "sub": [
+      "Keeps unrealized swings out of income",
+      "for securities not actively traded"
+     ],
+     "say": "Why OCI? Bluestem isn't trying to profit from short-term price changes, so putting the swings in net income could mislead. OCI shows them without distorting operating results."
+    },
+    {
+     "type": "quiz",
+     "q": "AFS debt securities: amortized cost $210,000; fair value $203,000. The adjustment:",
+     "opts": [
+      "$7,000 loss in net income",
+      "$7,000 unrealized loss in OCI",
+      "No entry",
+      "$7,000 gain in OCI"
+     ],
+     "answer": 1,
+     "say": "Quick check. Available-for-sale debt securities: amortized cost two ten thousand; fair value two oh three thousand. The adjustment? Pause and pick.",
+     "reveal": "It's B, a $7,000 unrealized loss in OCI, unless it's a credit loss."
+    }
+   ]
+  },
+  {
+   "id": "9.4",
+   "title": "Trading securities",
+   "lecture": "Lecture 9 · Debt investments",
+   "take": "Trading securities are at fair value with unrealized gains and losses in net income",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Maria Okafor sets up a small treasury account that actively trades short-term corporate bonds."
+    },
+    {
+     "type": "table",
+     "heading": "Trading portfolio, December 31",
+     "rows": [
+      [
+       "Cost of bonds held",
+       200000
+      ],
+      [
+       "Fair value",
+       194000
+      ],
+      [
+       "Unrealized holding loss",
+       6000,
+       "total"
+      ]
+     ],
+     "say": "The portfolio cost $200,000 and is worth $194,000 at year-end: an unrealized holding loss of $6,000."
+    },
+    {
+     "type": "journal",
+     "heading": "Adjusting to fair value",
+     "rows": [
+      [
+       "Unrealized loss, income",
+       6000,
+       ""
+      ],
+      [
+       "Fair value adjustment (trading)",
+       "",
+       6000
+      ]
+     ],
+     "say": "For trading securities, the loss goes straight into net income. Trading securities are usually current assets, and interest revenue is recorded as earned; amortization of small discounts is often skipped."
+    },
+    {
+     "type": "compare",
+     "heading": "Same price drop, three results",
+     "cols": [
+      "Balance sheet",
+      "Net income effect"
+     ],
+     "rows": [
+      [
+       "Held-to-maturity",
+       "Amortized cost",
+       "None"
+      ],
+      [
+       "Available-for-sale",
+       "Fair value",
+       "None (OCI)"
+      ],
+      [
+       "Trading",
+       "Fair value",
+       "Loss"
+      ]
+     ],
+     "say": "The same price drop has three different results. Held-to-maturity: no change. Available-for-sale: fair value on the balance sheet, loss in OCI. Trading: fair value and a loss in net income."
+    },
+    {
+     "type": "key",
+     "big": "Classification is a judgment",
+     "sub": [
+      "Auditors test intent and history"
+     ],
+     "say": "Because classification changes income, auditors test management's intent against its actual behavior. A company that regularly sells HTM bonds loses the right to use the category."
+    },
+    {
+     "type": "quiz",
+     "q": "Trading securities: cost $80,000; fair value $86,000. Effect on net income?",
+     "opts": [
+      "None",
+      "$6,000 gain",
+      "$6,000 loss",
+      "$6,000 in OCI"
+     ],
+     "answer": 1,
+     "say": "Quick check. Trading securities: cost eighty thousand; fair value eighty-six thousand. Effect on net income? Pause and pick.",
+     "reveal": "It's B, a $6,000 gain."
+    }
+   ]
+  },
+  {
+   "id": "9.5",
+   "title": "Selling AFS securities and credit losses",
+   "lecture": "Lecture 9 · Debt investments",
+   "take": "On sale, reclassify accumulated OCI into net income; credit losses go to income through an allowance",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "In 2031, Bluestem sells the utility bonds to fund the second plant."
+    },
+    {
+     "type": "table",
+     "heading": "Sale on January 2, 2031",
+     "rows": [
+      [
+       "Selling price",
+       471000
+      ],
+      [
+       "Amortized cost",
+       466335
+      ],
+      [
+       "Realized gain",
+       4665,
+       "total"
+      ]
+     ],
+     "say": "It sells the bonds for $471,000. The realized gain is measured against amortized cost: $4,665, reported in net income."
+    },
+    {
+     "type": "define",
+     "big": "Reclassification adjustment",
+     "sub": [
+      "Move the $3,665 out of OCI",
+      "so it isn't counted twice"
+     ],
+     "say": "The $3,665 gain already in OCI must be removed, or it would be counted twice in comprehensive income: once in OCI last year, and again in this year's realized gain. That's a reclassification adjustment, or recycling."
+    },
+    {
+     "type": "list",
+     "heading": "Credit losses on debt investments",
+     "items": [
+      "HTM: CECL allowance for expected losses",
+      "AFS: allowance, limited to fair value shortfall",
+      "Credit losses go to net income",
+      "Other declines in AFS: OCI"
+     ],
+     "say": "Credit losses are different. For held-to-maturity bonds, Bluestem records an allowance for expected credit losses under CECL. For available-for-sale bonds, credit losses go to income through an allowance, limited to the amount fair value is below amortized cost. Non-credit declines stay in OCI."
+    },
+    {
+     "type": "key",
+     "big": "Interest rate vs credit",
+     "sub": [
+      "Rates rose: OCI;",
+      "issuer may default: income"
+     ],
+     "say": "The key distinction: if prices fell because interest rates rose, that's OCI for AFS. If they fell because the issuer may not pay, that's a credit loss in income."
+    },
+    {
+     "type": "quiz",
+     "q": "AFS bonds with amortized cost $100,000 and $2,000 unrealized gain in AOCI are sold for $103,000. Realized gain in net income?",
+     "opts": [
+      "$1,000",
+      "$3,000",
+      "$5,000",
+      "$2,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Available-for-sale bonds with amortized cost one hundred thousand and a two thousand dollar unrealized gain in AOCI are sold for one oh three thousand. Realized gain in net income? Pause and pick.",
+     "reveal": "It's B, $3,000. The $2,000 in AOCI is reclassified."
+    }
+   ]
+  },
+  {
+   "id": "9.6",
+   "title": "Transfers and disclosures",
+   "lecture": "Lecture 9 · Debt investments",
+   "take": "Transfers between categories are at fair value; disclose fair values, maturities and gains and losses",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "What if Bluestem changes its mind about a bond's category?"
+    },
+    {
+     "type": "table",
+     "heading": "Transfers between categories",
+     "rows": [
+      [
+       "AFS to trading",
+       "Recognize OCI in income now"
+      ],
+      [
+       "HTM to AFS",
+       "Unrealized gain or loss to OCI"
+      ],
+      [
+       "AFS to HTM",
+       "OCI amortized over life"
+      ]
+     ],
+     "say": "Transfers are made at fair value. Moving to trading recognizes any unrealized gain or loss in income right away. Moving from held-to-maturity to available-for-sale puts the unrealized amount in OCI. Moving available-for-sale to held-to-maturity amortizes the OCI amount over the remaining life."
+    },
+    {
+     "type": "key",
+     "big": "Transfers are rare",
+     "sub": [
+      "Especially into or out of",
+      "trading"
+     ],
+     "say": "Transfers should be rare, especially into or out of trading, because intent is supposed to be stable."
+    },
+    {
+     "type": "list",
+     "heading": "Disclosures",
+     "items": [
+      "Amortized cost and fair value by type",
+      "Maturities of debt securities",
+      "Gross unrealized gains and losses",
+      "Proceeds and realized gains on sales",
+      "Fair value hierarchy levels"
+     ],
+     "say": "Notes disclose amortized cost and fair value by type of security, maturities, gross unrealized gains and losses, sales proceeds and realized gains, and the fair value hierarchy levels used."
+    },
+    {
+     "type": "key",
+     "big": "Fair value option",
+     "sub": [
+      "Any debt security may be elected:",
+      "changes to net income"
+     ],
+     "say": "Companies may also elect the fair value option for any debt security, reporting all changes in net income, much like trading."
+    },
+    {
+     "type": "quiz",
+     "q": "An AFS bond with $4,000 of unrealized gain in AOCI is transferred to trading. The $4,000:",
+     "opts": [
+      "Stays in AOCI",
+      "Is recognized in net income now",
+      "Is amortized",
+      "Is reversed"
+     ],
+     "answer": 1,
+     "say": "Quick check. An available-for-sale bond with four thousand of unrealized gain in AOCI is transferred to trading. What happens to the four thousand? Pause and pick.",
+     "reveal": "It's B, it's recognized in net income now."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Bluestem buys a utility bond and its price drops 3% because interest rates rose. Has Bluestem lost money? What if it holds the bond to maturity?",
+   "Depends on intent: HTM collects contractual cash; sets up classification."
+  ],
+  "acts": [
+   [
+    "Classify: (a) bonds bought to fund a plant in 4 years, may sell if needed; (b) bonds the treasury desk trades weekly; (c) bonds Bluestem will hold to maturity and can afford to.",
+    "(a) AFS; (b) trading; (c) HTM."
+   ],
+   [
+    "Bluestem buys $200,000 of 4-year, 5% bonds (semiannual) to yield 6% (8 periods at 3%: PV of 1 0.78941; PVA 7.01969). Price and first interest entry (HTM).",
+    "Price 157,882 + 5,000 × 7.01969 = 35,098 → 192,980; interest 5,789; amortization 789."
+   ],
+   [
+    "AFS: amortized cost $194,582; fair value $191,000. Record the adjustment. Next year, amortized cost $196,250 and fair value $199,000: record.",
+    "Year 1: unrealized loss 3,582 in OCI (FVA credit 3,582). Year 2: required FVA debit 2,750; adjust by 6,332."
+   ],
+   [
+    "Trading portfolio: cost $120,000; fair value $126,500. Record. Next year it's sold for $124,000.",
+    "Gain 6,500 in NI; on sale, loss 2,500 vs fair value carrying amount."
+   ],
+   [
+    "AFS bonds: amortized cost $300,000; AOCI unrealized loss $8,000; sold for $295,000. Record the realized loss and reclassification.",
+    "Realized loss 5,000 in NI; reclassify 8,000 out of OCI (fair value adjustment eliminated)."
+   ],
+   [
+    "An AFS bond's fair value fell $20,000 below amortized cost: $12,000 due to rising rates and $8,000 due to expected credit loss. Report each part.",
+    "Credit loss 8,000 to NI via allowance; 12,000 to OCI."
+   ]
+  ],
+  "case": [
+   "The treasury portfolio",
+   "Bluestem holds three bond portfolios at December 31, 2030: (A) $459,444 cost utility bonds, amortized cost $466,335, fair value $470,000; (B) a trading portfolio, cost $200,000, fair value $194,000; (C) Treasury notes held to maturity, amortized cost $150,000, fair value $146,000. The founder wants to classify everything as HTM 'to keep income stable', but Bluestem expects to sell A to fund the plant.",
+   [
+    "Report each portfolio and its income and OCI effects.",
+    "Can A be HTM?",
+    "What happens to income if B were reclassified as AFS?",
+    "Evaluate the founder's proposal."
+   ],
+   "A (AFS): 470,000; OCI gain 3,665. B (trading): 194,000; loss 6,000 in NI. C (HTM): 150,000; FV disclosed. A can't be HTM: Bluestem expects to sell it. B to AFS would move the 6,000 to OCI, but transfers out of trading must be rare and justified; trading intent drives classification. Proposal misrepresents intent; auditors would challenge."
+  ],
+  "exam": [
+   [
+    "Compare the accounting for held-to-maturity, available-for-sale and trading debt securities.",
+    6,
+    "HTM amortized cost; AFS FV through OCI with recycling; trading FV through NI; credit losses through NI; classification by intent and ability."
+   ],
+   [
+    "Bluestem buys $500,000 of 6% bonds at $459,444 to yield 8% (semiannual). Prepare the first two interest entries and the year-end AFS adjustment if fair value is $470,000.",
+    8,
+    "Interest 18,378 (amort 3,378) and 18,513 (amort 3,513); amortized cost 466,335; FVA debit 3,665, OCI credit 3,665."
+   ]
+  ],
+  "outcomes": [
+   "Classify debt securities",
+   "Account for held-to-maturity securities at amortized cost",
+   "Account for available-for-sale securities through OCI",
+   "Account for trading securities through net income",
+   "Record sales, reclassification adjustments and credit losses",
+   "Account for transfers and disclosures"
+  ],
+  "take": [
+   "HTM, AFS, trading",
+   "HTM: amortized cost",
+   "AFS: fair value, gains in OCI",
+   "Trading: fair value, gains in income",
+   "Recycle OCI on sale",
+   "Credit losses always hit income"
+  ]
+ },
+ "ex": [
+  {
+   "type": "match",
+   "q": "Match each category to where unrealized holding gains are reported.",
+   "pairs": [
+    [
+     "Held-to-maturity",
+     "Not recognized"
+    ],
+    [
+     "Available-for-sale",
+     "Other comprehensive income"
+    ],
+    [
+     "Trading",
+     "Net income"
+    ]
+   ],
+   "why": "Three categories.",
+   "video": "9.1"
+  },
+  {
+   "type": "num",
+   "q": "HTM bond carrying amount $459,444; market rate 4% per period; cash $15,000. Discount amortized?",
+   "a": 3378,
+   "tol": 1,
+   "unit": "$",
+   "why": "18,378 − 15,000.",
+   "video": "9.2"
+  },
+  {
+   "type": "num",
+   "q": "AFS: amortized cost $320,000; fair value $331,000. Unrealized gain in OCI (no prior adjustment)?",
+   "a": 11000,
+   "unit": "$",
+   "why": "331 − 320.",
+   "video": "9.3"
+  },
+  {
+   "type": "num",
+   "q": "Trading: cost $150,000; fair value $141,000. Unrealized loss in net income?",
+   "a": 9000,
+   "unit": "$",
+   "why": "150 − 141.",
+   "video": "9.4"
+  },
+  {
+   "type": "num",
+   "q": "AFS bonds with amortized cost $250,000 (AOCI gain $6,000) sold for $258,000. Realized gain in net income?",
+   "a": 8000,
+   "unit": "$",
+   "why": "258 − 250.",
+   "video": "9.5"
+  },
+  {
+   "type": "mcq",
+   "q": "A decline in an AFS bond's fair value caused by expected issuer default is reported:",
+   "opts": [
+    "In OCI",
+    "In net income through an allowance",
+    "Not reported",
+    "In retained earnings"
+   ],
+   "a": 1,
+   "why": "Credit losses go to income.",
+   "video": "9.5"
+  },
+  {
+   "type": "mcq",
+   "q": "Selling HTM securities regularly before maturity:",
+   "opts": [
+    "Has no consequence",
+    "Calls the HTM intent into question",
+    "Creates OCI",
+    "Requires a prior period adjustment"
+   ],
+   "a": 1,
+   "why": "Intent and ability must be supported.",
+   "video": "9.4"
+  },
+  {
+   "type": "mcq",
+   "q": "Transferring an AFS security to trading causes its accumulated OCI to be:",
+   "opts": [
+    "Kept in AOCI",
+    "Recognized in net income immediately",
+    "Amortized",
+    "Reversed"
+   ],
+   "a": 1,
+   "why": "Trading gains are in income.",
+   "video": "9.6"
+  }
+ ]
+}

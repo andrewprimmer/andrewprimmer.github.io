@@ -1,0 +1,558 @@
+{
+ "videos": [
+  {
+   "id": "12.1",
+   "title": "Sales with a right of return",
+   "lecture": "Lecture 12 \u00b7 Revenue: special issues",
+   "take": "Recognize revenue for goods not expected to be returned; record a refund liability and a return asset",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem lets dealers return unsold kayaks within ninety days. Some always come back."
+    },
+    {
+     "type": "table",
+     "heading": "1,000 kayaks sold at $500; 3% expected back",
+     "rows": [
+      [
+       "Gross sales",
+       500000
+      ],
+      [
+       "Expected returns: 30 kayaks",
+       -15000
+      ],
+      [
+       "Revenue recognized",
+       485000,
+       "total"
+      ],
+      [
+       "Cost of goods sold: 970 \u00d7 $300",
+       291000
+      ],
+      [
+       "Return asset: 30 \u00d7 $300",
+       9000
+      ]
+     ],
+     "say": "Bluestem ships 1,000 kayaks at $500 and expects three percent, 30 kayaks, back. It recognizes revenue of $485,000 and a $15,000 refund liability. Of the $300,000 cost, $291,000 goes to cost of goods sold and $9,000 to a return asset: the right to get those kayaks back."
+    },
+    {
+     "type": "journal",
+     "heading": "At the sale",
+     "rows": [
+      [
+       "Accounts receivable",
+       500000,
+       ""
+      ],
+      [
+       "Sales revenue",
+       "",
+       485000
+      ],
+      [
+       "Refund liability",
+       "",
+       15000
+      ],
+      [
+       "Cost of goods sold",
+       291000,
+       ""
+      ],
+      [
+       "Estimated inventory returns",
+       9000,
+       ""
+      ],
+      [
+       "Inventory",
+       "",
+       300000
+      ]
+     ],
+     "say": "The entry records the receivable, revenue and refund liability, then cost of goods sold, the return asset and the reduction in inventory."
+    },
+    {
+     "type": "key",
+     "big": "Estimate, then true up",
+     "sub": [
+      "Update the estimate each period;",
+      "constraint applies"
+     ],
+     "say": "Expected returns are variable consideration, so the constraint applies and the estimate is updated each period. If Bluestem couldn't estimate returns at all, it would defer revenue until the return period ended."
+    },
+    {
+     "type": "key",
+     "big": "Return asset value",
+     "sub": [
+      "Less costs to recover and any",
+      "loss in value"
+     ],
+     "say": "The return asset is measured at the former carrying amount less expected costs to recover the products and any decline in their value."
+    },
+    {
+     "type": "quiz",
+     "q": "Sales $200,000; expected returns 5%. Revenue recognized?",
+     "opts": [
+      "$200,000",
+      "$190,000",
+      "$10,000",
+      "$210,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Sales two hundred thousand; expected returns five percent. Revenue recognized? Pause and pick.",
+     "reveal": "It's B, $190,000."
+    }
+   ]
+  },
+  {
+   "id": "12.2",
+   "title": "Service-type warranties",
+   "lecture": "Lecture 12 \u00b7 Revenue: special issues",
+   "take": "A separately priced or extra-service warranty is a performance obligation; its revenue is deferred",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem offers kayak buyers a three-year extended warranty for $150, on top of the standard two-year assurance warranty."
+    },
+    {
+     "type": "compare",
+     "heading": "Two kinds of warranty",
+     "cols": [
+      "Assurance-type",
+      "Service-type"
+     ],
+     "rows": [
+      [
+       "Promise",
+       "Product works as specified",
+       "An extra service"
+      ],
+      [
+       "Accounting",
+       "Accrue cost (Lecture 2)",
+       "Defer revenue"
+      ]
+     ],
+     "say": "An assurance-type warranty just promises the kayak works as specified: accrue the expected cost, as in Lecture 2. A service-type warranty provides an extra service, like coverage in years three through five. It's a separate performance obligation, so part of the price is deferred."
+    },
+    {
+     "type": "table",
+     "heading": "2,000 extended warranties sold",
+     "rows": [
+      [
+       "Price: 2,000 \u00d7 $150",
+       300000
+      ],
+      [
+       "Coverage period",
+       "Years 3\u20135 after purchase"
+      ],
+      [
+       "Revenue each covered year",
+       100000,
+       "total"
+      ]
+     ],
+     "say": "Bluestem sells 2,000 extended warranties for $300,000. The coverage starts when the standard warranty ends and runs for three years, so revenue is $100,000 a year over that period, typically straight-line."
+    },
+    {
+     "type": "journal",
+     "heading": "At the sale",
+     "rows": [
+      [
+       "Cash",
+       300000,
+       ""
+      ],
+      [
+       "Unearned warranty revenue",
+       "",
+       300000
+      ]
+     ],
+     "say": "At the sale, the $300,000 is unearned warranty revenue, a contract liability. The costs of repairs under the extended warranty are expensed as incurred."
+    },
+    {
+     "type": "key",
+     "big": "Not sold separately?",
+     "sub": [
+      "Still service-type if it adds service",
+      "beyond assurance"
+     ],
+     "say": "Even a warranty bundled at no extra charge can be service-type if it promises more than assurance, like a much longer term than is standard. Then part of the product price is allocated to it."
+    },
+    {
+     "type": "quiz",
+     "q": "Extended warranties sold for $90,000 covering 3 years. Revenue in the first year of coverage?",
+     "opts": [
+      "$90,000",
+      "$30,000",
+      "$0",
+      "$45,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Extended warranties sold for ninety thousand cover three years. Revenue in the first year of coverage? Pause and pick.",
+     "reveal": "It's B, $30,000."
+    }
+   ]
+  },
+  {
+   "id": "12.3",
+   "title": "Principal or agent?",
+   "lecture": "Lecture 12 \u00b7 Revenue: special issues",
+   "take": "A principal controls the good and reports gross revenue; an agent arranges the sale and reports net commission",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem's website starts selling camping stoves made and shipped by another company. Is a $200 stove sale $200 of Bluestem revenue?"
+    },
+    {
+     "type": "compare",
+     "heading": "Principal vs agent",
+     "cols": [
+      "Principal",
+      "Agent"
+     ],
+     "rows": [
+      [
+       "Controls the good",
+       "Yes, before transfer",
+       "No"
+      ],
+      [
+       "Revenue",
+       "Gross",
+       "Net: commission"
+      ]
+     ],
+     "say": "A principal controls the good before it's transferred to the customer and reports revenue gross. An agent only arranges for another party to provide it and reports its fee or commission, net."
+    },
+    {
+     "type": "list",
+     "heading": "Indicators of a principal",
+     "items": [
+      "Primarily responsible for fulfillment",
+      "Bears inventory risk",
+      "Has discretion over price"
+     ],
+     "say": "Indicators that Bluestem is the principal: it's primarily responsible for fulfilling the promise, it bears inventory risk, and it sets the price."
+    },
+    {
+     "type": "table",
+     "heading": "The stove arrangement",
+     "rows": [
+      [
+       "Stove maker ships, handles returns",
+       "Agent"
+      ],
+      [
+       "Customer pays Bluestem",
+       200
+      ],
+      [
+       "Bluestem keeps 15% commission",
+       30,
+       "total"
+      ],
+      [
+       "Revenue reported by Bluestem",
+       30,
+       "total"
+      ]
+     ],
+     "say": "The stove maker ships the stoves, handles returns and sets the price; Bluestem never holds them. Bluestem is an agent. It reports $30 of commission revenue per stove, not $200."
+    },
+    {
+     "type": "key",
+     "big": "Why it matters",
+     "sub": [
+      "Gross reporting inflates revenue,",
+      "not profit"
+     ],
+     "say": "The choice doesn't change profit, but gross reporting would make revenue much larger. That's why online marketplaces get close scrutiny."
+    },
+    {
+     "type": "quiz",
+     "q": "A travel website books hotel rooms for a fee and never controls the rooms. Revenue is:",
+     "opts": [
+      "The full room price",
+      "Its fee only",
+      "Zero",
+      "The hotel's profit"
+     ],
+     "answer": 1,
+     "say": "Quick check. A travel website books hotel rooms for a fee and never controls the rooms. Its revenue is what? Pause and pick.",
+     "reveal": "It's B, its fee: it's an agent."
+    }
+   ]
+  },
+  {
+   "id": "12.4",
+   "title": "Consignment and bill-and-hold",
+   "lecture": "Lecture 12 \u00b7 Revenue: special issues",
+   "take": "Consigned goods aren't sold until the consignee sells them; bill-and-hold needs strict criteria",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem ships 100 kayaks on consignment to a new dealer in Duluth."
+    },
+    {
+     "type": "define",
+     "big": "Consignment",
+     "sub": [
+      "The consignor keeps control",
+      "until the consignee sells"
+     ],
+     "say": "In a consignment, the consignor keeps control of the goods until the consignee sells them to an end customer. So no revenue is recognized on shipment to the consignee."
+    },
+    {
+     "type": "table",
+     "heading": "Duluth dealer sells 40 kayaks",
+     "rows": [
+      [
+       "Sales: 40 \u00d7 $500",
+       20000
+      ],
+      [
+       "Dealer's commission: 10%",
+       -2000
+      ],
+      [
+       "Cash remitted to Bluestem",
+       18000,
+       "total"
+      ],
+      [
+       "Revenue recognized by Bluestem",
+       20000
+      ]
+     ],
+     "say": "The dealer sells 40 kayaks at $500, keeps a ten percent commission and remits $18,000. Bluestem recognizes $20,000 of revenue and $2,000 of commission expense, plus the cost of the 40 kayaks. The other 60 remain in Bluestem's inventory."
+    },
+    {
+     "type": "define",
+     "big": "Bill-and-hold",
+     "sub": [
+      "Customer is billed but goods",
+      "stay with the seller"
+     ],
+     "say": "In a bill-and-hold arrangement, the customer is billed but asks Bluestem to keep the goods. Revenue is recognized only if there's a substantive reason, the goods are identified as the customer's, ready to ship, and can't be used for other customers."
+    },
+    {
+     "type": "key",
+     "big": "Repurchase agreements",
+     "sub": [
+      "An obligation to buy back:",
+      "often a financing, not a sale"
+     ],
+     "say": "And if Bluestem must, or can, buy goods back, the deal may be a lease or a financing, not a sale. Control hasn't really passed."
+    },
+    {
+     "type": "quiz",
+     "q": "Bluestem ships 50 kayaks on consignment; the consignee sells 20. Units of revenue Bluestem recognizes?",
+     "opts": [
+      "50",
+      "20",
+      "30",
+      "0"
+     ],
+     "answer": 1,
+     "say": "Quick check. Bluestem ships fifty kayaks on consignment; the consignee sells twenty. How many units of revenue does Bluestem recognize? Pause and pick.",
+     "reveal": "It's B, 20."
+    }
+   ]
+  },
+  {
+   "id": "12.5",
+   "title": "Long-term contracts over time",
+   "lecture": "Lecture 12 \u00b7 Revenue: special issues",
+   "take": "Measure progress with cost-to-cost; recognize revenue and gross profit each period; billings vs revenue creates contract assets or liabilities",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "A state park hires Bluestem to build 200 custom rental kayaks with racks and docks. The park controls the work as it's built on site. Revenue is recognized over time."
+    },
+    {
+     "type": "table",
+     "heading": "The contract",
+     "rows": [
+      [
+       "Contract price",
+       900000
+      ],
+      [
+       "Estimated total costs",
+       720000
+      ],
+      [
+       "Estimated gross profit",
+       180000,
+       "total"
+      ]
+     ],
+     "say": "The contract price is $900,000 and estimated total costs $720,000, for a planned gross profit of $180,000 over two years."
+    },
+    {
+     "type": "table",
+     "heading": "Year 1: cost-to-cost",
+     "rows": [
+      [
+       "Costs incurred to date",
+       288000
+      ],
+      [
+       "Percent complete: 288,000 \u00f7 720,000",
+       "40%"
+      ],
+      [
+       "Revenue: 900,000 \u00d7 40%",
+       360000,
+       "total"
+      ],
+      [
+       "Gross profit: 360,000 \u2212 288,000",
+       72000,
+       "total"
+      ]
+     ],
+     "say": "In year one, Bluestem incurs $288,000 of costs, forty percent of the total estimate. Under the cost-to-cost method, it recognizes forty percent of revenue, $360,000, and gross profit of $72,000."
+    },
+    {
+     "type": "table",
+     "heading": "Year 1 balance sheet",
+     "rows": [
+      [
+       "Revenue recognized to date",
+       360000
+      ],
+      [
+       "Billed to date",
+       -300000
+      ],
+      [
+       "Contract asset",
+       60000,
+       "total"
+      ]
+     ],
+     "say": "Bluestem has billed the park $300,000. It's recognized $360,000 of revenue, so it reports a $60,000 contract asset. If billings exceeded revenue, it would be a contract liability."
+    },
+    {
+     "type": "key",
+     "big": "If progress can't be measured",
+     "sub": [
+      "Recognize revenue only to the",
+      "extent of costs incurred"
+     ],
+     "say": "If Bluestem couldn't reasonably measure progress, it would recognize revenue only to the extent of costs it expects to recover, with no profit, until it can. The old completed-contract method no longer exists under Topic 606."
+    },
+    {
+     "type": "quiz",
+     "q": "Price $2,000,000; estimated costs $1,600,000; costs to date $400,000. Revenue to date?",
+     "opts": [
+      "$400,000",
+      "$500,000",
+      "$1,600,000",
+      "$100,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Contract price two million; estimated costs one point six million; costs to date four hundred thousand. Revenue to date? Pause and pick.",
+     "reveal": "It's B, $500,000: twenty-five percent."
+    }
+   ]
+  },
+  {
+   "id": "12.6",
+   "title": "Losses on long-term contracts",
+   "lecture": "Lecture 12 \u00b7 Revenue: special issues",
+   "take": "Revise estimates as they change; recognize an expected loss on the whole contract immediately",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "In year two, aluminum prices soar. Bluestem's engineers now expect the park contract to cost $950,000 in total."
+    },
+    {
+     "type": "table",
+     "heading": "Revised estimate, end of year 2",
+     "rows": [
+      [
+       "Contract price",
+       900000
+      ],
+      [
+       "Revised total costs",
+       950000
+      ],
+      [
+       "Expected loss on contract",
+       -50000,
+       "total"
+      ]
+     ],
+     "say": "With total costs now $950,000 against a price of $900,000, the whole contract will lose $50,000."
+    },
+    {
+     "type": "table",
+     "heading": "Loss recognized in year 2",
+     "rows": [
+      [
+       "Gross profit recognized in year 1",
+       72000
+      ],
+      [
+       "Total loss on contract",
+       -50000
+      ],
+      [
+       "Year 2 loss: \u221250,000 \u2212 72,000",
+       -122000,
+       "total"
+      ]
+     ],
+     "say": "The full expected loss must be recognized immediately, not spread over the remaining work. Bluestem already recognized $72,000 of profit in year one, so it reports a $122,000 loss in year two, bringing the cumulative result to the $50,000 loss."
+    },
+    {
+     "type": "key",
+     "big": "Changes in estimate",
+     "sub": [
+      "Profitable but less so: catch up",
+      "in the current period"
+     ],
+     "say": "If the contract were still profitable but less so, the change in estimate would be handled with a cumulative catch-up in the current period, not by restating year one."
+    },
+    {
+     "type": "key",
+     "big": "Judgment and risk",
+     "sub": [
+      "Estimates drive profit: auditors",
+      "focus on them"
+     ],
+     "say": "Because cost estimates drive reported profit, they're a major audit focus, and a classic place for earnings management."
+    },
+    {
+     "type": "quiz",
+     "q": "Year 1 gross profit recognized $40,000. In year 2 the contract is expected to lose $15,000 overall. Year 2 loss reported?",
+     "opts": [
+      "$15,000",
+      "$55,000",
+      "$25,000",
+      "$40,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Year one gross profit recognized forty thousand. In year two the contract is expected to lose fifteen thousand overall. Year two loss reported? Pause and pick.",
+     "reveal": "It's B, $55,000."
+    }
+   ]
+  }
+ ]
+}

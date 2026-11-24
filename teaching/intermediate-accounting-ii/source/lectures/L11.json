@@ -1,0 +1,669 @@
+{
+ "meta": {
+  "n": 11,
+  "short": "Revenue recognition",
+  "title": "Revenue recognition: the five-step model",
+  "week": 12,
+  "ch": "Chapter 18",
+  "part": "Investments and revenue",
+  "summary": "The core principle of Topic 606, identifying contracts and performance obligations, determining the transaction price including variable consideration, allocating by standalone selling prices, recognizing revenue at a point in time or over time, and contract assets, liabilities and costs."
+ },
+ "videos": [
+  {
+   "id": "11.1",
+   "title": "The core principle",
+   "lecture": "Lecture 11 · Revenue recognition",
+   "take": "Recognize revenue for the transfer of goods or services in the amount the company expects to be entitled to",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Revenue is the biggest number on Bluestem's income statement, and the one most often misstated. One standard governs it."
+    },
+    {
+     "type": "define",
+     "big": "The core principle",
+     "sub": [
+      "Recognize revenue to depict transfers to customers,",
+      "at the amount expected in exchange"
+     ],
+     "say": "The core principle of Topic 606: recognize revenue to depict the transfer of promised goods or services to customers, in an amount that reflects the consideration the company expects to be entitled to in exchange."
+    },
+    {
+     "type": "flow",
+     "heading": "Five steps",
+     "items": [
+      "Identify the contract",
+      "Identify the performance obligations",
+      "Determine the transaction price",
+      "Allocate the price to the obligations",
+      "Recognize revenue when each is satisfied"
+     ],
+     "say": "Five steps apply it: identify the contract with the customer; identify the separate performance obligations; determine the transaction price; allocate that price to the performance obligations; and recognize revenue when, or as, each obligation is satisfied."
+    },
+    {
+     "type": "key",
+     "big": "Asset-liability approach",
+     "sub": [
+      "Revenue follows changes in contract",
+      "assets and liabilities"
+     ],
+     "say": "The standard uses the asset-liability approach from the conceptual framework: revenue arises as contract rights and obligations change, when control passes to the customer."
+    },
+    {
+     "type": "key",
+     "big": "Converged with IFRS 15",
+     "sub": [
+      "One model for every industry"
+     ],
+     "say": "It was developed jointly with the IASB, so US GAAP and IFRS 15 are nearly identical, and it replaced hundreds of industry-specific rules."
+    },
+    {
+     "type": "quiz",
+     "q": "Which step comes third?",
+     "opts": [
+      "Identify performance obligations",
+      "Determine the transaction price",
+      "Allocate the price",
+      "Recognize revenue"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which step comes third? Pause and pick.",
+     "reveal": "It's B, determine the transaction price."
+    }
+   ]
+  },
+  {
+   "id": "11.2",
+   "title": "Contracts and performance obligations",
+   "lecture": "Lecture 11 · Revenue recognition",
+   "take": "A contract creates enforceable rights; each distinct good or service is a separate performance obligation",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem launches the Paddle Package: a kayak, two days of lessons, and a year of winter storage, for $1,800."
+    },
+    {
+     "type": "list",
+     "heading": "Step 1: a contract exists if",
+     "items": [
+      "Approved, parties committed",
+      "Rights identified",
+      "Payment terms identified",
+      "Commercial substance",
+      "Collection probable"
+     ],
+     "say": "Step one. A contract exists if it's approved and the parties are committed, each party's rights and the payment terms are identifiable, it has commercial substance, and collection is probable. It can be written, oral or implied by business practice."
+    },
+    {
+     "type": "define",
+     "big": "Distinct",
+     "sub": [
+      "Customer can benefit from it alone or with",
+      "other resources, and it's separately identifiable"
+     ],
+     "say": "Step two: identify performance obligations. A promise is a separate performance obligation if it's distinct: the customer can benefit from it on its own or with readily available resources, and it's separately identifiable from the other promises."
+    },
+    {
+     "type": "table",
+     "heading": "The Paddle Package",
+     "rows": [
+      [
+       "Kayak",
+       "Distinct"
+      ],
+      [
+       "Two days of lessons",
+       "Distinct"
+      ],
+      [
+       "Year of storage",
+       "Distinct"
+      ]
+     ],
+     "say": "All three are distinct. Customers can use the kayak without the lessons, lessons are sold by others, and storage is a separate service. So the package has three performance obligations."
+    },
+    {
+     "type": "key",
+     "big": "Not distinct: combine",
+     "sub": [
+      "Custom-fitting the seat to the hull:",
+      "part of delivering the kayak"
+     ],
+     "say": "If Bluestem promised to custom-fit a seat into the hull as part of building it, that wouldn't be distinct from the kayak. Highly interdependent promises are combined into one obligation."
+    },
+    {
+     "type": "quiz",
+     "q": "A contract exists only if collection is:",
+     "opts": [
+      "Certain",
+      "Probable",
+      "Possible",
+      "Guaranteed by a bank"
+     ],
+     "answer": 1,
+     "say": "Quick check. A contract exists only if collection is what? Pause and pick.",
+     "reveal": "It's B, probable."
+    }
+   ]
+  },
+  {
+   "id": "11.3",
+   "title": "The transaction price",
+   "lecture": "Lecture 11 · Revenue recognition",
+   "take": "Include variable consideration at its expected value or most likely amount, constrained to avoid reversal",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Step three: how much will Bluestem get? It's not always the sticker price."
+    },
+    {
+     "type": "list",
+     "heading": "What affects the transaction price",
+     "items": [
+      "Variable consideration: rebates, bonuses, returns",
+      "Significant financing components",
+      "Noncash consideration",
+      "Consideration paid to the customer"
+     ],
+     "say": "The transaction price is adjusted for variable consideration like rebates, bonuses and returns; significant financing components, using present value; noncash consideration, at fair value; and amounts paid to the customer, which reduce revenue."
+    },
+    {
+     "type": "table",
+     "heading": "Volume rebate for Prairie Pedals",
+     "rows": [
+      [
+       "List price per kayak",
+       500
+      ],
+      [
+       "Price if over 1,000 kayaks this year",
+       450
+      ],
+      [
+       "Bluestem expects 1,200: most likely",
+       450
+      ],
+      [
+       "Q1 sales: 300 kayaks × $450",
+       135000,
+       "total"
+      ]
+     ],
+     "say": "Prairie Pedals pays $500 a kayak, but if it buys more than 1,000 this year, the price drops to $450 for all of them, retroactively. Bluestem expects it to buy 1,200, so the most likely price is $450. First-quarter revenue on 300 kayaks is $135,000, with a $15,000 refund liability."
+    },
+    {
+     "type": "compare",
+     "heading": "Estimating variable consideration",
+     "cols": [
+      "Expected value",
+      "Most likely amount"
+     ],
+     "rows": [
+      [
+       "Use when",
+       "Many possible outcomes",
+       "Two outcomes"
+      ],
+      [
+       "Method",
+       "Probability-weighted",
+       "Single most likely"
+      ]
+     ],
+     "say": "Variable consideration is estimated using expected value, for many possible outcomes, or the most likely amount, when there are just two, like rebate or no rebate."
+    },
+    {
+     "type": "key",
+     "big": "The constraint",
+     "sub": [
+      "Include only if a significant reversal",
+      "is not probable"
+     ],
+     "say": "Then the constraint: include variable consideration only to the extent it's probable that a significant revenue reversal won't occur later. When in doubt, recognize less."
+    },
+    {
+     "type": "quiz",
+     "q": "A performance bonus: 60% chance of $10,000, 40% chance of $0 (two outcomes). Using most likely amount, include:",
+     "opts": [
+      "$6,000",
+      "$10,000",
+      "$0",
+      "$4,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. A performance bonus: sixty percent chance of ten thousand, forty percent chance of zero. Using the most likely amount, how much is included? Pause and pick.",
+     "reveal": "It's B, $10,000, if the constraint is met."
+    }
+   ]
+  },
+  {
+   "id": "11.4",
+   "title": "Allocating the price",
+   "lecture": "Lecture 11 · Revenue recognition",
+   "take": "Allocate the transaction price in proportion to standalone selling prices",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Step four: split the $1,800 Paddle Package price among the kayak, the lessons and the storage."
+    },
+    {
+     "type": "define",
+     "big": "Standalone selling price",
+     "sub": [
+      "The price for which the item",
+      "would be sold separately"
+     ],
+     "say": "Allocate by relative standalone selling prices: what Bluestem would charge for each item on its own. If there's no observable price, estimate it: adjusted market assessment, expected cost plus a margin, or, in limited cases, the residual approach."
+    },
+    {
+     "type": "table",
+     "heading": "Allocation of $1,800",
+     "rows": [
+      [
+       "Kayak: SSP 1,500 × 90%",
+       1350
+      ],
+      [
+       "Lessons: SSP 300 × 90%",
+       270
+      ],
+      [
+       "Storage: SSP 200 × 90%",
+       180
+      ],
+      [
+       "Total (SSPs $2,000)",
+       1800,
+       "total"
+      ]
+     ],
+     "say": "Separately, the kayak sells for $1,500, the lessons for $300 and storage for $200: $2,000 in total. The package price is ninety percent of that, so each gets ninety percent of its standalone price: $1,350, $270 and $180."
+    },
+    {
+     "type": "key",
+     "big": "The discount is spread",
+     "sub": [
+      "Unless it clearly relates to",
+      "specific items"
+     ],
+     "say": "The $200 package discount is spread across all three obligations, unless there's clear evidence it relates to only some of them."
+    },
+    {
+     "type": "key",
+     "big": "Changes in price later",
+     "sub": [
+      "Allocate on the same basis",
+      "as at inception"
+     ],
+     "say": "If the transaction price changes later, say a rebate estimate changes, the change is allocated on the same basis as the original price."
+    },
+    {
+     "type": "quiz",
+     "q": "Bundle price $900; SSPs: product $800, service $200. Revenue allocated to the service?",
+     "opts": [
+      "$200",
+      "$180",
+      "$100",
+      "$90"
+     ],
+     "answer": 1,
+     "say": "Quick check. Bundle price nine hundred; standalone prices: product eight hundred, service two hundred. Revenue allocated to the service? Pause and pick.",
+     "reveal": "It's B, $180: ninety percent of $200."
+    }
+   ]
+  },
+  {
+   "id": "11.5",
+   "title": "Recognizing revenue",
+   "lecture": "Lecture 11 · Revenue recognition",
+   "take": "Recognize revenue when control transfers: at a point in time, or over time if criteria are met",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Step five: when is each part of the package earned?"
+    },
+    {
+     "type": "list",
+     "heading": "Indicators that control has transferred",
+     "items": [
+      "Right to payment",
+      "Legal title",
+      "Physical possession",
+      "Risks and rewards of ownership",
+      "Customer acceptance"
+     ],
+     "say": "Revenue is recognized when control transfers to the customer. Indicators include: Bluestem has a right to payment, the customer has legal title and physical possession, the customer bears the risks and rewards of ownership, and the customer has accepted the asset."
+    },
+    {
+     "type": "list",
+     "heading": "Over time if any of these",
+     "items": [
+      "Customer consumes benefits as performed",
+      "Customer controls the asset as it's built",
+      "No alternative use, and right to payment"
+     ],
+     "say": "Revenue is recognized over time if the customer consumes the benefits as Bluestem performs, like storage; or controls the asset as it's created; or the asset has no alternative use and Bluestem has an enforceable right to payment for work to date."
+    },
+    {
+     "type": "table",
+     "heading": "A package sold March 1",
+     "rows": [
+      [
+       "Kayak: delivered March 1",
+       1350
+      ],
+      [
+       "Lessons: taught in May",
+       270
+      ],
+      [
+       "Storage: Nov–Oct, $15 a month",
+       180
+      ]
+     ],
+     "say": "For a package sold March 1: kayak revenue of $1,350 on delivery that day; lesson revenue of $270 when the lessons are taught in May; and storage revenue of $15 a month over the year of storage."
+    },
+    {
+     "type": "journal",
+     "heading": "March 1",
+     "rows": [
+      [
+       "Cash",
+       1800,
+       ""
+      ],
+      [
+       "Sales revenue",
+       "",
+       1350
+      ],
+      [
+       "Unearned service revenue",
+       "",
+       450
+      ]
+     ],
+     "say": "On March 1, Bluestem records $1,350 of sales revenue and $450 of unearned revenue, a contract liability, for the lessons and storage it still owes."
+    },
+    {
+     "type": "quiz",
+     "q": "Which is usually recognized over time?",
+     "opts": [
+      "Sale of a kayak",
+      "A one-year storage service",
+      "Sale of gift cards",
+      "Shipping a pallet of paddles"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which is usually recognized over time? Pause and pick.",
+     "reveal": "It's B, the storage service."
+    }
+   ]
+  },
+  {
+   "id": "11.6",
+   "title": "Contract balances and costs",
+   "lecture": "Lecture 11 · Revenue recognition",
+   "take": "Contract liabilities, contract assets and receivables; incremental costs of obtaining a contract may be capitalized",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Revenue timing and cash timing differ. The balance sheet shows the gap."
+    },
+    {
+     "type": "compare",
+     "heading": "Contract balances",
+     "cols": [
+      "Meaning",
+      "Example"
+     ],
+     "rows": [
+      [
+       "Contract liability",
+       "Paid before performing",
+       "Package lessons and storage"
+      ],
+      [
+       "Contract asset",
+       "Performed, right conditional",
+       "Delivered part of an order"
+      ],
+      [
+       "Receivable",
+       "Unconditional right to pay",
+       "Invoice due in 30 days"
+      ]
+     ],
+     "say": "A contract liability arises when the customer pays before Bluestem performs. A contract asset arises when Bluestem has performed but its right to payment depends on something other than time, like finishing the rest of the order. A receivable is an unconditional right to payment."
+    },
+    {
+     "type": "define",
+     "big": "Costs to obtain a contract",
+     "sub": [
+      "Incremental costs like commissions:",
+      "capitalize and amortize"
+     ],
+     "say": "Incremental costs of obtaining a contract, like a sales commission paid only if the contract is signed, are capitalized and amortized over the period of benefit. If that period is a year or less, a practical expedient allows expensing them."
+    },
+    {
+     "type": "key",
+     "big": "Costs to fulfill",
+     "sub": [
+      "Capitalize if not covered by other",
+      "standards and recoverable"
+     ],
+     "say": "Costs to fulfill a contract that aren't covered by another standard, like inventory, are capitalized if they relate directly to the contract, create resources for future performance, and are expected to be recovered."
+    },
+    {
+     "type": "list",
+     "heading": "Disclosures",
+     "items": [
+      "Revenue disaggregated by type",
+      "Contract balances and changes",
+      "Remaining performance obligations",
+      "Significant judgments"
+     ],
+     "say": "Disclosures include revenue disaggregated by category, contract balances and their changes, the amount of remaining performance obligations, and significant judgments, like how variable consideration was estimated."
+    },
+    {
+     "type": "quiz",
+     "q": "A customer pays $10,000 in advance for services to be performed next year. At year-end this is a:",
+     "opts": [
+      "Contract asset",
+      "Contract liability",
+      "Receivable",
+      "Revenue"
+     ],
+     "answer": 1,
+     "say": "Quick check. A customer pays ten thousand in advance for services next year. At year-end, what is it? Pause and pick.",
+     "reveal": "It's B, a contract liability."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "A customer pays $1,800 on March 1 for a kayak, lessons in May, and a year of winter storage. How much revenue has Bluestem earned on March 1?",
+   "Previews performance obligations and allocation."
+  ],
+  "acts": [
+   [
+    "Does a contract exist? (a) a verbal order from a long-time dealer; (b) a signed order from a dealer in bankruptcy, collection doubtful; (c) a swap of kayaks for an identical kayak shipment with no commercial purpose.",
+    "(a) Yes if customary; (b) no, collection not probable; (c) no commercial substance."
+   ],
+   [
+    "Identify performance obligations: kayak + paddle + 2-year assurance warranty + 3-year extended warranty sold optionally.",
+    "Kayak and paddle (distinct, possibly combined if a set); assurance warranty is not separate; extended warranty is separate."
+   ],
+   [
+    "Expected value: a dealer rebate of $0 (30%), $20,000 (50%) or $40,000 (20%). Estimate.",
+    "Expected rebate 18,000; reduce revenue accordingly (subject to constraint)."
+   ],
+   [
+    "Allocate $5,000 to equipment (SSP $4,500), installation (SSP $700), and 1-year support (SSP $800).",
+    "Ratio 5,000/6,000: 3,750; 583; 667."
+   ],
+   [
+    "Over time or point in time: kayak delivery; annual storage; custom canoe built on the customer's land; software subscription.",
+    "Point; over time; over time (customer controls); over time."
+   ],
+   [
+    "Bluestem pays a sales agent a $6,000 commission for a 3-year storage contract. Account for it.",
+    "Capitalize 6,000; amortize 2,000 a year."
+   ]
+  ],
+  "case": [
+   "The dealer deal",
+   "On January 1, Lakes Paddle Co. signs a contract to buy 400 kayaks at $500 each in 2031, with an 8% rebate on all units if it buys more than 350. Bluestem also includes free dealer training (SSP $10,000) and a display rack (SSP $4,000). Kayak SSP is $500. Bluestem expects Lakes to buy 400 and has strong history with similar rebates. In Q1 Bluestem delivers 100 kayaks and the rack; training is in April.",
+   [
+    "Identify the performance obligations.",
+    "Determine the transaction price.",
+    "Allocate it (SSPs: kayaks $200,000, training $10,000, rack $4,000).",
+    "Compute Q1 revenue."
+   ],
+   "Obligations: kayaks (each), training, rack. Price: 400 × 460 = 184,000. Allocation ratio 184,000/214,000 = 85.98%: kayaks 171,963; training 8,598; rack 3,439. Q1: 100/400 × 171,963 = 42,991 + rack 3,439 = 46,430."
+  ],
+  "exam": [
+   [
+    "Describe the five steps of revenue recognition and apply them to the Paddle Package ($1,800; SSPs kayak $1,500, lessons $300, storage $200).",
+    8,
+    "Contract; three obligations; price 1,800; allocation 1,350/270/180; kayak at delivery, lessons when taught, storage over time."
+   ],
+   [
+    "Explain variable consideration and the constraint, with an example.",
+    6,
+    "Rebates, bonuses, returns; expected value or most likely; include only if significant reversal not probable; reassess each period."
+   ]
+  ],
+  "outcomes": [
+   "State the core principle and the five steps",
+   "Identify contracts and distinct performance obligations",
+   "Determine the transaction price including variable consideration",
+   "Allocate the price by standalone selling prices",
+   "Recognize revenue at a point in time or over time",
+   "Account for contract balances and contract costs"
+  ],
+  "take": [
+   "Control transfer drives revenue",
+   "Distinct = separate obligation",
+   "Variable consideration, constrained",
+   "Allocate by standalone prices",
+   "Point in time vs over time",
+   "Contract liabilities, assets and costs"
+  ]
+ },
+ "ex": [
+  {
+   "type": "order",
+   "q": "Put the five steps in order.",
+   "items": [
+    "Identify the contract",
+    "Identify the performance obligations",
+    "Determine the transaction price",
+    "Allocate the transaction price",
+    "Recognize revenue when obligations are satisfied"
+   ],
+   "why": "Topic 606.",
+   "video": "11.1"
+  },
+  {
+   "type": "mcq",
+   "q": "A good or service is a separate performance obligation if it is:",
+   "opts": [
+    "Expensive",
+    "Distinct",
+    "Delivered first",
+    "Listed on the invoice"
+   ],
+   "a": 1,
+   "why": "Distinct promises.",
+   "video": "11.2"
+  },
+  {
+   "type": "num",
+   "q": "300 units at $500 list; most likely price after volume rebate $450. Revenue recognized?",
+   "a": 135000,
+   "unit": "$",
+   "why": "300 × 450.",
+   "video": "11.3"
+  },
+  {
+   "type": "num",
+   "q": "Bonus outcomes: 25% $0, 50% $8,000, 25% $16,000. Expected value?",
+   "a": 8000,
+   "unit": "$",
+   "why": "0 + 4,000 + 4,000.",
+   "video": "11.3"
+  },
+  {
+   "type": "num",
+   "q": "Bundle $2,400; SSPs: product $2,000, installation $500, support $500. Allocated to installation?",
+   "a": 400,
+   "unit": "$",
+   "why": "2,400 × 500/3,000.",
+   "video": "11.4"
+  },
+  {
+   "type": "sort",
+   "q": "Point in time or over time?",
+   "cats": [
+    "Point in time",
+    "Over time"
+   ],
+   "items": [
+    [
+     "Delivery of a kayak",
+     0
+    ],
+    [
+     "One-year storage service",
+     1
+    ],
+    [
+     "Monthly software subscription",
+     1
+    ],
+    [
+     "Sale of a gift card redeemed later",
+     0
+    ]
+   ],
+   "why": "Control transfer pattern.",
+   "video": "11.5"
+  },
+  {
+   "type": "num",
+   "q": "Storage allocated $180 for 12 months, starting November 1. Revenue in the calendar year of sale?",
+   "a": 30,
+   "unit": "$",
+   "why": "2 months × $15.",
+   "video": "11.5"
+  },
+  {
+   "type": "match",
+   "q": "Match each balance to its meaning.",
+   "pairs": [
+    [
+     "Contract liability",
+     "Customer paid before performance"
+    ],
+    [
+     "Contract asset",
+     "Performed; right to payment conditional"
+    ],
+    [
+     "Receivable",
+     "Unconditional right to payment"
+    ]
+   ],
+   "why": "Contract balances.",
+   "video": "11.6"
+  }
+ ]
+}

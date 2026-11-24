@@ -1,0 +1,725 @@
+{
+ "meta": {
+  "n": 14,
+  "short": "Statement of cash flows",
+  "title": "The statement of cash flows",
+  "week": 15,
+  "ch": "Chapter 23",
+  "part": "Changes and cash flows",
+  "summary": "Purpose and classification of cash flows, the direct and indirect methods, adjustments for noncash items, gains and losses, and working capital, investing and financing activities, noncash transactions, and a recap of the course."
+ },
+ "videos": [
+  {
+   "id": "14.1",
+   "title": "Purpose and classification",
+   "lecture": "Lecture 14 · Statement of cash flows",
+   "take": "Classify cash flows as operating, investing or financing; disclose significant noncash transactions",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem earned $1.3 million in 2031. Its cash rose only $140,000. The statement of cash flows explains why."
+    },
+    {
+     "type": "list",
+     "heading": "What it helps users assess",
+     "items": [
+      "Ability to generate future cash",
+      "Ability to pay dividends and debts",
+      "Why income and cash differ",
+      "Cash and noncash investing and financing"
+     ],
+     "say": "The statement helps users assess the company's ability to generate cash, to pay dividends and debts, the reasons income and cash differ, and the investing and financing transactions of the period."
+    },
+    {
+     "type": "compare",
+     "heading": "Classification under US GAAP",
+     "cols": [
+      "Inflows",
+      "Outflows"
+     ],
+     "rows": [
+      [
+       "Operating",
+       "Customers, interest, dividends",
+       "Suppliers, wages, interest, taxes"
+      ],
+      [
+       "Investing",
+       "Sale of PP&E, investments",
+       "Buying PP&E, investments, loans"
+      ],
+      [
+       "Financing",
+       "Issuing stock, borrowing",
+       "Dividends, buybacks, repaying debt"
+      ]
+     ],
+     "say": "Under US GAAP, interest and dividends received and interest paid are operating. Buying and selling long-term assets and investments, and making loans, is investing. Issuing and buying back stock, borrowing and repaying principal, and paying dividends is financing."
+    },
+    {
+     "type": "key",
+     "big": "IFRS allows choices",
+     "sub": [
+      "Interest and dividends can be",
+      "operating, investing or financing"
+     ],
+     "say": "IFRS gives more choice for interest and dividends. That's a common source of differences when comparing companies."
+    },
+    {
+     "type": "key",
+     "big": "Noncash transactions",
+     "sub": [
+      "Disclosed, not in the body:",
+      "e.g. bonds converted to stock"
+     ],
+     "say": "Significant noncash investing and financing activities, like converting bonds to stock or buying land with a note, are disclosed separately, not in the body of the statement."
+    },
+    {
+     "type": "quiz",
+     "q": "Under US GAAP, interest paid on bonds is classified as:",
+     "opts": [
+      "Operating",
+      "Investing",
+      "Financing",
+      "Noncash"
+     ],
+     "answer": 0,
+     "say": "Quick check. Under US GAAP, interest paid on bonds is classified how? Pause and pick.",
+     "reveal": "It's A, operating. Repaying the principal is financing."
+    }
+   ]
+  },
+  {
+   "id": "14.2",
+   "title": "Direct and indirect methods",
+   "lecture": "Lecture 14 · Statement of cash flows",
+   "take": "Both methods give the same operating cash flow; the indirect method starts from net income",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "There are two ways to present operating cash flows. They always give the same total."
+    },
+    {
+     "type": "compare",
+     "heading": "Two methods",
+     "cols": [
+      "Direct",
+      "Indirect"
+     ],
+     "rows": [
+      [
+       "Shows",
+       "Cash receipts and payments",
+       "Net income, adjusted"
+      ],
+      [
+       "Used by",
+       "Few companies",
+       "Almost all companies"
+      ],
+      [
+       "Reconciliation",
+       "Required separately",
+       "Built in"
+      ]
+     ],
+     "say": "The direct method shows major classes of operating cash receipts and payments, like cash from customers. The indirect method starts with net income and adjusts it to cash. Most companies use the indirect method, and direct-method users must also provide the reconciliation."
+    },
+    {
+     "type": "table",
+     "heading": "Direct method: cash from customers",
+     "rows": [
+      [
+       "Sales revenue",
+       9000000
+      ],
+      [
+       "Less: increase in receivables",
+       -120000
+      ],
+      [
+       "Cash collected from customers",
+       8880000,
+       "total"
+      ]
+     ],
+     "say": "Under the direct method, cash from customers is sales of $9 million less the $120,000 increase in receivables: $8,880,000. You did the same conversion, in reverse, in Intermediate One."
+    },
+    {
+     "type": "key",
+     "big": "Each line converts accrual to cash",
+     "sub": [
+      "Payments to suppliers: COGS ± inventory",
+      "and payables changes"
+     ],
+     "say": "Each direct-method line converts an income statement item to cash. Payments to suppliers, for example, adjust cost of goods sold for changes in inventory and accounts payable."
+    },
+    {
+     "type": "key",
+     "big": "Why indirect wins",
+     "sub": [
+      "Cheaper to prepare; shows",
+      "income vs cash differences"
+     ],
+     "say": "The indirect method is cheaper to prepare from balance sheet changes, and it highlights why income and cash differ. Users often prefer the direct method's clarity."
+    },
+    {
+     "type": "quiz",
+     "q": "Sales $600,000; accounts receivable decreased $25,000. Cash collected from customers?",
+     "opts": [
+      "$575,000",
+      "$625,000",
+      "$600,000",
+      "$550,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Sales six hundred thousand; accounts receivable decreased twenty-five thousand. Cash collected from customers? Pause and pick.",
+     "reveal": "It's B, $625,000."
+    }
+   ]
+  },
+  {
+   "id": "14.3",
+   "title": "Indirect method: noncash items and gains",
+   "lecture": "Lecture 14 · Statement of cash flows",
+   "take": "Add back depreciation and amortization; remove gains and losses on investing and financing transactions",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "The indirect method starts with Bluestem's net income of $1.3 million."
+    },
+    {
+     "type": "table",
+     "heading": "Step 1: noncash items and gains",
+     "rows": [
+      [
+       "Net income",
+       1300000
+      ],
+      [
+       "Depreciation expense",
+       420000
+      ],
+      [
+       "Amortization of intangibles",
+       60000
+      ],
+      [
+       "Gain on sale of equipment",
+       -30000
+      ],
+      [
+       "Subtotal",
+       1750000,
+       "total"
+      ]
+     ],
+     "say": "Add back depreciation of $420,000 and amortization of $60,000: they reduced income but used no cash. Subtract the $30,000 gain on selling equipment: the whole sale proceeds belong in investing activities."
+    },
+    {
+     "type": "key",
+     "big": "Depreciation isn't a source of cash",
+     "sub": [
+      "It's added back only because it",
+      "reduced income without cash"
+     ],
+     "say": "A common misunderstanding: depreciation doesn't generate cash. It's added back only because it was subtracted to get net income without any cash leaving."
+    },
+    {
+     "type": "list",
+     "heading": "Other adjustments",
+     "items": [
+      "Losses: add back (e.g. loss on extinguishment)",
+      "Bond discount amortization: add back",
+      "Bond premium amortization: subtract",
+      "Equity-method income less dividends: subtract",
+      "Deferred tax expense: add back"
+     ],
+     "say": "Other adjustments: add back losses, like a loss on extinguishing debt; add back bond discount amortization, interest expense not paid in cash; subtract premium amortization; subtract equity-method income in excess of dividends received; and add back deferred tax expense."
+    },
+    {
+     "type": "key",
+     "big": "Stock-based compensation",
+     "sub": [
+      "An expense with no cash:",
+      "add it back"
+     ],
+     "say": "Stock-based compensation is another big add-back for public companies. Bluestem's $50,000 of option expense from Lecture 7 would be added back too."
+    },
+    {
+     "type": "quiz",
+     "q": "Net income $500,000; depreciation $80,000; loss on sale of land $15,000. Subtotal before working capital changes?",
+     "opts": [
+      "$565,000",
+      "$595,000",
+      "$580,000",
+      "$515,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Net income five hundred thousand; depreciation eighty thousand; loss on sale of land fifteen thousand. Subtotal before working capital changes? Pause and pick.",
+     "reveal": "It's B, $595,000."
+    }
+   ]
+  },
+  {
+   "id": "14.4",
+   "title": "Indirect method: working capital",
+   "lecture": "Lecture 14 · Statement of cash flows",
+   "take": "Increases in current operating assets reduce cash; increases in current operating liabilities increase it",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Step two: changes in current operating assets and liabilities."
+    },
+    {
+     "type": "table",
+     "heading": "Step 2: working capital changes",
+     "rows": [
+      [
+       "Subtotal from step 1",
+       1750000
+      ],
+      [
+       "Increase in accounts receivable",
+       -120000
+      ],
+      [
+       "Increase in inventory",
+       -200000
+      ],
+      [
+       "Decrease in prepaid expenses",
+       10000
+      ],
+      [
+       "Increase in accounts payable",
+       90000
+      ],
+      [
+       "Decrease in accrued liabilities",
+       -20000
+      ],
+      [
+       "Net cash from operating activities",
+       1510000,
+       "total"
+      ]
+     ],
+     "say": "Receivables rose $120,000: sales not yet collected, so subtract. Inventory rose $200,000: cash spent on stock, subtract. Prepaids fell $10,000: add. Payables rose $90,000: costs not yet paid, add. Accrued liabilities fell $20,000: subtract. Net cash from operations: $1,510,000."
+    },
+    {
+     "type": "compare",
+     "heading": "The rule",
+     "cols": [
+      "Increase",
+      "Decrease"
+     ],
+     "rows": [
+      [
+       "Current operating asset",
+       "Subtract",
+       "Add"
+      ],
+      [
+       "Current operating liability",
+       "Add",
+       "Subtract"
+      ]
+     ],
+     "say": "The rule: an increase in a current operating asset is subtracted; a decrease is added. An increase in a current operating liability is added; a decrease is subtracted."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "Not every current item is operating",
+     "sub": [
+      "Dividends payable, short-term notes:",
+      "financing"
+     ],
+     "say": "Watch out: not every current account is operating. Short-term notes payable to banks and dividends payable relate to financing; short-term investments may be investing."
+    },
+    {
+     "type": "key",
+     "big": "Quality of earnings check",
+     "sub": [
+      "Cash from operations vs net income:",
+      "1,510,000 vs 1,300,000"
+     ],
+     "say": "Bluestem's operating cash flow, $1.51 million, exceeds its net income of $1.3 million. That's a healthy sign: earnings are backed by cash."
+    },
+    {
+     "type": "quiz",
+     "q": "Inventory increased $40,000; accounts payable increased $25,000. Net adjustment to net income?",
+     "opts": [
+      "+$15,000",
+      "−$15,000",
+      "−$65,000",
+      "+$65,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Inventory increased forty thousand; accounts payable increased twenty-five thousand. Net adjustment to net income? Pause and pick.",
+     "reveal": "It's B, minus $15,000."
+    }
+   ]
+  },
+  {
+   "id": "14.5",
+   "title": "Investing, financing and noncash activities",
+   "lecture": "Lecture 14 · Statement of cash flows",
+   "take": "Analyze changes in noncurrent accounts; report sale proceeds, not gains; disclose noncash transactions",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Now the long-term accounts. Every change tells a story."
+    },
+    {
+     "type": "table",
+     "heading": "Investing activities",
+     "rows": [
+      [
+       "Purchase of equipment",
+       -1600000
+      ],
+      [
+       "Sale of equipment",
+       110000
+      ],
+      [
+       "Purchase of AFS debt securities",
+       -200000
+      ],
+      [
+       "Net cash used in investing",
+       -1690000,
+       "total"
+      ]
+     ],
+     "say": "Bluestem bought $1.6 million of equipment and sold old equipment for $110,000: its $80,000 book value plus the $30,000 gain. It bought $200,000 of debt securities. Net cash used in investing: $1.69 million."
+    },
+    {
+     "type": "table",
+     "heading": "Financing activities",
+     "rows": [
+      [
+       "Issuance of bonds",
+       1000000
+      ],
+      [
+       "Repayment of notes payable",
+       -300000
+      ],
+      [
+       "Dividends paid",
+       -230000
+      ],
+      [
+       "Purchase of treasury stock",
+       -150000
+      ],
+      [
+       "Net cash from financing",
+       320000,
+       "total"
+      ]
+     ],
+     "say": "It issued $1 million of bonds, repaid $300,000 of notes, paid $230,000 of dividends, and bought $150,000 of treasury stock: net cash from financing of $320,000."
+    },
+    {
+     "type": "table",
+     "heading": "Net change in cash",
+     "rows": [
+      [
+       "Operating",
+       1510000
+      ],
+      [
+       "Investing",
+       -1690000
+      ],
+      [
+       "Financing",
+       320000
+      ],
+      [
+       "Increase in cash",
+       140000,
+       "total"
+      ]
+     ],
+     "say": "Operating $1,510,000, investing minus $1,690,000, financing $320,000: cash rose $140,000, matching the balance sheet. That's the check every statement must pass."
+    },
+    {
+     "type": "key",
+     "big": "Noncash disclosure",
+     "sub": [
+      "Convertible bonds of $500,000",
+      "converted to common stock"
+     ],
+     "say": "During the year, $500,000 of convertible bonds were converted to stock. No cash moved, so it's disclosed in a supplementary schedule, along with cash paid for interest and income taxes."
+    },
+    {
+     "type": "quiz",
+     "q": "Equipment with book value $50,000 is sold at a $12,000 loss. Investing cash inflow?",
+     "opts": [
+      "$50,000",
+      "$38,000",
+      "$62,000",
+      "$12,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Equipment with a book value of fifty thousand is sold at a twelve thousand dollar loss. Investing cash inflow? Pause and pick.",
+     "reveal": "It's B, $38,000."
+    }
+   ]
+  },
+  {
+   "id": "14.6",
+   "title": "Course recap: Intermediate Accounting II",
+   "lecture": "Lecture 14 · Statement of cash flows",
+   "take": "Liabilities, equity, investments, revenue, changes and cash flows complete the intermediate sequence",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Fourteen lectures in two minutes: Bluestem from private company to public one."
+    },
+    {
+     "type": "list",
+     "heading": "Intangibles and liabilities",
+     "items": [
+      "Intangibles, R&D and goodwill",
+      "Current liabilities and contingencies",
+      "Bonds and the effective-interest method",
+      "Notes, extinguishment, fair value option"
+     ],
+     "say": "We started with intangibles and goodwill, then liabilities: current liabilities and contingencies, bonds and the effective-interest method, notes, early extinguishment and the fair value option."
+    },
+    {
+     "type": "list",
+     "heading": "Equity",
+     "items": [
+      "Issuing shares and treasury stock",
+      "Preferred stock, dividends, splits",
+      "Convertibles, warrants, stock compensation",
+      "Basic and diluted EPS"
+     ],
+     "say": "Then equity: issuing shares and treasury stock, preferred stock and dividends, convertibles and stock compensation, and basic and diluted EPS."
+    },
+    {
+     "type": "list",
+     "heading": "Investments, revenue, changes, cash",
+     "items": [
+      "Debt and equity investments",
+      "Revenue: five steps and special issues",
+      "Accounting changes and errors",
+      "Statement of cash flows"
+     ],
+     "say": "Finally, debt and equity investments, revenue recognition from the five steps to long-term contracts, accounting changes and error corrections, and the statement of cash flows."
+    },
+    {
+     "type": "key",
+     "big": "What comes next",
+     "sub": [
+      "Income taxes, pensions and leases:",
+      "Intermediate III or Advanced"
+     ],
+     "say": "Kieso's remaining chapters, income taxes, pensions, leases and full disclosure, are usually covered in a later course or in advanced accounting. You now have the toolkit for them."
+    },
+    {
+     "type": "quiz",
+     "q": "Which is a financing activity?",
+     "opts": [
+      "Buying equipment",
+      "Paying dividends",
+      "Collecting from customers",
+      "Buying debt securities"
+     ],
+     "answer": 1,
+     "say": "Last quick check. Which of these is a financing activity? Pause and pick.",
+     "reveal": "It's B, paying dividends. Good luck on the final, and thanks for growing up with Bluestem."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Bluestem earned $1.3 million but its cash rose only $140,000. Where could the rest have gone?",
+   "Working capital, capex, dividends, debt repayment: sets up the statement."
+  ],
+  "acts": [
+   [
+    "Classify: interest received; purchase of AFS securities; proceeds from bonds; income taxes paid; loan to a dealer; buying treasury stock.",
+    "Operating; investing; financing; operating; investing; financing."
+   ],
+   [
+    "Direct method: sales $2,000,000, AR up $50,000; COGS $1,200,000, inventory down $30,000, AP down $20,000. Cash from customers and paid to suppliers?",
+    "Customers 1,950,000; purchases 1,170,000; paid 1,190,000."
+   ],
+   [
+    "Indirect: net income $700,000; depreciation $150,000; gain on sale of land $40,000; bond discount amortization $5,000; equity-method income $60,000 with dividends $20,000. Subtotal?",
+    "700 + 150 − 40 + 5 − 40 = 775,000."
+   ],
+   [
+    "Working capital: AR down $30,000; inventory up $70,000; prepaid up $5,000; AP up $45,000; wages payable down $8,000. Net adjustment?",
+    "+30 − 70 − 5 + 45 − 8 = −8,000."
+   ],
+   [
+    "Equipment account: beginning $2,000,000, purchases $600,000, ending $2,300,000; equipment sold cost $300,000 with AD $220,000; gain $15,000. Investing cash flows?",
+    "Purchase −600,000; sale +95,000."
+   ],
+   [
+    "Retained earnings rose from $3,000,000 to $3,500,000; net income $800,000; a 5% stock dividend transferred $120,000. Cash dividends paid (no dividends payable)?",
+    "800,000 − 500,000 − 120,000 = 180,000."
+   ]
+  ],
+  "case": [
+   "Profit but no cash",
+   "A newer competitor, River Run Kayaks, reports net income of $900,000 and asks Bluestem about a merger. Its cash flow statement shows: depreciation $100,000; increase in receivables $600,000; increase in inventory $500,000; increase in payables $150,000; capital expenditures $300,000; new bank borrowing $700,000; dividends $100,000.",
+   [
+    "Compute River Run's operating cash flow.",
+    "Compute free cash flow.",
+    "How has it funded itself?",
+    "What concerns would you raise?"
+   ],
+   "CFO 900 + 100 − 600 − 500 + 150 = 50,000. FCF 50 − 300 − 100 = −350,000. Funded by 700,000 of new borrowing. Concerns: receivables and inventory growing far faster than cash; possible aggressive revenue recognition or obsolete inventory; paying dividends with borrowed money; quality of earnings."
+  ],
+  "exam": [
+   [
+    "Explain the difference between the direct and indirect methods and the rules for adjusting net income under the indirect method.",
+    6,
+    "Direct: classes of receipts and payments; indirect: NI adjusted for noncash items, gains/losses, and working capital changes (asset increases subtract, liability increases add); same total."
+   ],
+   [
+    "Prepare Bluestem's 2031 statement of cash flows (indirect) from the data in this lecture.",
+    8,
+    "Operating 1,510,000; investing −1,690,000; financing 320,000; increase 140,000; noncash conversion of bonds disclosed."
+   ]
+  ],
+  "outcomes": [
+   "Explain the purpose of the statement and classify cash flows",
+   "Compare the direct and indirect methods",
+   "Adjust net income for noncash items and gains and losses",
+   "Adjust for changes in working capital",
+   "Determine investing and financing cash flows and noncash disclosures",
+   "Integrate the course"
+  ],
+  "take": [
+   "Operating, investing, financing",
+   "Both methods give the same total",
+   "Add back noncash; remove gains",
+   "Asset up: subtract; liability up: add",
+   "Sale proceeds, not gains, in investing",
+   "Disclose noncash transactions"
+  ]
+ },
+ "ex": [
+  {
+   "type": "sort",
+   "q": "Classify each cash flow (US GAAP).",
+   "cats": [
+    "Operating",
+    "Investing",
+    "Financing"
+   ],
+   "items": [
+    [
+     "Interest paid",
+     0
+    ],
+    [
+     "Purchase of equipment",
+     1
+    ],
+    [
+     "Dividends paid",
+     2
+    ],
+    [
+     "Dividends received",
+     0
+    ],
+    [
+     "Loan made to a dealer",
+     1
+    ],
+    [
+     "Repayment of bond principal",
+     2
+    ]
+   ],
+   "why": "GAAP classifications.",
+   "video": "14.1"
+  },
+  {
+   "type": "num",
+   "q": "Sales $1,500,000; accounts receivable increased $60,000. Cash collected from customers?",
+   "a": 1440000,
+   "unit": "$",
+   "why": "1,500 − 60.",
+   "video": "14.2"
+  },
+  {
+   "type": "num",
+   "q": "Net income $400,000; depreciation $70,000; gain on sale of equipment $20,000. Subtotal before working capital?",
+   "a": 450000,
+   "unit": "$",
+   "why": "400 + 70 − 20.",
+   "video": "14.3"
+  },
+  {
+   "type": "mcq",
+   "q": "Under the indirect method, an increase in accounts payable is:",
+   "opts": [
+    "Subtracted",
+    "Added",
+    "Ignored",
+    "Investing"
+   ],
+   "a": 1,
+   "why": "Costs not yet paid.",
+   "video": "14.4"
+  },
+  {
+   "type": "num",
+   "q": "Subtotal $450,000; AR increased $35,000; inventory decreased $15,000; accrued liabilities decreased $10,000. Net cash from operating activities?",
+   "a": 420000,
+   "unit": "$",
+   "why": "450 − 35 + 15 − 10.",
+   "video": "14.4"
+  },
+  {
+   "type": "num",
+   "q": "Equipment with book value $70,000 sold at a $9,000 gain. Investing cash inflow?",
+   "a": 79000,
+   "unit": "$",
+   "why": "Proceeds.",
+   "video": "14.5"
+  },
+  {
+   "type": "mcq",
+   "q": "Conversion of bonds into common stock is reported:",
+   "opts": [
+    "As financing inflow and outflow",
+    "As a noncash disclosure",
+    "In operating activities",
+    "Not at all"
+   ],
+   "a": 1,
+   "why": "No cash moved.",
+   "video": "14.5"
+  },
+  {
+   "type": "num",
+   "q": "Operating $900,000; investing −$1,100,000; financing $350,000. Net change in cash?",
+   "a": 150000,
+   "unit": "$",
+   "why": "900 − 1,100 + 350.",
+   "video": "14.5"
+  }
+ ]
+}

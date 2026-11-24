@@ -1,0 +1,731 @@
+{
+ "meta": {
+  "n": 8,
+  "short": "Cash and receivables",
+  "title": "Cash and receivables",
+  "week": 9,
+  "ch": "Chapter 7",
+  "part": "Cash, receivables and inventory",
+  "summary": "What counts as cash, recognizing accounts receivable with discounts, estimating credit losses with an aging schedule, write-offs and recoveries, notes receivable at present value, transfers of receivables, and receivables turnover."
+ },
+ "videos": [
+  {
+   "id": "8.1",
+   "title": "What counts as cash",
+   "lecture": "Lecture 8 · Cash and receivables",
+   "take": "Cash includes cash equivalents; restricted cash and overdrafts need separate treatment",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Cash looks like the easiest asset. It has more rules than you'd expect."
+    },
+    {
+     "type": "define",
+     "big": "Cash and cash equivalents",
+     "sub": [
+      "Cash on hand and in banks, plus investments",
+      "maturing within 3 months of purchase"
+     ],
+     "say": "Cash includes coins, currency, checking and savings balances, and checks received. Cash equivalents are short-term, highly liquid investments that mature within three months of purchase, like Treasury bills and money market funds."
+    },
+    {
+     "type": "list",
+     "heading": "Not cash",
+     "items": [
+      "Postdated checks: receivables",
+      "Postage stamps: prepaid expense",
+      "Travel advances: receivables",
+      "Certificates of deposit over 3 months"
+     ],
+     "say": "Not cash: postdated checks and travel advances are receivables, stamps are prepaid expenses, and certificates of deposit over three months are short-term investments."
+    },
+    {
+     "type": "key",
+     "big": "Restricted cash",
+     "sub": [
+      "Set aside for a purpose:",
+      "classify by when it will be used"
+     ],
+     "say": "Restricted cash, like a fund set aside to repay a loan in five years, is shown separately and classified as current or noncurrent by when it will be used. Compensating balances that a bank requires are disclosed."
+    },
+    {
+     "type": "key",
+     "big": "Bank overdrafts",
+     "sub": [
+      "Usually a current liability,",
+      "not negative cash"
+     ],
+     "say": "And a bank overdraft is usually a current liability, not a negative cash balance, unless the company has other balances at the same bank to offset."
+    },
+    {
+     "type": "quiz",
+     "q": "A 6-month certificate of deposit is reported as:",
+     "opts": [
+      "Cash equivalent",
+      "Short-term investment",
+      "Restricted cash",
+      "Receivable"
+     ],
+     "answer": 1,
+     "say": "Quick check. How is a six-month certificate of deposit reported? Pause and pick.",
+     "reveal": "It's B, a short-term investment. Cash equivalents mature within three months."
+    }
+   ]
+  },
+  {
+   "id": "8.2",
+   "title": "Recognizing accounts receivable",
+   "lecture": "Lecture 8 · Cash and receivables",
+   "take": "Record receivables at the amount expected to be collected; cash discounts are variable consideration",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem sells $20,000 of kayaks to Big Sky Paddles on terms of two ten, net thirty."
+    },
+    {
+     "type": "define",
+     "big": "2/10, n/30",
+     "sub": [
+      "2% off if paid within 10 days;",
+      "otherwise the full amount in 30"
+     ],
+     "say": "Two ten, net thirty means a two percent discount if the dealer pays within ten days, otherwise the full amount is due in thirty days. Trade discounts off a list price are never recorded at all."
+    },
+    {
+     "type": "journal",
+     "heading": "Sale: dealers usually take the discount",
+     "rows": [
+      [
+       "Accounts receivable",
+       19600,
+       ""
+      ],
+      [
+       "Sales revenue",
+       "",
+       19600
+      ]
+     ],
+     "say": "Under the revenue standard, a discount is variable consideration. Bluestem's dealers almost always pay early, so it records the receivable and revenue at the amount it expects: $19,600."
+    },
+    {
+     "type": "journal",
+     "heading": "If the dealer pays late",
+     "rows": [
+      [
+       "Cash",
+       20000,
+       ""
+      ],
+      [
+       "Accounts receivable",
+       "",
+       19600
+      ],
+      [
+       "Sales discounts forfeited",
+       "",
+       400
+      ]
+     ],
+     "say": "If Big Sky pays the full $20,000 after the discount period, Bluestem records the extra $400 as sales discounts forfeited, a revenue item."
+    },
+    {
+     "type": "key",
+     "big": "Returns and allowances too",
+     "sub": [
+      "Expected returns reduce",
+      "revenue when the sale is made"
+     ],
+     "say": "Expected returns work the same way: they reduce revenue at the time of sale. You'll study the details under revenue recognition in Intermediate Accounting Two."
+    },
+    {
+     "type": "quiz",
+     "q": "A $50,000 sale on 1/10, n/30; the customer is expected to pay early. Revenue recorded?",
+     "opts": [
+      "$50,000",
+      "$49,500",
+      "$49,000",
+      "$500"
+     ],
+     "answer": 1,
+     "say": "Quick check. A fifty thousand dollar sale on one ten, net thirty; the customer is expected to pay early. Revenue recorded? Pause and pick.",
+     "reveal": "It's B, $49,500."
+    }
+   ]
+  },
+  {
+   "id": "8.3",
+   "title": "Estimating credit losses",
+   "lecture": "Lecture 8 · Cash and receivables",
+   "take": "Under CECL, the allowance reflects lifetime expected credit losses; an aging schedule estimates it",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Some dealers won't pay. Bluestem must estimate how much before it knows who."
+    },
+    {
+     "type": "define",
+     "big": "CECL",
+     "sub": [
+      "Current expected credit losses:",
+      "lifetime losses expected today"
+     ],
+     "say": "Under the current expected credit loss model, CECL, companies record an allowance for all credit losses expected over the life of the receivables, using past experience, current conditions and reasonable forecasts. The direct write-off method isn't GAAP when losses are material."
+    },
+    {
+     "type": "table",
+     "heading": "Aging schedule, December 31",
+     "rows": [
+      [
+       "Current: 300,000 × 2%",
+       6000
+      ],
+      [
+       "1–30 days past due: 90,000 × 5%",
+       4500
+      ],
+      [
+       "31–90 days: 45,000 × 20%",
+       9000
+      ],
+      [
+       "Over 90 days: 15,000 × 70%",
+       10500
+      ],
+      [
+       "Required allowance on $450,000",
+       30000,
+       "total"
+      ]
+     ],
+     "say": "Bluestem ages its $450,000 of receivables. Current balances need a two percent allowance, slightly late ones five percent, and so on up to seventy percent for balances over ninety days. The required allowance is $30,000."
+    },
+    {
+     "type": "journal",
+     "heading": "Adjusting entry: allowance had $8,000 credit",
+     "rows": [
+      [
+       "Credit loss expense",
+       22000,
+       ""
+      ],
+      [
+       "Allowance for doubtful accounts",
+       "",
+       22000
+      ]
+     ],
+     "say": "The allowance already has an $8,000 credit balance, so the adjustment brings it up to $30,000: credit loss expense of $22,000."
+    },
+    {
+     "type": "table",
+     "heading": "On the balance sheet",
+     "rows": [
+      [
+       "Accounts receivable",
+       450000
+      ],
+      [
+       "Less: allowance",
+       -30000
+      ],
+      [
+       "Net realizable amount",
+       420000,
+       "total"
+      ]
+     ],
+     "say": "Receivables are reported at $450,000 less the $30,000 allowance: a net amount of $420,000, what Bluestem expects to collect."
+    },
+    {
+     "type": "quiz",
+     "q": "Required allowance $25,000; the allowance has a $3,000 debit balance. Credit loss expense?",
+     "opts": [
+      "$22,000",
+      "$28,000",
+      "$25,000",
+      "$3,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. The required allowance is twenty-five thousand; the allowance has a three thousand dollar debit balance. Credit loss expense? Pause and pick.",
+     "reveal": "It's B, $28,000."
+    }
+   ]
+  },
+  {
+   "id": "8.4",
+   "title": "Write-offs and recoveries",
+   "lecture": "Lecture 8 · Cash and receivables",
+   "take": "Write-offs reduce the allowance and the receivable; they don't change net receivables or expense",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "In March, Lakes Paddle Co. goes bankrupt owing Bluestem $5,000."
+    },
+    {
+     "type": "journal",
+     "heading": "Writing off the account",
+     "rows": [
+      [
+       "Allowance for doubtful accounts",
+       5000,
+       ""
+      ],
+      [
+       "Accounts receivable",
+       "",
+       5000
+      ]
+     ],
+     "say": "Bluestem writes off the account: debit the allowance and credit Accounts Receivable for $5,000. No expense: the loss was already expected and expensed through the allowance."
+    },
+    {
+     "type": "table",
+     "heading": "Net receivables don't change",
+     "rows": [
+      [
+       "Before: 450,000 − 30,000",
+       420000
+      ],
+      [
+       "After: 445,000 − 25,000",
+       420000,
+       "total"
+      ]
+     ],
+     "say": "Net receivables are $420,000 before and after the write-off. Both the receivable and the allowance fell by $5,000."
+    },
+    {
+     "type": "journal",
+     "heading": "If Lakes later pays $2,000",
+     "rows": [
+      [
+       "Accounts receivable",
+       2000,
+       ""
+      ],
+      [
+       "Allowance for doubtful accounts",
+       "",
+       2000
+      ],
+      [
+       "Cash",
+       2000,
+       ""
+      ],
+      [
+       "Accounts receivable",
+       "",
+       2000
+      ]
+     ],
+     "say": "If the bankruptcy trustee later pays $2,000, Bluestem reverses that much of the write-off to restore the customer's record, then records the collection."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "Allowance balance before adjusting",
+     "sub": [
+      "Debit if write-offs exceeded",
+      "the estimate"
+     ],
+     "say": "That's why the allowance can have a debit balance before the year-end adjustment: write-offs during the year exceeded last year's estimate."
+    },
+    {
+     "type": "quiz",
+     "q": "Writing off a $3,000 account under the allowance method:",
+     "opts": [
+      "Increases expense",
+      "Decreases net receivables",
+      "Has no effect on net receivables",
+      "Increases the allowance"
+     ],
+     "answer": 2,
+     "say": "Quick check. Writing off a three thousand dollar account under the allowance method does what? Pause and pick.",
+     "reveal": "It's C, no effect on net receivables."
+    }
+   ]
+  },
+  {
+   "id": "8.5",
+   "title": "Notes receivable",
+   "lecture": "Lecture 8 · Cash and receivables",
+   "take": "Notes are recorded at present value; a zero-interest note's discount becomes interest revenue",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Remember the dealer note from Lecture 6? Bluestem sells a fleet of rental kayaks to a resort for a $500,000 note due in four years, with no stated interest."
+    },
+    {
+     "type": "table",
+     "heading": "Present value at the 5% market rate",
+     "rows": [
+      [
+       "Face of note",
+       500000
+      ],
+      [
+       "PV factor, 4 periods, 5%",
+       "0.82270"
+      ],
+      [
+       "Present value: sale price",
+       411351,
+       "total"
+      ],
+      [
+       "Discount: future interest",
+       88649
+      ]
+     ],
+     "say": "At a five percent market rate, the note's present value is $411,351. That's the real sale price. The $88,649 difference is interest Bluestem will earn over four years."
+    },
+    {
+     "type": "journal",
+     "heading": "At the sale",
+     "rows": [
+      [
+       "Notes receivable",
+       411351,
+       ""
+      ],
+      [
+       "Sales revenue",
+       "",
+       411351
+      ]
+     ],
+     "say": "Bluestem records the note and the revenue at $411,351. Recording $500,000 of revenue would overstate this year's sales and understate future interest."
+    },
+    {
+     "type": "journal",
+     "heading": "End of year 1",
+     "rows": [
+      [
+       "Notes receivable",
+       20568,
+       ""
+      ],
+      [
+       "Interest revenue",
+       "",
+       20568
+      ]
+     ],
+     "say": "At the end of year one, interest revenue is five percent of $411,351: $20,568. The note's carrying amount grows each year until it reaches $500,000 at maturity."
+    },
+    {
+     "type": "key",
+     "big": "Interest-bearing notes",
+     "sub": [
+      "Stated rate = market rate:",
+      "record at face value"
+     ],
+     "say": "If a note carries a stated interest rate equal to the market rate, its present value is its face, so it's simply recorded at face, with interest accrued as earned."
+    },
+    {
+     "type": "quiz",
+     "q": "A $100,000 zero-interest note due in 2 years; market rate 10%. Amount recorded?",
+     "opts": [
+      "$100,000",
+      "$82,645",
+      "$80,000",
+      "$90,909"
+     ],
+     "answer": 1,
+     "say": "Quick check. A one hundred thousand dollar zero-interest note due in two years; market rate ten percent. Amount recorded? Pause and pick.",
+     "reveal": "It's B, $82,645."
+    }
+   ]
+  },
+  {
+   "id": "8.6",
+   "title": "Transfers of receivables and analysis",
+   "lecture": "Lecture 8 · Cash and receivables",
+   "take": "Selling receivables can be a sale or a secured borrowing; turnover shows how fast receivables are collected",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem needs cash before spring. It can turn receivables into cash now."
+    },
+    {
+     "type": "compare",
+     "heading": "Two ways",
+     "cols": [
+      "Secured borrowing",
+      "Sale (factoring)"
+     ],
+     "rows": [
+      [
+       "Receivables",
+       "Stay on the books",
+       "Removed"
+      ],
+      [
+       "Cash received",
+       "Liability recorded",
+       "Loss on sale"
+      ],
+      [
+       "When",
+       "Control not surrendered",
+       "Control surrendered"
+      ]
+     ],
+     "say": "A secured borrowing uses receivables as collateral: they stay on the books and a liability is recorded. A sale, or factoring, removes them, but only if Bluestem surrenders control."
+    },
+    {
+     "type": "table",
+     "heading": "Factoring $200,000 without recourse",
+     "rows": [
+      [
+       "Receivables sold",
+       200000
+      ],
+      [
+       "Factor's fee: 3%",
+       -6000
+      ],
+      [
+       "Holdback for returns: 5%",
+       -10000
+      ],
+      [
+       "Cash received",
+       184000,
+       "total"
+      ]
+     ],
+     "say": "Bluestem factors $200,000 of receivables without recourse. The factor charges three percent, $6,000, and holds back five percent, $10,000, for returns. Bluestem gets $184,000 cash, records a $10,000 receivable from the factor and a $6,000 loss on sale."
+    },
+    {
+     "type": "table",
+     "heading": "Receivables turnover",
+     "rows": [
+      [
+       "Net sales",
+       4200000
+      ],
+      [
+       "Average net receivables",
+       410000
+      ],
+      [
+       "Turnover",
+       "10.2 times",
+       "total"
+      ],
+      [
+       "Days to collect: 365 ÷ 10.2",
+       "36 days",
+       "total"
+      ]
+     ],
+     "say": "How fast does Bluestem collect? Receivables turnover is net sales over average net receivables: ten point two times a year. That's about thirty-six days, comfortably within thirty-day terms plus a little slack."
+    },
+    {
+     "type": "key",
+     "big": "With recourse",
+     "sub": [
+      "Bluestem guarantees collection:",
+      "record a recourse liability"
+     ],
+     "say": "If Bluestem sells with recourse, guaranteeing uncollected accounts, it can still record a sale if it gives up control, but it must record a recourse liability for expected losses."
+    },
+    {
+     "type": "quiz",
+     "q": "Net sales $1,800,000; average receivables $150,000. Receivables turnover?",
+     "opts": [
+      "8 times",
+      "12 times",
+      "10 times",
+      "15 times"
+     ],
+     "answer": 1,
+     "say": "Quick check. Net sales one point eight million; average receivables one fifty thousand. Receivables turnover? Pause and pick.",
+     "reveal": "It's B, twelve times."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Bluestem's sales rose 20% but cash collections rose only 5%. What might be happening with receivables?",
+   "Slower collections, looser credit, possible aggressive revenue; sets up valuation and turnover."
+  ],
+  "acts": [
+   [
+    "Which are cash or cash equivalents: currency; 2-month Treasury bill; 6-month CD; postdated check; money market fund; travel advance to an employee?",
+    "Cash/equivalents: currency, T-bill, money market fund. Not: CD (ST investment), postdated check (receivable), travel advance (receivable)."
+   ],
+   [
+    "Record a $40,000 sale on 2/10, n/30 expected to be paid early, then collection after 20 days.",
+    "Dr AR 39,200 / Cr Sales 39,200; Dr Cash 40,000 / Cr AR 39,200, Cr Sales discounts forfeited 800."
+   ],
+   [
+    "Aging: current $200,000 (1%), 1–60 days $50,000 (10%), over 60 days $20,000 (40%). Allowance has a $4,000 debit balance. Required allowance and expense?",
+    "Required 15,000; expense 19,000."
+   ],
+   [
+    "Record a $6,000 write-off, and its later recovery. What happens to net receivables at each step?",
+    "Dr Allowance / Cr AR (no change); reinstate then collect (no change to net AR, cash up and AR down)."
+   ],
+   [
+    "Bluestem accepts a $240,000 zero-interest note due in 3 years; market rate 6% (factor 0.83962). Record the sale and year-1 interest.",
+    "Revenue 201,509; interest 12,091."
+   ],
+   [
+    "Factor $150,000 without recourse: 2% fee, 4% holdback. Compute cash, the loss and the entry.",
+    "Cash 141,000; due from factor 6,000; loss 3,000."
+   ]
+  ],
+  "case": [
+   "The spring cash crunch",
+   "Bluestem has $450,000 of receivables and needs $300,000 by March. Option A: a bank loan secured by receivables at 9%. Option B: factor $320,000 of receivables without recourse (4% fee, 5% holdback). The founder prefers B because 'it keeps debt off the balance sheet and improves our current ratio.' Bluestem's current ratio is 2.15 (current assets $1.4m, current liabilities $650,000).",
+   [
+    "Compute cash, loss and holdback under B.",
+    "Compute the current ratio under A (borrow $300,000 short-term) and under B (receivables removed; cash and the holdback receivable added).",
+    "Is the founder's reasoning sound?",
+    "What must be true for B to be a sale?"
+   ],
+   "B: fee 12,800, holdback 16,000, cash 291,200. A: CA 1,700,000 / CL 950,000 = 1.79. B: CA 1,400,000 − 320,000 + 291,200 + 16,000 = 1,387,200 / 650,000 = 2.13. B does avoid the liability, but costs a 4% fee on short-term money; sale treatment requires surrendering control (isolation, transferee can pledge/sell, no effective control)."
+  ],
+  "exam": [
+   [
+    "Explain the CECL model and prepare the adjusting entry from an aging schedule requiring $30,000 when the allowance has an $8,000 credit balance.",
+    6,
+    "Lifetime expected credit losses using history, current conditions, forecasts; expense 22,000; net receivables at amount expected to be collected."
+   ],
+   [
+    "Bluestem sells equipment for a $300,000 zero-interest note due in 3 years when the market rate is 8% (factor 0.79383). Record the sale and interest for years 1 and 2.",
+    6,
+    "Revenue 238,149; year-1 interest 19,052; carrying 257,201; year-2 interest 20,576."
+   ]
+  ],
+  "outcomes": [
+   "Identify what is reported as cash and cash equivalents",
+   "Record receivables with cash discounts",
+   "Estimate credit losses with an aging schedule under CECL",
+   "Record write-offs and recoveries",
+   "Record notes receivable at present value",
+   "Account for transfers of receivables and compute turnover"
+  ],
+  "take": [
+   "Cash equivalents: 3 months or less",
+   "Discounts are variable consideration",
+   "CECL: lifetime expected losses",
+   "Write-offs don't change net receivables",
+   "Zero-interest notes at present value",
+   "Sale only if control is surrendered"
+  ]
+ },
+ "ex": [
+  {
+   "type": "sort",
+   "q": "Sort each item: cash and cash equivalents, or not?",
+   "cats": [
+    "Cash and equivalents",
+    "Not cash"
+   ],
+   "items": [
+    [
+     "Money market fund",
+     0
+    ],
+    [
+     "Postdated check from a customer",
+     1
+    ],
+    [
+     "2-month Treasury bill",
+     0
+    ],
+    [
+     "Postage stamps",
+     1
+    ],
+    [
+     "Checking account",
+     0
+    ],
+    [
+     "9-month certificate of deposit",
+     1
+    ]
+   ],
+   "why": "Three-month rule.",
+   "video": "8.1"
+  },
+  {
+   "type": "num",
+   "q": "A $30,000 sale on 2/10, n/30; the customer is expected to pay early. Revenue recorded?",
+   "a": 29400,
+   "unit": "$",
+   "why": "98% of 30,000.",
+   "video": "8.2"
+  },
+  {
+   "type": "num",
+   "q": "Required allowance $18,000; the allowance has a $5,000 credit balance. Credit loss expense?",
+   "a": 13000,
+   "unit": "$",
+   "why": "18,000 − 5,000.",
+   "video": "8.3"
+  },
+  {
+   "type": "num",
+   "q": "Required allowance $18,000; the allowance has a $2,000 debit balance. Credit loss expense?",
+   "a": 20000,
+   "unit": "$",
+   "why": "18,000 + 2,000.",
+   "video": "8.3"
+  },
+  {
+   "type": "mcq",
+   "q": "Writing off an uncollectible account under the allowance method:",
+   "opts": [
+    "Increases expense",
+    "Reduces net receivables",
+    "Leaves net receivables unchanged",
+    "Increases the allowance"
+   ],
+   "a": 2,
+   "why": "Both AR and the allowance fall.",
+   "video": "8.4"
+  },
+  {
+   "type": "num",
+   "q": "A $200,000 zero-interest note due in 3 years; market rate 6% (factor 0.83962). Amount recorded?",
+   "a": 167924,
+   "tol": 1,
+   "unit": "$",
+   "why": "200,000 × 0.83962.",
+   "video": "8.5"
+  },
+  {
+   "type": "num",
+   "q": "Receivables of $100,000 are factored without recourse; fee 3%, holdback 5%. Cash received?",
+   "a": 92000,
+   "unit": "$",
+   "why": "100,000 − 3,000 − 5,000.",
+   "video": "8.6"
+  },
+  {
+   "type": "num",
+   "q": "Net sales $3,650,000; average receivables $365,000. Days to collect (365-day year)?",
+   "a": 36.5,
+   "tol": 0.1,
+   "unit": "days",
+   "why": "Turnover 10; 365 ÷ 10.",
+   "video": "8.6"
+  }
+ ]
+}

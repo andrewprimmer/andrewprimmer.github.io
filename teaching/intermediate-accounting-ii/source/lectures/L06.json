@@ -1,0 +1,103 @@
+{
+ "meta": {"n": 6, "short": "Preferred stock and dividends", "title": "Preferred stock, dividends and stock splits", "week": 6, "ch": "Chapter 15", "part": "Stockholders' equity",
+  "summary": "Features of preferred stock, dividend dates and cash dividends, cumulative dividend preferences, property and liquidating dividends, stock dividends and stock splits, and retained earnings restrictions and payout."},
+ "videos": [
+  {"id": "6.1", "title": "Preferred stock", "lecture": "Lecture 6 · Preferred stock and dividends",
+   "take": "Preferred shares get dividend and liquidation preferences; mandatorily redeemable preferred is a liability", "read": "",
+   "scenes": [
+    {"type": "title", "say": "To fund a second plant without more debt, Bluestem sells preferred stock to a regional investment fund."},
+    {"type": "define", "big": "Preferred stock", "sub": ["Priority over common for dividends", "and in liquidation, usually no vote"], "say": "Preferred stock gives its holders priority over common shareholders for dividends and in liquidation, in exchange for giving up voting rights and, usually, upside."},
+    {"type": "list", "heading": "Common features", "items": ["Cumulative: missed dividends carry forward", "Participating: share extra dividends", "Convertible into common", "Callable by the company", "Redeemable on a date or at holder's option"], "say": "Features vary. Cumulative preferred carries missed dividends forward. Participating preferred shares in extra dividends with common. Convertible preferred can become common shares. Callable preferred can be bought back by the company; redeemable preferred must be."},
+    {"type": "table", "heading": "Bluestem's preferred issue", "rows": [["Shares: 5,000 at $100 par", 500000], ["Dividend rate, cumulative", "6%"], ["Annual dividend", 30000, "total"]], "say": "Bluestem issues 5,000 shares of $100 par, six percent cumulative preferred stock at par, raising $500,000. The annual preferred dividend is $30,000."},
+    {"type": "key", "tag": "WATCH OUT", "big": "Mandatorily redeemable", "sub": ["Required to be repaid on a set date:", "report as a liability"], "say": "Watch out: preferred stock that must be redeemed on a fixed date is a liability, not equity, and its dividends are interest expense. Substance over legal form."},
+    {"type": "quiz", "q": "Preferred stock that must be redeemed for cash in 2033 is reported as:", "opts": ["Equity", "A liability", "Treasury stock", "Retained earnings"], "answer": 1,
+     "say": "Quick check. Preferred stock that must be redeemed for cash in 2033 is reported as what? Pause and pick.", "reveal": "It's B, a liability."}
+   ]},
+  {"id": "6.2", "title": "Cash dividends", "lecture": "Lecture 6 · Preferred stock and dividends",
+   "take": "A dividend becomes a liability when declared; the record date sets who receives it", "read": "",
+   "scenes": [
+    {"type": "title", "say": "Bluestem's board declares its first common dividend: forty cents a share."},
+    {"type": "flow", "heading": "Three dates", "items": ["Declaration: liability created", "Record: who gets paid (no entry)", "Payment: cash goes out"], "say": "Three dates matter. On the declaration date, the board's vote creates a liability. The record date fixes which shareholders receive it; no entry. On the payment date, cash goes out."},
+    {"type": "journal", "heading": "Declaration: 503,000 shares × $0.40", "rows": [["Retained earnings", 201200, ""], ["Dividends payable", "", 201200]], "say": "On declaration, Bluestem debits Retained Earnings, or a Dividends account closed to it, and credits Dividends Payable for $201,200."},
+    {"type": "journal", "heading": "Payment", "rows": [["Dividends payable", 201200, ""], ["Cash", "", 201200]], "say": "On the payment date, the liability is paid. Dividends are never an expense."},
+    {"type": "key", "big": "Need both", "sub": ["Retained earnings (legally)", "and cash (practically)"], "say": "To pay a cash dividend, a company needs enough retained earnings, under most state laws, and enough cash. Profitable companies can still be short of cash."},
+    {"type": "quiz", "q": "On which date is a dividend liability recorded?", "opts": ["Record date", "Declaration date", "Payment date", "Year-end"], "answer": 1,
+     "say": "Quick check. On which date is a dividend liability recorded? Pause and pick.", "reveal": "It's B, the declaration date."}
+   ]},
+  {"id": "6.3", "title": "Dividend preferences", "lecture": "Lecture 6 · Preferred stock and dividends",
+   "take": "Cumulative preferred receives arrears and the current dividend before common gets anything", "read": "",
+   "scenes": [
+    {"type": "title", "say": "In a bad year, Bluestem skipped the preferred dividend. This year the board declares $120,000. Who gets what?"},
+    {"type": "define", "big": "Dividends in arrears", "sub": ["Missed cumulative dividends:", "disclosed, not a liability"], "say": "Missed dividends on cumulative preferred are dividends in arrears. They're not a liability until declared, but they must be disclosed in the notes."},
+    {"type": "table", "heading": "Allocating $120,000", "rows": [["Preferred: arrears from last year", 30000], ["Preferred: current year", 30000], ["Total to preferred", 60000, "total"], ["Remainder to common", 60000, "total"]], "say": "Cumulative preferred first gets last year's $30,000 of arrears, then this year's $30,000. That's $60,000. The remaining $60,000 goes to common shareholders."},
+    {"type": "key", "big": "If noncumulative", "sub": ["Only $30,000 to preferred;", "$90,000 to common"], "say": "If the preferred were noncumulative, the missed dividend would be lost forever: preferred would get $30,000 and common $90,000."},
+    {"type": "key", "big": "Participating", "sub": ["Shares extra dividends with", "common, often pro rata"], "say": "Participating preferred would also share in dividends above a basic rate for common. It's rare in practice."},
+    {"type": "quiz", "q": "6% cumulative preferred, $200,000 par, 2 years in arrears. Dividends declared $50,000. Amount to common?", "opts": ["$38,000", "$14,000", "$26,000", "$50,000"], "answer": 1,
+     "say": "Quick check. Six percent cumulative preferred, two hundred thousand par, two years in arrears. Dividends declared fifty thousand. Amount to common? Pause and pick.", "reveal": "It's B, $14,000: preferred takes three years at $12,000."}
+   ]},
+  {"id": "6.4", "title": "Property and liquidating dividends", "lecture": "Lecture 6 · Preferred stock and dividends",
+   "take": "Property dividends are recorded at fair value with a gain or loss; liquidating dividends return paid-in capital", "read": "",
+   "scenes": [
+    {"type": "title", "say": "Dividends don't have to be cash."},
+    {"type": "define", "big": "Property dividend", "sub": ["Paid in noncash assets,", "measured at fair value"], "say": "A property dividend pays shareholders in noncash assets, like shares of another company. It's measured at the fair value of the assets distributed."},
+    {"type": "table", "heading": "Distributing an investment", "rows": [["Carrying amount of shares held", 50000], ["Fair value at declaration", 65000], ["Gain recognized first", 15000, "total"], ["Property dividend declared", 65000, "total"]], "say": "Bluestem distributes shares it owns in a supplier, carried at $50,000 but worth $65,000. First it remeasures them to fair value, recognizing a $15,000 gain. Then it declares a $65,000 property dividend."},
+    {"type": "define", "big": "Liquidating dividend", "sub": ["Return of paid-in capital,", "not a distribution of earnings"], "say": "A liquidating dividend returns contributed capital, not earnings. It's debited to paid-in capital, and shareholders must be told the source. Mining companies winding down a mine often pay them."},
+    {"type": "key", "big": "Disclose the source", "sub": ["Any dividend not from retained", "earnings is liquidating"], "say": "Any dividend not based on retained earnings is a return of capital and must be identified as such."},
+    {"type": "quiz", "q": "Land carried at $80,000, fair value $70,000, is distributed as a dividend. Result?", "opts": ["$10,000 gain", "$10,000 loss, dividend $70,000", "No gain or loss, dividend $80,000", "Dividend $80,000, gain $10,000"], "answer": 1,
+     "say": "Quick check. Land carried at eighty thousand, fair value seventy thousand, is distributed as a dividend. Result? Pause and pick.", "reveal": "It's B: a $10,000 loss and a $70,000 dividend."}
+   ]},
+  {"id": "6.5", "title": "Stock dividends and stock splits", "lecture": "Lecture 6 · Preferred stock and dividends",
+   "take": "Small stock dividends move fair value from retained earnings to paid-in capital; splits need no entry", "read": "",
+   "scenes": [
+    {"type": "title", "say": "Bluestem wants to reward shareholders without spending cash. It declares a ten percent stock dividend."},
+    {"type": "table", "heading": "Small stock dividend: 10%", "rows": [["New shares: 503,000 × 10%", "50,300"], ["Market price per share", 15], ["Transferred from retained earnings", 754500, "total"], ["To common stock at par", 50300], ["To paid-in capital in excess of par", 704200]], "say": "Ten percent of 503,000 shares is 50,300 new shares. For a small stock dividend, under twenty to twenty-five percent, the shares' fair value of $15 each, $754,500, moves from retained earnings: $50,300 to common stock at par and $704,200 to paid-in capital."},
+    {"type": "key", "big": "Large stock dividend: par only", "sub": ["Over 20–25%: transfer", "par value only"], "say": "A large stock dividend, over twenty to twenty-five percent, transfers only par value from retained earnings, because it behaves more like a split and the share price will drop."},
+    {"type": "compare", "heading": "Stock dividend vs stock split", "cols": ["Stock dividend", "Stock split"], "rows": [["Par per share", "Unchanged", "Reduced"], ["Retained earnings", "Decreases", "Unchanged"], ["Journal entry", "Yes", "No, memo only"]], "say": "A stock split, like two for one, doubles the shares and halves the par value. No account balances change, so there's no entry. Neither a stock dividend nor a split changes total equity or anyone's ownership percentage."},
+    {"type": "key", "big": "Why bother?", "sub": ["Lower price per share,", "wider ownership"], "say": "Both lower the price per share, which can broaden ownership. A stock dividend also formally capitalizes retained earnings."},
+    {"type": "quiz", "q": "A 2-for-1 stock split affects total stockholders' equity by:", "opts": ["Doubling it", "Halving it", "No change", "Reducing retained earnings"], "answer": 2,
+     "say": "Quick check. A two-for-one stock split affects total stockholders' equity how? Pause and pick.", "reveal": "It's C, no change."}
+   ]},
+  {"id": "6.6", "title": "Restrictions and payout", "lecture": "Lecture 6 · Preferred stock and dividends",
+   "take": "Disclose retained earnings restrictions; payout ratio shows how much of income is paid out", "read": "",
+   "scenes": [
+    {"type": "title", "say": "Bluestem's bond indenture limits how much it can pay in dividends."},
+    {"type": "define", "big": "Restricted retained earnings", "sub": ["Contracts or laws limit", "dividends: disclose in notes"], "say": "Retained earnings can be restricted by law, for example to the cost of treasury stock held, or by contract, like Bluestem's bond covenant. Restrictions are usually disclosed in the notes rather than recorded."},
+    {"type": "key", "big": "Bluestem's covenant", "sub": ["Dividends ≤ 40% of net income", "while bonds are outstanding"], "say": "Bluestem's bonds limit dividends to forty percent of net income while they're outstanding. The note discloses the restriction and how much is still available."},
+    {"type": "table", "heading": "Payout ratio, 2029", "rows": [["Cash dividends to common", 201200], ["Income available to common", 960000], ["Payout ratio", "21%", "total"]], "say": "The payout ratio is cash dividends to common over net income available to common: $201,200 over $960,000, twenty-one percent, well within the covenant."},
+    {"type": "key", "big": "Growth vs income", "sub": ["Young companies retain;", "mature ones pay out"], "say": "Growing companies like Bluestem keep most of their earnings to reinvest. Mature companies tend to pay out more."},
+    {"type": "quiz", "q": "Net income $500,000; preferred dividends $50,000; common dividends $135,000. Payout ratio?", "opts": ["27%", "30%", "37%", "10%"], "answer": 1,
+     "say": "Quick check. Net income five hundred thousand; preferred dividends fifty thousand; common dividends one thirty-five thousand. Payout ratio? Pause and pick.", "reveal": "It's B, thirty percent: one thirty-five over four fifty."}
+   ]}
+ ],
+ "content": {
+  "warmup": ["Why would an investor buy preferred stock that can't vote and won't share in Bluestem's growth?", "Priority, steady dividends, lower risk; sets up preferred features."],
+  "acts": [
+   ["Classify as equity or liability: (a) 5% cumulative preferred; (b) preferred redeemable in 2032 for cash; (c) preferred convertible into common.", "(a) Equity; (b) liability; (c) equity."],
+   ["Record the declaration and payment of a $0.25 dividend on 800,000 shares, and state what happens on the record date.", "Dr RE 200,000 / Cr Dividends payable 200,000; record date no entry; pay: Dr DP / Cr Cash."],
+   ["Preferred: 10,000 shares, $50 par, 8% cumulative, one year in arrears. Dividends declared $150,000. Allocate. Repeat if noncumulative.", "Cumulative: 80,000 preferred, 70,000 common. Noncumulative: 40,000 preferred, 110,000 common."],
+   ["Record a property dividend of investments carried at $120,000 with fair value $100,000.", "Loss 20,000; Dr RE 100,000 / Cr Property dividends payable 100,000."],
+   ["600,000 shares, $1 par, market $20. Record (a) a 5% stock dividend; (b) a 50% stock dividend; (c) a 3-for-1 split.", "(a) RE 600,000; CS 30,000; APIC 570,000. (b) RE 300,000; CS 300,000. (c) No entry; par becomes $0.333."],
+   ["Net income $1,200,000; preferred dividends $60,000; common dividends $342,000. Payout ratio?", "342,000 ÷ 1,140,000 = 30%."]
+  ],
+  "case": ["The dividend decision",
+   "Bluestem has 503,000 common shares trading at $15 and 5,000 shares of 6% cumulative preferred ($100 par) with one year in arrears. Net income is $990,000; cash is $700,000; the bond covenant limits dividends to 40% of net income. The founder wants to pay $0.60 per common share in cash, or alternatively a 10% stock dividend 'which costs nothing'.",
+   ["Compute total cash needed for the $0.60 common dividend plus preferred.", "Does it meet the covenant?", "Record the 10% stock dividend.", "Is a stock dividend really costless?"],
+   "Preferred 60,000 (arrears + current); common 301,800; total 361,800 = 36.5% of NI: within 40% covenant, but uses half the cash. Stock dividend: RE 754,500; CS 50,300; APIC 704,200. Costless in cash, but no value transferred: each shareholder's proportion is unchanged; price adjusts; admin costs; may signal."],
+  "exam": [
+   ["Compare small and large stock dividends and stock splits: entries and effects on equity components and total equity.", 6, "Small at FV from RE; large at par; split none; total equity unchanged in all; RE reduced by dividends only."],
+   ["Allocate $120,000 of dividends between 6% cumulative preferred ($500,000 par, one year in arrears) and common; then redo it as noncumulative.", 6, "Cumulative 60,000/60,000; noncumulative 30,000/90,000."]
+  ],
+  "outcomes": ["Describe preferred stock features and classification", "Record cash dividends", "Allocate dividends with cumulative preferred", "Record property and liquidating dividends", "Account for stock dividends and stock splits", "Disclose restrictions and compute the payout ratio"],
+  "take": ["Mandatorily redeemable preferred is debt", "Liability at declaration", "Arrears first, then current, then common", "Property dividends at fair value", "Small stock dividend at FV; split no entry", "Payout = common dividends ÷ income to common"]
+ },
+ "ex": [
+  {"type": "mcq", "q": "Missed dividends on cumulative preferred are:", "opts": ["A liability", "Disclosed in the notes", "Lost", "Expensed"], "a": 1, "why": "Not a liability until declared.", "video": "6.3"},
+  {"type": "num", "q": "Dividend of $0.30 per share declared on 400,000 shares. Dividends payable?", "a": 120000, "unit": "$", "why": "400,000 × 0.30.", "video": "6.2"},
+  {"type": "num", "q": "7% cumulative preferred, $300,000 par, one year in arrears. Total dividends $80,000. Amount to common?", "a": 38000, "unit": "$", "why": "Preferred 42,000.", "video": "6.3"},
+  {"type": "num", "q": "Investment carried at $40,000 with fair value $52,000 is distributed as a dividend. Gain recognized?", "a": 12000, "unit": "$", "why": "Remeasure to fair value.", "video": "6.4"},
+  {"type": "num", "q": "10% stock dividend on 200,000 shares ($1 par, market $25). Amount transferred from retained earnings?", "a": 500000, "unit": "$", "why": "20,000 × $25.", "video": "6.5"},
+  {"type": "num", "q": "40% stock dividend on 200,000 shares ($1 par, market $25). Amount transferred from retained earnings?", "a": 80000, "unit": "$", "why": "Large: par value only.", "video": "6.5"},
+  {"type": "sort", "q": "Does each transaction change total stockholders' equity?", "cats": ["Changes total equity", "No change"], "items": [["Cash dividend declared", 0], ["Stock split", 1], ["Small stock dividend", 1], ["Property dividend declared", 0]], "why": "Stock dividends and splits rearrange equity.", "video": "6.5"},
+  {"type": "num", "q": "Net income $800,000; preferred dividends $40,000; common dividends $190,000. Payout ratio in percent?", "a": 25, "tol": 0.1, "unit": "%", "why": "190 ÷ 760.", "video": "6.6"}
+ ]
+}

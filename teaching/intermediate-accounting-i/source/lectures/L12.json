@@ -1,0 +1,761 @@
+{
+ "meta": {
+  "n": 12,
+  "short": "Acquiring PP&E",
+  "title": "Property, plant and equipment: acquisition",
+  "week": 13,
+  "ch": "Chapter 10",
+  "part": "Property, plant and equipment",
+  "summary": "Measuring the cost of equipment, land and buildings, self-constructed assets and interest capitalization, lump-sum purchases and other acquisitions, nonmonetary exchanges, and costs after acquisition."
+ },
+ "videos": [
+  {
+   "id": "12.1",
+   "title": "The cost of equipment",
+   "lecture": "Lecture 12 · Acquiring PP&E",
+   "take": "Capitalize every cost needed to get the asset ready for its intended use",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem buys a new paddle-molding machine. The invoice says $250,000. The asset will cost more than that on the books."
+    },
+    {
+     "type": "define",
+     "big": "Property, plant and equipment",
+     "sub": [
+      "Tangible assets used in operations,",
+      "not held for sale, lasting over a year"
+     ],
+     "say": "Property, plant and equipment are tangible assets acquired for use in operations, not for resale, with lives longer than a year: land, buildings, machinery, vehicles."
+    },
+    {
+     "type": "table",
+     "heading": "Capitalized cost of the machine",
+     "rows": [
+      [
+       "Invoice price",
+       250000
+      ],
+      [
+       "Freight and insurance in transit",
+       6000
+      ],
+      [
+       "Installation",
+       14000
+      ],
+      [
+       "Testing runs",
+       5000
+      ],
+      [
+       "Cost of the machine",
+       275000,
+       "total"
+      ]
+     ],
+     "say": "Historical cost includes everything needed to acquire the asset and get it ready for its intended use: the $250,000 price, $6,000 of freight and transit insurance, $14,000 of installation and $5,000 of test runs. The machine costs $275,000."
+    },
+    {
+     "type": "key",
+     "tag": "WATCH OUT",
+     "big": "Not everything is capitalized",
+     "sub": [
+      "$3,000 to repair damage during",
+      "installation: expense"
+     ],
+     "say": "Watch out: a $3,000 repair because the installers dropped a part isn't necessary to get the machine ready. It's an expense. So are training and later operating costs."
+    },
+    {
+     "type": "key",
+     "big": "Historical cost",
+     "sub": [
+      "Verifiable; not revalued",
+      "under US GAAP"
+     ],
+     "say": "PP&E is recorded at historical cost because it's verifiable, and under US GAAP it isn't revalued upward later."
+    },
+    {
+     "type": "quiz",
+     "q": "Which cost is NOT added to a machine's cost?",
+     "opts": [
+      "Freight-in",
+      "Installation",
+      "Operator training",
+      "Test runs"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which cost is not added to a machine's cost? Pause and pick.",
+     "reveal": "It's C, operator training: it's expensed."
+    }
+   ]
+  },
+  {
+   "id": "12.2",
+   "title": "Land and buildings",
+   "lecture": "Lecture 12 · Acquiring PP&E",
+   "take": "Land includes costs to prepare it for use; land improvements with limited lives are separate and depreciated",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem buys a lot next to its plant, with an old shed on it, for a new warehouse."
+    },
+    {
+     "type": "table",
+     "heading": "Cost of the land",
+     "rows": [
+      [
+       "Purchase price",
+       400000
+      ],
+      [
+       "Legal fees and title",
+       8000
+      ],
+      [
+       "Demolishing the old shed",
+       30000
+      ],
+      [
+       "Less: salvage from the shed",
+       -5000
+      ],
+      [
+       "Grading and clearing",
+       12000
+      ],
+      [
+       "Land",
+       445000,
+       "total"
+      ]
+     ],
+     "say": "Land includes the price, legal and title costs, and costs to get the land ready: demolishing the old shed, net of $5,000 of salvage, and grading. Land costs $445,000. It isn't depreciated."
+    },
+    {
+     "type": "compare",
+     "heading": "Land vs land improvements",
+     "cols": [
+      "Land",
+      "Land improvements"
+     ],
+     "rows": [
+      [
+       "Examples",
+       "Lot, grading, demolition",
+       "Parking lot, fences, lighting"
+      ],
+      [
+       "Depreciated?",
+       "No",
+       "Yes"
+      ]
+     ],
+     "say": "A parking lot, fencing and lighting are land improvements: they wear out, so they're recorded separately, $60,000 here, and depreciated."
+    },
+    {
+     "type": "list",
+     "heading": "Building cost",
+     "items": [
+      "Materials, labor and overhead",
+      "Architect and permit fees",
+      "Excavation for the foundation",
+      "Interest during construction"
+     ],
+     "say": "A building's cost includes materials, labor and overhead, architect and permit fees, excavation for the foundation, and, as we'll see next, interest during construction."
+    },
+    {
+     "type": "key",
+     "big": "Buying a building to tear down",
+     "sub": [
+      "Its cost goes to land"
+     ],
+     "say": "If a company buys land with a building it intends to tear down, the whole price, plus demolition less salvage, goes to land."
+    },
+    {
+     "type": "quiz",
+     "q": "Which is depreciated?",
+     "opts": [
+      "Land",
+      "Grading costs",
+      "A parking lot",
+      "Title insurance"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which of these is depreciated? Pause and pick.",
+     "reveal": "It's C, the parking lot, a land improvement."
+    }
+   ]
+  },
+  {
+   "id": "12.3",
+   "title": "Self-constructed assets and capitalized interest",
+   "lecture": "Lecture 12 · Acquiring PP&E",
+   "take": "Capitalize avoidable interest: weighted-average expenditures times the appropriate rates, capped at actual interest",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem builds the warehouse itself over 2027. Interest on borrowed money is part of its cost."
+    },
+    {
+     "type": "define",
+     "big": "Avoidable interest",
+     "sub": [
+      "Interest that would have been avoided",
+      "if the asset hadn't been built"
+     ],
+     "say": "GAAP capitalizes avoidable interest: the interest Bluestem would have avoided if it hadn't spent money on construction. It's capitalized only during construction and only for qualifying assets, not routine inventory."
+    },
+    {
+     "type": "table",
+     "heading": "Weighted-average accumulated expenditures",
+     "rows": [
+      [
+       "Jan 1: 300,000 × 12/12",
+       300000
+      ],
+      [
+       "Apr 1: 600,000 × 9/12",
+       450000
+      ],
+      [
+       "Oct 1: 400,000 × 3/12",
+       100000
+      ],
+      [
+       "Weighted average",
+       850000,
+       "total"
+      ]
+     ],
+     "say": "Weight each payment by how long it was outstanding during the year. $300,000 paid January 1 counts in full; $600,000 paid April 1 counts for nine months, and $400,000 paid October 1 for three. Weighted-average expenditures are $850,000."
+    },
+    {
+     "type": "table",
+     "heading": "Avoidable vs actual interest",
+     "rows": [
+      [
+       "Construction loan: 500,000 × 8%",
+       40000
+      ],
+      [
+       "Excess: 350,000 × 10% other debt rate",
+       35000
+      ],
+      [
+       "Avoidable interest",
+       75000,
+       "total"
+      ],
+      [
+       "Actual interest incurred",
+       140000
+      ],
+      [
+       "Capitalize the lower",
+       75000,
+       "total"
+      ]
+     ],
+     "say": "The first $500,000 is financed by an eight percent construction loan: $40,000. The other $350,000 uses the ten percent rate on Bluestem's other debt: $35,000. Avoidable interest is $75,000. Actual interest is $140,000. Capitalize the lower, $75,000, and expense the rest."
+    },
+    {
+     "type": "journal",
+     "heading": "Recording",
+     "rows": [
+      [
+       "Building",
+       75000,
+       ""
+      ],
+      [
+       "Interest expense",
+       65000,
+       ""
+      ],
+      [
+       "Cash",
+       "",
+       140000
+      ]
+     ],
+     "say": "Bluestem adds $75,000 to the building and expenses $65,000 of interest."
+    },
+    {
+     "type": "quiz",
+     "q": "Avoidable interest $90,000; actual interest $70,000. Interest capitalized?",
+     "opts": [
+      "$90,000",
+      "$70,000",
+      "$20,000",
+      "$160,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Avoidable interest ninety thousand; actual interest seventy thousand. Interest capitalized? Pause and pick.",
+     "reveal": "It's B, $70,000: never more than actual interest."
+    }
+   ]
+  },
+  {
+   "id": "12.4",
+   "title": "Lump-sum and other acquisitions",
+   "lecture": "Lecture 12 · Acquiring PP&E",
+   "take": "Allocate lump-sum prices by relative fair value; use fair value for stock issued and present value for deferred payments",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem buys a small competitor's plant in Redwood Falls: land, building and equipment, for one price of $1.2 million."
+    },
+    {
+     "type": "table",
+     "heading": "Relative fair value allocation",
+     "rows": [
+      [
+       "Land: FV 400,000 × 80%",
+       320000
+      ],
+      [
+       "Building: FV 800,000 × 80%",
+       640000
+      ],
+      [
+       "Equipment: FV 300,000 × 80%",
+       240000
+      ],
+      [
+       "Total price (FV 1,500,000)",
+       1200000,
+       "total"
+      ]
+     ],
+     "say": "Total fair value is $1.5 million, but Bluestem paid $1.2 million, eighty percent. Allocate the price by relative fair value: land $320,000, building $640,000, equipment $240,000. The split matters because land isn't depreciated."
+    },
+    {
+     "type": "list",
+     "heading": "Other ways to acquire assets",
+     "items": [
+      "Deferred payments: present value",
+      "Issuing stock: fair value of stock or asset",
+      "Donations: fair value, credit revenue",
+      "Exchanges: next video"
+     ],
+     "say": "Other acquisitions: assets bought with deferred payments are recorded at present value, as in Lecture 6. Assets bought with stock are recorded at the fair value of the stock or the asset, whichever is clearer. Donated assets are recorded at fair value with revenue."
+    },
+    {
+     "type": "journal",
+     "heading": "Land acquired for stock",
+     "rows": [
+      [
+       "Land",
+       180000,
+       ""
+      ],
+      [
+       "Common stock (10,000 × $1 par)",
+       "",
+       10000
+      ],
+      [
+       "Paid-in capital in excess of par",
+       "",
+       170000
+      ]
+     ],
+     "say": "If Bluestem issued 10,000 shares worth $18 each for a lot, it would record land at $180,000, with $10,000 of common stock at par and $170,000 of paid-in capital."
+    },
+    {
+     "type": "key",
+     "big": "Fair value, not book value",
+     "sub": [
+      "The seller's book value",
+      "doesn't matter"
+     ],
+     "say": "Notice: the seller's book value never matters. Bluestem records what it gave up or received, at fair value."
+    },
+    {
+     "type": "quiz",
+     "q": "Price $900,000; fair values: land $300,000, building $700,000. Building's cost?",
+     "opts": [
+      "$700,000",
+      "$630,000",
+      "$600,000",
+      "$270,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Price nine hundred thousand; fair values: land three hundred thousand, building seven hundred thousand. Building's cost? Pause and pick.",
+     "reveal": "It's B, $630,000: seventy percent of $900,000."
+    }
+   ]
+  },
+  {
+   "id": "12.5",
+   "title": "Exchanges of nonmonetary assets",
+   "lecture": "Lecture 12 · Acquiring PP&E",
+   "take": "With commercial substance, record the new asset at fair value and recognize gains; without it, defer gains",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Bluestem trades in an old delivery van and pays $30,000 cash for a new one."
+    },
+    {
+     "type": "table",
+     "heading": "The old van",
+     "rows": [
+      [
+       "Cost",
+       40000
+      ],
+      [
+       "Accumulated depreciation",
+       -28000
+      ],
+      [
+       "Book value",
+       12000,
+       "total"
+      ],
+      [
+       "Fair value (trade-in)",
+       15000
+      ],
+      [
+       "Gain on disposal",
+       3000,
+       "total"
+      ]
+     ],
+     "say": "The old van cost $40,000 and has $28,000 of accumulated depreciation, a book value of $12,000. The dealer values it at $15,000. That's a $3,000 gain."
+    },
+    {
+     "type": "define",
+     "big": "Commercial substance",
+     "sub": [
+      "Future cash flows change",
+      "as a result of the exchange"
+     ],
+     "say": "Does the exchange have commercial substance? That is, will Bluestem's future cash flows change because of it? A newer, bigger van with lower running costs does change them."
+    },
+    {
+     "type": "journal",
+     "heading": "With commercial substance",
+     "rows": [
+      [
+       "Delivery van (new)",
+       45000,
+       ""
+      ],
+      [
+       "Accumulated depreciation",
+       28000,
+       ""
+      ],
+      [
+       "Delivery van (old)",
+       "",
+       40000
+      ],
+      [
+       "Gain on disposal",
+       "",
+       3000
+      ],
+      [
+       "Cash",
+       "",
+       30000
+      ]
+     ],
+     "say": "With commercial substance, the new van is recorded at fair value given up, $15,000 plus $30,000 cash, or $45,000. The old van and its accumulated depreciation are removed, and the $3,000 gain is recognized."
+    },
+    {
+     "type": "key",
+     "big": "Without commercial substance",
+     "sub": [
+      "Defer the gain: new van $42,000;",
+      "losses are always recognized"
+     ],
+     "say": "Without commercial substance, the gain is deferred: the new asset is recorded at the old book value plus cash, $42,000. Losses are always recognized immediately."
+    },
+    {
+     "type": "quiz",
+     "q": "Old asset book value $20,000, fair value $16,000, plus $50,000 cash. New asset cost (commercial substance)?",
+     "opts": [
+      "$70,000",
+      "$66,000",
+      "$50,000",
+      "$74,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Old asset book value twenty thousand, fair value sixteen thousand, plus fifty thousand cash. New asset cost, with commercial substance? Pause and pick.",
+     "reveal": "It's B, $66,000, with a $4,000 loss."
+    }
+   ]
+  },
+  {
+   "id": "12.6",
+   "title": "Costs after acquisition",
+   "lecture": "Lecture 12 · Acquiring PP&E",
+   "take": "Capitalize costs that extend life or improve capacity; expense ordinary repairs",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Five years later, the paddle-molding machine needs work. Expense or capitalize?"
+    },
+    {
+     "type": "define",
+     "big": "Capitalize if it adds future benefit",
+     "sub": [
+      "Longer life, more capacity,",
+      "better quality or lower costs"
+     ],
+     "say": "Costs after acquisition are capitalized if they provide future benefits: a longer life, more capacity, better quality output or lower operating costs. Otherwise, they're expensed."
+    },
+    {
+     "type": "table",
+     "heading": "Examples",
+     "rows": [
+      [
+       "Ordinary repairs and maintenance",
+       "Expense"
+      ],
+      [
+       "New wing added to the warehouse",
+       "Capitalize"
+      ],
+      [
+       "Replacing the mold heater",
+       "Capitalize"
+      ],
+      [
+       "Rearranging the factory floor",
+       "Usually expense"
+      ]
+     ],
+     "say": "Ordinary repairs are expensed. An addition, like a new warehouse wing, is capitalized. A major replacement, like a new mold heater, is capitalized, and the old part's cost removed. Rearranging the floor is usually expensed unless material and beneficial for several years."
+    },
+    {
+     "type": "journal",
+     "heading": "Replacing the heater",
+     "rows": [
+      [
+       "Machinery (new heater)",
+       32000,
+       ""
+      ],
+      [
+       "Accum. depreciation (old)",
+       15000,
+       ""
+      ],
+      [
+       "Loss on disposal",
+       5000,
+       ""
+      ],
+      [
+       "Machinery (old heater)",
+       "",
+       20000
+      ],
+      [
+       "Cash",
+       "",
+       32000
+      ]
+     ],
+     "say": "The new heater costs $32,000. The old one cost $20,000 with $15,000 of depreciation. Bluestem removes it, recognizes a $5,000 loss, and capitalizes the new heater."
+    },
+    {
+     "type": "key",
+     "big": "Capitalization policy",
+     "sub": [
+      "Under $2,500: expense",
+      "(materiality)"
+     ],
+     "say": "Remember Bluestem's $2,500 capitalization threshold from Lecture 2: small items are expensed regardless."
+    },
+    {
+     "type": "quiz",
+     "q": "An overhaul extends a machine's life by 4 years. Its cost is:",
+     "opts": [
+      "Expensed",
+      "Capitalized",
+      "Charged to retained earnings",
+      "Ignored"
+     ],
+     "answer": 1,
+     "say": "Quick check. An overhaul extends a machine's life by four years. How is its cost treated? Pause and pick.",
+     "reveal": "It's B, capitalized."
+    }
+   ]
+  }
+ ],
+ "content": {
+  "warmup": [
+   "Bluestem pays $250,000 for a machine and $25,000 more to ship, install and test it. Should the $25,000 be expensed this year? Why or why not?",
+   "Costs to get the asset ready are part of its cost and benefit future periods."
+  ],
+  "acts": [
+   [
+    "Compute the cost: price $180,000; 2% cash discount taken; freight $4,000; installation $9,000; repair of damage in transit (Bluestem's fault) $2,500; training $3,000.",
+    "176,400 + 4,000 + 9,000 = 189,400; repair and training expensed."
+   ],
+   [
+    "Classify as land, land improvements or building: purchase price of lot; driveway; demolition of old shed; architect fees; fencing; excavation for foundation.",
+    "Land; land improvement; land; building; land improvement; building."
+   ],
+   [
+    "Expenditures: Mar 1 $240,000; Jul 1 $360,000; Dec 31 $120,000. Construction loan $300,000 at 9%; other debt rate 11%; actual total interest $160,000. Compute capitalized interest.",
+    "WAAE 200,000 + 180,000 + 0 = 380,000; avoidable 27,000 + 8,800 = 35,800; capitalize 35,800."
+   ],
+   [
+    "Allocate $2,000,000 to land (FV $600,000), building (FV $1,500,000) and equipment (FV $400,000).",
+    "Ratio 80%: 480,000; 1,200,000; 320,000."
+   ],
+   [
+    "Exchange: old equipment cost $60,000, AD $45,000, FV $10,000, plus $40,000 cash. Record with and without commercial substance.",
+    "Loss 5,000 recognized either way; new asset 50,000 in both cases."
+   ],
+   [
+    "Classify: repainting the warehouse; new roof extending life 10 years; replacing a motor; oil changes; adding a loading dock.",
+    "Expense; capitalize; capitalize (remove old); expense; capitalize."
+   ]
+  ],
+  "case": [
+   "The Redwood Falls plant",
+   "Bluestem paid $1,200,000 for a competitor's plant (land FV $400,000, building FV $800,000, equipment FV $300,000), paid $20,000 legal fees for the whole purchase, $45,000 to rewire the building before use, and $8,000 to repair machines damaged when movers dropped them. The founder wants to allocate more of the price to land 'because it holds value'.",
+   [
+    "Allocate the price and legal fees.",
+    "Treat the rewiring and the repair.",
+    "What's wrong with the founder's suggestion, and how does it affect income?",
+    "List the PP&E amounts."
+   ],
+   "Total cost 1,220,000 allocated by relative fair value: land 325,333, building 650,667, equipment 244,000 (by relative FV). Rewiring capitalized to building (+45,000 = 695,667); repair expensed. Allocating more to land reduces depreciation and overstates income: not allowed; must use relative fair values."
+  ],
+  "exam": [
+   [
+    "Explain how capitalized interest is computed and the conditions for capitalizing it.",
+    6,
+    "Qualifying assets, during construction, while expenditures and interest are incurred; WAAE × specific rate then weighted-average rate on other debt; limit to actual interest."
+   ],
+   [
+    "Bluestem exchanges a van (cost $40,000, AD $28,000, FV $15,000) and $30,000 cash for a new van. Record the exchange with and without commercial substance.",
+    6,
+    "With: new van 45,000, gain 3,000. Without: new van 42,000, no gain."
+   ]
+  ],
+  "outcomes": [
+   "Determine the cost of equipment",
+   "Determine the cost of land, land improvements and buildings",
+   "Compute capitalized interest on self-constructed assets",
+   "Allocate lump-sum purchases and record other acquisitions",
+   "Account for nonmonetary exchanges",
+   "Distinguish capital and revenue expenditures after acquisition"
+  ],
+  "take": [
+   "Capitalize costs to get ready for use",
+   "Land isn't depreciated; improvements are",
+   "Capitalize the lower of avoidable and actual interest",
+   "Allocate by relative fair value",
+   "Commercial substance decides gains",
+   "Capitalize improvements; expense repairs"
+  ]
+ },
+ "ex": [
+  {
+   "type": "num",
+   "q": "Price $120,000; freight $3,000; installation $7,000; training $2,000. Capitalized cost?",
+   "a": 130000,
+   "unit": "$",
+   "why": "Training expensed.",
+   "video": "12.1"
+  },
+  {
+   "type": "num",
+   "q": "Land price $300,000; legal fees $6,000; demolition $20,000; salvage $4,000; parking lot $50,000. Cost of land?",
+   "a": 322000,
+   "unit": "$",
+   "why": "Parking lot is a land improvement.",
+   "video": "12.2"
+  },
+  {
+   "type": "num",
+   "q": "Expenditures: Jan 1 $400,000; Jul 1 $200,000. Weighted-average accumulated expenditures for the year?",
+   "a": 500000,
+   "unit": "$",
+   "why": "400,000 + 100,000.",
+   "video": "12.3"
+  },
+  {
+   "type": "mcq",
+   "q": "Capitalized interest is limited to:",
+   "opts": [
+    "Avoidable interest only",
+    "The lower of avoidable and actual interest",
+    "Actual interest only",
+    "The construction loan's interest"
+   ],
+   "a": 1,
+   "why": "Never more than actual interest.",
+   "video": "12.3"
+  },
+  {
+   "type": "num",
+   "q": "A $1,000,000 lump-sum purchase: land FV $500,000, building FV $750,000. Cost of land?",
+   "a": 400000,
+   "unit": "$",
+   "why": "40% of 1,000,000.",
+   "video": "12.4"
+  },
+  {
+   "type": "num",
+   "q": "Old asset book value $8,000, fair value $11,000, plus $25,000 cash; commercial substance. Gain recognized?",
+   "a": 3000,
+   "unit": "$",
+   "why": "11,000 − 8,000.",
+   "video": "12.5"
+  },
+  {
+   "type": "num",
+   "q": "Same exchange without commercial substance. Cost of the new asset?",
+   "a": 33000,
+   "unit": "$",
+   "why": "Book value 8,000 + cash 25,000.",
+   "video": "12.5"
+  },
+  {
+   "type": "sort",
+   "q": "Sort each cost: capitalize or expense?",
+   "cats": [
+    "Capitalize",
+    "Expense"
+   ],
+   "items": [
+    [
+     "New warehouse wing",
+     0
+    ],
+    [
+     "Routine oil changes",
+     1
+    ],
+    [
+     "Roof replacement extending life",
+     0
+    ],
+    [
+     "Repainting offices",
+     1
+    ]
+   ],
+   "why": "Future benefit test.",
+   "video": "12.6"
+  }
+ ]
+}

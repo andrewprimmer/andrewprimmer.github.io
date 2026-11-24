@@ -1,0 +1,587 @@
+{
+ "videos": [
+  {
+   "id": "3.1",
+   "title": "The accounting cycle",
+   "lecture": "Lecture 3 \u00b7 Accounting information system",
+   "take": "Every transaction flows through the same cycle, from journal entry to post-closing trial balance",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Intermediate accounting builds on the cycle you learned in principles. Today we review it fast, then focus on where the hard judgments are: adjustments."
+    },
+    {
+     "type": "flow",
+     "heading": "The accounting cycle",
+     "items": [
+      "Journalize and post transactions",
+      "Unadjusted trial balance",
+      "Adjusting entries",
+      "Adjusted trial balance",
+      "Financial statements",
+      "Closing and post-closing trial balance"
+     ],
+     "say": "Transactions are journalized and posted. An unadjusted trial balance checks the ledger. Adjusting entries bring accounts up to date. Then the adjusted trial balance, the statements, and closing entries, which leave a post-closing trial balance."
+    },
+    {
+     "type": "journal",
+     "heading": "Bluestem buys a mold on account",
+     "rows": [
+      [
+       "Equipment",
+       180000,
+       ""
+      ],
+      [
+       "Accounts payable",
+       "",
+       180000
+      ]
+     ],
+     "say": "Double entry hasn't changed. When Bluestem buys a $180,000 kayak mold on account, Equipment goes up with a debit and Accounts Payable up with a credit. Debits equal credits."
+    },
+    {
+     "type": "key",
+     "big": "Debits on the left",
+     "sub": [
+      "Assets, expenses, dividends: debit",
+      "Liabilities, equity, revenue: credit"
+     ],
+     "say": "Remember the normal balances: assets, expenses and dividends increase with debits; liabilities, equity and revenues increase with credits."
+    },
+    {
+     "type": "key",
+     "big": "Why adjust?",
+     "sub": [
+      "Accrual basis + periodicity:",
+      "some events aren't transactions"
+     ],
+     "say": "Why adjust? Because of the accrual basis and periodicity from Lecture 2. Some events, like insurance expiring or wages building up, happen without any transaction to trigger a journal entry."
+    },
+    {
+     "type": "quiz",
+     "q": "Which step comes immediately after the adjusting entries?",
+     "opts": [
+      "Closing entries",
+      "Adjusted trial balance",
+      "Unadjusted trial balance",
+      "Posting transactions"
+     ],
+     "answer": 1,
+     "say": "Quick check. Which step comes immediately after the adjusting entries? Pause and pick.",
+     "reveal": "It's B, the adjusted trial balance."
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "title": "Prepayments",
+   "lecture": "Lecture 3 \u00b7 Accounting information system",
+   "take": "Prepaid expenses expire into expense; unearned revenues are earned into revenue",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Prepayments: cash moved first, and the expense or revenue comes later."
+    },
+    {
+     "type": "table",
+     "heading": "Prepaid insurance",
+     "rows": [
+      [
+       "Paid October 1 for 12 months",
+       24000
+      ],
+      [
+       "Monthly cost",
+       2000
+      ],
+      [
+       "Expired by December 31: 3 months",
+       6000,
+       "total"
+      ]
+     ],
+     "say": "On October 1, Bluestem paid $24,000 for a year of insurance. That's $2,000 a month. By December 31, three months have expired: $6,000."
+    },
+    {
+     "type": "journal",
+     "heading": "Adjusting entry: insurance",
+     "rows": [
+      [
+       "Insurance expense",
+       6000,
+       ""
+      ],
+      [
+       "Prepaid insurance",
+       "",
+       6000
+      ]
+     ],
+     "say": "The adjusting entry moves $6,000 from the asset to expense. Prepaid insurance is left at $18,000 for the nine months still covered."
+    },
+    {
+     "type": "table",
+     "heading": "Unearned revenue",
+     "rows": [
+      [
+       "Dealer deposit received December 1",
+       30000
+      ],
+      [
+       "Kayaks delivered by December 31",
+       "40%"
+      ],
+      [
+       "Revenue earned",
+       12000,
+       "total"
+      ]
+     ],
+     "say": "On December 1, Lakes Paddle Co. paid a $30,000 deposit for a kayak order. By December 31, forty percent had been delivered, so $12,000 is earned."
+    },
+    {
+     "type": "journal",
+     "heading": "Adjusting entry: deposit",
+     "rows": [
+      [
+       "Unearned sales revenue",
+       12000,
+       ""
+      ],
+      [
+       "Sales revenue",
+       "",
+       12000
+      ]
+     ],
+     "say": "Debit Unearned Sales Revenue, a liability, and credit Sales Revenue for $12,000. The other $18,000 stays a liability: Bluestem still owes kayaks."
+    },
+    {
+     "type": "quiz",
+     "q": "Rent of $12,000 for 6 months was prepaid on November 1. Rent expense at December 31?",
+     "opts": [
+      "$2,000",
+      "$4,000",
+      "$8,000",
+      "$12,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Rent of twelve thousand dollars for six months was prepaid on November 1. What's rent expense at December 31? Pause and pick.",
+     "reveal": "It's B, $4,000: two months at $2,000."
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "title": "Accruals",
+   "lecture": "Lecture 3 \u00b7 Accounting information system",
+   "take": "Accrued revenues and expenses record what has happened before cash moves",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Accruals: the revenue or expense has happened, but cash hasn't moved yet."
+    },
+    {
+     "type": "table",
+     "heading": "Accrued interest revenue",
+     "rows": [
+      [
+       "Note from a dealer, September 1",
+       50000
+      ],
+      [
+       "Annual rate",
+       "6%"
+      ],
+      [
+       "Months to December 31",
+       "4"
+      ],
+      [
+       "Interest earned: 50,000 \u00d7 6% \u00d7 4/12",
+       1000,
+       "total"
+      ]
+     ],
+     "say": "On September 1, Bluestem accepted a $50,000 note from a dealer at six percent. By December 31, four months of interest has been earned: fifty thousand times six percent times four twelfths, $1,000."
+    },
+    {
+     "type": "journal",
+     "heading": "Adjusting entry: interest",
+     "rows": [
+      [
+       "Interest receivable",
+       1000,
+       ""
+      ],
+      [
+       "Interest revenue",
+       "",
+       1000
+      ]
+     ],
+     "say": "Debit Interest Receivable and credit Interest Revenue for $1,000, even though the dealer pays with the note next September."
+    },
+    {
+     "type": "table",
+     "heading": "Accrued wages",
+     "rows": [
+      [
+       "Weekly payroll, paid Fridays",
+       20000
+      ],
+      [
+       "Daily: 20,000 \u00f7 5",
+       4000
+      ],
+      [
+       "December 31 is a Wednesday: 3 days",
+       12000,
+       "total"
+      ]
+     ],
+     "say": "Bluestem's weekly payroll is $20,000, paid each Friday, or $4,000 a day. December 31 falls on a Wednesday, so three days, $12,000, has been earned but not paid."
+    },
+    {
+     "type": "journal",
+     "heading": "Adjusting entry: wages",
+     "rows": [
+      [
+       "Salaries and wages expense",
+       12000,
+       ""
+      ],
+      [
+       "Salaries and wages payable",
+       "",
+       12000
+      ]
+     ],
+     "say": "Debit Salaries and Wages Expense and credit Salaries and Wages Payable for $12,000."
+    },
+    {
+     "type": "quiz",
+     "q": "A $60,000, 5% note was received July 1. Accrued interest at December 31?",
+     "opts": [
+      "$1,250",
+      "$1,500",
+      "$3,000",
+      "$250"
+     ],
+     "answer": 1,
+     "say": "Quick check. A sixty thousand dollar, five percent note was received July 1. Accrued interest at December 31? Pause and pick.",
+     "reveal": "It's B, $1,500: sixty thousand times five percent times six twelfths."
+    }
+   ]
+  },
+  {
+   "id": "3.4",
+   "title": "Depreciation and the adjusted trial balance",
+   "lecture": "Lecture 3 \u00b7 Accounting information system",
+   "take": "Depreciation allocates cost over useful life; contra accounts keep the original cost visible",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Depreciation is the adjustment everyone knows and few think about. It's an allocation, not a valuation."
+    },
+    {
+     "type": "table",
+     "heading": "The kayak mold",
+     "rows": [
+      [
+       "Cost",
+       180000
+      ],
+      [
+       "Useful life",
+       "10 years"
+      ],
+      [
+       "Salvage value",
+       0
+      ],
+      [
+       "Annual depreciation",
+       18000,
+       "total"
+      ]
+     ],
+     "say": "The kayak mold cost $180,000, has a ten-year life and no salvage value. Straight-line depreciation is $18,000 a year. We'll cover other methods in Lecture 13."
+    },
+    {
+     "type": "journal",
+     "heading": "Adjusting entry: depreciation",
+     "rows": [
+      [
+       "Depreciation expense",
+       18000,
+       ""
+      ],
+      [
+       "Accumulated depreciation",
+       "",
+       18000
+      ]
+     ],
+     "say": "Debit Depreciation Expense and credit Accumulated Depreciation, a contra asset. The equipment account keeps showing the original $180,000 cost."
+    },
+    {
+     "type": "table",
+     "heading": "On the balance sheet",
+     "rows": [
+      [
+       "Equipment",
+       180000
+      ],
+      [
+       "Less: accumulated depreciation",
+       -18000
+      ],
+      [
+       "Book value",
+       162000,
+       "total"
+      ]
+     ],
+     "say": "On the balance sheet, equipment of $180,000 less accumulated depreciation of $18,000 gives a book value of $162,000. Book value isn't market value."
+    },
+    {
+     "type": "key",
+     "big": "Check the adjusted trial balance",
+     "sub": [
+      "Debits still equal credits;",
+      "statements come straight from it"
+     ],
+     "say": "After all adjustments, the adjusted trial balance must still balance. The income statement, retained earnings statement and balance sheet are prepared directly from it."
+    },
+    {
+     "type": "quiz",
+     "q": "Equipment costs $90,000, salvage $10,000, life 8 years. Annual straight-line depreciation?",
+     "opts": [
+      "$11,250",
+      "$10,000",
+      "$12,500",
+      "$8,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Equipment costs ninety thousand dollars, salvage ten thousand, life eight years. Annual straight-line depreciation? Pause and pick.",
+     "reveal": "It's B, $10,000: eighty thousand divided by eight."
+    }
+   ]
+  },
+  {
+   "id": "3.5",
+   "title": "Closing entries",
+   "lecture": "Lecture 3 \u00b7 Accounting information system",
+   "take": "Closing resets temporary accounts to zero and moves net income to retained earnings",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "At year-end, the revenue and expense accounts start over. Closing entries do that."
+    },
+    {
+     "type": "compare",
+     "heading": "Temporary vs permanent",
+     "cols": [
+      "Temporary",
+      "Permanent"
+     ],
+     "rows": [
+      [
+       "Examples",
+       "Revenues, expenses, dividends",
+       "Assets, liabilities, equity"
+      ],
+      [
+       "At year-end",
+       "Closed to zero",
+       "Carried forward"
+      ]
+     ],
+     "say": "Temporary accounts, revenues, expenses and dividends, measure one period and are closed to zero. Permanent accounts, assets, liabilities and equity, carry forward."
+    },
+    {
+     "type": "journal",
+     "heading": "Closing revenues and expenses",
+     "rows": [
+      [
+       "Sales revenue",
+       4200000,
+       ""
+      ],
+      [
+       "Income summary",
+       "",
+       4200000
+      ],
+      [
+       "Income summary",
+       3700000,
+       ""
+      ],
+      [
+       "Expenses (all)",
+       "",
+       3700000
+      ]
+     ],
+     "say": "Bluestem closes $4.2 million of revenues to Income Summary, then $3.7 million of expenses. Income Summary now holds net income of $500,000."
+    },
+    {
+     "type": "journal",
+     "heading": "Closing income and dividends",
+     "rows": [
+      [
+       "Income summary",
+       500000,
+       ""
+      ],
+      [
+       "Retained earnings",
+       "",
+       500000
+      ],
+      [
+       "Retained earnings",
+       120000,
+       ""
+      ],
+      [
+       "Dividends",
+       "",
+       120000
+      ]
+     ],
+     "say": "Close Income Summary's $500,000 credit balance to Retained Earnings. Then close Dividends of $120,000 directly to Retained Earnings. Retained earnings rose by $380,000."
+    },
+    {
+     "type": "key",
+     "big": "Post-closing trial balance",
+     "sub": [
+      "Only permanent accounts remain"
+     ],
+     "say": "The post-closing trial balance lists only permanent accounts, and proves the ledger balances before the new year begins."
+    },
+    {
+     "type": "quiz",
+     "q": "Which account appears on a post-closing trial balance?",
+     "opts": [
+      "Sales revenue",
+      "Dividends",
+      "Accumulated depreciation",
+      "Insurance expense"
+     ],
+     "answer": 2,
+     "say": "Quick check. Which account appears on a post-closing trial balance? Pause and pick.",
+     "reveal": "It's C, accumulated depreciation: a permanent account."
+    }
+   ]
+  },
+  {
+   "id": "3.6",
+   "title": "Reversing entries and cash-to-accrual conversion",
+   "lecture": "Lecture 3 \u00b7 Accounting information system",
+   "take": "Reversing entries simplify next period's bookkeeping; cash records convert to accrual using changes in balances",
+   "read": "",
+   "scenes": [
+    {
+     "type": "title",
+     "say": "Two practical tools: reversing entries, and converting cash records to accrual."
+    },
+    {
+     "type": "journal",
+     "heading": "January 1 reversing entry",
+     "rows": [
+      [
+       "Salaries and wages payable",
+       12000,
+       ""
+      ],
+      [
+       "Salaries and wages expense",
+       "",
+       12000
+      ]
+     ],
+     "say": "On January 1, Bluestem can reverse December's $12,000 wage accrual. Then on Friday the full $20,000 payroll is debited to expense as usual, and January expense ends up at the correct $8,000. Reversing entries are optional; they just simplify routine recording."
+    },
+    {
+     "type": "table",
+     "heading": "Cash to accrual: Bluestem's online store",
+     "rows": [
+      [
+       "Cash collected from customers",
+       900000
+      ],
+      [
+       "Add: increase in accounts receivable",
+       40000
+      ],
+      [
+       "Less: increase in unearned revenue",
+       -15000
+      ],
+      [
+       "Accrual-basis sales revenue",
+       925000,
+       "total"
+      ]
+     ],
+     "say": "Bluestem's online store kept cash records. It collected $900,000. Add the $40,000 increase in receivables: sales not yet collected. Subtract the $15,000 increase in unearned revenue: cash not yet earned. Accrual-basis revenue is $925,000."
+    },
+    {
+     "type": "table",
+     "heading": "Same logic for expenses",
+     "rows": [
+      [
+       "Cash paid for operating costs",
+       600000
+      ],
+      [
+       "Add: increase in accrued liabilities",
+       8000
+      ],
+      [
+       "Less: increase in prepaid expenses",
+       -5000
+      ],
+      [
+       "Accrual-basis expenses",
+       603000,
+       "total"
+      ]
+     ],
+     "say": "Expenses work the same way. Cash paid of $600,000, plus the $8,000 increase in amounts owed, less the $5,000 increase in prepaids, gives accrual expenses of $603,000."
+    },
+    {
+     "type": "key",
+     "big": "The reverse is the cash flow statement",
+     "sub": [
+      "Accrual to cash: you'll do it",
+      "in Intermediate II"
+     ],
+     "say": "Going the other way, from accrual to cash, is how the operating section of the statement of cash flows is built. You'll meet it again in Intermediate Accounting Two."
+    },
+    {
+     "type": "quiz",
+     "q": "Cash collected $500,000; accounts receivable fell by $20,000. Accrual revenue?",
+     "opts": [
+      "$520,000",
+      "$480,000",
+      "$500,000",
+      "$460,000"
+     ],
+     "answer": 1,
+     "say": "Quick check. Cash collected five hundred thousand; accounts receivable fell by twenty thousand. Accrual revenue? Pause and pick.",
+     "reveal": "It's B, $480,000. Some cash collected was for last year's sales."
+    }
+   ]
+  }
+ ]
+}
